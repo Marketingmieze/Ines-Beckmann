@@ -1,0 +1,12 @@
+# Private/sensible Notizen bleiben lokal
+03 Bereiche/
+
+# Claudian-Session-Daten (lokal, kann sensible Konversationsinhalte enthalten)
+.claudian/
+
+# macOS
+.DS_Store
+
+# Obsidian lokale Workspace-Daten (nicht relevant für Sync)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

@@ -1,0 +1,65 @@
+/* Farbige Ordner-Hintergründe im File Explorer, sortiert nach PARA-Struktur */
+
+.nav-folder-title[data-path^="00 Kontext"] {
+  background-color: rgba(157, 124, 216, 0.65); /* Lila */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="01 Inbox"] {
+  background-color: rgba(224, 175, 104, 0.65); /* Gelb/Orange */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="02 Projekte"] {
+  background-color: rgba(122, 162, 247, 0.65); /* Blau */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="03 Bereiche"] {
+  background-color: rgba(247, 118, 142, 0.65); /* Rot/Pink */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="04 Ressourcen"] {
+  background-color: rgba(115, 218, 202, 0.65); /* Türkis */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="05 Daily Notes"] {
+  background-color: rgba(158, 206, 106, 0.65); /* Grün */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="06 Archiv"] {
+  background-color: rgba(86, 95, 137, 0.65); /* Grau */
+  border-radius: 4px;
+}
+
+.nav-folder-title[data-path^="07 Anhänge"] {
+  background-color: rgba(255, 158, 100, 0.65); /* Orange */
+  border-radius: 4px;
+}
+
+/* Kräftig weißer, fetter Text auf allen farbigen Ordnern */
+.nav-folder-title[data-path^="00 Kontext"] .nav-folder-title-content,
+.nav-folder-title[data-path^="01 Inbox"] .nav-folder-title-content,
+.nav-folder-title[data-path^="02 Projekte"] .nav-folder-title-content,
+.nav-folder-title[data-path^="03 Bereiche"] .nav-folder-title-content,
+.nav-folder-title[data-path^="04 Ressourcen"] .nav-folder-title-content,
+.nav-folder-title[data-path^="05 Daily Notes"] .nav-folder-title-content,
+.nav-folder-title[data-path^="06 Archiv"] .nav-folder-title-content,
+.nav-folder-title[data-path^="07 Anhänge"] .nav-folder-title-content {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path^="00 Kontext"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="01 Inbox"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="02 Projekte"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="03 Bereiche"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="04 Ressourcen"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="05 Daily Notes"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="06 Archiv"] .nav-folder-collapse-indicator,
+.nav-folder-title[data-path^="07 Anhänge"] .nav-folder-collapse-indicator {
+  color: #ffffff;
+}
