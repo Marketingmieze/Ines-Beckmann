@@ -1,7 +1,7 @@
 ---
 tags: [projekt, fairbeamtet, status-report]
 quelle: "Agenten-Report (Content-/SEO-Team von Sven Höhne), ungefähr Februar/März 2026"
-überarbeitet: "Sprachlich überarbeitet nach [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden.md|KI-Klang vermeiden]]"
+überarbeitet: "Sprachlich überarbeitet nach [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Fairbeamtet.md|KI-Klang vermeiden – Fairbeamtet]]"
 ---
 
 # SEO-GEO Status Report

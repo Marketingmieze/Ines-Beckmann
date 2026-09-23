@@ -28,4 +28,4 @@ Wird mit der Zeit ergänzt. Hier können Beispieltexte abgelegt werden, die den 
 
 ## Weiterführend
 
-Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden.md|KI-Klang vermeiden]].
+Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Fairbeamtet.md|KI-Klang vermeiden – Fairbeamtet]].

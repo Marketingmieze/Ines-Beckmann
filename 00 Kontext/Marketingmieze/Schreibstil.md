@@ -28,4 +28,4 @@ Wird mit der Zeit ergänzt, sobald erste Artikel entstehen.
 
 ## Weiterführend
 
-Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden.md|KI-Klang vermeiden]].
+Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Marketingmieze.md|KI-Klang vermeiden – Marketingmieze]].

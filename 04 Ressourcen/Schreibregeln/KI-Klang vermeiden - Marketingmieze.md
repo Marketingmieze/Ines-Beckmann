@@ -1,10 +1,10 @@
 ---
-tags: [ressource, schreibregeln]
+tags: [ressource, schreibregeln, marketingmieze]
 ---
 
-# KI-Klang vermeiden
+# KI-Klang vermeiden – marketingmieze.com
 
-Checkliste, um Texte zu überarbeiten, die zu sehr nach KI klingen. Gilt für [[00 Kontext/Fairbeamtet/Schreibstil.md|fairbeamtet.de]] und [[00 Kontext/Marketingmieze/Schreibstil.md|marketingmieze.com]].
+Checkliste, um Texte zu überarbeiten, die zu sehr nach KI klingen. Gilt für [[00 Kontext/Marketingmieze/Schreibstil.md|marketingmieze.com]].
 
 ## Regeln
 
@@ -22,6 +22,9 @@ Checkliste, um Texte zu überarbeiten, die zu sehr nach KI klingen. Gilt für [[
 
 **Nachher:** „Belegkultur: Jede Aussage braucht eine Quelle mit Datum und Belegstufe. Das System korrigiert sich selbst. Das ist der eigentliche Wert."
 
+## Beispiele für guten Stil
+
+Wird mit der Zeit ergänzt, sobald erste Artikel entstehen.
+
 ## Notizen
 
-Angewendet auf [[02 Projekte/Fairbeamtet/SEO-GEO Status Report.md|SEO-GEO Status Report]].

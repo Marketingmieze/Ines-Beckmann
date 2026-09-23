@@ -24,6 +24,12 @@ In Bearbeitung
 - beamtenservice
 - beamtenberater
 - Kuhlen
+- beamtencircle.de
+- info-beihilfe.de
+- beamten-infoportal.de
+- versicherungenmitkopf.de
+- derfairsicherungsladen.de
+- beamtenberatung-plus.de
 
 Backlink- und Ranking-Vergleich der drei: siehe [[02 Projekte/Fairbeamtet/SEO-GEO Status Report.md|SEO-GEO Status Report]] (Abschnitt „Wettbewerbsanalyse: Linkwachstum vs. Ranking-Erfolg"). Kernbefund: Linkwachstum lief bei allen drei Wettbewerbern gegenläufig zum Ranking-Erfolg – nur beamtenservice ist stabil, hat dabei aber Links verloren.
 
