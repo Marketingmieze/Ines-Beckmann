@@ -18,3 +18,4 @@ Wissen rund um die Google Search Console, um besser zu verstehen, was auf der fa
 - SEOgets bietet einen eigenen MCP-Server an (neu: auch GA4-Daten via SEO Gets MCP) – Anbindung an Claude als benutzerdefinierter Connector möglich, Einrichtung noch offen (Stand: 2026-09-23)
   - MCP-URL: `https://app.seogets.com/mcp`
   - Setup: Claude → Einstellungen → Konnektoren → Benutzerdefinierten Connector hinzufügen → Name "SEO Gets", obige URL, OAuth-Consent-Flow durchlaufen
+  - Update: Connectoren (Ahrefs, SEOgets etc.) laufen anscheinend schon bei Sven – Ines fragt ihn nach Zugängen, statt selbst neu einzurichten (Stand: 2026-09-23)
