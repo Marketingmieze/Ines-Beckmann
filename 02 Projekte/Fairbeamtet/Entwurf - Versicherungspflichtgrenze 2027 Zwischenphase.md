@@ -41,8 +41,6 @@ Hier bin ich, Ines von fairbeamtet.de, und ich erklär dir, warum sich das für 
 
 ## Was sich 2027 ändert
 
-**Das betrifft dich in beiden Fällen, egal ob angestellt oder in der Wartephase vor der Verbeamtung.**
-
 Es gibt da diese Zahl, die Versicherungspflichtgrenze. Amtlich heißt sie Jahresarbeitsentgeltgrenze, kurz JAEG. Sie legt fest, ab welchem Bruttojahresgehalt der Wechsel in die private Krankenversicherung für Arbeitnehmer überhaupt möglich ist. Wer darunter verdient, unterliegt der Versicherungspflicht in der gesetzlichen Krankenversicherung (GKV) und muss die Grenze erst überschreiten, um als gesetzlich Versicherter in die PKV wechseln zu dürfen.
 
 **Nicht verwechseln:** Die Versicherungspflichtgrenze (JAEG) ist etwas anderes als die Beitragsbemessungsgrenze. Die Beitragsbemessungsgrenze legt fest, bis zu welchem Einkommen GKV-Beiträge berechnet werden. Für den PKV-Wechsel zählt nur die Versicherungspflichtgrenze.
@@ -55,15 +53,11 @@ Es gibt da diese Zahl, die Versicherungspflichtgrenze. Amtlich heißt sie Jahres
 
 ## Wenn du einfach nur angestellt bist
 
-**Für dich, wenn du keinen Bezug zu einem Beamtenverhältnis hast, sondern ganz normal wechseln willst.**
-
 Als Arbeitnehmer ohne Beamtenstatus bist du versicherungspflichtig in der GKV, solange dein Einkommen unter der Versicherungspflichtgrenze liegt. Verdienst du 2026 über 77.400 Euro, kannst du jetzt noch in die PKV wechseln. Schaffst du 2027 die geplanten 84.150 Euro nicht, bleibst du in der GKV, bis dein Gehalt so weit gestiegen ist. Das können Jahre sein.
 
 **Achtung:** Bist du am 31. Dezember 2026 bereits privat vollversichert, gilt für dich weiterhin die alte, niedrigere Grenze. Diesen Bestandsschutz sicherst du dir nur, wenn der Wechsel bis zum Stichtag tatsächlich abgeschlossen ist. Als Privatversicherter profitierst du dann dauerhaft von der niedrigeren Hürde.
 
-## Warum dich das in der Zwischenphase trifft
-
-**Für dich, wenn du Referendar warst oder bist und gerade auf deine feste Verbeamtung wartest.**
+## Warum das für dich als Referendar in der Wartephase gilt
 
 Solange du Beamter auf Widerruf warst, also im Referendariat, hattest du Beihilfe und konntest dich unabhängig vom Einkommen privat versichern. Sobald du in ein Angestelltenverhältnis wechselst, zum Beispiel weil du auf deine feste Übernahme wartest, gilt das nicht mehr.
 
@@ -71,7 +65,7 @@ Verdienst du in dieser Zeit unter der Versicherungspflichtgrenze, greift die Pfl
 
 **Für Referendare in der Wartephase gilt: Ohne Anwartschaftsversicherung verlierst du deine Alterungsrückstellungen und musst bei der Rückkehr in die PKV eine neue Gesundheitsprüfung durchlaufen.**
 
-## Die Lösung: Anwartschaftsversicherung
+## Die Lösung für die Wartephase: Anwartschaftsversicherung
 
 Zum Glück musst du deswegen nicht deinen ganzen PKV-Schutz aufgeben und bei der Rückkehr ins Beamtenverhältnis wieder bei null anfangen. Mit einer Anwartschaftsversicherung frierst du deinen bestehenden PKV-Vertrag ein, inklusive deiner Gesundheitsbewertung von heute.
 
