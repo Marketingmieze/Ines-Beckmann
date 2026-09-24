@@ -59,7 +59,7 @@ Wenn Ines fragt "Was ist gerade aktuell?", "Wo war ich stehen geblieben?" oder �
 ### Bei Session-Ende
 
 Wenn Ines die Session beendet, "Feierabend" sagt oder ein natürliches Ende erreicht ist:
-1. Prüfe [[03 Bereiche/Termine/Termine.md]] auf Termine für den nächsten Tag und erinnere kurz daran.
+1. Prüfe [[03 Bereiche/Termine/Termine.md]] auf Termine für den nächsten Tag und erinnere kurz daran. Ausnahme: Ines arbeitet sonntags in der Regel nicht – an einem Freitag deshalb nicht nur an Termine für Samstag erinnern, sondern auch an Termine für den kommenden Montag (da sie am Sonntag vermutlich nicht in einer Session ist).
 2. Anbieten:
    - Einen Daily-Note-Eintrag in 05 Daily Notes/ mit einer Zusammenfassung des Tages zu erstellen
    - Neue Erkenntnisse als Notizen zu speichern
