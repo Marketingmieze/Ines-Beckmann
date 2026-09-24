@@ -41,7 +41,9 @@ Hier bin ich, Ines von fairbeamtet.de, und ich erklär dir, warum sich das für 
 
 ## Was sich 2027 ändert
 
-Es gibt da diese Zahl, die Versicherungspflichtgrenze. Amtlich heißt sie Jahresarbeitsentgeltgrenze, kurz JAEG. Sie legt fest, ab welchem Bruttojahresgehalt der Wechsel in die private Krankenversicherung für Arbeitnehmer überhaupt möglich ist. Wer darunter verdient, unterliegt der Versicherungspflicht in der gesetzlichen Krankenversicherung, kurz GKV. Gesetzlich Versicherte müssen die Grenze also überschreiten, um in die PKV wechseln zu dürfen.
+**Das betrifft dich in beiden Fällen, egal ob angestellt oder in der Wartephase vor der Verbeamtung.**
+
+Es gibt da diese Zahl, die Versicherungspflichtgrenze. Amtlich heißt sie Jahresarbeitsentgeltgrenze, kurz JAEG. Sie legt fest, ab welchem Bruttojahresgehalt der Wechsel in die private Krankenversicherung für Arbeitnehmer überhaupt möglich ist. Wer darunter verdient, unterliegt der Versicherungspflicht in der gesetzlichen Krankenversicherung (GKV) und muss die Grenze erst überschreiten, um als gesetzlich Versicherter in die PKV wechseln zu dürfen.
 
 **Nicht verwechseln:** Die Versicherungspflichtgrenze (JAEG) ist etwas anderes als die Beitragsbemessungsgrenze. Die Beitragsbemessungsgrenze legt fest, bis zu welchem Einkommen GKV-Beiträge berechnet werden. Für den PKV-Wechsel zählt nur die Versicherungspflichtgrenze.
 
@@ -53,11 +55,15 @@ Es gibt da diese Zahl, die Versicherungspflichtgrenze. Amtlich heißt sie Jahres
 
 ## Wenn du einfach nur angestellt bist
 
-Als Arbeitnehmer ohne Beamtenstatus bist du gesetzlich versichert, solange dein Einkommen unter der Versicherungspflichtgrenze liegt. Verdienst du 2026 über 77.400 Euro, kannst du jetzt noch in die PKV wechseln. Schaffst du 2027 die geplanten 84.150 Euro nicht, bleibst du in der GKV, bis dein Gehalt so weit gestiegen ist. Das können Jahre sein.
+**Für dich, wenn du keinen Bezug zu einem Beamtenverhältnis hast, sondern ganz normal wechseln willst.**
+
+Als Arbeitnehmer ohne Beamtenstatus bist du versicherungspflichtig in der GKV, solange dein Einkommen unter der Versicherungspflichtgrenze liegt. Verdienst du 2026 über 77.400 Euro, kannst du jetzt noch in die PKV wechseln. Schaffst du 2027 die geplanten 84.150 Euro nicht, bleibst du in der GKV, bis dein Gehalt so weit gestiegen ist. Das können Jahre sein.
 
 **Achtung:** Bist du am 31. Dezember 2026 bereits privat vollversichert, gilt für dich weiterhin die alte, niedrigere Grenze. Diesen Bestandsschutz sicherst du dir nur, wenn der Wechsel bis zum Stichtag tatsächlich abgeschlossen ist. Als Privatversicherter profitierst du dann dauerhaft von der niedrigeren Hürde.
 
 ## Warum dich das in der Zwischenphase trifft
+
+**Für dich, wenn du Referendar warst oder bist und gerade auf deine feste Verbeamtung wartest.**
 
 Solange du Beamter auf Widerruf warst, also im Referendariat, hattest du Beihilfe und konntest dich unabhängig vom Einkommen privat versichern. Sobald du in ein Angestelltenverhältnis wechselst, zum Beispiel weil du auf deine feste Übernahme wartest, gilt das nicht mehr.
 
@@ -101,3 +107,4 @@ Wir von fairbeamtet.de haben schon über 20.000 Menschen zur PKV beraten, Beamte
 - Zwei zitierbare Kernsätze nach dem Schema aus [[04 Ressourcen/SEO-GEO/AI Citations Strategie.md|AI Citations Strategie]] ergänzt (fett hervorgehoben, eigenständig verständlich).
 - Intro-Format an echte fairbeamtet.de-Artikel angepasst: Autor-Zeile mit Aktualisierungsdatum + "Das Wichtigste zusammengefasst"-Box direkt am Anfang (siehe Screenshot-Vorlage von Ines, 24.09.2026). Inhaltsverzeichnis links wird vermutlich automatisch vom CMS aus den Überschriften generiert, daher hier nicht manuell nachgebaut.
 - Konsistenz-Check 24.09.2026: Titel und mehrere Textstellen behaupteten die 84.150€-Zahl als feststehende Tatsache, obwohl es laut eigenem Hinweis im Artikel nur ein Verordnungsentwurf ist. Titel, Zusammenfassungs-Box und zwei Textstellen auf "soll"/"geplant"/"voraussichtlich" umgestellt, damit es zur Meta-Description und zum Achtung-Hinweis passt.
+- NeuronWriter-Keywords (Basic, von Ines 24.09.2026) eingearbeitet: GKV, Beitragsbemessungsgrenze (als Abgrenzung erklärt), Erhöhung, JAEG, Jahresarbeitsentgeltgrenze, Versicherte, Arbeitnehmer, Versicherungspflicht, "Wechsel in die private Krankenversicherung", Anhebung, regulär, außerordentlich, versicherungsfrei, privat versichern, privat krankenversichern. Alles inhaltlich sauber eingebaut, u. a. eine echte Abgrenzung Versicherungspflichtgrenze vs. Beitragsbemessungsgrenze ergänzt (Mehrwert, keine Keyword-Füllung). "77.400" von 4 auf 3 Vorkommen reduziert, um im Zielkorridor (1-3x) zu bleiben.
