@@ -41,6 +41,18 @@ Wortwörtliche Zitate von fairbeamtet.de (Stand: 2026-09-23), die den Stil gut z
 - „Mit über 20.000 Beratungen und mehr als 1.000 Top-Bewertungen gehören wir zu den Top 3 Versicherungsmaklern" – Vertrauen durch Zahlen statt Behauptungen
 - „Tipps aus über 30 Jahren persönliche Erfahrung als Spezialmakler für Beamte." – Kompetenznachweis konkret, nicht abstrakt
 
+## Artikel-Aufbau (Intro-Format)
+
+Jeder Artikel beginnt mit demselben festen Baustein, bevor der eigentliche Text losgeht:
+
+1. **Autor-Zeile** mit Avatar/Icon, Autorenname (i. d. R. Sven Höhne) und Aktualisierungsdatum, z. B. „Aktualisiert am: 12.06.2026."
+2. **Zusammenfassungs-Box "Das Wichtigste zusammengefasst"** direkt danach, optisch hervorgehoben (auf der Website pink hinterlegt), mit 3–5 Bulletpoints, die die Kernaussagen des Artikels auf einen Blick liefern. Jeder Punkt muss für sich stehen und verständlich sein, ohne den Rest des Artikels zu kennen.
+3. Erst danach folgt die eigentliche Einleitung/der Fließtext.
+
+Das Inhaltsverzeichnis links auf der Seite wird automatisch aus den Überschriften generiert, dafür muss im Artikeltext nichts Extra gebaut werden, nur auf eine saubere Überschriftenstruktur (H2/H3) achten.
+
+Referenz-Screenshot: von Ines am 24.09.2026 geteilt, Beispielartikel „Private Krankenversicherung für Beamte".
+
 ## Weiterführend
 
 Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Fairbeamtet.md|KI-Klang vermeiden – Fairbeamtet]].
