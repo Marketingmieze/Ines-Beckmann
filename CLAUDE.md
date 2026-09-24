@@ -46,16 +46,24 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 
 Prüfe 01 Inbox/ auf neue Notizen, zeige was drin liegt, und biete an, die Einträge in die passenden Ordner einzusortieren.
 
+Prüfe außerdem [[03 Bereiche/Termine/Termine.md]] auf anstehende Termine (heute und die nächsten Tage) und nenne sie beim Begrüßen kurz.
+
+### Wenn Ines einen Termin nennt
+
+Termin mit Datum/Uhrzeit in [[03 Bereiche/Termine/Termine.md]] unter "Anstehende Termine" eintragen. Es gibt (noch) keinen echten Kalender-Connector in dieser Session – diese Liste ist der Ersatz, bis das geklärt ist.
+
 ### Kontext bei Bedarf
 
 Wenn Ines fragt "Was ist gerade aktuell?", "Wo war ich stehen geblieben?" oder Ähnliches: Lies die letzten 2–3 Daily Notes in 05 Daily Notes/ und die aktiven Projekt-Dateien in 02 Projekte/ (beide Marken-Unterordner) um ein Briefing zu geben.
 
 ### Bei Session-Ende
 
-Wenn Ines die Session beendet oder ein natürliches Ende erreicht ist, anbieten:
-1. Einen Daily-Note-Eintrag in 05 Daily Notes/ mit einer Zusammenfassung des Tages zu erstellen
-2. Neue Erkenntnisse als Notizen zu speichern
-3. Die Inbox aufzuräumen, falls nötig
+Wenn Ines die Session beendet, "Feierabend" sagt oder ein natürliches Ende erreicht ist:
+1. Prüfe [[03 Bereiche/Termine/Termine.md]] auf Termine für den nächsten Tag und erinnere kurz daran.
+2. Anbieten:
+   - Einen Daily-Note-Eintrag in 05 Daily Notes/ mit einer Zusammenfassung des Tages zu erstellen
+   - Neue Erkenntnisse als Notizen zu speichern
+   - Die Inbox aufzuräumen, falls nötig
 
 ---
 
