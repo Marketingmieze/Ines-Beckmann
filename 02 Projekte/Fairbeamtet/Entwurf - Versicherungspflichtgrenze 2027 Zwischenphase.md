@@ -5,40 +5,48 @@ erstellt: 2026-09-24
 quelle: "Recherche zu Versicherungspflichtgrenze 2027 (pkv.de, privat-patienten.de), Zielgruppen-Check mit Claudian"
 ---
 
-# Entwurf: Zwischen zwei Beamtenverhältnissen? Warum 2026 dein letztes Jahr mit der alten Versicherungspflichtgrenze ist
+# Entwurf: Warum 2026 dein letztes Jahr mit der alten Versicherungspflichtgrenze ist
 
 > [!info] Status
 > Artikel-Entwurf, noch nicht veröffentlicht. Gehört zu [[02 Projekte/Fairbeamtet/Content-Erstellung.md|Content-Erstellung]]. Vor Veröffentlichung prüfen: Die neue Versicherungspflichtgrenze 2027 (84.150€) steht in einem Verordnungsentwurf, den Kabinett und Bundesrat noch final absegnen müssen. Zahl vor Publikation nochmal gegenchecken.
 
 ## Wichtiger Hinweis zur Zielgruppe
 
-**Dieser Artikel ist NICHT für alle Beamten relevant.** Wer schon fest verbeamtet ist, kann sowieso jederzeit unabhängig vom Einkommen in die PKV wechseln, die Versicherungspflichtgrenze betrifft euch nicht. Zielgruppe hier: alle, die gerade zwischen zwei Beamtenverhältnissen stecken, zum Beispiel nach dem Referendariat auf eine feste Stelle warten und in der Zwischenzeit angestellt sind.
+**Für fest verbeamtete Leser ist die Versicherungspflichtgrenze kein Thema.** Ihr könnt sowieso jederzeit unabhängig vom Einkommen in die PKV wechseln. Der Artikel richtet sich an zwei andere Gruppen, die bei fairbeamtet.de genauso richtig sind: erstens alle, die gerade zwischen zwei Beamtenverhältnissen stecken (z. B. nach dem Referendariat auf die feste Übernahme warten), und zweitens ganz normale Angestellte, die selbst über einen Wechsel in die PKV nachdenken. Beide Gruppen dürfen sich bei uns beraten lassen, nicht nur Beamte.
 
 ---
 
 ## Einleitung
 
-Kennst du das? Referendariat fertig, Prüfung bestanden, und dann heißt es erstmal warten. Auf die freie Planstelle. Auf die Zusage vom Land. Auf die endgültige Verbeamtung.
+Zwei Situationen, ein gemeinsames Problem.
 
-In dieser Zwischenzeit bist du meistens kein Beamter mehr. Sondern ganz normal angestellt, oft sogar im öffentlichen Dienst, aber eben ohne Beihilfeanspruch. Und genau das kann dir 2027 ziemlich auf die Füße fallen, wenn du jetzt nichts tust.
+Die erste: Referendariat fertig, Prüfung bestanden, und dann heißt es erstmal warten. Auf die freie Planstelle. Auf die Zusage vom Land. Auf die endgültige Verbeamtung. In dieser Zwischenzeit bist du meistens kein Beamter mehr, sondern ganz normal angestellt, oft sogar im öffentlichen Dienst, aber eben ohne Beihilfeanspruch.
 
-Hier bin ich, Ines von fairbeamtet.de, und ich erklär dir, warum diese Wartephase teurer wird, wenn du 2026 nicht handelst.
+Die zweite: Du bist einfach angestellt, verdienst gut, und überlegst schon länger, ob die private Krankenversicherung nicht die bessere Wahl für dich wäre.
+
+Beide trifft 2027 dieselbe Regel, und beiden kann sie ziemlich auf die Füße fallen, wenn sie jetzt nichts tun.
+
+Hier bin ich, Ines von fairbeamtet.de, und ich erklär dir, warum sich das für dich 2026 noch lohnt und ab 2027 schwerer wird. Egal ob du (angehender) Beamter bist oder ganz normal angestellt.
 
 ## Was sich 2027 ändert
 
 Es gibt da diese Zahl, die Versicherungspflichtgrenze. Sie legt fest, ab welchem Bruttojahresgehalt Angestellte überhaupt in die private Krankenversicherung wechseln dürfen.
 
-2026 liegt sie bei **77.400 Euro**. 2027 soll sie auf **84.150 Euro** steigen. Das ist kein normaler Inflationsausgleich. Da kommt ein außerordentlicher Aufschlag von 3.600 Euro obendrauf, beschlossen im Rahmen der Gesundheitsreform.
+2026 liegt sie bei **77.400 Euro**. 2027 soll sie auf **84.150 Euro** steigen. Der Sprung ist ungewöhnlich groß, weil im Rahmen der Gesundheitsreform ein zusätzlicher Aufschlag von 3.600 Euro obendrauf kommt.
 
-**Achtung:** Der genaue Betrag steht noch in einem Verordnungsentwurf. Kabinett und Bundesrat müssen final zustimmen. Aber die Richtung ist klar. Der Wechsel in die PKV wird für Angestellte 2027 schwerer, nicht leichter.
+**Achtung:** Der genaue Betrag steht noch in einem Verordnungsentwurf. Kabinett und Bundesrat müssen final zustimmen. Die Richtung ist trotzdem klar: Der Wechsel in die PKV wird für Angestellte 2027 schwerer.
+
+## Wenn du einfach nur angestellt bist
+
+Verdienst du 2026 über 77.400 Euro, kannst du jetzt noch wechseln. Schaffst du 2027 die neuen 84.150 Euro nicht, musst du warten, bis dein Gehalt so weit gestiegen ist. Das können Jahre sein.
+
+**Achtung:** Bist du am 31. Dezember 2026 bereits privat vollversichert, gilt für dich weiterhin die alte, niedrigere Grenze. Diesen Bestandsschutz sicherst du dir nur, wenn der Wechsel bis zum Stichtag tatsächlich abgeschlossen ist.
 
 ## Warum dich das in der Zwischenphase trifft
 
 Solange du Beamter auf Widerruf warst, also im Referendariat, hattest du Beihilfe und warst PKV-berechtigt, egal wie viel du verdienst. Sobald du in ein Angestelltenverhältnis wechselst, zum Beispiel weil du auf deine feste Übernahme wartest, gilt das nicht mehr.
 
-Verdienst du in dieser Zeit unter der Versicherungspflichtgrenze, greift die Pflichtversicherung. Du musst zurück in die gesetzliche Krankenkasse. Ohne Wahlmöglichkeit.
-
-2026 reicht dafür ein Einkommen unter 77.400 Euro. 2027 müsstest du über 84.150 Euro verdienen, um der Pflicht zu entgehen. Für die meisten Berufseinsteiger im öffentlichen Dienst ist das utopisch.
+Verdienst du in dieser Zeit unter der Versicherungspflichtgrenze, greift die Pflichtversicherung. Du musst zurück in die gesetzliche Krankenkasse. Ohne Wahlmöglichkeit. Für die meisten Berufseinsteiger im öffentlichen Dienst sind die künftigen 84.150 Euro utopisch.
 
 ## Die Lösung: Anwartschaftsversicherung
 
@@ -53,11 +61,17 @@ Genau diese Anwartschaft solltest du dir am besten schon jetzt sichern, bevor di
 
 ## Was du jetzt tun solltest
 
-1. **Prüfen, ob du aktuell zwischen zwei Beamtenverhältnissen steckst** oder das in den nächsten Monaten der Fall sein wird.
-2. **Anwartschaftsversicherung abschließen, solange du noch PKV-berechtigt bist**, also idealerweise direkt zum Ende des Referendariats.
-3. **Nicht bis 2027 warten.** Mit jedem Monat, den du zögerst, wird die Hürde für einen späteren PKV-Wechsel höher.
+**Wenn du zwischen zwei Beamtenverhältnissen steckst:**
+1. Prüfen, ob das aktuell schon der Fall ist oder in den nächsten Monaten wird.
+2. Anwartschaftsversicherung abschließen, solange du noch PKV-berechtigt bist, also idealerweise direkt zum Ende des Referendariats.
 
-Wir von fairbeamtet.de haben schon vielen Referendaren und Berufseinsteigern genau durch diese Zwischenphase geholfen. Trag dich einfach in unser Formular für die kostenlose Online-Beratung ein, dann schauen wir gemeinsam, ob und wie sich eine Anwartschaft für dich lohnt.
+**Wenn du einfach angestellt bist und wechseln willst:**
+1. Prüfen, ob dein Gehalt aktuell über 77.400 Euro liegt.
+2. Den Wechsel jetzt anstoßen. Bis zum 31. Dezember 2026 muss er durch sein.
+
+**Für beide gilt:** Jeder Monat, den du zögerst, macht die Hürde für 2027 größer.
+
+Wir von fairbeamtet.de haben schon über 20.000 Menschen zur PKV beraten, Beamte genauso wie Angestellte, die gerade erst überlegen, ob sie wechseln sollen. Trag dich einfach in unser Formular für die kostenlose Online-Beratung ein, dann schauen wir gemeinsam, was für deine Situation die beste Lösung ist.
 
 ## Notizen
 
