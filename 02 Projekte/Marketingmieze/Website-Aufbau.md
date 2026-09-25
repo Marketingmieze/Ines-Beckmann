@@ -16,11 +16,25 @@ In Bearbeitung – Ideenfindung, Website noch nicht online.
 
 ## Nächste Schritte
 
-- [ ] Konkrete Themen-/Content-Ideen sammeln
+- [x] Konkrete Themen-/Content-Ideen sammeln (persönlicher Blog-Winkel)
 - [ ] Branding festlegen (Farben, Schrift, Logo)
+- [ ] Erste Artikel-Idee ausformulieren und Feedback einholen
 
 ## Notizen
 
 Schreibstil frecher und direkter als fairbeamtet.de, siehe [[00 Kontext/Marketingmieze/Schreibstil.md|Schreibstil]].
 
 Inspiration/Ressourcen: [[04 Ressourcen/Social Media Wachstum/Social Media Wachstum.md|Social Media Wachstum]].
+
+## Content-Ideen: persönlicher Blog (Rants über unehrliche Marketing-Praktiken)
+
+Entscheidung 2026-09-25: siehe [[00 Kontext/Marketingmieze/ICP.md|ICP]] für den strategischen Hintergrund.
+
+1. "Warum '10.000€ Umsatz in 30 Tagen'-Werbung dich anlügt (und wie das Spiel wirklich funktioniert)"
+2. "Clickbait-Überschriften: Warum sie kurzfristig funktionieren und langfristig dein Image killen"
+3. "Der Social-Proof-Trick, den fast jeder Coach nutzt – und warum er oft erfunden ist"
+4. "Künstliche Verknappung ('nur noch 3 Plätze!') – wann sie ehrlich ist und wann Betrug"
+5. "Warum die meisten 'organisches Wachstum'-Erfolgsgeschichten Bullshit sind"
+6. "KI-generierter Content ohne Kennzeichnung: Wo die Grenze zur Verbrauchertäuschung verläuft"
+7. "Fake-Bewertungen und gekaufte Follower: Wie man sie erkennt (aus erster Reihe)"
+8. "Die Wahrheit über 'Persönliche Note' in Corporate-Marketing – wie viel davon ist wirklich persönlich?"
