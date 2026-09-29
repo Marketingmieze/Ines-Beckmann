@@ -9,6 +9,15 @@ quelle: "Agenten-Report (Content-/SEO-Team von Sven Höhne), ungefähr Februar/M
 > [!info] Kontext
 > Status-Report aus dem Agenten-gestützten Content-/SEO-System, das Sven für fairbeamtet.de nutzt (Agenten u. a. Günter, Rainer, Nils, Greta, Konrad, Axel, Gerd, Mia). Relevant für [[02 Projekte/Fairbeamtet/SEO-GEO-Optimierung.md|SEO-GEO-Optimierung]] und [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]].
 
+## Messwerte-Verlauf
+
+Neue Reports/Zahlen hier als zusätzliche Zeile ergänzen, nicht alte Werte überschreiben – so bleibt sichtbar, wann welcher Stand galt.
+
+| Datum | Kennzahl | Wert | Quelle |
+|---|---|---|---|
+| Februar/März 2026 | KI-Zitate (GEO) | 271, Platz 2 der Nische | Agenten-Report |
+| Februar/März 2026 | GA4 Key Events (Leads) | 0 (Leads werden manuell gezählt) | Agenten-Report |
+
 ## Wo wir stark sind
 
 1. **Wir messen.** Das ist seltener, als man denkt. Die meisten Agenturen liefern Meinungen. Wir haben Search Console, Ahrefs, feste Growing-/Decaying-Schwellen, einen Monatsrhythmus und eine Protokollpflicht für jede Änderung. Ab heute kann niemand mehr behaupten, etwas habe gewirkt, ohne es zu zeigen.

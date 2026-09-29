@@ -35,7 +35,7 @@ Backlink- und Ranking-Vergleich der drei: siehe [[02 Projekte/Fairbeamtet/SEO-GE
 
 ## Monitoring (laufend)
 
-Turnus: monatlich (Datum anpassen, sobald Tool-Zugang steht).
+Turnus: monatlich (Datum anpassen, sobald Tool-Zugang steht). Neue Befunde immer als zusätzliche Zeile in der Tabelle unten ergänzen, nicht bestehende Zeilen überschreiben – so bleibt der Verlauf sichtbar.
 
 Was wir im Blick behalten:
 - **Rankings**: Positionen zu unseren Kern-Keywords im Vergleich zu den drei Wettbewerbern
