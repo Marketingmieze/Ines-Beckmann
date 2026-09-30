@@ -31,7 +31,7 @@ In Bearbeitung – Setup-Phase, weitere Infos und Analysen folgen.
 - [ ] KI Share of Voice messbar machen – Brand Radar läuft seit Mai ohne einen einzigen Prompt
 - [ ] Beratungsanfragen messbar machen – GA4 hat keine Key Events (3.146 Sitzungen, 0 gemessene Conversions)
 - [ ] Rank Tracker über die 20 Geld-Keywords hinaus erweitern, damit Keyword-Bänder nicht nur Gesamtwerte sind
-- [ ] Fehlende Rohdaten für die Baseline (2026-09) nachtragen – siehe „Offene Werte" in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]]
+- [ ] Gegenchecken, ob die ursprünglich für Beamtenservice.de notierten Referring-Domains-Werte (774/668) evtl. eine Verwechslung mit fairbeamtet.de waren – siehe Hinweis in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]]
 - [ ] Kopierte/übernommene Seiten (z. B. DBV vs. Debeka) identifizieren und Differenzierungsstrategie festlegen
 - [ ] Konkrete Meilensteine bis 31.12.2027 definieren
 
@@ -49,7 +49,7 @@ Siehe auch die laufende, marktweite Konkurrenzbeobachtung in [[02 Projekte/Fairb
 
 Jede Messung ist eine eigene Datei nach dem Muster `YYYY-MM.md` in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/|Messungen]] (eine Zeile/Datei je Monat). Überblick über alle Monate: [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Fortschritt.base|Fortschritt.base]] mit fünf Ansichten (Der Abstand, Traffic-Wert und Traffic, Keywords nach Position, Unsere eigenen Zahlen, Links und Autorität).
 
-Baseline: [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]] – Stand 30.09.2026: Anteil 14,0 %, Abstand Traffic-Wert 6,15×, Rückstand Platz-1-Keywords 85, Rückstand Top-3-Keywords 162, Abstand Traffic 2,36×.
+Baseline (live per Ahrefs/SEOgets gezogen): [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]] – Stand 30.09.2026: Anteil 15,0 %, Abstand Traffic-Wert 5,66×, Rückstand Platz-1-Keywords 85, Rückstand Top-3-Keywords 158, Abstand Traffic 2,18×. (Rückstand Platz-1 deckt sich exakt mit der ursprünglichen Schätzung, die anderen Werte wurden leicht korrigiert – Details in der Messnotiz.)
 
 Methodik-Fixpunkte für vergleichbare Monate (Details siehe Baseline-Notiz): Keyword-Bänder immer mit Länderfilter DE, verweisende Domains immer mit Modus-Angabe (subdomains/domain), GSC-Zeitraum immer 28 Tage.
 
