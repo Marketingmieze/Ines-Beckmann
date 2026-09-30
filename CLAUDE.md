@@ -4,7 +4,7 @@ Dieses Vault ist das Zweite Gehirn von Ines.
 
 ## Über mich
 
-Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[00 Kontext/Über mich.md|00 Kontext/Über mich]].
+Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[Über mich|00 Kontext/Über mich]].
 
 Ines hat zwei klar getrennte Marken in diesem Vault:
 - **fairbeamtet.de** – ihr Arbeitgeber, Versicherungsberatung für Beamte & Co.
