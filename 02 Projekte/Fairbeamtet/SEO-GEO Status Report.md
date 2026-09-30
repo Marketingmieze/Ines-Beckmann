@@ -23,6 +23,9 @@ Neue Reports/Zahlen hier als zusätzliche Zeile ergänzen, nicht alte Werte übe
 | 30.09.2026 | Backlinks (live) | 2.168 Links von 775 Referring Domains | Ahrefs |
 | 30.09.2026 | Backlinks (all time) | 4.305 Links von 1.327 Referring Domains | Ahrefs |
 | 30.09.2026 | Top-Traffic-Seite | /familienzuschlag-fuer-beamte/ – 403 Besuche/Monat, 57 Keywords, Top-Keyword "beamte kinderzuschlag" (Pos. 10) | Ahrefs |
+| 30.09.2026 | GSC Klicks/Tag (Ø Monat) | Von 399,7 (Okt 2025) auf 150,2 (Sept 2026) – ca. −62% über 11 Monate, fast durchgehend fallend seit März 2026 | SEO Gets (GSC) |
+| 30.09.2026 | GSC Impressions/Tag (Ø Monat) | Von 21.434 (Okt 2025) auf 8.452 (Sept 2026) – ca. −61% im selben Zeitraum | SEO Gets (GSC) |
+| 30.09.2026 | GSC Ø Position (impressions-gewichtet, Monat) | Stabil zwischen 7,8 und 10,1 über den gesamten Zeitraum, keine erkennbare Verschlechterung | SEO Gets (GSC) |
 
 ## Wo wir stark sind
 
@@ -87,6 +90,66 @@ Größter Befund: Bei allen drei Mitbewerbern läuft das Linkwachstum gegenläuf
 - 🚫 Presselogos und Bewertungssterne nachbauen. Korreliert hier nicht mit Erfolg, bei Sternen kommt zusätzlich ein Compliance-Vorbehalt dazu.
 
 **Neue Messregel:** Künftige Monatschecks stützen sich auf Keywords und Top-3-Platzierungen statt auf Traffic-Schätzungen. Gezählte Positionen sind durch Ahrefs' Modellwechsel nicht verfälschbar, geschätzter Traffic schon.
+
+## GSC-Traffic-Trend: Anhaltender Rückgang seit Herbst 2025 (Stand 30.09.2026)
+
+**Befund:** Die tägliche Klick- und Impressions-Zahl laut Google Search Console (via SEO Gets) sinkt seit Oktober 2025 fast durchgehend, mit einer kurzen Stabilisierung im Januar/Februar 2026 und einem beschleunigten Abfall seit März 2026.
+
+| Monat | Ø Klicks/Tag | Ø Impressions/Tag |
+|---|---|---|
+| Okt 2025 | 399,7 | 21.434 |
+| Nov 2025 | 387,7 | 24.558 |
+| Dez 2025 | 258,3 | 19.159 |
+| Jan 2026 | 350,0 | 23.299 |
+| Feb 2026 | 363,2 | 21.935 |
+| Mär 2026 | 260,3 | 16.711 |
+| Apr 2026 | 268,4 | 15.451 |
+| Mai 2026 | 226,5 | 13.253 |
+| Jun 2026 | 248,6 | 13.473 |
+| Jul 2026 | 212,4 | 10.754 |
+| Aug 2026 | 196,2 | 10.607 |
+| Sep 2026 (bis 28.) | 150,2 | 8.452 |
+
+Der Rückgang ist **breit über fast das gesamte Seitenportfolio verteilt** (nicht auf eine einzelne Seite konzentriert) und betrifft Mobile, Desktop und Tablet proportional ähnlich – kein geräte- oder seitenspezifisches Muster.
+
+**Wichtigste Beobachtung: Die Ø Position ist stabil geblieben** (zwischen 7,8 und 10,1 über den ganzen Zeitraum, keine erkennbare Verschlechterung). Das spricht gegen ein reines Ranking-Problem einzelner Seiten – die Inhalte ranken ungefähr gleich gut wie vorher, werden aber trotzdem deutlich seltener angezeigt.
+
+**Zeitliche Korrelation mit Google-Updates:** Seit dem Website-Relaunch am 16.01.2026 gab es eine ungewöhnliche Häufung von Google-Algorithmus-Updates, vor allem Spam-Updates:
+
+| Datum | Update |
+|---|---|
+| 11.12.2025 | December 2025 Core Update |
+| 16.01.2026 | **Website-Relaunch fairbeamtet.de** |
+| 05.02.2026 | February 2026 Discover Core Update |
+| 24.03.2026 | March 2026 Spam Update |
+| 27.03.2026 | March 2026 Core Update |
+| 21.05.2026 | May 2026 Core Update |
+| 24.06.2026 | June 2026 Spam Update |
+| 18.08.2026 | August 2026 Spam Update |
+| 24.09.2026 | September 2026 Spam Update |
+
+Der beschleunigte Abwärtstrend setzt genau im März 2026 ein (zwei Updates in einer Woche: Spam- + Core-Update) und hält seitdem trotz fünf weiterer Updates an. Der Relaunch selbst (16.01.) fällt eher in eine Phase mit stabilem/leicht steigendem Traffic und scheint nicht der unmittelbare Auslöser zu sein.
+
+**Einordnung (Hypothese, nicht durch die Daten kausal belegt):** Die Häufung von Spam-Updates 2026 bei gleichzeitig stabiler Position passt zu einem Szenario, in dem Google bestimmte Content-Muster oder die Domain insgesamt global abwertet (z. B. weniger Long-Tail-Varianten werden ausgespielt), ohne dass sich die Position der bereits gemessenen Top-Keywords sichtbar verschlechtert. Es gab im gleichen Zeitraum keine größeren manuellen Content-Änderungen, die den Rückgang erklären würden (nur punktuelle Optimierungen im Februar 2026).
+
+**Abgleich mit Ahrefs-Rankinghistorie (30.09.2026):** Ahrefs bestätigt den Trend unabhängig von GSC. Gesamtzahl gerankter Keywords (DE) fällt von 1.588 (Okt 2025) auf 519 (Sept 2026), ca. −67%:
+
+| Monat | Top 3 | Top 4–10 | Top 11+ |
+|---|---|---|---|
+| Okt 2025 | 292 | 585 | 711 |
+| Nov 2025 | 329 | 575 | 265 |
+| Jan 2026 | 226 | 443 | 336 |
+| Mär 2026 | 251 | 414 | 316 |
+| Jun 2026 | 274 | 314 | 118 |
+| Sep 2026 | 174 | 278 | 67 |
+
+Top 3 bleibt relativ stabil (292 → 174, mit Ausschlag bis 305 im Juli), während **Top 11+ einbricht** (711 → 67) – passt zum GSC-Befund „Position stabil, Sichtbarkeit bricht ein": Die Seite verliert vor allem Long-Tail-Rankings, nicht die Top-Platzierungen. Domain Rating bleibt im Zeitraum stabil zwischen 3,0 und 4,7 – das Backlink-Profil ist nicht die Ursache.
+
+**Vorbehalt zum Sprung Okt→Nov 2025:** Der große Einbruch bei Top 11+ zwischen Okt und Nov 2025 (711→265) fällt zeitlich mit der Google-Meldung vom 12.09.2025 zusammen, wonach GSC und Drittanbieter-Tools seitdem deutlich weniger Impressions/Keywords für Positionen jenseits Platz 20 melden (siehe Messregel oben: „Gezählte Positionen sind durch Ahrefs' Modellwechsel nicht verfälschbar, geschätzter Traffic schon"). Dieser eine Sprung ist daher wahrscheinlich teilweise ein Mess-Artefakt, keine echte Ranking-Verschlechterung. Der Rückgang seit März 2026 ist davon unabhängig und bleibt real (Top 11+ fällt allein seitdem nochmal von 316 auf 67, −79%).
+
+**Technik-Check (Ahrefs Site Audit, 30.09.2026):** Health Score 99/100 bei 960 gecrawlten URLs, nur 5 kleinere Fehler (Sitemap-Redirects), keine neuen Noindex-Massenfehler, keine Duplicate-Content- oder Crawling-Probleme. Im Vergleich zum vorherigen Crawl hat sich fast nichts verschlechtert (28 Noindex-Seiten unverändert seit Langem, −134 langsame Seiten = Verbesserung). Ein technisches Problem scheidet damit als Ursache aus.
+
+**Offene Nachforschung:** Ursache nicht abschließend geklärt – das ist ein Korrelations-, kein Kausalbefund. Technik, Backlinks und Rankinghistorie sind geprüft und scheiden als Erklärung aus; es bleibt die Hypothese der Google-Spam-/Core-Updates seit März 2026. Ein Blick auf Search-Console-Meldungen zu manuellen Maßnahmen/Sicherheitsproblemen (nicht per API abrufbar, nur direkt in GSC einsehbar) wäre der nächste Schritt, falls die Ursache weiter verfolgt werden soll.
 
 ## Offene Punkte
 
