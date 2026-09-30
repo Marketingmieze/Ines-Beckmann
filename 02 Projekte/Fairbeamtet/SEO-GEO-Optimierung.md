@@ -23,3 +23,5 @@ In Bearbeitung
 Verwandte Ressourcen-Themen: [[04 Ressourcen/SEO-GEO/SEO-GEO.md|SEO-GEO]], [[04 Ressourcen/Ahrefs/Ahrefs.md|Ahrefs]], [[04 Ressourcen/SEO-GEO/AI Citations Strategie.md|AI Citations Strategie]], [[04 Ressourcen/Keywords/Keywords.md|Keywords]].
 
 Aktueller Stand & Prioritäten: siehe [[02 Projekte/Fairbeamtet/SEO-GEO Status Report.md|SEO-GEO Status Report]]. Top-Priorität laut Report: einen Artikel komplett durch die Kette ziehen und die Lead-Messung (GA4 Key Events) reparieren.
+
+Technischer Fix-Plan (Redirect-Ketten, 404-Fehler): [[02 Projekte/Fairbeamtet/Technischer SEO-Fix - Redirects und 404s.md|Technischer SEO-Fix – Redirects und 404s]].
