@@ -17,6 +17,12 @@ Neue Reports/Zahlen hier als zusätzliche Zeile ergänzen, nicht alte Werte übe
 |---|---|---|---|
 | Februar/März 2026 | KI-Zitate (GEO) | 271, Platz 2 der Nische | Agenten-Report |
 | Februar/März 2026 | GA4 Key Events (Leads) | 0 (Leads werden manuell gezählt) | Agenten-Report |
+| 30.09.2026 | Domain Rating (DR) | 5.0 (Ahrefs Rank 29.365.447) | Ahrefs |
+| 30.09.2026 | Organische Keywords | 372 (davon 121 in Top 3) | Ahrefs |
+| 30.09.2026 | Geschätzter organischer Traffic | 1.473 Besuche/Monat (Traffic-Wert ~1.148 $) | Ahrefs |
+| 30.09.2026 | Backlinks (live) | 2.168 Links von 775 Referring Domains | Ahrefs |
+| 30.09.2026 | Backlinks (all time) | 4.305 Links von 1.327 Referring Domains | Ahrefs |
+| 30.09.2026 | Top-Traffic-Seite | /familienzuschlag-fuer-beamte/ – 403 Besuche/Monat, 57 Keywords, Top-Keyword "beamte kinderzuschlag" (Pos. 10) | Ahrefs |
 
 ## Wo wir stark sind
 
