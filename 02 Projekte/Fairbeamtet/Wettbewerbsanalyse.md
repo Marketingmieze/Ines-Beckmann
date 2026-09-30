@@ -47,7 +47,7 @@ Quellen: Ahrefs, SEOgets (Search Console + GA4) – sobald Zugang von Sven da is
 
 | Datum | Wettbewerber | Bereich | Befund | Aktion |
 |---|---|---|---|---|
-| | | | | |
+| 28.09.2026 | beamtenberater | Traffic/URL-Struktur | Ahrefs-Export (Top Pages, 282 Seiten) zeigt geschätzten Traffic von ~11.529 auf ~3.669 Besuche/Monat eingebrochen (−68 %). 162 Seiten als "Lost", 116 als "New" markiert – ein Teil davon ist vermutlich eine URL-Umstellung (Wegfall des abschließenden Slashes, z. B. `/kindergeld-beamte/` → `/kindergeld-beamte`), aber selbst die Paare zusammen zeigen echten Traffic-Rückgang, kein reines Zähl-Artefakt. Deckt sich mit dem Absturz-Befund aus [[02 Projekte/Fairbeamtet/SEO-GEO Status Report.md\|SEO-GEO Status Report]] (+153 % Backlinks, −60 % Top-3 bei beamtenberater). Rohdaten: [[07 Anhänge/beamtenberater.com-top-pages-subdomains-all_2026-09-28_09-47-06.csv]] | Beobachten, ob sich der Rückgang nach der URL-Umstellung stabilisiert oder weiter fällt |
 
 ## Notizen
 
