@@ -26,11 +26,13 @@ Der Projektname ist Programm: Wir wollen ihm mit besseren Zahlen den Stinkefinge
 
 In Bearbeitung – Setup-Phase, weitere Infos und Analysen folgen.
 
+## Umsetzungsplan
+
+Sven hat einen detaillierten 13-Wochen-Umsetzungsplan ausgearbeitet (509 Stunden, Stand 30.09.2026): [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plan]]. Er deckt Woche 1 bis 13 ab (Messbarkeit & Quick Fixes → Vergleichsseite → Snippets/Redaktionsleitlinie → verlorene PKV-Seiten → Kostenseite → Transaktionsseiten → Themenlücken → DU-Seiten → eigene Bestandsdaten → Hygiene) plus eine Parallelspur (Fachpressen-Reputation, Markenbekanntheit, monatliche Messung). Das ist aktuell unsere konkrete Aufgabenliste für die nächsten Wochen.
+
 ## Nächste Schritte
 
-- [ ] KI Share of Voice messbar machen – Brand Radar läuft seit Mai ohne einen einzigen Prompt
-- [ ] Beratungsanfragen messbar machen – GA4 hat keine Key Events (3.146 Sitzungen, 0 gemessene Conversions)
-- [ ] Rank Tracker über die 20 Geld-Keywords hinaus erweitern, damit Keyword-Bänder nicht nur Gesamtwerte sind
+- [ ] Umsetzung des [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plans]] mit Woche 1 starten (Brand Radar, GA4 Key Event, Rank Tracker – siehe dort)
 - [ ] Gegenchecken, ob die ursprünglich für Beamtenservice.de notierten Referring-Domains-Werte (774/668) evtl. eine Verwechslung mit fairbeamtet.de waren – siehe Hinweis in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]]
 - [ ] Kopierte/übernommene Seiten (z. B. DBV vs. Debeka) identifizieren und Differenzierungsstrategie festlegen
 - [ ] Konkrete Meilensteine bis 31.12.2027 definieren
