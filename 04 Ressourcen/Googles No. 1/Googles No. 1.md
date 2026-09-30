@@ -29,7 +29,16 @@ Bis September 2026 gibt es **keine belastbare öffentliche Aussage** darüber, w
 
 Nach Priorität für fairbeamtet.de sortiert. Sobald zu einem Punkt eine Detailnotiz existiert, steht sie dahinter.
 
-**Reihenfolge:** Erst stehen alle zehn Hebel als Wissen, danach wird der Bestand von fairbeamtet.de geprüft und umgesetzt. So von Sven entschieden am 27.09.2026. ✅ **Alle zehn stehen seit 27.09.2026. Die Bestandsprüfung ist damit an der Reihe.**
+**Reihenfolge:** Erst stehen alle zehn Hebel als Wissen, danach wird der Bestand von fairbeamtet.de geprüft und umgesetzt. So von Sven entschieden am 27.09.2026. ✅ **Alle zehn stehen seit 27.09.2026. Die Bestandsprüfung läuft.**
+
+## Bestandsprüfung (laufend)
+
+Prüft die zehn Hebel gegen die reale fairbeamtet.de. Wächst hebel für hebel.
+
+| Hebel | Bestandsaufnahme |
+|---|---|
+| 1 – Trust und E-E-A-T | [[Trust und E-E-A-T Bestandsaufnahme]] — Autorenprofile und Nachteile-Abschnitte schon da, Vergütung nicht zentral offengelegt, keine Redaktionsleitlinie |
+| 3 – Topical Authority (Beihilfe-Teil) | [[Beihilfe-System Bestandsaufnahme]] — Matrix vollständig, aber nur 7,6 % des Traffics; App-Seiten tragen 63 % davon |
 
 | # | Hebel | Detailnotiz |
 |---|---|---|
