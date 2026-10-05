@@ -56,7 +56,11 @@ Im `Product`-Schema im Code steht eine Bildquelle von **ProvenExpert** mit **4,8
 
 Im sichtbaren Karussell auf der Seite steht aber **"Trustindex"** mit **4,9 Sternen aus 1.006 Bewertungen**.
 
-Das sind zwei unterschiedliche Plattformen mit unterschiedlichen Zahlen auf derselben Seite. Das wirkt uneinheitlich und wäre bei einer genaueren Prüfung (durch Google oder auch einfach durch einen aufmerksamen Nutzer) nicht stimmig. Frage an Sven: Nutzen wir ProvenExpert und Trustindex parallel? Falls ja, sollten wir uns auf eine Quelle konsolidieren, damit überall dieselbe, nachvollziehbare Zahl steht.
+Das sind zwei unterschiedliche Zahlen auf derselben Seite. Das wirkt uneinheitlich und wäre bei einer genaueren Prüfung (durch Google oder auch einfach durch einen aufmerksamen Nutzer) nicht stimmig.
+
+**Wahrscheinlichste Erklärung (Ines' Vermutung, nach Recherche plausibel):** Trustindex ist kein eigenständiges, konkurrierendes Bewertungsportal, sondern ein Sammel-Widget, das Bewertungen von über 100 Plattformen (u. a. Google, Facebook, vermutlich auch ProvenExpert) automatisiert zieht und auf der Website anzeigt. Die Differenz (1.114 vs. 1.006) kommt dadurch wahrscheinlich nicht von zwei konkurrierenden Systemen, sondern entweder von einer Caching-Verzögerung (Trustindex hat die ProvenExpert-Zahl noch nicht neu synchronisiert) oder von einer leicht anderen Berechnungsgrundlage (andere/zusätzliche Quellen einbezogen).
+
+**Frage an Sven/Entwickler, präzisiert:** Zieht sich das Trustindex-Widget seine Zahl automatisch und aktuell von ProvenExpert, oder gibt es einen Cache, der manuell/regelmäßig aktualisiert werden muss? Falls Cache: Wie oft synchronisiert er sich, und lässt sich das beschleunigen oder manuell anstoßen?
 
 ### 2. Das Schema selbst zeigt weiterhin nur 1 Review-Objekt statt echter Einzelbewertungen
 
@@ -78,6 +82,16 @@ Auch wenn die Wahrscheinlichkeit für die schwereren Fälle gering ist, hier all
 ## Warum das für uns trotzdem wichtig ist, auch bei geringer Wahrscheinlichkeit
 
 Unabhängig von der reinen Risiko-Wahrscheinlichkeit: Wir wollen als Marke Vertrauen ausstrahlen, das ist einer unserer Kernwerte (siehe Schreibstil: "Vertrauen über konkrete Zahlen aufbauen, nicht über Behauptungen"). Zwei unterschiedliche Bewertungszahlen auf derselben Website widersprechen genau diesem Prinzip, auch wenn Google oder eine KI es nie bemerken würde, ein aufmerksamer menschlicher Besucher könnte es trotzdem auffallen und als unseriös wahrnehmen. Das ist also auch ein Marken-/Trust-Thema, nicht nur ein technisches SEO-Detail.
+
+## Welche Plattform ist das stärkere Vertrauenssignal: ProvenExpert oder Trustindex?
+
+Recherche-Ergebnis: **ProvenExpert ist klar das stärkere, bekanntere Vertrauenssignal** für unseren Kontext.
+
+- ProvenExpert ist die bekannteste Bewertungsplattform im DACH-Raum speziell für Dienstleister, Berater und Coaches, über 200.000 Unternehmen nutzen sie aktiv, 2,4 Millionen Profile insgesamt. Das ProvenExpert-Siegel wird von Nutzern erkannt und mit Seriosität assoziiert.
+- Trustindex ist dagegen eher ein technisches Anzeige-Werkzeug ohne eigene Bekanntheit als Vertrauens-Marke. Es sammelt selbst keine Bewertungen, sondern zieht sie nur von anderen Quellen (auch von ProvenExpert) und zeigt sie an.
+- Für unsere Zielgruppe (Beamte, die laut ICP besonders vorsichtig gegenüber unseriösen Angeboten sind) ist ein erkennbares, etabliertes Siegel wie ProvenExpert wertvoller als ein unbekanntes Widget-Tool.
+
+**Empfehlung:** Falls wir uns auf eine sichtbare Quelle konsolidieren, sollte das ProvenExpert sein, sowohl im Schema-Code als auch im sichtbaren Widget auf der Seite. Trustindex kann technisch im Hintergrund bleiben, falls es nur zur Darstellung dient, aber die Marke, die der Nutzer sieht, sollte ProvenExpert sein.
 
 ## Nächste Schritte
 
