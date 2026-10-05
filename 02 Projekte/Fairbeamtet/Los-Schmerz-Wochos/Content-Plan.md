@@ -82,8 +82,9 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
   Sechs Seiten ranken bei Google, stehen aber in keiner Sitemap. Darunter ausgerechnet deine beste PKV-Seite. Trag sie nach.
 - [ ] **Weiterleitung /bu-du/ korrigieren** — 1 h
   Die alte Kategorie /bu-du/ leitet auf einen einzelnen Meinungsartikel. Ein Übersichtsbereich gehört auf einen Übersichtsbereich. Zieh die Weiterleitung um.
-- [ ] **Vier Tippfehler-URLs aufräumen** — 1 h
+- [x] **Vier Tippfehler-URLs aufräumen** — 1 h ✅ 2026-10-05
   Vier kaputte Adressen ranken bei Google, zum Beispiel 'familienzuschlag-fuer-bebten'. Auf 404 setzen oder auf die richtige Seite leiten.
+  Erledigt: `/familienzuschlag-fuer-bebten/` und `/familienzuschlag-fuer-beamten/` → 301 auf `/familienzuschlag-fuer-beamte/`; `/debeka-or-dbv-pkv-beamte-vergleich/` → 301 auf `/debeka-oder-dbv-pkv-beamte-vergleich/`; `/fairbeamtet.de/familienzuschlag-fuer-beamte/` leitete schon vorher korrekt weiter. Per HTTP-Check am 05.10.2026 verifiziert.
 - [ ] **AggregateRating und FAQPage entfernen** — 2 h
   Auf deinen Seiten steckt Markup für Sternebewertungen und FAQ. Google zeigt beides nicht mehr: Sterne für die eigene Firma sind ausgeschlossen, FAQ seit Mai abgeschafft. Code ohne Gegenwert. Raus damit.
 - [ ] **Autoren-Slugs bond-007 und fairbeamtet korrigieren** — 2 h
