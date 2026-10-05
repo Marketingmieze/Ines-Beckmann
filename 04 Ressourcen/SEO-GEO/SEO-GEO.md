@@ -33,4 +33,5 @@ Verwandt: [[04 Ressourcen/Keywords/Keywords.md|Keywords]]
 
 ## Notizen
 
--
+- [[04 Ressourcen/SEO-GEO/AI Citations Strategie.md|AI Citations Strategie]]
+- [[04 Ressourcen/SEO-GEO/Review-Schema Problem (Product-Markup mit Bewertungen).md|Review-Schema Problem (Product-Markup mit Bewertungen)]] – offener technischer Punkt, mit Sven/Entwickler klären
