@@ -62,3 +62,5 @@ Allgemeine, marktweite Konkurrenzbeobachtung (auch andere Wettbewerber) bleibt i
 
 ## Notizen
 
+- [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Marken-Kannibalisierung.md|Marken-Kannibalisierung]] (05.10.2026): GSC-Analyse zur Woche-1-Aufgabe – Team-Seite und Tipps-Artikel ranken im Schnitt sogar vor der Startseite für „fairbeamtet", HTTP-Duplikat ohne Weiterleitung bestätigt.
+
