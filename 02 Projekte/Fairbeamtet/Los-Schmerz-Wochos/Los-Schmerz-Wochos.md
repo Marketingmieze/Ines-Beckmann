@@ -33,6 +33,7 @@ Sven hat einen detaillierten 13-Wochen-Umsetzungsplan ausgearbeitet (509 Stunden
 ## Nächste Schritte
 
 - [ ] Umsetzung des [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plans]] mit Woche 1 starten (Brand Radar, GA4 Key Event, Rank Tracker – siehe dort)
+- [ ] Mit Sven klären: Claude als Datenquelle im Ahrefs Brand Radar Report einschalten (aktuell „off", wie Grok) – Entscheidung liegt bei ihm, nicht eigenständig umgestellt. Prompts dafür liegen schon fertig in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Brand Radar Prompts.md|Brand Radar Prompts]].
 - [ ] Gegenchecken, ob die ursprünglich für Beamtenservice.de notierten Referring-Domains-Werte (774/668) evtl. eine Verwechslung mit fairbeamtet.de waren – siehe Hinweis in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]]
 - [ ] Kopierte/übernommene Seiten (z. B. DBV vs. Debeka) identifizieren und Differenzierungsstrategie festlegen
 - [ ] Konkrete Meilensteine bis 31.12.2027 definieren
