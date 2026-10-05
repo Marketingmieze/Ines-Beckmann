@@ -91,8 +91,9 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
   Deine Autorenseiten laufen unter 'bond-007' und 'fairbeamtet'. Das hilft keinem Leser und keiner Suchmaschine. Entweder richtige Namen oder auf noindex.
 - [ ] **Zugang für KI-Crawler und Snippet-Freigabe prüfen** — 1 h
   Sieh in der robots.txt und in den Meta-Tags nach, ob du KI-Crawler aussperrst oder Snippets verbietest. Wenn ja, kommst du in keiner KI-Antwort vor. Reine Ja-oder-nein-Frage.
-- [ ] **VideoObject auf /youtube/ ergänzen** — 2 h
+- [ ] **VideoObject auf /youtube/ ergänzen** — 2 h ⚠️ Prüfung 2026-10-05: vermutlich falsche URL im Plan
   Sieben Videos liegen in deiner Video-Sitemap, aber die Seite /youtube/ hat kein Video-Markup. Nachtragen.
+  Live-Check: `/youtube/` ist nur eine dünne Übersichtsseite ohne eigene Video-Einbettungen (kein Video markierbar, daher zu Recht kein Markup). Die eigentliche Video-Seite liegt eine Ebene tiefer unter `/youtube/youtube-pkv-videos-beamte/` und hat dort bereits vollständiges VideoObject-Markup für 20 Videos (mehr als die 7 aus der Sitemap), zuletzt bearbeitet 21.05.2026. Die 7 Sitemap-Videos selbst sitzen einzeln in Artikeln (z. B. `/pkv-beitragsanpassung-2025/`), dort generiert Rank Math das Markup automatisch. Aktuell kein Handlungsbedarf erkennbar – mit Sven abgleichen, ob er eine andere URL meinte.
 - [ ] **Zwei H1 auf der Vergleichsseite auf eine reduzieren** — 0,5 h
   Deine wichtigste PKV-Seite hat zwei H1-Überschriften mit fast gleichem Text. Eine bleibt, aus der anderen wird eine H2.
 - [ ] **Datum auf der Vergleichsseite setzen** — 0,5 h
