@@ -73,10 +73,12 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
     Die beiden kommen in keiner einzigen Ergebnisliste deiner fünf Kernbegriffe vor. Raus oder begründen, warum sie drin bleiben.
 - [ ] **Marken-Kannibalisierung auflösen** — 7,5 h
   Wenn jemand 'fairbeamtet' googelt, wirft Google über dreißig deiner Seiten in den Ring. Deine Startseite steht auf Platz 4,91. Für deinen eigenen Namen. Vor einem Jahr war es Platz 1.
-  - [ ] Prüfen, welche Seiten für 'fairbeamtet' ausgespielt werden — 3 h
+  - [x] Prüfen, welche Seiten für 'fairbeamtet' ausgespielt werden — 3 h ✅ 2026-10-07
     Search Console auf, nach 'fairbeamtet' filtern, nach Seiten gruppieren. Du siehst sofort, wer der Startseite den Platz wegnimmt: Team-Seite, Online-Beratung, sogar ein Tipps-Artikel.
+    Ergebnis 07.10.2026 (Search Console, letzte 3 Monate, Suchanfrage 'fairbeamtet', 61 Seiten gesamt): Startseite (HTTPS) 337 Klicks/674 Impressionen. Danach Team-Seite `/geschaeftsfuehrung-und-mitarbeiter/` 19/614, die unverschlüsselte `http://www.fairbeamtet.de/` 19/518, `/service/` 8/269, `/service/online-beratung/` 4/642, der Tipps-Artikel `/5-tipps-pkv-vergleich/` 4/597. Zusätzlich drei Experten-Profilseiten (Elenor Habtezghi, Dennis Kaspers, Sebastian Gottschalk) mit zusammen über 500 Impressionen bei nur 2 Klicks. Bestätigt die Vermutung aus dem Plan eins zu eins: Team-Seite, Online-Beratung und Tipps-Artikel nehmen der Startseite tatsächlich Sichtbarkeit weg. Auffällig zusätzlich: Online-Beratung hat mit 642 Impressionen sogar mehr als die Team-Seite.
   - [ ] http://www.fairbeamtet.de/ auf HTTPS weiterleiten — 1,5 h
     Die unverschlüsselte Adresse steht eigenständig im Index und sammelt Impressionen ein. Eine Weiterleitung fehlt. Sag es dem Hoster oder mach es im Plugin.
+    Beleg aus der Prüfung oben: `http://www.fairbeamtet.de/` sammelt allein 19 Klicks und 518 Impressionen für den Markennamen – fast so viel wie die Team-Seite.
   - [ ] Startseite als eindeutige Markenseite kenntlich machen — 3 h
     Titel, Beschreibung und das Organisation-Markup so setzen, dass Google kapiert: Das hier ist fairbeamtet. Nicht die Team-Seite.
 - [ ] **Sitemap ergänzen: der /pkv-ratgeber/-Zweig fehlt** — 1,5 h
