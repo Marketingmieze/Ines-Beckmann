@@ -23,7 +23,7 @@ Vorgehen je Zeile: `site:fairbeamtet.de/debeka-private-krankenversicherung-beamt
 
 | Zielseite / Sprungmarke | Angezeigter Title bei Google | Echter `<title>`-Tag | Weicht ab? |
 |---|---|---|---|
-| Hauptseite (debeka-private-krankenversicherung-beamte-test) | *(ausfüllen)* | *(ausfüllen)* | *(ausfüllen)* |
+| Hauptseite (debeka-private-krankenversicherung-beamte-test) | Debeka Private Krankenversicherung für Beamte im Test | *(als Nächstes ausfüllen)* | *(ausfüllen)* |
 | Anker 1 – tarif b30 | *(ausfüllen – Sprungmarke im Inhaltsverzeichnis der Seite nachschauen)* | – | – |
 | Anker 2 – tarif bc | *(ausfüllen)* | – | – |
 | Anker 3 – tarif b20k | *(ausfüllen)* | – | – |
@@ -44,6 +44,10 @@ Aus Schritt 3 des Plans (Tabelle Seite 5) – das sind die fünf Anfragen mit 0 
 | debeka tarif b20k | 286 / 6,7 | *(ausfüllen)* | *(ja/nein)* | *(ausfüllen)* | *(ausfüllen)* |
 | debeka zahnersatz beamte | 364 / 8,6 | *(ausfüllen)* | *(ja/nein)* | *(ausfüllen)* | *(ausfüllen)* |
 | debeka pkv tarife | 255 / 8,8 | *(ausfüllen)* | *(ja/nein)* | *(ausfüllen)* | *(ausfüllen)* |
+
+### Beobachtungen unterwegs
+
+- **07.10.2026:** Im echten Google-Ergebnis für die Hauptseite sind trotz Plan-Aussage (C2: Sterne "nicht zulässig") **weiterhin Sterne sichtbar** (4,9 ★★★★★, 1.114 Bewertungen). Widerspricht der Annahme im Schlachtplan, dass die Google-Berechtigung dafür fehlt – entweder zeigt Google sie trotzdem (Altbestand, Caching) oder die Einschätzung im Plan muss geprüft werden. Relevant für Entscheidung #5 (Sven).
 
 ### Ergebnis Schritt 0 (Fazit nach dem Ausfüllen)
 

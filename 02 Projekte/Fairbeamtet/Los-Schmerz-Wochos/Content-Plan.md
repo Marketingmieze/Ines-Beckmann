@@ -10,7 +10,7 @@ autor: Sven Höhne
 
 Umsetzungsplan nach Wochen · Stand 30. September 2026
 
-1:1 übernommen aus dem PDF von Sven: [[07 Anhänge/Content-Plan fairbeamtet.de 2026-09-30.pdf]] – zum späteren Abgleich mit Sven unverändert gelassen, keine eigenen Kürzungen oder Ergänzungen.
+1:1 übernommen aus dem PDF von Sven: [[07 Anhänge/Content-Plan fairbeamtet.de 2026-09-30.pdf]] – Aufgabentexte und Struktur bleiben unverändert zum späteren Abgleich. Fortschritt wird direkt als Haken markiert, ausführliche Ergebnisse stehen in [[Fortschritt-Notizen]].
 
 ## Was dieser Plan kostet
 
@@ -50,7 +50,7 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
     Schreib Fragen auf, die ein Beamter wirklich bei ChatGPT eintippt. Nicht 'PKV Beamte', sondern 'Lohnt sich die private Krankenversicherung für mich als Lehrer?'. Dann ab damit in den Report.
   - [ ] Claude als Datenquelle einschalten — 0,25 h
     Im Report steht Claude auf 'off'. Du willst dort Nummer eins sein und misst es nicht. Ein Schalter, fünf Minuten.
-    Hinweis 07.10.2026: Claude verbraucht pro Prompt und Update 8 Prüfungen, jede andere Plattform (ChatGPT, Übersicht mit KI, KI-Modus, Gemini, Perplexity, Copilot) nur 1. Grundplan hat 300 Prüfungen/Monat. Bei 25 Prompts × 6 Plattformen × wöchentlich sind es bereits 600/Monat – also schon ohne Claude über dem Kontingent. Mit Claude dazu (25 × 4 × 14) sind es 1.400/Monat. Mehrkosten über Pay-as-you-go (€0,0187/Prüfung): ohne Claude ca. €5,61/Monat, mit Claude ca. €20,57/Monat – vorausgesetzt Pay-as-you-go ist aktiviert, sonst wird das Tracking bei Kontingent-Ende vermutlich gekappt. Vor dem Umschalten prüfen: Pay-as-you-go an, oder Frequenz/Prompt-Anzahl reduzieren.
+    → Hinweis zu Mehrkosten siehe [[Fortschritt-Notizen#Claude-Hinweis (Woche 1 – Brand Radar mit Prompts füllen)]]
 - [ ] **Beratungsanfrage in GA4 als Key Event einrichten** — 4 h
   Du hattest im September 3.146 Besucher und null gemessene Anfragen. Du weißt also nicht, welche Seite Kunden bringt. Solange das so bleibt, optimierst du auf Klicks statt auf Geschäft.
   - [ ] Ziel definieren: welches Formular zählt — 1 h
@@ -75,10 +75,10 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
   Wenn jemand 'fairbeamtet' googelt, wirft Google über dreißig deiner Seiten in den Ring. Deine Startseite steht auf Platz 4,91. Für deinen eigenen Namen. Vor einem Jahr war es Platz 1.
   - [x] Prüfen, welche Seiten für 'fairbeamtet' ausgespielt werden — 3 h ✅ 2026-10-07
     Search Console auf, nach 'fairbeamtet' filtern, nach Seiten gruppieren. Du siehst sofort, wer der Startseite den Platz wegnimmt: Team-Seite, Online-Beratung, sogar ein Tipps-Artikel.
-    Ergebnis 07.10.2026 (Search Console, letzte 3 Monate, Suchanfrage 'fairbeamtet', 61 Seiten gesamt): Startseite (HTTPS) 337 Klicks/674 Impressionen. Danach Team-Seite `/geschaeftsfuehrung-und-mitarbeiter/` 19/614, die unverschlüsselte `http://www.fairbeamtet.de/` 19/518, `/service/` 8/269, `/service/online-beratung/` 4/642, der Tipps-Artikel `/5-tipps-pkv-vergleich/` 4/597. Zusätzlich drei Experten-Profilseiten (Elenor Habtezghi, Dennis Kaspers, Sebastian Gottschalk) mit zusammen über 500 Impressionen bei nur 2 Klicks. Bestätigt die Vermutung aus dem Plan eins zu eins: Team-Seite, Online-Beratung und Tipps-Artikel nehmen der Startseite tatsächlich Sichtbarkeit weg. Auffällig zusätzlich: Online-Beratung hat mit 642 Impressionen sogar mehr als die Team-Seite.
+    → Ergebnis siehe [[Fortschritt-Notizen#Marken-Kannibalisierung (Woche 1)]]
   - [ ] http://www.fairbeamtet.de/ auf HTTPS weiterleiten — 1,5 h
     Die unverschlüsselte Adresse steht eigenständig im Index und sammelt Impressionen ein. Eine Weiterleitung fehlt. Sag es dem Hoster oder mach es im Plugin.
-    Beleg aus der Prüfung oben: `http://www.fairbeamtet.de/` sammelt allein 19 Klicks und 518 Impressionen für den Markennamen – fast so viel wie die Team-Seite.
+    → Beleg siehe [[Fortschritt-Notizen#Marken-Kannibalisierung (Woche 1)]]
   - [ ] Startseite als eindeutige Markenseite kenntlich machen — 3 h
     Titel, Beschreibung und das Organisation-Markup so setzen, dass Google kapiert: Das hier ist fairbeamtet. Nicht die Team-Seite.
 - [ ] **Sitemap ergänzen: der /pkv-ratgeber/-Zweig fehlt** — 1,5 h
@@ -87,7 +87,7 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
   Die alte Kategorie /bu-du/ leitet auf einen einzelnen Meinungsartikel. Ein Übersichtsbereich gehört auf einen Übersichtsbereich. Zieh die Weiterleitung um.
 - [x] **Vier Tippfehler-URLs aufräumen** — 1 h ✅ 2026-10-05
   Vier kaputte Adressen ranken bei Google, zum Beispiel 'familienzuschlag-fuer-bebten'. Auf 404 setzen oder auf die richtige Seite leiten.
-  Erledigt: `/familienzuschlag-fuer-bebten/` und `/familienzuschlag-fuer-beamten/` → 301 auf `/familienzuschlag-fuer-beamte/`; `/debeka-or-dbv-pkv-beamte-vergleich/` → 301 auf `/debeka-oder-dbv-pkv-beamte-vergleich/`; `/fairbeamtet.de/familienzuschlag-fuer-beamte/` leitete schon vorher korrekt weiter. Per HTTP-Check am 05.10.2026 verifiziert.
+  → Erledigt, Details siehe [[Fortschritt-Notizen#Vier Tippfehler-URLs aufräumen (Woche 1) — ✅ 2026-10-05]]
 - [ ] **AggregateRating und FAQPage entfernen** — 2 h
   Auf deinen Seiten steckt Markup für Sternebewertungen und FAQ. Google zeigt beides nicht mehr: Sterne für die eigene Firma sind ausgeschlossen, FAQ seit Mai abgeschafft. Code ohne Gegenwert. Raus damit.
 - [ ] **Autoren-Slugs bond-007 und fairbeamtet korrigieren** — 2 h
@@ -96,13 +96,13 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
   Sieh in der robots.txt und in den Meta-Tags nach, ob du KI-Crawler aussperrst oder Snippets verbietest. Wenn ja, kommst du in keiner KI-Antwort vor. Reine Ja-oder-nein-Frage.
 - [x] **VideoObject auf /youtube/ ergänzen** — 2 h ⚠️ Prüfung 2026-10-05: vermutlich falsche URL im Plan
   Sieben Videos liegen in deiner Video-Sitemap, aber die Seite /youtube/ hat kein Video-Markup. Nachtragen.
-  Live-Check: `/youtube/` ist nur eine dünne Übersichtsseite ohne eigene Video-Einbettungen (kein Video markierbar, daher zu Recht kein Markup). Die eigentliche Video-Seite liegt eine Ebene tiefer unter `/youtube/youtube-pkv-videos-beamte/` und hat dort bereits vollständiges VideoObject-Markup für 20 Videos (mehr als die 7 aus der Sitemap), zuletzt bearbeitet 21.05.2026. Die 7 Sitemap-Videos selbst sitzen einzeln in Artikeln (z. B. `/pkv-beitragsanpassung-2025/`), dort generiert Rank Math das Markup automatisch. Aktuell kein Handlungsbedarf erkennbar – mit Sven abgleichen, ob er eine andere URL meinte.
+  → Prüfung siehe [[Fortschritt-Notizen#VideoObject auf /youtube/ ergänzen (Woche 1) — ⚠️ Prüfung 2026-10-05]]
 - [x] **Zwei H1 auf der Vergleichsseite auf eine reduzieren** — 0,5 h ✅ 2026-10-05
   Deine wichtigste PKV-Seite hat zwei H1-Überschriften mit fast gleichem Text. Eine bleibt, aus der anderen wird eine H2.
-  Konkretisiert 05.10.2026: Gemeinte Seite ist `/pkv-ratgeber/pkv-vergleich-beamte/` (per Live-Check gefunden: „Private Krankenversicherung für Beamte: Vergleich der wichtigsten Anbieter" und „PKV für Beamte: Vergleich der wichtigsten Anbieter" – auch die dünne „Linkliste" mit ~387 Wörtern Content aus Woche 2 ist dieselbe Seite). Laut Ines sind die zwei H1 responsive Varianten: eine nur für Desktop/Tablet, eine nur für Mobile sichtbar (per CSS ausgeblendet). Für Google ändert das nichts – beide stehen im HTML, CSS-Sichtbarkeit wird beim Crawling nicht berücksichtigt. Fix entsprechend nicht "Duplikat löschen", sondern eine der beiden `<h1>` auf `<h2>` (oder reines Styling-Element ohne Heading-Tag) herabstufen, responsive Verhalten bleibt erhalten.
+  → Details siehe [[Fortschritt-Notizen#Zwei H1 auf der Vergleichsseite (Woche 1) — ✅ 2026-10-05]]
 - [ ] **Datum auf der Vergleichsseite setzen** — 0,5 h
   Die Seite hat weder Veröffentlichungs- noch Änderungsdatum. Bei einem Geldthema ist das ein Abwertungsgrund. Setz beides und pfleg es.
-  Ergänzung 05.10.2026: Die Seite hat auch **keinen Autor** gesetzt – gehört eigentlich zur Woche-10-Aufgabe „Kontaktdaten und Autorenprofile prüfen", aber da man ohnehin hier ist, macht es Sinn, es mitzunehmen. Die Seite läuft über ein Elementor-Theme-Builder-Template; möglich, dass (1) der native WP-Autor am Beitrag nicht gesetzt ist oder (2) das Template gar kein Autor-Widget anzeigt. Eine Template-Änderung betrifft wahrscheinlich mehrere Ratgeber-Seiten gleichzeitig – deshalb bewusst Sven überlassen statt eigenständig am gemeinsamen Template zu ändern.
+  → Ergänzung (fehlender Autor) siehe [[Fortschritt-Notizen#Datum auf der Vergleichsseite setzen (Woche 1)]]
 - [ ] **Vergütung auf der Vergleichsseite offenlegen** — 0,5 h
   Dort steht 'kostenlos'. Nicht, dass die Gesellschaft dich bezahlt. Ein ehrlicher Satz dazu. Dein Konkurrent schreibt es hin, du nicht.
 - [ ] **Gruppe 'PKV Test Gesellschaften' nach Position aufschlüsseln** — 2 h
