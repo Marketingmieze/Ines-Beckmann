@@ -1,61 +1,59 @@
 filters:
   and:
     - file.inFolder("02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen")
-
 formulas:
-  anteil_prozent: 'if(anteil_traffic_wert, (anteil_traffic_wert * 100).round(1) + " %", "")'
-
+  anteil_prozent: if(anteil_traffic_wert, (anteil_traffic_wert * 100).round(1) + " %", "")
 properties:
   datum:
-    displayName: "Datum"
+    displayName: Datum
   anteil_traffic_wert:
-    displayName: "Unser Anteil am gemeinsamen Wert"
+    displayName: Unser Anteil am gemeinsamen Wert
   formula.anteil_prozent:
-    displayName: "Unser Anteil (%)"
+    displayName: Unser Anteil (%)
   abstand_traffic_wert:
-    displayName: "Abstand Traffic-Wert (×)"
+    displayName: Abstand Traffic-Wert (×)
   rueckstand_platz1:
-    displayName: "Rückstand Platz-1-Keywords"
+    displayName: Rückstand Platz-1-Keywords
   rueckstand_top3:
-    displayName: "Rückstand Top-3-Keywords"
+    displayName: Rückstand Top-3-Keywords
   abstand_traffic:
-    displayName: "Abstand Traffic (×)"
+    displayName: Abstand Traffic (×)
   messsystem:
-    displayName: "Messsystem"
+    displayName: Messsystem
   traffic_wert_uns:
-    displayName: "Traffic-Wert – uns"
+    displayName: Traffic-Wert – uns
   traffic_wert_beamtenservice:
-    displayName: "Traffic-Wert – Beamtenservice"
+    displayName: Traffic-Wert – Beamtenservice
   traffic_uns:
-    displayName: "Traffic – uns"
+    displayName: Traffic – uns
   traffic_beamtenservice:
-    displayName: "Traffic – Beamtenservice"
+    displayName: Traffic – Beamtenservice
   keywords_platz1_uns:
-    displayName: "Platz 1 – uns"
+    displayName: Platz 1 – uns
   keywords_platz1_beamtenservice:
-    displayName: "Platz 1 – Beamtenservice"
+    displayName: Platz 1 – Beamtenservice
   keywords_top3_uns:
-    displayName: "Top 3 – uns"
+    displayName: Top 3 – uns
   keywords_top3_beamtenservice:
-    displayName: "Top 3 – Beamtenservice"
+    displayName: Top 3 – Beamtenservice
   keywords_4_10_uns:
-    displayName: "Platz 4–10 – uns"
+    displayName: Platz 4–10 – uns
   keywords_4_10_beamtenservice:
-    displayName: "Platz 4–10 – Beamtenservice"
+    displayName: Platz 4–10 – Beamtenservice
   gsc_klicks:
-    displayName: "GSC Klicks"
+    displayName: GSC Klicks
   gsc_impressionen:
-    displayName: "GSC Impressionen"
+    displayName: GSC Impressionen
   gsc_position:
-    displayName: "GSC Ø-Position"
+    displayName: GSC Ø-Position
   anfragen:
-    displayName: "Beratungsanfragen"
+    displayName: Beratungsanfragen
   ki_share_of_voice:
-    displayName: "KI Share of Voice"
+    displayName: KI Share of Voice
   dr_uns:
-    displayName: "DR – uns"
+    displayName: DR – uns
   dr_beamtenservice:
-    displayName: "DR – Beamtenservice"
+    displayName: DR – Beamtenservice
   refdomains_uns_subdomains:
     displayName: "Verw. Domains – uns (Modus: subdomains)"
   refdomains_uns_domain:
@@ -64,10 +62,9 @@ properties:
     displayName: "Verw. Domains – Beamtenservice (Modus: subdomains)"
   refdomains_beamtenservice_domain:
     displayName: "Verw. Domains – Beamtenservice (Modus: domain)"
-
 views:
   - type: table
-    name: "Der Abstand"
+    name: Der Abstand
     order:
       - file.name
       - datum
@@ -77,9 +74,8 @@ views:
       - rueckstand_top3
       - abstand_traffic
       - messsystem
-
   - type: table
-    name: "Traffic-Wert und Traffic"
+    name: Traffic-Wert und Traffic
     order:
       - file.name
       - datum
@@ -87,9 +83,8 @@ views:
       - traffic_wert_beamtenservice
       - traffic_uns
       - traffic_beamtenservice
-
   - type: table
-    name: "Keywords nach Position"
+    name: Keywords nach Position
     order:
       - file.name
       - datum
@@ -99,9 +94,8 @@ views:
       - keywords_top3_beamtenservice
       - keywords_4_10_uns
       - keywords_4_10_beamtenservice
-
   - type: table
-    name: "Unsere eigenen Zahlen"
+    name: Unsere eigenen Zahlen
     order:
       - file.name
       - datum
@@ -110,9 +104,8 @@ views:
       - gsc_position
       - anfragen
       - ki_share_of_voice
-
   - type: table
-    name: "Links und Autorität"
+    name: Links und Autorität
     order:
       - file.name
       - datum
