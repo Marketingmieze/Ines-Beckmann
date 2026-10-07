@@ -42,21 +42,29 @@ Aus Schritt 3 des Plans (Tabelle Seite 5) – das sind die fünf Anfragen mit 0 
 | tarif b30 debeka | 523 / 6,3 | KI-Kasten, dann organisch: 1. Debeka (Vertragsgrundlagen), dann "Weitere Fragen"-Box, 2. beamten-pkv-vergleichen.de, **3. wir** | Ja, großer "Übersicht mit KI"-Kasten mit 5 Stichpunkten. Thomas Schösser/Finanztip (2×)/Debeka (2×) zitiert bei den ersten 4, **fairbeamtet.de nur beim letzten Punkt (Beitragsrückerstattung/BRE)** – dabei, aber ganz am Ende, nicht bei den prominenten Punkten oben | 3. organisches Ergebnis (nicht ganz unten, aber nach KI-Kasten + Debeka + 1 Konkurrent). Sterne 4,9★ (1.114) sichtbar | Debeka selbst: Vertragsgrundlagen direkt von der Quelle; beamten-pkv-vergleichen.de: "Debeka PKV Beamte: Bekannt heißt passend?" |
 | debeka tarif bc leistungen | 642 / 9,9 | KI-Kasten, dann organisch: 1. Debeka (Vertragsgrundlagen), 2. Debeka (Private KV für Beamte), 3. OPTINVEST Beamte, dann "Weitere Fragen"-Box, dann Werbe-Kasten "Ähnliche Produkte", dann 4. beamtenservice.de, **5. erst dann wir** | Ja, zitiert Debeka, OPTINVEST Beamte, Lukas Mehlhardt – fairbeamtet.de NICHT zitiert | Ganz unten, nach 4 anderen Ergebnissen + 2 Zwischenkästen – passt zur Positions-Angabe 9,9 aus dem Plan. Sterne 4,9★ (1.114) weiterhin sichtbar | Debeka selbst dominiert mit 2 Treffern; OPTINVEST und beamtenservice: Fachbegriff-Erklärseiten zum Tarif BC |
 | debeka tarif b20k | 286 / 6,7 | KI-Kasten, dann organisch: 1. Debeka (Vertragsgrundlagen), **2. wir**, 3. beamten-pkv-vergleichen.de, 4. Finanztip-Forenthread | Ja, zitiert Finanztip, eine weitere Quelle, "versicherungen-s...", Debeka – fairbeamtet.de NICHT zitiert | Platz 2, direkt nach Debeka selbst – gute Sichtbarkeit trotzdem 0 Klicks. Sterne 4,9★ (1.114) sichtbar | Debeka selbst: Vertragsgrundlagen; beamten-pkv-vergleichen.de: "Bekannt heißt passend?"; Finanztip: Forendiskussion mit Antwortzahlen |
-| debeka zahnersatz beamte | 364 / 8,6 | *(ausfüllen)* | *(ja/nein)* | *(ausfüllen)* | *(ausfüllen)* |
-| debeka pkv tarife | 255 / 8,8 | *(ausfüllen)* | *(ja/nein)* | *(ausfüllen)* | *(ausfüllen)* |
+| debeka zahnersatz beamte | 364 / 8,6 | KI-Kasten, dann organisch: 1. Debeka, 2. Onecept.de, "Weitere Fragen"-Box, 3. Debeka (nochmal), Werbe-Box, **4. wir**, 5. Beamtenalk.de, 6. OPTINVEST Beamte | Ja, zitiert Debeka, beamtenservice, OPTINVEST Beamte (2×), VersicherungsCheck24 – fairbeamtet.de NICHT zitiert | Platz 4. Unser Snippet-Text: "Offene Tarif-Wechsel-Optionen ohne neue Gesundheitsprüfung; Solide Absicherung bei Zahnersatz, Psychotherapie und Heilpraktiker. Denn eins ist..." + 2 Sitelinks darunter. Sterne 4,9★ (1.114) sichtbar | Debeka (2×) + Onecept.de dominieren oben; Beamtenalk.de und OPTINVEST Beamte als Fachquellen |
+| debeka pkv tarife | 255 / 8,8 | KI-Kasten, dann organisch: 1. Debeka, 2. Debeka (nochmal), 3. OPTINVEST Beamte, 4. KV Fux, Werbe-Box, "Weitere Fragen"-Box, **5. wir**, 6. Dr. Schliemann Finanzberatung, 7. Debeka (nochmal) | Ja, zitiert ausschließlich Debeka (mehrfach) und beamtenservice – fairbeamtet.de NICHT zitiert | Platz 5, nach 4 Konkurrenzergebnissen (2× Debeka) + 2 Zwischenkästen. Sterne 4,9★ (1.114) sichtbar | Debeka dominiert mit 3 eigenen Treffern; OPTINVEST, KV Fux, Dr. Schliemann als unabhängige Vergleichs-/Testquellen |
 
 ### Beobachtungen unterwegs
 
 - **07.10.2026:** Im echten Google-Ergebnis für die Hauptseite sind trotz Plan-Aussage (C2: Sterne "nicht zulässig") **weiterhin Sterne sichtbar** (4,9 ★★★★★, 1.114 Bewertungen). Widerspricht der Annahme im Schlachtplan, dass die Google-Berechtigung dafür fehlt – entweder zeigt Google sie trotzdem (Altbestand, Caching) oder die Einschätzung im Plan muss geprüft werden. Relevant für Entscheidung #5 (Sven).
 - **07.10.2026:** Google schneidet die Jahreszahl "2026" am Ende des Titles ab (Tag: "...im Test 2026", angezeigt: "...im Test"). Bestätigt die Umschreibe-Tendenz aus C3 konkret für diese Seite. Relevant für Entscheidung #6 (Sven: Jahreszahlen pflegen oder streichen?).
 
-### Ergebnis Schritt 0 (Fazit nach dem Ausfüllen)
+### Ergebnis Schritt 0 (Fazit)
 
-*(Kurz zusammenfassen: Schreibt Google tatsächlich um? Was steht typischerweise über unserem Ergebnis? Daraus ergibt sich, worauf Schritt 2–4 besonders achten müssen.)*
+Alle 5 Zero-Click-Anfragen live bei Google geprüft (07.10.2026), jeweils mit Screenshot dokumentiert.
+
+1. **Google schreibt tatsächlich um:** Bei der Hauptseite wird die Jahreszahl "2026" am Titelende weggeschnitten. Bestätigt C3 aus dem Plan konkret.
+2. **Bei allen 5 Anfragen läuft ein großer KI-Kasten ("Übersicht mit KI") oben.** Wir werden darin nur bei 1 von 5 Anfragen überhaupt zitiert (tarif b30, und dort nur beim letzten von 5 Punkten). Bei den anderen 4 kommen wir im KI-Kasten gar nicht vor – zitiert werden stattdessen fast durchgehend Debeka selbst, Finanztip, OPTINVEST Beamte, beamtenservice.
+3. **Unsere organische Platzierung schwankt zwischen Platz 2 und Platz 5** – aber praktisch immer nach: dem KI-Kasten, 1–3 eigenen Debeka-Ergebnissen und oft zusätzlich einer "Weitere Fragen"-Box und/oder einer Werbe-Box ("Ähnliche Produkte"). Selbst bei bester Platzierung (Rang 2 bei b20k) ist man erst nach viel Scrollen sichtbar.
+4. **Die Sterne (4,9★, 1.114 Bewertungen) sind bei jeder der 5 Anfragen sichtbar** – konsistent, kein Einzelfall.
+5. **Debeka selbst dominiert die Ergebnisse** in 4 von 5 Fällen mit mehreren eigenen Treffern (Tarifbedingungen, Vertragsgrundlagen) – wir konkurrieren nicht nur mit Drittanbietern, sondern vor allem mit der Debeka-eigenen Seite.
+
+**Für Schritt 2–4 heißt das:** Der Title muss sich gegen Debeka selbst UND gegen 2–4 weitere Wettbewerber UND gegen einen riesigen KI-Kasten durchsetzen, in dem wir fast nie zitiert werden. Das stützt die Linie aus dem Plan (konkret statt Gattung, Sicherheitsbegriffe statt Werbebegriffe) – unspezifische Titel gehen in diesem überfüllten Umfeld unter.
 
 ## Nächste Schritte (noch nicht gestartet)
 
-- [ ] Schritt 0 ausfüllen (oben)
+- [x] Schritt 0 ausfüllen (oben) – abgeschlossen 07.10.2026
 - [ ] Schritt 1 – Zielanfrage je Seite festlegen
 - [ ] Schritt 2 – Title nach Bauplan schreiben
 - [ ] Schritt 3 – Entwürfe von Sven freigeben lassen
