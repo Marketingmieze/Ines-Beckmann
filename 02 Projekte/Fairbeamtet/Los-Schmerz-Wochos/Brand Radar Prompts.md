@@ -40,6 +40,13 @@ Die Ahrefs-API ist bei Brand Radar nur lesend – die Prompts müssen manuell in
 - Dienstunfähigkeitsversicherung für Beamte – was kostet die?
 - Unterschied Dienstunfähigkeitsversicherung und Berufsunfähigkeitsversicherung für Beamte
 
+## Berufsunfähigkeit
+
+- Bekomme ich eine Berufsunfähigkeitsversicherung trotz Psychotherapie?
+- BU-Versicherung mit Tinnitus – wird das abgelehnt?
+- Berufsunfähigkeitsversicherung mit Morbus Crohn möglich?
+- Zählt Cannabis-Konsum bei der BU-Gesundheitsprüfung als Ablehnungsgrund?
+
 ## Risikovoranfrage / Vorerkrankungen
 
 - Was ist eine Risikovoranfrage bei der PKV und wie läuft die ab?
@@ -47,6 +54,9 @@ Die Ahrefs-API ist bei Brand Radar nur lesend – die Prompts müssen manuell in
 - Macht eine private Krankenversicherung bei Übergewicht Probleme?
 - PKV trotz Asthma für Beamte möglich?
 - Zuschlag PKV wegen Migräne – wie hoch ist der normalerweise?
+- PKV mit Heuschnupfen – gibt es dafür einen Risikozuschlag?
+- Nehmen private Krankenversicherungen nach Corona-Infektion noch ohne Zuschlag an?
+- PKV mit Brustimplantaten – wird das bei der Risikoprüfung zum Problem?
 
 ## Kosten
 
@@ -57,3 +67,4 @@ Die Ahrefs-API ist bei Brand Radar nur lesend – die Prompts müssen manuell in
 
 - Öffnungsklausel PKV für Beamte – wann lohnt sich der Wechsel?
 - Tarifwechsel nach Paragraf 204 – wie stelle ich den Antrag?
+- Beitragserhöhung bei der PKV bekommen – was kann ich als Beamter jetzt tun?
