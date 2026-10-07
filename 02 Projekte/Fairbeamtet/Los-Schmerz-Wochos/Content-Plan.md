@@ -50,6 +50,7 @@ Unter jeder Aufgabe steht in Grau, was konkret zu tun ist: was du öffnest, wo d
     Schreib Fragen auf, die ein Beamter wirklich bei ChatGPT eintippt. Nicht 'PKV Beamte', sondern 'Lohnt sich die private Krankenversicherung für mich als Lehrer?'. Dann ab damit in den Report.
   - [ ] Claude als Datenquelle einschalten — 0,25 h
     Im Report steht Claude auf 'off'. Du willst dort Nummer eins sein und misst es nicht. Ein Schalter, fünf Minuten.
+    Hinweis 07.10.2026: Claude verbraucht pro Prompt und Update 8 Prüfungen, jede andere Plattform (ChatGPT, Übersicht mit KI, KI-Modus, Gemini, Perplexity, Copilot) nur 1. Grundplan hat 300 Prüfungen/Monat. Bei 25 Prompts × 6 Plattformen × wöchentlich sind es bereits 600/Monat – also schon ohne Claude über dem Kontingent. Mit Claude dazu (25 × 4 × 14) sind es 1.400/Monat. Mehrkosten über Pay-as-you-go (€0,0187/Prüfung): ohne Claude ca. €5,61/Monat, mit Claude ca. €20,57/Monat – vorausgesetzt Pay-as-you-go ist aktiviert, sonst wird das Tracking bei Kontingent-Ende vermutlich gekappt. Vor dem Umschalten prüfen: Pay-as-you-go an, oder Frequenz/Prompt-Anzahl reduzieren.
 - [ ] **Beratungsanfrage in GA4 als Key Event einrichten** — 4 h
   Du hattest im September 3.146 Besucher und null gemessene Anfragen. Du weißt also nicht, welche Seite Kunden bringt. Solange das so bleibt, optimierst du auf Klicks statt auf Geschäft.
   - [ ] Ziel definieren: welches Formular zählt — 1 h
