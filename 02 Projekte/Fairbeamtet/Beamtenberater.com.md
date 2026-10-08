@@ -86,7 +86,32 @@ Auffälligste Befunde bei beamtenberater:
 
 ## PDF-Report für Sven (08.10.2026)
 
-Vollständige, grafisch aufbereitete Fassung dieser Analyse (Kennzahlen-Vergleich, Traffic-Verlauf, Backlink-/Spam-Analyse, Keyword- und Content-Gap, technischer Site-Audit, Einordnung & Empfehlungen) als PDF erstellt: [[07 Anhänge/Wettbewerbsanalyse beamtenberater.com - 2026-10-08.pdf]].
+Vollständige, grafisch aufbereitete Fassung dieser Analyse (Kennzahlen-Vergleich, Traffic-Verlauf, Backlink-/Spam-Analyse, Keyword- und Content-Gap, technischer Site-Audit, Website-Deep-Dive, Einordnung & Empfehlungen) als PDF erstellt: [[07 Anhänge/Wettbewerbsanalyse beamtenberater.com - 2026-10-08.pdf]].
+
+## Website-Deep-Dive vom 08.10.2026 (Nachtrag: Live-Prüfung der Seiten selbst, nicht nur Ahrefs-Zahlen)
+
+Live-Abruf von Startseite, Team-Seite und Content-Beispielen beider Domains, abgeglichen mit Ahrefs-Rankingdaten einzelner URLs. Hinweis: kein Browser-Screenshot in dieser Session verfügbar, Design-Einschätzung beruht auf Seiteninhalt/-struktur, nicht auf visueller Begutachtung.
+
+**Trust- und Markenauftritt (Startseite):** Auf dem Papier ist unser eigener Social-Proof-Auftritt mindestens gleichwertig, bei den harten Zahlen sogar deutlich stärker: 20.000+ Online-Beratungen / 4.700+ Kunden / 98 % Zufriedenheit / 1.007 Bewertungen (Trustindex, 4,9★) / sichtbare Makler-Registernummer (D-6TF6-JBEPB-55) bei uns vs. 5.000+ Beratene / 127 Google-Bewertungen (4,9★) / § 34d ohne sichtbare Registernummer bei beamtenberater. Einziger Pluspunkt bei denen: Der Provisions-/Interessenkonflikt-Hinweis steht bei beamtenberater prominent auf der Startseite, bei uns eher in der FAQ versteckt – leicht nachziehbar.
+
+**Content-Tiefe im direkten Vergleich (Fallbeispiel „Kindergeld für Beamte"):** Gegenprobe mit Live-Ahrefs-Daten für die inhaltsgleichen Zielseiten:
+
+| Merkmal | beamtenberater.com /kindergeld-beamte | fairbeamtet.de /kindergeld-fuer-beamte/ |
+|---|---|---|
+| Wortzahl (gesch.) | ~1.500 | ~4.500–5.500 |
+| Tabellen | keine | 2 |
+| FAQ-Fragen | 5 | 7 |
+| Rankende Keywords (Ahrefs) | 30 | 11 |
+| Traffic/Monat (Ahrefs, DE) | 851 | 124 |
+| Backlinks auf die Seite | 8 (von 8 Domains) | **0** (live und all-time) |
+
+**Wichtigster Einzelbefund:** Trotz rund dreifacher Wortzahl, zwei zusätzlicher Tabellen und mehr FAQ-Fragen bekommt unsere Seite 85 % weniger Traffic und rankt nur für gut ein Drittel der Keywords der kürzeren beamtenberater-Seite. Der Unterschied ist nicht der Inhalt, sondern die Backlinks: unsere Seite hat 0, die von beamtenberater 8. Das deckt sich mit dem bereits dokumentierten Befund bei `/beihilfe-berlin/` (ebenfalls 0 Backlinks trotz starkem Content, siehe [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]], Eintrag 06.10.2026) – zwei unabhängige Stichproben zeigen dasselbe Muster. Sieht nach einem strukturellen Problem aus (fehlende interne/externe Verlinkung nach Veröffentlichung), nicht nach einem Content-Qualitätsproblem.
+
+**Content-Format-Lücke:** Die „Bearbeitungsstand Beihilfe [Bundesland]"-Seiten von beamtenberater bedienen eine eigenständige, transaktionsnahe Suchintention („Wo steht mein Antrag gerade?") statt der klassischen Ratgeber-Intention. Kein Qualitätsunterschied, sondern ein bei uns komplett fehlendes Content-Format – ließe sich grundsätzlich auch auf andere Verwaltungsvorgänge übertragen (z. B. Dienstunfähigkeits-Anträge, Umzugskostenerstattung).
+
+**Design/UX (mit Einschränkung):** beamtenberater nutzt durchgängig "digital gestaltete" Symbolbilder, schlichte Farbpalette, klar visualisierten 4-Schritte-Beratungsprozess. fairbeamtet setzt auf das Cartoon-Maskottchen "Sven" (Varianten: Pilot, Wizard, Jedi) als durchgängige visuelle Identität – verspielter/zugänglicher. Bei einem YMYL-Versicherungsthema kann das je nach Zielgruppe sympathisch oder zu wenig seriös wirken; reine Stilfrage, aber einen Blick wert, ob das Maskottchen auf den nüchternen PKV-/BU-Seiten genauso gut funktioniert wie auf der Startseite.
+
+**Fazit Deep Dive:** beamtenberater gewinnt **nicht** durch bessere Inhalte, mehr Social Proof oder cleverere CTAs – in allen drei Punkten stehen wir mindestens gleichauf, bei den Trust-Zahlen klar besser. Der reale Unterschied liegt in zwei strukturellen, gezielt angehbaren Punkten: (1) fehlende Backlinks/interne Verlinkung auf einzelne, auch inhaltlich starke Content-Seiten bei uns, und (2) ein bei uns komplett fehlendes Content-Format (kurze, transaktionsnahe Status-/Themenseiten).
 
 ## Nächste Schritte
 
@@ -94,6 +119,7 @@ Vollständige, grafisch aufbereitete Fassung dieser Analyse (Kennzahlen-Vergleic
 - [ ] Beobachten, ob die Spam-Linkwelle weitergeht oder ein Einzelereignis war
 - [ ] Prüfen, ob „Bearbeitungsstand Beihilfe [Bundesland]"-Seiten eine eigene Content-Chance sind (Überschneidung mit der bereits notierten „Beihilfe pro Bundesland"-Lücke bei beamtenservice klären, evtl. zusammenlegen)
 - [ ] Bei eigenen Bundesland-/Themen-Longtail-Seiten von Anfang an auf saubere interne Verlinkung achten – beamtenberater hat laut Site-Audit-Crawl vom 08.10.2026 genau in diesem Seitentyp 76 verwaiste (nicht intern verlinkte) Seiten, das ist eine ausnutzbare Schwäche
+- [ ] Bestehende starke Content-Seiten ohne Backlinks gezielt stärken statt neue, noch längere Artikel zu schreiben – mind. 2 Stichproben (`/kindergeld-fuer-beamte/`, `/beihilfe-berlin/`) zeigen 0 Backlinks trotz starkem Content (siehe Website-Deep-Dive oben). Interne Verlinkung mit passendem Anker + gezielter externer Linkaufbau priorisieren
 - [ ] Entscheiden, ob dieses Projekt Ende Q4 2026 abgeschlossen oder weitergeführt wird
 - [ ] Wichtiger als beamtenberater: eigenen Traffic-Rückgang (−52 % seit August 2026) untersuchen – ist das bei uns auch eine technische Ursache (Migration, Indexierung) oder reiner AI-Overview-Effekt? An [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]] zurückspielen
 - [ ] Verifizieren, ob AI Overviews tatsächlich flächendeckend neu in der Beamten-Nische sind (z. B. via Brand Radar/SEOgets), statt nur aus den SERP-Features der Ahrefs-Stichprobe zu schließen
