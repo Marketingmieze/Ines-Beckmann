@@ -84,6 +84,10 @@ Auffälligste Befunde bei beamtenberater:
 
 **Einordnung:** Technisch insgesamt solide, aber nicht makellos (Health Score 81 vs. unsere 99). Die auffälligste strukturelle Schwäche ist die interne Verlinkung ihrer Longtail-Seiten (76 Orphans) – kombiniert mit dem Spam-Linkaufbau und dem Traffic-Rückgang (siehe oben) ein weiteres Indiz, dass beamtenberater aktuell eher mit Altlasten kämpft als systematisch zu wachsen.
 
+## PDF-Report für Sven (08.10.2026)
+
+Vollständige, grafisch aufbereitete Fassung dieser Analyse (Kennzahlen-Vergleich, Traffic-Verlauf, Backlink-/Spam-Analyse, Keyword- und Content-Gap, technischer Site-Audit, Einordnung & Empfehlungen) als PDF erstellt: [[07 Anhänge/Wettbewerbsanalyse beamtenberater.com - 2026-10-08.pdf]].
+
 ## Nächste Schritte
 
 - [ ] Monatlich gegenchecken, ob sich der Traffic-Rückgang stabilisiert oder weiter fällt (gleicher Turnus wie [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]])
