@@ -88,6 +88,27 @@ Auffälligste Befunde bei beamtenberater:
 
 Vollständige, grafisch aufbereitete Fassung dieser Analyse (Kennzahlen-Vergleich, Traffic-Verlauf, Backlink-/Spam-Analyse, Keyword- und Content-Gap, technischer Site-Audit, Website-Deep-Dive, Einordnung & Empfehlungen) als PDF erstellt: [[07 Anhänge/Wettbewerbsanalyse beamtenberater.com - 2026-10-08.pdf]].
 
+## Gegencheck von Sven (08.10.2026, Traffic-Analyse via Jens Kempf)
+
+Sven hat unsere Analyse mit einer eigenen Prüfung gegengelesen und bestätigt sowie präzisiert den Befund zum Traffic-Anstieg:
+
+**Bestätigt:** Der Anstieg von ~1,9K auf 3,7K ist die Erholung ab dem Tiefpunkt im August, kein durchgehender Aufwärtstrend – seit Jahresanfang verliert die Seite eigentlich Traffic. Domain Rating blieb im selben Zeitraum stabil (27 → 30 → 29), also kein Linkaufbau-Effekt (deckt sich exakt mit unserem Befund oben).
+
+**Neue Präzisierung – was den Anstieg tatsächlich auslöst:** Nicht Backlinks, sondern neue Inhalte. Die Zahl rankender Seiten sprang von 126 (Juli) auf 187 (August) – deckt sich mit unserer eigenen `pages-history`-Messung. Die `last_update` der neuen Keywords liegt durchgängig im September, die Seiten begannen also ab September/Oktober zu ranken. Stärkste neue Treiber, alle erst seit Ende August/September gelistet:
+
+1. **„Bearbeitungsstand Beihilfe [Bundesland]"-Serie** – eigene Seite pro Bundesland (Berlin, Schleswig-Holstein, Hessen, NRW, Thüringen …). Berlin allein: ~336 Besucher/Monat, Position 4, Suchvolumen 2.200. Mit Abstand größter Einzelhebel.
+2. „Kindergeld Beamte" – 827 Besucher, Position 2, Volumen 600.
+3. „Dienstunfähigkeit Beamte" – 217 Besucher, Position 1, Volumen 1.000.
+4. Weitere Grundlagenseiten: Beamter auf Lebenszeit/Widerruf, Heilfürsorge NRW, Krankenversicherung-Kosten für Beamte, Kindernachversicherung.
+
+**Das Muster:** Eine programmatische Content-Serie zu Beamtenrecht- und Verwaltungsfragen – vor allem Status-/Bearbeitungsabfragen zu Beihilfe-Anträgen je Bundesland plus allgemeine Beamtenrecht-Grundlagenartikel. Keine dieser Seiten verkauft eine Versicherung direkt.
+
+**Wichtige Verbindung zu unserer eigenen Strategie:** Das bestätigt unabhängig, was [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content-Plan/Content-Roadmap 2027.md|Content-Roadmap 2027]] bereits aus den eigenen Zahlen ableitet: Beamtenrecht-Themen ziehen stärker als Versicherungsthemen – `/familienzuschlag-fuer-beamte/` schlägt bei uns den gesamten Beihilfe-Baukasten um das 3,6-Fache. Kempf bestätigt das Muster mit einem eigenen, noch spitzeren Cluster: Bearbeitungsstand-Abfragen sind ein Nachfragesignal mit echtem Volumen (80–2.200/Monat je Bundesland) und offenbar noch nicht gesättigt.
+
+**Neue Erkenntnis zu AI Overviews:** Fast alle neuen Rankings von beamtenberater haben `ai_overview` als SERP-Feature – und ranken trotzdem organisch auf Position 1–2 mit echtem Traffic. Erklärung: Die Seiten beantworten eine sehr konkrete, oft verwaltungsbezogene Frage direkt und strukturiert (Frage-Antwort-Format, `question`-Feature fast überall vertreten). Das macht sie sowohl AI-Overview-tauglich als auch klick-tauglich für Nutzer, die über die Zusammenfassung hinaus die Originalquelle brauchen (z. B. um den tatsächlichen Bearbeitungsstand einer Behörde zu prüfen). Nicht trotz, sondern **mit** dem KI-Modus – relevant für die generelle AI-Overview-Sorge aus dem Status-Report.
+
+**Offener Punkt von Sven, keine Entscheidung:** Soll die „Bearbeitungsstand Beihilfe [Bundesland]"-Lücke für fairbeamtet.de als eigenes Thema in der Content-Roadmap geprüft werden? Kein PKV-Beratungsinhalt, reine Verwaltungsinfo – ein Nachfragefeld, das aktuell kaum jemand außer Kempf bedient.
+
 ## Website-Deep-Dive vom 08.10.2026 (Nachtrag: Live-Prüfung der Seiten selbst, nicht nur Ahrefs-Zahlen)
 
 Live-Abruf von Startseite, Team-Seite und Content-Beispielen beider Domains, abgeglichen mit Ahrefs-Rankingdaten einzelner URLs. Hinweis: kein Browser-Screenshot in dieser Session verfügbar, Design-Einschätzung beruht auf Seiteninhalt/-struktur, nicht auf visueller Begutachtung.
@@ -117,7 +138,7 @@ Live-Abruf von Startseite, Team-Seite und Content-Beispielen beider Domains, abg
 
 - [ ] Monatlich gegenchecken, ob sich der Traffic-Rückgang stabilisiert oder weiter fällt (gleicher Turnus wie [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]])
 - [ ] Beobachten, ob die Spam-Linkwelle weitergeht oder ein Einzelereignis war
-- [ ] Prüfen, ob „Bearbeitungsstand Beihilfe [Bundesland]"-Seiten eine eigene Content-Chance sind (Überschneidung mit der bereits notierten „Beihilfe pro Bundesland"-Lücke bei beamtenservice klären, evtl. zusammenlegen)
+- [ ] Mit Sven klären: „Bearbeitungsstand Beihilfe [Bundesland]"-Lücke als eigenes Thema in [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content-Plan/Content-Roadmap 2027.md|Content-Roadmap 2027]] aufnehmen? Sven hat das als offenen Punkt zurückgespielt (08.10.2026) – ist bei beamtenberater der mit Abstand größte Traffic-Treiber seit September und bestätigt unabhängig die „Beamtenrecht schlägt Versicherung"-These der Roadmap. Überschneidung mit der bereits notierten „Beihilfe pro Bundesland"-Lücke bei beamtenservice klären, evtl. zusammenlegen
 - [ ] Bei eigenen Bundesland-/Themen-Longtail-Seiten von Anfang an auf saubere interne Verlinkung achten – beamtenberater hat laut Site-Audit-Crawl vom 08.10.2026 genau in diesem Seitentyp 76 verwaiste (nicht intern verlinkte) Seiten, das ist eine ausnutzbare Schwäche
 - [ ] Bestehende starke Content-Seiten ohne Backlinks gezielt stärken statt neue, noch längere Artikel zu schreiben – mind. 2 Stichproben (`/kindergeld-fuer-beamte/`, `/beihilfe-berlin/`) zeigen 0 Backlinks trotz starkem Content (siehe Website-Deep-Dive oben). Interne Verlinkung mit passendem Anker + gezielter externer Linkaufbau priorisieren
 - [ ] Entscheiden, ob dieses Projekt Ende Q4 2026 abgeschlossen oder weitergeführt wird
