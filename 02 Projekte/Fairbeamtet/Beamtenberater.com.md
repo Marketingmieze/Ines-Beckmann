@@ -32,6 +32,27 @@ Der in Ahrefs sichtbare Anstieg der verweisenden Domains – von 487 (August 202
 
 **Einordnung:** Das bestätigt zum wiederholten Mal (siehe auch die Fälle beamtenservice und alexander-kuhlen.de in [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]]) das Muster: Wettbewerber, die im Ranking abstürzen, bauen danach Massen-Spam-Links auf – ohne messbare Wirkung auf Rankings oder Domain Rating. Der scheinbare „Anstieg" bei beamtenberater.com ist also eher ein Alarmsignal für den Wettbewerber als ein Erfolg – möglicherweise eine gekaufte, wirkungslose „SEO-Rettungsmaßnahme", im Zweifel sogar ein Hinweis auf eine kompromittierte/gehackte Domain, die fremd als Linkfarm-Ziel genutzt wird (auffällig viele frisch registrierte, thematisch unpassende `.shop`-Domains mit exakt 1 Link). Das ist eine Vermutung, keine Bestätigung – nicht weiter verfolgt, da es für uns ohnehin keine Handlungsrelevanz hat.
 
+## Nachtrag vom 08.10.2026: Warum beamtenberater im Vergleich zu allen Wettbewerbern "gestiegen" ist
+
+Ines' Beobachtung stimmt: Im direkten Aug.→Okt. 2026-Vergleich (DE, Ahrefs) ist beamtenberater.com die einzige Domain unter den geprüften Tier-1-Konkurrenten (und auch im Vergleich zu uns selbst), die im Traffic gestiegen ist, während alle anderen fielen:
+
+| Domain | Aug. 2026 | Okt. 2026 | Veränderung |
+|---|---|---|---|
+| **beamtenberater.com** | 1.649 | 2.872 | **+74 %** |
+| beamtenservice.de | 4.698 | 2.390 | −49 % |
+| info-beihilfe.de | 8.179 | 4.390 | −46 % |
+| beamten-infoportal.de | 7.738 | 4.001 | −48 % |
+| schlemann.com | 4.099 | 4.155 | ±0 % |
+| fairbeamtet.de (wir) | 2.338 | 1.117 | −52 % |
+
+**Grund 1 – es ist eine Erholung vom eigenen Fehler, kein echtes Wachstum über das alte Niveau hinaus:** Top-Pages-Vergleich 01.08. vs. 01.10.2026 zeigt für praktisch jede aktuelle Top-Seite ein 1:1-Gegenstück mit identischer URL, nur mit abschließendem Slash (z. B. `/kindergeld-beamte/` → `/kindergeld-beamte`, `/freie-heilfuersorge/` → `/freie-heilfuersorge`, `/familienzuschlag-beamte/` → `/familienzuschlag-beamte`). Das ist eine URL-Migration (Wegfall des abschließenden Slashes), die in Ahrefs vorübergehend wie Traffic-Verlust + Neugewinn aussieht. Der Tiefpunkt (1.649, August 2026) ist der Migrations-Einbruch, die Erholung auf 2.872 (Oktober) ist die Rückübertragung der Rankings auf die neuen URLs – **kein** Wachstum über das Vor-Krise-Niveau hinaus: 2.872 liegt immer noch 31 % unter dem März-2026-Wert (4.180) und 75 % unter dem Allzeithoch (11.509, August 2025).
+
+**Grund 2 – die Spam-Backlinks (oben) sind nachweislich nicht die Ursache:** Domain Rating blieb während der gesamten Erholungsphase flach bis leicht fallend (30 im Juli/August → 29 im Oktober), trotz der Spam-Welle vom 28./29.09. Zeitliche Überlappung, aber kein Kausalzusammenhang.
+
+**Grund 3 – der Rest der Nische (inkl. uns) fällt im selben Fenster unabhängig weiter:** Fast jedes geprüfte Keyword von beamtenberater zeigt inzwischen das SERP-Feature `ai_overview` – AI Overviews sind in der Beamten-Nische seit Sommer 2026 flächendeckend präsent und drücken vermutlich bei allen Domains die Klicks, unabhängig vom Verhalten einzelner Wettbewerber. Die zwei Linien – „beamtenberater erholt sich von der eigenen Migration" und „der Rest der Nische sinkt weiter (vermutlich AI-Overview-bedingt)" – kreuzen sich rein zufällig in diesem Zeitraum. Das erzeugt den Eindruck eines Wettbewerbsvorteils, ist aber keiner.
+
+**Einordnung für uns:** Kein Grund zur Sorge wegen beamtenberater – aber der eigene Rückgang (fairbeamtet −52 % seit August 2026) ist größer als der von beamtenberater und sollte eigenständig priorisiert untersucht werden (siehe [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]]).
+
 ## Top-Seiten (Stand 08.10.2026, Ländefilter DE)
 
 | URL | Traffic/Monat | Top-Keyword | Position |
@@ -55,6 +76,8 @@ Auffällig: Mehrere der stärksten Seiten sind „Bearbeitungsstand Beihilfe [Bu
 - [ ] Beobachten, ob die Spam-Linkwelle weitergeht oder ein Einzelereignis war
 - [ ] Prüfen, ob „Bearbeitungsstand Beihilfe [Bundesland]"-Seiten eine eigene Content-Chance sind (Überschneidung mit der bereits notierten „Beihilfe pro Bundesland"-Lücke bei beamtenservice klären, evtl. zusammenlegen)
 - [ ] Entscheiden, ob dieses Projekt Ende Q4 2026 abgeschlossen oder weitergeführt wird
+- [ ] Wichtiger als beamtenberater: eigenen Traffic-Rückgang (−52 % seit August 2026) untersuchen – ist das bei uns auch eine technische Ursache (Migration, Indexierung) oder reiner AI-Overview-Effekt? An [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]] zurückspielen
+- [ ] Verifizieren, ob AI Overviews tatsächlich flächendeckend neu in der Beamten-Nische sind (z. B. via Brand Radar/SEOgets), statt nur aus den SERP-Features der Ahrefs-Stichprobe zu schließen
 
 ## Notizen
 
