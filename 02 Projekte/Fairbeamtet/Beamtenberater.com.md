@@ -70,11 +70,26 @@ Ines' Beobachtung stimmt: Im direkten Aug.→Okt. 2026-Vergleich (DE, Ahrefs) is
 
 Auffällig: Mehrere der stärksten Seiten sind „Bearbeitungsstand Beihilfe [Bundesland]"-Seiten (Berlin, Schleswig-Holstein, Hessen, NRW) – ein ähnliches Muster wie die „Beihilfe [Bundesland]"-Lücke, die am 02.10.2026 bereits bei beamtenservice als Content-Chance für uns notiert wurde (siehe [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]]).
 
+## Site-Audit-Crawl vom 08.10.2026 (Ahrefs Site Audit, 440 gecrawlte URLs)
+
+Erster vollständiger technischer Crawl von beamtenberater.com (Ahrefs-Projekt „Beamtenberater", ID 10501118, abgeschlossen 08.10.2026). **Health Score: 81/100** – 84 Error-, 204 Warning- und 334 Notice-Befunde von insgesamt 440 gecrawlten URLs. Zum Vergleich: unser eigenes Site-Audit-Projekt „Fairbeamtet" (954 URLs) liegt aktuell bei Health Score 99 mit nur 5 Errors.
+
+Auffälligste Befunde bei beamtenberater:
+
+1. **76 verwaiste Seiten** (Error, „Orphan page" – keine eingehenden internen Links). Auffällig: Das betrifft überproportional ihre Longtail-/Nischenseiten, u. a. mehrere Bundesland-spezifische Seiten (`dienstunfaehigkeit-beamte-schleswig-holstein`, `-bayern`, `-baden-wuerttemberg`; `heilfuersorge-saarland`, `heilfuersorge-rheinland-pfalz`) sowie Versicherer-Vergleichsseiten (`beitragsgarantie-dbv`, `-concordia`, `-barmenia`) und weitere Themenseiten (`unser-team`, `rechtsschutzversicherung`, `krankentagegeld`, `kuendigungsfrist-pkv` u. a.). Diese Seiten existieren und sind indexierbar, aber ohne interne Verlinkung für Google schwer auffindbar – Ranking-Potenzial bleibt ungenutzt. **Relevanz für uns:** Das ist derselbe Seitentyp (Bundesland-/Themen-Longtail), den wir bei beamtenservice als Content-Lücke notiert haben (Abschnitt „Top-Seiten" oben, „Bearbeitungsstand Beihilfe [Bundesland]"). Wenn wir vergleichbare Seiten bauen und sie konsequent intern verlinken, haben wir dort einen strukturellen Vorteil gegenüber beamtenberater.
+2. **8 Noindex-Seiten in der Sitemap** (Error) – ausschließlich Rechtsseiten: `impressum`, `impressum-baufinanzierung`, `datenschutz`, `datenschutz-baufinanzierung`, `widerspruch`, `erstinformation`, `ki-transparenz`, `service/kontakt`. Technisch unsauber (Sitemap sollte nur indexierbare Seiten enthalten), aber ohne SEO-Relevanz.
+3. **75 Seiten mit internen Links auf Redirects** (Warning), darunter Startseite, Blog, Rechner, `berufsgruppen/lehrer`. Bestätigt, dass die bereits unter „Befund vom 08.10.2026" vermutete URL-Migration (Wegfall des abschließenden Slashes) technisch noch nicht vollständig nachgezogen ist – interne Links zeigen weiterhin auf alte URLs statt direkt auf die neuen Ziel-URLs.
+4. **71 Seiten, bei denen der von Google angezeigte Title vom Page-Title abweicht** (Notice) – Hinweis auf zu generische/schwache Title-Tags, die Google eigenständig umschreibt.
+5. **179 Seiten mit unvollständigen Open-Graph-Tags** (Warning, größte Einzelgruppe) – betrifft nur die Social-Sharing-Darstellung, kein direkter Rankingfaktor.
+
+**Einordnung:** Technisch insgesamt solide, aber nicht makellos (Health Score 81 vs. unsere 99). Die auffälligste strukturelle Schwäche ist die interne Verlinkung ihrer Longtail-Seiten (76 Orphans) – kombiniert mit dem Spam-Linkaufbau und dem Traffic-Rückgang (siehe oben) ein weiteres Indiz, dass beamtenberater aktuell eher mit Altlasten kämpft als systematisch zu wachsen.
+
 ## Nächste Schritte
 
 - [ ] Monatlich gegenchecken, ob sich der Traffic-Rückgang stabilisiert oder weiter fällt (gleicher Turnus wie [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]])
 - [ ] Beobachten, ob die Spam-Linkwelle weitergeht oder ein Einzelereignis war
 - [ ] Prüfen, ob „Bearbeitungsstand Beihilfe [Bundesland]"-Seiten eine eigene Content-Chance sind (Überschneidung mit der bereits notierten „Beihilfe pro Bundesland"-Lücke bei beamtenservice klären, evtl. zusammenlegen)
+- [ ] Bei eigenen Bundesland-/Themen-Longtail-Seiten von Anfang an auf saubere interne Verlinkung achten – beamtenberater hat laut Site-Audit-Crawl vom 08.10.2026 genau in diesem Seitentyp 76 verwaiste (nicht intern verlinkte) Seiten, das ist eine ausnutzbare Schwäche
 - [ ] Entscheiden, ob dieses Projekt Ende Q4 2026 abgeschlossen oder weitergeführt wird
 - [ ] Wichtiger als beamtenberater: eigenen Traffic-Rückgang (−52 % seit August 2026) untersuchen – ist das bei uns auch eine technische Ursache (Migration, Indexierung) oder reiner AI-Overview-Effekt? An [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]] zurückspielen
 - [ ] Verifizieren, ob AI Overviews tatsächlich flächendeckend neu in der Beamten-Nische sind (z. B. via Brand Radar/SEOgets), statt nur aus den SERP-Features der Ahrefs-Stichprobe zu schließen
