@@ -10,6 +10,39 @@ Ausführliche Ergebnisse, Befunde und Zusatzinfos zu den Aufgaben aus [[Content-
 
 ---
 
+## Eigener Traffic-Rückgang (−52 % seit August) — Untersuchung 12.10.2026
+
+Auftrag aus dem 08.10.-Befund bei [[02 Projekte/Fairbeamtet/Beamtenberater.com|Beamtenberater.com]]: der eigene Rückgang wurde als wichtiger eingestuft als alles beim Wettbewerber und sollte hierher zurückgespielt werden.
+
+**Daten (SEO Gets, GSC+GA4, 14-Tage-Durchschnitt 01.–14.07.2026 vs. 27.09.–10.10.2026):**
+
+| Metrik | Juli | Okt | Veränderung |
+|---|---|---|---|
+| Klicks/Tag | 235,0 | 129,4 | −45 % |
+| Impressionen/Tag | 12.058 | 7.511 | −38 % |
+| CTR | 1,95 % | 1,72 % | −12 % |
+| Position | 9,95 | 8,53 | **besser** |
+
+**Befund: Kein Ranking-Problem.** Die durchschnittliche Position hat sich im selben Zeitraum verbessert, nicht verschlechtert. Der Rückgang ist ein Klick-/Impressions-Problem, kein Sichtbarkeits-Problem im klassischen Sinn.
+
+**Auf Seitenebene konzentriert sich der Rückgang auf wenige große informationelle Seiten**, die zusammen ca. 60 % des gesamten Klickrückgangs ausmachen:
+
+| Seite | Klicks Juli → Okt | Position Juli → Okt |
+|---|---|---|
+| /familienzuschlag-fuer-beamte/ | 1.345 → 924 (−31 %) | 4,19 → 3,35 (besser) |
+| /kindergeld-fuer-beamte/ | 356 → 127 (−64 %) | 3,96 → 2,92 (besser) |
+| /amtsaerztliche-untersuchung/ | 343 → 103 (−70 %) | 6,80 → 6,65 (besser) |
+| /beitragsrueckerstattung-debeka/ | 260 → 115 (−56 %) | 5,20 → 4,97 (besser) |
+| Startseite / | 138 → 81 (−41 %), Impressionen −76 % | 29,77 → 30,96 (leicht schlechter) |
+
+Bei allen vier großen Nicht-Startseiten ist die Position stabil oder besser geworden, während die Klicks zweistellig bis −70 % einbrachen. Das ist dieselbe Signatur wie der Zero-Click/KI-Übersicht-Befund vom 07.10. bei der Debeka-Testseite (dort: bei allen 5 geprüften Anfragen großer KI-Kasten, fairbeamtet fast nie zitiert) — Familienzuschlag, Kindergeld und Amtsärztliche Untersuchung sind klassische kurze Fakten-Fragen, die Google bevorzugt direkt in der KI-Übersicht beantwortet.
+
+**Eingeordnet, nicht abschließend bewiesen:** Die GSC/GA4-Daten zeigen nur die Korrelation (Position stabil/besser, Klicks eingebrochen), nicht direkt die Ursache. Zusätzlich lagen im Zeitraum zwei Google-Updates: August 2026 Spam Update (Rollout abgeschlossen 21.08.) und September 2026 Spam Update (Rollout 24.09.–08.10.) — zeitlich correlieren beide mit Phasen des Rückgangs, ohne dass sich daraus allein eine Kausalität ableiten lässt.
+
+**Nächster Schritt:** Wie bei der Debeka-Testseite (Schritt 0) direkt in der Google-Suche prüfen, ob bei "familienzuschlag beamte", "kindergeld beamte" und "amtsärztliche untersuchung beamte" ein KI-Übersichtskasten erscheint und ob/wie oft fairbeamtet.de darin zitiert wird.
+
+---
+
 ## Claude-Hinweis (Woche 1 – Brand Radar mit Prompts füllen)
 
 Hinweis 07.10.2026: Claude verbraucht pro Prompt und Update 8 Prüfungen, jede andere Plattform (ChatGPT, Übersicht mit KI, KI-Modus, Gemini, Perplexity, Copilot) nur 1. Grundplan hat 300 Prüfungen/Monat. Bei 25 Prompts × 6 Plattformen × wöchentlich sind es bereits 600/Monat – also schon ohne Claude über dem Kontingent. Mit Claude dazu (25 × 4 × 14) sind es 1.400/Monat. Mehrkosten über Pay-as-you-go (€0,0187/Prüfung): ohne Claude ca. €5,61/Monat, mit Claude ca. €20,57/Monat – vorausgesetzt Pay-as-you-go ist aktiviert, sonst wird das Tracking bei Kontingent-Ende vermutlich gekappt. Vor dem Umschalten prüfen: Pay-as-you-go an, oder Frequenz/Prompt-Anzahl reduzieren.
