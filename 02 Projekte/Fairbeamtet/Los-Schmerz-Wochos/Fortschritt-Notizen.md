@@ -51,6 +51,8 @@ Update 07.10.2026: Beim Review von [[Brand Radar Prompts]] wurden inhaltliche L�
 
 **Realer Verbrauch 07.10.2026 (Widerspruch zur Schätzung oben):** Ines hat die ersten 12 Prompts (PKV allgemein + Testsieger + ein Teil Beihilfe) ins Ahrefs-UI eingetragen. Danach waren bereits 288 von 300 Prüfungen/Monat verbraucht – das sind rund 24 Prüfungen pro Prompt, deutlich mehr als die ursprüngliche Schätzung von 6/Prompt/Woche (vermutlich zusätzlicher Verbrauch durch einmaligen Backfill/Ersteinrichtung je Prompt, nicht nur laufendes wöchentliches Monitoring). Nur noch 12 Prüfungen übrig. Die restlichen 23 Prompts der Liste sind **nicht mehr eingetragen** und können beim aktuellen Verbrauchstempo nicht mehr ins Grundkontingent passen (23 × 24 ≈ 552 weitere Prüfungen nötig). Wichtig: Diese 288 Prüfungen sind komplett ohne Claude als Datenquelle entstanden (Schalter steht noch auf "off") – Claude würde den Verbrauch zusätzlich verschärfen, da es laut Claude-Hinweis oben 8 Prüfungen pro Prompt/Update kostet statt 1 wie bei den anderen sechs Plattformen. Rückmeldung an Sven vorbereitet, Entscheidung (Monatsreset abwarten vs. Pay-as-you-go) steht noch aus.
 
+**Status 12.10.2026:** Nachricht an Sven verschickt. Rückmeldung von ihm steht weiterhin aus.
+
 ---
 
 ## Marken-Kannibalisierung (Woche 1)

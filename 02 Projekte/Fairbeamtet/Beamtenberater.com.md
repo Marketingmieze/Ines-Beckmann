@@ -134,6 +134,10 @@ Live-Abruf von Startseite, Team-Seite und Content-Beispielen beider Domains, abg
 
 **Fazit Deep Dive:** beamtenberater gewinnt **nicht** durch bessere Inhalte, mehr Social Proof oder cleverere CTAs – in allen drei Punkten stehen wir mindestens gleichauf, bei den Trust-Zahlen klar besser. Der reale Unterschied liegt in zwei strukturellen, gezielt angehbaren Punkten: (1) fehlende Backlinks/interne Verlinkung auf einzelne, auch inhaltlich starke Content-Seiten bei uns, und (2) ein bei uns komplett fehlendes Content-Format (kurze, transaktionsnahe Status-/Themenseiten).
 
+## Status 12.10.2026
+
+Ines hat Sven die Beamtenberater-Fakten (Bericht/PDF vom 08.10.) zukommen lassen – über das bereits dokumentierte Gegencheck-Ergebnis von Jens Kempf hinaus steht eine weitere Rückmeldung von Sven noch aus, u. a. zu den offenen Punkten unten (Projekt-Fortsetzung Ende Q4, Backlink-Priorisierung).
+
 ## Nächste Schritte
 
 - [ ] Monatlich gegenchecken, ob sich der Traffic-Rückgang stabilisiert oder weiter fällt (gleicher Turnus wie [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]])
