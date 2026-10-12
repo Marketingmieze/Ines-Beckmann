@@ -10,6 +10,8 @@ Umsetzung von [[04 Ressourcen/Googles No. 1/2026-10-07 - Schlachtplan Google Nr 
 
 **Wichtig:** Laut Plan ist der Status "Plan, keine Aufgaben angelegt" – die 7 Entscheidungen aus Abschnitt H (z. B. Reihenfolge der Gruppen, Freigabe der Title-Entwürfe) sind noch offen und müssen von Sven getroffen werden, bevor an Title/Description tatsächlich etwas geändert wird. Schritt 0 unten braucht diese Freigabe noch nicht – es ist reine Beobachtung, keine Änderung.
 
+**Status 12.10.2026:** Sven hat die Schritt-0-Ergebnisse noch nicht gesehen (ursprünglich für 08.10. geplanter Termin, siehe [[03 Bereiche/Termine/Termine.md|Termine]], fand nicht statt). Ines bespricht die Ergebnisse erst mit Sven, bevor mit Schritt 1 weitergemacht wird – bewusste Entscheidung, da ohne seine Einordnung zu riskant.
+
 ## Schritt 0 — Prüfen, was Google überhaupt anzeigt
 
 Ziel: Vor jeder Änderung sehen, was aktuell wirklich im Suchergebnis steht. Zwei Teile, beide von Hand bei Google, nicht im Tool.
