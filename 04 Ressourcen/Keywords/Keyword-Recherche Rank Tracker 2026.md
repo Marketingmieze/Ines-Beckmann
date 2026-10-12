@@ -6,6 +6,12 @@ quelle: "Ahrefs (Rank Tracker Projekt 'Fairbeamtet', ID 8171655; Keywords Explor
 
 # Keyword-Recherche für den Ahrefs Rank Tracker (fairbeamtet.de)
 
+## Status
+
+**12.10.2026:** Die 17 "Sofort"-Keywords aus der Empfehlung unten sind von Ines ins Rank-Tracker-Projekt "Fairbeamtet" (ID 8171655) eingetragen worden: die 9 Top-1-Keywords aus Cluster A (familienzuschlag beamte, kinderzuschlag beamte, beamte kinderzuschlag, familienzuschlag beamte bund, kindergeld beamte, beamte kindergeld, beamte familienzuschlag, familienzuschlag stufe 1, bekommen beamte mehr kindergeld), die 6 PKV-Marken-Keywords aus Cluster B (huk coburg pkv beamte, debeka pkv beamte, debeka wk100 leistungen, huk pkv beamte, barmenia pkv beamte, stiftung warentest pkv beamte) und die 2 Beihilfe-Keywords aus Cluster C (beihilfestelle thüringen, landesverwaltungsamt berlin beihilfe). Erste Positionsdaten sollten innerhalb von ~24h nach dem nächsten täglichen Ahrefs-Crawl sichtbar sein.
+
+Noch offen: die "Verteidigungs-/Ausbaupriorität"-Keywords (familienzuschlag, familienzuschlag beamte bw, familienzuschlag beamte niedersachsen) sowie alles, was erst nach neuem Content getrackt werden soll (siehe Empfehlung Punkt 3).
+
 ## Zweck
 
 Der Ahrefs Rank Tracker für fairbeamtet.de (Projekt-ID 8171655) trackt aktuell nur **20 Keywords**. Die Website rankt aber laut Site Explorer für **372 organische Keywords** (siehe [[02 Projekte/Fairbeamtet/SEO-GEO Status Report.md|SEO-GEO Status Report]]), und die GSC-Suchanfragen zeigen ein noch größeres Nachfragefeld. Diese Recherche identifiziert Lücken und schlägt eine erweiterte, geclusterte Keyword-Liste für den Rank Tracker vor.
