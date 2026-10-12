@@ -17,6 +17,7 @@ In Bearbeitung
 ## Nächste Schritte
 
 - [ ] Aktuellen SEO-Status mit Ahrefs prüfen
+- [ ] Rank Tracker um die identifizierten Keyword-Lücken erweitern (siehe [[04 Ressourcen/Keywords/Keyword-Recherche Rank Tracker 2026.md|Keyword-Recherche Rank Tracker 2026]])
 
 ## Notizen
 

@@ -10,6 +10,7 @@ Keyword-Recherche für fairbeamtet.de, aufgeschlüsselt nach Versicherer bzw. Th
 
 ## Dateien
 
+- [[04 Ressourcen/Keywords/Keyword-Recherche Rank Tracker 2026.md|Keyword-Recherche Rank Tracker 2026]] – Cluster-Analyse (Familienzuschlag/Kinderzuschlag, PKV Beamte, Beihilfe, Amtsarzt, Debeka-Tarife) mit Lücken im Ahrefs Rank Tracker
 - ![[Keyword ALTE OLDENBURGER.xlsx]]
 - ![[Keyword BARMENIA.xlsx]]
 - ![[Keyword SIGNAL IDUNA.xlsx]]
