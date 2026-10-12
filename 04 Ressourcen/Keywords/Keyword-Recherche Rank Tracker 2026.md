@@ -54,14 +54,14 @@ Bereits teilweise getrackt (pkv beamte, pkv beamte vergleich, private krankenver
 
 **Bereits rankend, hoher CPC, sofort hinzufügen:**
 
-| Keyword | Volumen | Position | CPC (USD) |
-|---|---|---|---|
-| huk coburg pkv beamte | 300 | 6 | 5,00 |
-| debeka pkv beamte | 300 | – | 1,90 |
-| debeka wk100 leistungen | 500 | 6 | – |
-| huk pkv beamte | 150 | 5 | 4,00 |
-| barmenia pkv beamte | 200 | 11 | 7,00 |
-| stiftung warentest pkv beamte | 70 | 5 | 2,50 |
+| Keyword                       | Volumen | Position | CPC (USD) |
+| ----------------------------- | ------- | -------- | --------- |
+| huk coburg pkv beamte         | 300     | 6        | 5,00      |
+| debeka pkv beamte             | 300     | –        | 1,90      |
+| debeka wk100 leistungen       | 500     | 6        | –         |
+| huk pkv beamte                | 150     | 5        | 4,00      |
+| barmenia pkv beamte           | 200     | 11       | 7,00      |
+| stiftung warentest pkv beamte | 70      | 5        | 2,50      |
 
 **Content-Lücken mit sehr hohem CPC (noch nicht rankend – lohnende Ziele für Vergleichs-/Beratungsartikel):**
 pkv für beamte (250, CPC 6,00), beste pkv für beamte (250, CPC 4,50), pkv vergleich beamte (250, CPC 7,00), arag pkv beamte (200, CPC 6,00), öffnungsaktion pkv beamte (200, CPC 3,00), check24 pkv beamte (100, CPC 5,00), signal iduna pkv beamte (60, CPC 6,00), allianz pkv beamte (50, CPC 2,50), testsieger pkv beamte (80, CPC 3,50), wechsel pkv in gkv beamte (150, CPC 1,70).
@@ -74,13 +74,13 @@ Niedrigeres CPC, aber hohes Volumen bei den App-/Behörden-Suchen und wichtig f�
 
 **Schon stark, aber ungetrackt:**
 
-| Keyword | Volumen | Position |
-|---|---|---|
-| beihilfestelle thüringen | 3.600 | 8 |
-| landesverwaltungsamt berlin beihilfe | 800 | 24 |
-| beihilfe thüringen online | 800 | 18 |
-| beihilfe berlin pensionäre | 600 | 13 |
-| beihilfe sh app | 200 | 1 |
+| Keyword                              | Volumen | Position |
+| ------------------------------------ | ------- | -------- |
+| beihilfestelle thüringen             | 3.600   | 8        |
+| landesverwaltungsamt berlin beihilfe | 800     | 24       |
+| beihilfe thüringen online            | 800     | 18       |
+| beihilfe berlin pensionäre           | 600     | 13       |
+| beihilfe sh app                      | 200     | 1        |
 
 **Kommerzielle Schnittstelle Beihilfe↔PKV (kleine Volumen, aber genau der Übergabepunkt zur Beratung):**
 krankenversicherung beamte beihilfe (100, CPC 1,90 – kommerzielle Intention laut Ahrefs), hörgeräte beihilfe beamte (150, CPC 0,25), pflegeversicherung beamte beihilfe (90, CPC 1,00), beihilfe für pensionierte beamte (150, CPC 1,00), zahnzusatzversicherung für beamte mit beihilfe (30, kommerziell).
@@ -97,15 +97,15 @@ amtsarzt verbeamtung (100, CPC 0,50), verbeamtung amtsarzt durchgefallen (80, CP
 
 Riesiges Suchvolumen in den GSC-Daten (wk100, b30, bc, wl30, b20k, bre, wkplus …), aber **Bestandskunden-Intention**, nicht Neukunden-Akquise. Auffällig: einige dieser scheinbaren Long-Tail-Begriffe haben überraschend hohe Difficulty:
 
-| Keyword | Volumen | Difficulty |
-|---|---|---|
-| debeka wk100 leistungen | 40 | 73 |
-| private krankenversicherung kosten kinder | 30 | 64 |
-| bre debeka | 60 | 47 |
-| debeka chefarztbehandlung beamte tarif | 90 | 53 |
-| private krankenversicherung beamte erfahrungen | 60 | 46 |
-| debeka beitragsrückerstattung berechnen | 20 | 27 |
-| debeka b30 | 100 | 27 |
+| Keyword                                        | Volumen | Difficulty |
+| ---------------------------------------------- | ------- | ---------- |
+| debeka wk100 leistungen                        | 40      | 73         |
+| private krankenversicherung kosten kinder      | 30      | 64         |
+| bre debeka                                     | 60      | 47         |
+| debeka chefarztbehandlung beamte tarif         | 90      | 53         |
+| private krankenversicherung beamte erfahrungen | 60      | 46         |
+| debeka beitragsrückerstattung berechnen        | 20      | 27         |
+| debeka b30                                     | 100     | 27         |
 
 **Einordnung:** Dieser Cluster erklärt vermutlich einen Teil des in der Rankinghistorie beobachteten Einbruchs bei Top 11+ (siehe Status Report) – viel Konkurrenz von Debeka selbst und Vergleichsportalen bei Begriffen, die auf den ersten Blick simple Long-Tails sind. Empfehlung: einzelne hochvolumige Repräsentanten tracken (debeka beitragsrückerstattung ist bereits im Tracker), aber nicht jede Tarifcode-Variante einzeln – stattdessen eine Sammel-Seite/Glossar pflegen und deren Haupt-Keyword tracken.
 
