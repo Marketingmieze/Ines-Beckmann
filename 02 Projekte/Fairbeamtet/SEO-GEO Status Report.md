@@ -26,6 +26,14 @@ Neue Reports/Zahlen hier als zusätzliche Zeile ergänzen, nicht alte Werte übe
 | 30.09.2026 | GSC Klicks/Tag (Ø Monat) | Von 399,7 (Okt 2025) auf 150,2 (Sept 2026) – ca. −62% über 11 Monate, fast durchgehend fallend seit März 2026 | SEO Gets (GSC) |
 | 30.09.2026 | GSC Impressions/Tag (Ø Monat) | Von 21.434 (Okt 2025) auf 8.452 (Sept 2026) – ca. −61% im selben Zeitraum | SEO Gets (GSC) |
 | 30.09.2026 | GSC Ø Position (impressions-gewichtet, Monat) | Stabil zwischen 7,8 und 10,1 über den gesamten Zeitraum, keine erkennbare Verschlechterung | SEO Gets (GSC) |
+| 13.10.2026 | Domain Rating (DR) | 5,0 (Ahrefs Rank 28.342.821), unverändert zum 30.09. | Ahrefs |
+| 13.10.2026 | Organische Keywords | 319 (davon 113 in Top 3); 30.09.: 372 / 121 → −14 % bzw. −7 % | Ahrefs |
+| 13.10.2026 | Geschätzter organischer Traffic | 1.100 Besuche/Monat (Traffic-Wert ~806 $); 30.09.: 1.473 / ~1.148 $ → −25 % bzw. −30 % | Ahrefs |
+| 13.10.2026 | Backlinks (live) | 2.143 Links von 766 Referring Domains (30.09.: 2.168 / 775, −1 %); all time: 4.313 Links von 1.328 Domains | Ahrefs |
+| 13.10.2026 | Site Audit | Health Score 99, 961 URLs, 5 Fehler, 341 Warnungen, 63 Hinweise (Crawl lief noch, Status „In progress“) | Ahrefs |
+| 13.10.2026 | GSC 28-Tage-Vergleich | 15.08.–12.09.: 4.850 Klicks, 278.547 Impressions, CTR 1,74 %, Ø Pos. 10,60 → 13.09.–11.10.: 3.885 Klicks, 218.969 Impressions, CTR 1,77 %, Ø Pos. 8,39 (Klicks −20 %, Impressions −21 %) | SEO Gets (GSC) |
+| 13.10.2026 | Indexierung (GSC) | 278 Seiten, 266 indexiert; 2 „Discovered, nicht indexiert“, 1 „Crawled, nicht indexiert“, 2 noindex, 5 unbekannt; 1 Seite mit Deindexierungsrisiko (/beihilfebemessungssatz-berlin/, zuletzt gecrawlt 24.06.2026) | SEO Gets (GSC) |
+| 13.10.2026 | Google-Updates | September 2026 Spam Update (Start 24.09.) laut Google am 08.10.2026 vollständig ausgerollt; Auswirkungen frühestens in 2–3 Wochen messbar | SEO Gets |
 
 ## Wo wir stark sind
 
