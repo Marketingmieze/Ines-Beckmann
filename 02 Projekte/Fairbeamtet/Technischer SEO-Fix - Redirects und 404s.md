@@ -15,7 +15,7 @@ erstellt: 2026-09-30
 |---|---|---|---|
 | Redirect-Ketten (2–3 Hops) | 42 | niedrig-mittel | klein (Bulk-Fix in Rank Math) |
 | 404-Fehler bei plausiblen Tippfehlern/Altlasten | 22 | niedrig-mittel | klein-mittel |
-| 404-Fehler durch vermutete KI-Halluzinationen (familienzuschlag-Cluster) | 36 | mittel (betrifft GEO/AI-Sichtbarkeit) | klein (1 Regel statt 36 Redirects) |
+| 404-Fehler durch vermutete KI-Halluzinationen (familienzuschlag-Cluster) | 36 | mittel (betrifft GEO/AI-Sichtbarkeit) | klein (1 Regel statt 36 Redirects) – ✅ erledigt 14.10.2026 |
 
 **Wichtig zur Einordnung:** Keines dieser Probleme erklärt allein den großen Traffic-Rückgang (siehe Status Report – die Hauptursache bleibt die Google-Update-Korrelation). Das hier ist Grundhygiene, die sich unabhängig davon lohnt: bessere Crawl-Effizienz, kein verschenktes Linkjuice, sauberere Nutzererfahrung bei Tippfehlern.
 
@@ -148,6 +148,22 @@ Betroffene 404-URLs (zur Kontrolle/zum Testen):
 `/familienzuschlaege-fuer-beamte`, `/familienzuschlaf-fuer-beamte/`, `/familienzuschlag-einfach-erklaert/`, `/familienzuschlag-for-beamte/`, `/familienzuschlag-fuer-badge-anspruch-2026/`, `/familienzuschlag-fuer-badge/`, `/familienzuschlag-fuer-baemte/`, `/familienzuschlag-fuer-bayern`, `/familienzuschlag-fuer-bayern/`, `/familienzuschlag-fuer-beamt*en/`, `/familienzuschlag-fuer-beamte-hoehe-anspruch/`, `/familienzuschlag-fuer-beamte-hoehe-und-anspruch-2026`, `/familienzuschlag-fuer-beamte-hoehe-und-anspruch-2026/`, `/familienzuschlag-fuer-beamte/hoehe-und-anspruch-2026`, `/familienzuschlag-fuer-beamten/`, `/familienzuschlag-fuer-beamteten-anspruch-stufen-hoehe`, `/familienzuschlag-fuer-beamtin`, `/familienzuschlag-fuer-beamtin-und-beamte/`, `/familienzuschlag-fuer-beamtin/`, `/familienzuschlag-fuer-beamtinnen-und-beamte-anspruch-stufen-hoehe`, `/familienzuschlag-fuer-beamtinnen-und-beamte/`, `/familienzuschlag-fuer-bebten/`, `/familienzuschlag-fuer-beratende/`, `/familienzuschlag-fuer-beratenden/`, `/familienzuschlag-fuer-bewebeamte/`, `/familienzuschlag-fuer-bienbeamte/`, `/familienzuschlag-fuer-bund/`, `/familienzuschlag-fuer-bundesbeamte/`, `/familienzuschlag-fuer-ein-beamter/`, `/familienzuschlag-fuer-fairbeamtet/`, `/familienzuschlag-fuer-familien/`, `/familienzuschlag-fuer-familienzuschlag/`, `/familienzuschlag-fuer-haben-beamte-2026`, `/familienzuschlag-fuer-teilzeit/`, `/familienzuschlag-hoehe-und-anspruch-2026/`, `/familienzuschuer-fuer-beamte/`
 
 **Alternative ohne Regex** (falls Rank Math in eurer Version/Lizenz kein Regex unterstützt): Die Redirects-Match-Art „Contains" nutzen, Quelle `familienzuschlag` (oder `familienzusch`), Ziel `/familienzuschlag-fuer-beamte/` – funktioniert in den meisten Rank Math-Versionen genauso als Catch-all.
+
+> [!success] Umgesetzt am 14.10.2026
+> Regel ist live und getestet (echte Seite + Stichprobe der 36 Varianten, mit und ohne Query-Parameter wie `?utm_source=`, mit und ohne Cache-Umgehung – alles 200/korrekt weitergeleitet).
+>
+> **Finale, funktionierende Regel in Rank Math → Redirections:**
+> - Match-Typ: Regex
+> - Quelle: `^familienzu(?!schlag-fuer-beamte(/|[?]|$))(schl|schuer).*$`
+> - Ziel: `https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/` (volle Adresse, nicht nur Pfad)
+> - Typ: 301
+>
+> **Stolpersteine, die beim Einrichten aufgetreten sind** (relevant, falls so etwas nochmal gebaut wird):
+> 1. **Kein führender Slash in der Quelle.** Rank Math vergleicht die Regex offenbar ohne das `/` am Anfang des Pfads – eine Quelle mit `^/familienzu...` hat deshalb nie gematcht.
+> 2. **Ziel als volle URL, nicht als relativer Pfad.** Ein zuerst versehentlich eingetragenes Ziel ohne `https://` (nur `www.fairbeamtet.de/...`) wurde von Rank Math als relativer Pfad behandelt und an die eigene Domain drangehängt → Endlosschleife auf der echten Seite (`www.fairbeamtet.de/www.fairbeamtet.de/...`). Das hat die wichtigste Seite der Domain temporär für Besucher unerreichbar gemacht, bis die Regel korrigiert und der Cache geleert war.
+> 3. **Die echte Zielseite muss explizit ausgeschlossen werden**, sonst matcht die Regel sich selbst. Der Ausschluss über eine Regex-Ausnahme `(?!...)` muss auch optionale Query-Parameter (`?utm_source=...` etc.) berücksichtigen – sonst matcht die echte Seite nur bei Aufrufen ohne Parameter korrekt, bei Links mit Tracking-Parametern (Newsletter, Social Media) aber wieder in eine Schleife.
+> 4. **Kein Backslash vor `?` in der Quelle verwenden**, falls das Eingabefeld Backslashes beim Speichern verschluckt – das macht die Regex ungültig und lässt die ganze Regel stillschweigend wirkungslos werden. Eine Zeichenklasse `[?]` statt `\?` ist robuster.
+> 5. **Nach jeder Änderung an Redirect-Regeln den Seiten-Cache leeren**, sonst testet man (und Besucher sehen) tagelang die alte, kaputte Version, obwohl die Regel längst korrigiert ist.
 
 ---
 
