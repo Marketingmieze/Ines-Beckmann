@@ -293,10 +293,10 @@ Das Inhaltsverzeichnis erzeugt die Website automatisch aus den Überschriften. I
 Pro H2/H3: Überschrift · was der Abschnitt leistet (1 bis 2 Sätze) · **Antwortsatz bei Fragen** · Keywords · Quelle (Commodity / L# / T# / E#) · geplante interne Links (Architektur: [[Interne Verlinkung und Informationsarchitektur]]) · geplante Empfehlungen (nur aus `wissen/Empfehlungen und Partner.md`).
 
 **Schritt 14: Gliederungs-Freigabe ⏸ HALT**
-Keine Zeile Fließtext vor ausdrücklicher Freigabe. Die Gliederung ist der kritischste Punkt: Ist sie schwach, wird der Text schwach. Änderungen einarbeiten und neu zeigen, bis freigegeben.
+Keine Zeile Fließtext vor ausdrücklicher Freigabe. **Frag dabei mit, ob der Ratgeber Angst-Framing nach Voice Profile 6b bekommt** (Empfehlung mit Begründung: Gibt es ein echtes Risiko im Thema?), und schlag bei „ja" eine H1 nach 6b vor. Ergebnis als „Angst-Framing: ja/nein" ins Dossier. Die Gliederung ist der kritischste Punkt: Ist sie schwach, wird der Text schwach. Änderungen einarbeiten und neu zeigen, bis freigegeben.
 
 **Schritt 15: Schreiben**
-**Vorher vollständig lesen:** `wissen/Voice Profile.md`, `wissen/Autoren.md` (Abschnitt des gewählten Autors + Regeln), `wissen/Brand Profile.md`, `wissen/Empfehlungen und Partner.md`, `wissen/Interne Beiträge.md`. In einer Zeile bestätigen. Fehlt etwas oder ist ein Abschnitt als [OFFEN] markiert, sag es.
+**Vorher vollständig lesen:** `wissen/Voice Profile.md` (inklusive 6b), `wissen/Angstwörter.md` (wenn Angst-Framing „ja"), `wissen/Autoren.md` (Abschnitt des gewählten Autors + Regeln), `wissen/Brand Profile.md`, `wissen/Empfehlungen und Partner.md`, `wissen/Interne Beiträge.md`. In einer Zeile bestätigen. Fehlt etwas oder ist ein Abschnitt als [OFFEN] markiert, sag es.
 
 Regeln:
 - Exakt nach freigegebener Gliederung.
@@ -306,6 +306,7 @@ Regeln:
 - **Keywords haben Vorrang vor dem Stil** (Voice Profile 3a): Fokus-Keyword wörtlich in H1, erstem Absatz, mindestens einer H2 und im Fazit. Primäre Keywords wörtlich in H2/H3 und Fließtext. Sperrige Keywords nicht umformulieren, sondern den Satz um sie herum bauen. Kein Stuffing.
 - Stil: du-Ansprache, kurze Sätze, keine Schachtelsätze, wie im Gespräch mit dem besten Freund. Raue Ehrlichkeit + Sicherheit: unbequeme Wahrheit klar benennen, direkt danach Halt geben (Voice Profile 1 bis 3 und 6a).
 - Eigenen Input und Expert-Takes sichtbar einbauen.
+- **Angstwörter nach Voice Profile 6b** (Wortschatz: `wissen/Angstwörter.md`): nur bei Themen mit echtem Risiko, nur in H1, erstem Absatz, „Häufige Fehler" und „Achtung:"-Boxen, immer mit Faktenanker. Entschieden wird das bei der Gliederungs-Freigabe (Schritt 14), festgehalten im Dossier. Jede Angst bekommt im ersten Absatz ihre Entwarnung, das ist zugleich Regel 4c.
 - Sicherheitssprache nach Voice Profile Abschnitt 6a: gelegentlich, belegt, in 1 bis 3 Überschriften. Jede Warnung bekommt eine Lösung.
 - Interne Links mit beschreibendem Ankertext.
 - **Fakten:** Jede Zahl, jeder Betrag, jede Frist, jede Rechtsgrundlage braucht eine Quelle mit Stand. Bund und Länder klar trennen. Nicht sicher belegbar: **[PRÜFEN: …]** im Text.

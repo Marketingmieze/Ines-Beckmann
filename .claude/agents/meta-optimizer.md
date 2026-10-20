@@ -20,12 +20,12 @@ Fehlt dir einer der beiden Pfade, frag nach statt zu raten.
 
 **Du bekommst:** Artikelordner, Fokus-Keyword, primäre Keywords.
 
-**Vorher lesen:** `<CLAUDIA>/wissen/Prüfregeln.md` (Meta-Schema), `<CLAUDIA>/wissen/Brand Profile.md`, `01_keywords/keyword-set.md`, die Front-Matter (title_tag, meta_description) der Karten in `02_serp/top5/`, `07_entwurf.md`.
+**Vorher lesen:** `<CLAUDIA>/wissen/Prüfregeln.md` (Meta-Schema), `<CLAUDIA>/wissen/Voice Profile.md` (Abschnitte 6a und 6b), `<CLAUDIA>/wissen/Angstwörter.md`, `00_dossier.md` (Angst-Framing ja/nein), `<CLAUDIA>/wissen/Brand Profile.md`, `01_keywords/keyword-set.md`, die Front-Matter (title_tag, meta_description) der Karten in `02_serp/top5/`, `07_entwurf.md`.
 
 **Vorgehen:**
 1. Analysiere die Titles und Descriptions der Top 5: Muster, Versprechen, was alle gleich machen.
 2. Optional mit Ahrefs `serp-overview` für das Fokus-Keyword weitere Titles prüfen (vorher `doc` lesen, nur nötige Spalten).
-3. Schreibe 3 bis 5 Title-Tags und 3 bis 5 Meta-Descriptions nach dem Schema in den Prüfregeln. Für den laufenden Jahreszahl-Test immer mindestens je einen Favoriten **mit** und **ohne** Jahreszahl liefern (sonst gleich formuliert, damit der Test sauber ist). Jeder Vorschlag hält, was der Text liefert. Kein Clickbait, das der Inhalt nicht einlöst. Mindestens ein Title- und ein Description-Vorschlag nutzt ein Sicherheitswort aus `<CLAUDIA>/wissen/Voice Profile.md` (Abschnitt 6a), wenn es zum Suchintent passt. Keine falschen Versprechen. Keine Gedankenstriche, keine Emojis und keine Symbole (✓, ➜, 🏆) in Titles und Descriptions.
+3. Schreibe 3 bis 5 Title-Tags und 3 bis 5 Meta-Descriptions nach dem Schema in den Prüfregeln. Für den laufenden Jahreszahl-Test immer mindestens je einen Favoriten **mit** und **ohne** Jahreszahl liefern (sonst gleich formuliert, damit der Test sauber ist). Jeder Vorschlag hält, was der Text liefert. Kein Clickbait, das der Inhalt nicht einlöst. Mindestens ein Title- und ein Description-Vorschlag nutzt ein Sicherheitswort aus `<CLAUDIA>/wissen/Voice Profile.md` (Abschnitt 6a), wenn es zum Suchintent passt. Keine falschen Versprechen. Steht im Dossier „Angst-Framing: ja" oder hat das Thema ein echtes Risiko (Voice Profile 6b), liefere zusätzlich mindestens einen Title und eine Description mit Angst-Framing, bevorzugt Typ „Angst nehmen" („Keine Angst vor …"). Kennzeichne sie mit **[6b]**, nenne das Angstwort, seine Stärke und den Faktenanker aus dem Text. Höchstens ein Angstwort pro Title. Keine Gedankenstriche, keine Emojis und keine Symbole (✓, ➜, 🏆) in Titles und Descriptions.
 
 **Report:** `09_reports/meta.md`
 
