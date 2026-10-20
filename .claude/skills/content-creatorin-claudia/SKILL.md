@@ -50,8 +50,8 @@ Das Arbeitsverzeichnis der Session ist die **Vault-Wurzel**, nicht `<CLAUDIA>`. 
 | **Ahrefs-MCP** | Keywords, Suchvolumen, KD, Intention, SERPs | Vor dem ersten Aufruf eines Ahrefs-Tools in einer Session `doc` für dieses Tool lesen. Land `de`. Jeder Aufruf kostet API-Units: `select` auf benötigte Spalten beschränken. |
 | **SEO Gets-MCP** | Echte Search-Console-Daten von fairbeamtet.de | Property `sc-domain:fairbeamtet.de`. Für die eigene Website gilt **SEO Gets vor Ahrefs**, weil es gezählte statt geschätzte Daten sind (Herleitung: [[Sichtbarkeitsverlauf und Relaunch]]). Schreibende Aktionen (Annotationen) nur nach Freigabe. |
 | **NeuronWriter-MCP** | Abstimmungs- und Schreibort mit Sven | Projekt fairbeamtet.de (ID `1d1750a022a42d0d`). **Sven legt pro Artikel die Query an und wählt die Mitbewerber aus.** Genutzt in Schritt 4, 16 und 22. `new-query` nur auf Anweisung. Der Score ist **nie eine Schreibvorgabe**. |
-| **Apify-MCP** | Scraping: Wettbewerber-URLs, Reddit, Foren, YouTube | **Im Vault derzeit nicht verbunden** (nur im Desktop-Projekt). Siehe "Wenn ein Werkzeug fehlt". Actor-Empfehlungen in `wissen/Community-Quellen.md`. Neue Actors erst nach Freigabe. |
-| **Voyage AI** | Semantische Berechnungen | Nur über `scripts/voyage_analyse.py`. Key aus `VOYAGE_API_KEY` in `.claude/settings.local.json` des Vaults. |
+| **Apify-MCP** | Scraping: Wettbewerber-URLs, Reddit, Foren, YouTube | Verbunden seit 20.10.2026. Actor-Empfehlungen in `wissen/Community-Quellen.md`. Neue Actors erst nach Freigabe. Sind die Apify-Werkzeuge in dieser Sitzung nicht da, bitte Ines um einen Neustart der Sitzung (MCP-Server laden nur beim Start). |
+| **Voyage AI** | Semantische Berechnungen | Verbunden seit 20.10.2026. Nur über `scripts/voyage_analyse.py`. Key aus `VOYAGE_API_KEY` in `.claude/settings.local.json` des Vaults. Alle fünf Unterbefehle sind mit echten Daten geprüft. |
 | **Subagenten** (`.claude/agents/`) | Datensammlung und unabhängige Prüfungen | Siehe Ablauf. Subagenten bekommen immer `<CLAUDIA>` **absolut** und die konkreten Dateipfade mit. |
 | **Humanizer-Skill** (`.claude/skills/humanizer/`) | Methode gegen KI-Muster (26 Muster, MIT) | Nutzt der Subagent `ai-humanizer` in Schritt 17. Beim Schreiben (Schritt 15) die stärksten Muster §1 bis §8 von Anfang an vermeiden. |
 | **WebSearch / WebFetch** | Faktencheck, offizielle Quellen, Seiten von fairbeamtet.de | |
@@ -86,7 +86,7 @@ python3 "<CLAUDIA>/scripts/voyage_analyse.py" similarity --docs … --out PFAD
 1. Sag klar, was nicht funktioniert, mit Fehlermeldung.
 2. Einmal korrigiert neu versuchen (Ahrefs: `doc` erneut lesen, exakt nach Doku aufrufen).
 3. Klappt es nicht: Alternative vorschlagen und **auf Freigabe warten**.
-4. **Apify fehlt im Vault:** Sag es in Schritt 4, 8 und 9 ausdrücklich und lass Ines wählen: (a) Apify für den Vault freischalten, (b) WebFetch als Notlösung für die Top-5-URLs, bei Reddit und Foren WebSearch mit `site:`, (c) diesen Teilschritt im Desktop-Projekt laufen lassen und die Rohdaten herüberkopieren. Notlösung immer in der Rohdaten-Karte vermerken.
+4. **Apify-Werkzeuge nicht sichtbar:** Das heißt fast immer, dass die Sitzung vor dem Einrichten gestartet wurde. Bitte Ines um einen Neustart, statt sofort auf Notlösungen zu gehen. Hilft das nicht: (a) WebFetch als Notlösung für die Top-5-URLs, bei Reddit und Foren WebSearch mit `site:`, (b) den Teilschritt im Desktop-Projekt laufen lassen und die Rohdaten herüberkopieren. Notlösung immer in der Rohdaten-Karte vermerken.
 5. **Niemals Daten erfinden.** Keine geschätzten Suchvolumina, keine simulierten Scores. Ohne Voyage darfst du qualitativ analysieren, kennzeichnest das aber überall mit **[ohne Voyage]**. `VOYAGE_MOCK=1` ist nur zum Testen des Skripts da, nie für echte Artikel.
 
 ---
