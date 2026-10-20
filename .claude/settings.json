@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 \"/Users/inesbeckmann/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Zweites Gehirn/03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/scripts/voyage_analyse.py\":*)",
+      "Bash(python3 \"/Users/inesbeckmann/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Zweites Gehirn/03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/scripts/keyword_planner.py\":*)",
+      "Bash(python3 \"/Users/inesbeckmann/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Zweites Gehirn/03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/scripts/sitemap_aktualisieren.py\")",
+      "WebFetch(domain:www.fairbeamtet.de)",
+      "WebFetch(domain:fairbeamtet.de)"
+    ]
+  }
+}

@@ -158,6 +158,7 @@ Die Deep-Research-Auswertung enthält zusätzlich Zitate von Danny Sullivan, Joh
 Er liegt jetzt hier: [[Deep Research Google-Ranking-Hebel 2026]] — unverändert, mit Datum 15.09.2026. **Bei Abweichungen gilt die jeweilige Hebel-Notiz**, weil dort jede Aussage gegen die Primärquelle geprüft ist. Der Bericht ist Ausgangspunkt, nicht Beleg.
 
 ## Referenzen
+- [[Content Creatorin Claudia]] — wendet dieses Wissen beim Schreiben an; welche Notiz an welchem Schritt gilt, steht in [[Vault-Wissen]]
 - [[SEO]] — der Bereich, in dem die Umsetzung läuft
 - [[Content Wissen]] — Plattform-Content, YouTube und Video, nicht Website-SEO
 - [[WordPress und Fluent-Plugins]] — die technische Basis der Website

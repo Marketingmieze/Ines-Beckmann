@@ -56,3 +56,5 @@ Referenz-Screenshot: von Ines am 24.09.2026 geteilt, Beispielartikel „Private 
 ## Weiterführend
 
 Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Fairbeamtet.md|KI-Klang vermeiden – Fairbeamtet]].
+
+**Für Website-Ratgeber gilt das ausführlichere [[Voice Profile]]** von [[Content Creatorin Claudia]] (seit 20.10.2026). Es arbeitet diese Notiz ein und geht bei Widerspruch vor. Der Intro-Baustein oben steht dort als Abschnitt 4a, die Regel zu Satzfragmenten als Abschnitt 4b. Diese Notiz bleibt der kurze, markenweite Überblick für alles andere (Social Media, Mails, Videotexte).

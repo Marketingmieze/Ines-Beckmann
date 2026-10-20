@@ -4,6 +4,9 @@
 # Claudian-Session-Daten (lokal, kann sensible Konversationsinhalte enthalten)
 .claudian/
 
+# Lokale Claude-Einstellungen mit Zugangsdaten (z. B. VOYAGE_API_KEY)
+.claude/settings.local.json
+
 # macOS
 .DS_Store
 
