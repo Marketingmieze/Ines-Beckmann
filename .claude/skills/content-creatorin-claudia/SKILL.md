@@ -106,6 +106,36 @@ Diese sechs Regeln aus [[Googles No. 1]] gelten in **jedem** Schritt, besonders 
 
 ---
 
+## Die drei Siebe
+
+**Jede Information, die in den Ratgeber will, muss durch drei Siebe. Nur was dreimal „ja" ergibt, kommt rein.**
+
+| # | Sieb | Die Frage | Nein bedeutet |
+|---|---|---|---|
+| 1 | **Wahrheit** | Stimmt es, und habe ich es selbst an der Quelle geprüft? | Raus oder `[PRÜFEN: …]` |
+| 2 | **Möglichkeit** | Ist das für diese Leserin, diesen Leser tatsächlich möglich? Rechtlich, praktisch, in ihrer Statusgruppe und ihrem Bundesland? | Raus oder mit der Bedingung versehen, unter der es möglich ist |
+| 3 | **Notwendigkeit** | Macht es den Ratgeber wirklich besser? Hilft es bei der Entscheidung? | Raus, auch wenn es stimmt und interessant ist |
+
+**Sieb 2 ist bei uns der ungewöhnliche.** Im klassischen Gleichnis steht an dieser Stelle die „Güte", also ob man Gutes über eine Person sagt. Für Beamten-Ratgeber ist das nutzlos, deshalb hat Ines es bewusst auf **Möglichkeit** umgestellt (20.10.2026). Das ist die wichtigere Frage bei PKV und Beihilfe: Vieles klingt plausibel und ist für Beamte trotzdem nicht machbar. Beispiele für ein Nein bei Sieb 2:
+
+- „Du kannst jederzeit zurück in die gesetzliche Krankenversicherung" — für die meisten Beamten praktisch ausgeschlossen
+- Ein Tarifvorteil, den es nur in einem Bundesland gibt, ohne diese Einschränkung zu nennen
+- Eine Frist, die für Anwärter gilt, aber nicht für Beamte auf Lebenszeit
+- Ein Rat, der eine Gesundheitsprüfung voraussetzt, die viele nicht bestehen
+
+**Sieb 3 ist der härteste.** Er wirft auch Richtiges raus. Wahr und interessant reicht nicht, es muss der Leserin bei ihrer Entscheidung helfen. Das ist unsere Bremse gegen aufgeblähte Ratgeber, die alles erwähnen und nichts klären.
+
+**Wo die Siebe greifen:**
+- **Schritt 11:** Jede Lücke, jeder Expert-Take und jeder eigene Input wird durchgesiebt, bevor er ins Briefing kommt.
+- **Schritt 12:** Im Briefing bekommt jeder nummerierte Punkt die Spalte `Siebe` mit drei Werten, z. B. `✓✓✓` oder `✓✓✗`. Punkte mit einem ✗ schlägst du zum Streichen vor und begründest kurz. Ines entscheidet.
+- **Schritt 13:** Jeder Abschnitt der Gliederung muss Sieb 3 bestehen. Wofür du keine Begründung findest, warum er den Ratgeber besser macht, fliegt raus.
+- **Schritt 15:** Beim Schreiben jede Behauptung noch einmal gegen Sieb 1 und 2 halten.
+- **Schritt 16:** Die QA prüft stichprobenartig nach und hält Verstöße im Report fest.
+
+Ein Pflichtthema aus der Commodity-Analyse ist von Sieb 3 ausgenommen: Es muss rein, weil Google einen Konsens erwartet. Es muss aber trotzdem durch Sieb 1 und 2.
+
+---
+
 ## Artikelordner
 
 Jeder Ratgeber bekommt einen eigenen Ordner: `artikel/JJJJ-MM-TT_slug/`
@@ -232,7 +262,9 @@ Stichpunkte reichen. Ablage: `04_insights/eigener-input.md`, die Punkte zusätzl
 5. **Unique Angle:** 2 bis 3 Blickwinkel, die fairbeamtet.de klar unterscheiden (Perspektive, Standpunkt, Entscheidungshilfe, Baustein, den niemand hat).
 
 **Schritt 12: Deep-Dive-Briefing ⏸ HALT**
-`05_briefing.md` und Zusammenfassung im Chat: Keyword-Set · Top 5 mit Ranking und Ausreißern · Commodity-Topics · Lücken (nach Quelle) · Expert-Takes · Unique-Angle-Vorschläge mit Empfehlung · deine Empfehlung. Alles durchnummeriert (L1, T1, …). Frage: Was rein, was raus, welcher Angle? **Warten.**
+`05_briefing.md` und Zusammenfassung im Chat: Keyword-Set · Top 5 mit Ranking und Ausreißern · Commodity-Topics · Lücken (nach Quelle) · Expert-Takes · Unique-Angle-Vorschläge mit Empfehlung · deine Empfehlung. Alles durchnummeriert (L1, T1, …).
+
+**Jeder nummerierte Punkt bekommt die Spalte `Siebe`** mit drei Zeichen für Wahrheit, Möglichkeit, Notwendigkeit (z. B. `✓✓✓`). Punkte mit einem ✗ listest du getrennt unter „Vorschlag zum Streichen" mit einem Satz Begründung. Ines entscheidet, ob sie trotzdem rein sollen. Frage: Was rein, was raus, welcher Angle? **Warten.**
 
 ### PHASE 4 · Planung und Schreiben
 
@@ -254,7 +286,11 @@ Hinweis: KI-Systeme und Leser werten vor allem die ersten ca. 20 % und die letzt
 
 Das Inhaltsverzeichnis erzeugt die Website automatisch aus den Überschriften. Im Artikeltext nichts dafür bauen, nur auf saubere H2/H3-Struktur achten.
 
-Pro H2/H3: Überschrift · was der Abschnitt leistet (1 bis 2 Sätze) · Keywords · Quelle (Commodity / L# / T# / E#) · geplante interne Links (Architektur: [[Interne Verlinkung und Informationsarchitektur]]) · geplante Empfehlungen (nur aus `wissen/Empfehlungen und Partner.md`).
+**Antwort zuerst (Voice Profile 4c):** Ist die Überschrift eine Frage, notiere in der Gliederung die **Antwort in einem Satz**. Findest du sie nicht, ist der Abschnitt noch nicht klar genug und muss überarbeitet werden, bevor geschrieben wird.
+
+**Sieb 3:** Jeder Abschnitt braucht eine Begründung, warum er den Ratgeber besser macht. Fehlt sie, fliegt er raus. Ausgenommen sind Pflichtthemen aus der Commodity-Analyse.
+
+Pro H2/H3: Überschrift · was der Abschnitt leistet (1 bis 2 Sätze) · **Antwortsatz bei Fragen** · Keywords · Quelle (Commodity / L# / T# / E#) · geplante interne Links (Architektur: [[Interne Verlinkung und Informationsarchitektur]]) · geplante Empfehlungen (nur aus `wissen/Empfehlungen und Partner.md`).
 
 **Schritt 14: Gliederungs-Freigabe ⏸ HALT**
 Keine Zeile Fließtext vor ausdrücklicher Freigabe. Die Gliederung ist der kritischste Punkt: Ist sie schwach, wird der Text schwach. Änderungen einarbeiten und neu zeigen, bis freigegeben.
@@ -265,7 +301,8 @@ Keine Zeile Fließtext vor ausdrücklicher Freigabe. Die Gliederung ist der krit
 Regeln:
 - Exakt nach freigegebener Gliederung.
 - Überwiegend Fließtext in kurzen Absätzen. Listen und Tabellen nur, wo sie helfen (Vergleiche, Schritte, Bundesland-Übersichten). Kein Abschnitt nur aus Stichpunkten.
-- Jeder Abschnitt beantwortet seine Frage im ersten Satz.
+- **Antwort zuerst (Voice Profile 4c, Pflicht):** Der erste Satz nach jeder Überschrift beantwortet sie vollständig. Bei Ja-oder-Nein-Fragen beginnt er mit Ja oder Nein. Keine Hinführung, keine Ankündigung, keine Einschränkung vor der Antwort. Erst danach die Erklärung.
+- **Die drei Siebe:** Jede Behauptung gegen Wahrheit und Möglichkeit prüfen, während du schreibst. Was Sieb 2 nicht besteht, bekommt die Bedingung dazu, unter der es möglich ist.
 - **Keywords haben Vorrang vor dem Stil** (Voice Profile 3a): Fokus-Keyword wörtlich in H1, erstem Absatz, mindestens einer H2 und im Fazit. Primäre Keywords wörtlich in H2/H3 und Fließtext. Sperrige Keywords nicht umformulieren, sondern den Satz um sie herum bauen. Kein Stuffing.
 - Stil: du-Ansprache, kurze Sätze, keine Schachtelsätze, wie im Gespräch mit dem besten Freund. Raue Ehrlichkeit + Sicherheit: unbequeme Wahrheit klar benennen, direkt danach Halt geben (Voice Profile 1 bis 3 und 6a).
 - Eigenen Input und Expert-Takes sichtbar einbauen.
@@ -281,8 +318,10 @@ Regeln:
 2. **Commodity-Abdeckung:** `coverage` mit den Commodity-Topics gegen `07_entwurf.md`. Unter Schwelle = nicht abgedeckt.
 3. **Lücken und Angle:** Sind alle freigegebenen L#, T#, E# und der Unique Angle spürbar im Text?
 4. **Faktencheck:** Subagent **faktencheck** prüft alle Fakten gegen offizielle Quellen und schreibt `08_qa/faktencheck.md`.
-5. **Struktur:** Gliederung eingehalten, Intro-Baustein vorhanden (Autor-Zeile, Datum, Box "Das Wichtigste zusammengefasst"), Einleitung beantwortet Kernfrage, Fazit greift Fokus-Keyword auf, alle vier Pflichtteile vorhanden (Stand-Datum, Hinweis, Maklerstatus, Autorenbox). Empfehlungen und Warnungen zu Versicherern nur als gekennzeichnete eigene Erfahrung und nur aus den erlaubten Quellen (Empfehlungen und Partner, Regeln 1 und 2). Keine "beste PKV"-, "Testsieger"- oder "günstigste"-Aussagen.
-6. **NeuronWriter (zweite Meinung):** Svens Query aus dem Dossier nutzen (Projekt fairbeamtet.de, ID `1d1750a022a42d0d`). Gibt es keine, Sven fragen; `new-query` (kostet 1 Analyse-Credit) nur auf seine Anweisung. Empfehlungen mit `get-query` holen. Den Entwurf als HTML mit `evaluate-content` bewerten (speichert nichts, kostet keinen Credit). `mark-content-as-done` nur auf Anweisung. Festhalten: Content-Score, Score-Spanne der Wettbewerber, fehlende Begriffe. Fehlende Begriffe nur einbauen, wenn sie inhaltlich etwas beitragen und natürlich passen. Begriffe, die nur den Score heben, ignorieren. Widersprechen sich NeuronWriter und Voyage, gilt Voyage plus dein inhaltliches Urteil, und der Widerspruch kommt in den Report. Ergebnis in `08_qa/neuronwriter.md`.
+5. **Antwort zuerst (Voice Profile 4c):** Geh **jede** Überschrift durch und prüfe den ersten Satz darunter. Beantwortet er die Überschrift vollständig? Bei Ja-oder-Nein-Fragen: Steht Ja oder Nein am Anfang? Gibt es Hinführungen, Ankündigungen oder Einschränkungen vor der Antwort? Jeden Verstoß direkt beheben und im QA-Report als Tabelle festhalten (Überschrift · erster Satz vorher · nachher).
+6. **Die drei Siebe:** Stichprobe über die Hauptaussagen. Bei jedem Verstoß notieren, welches Sieb gerissen ist. Sieb 1 und 2 sind Fehler und müssen behoben werden. Sieb 3 ist ein Streichvorschlag an Ines, nicht eigenmächtig löschen, wenn der Punkt im Briefing freigegeben war.
+7. **Struktur:** Gliederung eingehalten, Intro-Baustein vorhanden (Autor-Zeile, Datum, Box "Das Wichtigste zusammengefasst"), Einleitung beantwortet Kernfrage, Fazit greift Fokus-Keyword auf, alle vier Pflichtteile vorhanden (Stand-Datum, Hinweis, Maklerstatus, Autorenbox). Empfehlungen und Warnungen zu Versicherern nur als gekennzeichnete eigene Erfahrung und nur aus den erlaubten Quellen (Empfehlungen und Partner, Regeln 1 und 2). Keine "beste PKV"-, "Testsieger"- oder "günstigste"-Aussagen.
+8. **NeuronWriter (zweite Meinung):** Svens Query aus dem Dossier nutzen (Projekt fairbeamtet.de, ID `1d1750a022a42d0d`). Gibt es keine, Sven fragen; `new-query` (kostet 1 Analyse-Credit) nur auf seine Anweisung. Empfehlungen mit `get-query` holen. Den Entwurf als HTML mit `evaluate-content` bewerten (speichert nichts, kostet keinen Credit). `mark-content-as-done` nur auf Anweisung. Festhalten: Content-Score, Score-Spanne der Wettbewerber, fehlende Begriffe. Fehlende Begriffe nur einbauen, wenn sie inhaltlich etwas beitragen und natürlich passen. Begriffe, die nur den Score heben, ignorieren. Widersprechen sich NeuronWriter und Voyage, gilt Voyage plus dein inhaltliches Urteil, und der Widerspruch kommt in den Report. Ergebnis in `08_qa/neuronwriter.md`.
 
 Mängel direkt beheben, alles in `08_qa/qa-report.md` (Befund, Score vorher/nachher, Änderung). Bei Score-Änderungen QA-Matrix erneut laufen lassen.
 
