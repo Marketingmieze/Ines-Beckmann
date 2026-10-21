@@ -133,7 +133,7 @@ Dazu kommt die Hürde aus dem Abschnitt oben. Eine Diagnose gilt als ärztliches
 
 Ablehnung, Leistungsausschluss oder Risikozuschlag mit spürbar höheren Beiträgen. Beim Ausschluss bekommst du einen Vertrag, der alles abdeckt außer genau diesem Bereich.
 
-Für dich als Beamtin oder Beamten ist das doppelt bitter. Ohne PKV keine Verbeamtung. Und bei der Dienstunfähigkeit gehören psychische Ursachen zu den häufigsten Gründen, warum Menschen überhaupt aus dem Dienst fallen. [PRÜFEN: Anteil psychischer Ursachen an DU-Fällen, Quelle mit Stand-Jahr] Ein Ausschluss genau dort nimmt dir den Schutz, den du am dringendsten brauchst.
+Für dich als Beamtin oder Beamten wiegt das doppelt. Eine psychische Diagnose in der Akte kann dir den Weg in die beihilfekonforme PKV verbauen und zugleich bei der amtsärztlichen Untersuchung Fragen aufwerfen. Und bei der Dienstunfähigkeit gehören psychische Ursachen zu den häufigsten Gründen, warum Menschen überhaupt aus dem Dienst fallen. [PRÜFEN: Anteil psychischer Ursachen an DU-Fällen, Quelle mit Stand-Jahr] Ein Ausschluss genau dort nimmt dir den Schutz, den du am dringendsten brauchst.
 
 Wie Versicherer mit einer Psychotherapie in der Vorgeschichte umgehen, steht ausführlich in unserem Ratgeber zur [Berufsunfähigkeitsversicherung trotz Psychotherapie](https://www.fairbeamtet.de/berufsunfaehigkeitsversicherung-psychotherapie/).
 
@@ -435,3 +435,78 @@ Frühestens 4 Wochen nach Einsetzen messen, vorher sagen die Zahlen nichts.
 | Datum | Klicks | Impressionen | Ø Position | Anmerkung |
 |---|---|---|---|---|
 | 2026-10-21 | 0 | 5 | 34,0 | Ausgangswert, Artikel 6 Tage alt. Zeitraum 21.07.–19.10.2026 |
+
+---
+
+# Faktencheck vom 21.10.2026
+
+Geprüft auf Anforderung von Ines. YMYL-Thema, deshalb jede Rechtsaussage gegen die Primärquelle.
+
+## Technische Prüfung des JSON-LD
+
+| Prüfpunkt | Ergebnis |
+|---|---|
+| JSON-Syntax (`json.loads`) | valide |
+| `@context` / `@type` | `https://schema.org` / `FAQPage`, korrekt |
+| Pflichtfelder `Question.name` + `acceptedAnswer.text` | bei allen 15 vorhanden |
+| Doppelte Fragen | keine |
+| Sichtbare FAQs auf der Seite | 15 |
+| Fragen im Schema | 15 |
+| Textabweichungen Schema gegen Seite | **0** |
+| HTML in `text`-Feldern | keines |
+
+Block 8 ist auf der Seite inzwischen auf die gekürzte Fassung umgestellt (35 Wörter). Schema und sichtbarer Text stimmen damit vollständig überein.
+
+## Rechtsaussagen
+
+**1. Vier-Wochen-Frist nach § 305 SGB V — bestätigt**
+
+§ 305 Abs. 1 Satz 6 und 7 SGB V im Wortlaut:
+
+> „Auf Antrag der Versicherten haben die Krankenkassen abweichend von § 303 Absatz 4 Diagnosedaten, die ihnen nach den §§ 295 und 295a übermittelt wurden und deren Unrichtigkeit durch einen ärztlichen Nachweis belegt wird, in berichtigter Form […] zu verwenden. Den Antrag nach Satz 6 haben die Krankenkassen **innerhalb von vier Wochen** nach Erhalt des Antrags zu bescheiden."
+
+Quelle: https://www.gesetze-im-internet.de/sgb_5/__305.html (abgerufen 21.10.2026). Auch das Erfordernis des „ärztlichen Nachweises" steht wörtlich im Gesetz. Winzige Abweichung: Das Gesetz sagt „bescheiden", die FAQ „entscheiden". Inhaltlich dasselbe, kein Korrekturbedarf.
+
+**2. BGH-Beschluss vom 25.09.2019, Az. IV ZR 247/18 — bestätigt**
+
+Aktenzeichen, Datum und Inhalt stimmen. Der BGH hat entschieden, dass die positive Kenntnis des anzeigepflichtigen Umstands zum objektiven Tatbestand der Anzeigepflichtverletzung nach § 19 Abs. 1 VVG gehört und vom Versicherer zu beweisen ist. Fahrlässige Unkenntnis genügt nicht.
+
+**3. Monatsfrist bei Art. 16 DSGVO — inhaltlich richtig, Fundstelle unpräzise**
+
+Die FAQ sagt: „Für Berichtigungen nach Art. 16 DSGVO gilt allgemein eine Frist von in der Regel einem Monat."
+
+Art. 16 DSGVO selbst nennt keine Frist. Sie steht in Art. 12 Abs. 3 DSGVO: „unverzüglich, in jedem Fall aber innerhalb eines Monats nach Eingang des Antrags", und zwar für Anträge nach Art. 15 bis 22. Art. 16 liegt in diesem Bereich, die Frist gilt also.
+
+Durch das Wort „allgemein" ist die FAQ nicht falsch. Wer es juristisch sauber will, ergänzt die Fundstelle:
+
+> …gilt nach Art. 12 Abs. 3 DSGVO eine Frist von in der Regel einem Monat.
+
+Niedrige Priorität, kein Fehler.
+
+**4. Stiftung UPD — bestätigt und aktuell**
+
+Die Stiftung Unabhängige Patientenberatung Deutschland existiert, berät kostenfrei und auf Wunsch anonym, unabhängig vom Versicherungsstatus. Telefon 0800 011 77 22, dazu 16 Beratungsstellen und seit März 2026 schriftliche Beratung. Bezeichnung in der FAQ ist korrekt.
+
+## Ein Fehler in meinem Teil-2-Text, korrigiert
+
+Im Abschnitt „Was so eine Diagnose dich kosten kann" stand von mir:
+
+> ~~Ohne PKV keine Verbeamtung.~~
+
+**Das ist sachlich falsch.** Mindestens neun Bundesländer bieten die pauschale Beihilfe, darunter Baden-Württemberg, Berlin, Brandenburg, Bremen, Hamburg, Niedersachsen, Sachsen und Thüringen. Mecklenburg-Vorpommern seit 01.05.2026, Sachsen-Anhalt seit 01.01.2026. Dort können Beamte freiwillig in der gesetzlichen Krankenversicherung bleiben und bekommen einen Zuschuss. Die Verbeamtung hängt außerdem an der amtsärztlichen Untersuchung, nicht am PKV-Abschluss.
+
+Ersetzt durch:
+
+> Eine psychische Diagnose in der Akte kann dir den Weg in die beihilfekonforme PKV verbauen und zugleich bei der amtsärztlichen Untersuchung Fragen aufwerfen.
+
+Der bestehende Artikel formuliert an dieser Stelle übrigens korrekt vorsichtig („Ohne PKV läuft in vielen Bundesländern die Beihilfe nicht rund"). Der Fehler war allein in meinem Zusatztext und ist nicht veröffentlicht.
+
+## Zwei Punkte zur Plausibilität, nicht im JSON-LD
+
+**Widerspruch vor der Klage.** Die FAQ „Was tun, wenn die Krankenkasse die Korrektur verweigert?" nennt direkt das Sozialgericht. In der Praxis kommt vorher das Widerspruchsverfahren gegen den Bescheid der Kasse. Die Antwort ist nicht falsch, aber sie überspringt einen Schritt. Ein Halbsatz würde sie vollständig machen.
+
+**Risikostrukturausgleich.** Im Haupttext steht, das Abrechnungssystem belohne „Ärzte" mit mehr Geld aus dem Risikostrukturausgleich. Der Morbi-RSA verteilt Mittel zwischen den **Krankenkassen**, nicht an Ärzte. Ärztliches Upcoding hat andere Anreize. Die FAQ-Formulierung „die im Abrechnungssystem mehr Geld bringen" trägt, der Satz im Haupttext ist fachlich schief. Sollte Sven prüfen.
+
+## Offen
+
+Der Marker `[PRÜFEN: Anteil psychischer Ursachen an DU-Fällen, Quelle mit Stand-Jahr]` steht weiter im Teil-2-Text. Vor Veröffentlichung belegen oder den Satz streichen.
