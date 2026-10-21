@@ -162,39 +162,33 @@ Ja. Ärzte dürfen und sollen eine Diagnose korrigieren, wenn sie falsch ist. Ei
 
 **Vier Handgriffe. Eine Frage kommt neu dazu, eine bestehende wird umbenannt.**
 
-### Wo das Schema liegt
+### Stand vom 21.10.2026, nach Ines' Umsetzung
 
-Das `FAQPage`-Schema wird **nicht von Rank Math erzeugt**. Rank Math schreibt einen eigenen Block (`class="rank-math-schema-pro"`) mit Place, Organization und BlogPosting. Das FAQ-Schema steht in einem separaten, handgepflegten Script-Block mit eingerücktem JSON. Also: nicht in den Rank-Math-Einstellungen suchen, sondern im Artikel selbst nach dem Custom-HTML-Block mit `"@type": "FAQPage"`.
+Die Seite hat jetzt **16 sichtbare FAQ-Blöcke**. Darin ein Duplikat.
 
-Konsequenz: Das Schema aktualisiert sich **nicht** automatisch, wenn du die sichtbaren FAQs änderst. Du musst beides anfassen.
+| Nr. | Frage | Status |
+|---|---|---|
+| 8 | Wie kann ich eine psychiatrische Diagnose loswerden? | neu eingefügt |
+| 10 | Kann ein Arzt nachträglich die Diagnose ändern? | umbenannt aus „Kann ich die Diagnose selbst berichtigen lassen…" |
+| 16 | Kann ein Arzt nachträglich die Diagnose ändern? | **Duplikat von Nr. 10** |
 
-### Schritt 1: Neue FAQ sichtbar im Artikel einfügen
+**Ursache liegt bei mir.** Teil 2 dieser Datei enthielt beide FAQs als einzusetzenden Text. Später habe ich empfohlen, die zweite nicht einzusetzen, sondern Nr. 10 umzubenennen. Die alte Anweisung aus Teil 2 blieb aber stehen. Wer beides abarbeitet, landet zwangsläufig beim Duplikat.
 
-Am Ende des FAQ-Bereichs, als H3 plus Antworttext:
+Das JSON-LD auf der Seite steht noch auf 14 Fragen, ist also noch nicht angefasst.
 
-**Wie kann ich eine psychiatrische Diagnose loswerden?**
+### Schritt 1: Accordion-Block Nr. 10 löschen
 
-> Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung.
+Lösche den Block mit dem Titel „Kann ein Arzt nachträglich die Diagnose ändern?", der die Antwort **„Hier ist die Rechtslage differenziert…"** enthält. Das ist der zehnte von oben.
 
-### Schritt 2: Bestehende FAQ sichtbar umbenennen
+Block Nr. 16 mit derselben Frage bleibt stehen. Er hat die bessere Antwort, weil sie mit „Ja." beginnt und damit die Frage sofort beantwortet (Regel 4c im [[Voice Profile]]). Die Antwort von Nr. 10 fängt mit „Hier ist die Rechtslage differenziert" an, also mit einer Hinführung, und sagt inhaltlich dasselbe.
 
-Suche im FAQ-Bereich diese H3:
+Danach: 15 sichtbare FAQs, keine Dopplung.
 
-> Kann ich die Diagnose selbst berichtigen lassen oder nur die zugrunde liegenden Fakten?
+### Schritt 2: JSON-LD-Block komplett ersetzen
 
-Ersetze sie durch:
+Inhalt des `<script type="application/ld+json">`-Blocks mit `"@type": "FAQPage"` vollständig durch den Block unten ersetzen. Die `<script>`-Tags bleiben stehen.
 
-> Kann ein Arzt nachträglich die Diagnose ändern?
-
-**Den Antworttext nicht anfassen.** Er passt bereits („Eine Diagnose gilt als ärztliches Werturteil und ist nur eingeschränkt berichtigungsfähig…"). Grund für die Umbenennung: Google zeigt in der Ziel-SERP genau diese Nutzer-Formulierung als Fragen-Box.
-
-### Schritt 3: Den JSON-LD-Block komplett ersetzen
-
-Suche im Artikel den Script-Block `<script type="application/ld+json">`, der mit `"@type": "FAQPage"` beginnt. **Ersetze seinen gesamten Inhalt** durch den Block unten. Die öffnenden und schließenden `<script>`-Tags bleiben stehen.
-
-Das ist sicherer als von Hand einen Eintrag einzufügen, weil hier Komma-Fehler die häufigste Ursache für ein kaputtes Schema sind.
-
-Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die Umbenennung aus Schritt 2 (Frage an vierter Stelle) und die neue Frage am Ende. Macht 15 Fragen. Mit `json.loads` gegengeprüft, keine doppelten Fragen.
+Dieses Schema ist **aus dem aktuell sichtbaren Seitentext erzeugt**, abzüglich des zu löschenden Blocks Nr. 10. Alle 15 Antworttexte stimmen damit Zeichen für Zeichen mit dem überein, was auf der Seite steht. Reihenfolge wie auf der Seite.
 
 ```json
 {
@@ -211,26 +205,10 @@ Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die U
     },
     {
       "@type": "Question",
-      "name": "Wie finde ich heraus, ob in meiner Krankenakte falsche Diagnosen stehen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Über die Patientenquittung deiner Kasse oder deine elektronische Patientenakte in der ePA-App siehst du, welche Diagnosen für dich abgerechnet wurden. Frag die ICD-Codes im Antrag ausdrücklich mit an, sonst bekommst du oft nur die Leistungen. Besonders prüfenswert: psychische Diagnosen und Termine, bei denen du eigentlich nur wegen einer Kleinigkeit in der Praxis warst."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Kann man eine falsche Diagnose vom Arzt löschen und aus der Akte entfernen lassen?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ja. Der zentrale Schritt ist ein ärztliches Attest, das die Unrichtigkeit bestätigt. Wichtig: Die Korrektur beim Arzt allein reicht nicht, sie muss zusätzlich der Krankenversicherung gemeldet werden, sonst taucht die Diagnose in der Patientenquittung weiter auf."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kann ein Arzt nachträglich die Diagnose ändern?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hier ist die Rechtslage differenziert. Eine Diagnose gilt als ärztliches Werturteil und ist nur eingeschränkt berichtigungsfähig. Sind die zugrunde liegenden Tatsachen falsch, lassen sie sich leichter korrigieren. Ein pauschales Bestreiten der Diagnose reicht dafür nicht."
       }
     },
     {
@@ -243,26 +221,10 @@ Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die U
     },
     {
       "@type": "Question",
-      "name": "Wie lange darf die Bearbeitung eines Berichtigungsantrags dauern?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Über einen Antrag auf Berichtigung von Diagnosedaten muss deine Krankenkasse nach § 305 SGB V innerhalb von vier Wochen entscheiden. Für Berichtigungen nach Art. 16 DSGVO gilt allgemein eine Frist von in der Regel einem Monat. Setz dem Arzt oder der Kasse in deinem Schreiben trotzdem eine eigene, konkrete Frist."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Muss ich bei der Versicherung auch Diagnosen angeben, von denen ich nichts wusste?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Nein. Nach § 19 VVG musst du nur die dir bekannten Diagnosen angeben. Laut BGH-Beschluss vom 25.09.2019 (Az. IV ZR 247/18) muss der Versicherer beweisen, dass du eine Diagnose bereits vor dem Versicherungsabschluss kanntest."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sollte ich vor dem PKV-Abschluss überhaupt meine Patientenakte einsehen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kommt drauf an. Kannst du die Gesundheitsfragen nicht sicher beantworten, fordere die Patientenquittung an. Kennst du deine Diagnosen und hattest in den letzten Jahren nur Vorsorgetermine, musst du nicht zwingend reinschauen. Sobald du eine Diagnose kennst, wird daraus anzeigepflichtiges Wissen."
       }
     },
     {
@@ -275,26 +237,10 @@ Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die U
     },
     {
       "@type": "Question",
-      "name": "Kann ich wegen einer Fehldiagnose Schadensersatz verlangen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Grundsätzlich ja, der Nachweis ist in der Praxis aber schwierig. Entstehen durch die falsche Diagnose nachweisbare finanzielle Schäden, etwa der Verlust des BU-Schutzes, kommen Haftungsansprüche infrage. Meist ist es sinnvoller, die Diagnose zügig korrigieren zu lassen, statt einen langwierigen Schadensersatzprozess zu führen."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Was tun, wenn die Krankenkasse die Korrektur verweigert?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Dann kannst du dich ans Sozialgericht wenden. Nach dem Amtsermittlungsgrundsatz klärt das Gericht den Sachverhalt selbst, notfalls mit einem Gutachten auf Staatskosten."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was hat eine Falschdiagnose mit meiner Verbeamtung zu tun?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ohne bestandene Gesundheitsprüfung bei PKV und amtsärztlicher Untersuchung wird die Verbeamtung schwierig. Eine unkorrigierte Fehldiagnose kann also nicht nur die PKV, sondern indirekt auch dein Einstellungsverfahren belasten."
       }
     },
     {
@@ -307,6 +253,54 @@ Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die U
     },
     {
       "@type": "Question",
+      "name": "Wie kann ich eine psychiatrische Diagnose loswerden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nur über die Praxis, die sie gestellt hat. Du brauchst ein ärztliches Attest, das die Unrichtigkeit bestätigt, und musst die Korrektur danach deiner Krankenkasse melden. Ohne diesen zweiten Schritt steht die Diagnose weiter in deiner Patientenquittung. Lässt sich die Diagnose fachlich nicht widerlegen, bleibt die Zweitmeinung und im Streitfall der Weg zum Sozialgericht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie finde ich heraus, ob in meiner Krankenakte falsche Diagnosen stehen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über die Patientenquittung deiner Kasse oder deine elektronische Patientenakte in der ePA-App siehst du, welche Diagnosen für dich abgerechnet wurden. Frag die ICD-Codes im Antrag ausdrücklich mit an, sonst bekommst du oft nur die Leistungen. Besonders prüfenswert: psychische Diagnosen und Termine, bei denen du eigentlich nur wegen einer Kleinigkeit in der Praxis warst."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange darf die Bearbeitung eines Berichtigungsantrags dauern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über einen Antrag auf Berichtigung von Diagnosedaten muss deine Krankenkasse nach § 305 SGB V innerhalb von vier Wochen entscheiden. Für Berichtigungen nach Art. 16 DSGVO gilt allgemein eine Frist von in der Regel einem Monat. Setz dem Arzt oder der Kasse in deinem Schreiben trotzdem eine eigene, konkrete Frist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sollte ich vor dem PKV-Abschluss überhaupt meine Patientenakte einsehen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kommt drauf an. Kannst du die Gesundheitsfragen nicht sicher beantworten, fordere die Patientenquittung an. Kennst du deine Diagnosen und hattest in den letzten Jahren nur Vorsorgetermine, musst du nicht zwingend reinschauen. Sobald du eine Diagnose kennst, wird daraus anzeigepflichtiges Wissen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich wegen einer Fehldiagnose Schadensersatz verlangen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Grundsätzlich ja, der Nachweis ist in der Praxis aber schwierig. Entstehen durch die falsche Diagnose nachweisbare finanzielle Schäden, etwa der Verlust des BU-Schutzes, kommen Haftungsansprüche infrage. Meist ist es sinnvoller, die Diagnose zügig korrigieren zu lassen, statt einen langwierigen Schadensersatzprozess zu führen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was hat eine Falschdiagnose mit meiner Verbeamtung zu tun?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ohne bestandene Gesundheitsprüfung bei PKV und amtsärztlicher Untersuchung wird die Verbeamtung schwierig. Eine unkorrigierte Fehldiagnose kann also nicht nur die PKV, sondern indirekt auch dein Einstellungsverfahren belasten."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "An wen kann ich mich wenden, wenn ich mit dem Thema überfordert bin?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -315,17 +309,27 @@ Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die U
     },
     {
       "@type": "Question",
-      "name": "Wie kann ich eine psychiatrische Diagnose loswerden?",
+      "name": "Kann ein Arzt nachträglich die Diagnose ändern?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung."
+        "text": "Ja. Ärzte dürfen und sollen eine Diagnose korrigieren, wenn sie falsch ist. Einen Anspruch darauf hast du aber nur, wenn die zugrunde liegenden Tatsachen falsch sind. Die fachliche Einschätzung selbst gilt als ärztliches Werturteil und lässt sich nicht einfach streichen."
       }
     }
   ]
 }
 ```
 
-Damit ist Schritt 4 erledigt, die Umbenennung steckt schon drin.
+Mit `json.loads` gegengeprüft: valide, 15 Fragen, keine Duplikate.
+
+### Optional, aber empfohlen
+
+Die Antwort in Block Nr. 8 („Wie kann ich eine psychiatrische Diagnose loswerden?") ist meine erste Fassung. Sie beginnt mit „Nur über die Praxis, die sie gestellt hat" und überschneidet sich dadurch stark mit Nr. 2 und Nr. 3.
+
+Die geschärfte Fassung sagt etwas Eigenes, nämlich den Weg über die Verdachtsdiagnose:
+
+> Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung.
+
+Wenn du die einsetzt, sag Bescheid. Dann baue ich das Schema mit diesem Text neu, damit sichtbarer Text und Markup weiter übereinstimmen. **Nicht einzeln ändern**, sonst laufen die beiden auseinander.
 
 ### Danach prüfen
 
