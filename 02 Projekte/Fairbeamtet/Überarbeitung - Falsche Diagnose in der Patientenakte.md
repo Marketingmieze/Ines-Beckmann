@@ -158,6 +158,65 @@ Nur über die Praxis, die sie gestellt hat. Du brauchst ein ärztliches Attest, 
 **Kann ein Arzt nachträglich die Diagnose ändern?**
 Ja. Ärzte dürfen und sollen eine Diagnose korrigieren, wenn sie falsch ist. Einen Anspruch darauf hast du aber nur, wenn die zugrunde liegenden Tatsachen falsch sind. Die fachliche Einschätzung selbst gilt als ärztliches Werturteil und lässt sich nicht einfach streichen.
 
+## JSON-LD für die FAQ-Ergänzung
+
+### Bestandsaufnahme
+
+Die Seite hat bereits ein `FAQPage`-Schema mit **14 Fragen**, in einem eigenen `<script type="application/ld+json">`-Block (insgesamt liegen 5 JSON-LD-Blöcke auf der Seite). Format ist flach: `FAQPage` mit `mainEntity`-Array, darin `Question` mit `acceptedAnswer`. Reiner Text in `text`, kein HTML.
+
+Der sichtbare FAQ-Bereich zeigt 12 Fragen, das Schema enthält 14. Diese Abweichung solltest du bei Gelegenheit prüfen, denn Google verlangt, dass markierte FAQ-Antworten auch sichtbar auf der Seite stehen.
+
+### Nur eine der beiden Fragen ist neu
+
+Die Prüfung gegen den Bestand ergibt eine Kollision:
+
+| Meine Frage | Bestand | Urteil |
+|---|---|---|
+| Wie kann ich eine psychiatrische Diagnose loswerden? | Nr. 3 („falsche Diagnose löschen lassen") deckt den allgemeinen Fall ab | **aufnehmen**, Antwort auf den psychiatrischen Sonderweg geschärft |
+| Kann ein Arzt nachträglich die Diagnose ändern? | Nr. 4 („Diagnose selbst berichtigen oder nur die Fakten?") hat inhaltlich genau diese Antwort | **nicht aufnehmen**, stattdessen Nr. 4 umbenennen |
+
+Bei Nr. 4 lautet die bestehende Antwort schon genau richtig (Werturteil gegen Tatsachen). Nur die Frage ist in Fachsprache gestellt. Google zeigt in der Ziel-SERP die Nutzer-Formulierung „Kann ein Arzt nachträglich die Diagnose ändern?". Tausche also nur den `name`, die Antwort bleibt.
+
+### Eintrag 1: neu ins `mainEntity`-Array einfügen
+
+```json
+{
+  "@type": "Question",
+  "name": "Wie kann ich eine psychiatrische Diagnose loswerden?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung."
+  }
+}
+```
+
+Als JSON validiert. Einfügen am Ende des `mainEntity`-Arrays, davor ein Komma hinter dem letzten bestehenden Eintrag.
+
+### Eintrag 2: bestehende Frage Nr. 4 umbenennen
+
+Nur das Feld `name` ersetzen, `acceptedAnswer` unverändert lassen:
+
+```diff
+- "name": "Kann ich die Diagnose selbst berichtigen lassen oder nur die zugrunde liegenden Fakten?",
++ "name": "Kann ein Arzt nachträglich die Diagnose ändern?",
+```
+
+Wenn du die Frage umbenennst, muss die sichtbare H3 im FAQ-Bereich genauso umbenannt werden. Schema und sichtbarer Text müssen übereinstimmen.
+
+### Wichtig: FAQ-Rich-Results gibt es nicht mehr
+
+Google hat das Feature abgeschaltet. Aus Googles eigenem Changelog, Eintrag vom 8. Mai:
+
+> „Deprecating the FAQ rich result feature. What: Added a deprecation notice to the FAQ rich result documentation. Why: This feature will no longer appear in Google Search starting **May 7, 2026**."
+
+Quelle: https://developers.google.com/search/docs/appearance/structured-data/faqpage (Changelog, abgerufen 21.10.2026). Vorgeschichte: Schon im September 2023 hatte Google FAQ-Rich-Results auf „well-known, authoritative government and health websites" beschränkt. Das How-to-Rich-Result ist ebenfalls weg.
+
+**Was das heißt:** Das Markup bringt keine Akkordeons oder zusätzliche Zeilen mehr in der Google-SERP. Ein CTR-Gewinn ist davon nicht zu erwarten.
+
+**Warum ich es trotzdem liefere:** Es schadet nicht, kostet fünf Minuten, und strukturierte Frage-Antwort-Paare sind gut maschinenlesbar für KI-Antwortsysteme. Angesichts dessen, dass im Diagnose-Cluster fast jedes Keyword ein AI Overview zeigt und beamtenservice.de dort bei vier Keywords auf Position 1 zitiert wird, ist das der Kanal, der hier zählt. Erwarte aber keinen klassischen SEO-Effekt.
+
+Wenn du priorisieren musst: Die Antwort-zuerst-Struktur im sichtbaren Text (Regel 4c im Voice Profile) wirkt für AI-Zitate mehr als das Schema.
+
 ---
 
 # Was beim Einsetzen zu tun ist
