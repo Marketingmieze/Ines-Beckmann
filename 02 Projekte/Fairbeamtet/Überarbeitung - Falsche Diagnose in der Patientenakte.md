@@ -399,7 +399,7 @@ Diese Punkte sind noch nicht umgesetzt:
 - [x] **H2 umbenennen:** FAQ-Überschrift „zur Falschdiagnose" → „zur falschen Diagnose"
 - [x] **H2 ergänzen:** Schadensersatz-Abschnitt um „oder Schmerzensgeld" erweitern (20 Suchen/Monat)
 - [x] **Neuer H2:** falsche psychiatrische Diagnose (110 Suchen/Monat im Unter-Cluster) — Text steht in Teil 2, Stand 21.10.2026
-- [ ] **Rücklink setzen:** von `/berufsunfaehigkeitsversicherung-psychotherapie/` zurück auf diesen Artikel, Anker „falsche Diagnose in der Patientenakte"
+- [x] **Rücklink gesetzt** am 21.10.2026: von `/berufsunfaehigkeitsversicherung-psychotherapie/` zurück auf diesen Artikel, Anker „falsche Diagnose in der Patientenakte". Dabei ist aufgefallen, dass auch der Hinlink in die Gegenrichtung fehlte, er ist jetzt ebenfalls gesetzt. Siehe „Linkprüfung vom 21.10.2026, 15:48 Uhr"
 - [x] **[PRÜFEN:] aufgelöst** am 21.10.2026: 42,0 % psychische und Verhaltensstörungen (GFB 2024, BMI) und 17 % / 55,8 Jahre (Destatis, Stand 01.01.2025). Siehe Abschnitt „Recherche zum offenen Punkt". Offen bleibt nur: GFB-PDF einmal selbst gegenlesen
 - [ ] **H2 streichen:** „So bewerten uns unsere Kunden" (als Box ohne Überschrift einbauen)
 - [x] **Artikel-Listen zusammengelegt**, live
@@ -585,7 +585,8 @@ Das JSON-LD ist bereits ausgetauscht. Daran ist nichts mehr zu tun.
 
 - [ ] H2 „So bewerten uns unsere Kunden" streichen und als Box ohne Überschrift einbauen
 - [ ] H2 „Wer hilft, wenn gar nichts mehr geht?" als H3 unter den Vorgehen-Block ziehen
-- [ ] Rücklink von `/berufsunfaehigkeitsversicherung-psychotherapie/` auf diesen Artikel setzen (aktuell 0 Treffer, Link fehlt noch)
+- [x] Rücklink von `/berufsunfaehigkeitsversicherung-psychotherapie/` auf diesen Artikel setzen — live seit 21.10.2026, siehe Abschnitt unten
+- [ ] Kosmetik, keine Eile: beide neuen Links öffnen mit `target="_blank"` einen neuen Tab, die übrigen internen Links der Seiten nicht. Kein SEO-Effekt, nur ein Stilbruch
 - [ ] GFB-2024-PDF einmal selbst gegenlesen, um die 42,0 Prozent am Original zu bestätigen
 - [ ] Arzt-Interview von Sven einarbeiten
 - [ ] Nachmessen frühestens 18.11.2026
@@ -793,3 +794,32 @@ Der Artikel ist von Sven. „Über 30 Jahre" ist Michas Zahl. Passt auch nicht z
 **Zu ändern:** Im H3 „Ein Muster, das mir in der Beratung ständig begegnet", im letzten Absatz der „Achtung:"-Box, „über 30 Jahren" durch „über 25 Jahren" ersetzen.
 
 Dieselbe Prüfung lohnt an einer zweiten Stelle: In der CTA-Box steht „Echte Experten: Über 30 Jahre PKV- & BU-Erfahrung". Das ist eine Team-Aussage, nicht Sven persönlich, und darf so stehen bleiben.
+
+---
+
+# Linkprüfung vom 21.10.2026, 15:48 Uhr
+
+Beide Seiten live abgerufen mit Cache-Umgehung, nachdem Ines die Links gesetzt hat. **Die Verknüpfung steht jetzt in beide Richtungen.**
+
+| Richtung | Stand | Ankertext | HTTP |
+|---|---|---|---|
+| `/berufsunfaehigkeitsversicherung-psychotherapie/` → dieser Artikel | live | „falsche Diagnose in der Patientenakte" | 200, keine Weiterleitung |
+| dieser Artikel → `/berufsunfaehigkeitsversicherung-psychotherapie/` | live | „Berufsunfähigkeitsversicherung trotz Psychotherapie" | 200, keine Weiterleitung |
+
+Kein `nofollow` auf beiden Seiten.
+
+## Wo der Rücklink steht
+
+Im Abschnitt „BU vor geplanter Psychotherapie — worauf du achten solltest", direkt nach dem Absatz zur Patientenakte und vor dem „Tipp:"-Satz:
+
+> Steht dort eine Diagnose, die so nie gestellt wurde, klär das vor dem Antrag. Wie du gegen eine **falsche Diagnose in der Patientenakte** vorgehst, zeigen wir dir Schritt für Schritt.
+
+Begründung für diese Stelle: Es ist die einzige Stelle der BU-Seite, an der Patientenakte und Gesundheitsprüfung zusammenkommen. Der Leser ist dort gedanklich schon bei „was steht da eigentlich über mich drin".
+
+## Was bei der Prüfung sonst auffiel
+
+**Der Hinlink fehlte ebenfalls.** Der Satz „Wie Versicherer mit einer Psychotherapie in der Vorgeschichte umgehen, steht ausführlich in unserem Ratgeber zur Berufsunfähigkeitsversicherung trotz Psychotherapie" stand seit dem Einsetzen von Teil 2 als reiner Text auf der Seite, der Link war beim Einpflegen verloren gegangen. Inzwischen gesetzt.
+
+**Lehre:** Beim Übertragen aus dieser Notiz in WordPress gehen Markdown-Links verloren, wenn der Text als Klartext kopiert wird. Bei künftigen Textblöcken die Links nach dem Einsetzen einmal gegenprüfen.
+
+**`/berufsunfaehigkeitsversicherung-psychotherapie/` hatte vor dieser Änderung null interne Links im Fließtext.** Nur der Beratungs-CTA und die Vorerkrankungs-Box im Footer. Bei 4.451 Impressionen auf Durchschnittsposition 35 ist das eine Seite ohne jede interne Verlinkung aus dem Inhalt heraus. Gehört zum Nebenfund oben und wäre einen eigenen Durchgang wert.
