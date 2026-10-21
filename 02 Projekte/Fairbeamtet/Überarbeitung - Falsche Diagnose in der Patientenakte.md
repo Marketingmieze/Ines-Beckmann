@@ -158,26 +158,39 @@ Nur über die Praxis, die sie gestellt hat. Du brauchst ein ärztliches Attest, 
 **Kann ein Arzt nachträglich die Diagnose ändern?**
 Ja. Ärzte dürfen und sollen eine Diagnose korrigieren, wenn sie falsch ist. Einen Anspruch darauf hast du aber nur, wenn die zugrunde liegenden Tatsachen falsch sind. Die fachliche Einschätzung selbst gilt als ärztliches Werturteil und lässt sich nicht einfach streichen.
 
-## JSON-LD für die FAQ-Ergänzung
+## FAQs: Arbeitsanweisung
 
-### Bestandsaufnahme
+**Vier Handgriffe. Eine Frage kommt neu dazu, eine bestehende wird umbenannt.**
 
-Die Seite hat bereits ein `FAQPage`-Schema mit **14 Fragen**, in einem eigenen `<script type="application/ld+json">`-Block (insgesamt liegen 5 JSON-LD-Blöcke auf der Seite). Format ist flach: `FAQPage` mit `mainEntity`-Array, darin `Question` mit `acceptedAnswer`. Reiner Text in `text`, kein HTML.
+### Wo das Schema liegt
 
-Der sichtbare FAQ-Bereich zeigt 12 Fragen, das Schema enthält 14. Diese Abweichung solltest du bei Gelegenheit prüfen, denn Google verlangt, dass markierte FAQ-Antworten auch sichtbar auf der Seite stehen.
+Das `FAQPage`-Schema wird **nicht von Rank Math erzeugt**. Rank Math schreibt einen eigenen Block (`class="rank-math-schema-pro"`) mit Place, Organization und BlogPosting. Das FAQ-Schema steht in einem separaten, handgepflegten Script-Block mit eingerücktem JSON. Also: nicht in den Rank-Math-Einstellungen suchen, sondern im Artikel selbst nach dem Custom-HTML-Block mit `"@type": "FAQPage"`.
 
-### Nur eine der beiden Fragen ist neu
+Konsequenz: Das Schema aktualisiert sich **nicht** automatisch, wenn du die sichtbaren FAQs änderst. Du musst beides anfassen.
 
-Die Prüfung gegen den Bestand ergibt eine Kollision:
+### Schritt 1: Neue FAQ sichtbar im Artikel einfügen
 
-| Meine Frage | Bestand | Urteil |
-|---|---|---|
-| Wie kann ich eine psychiatrische Diagnose loswerden? | Nr. 3 („falsche Diagnose löschen lassen") deckt den allgemeinen Fall ab | **aufnehmen**, Antwort auf den psychiatrischen Sonderweg geschärft |
-| Kann ein Arzt nachträglich die Diagnose ändern? | Nr. 4 („Diagnose selbst berichtigen oder nur die Fakten?") hat inhaltlich genau diese Antwort | **nicht aufnehmen**, stattdessen Nr. 4 umbenennen |
+Am Ende des FAQ-Bereichs, als H3 plus Antworttext:
 
-Bei Nr. 4 lautet die bestehende Antwort schon genau richtig (Werturteil gegen Tatsachen). Nur die Frage ist in Fachsprache gestellt. Google zeigt in der Ziel-SERP die Nutzer-Formulierung „Kann ein Arzt nachträglich die Diagnose ändern?". Tausche also nur den `name`, die Antwort bleibt.
+**Wie kann ich eine psychiatrische Diagnose loswerden?**
 
-### Eintrag 1: neu ins `mainEntity`-Array einfügen
+> Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung.
+
+### Schritt 2: Bestehende FAQ sichtbar umbenennen
+
+Suche im FAQ-Bereich diese H3:
+
+> Kann ich die Diagnose selbst berichtigen lassen oder nur die zugrunde liegenden Fakten?
+
+Ersetze sie durch:
+
+> Kann ein Arzt nachträglich die Diagnose ändern?
+
+**Den Antworttext nicht anfassen.** Er passt bereits („Eine Diagnose gilt als ärztliches Werturteil und ist nur eingeschränkt berichtigungsfähig…"). Grund für die Umbenennung: Google zeigt in der Ziel-SERP genau diese Nutzer-Formulierung als Fragen-Box.
+
+### Schritt 3: Den neuen Eintrag ins JSON-LD einfügen
+
+Im Script-Block ans **Ende** des `mainEntity`-Arrays, hinter dem letzten Eintrag. Komma hinter die vorherige schließende Klammer setzen, dann:
 
 ```json
 {
@@ -190,32 +203,41 @@ Bei Nr. 4 lautet die bestehende Antwort schon genau richtig (Werturteil gegen Ta
 }
 ```
 
-Als JSON validiert. Einfügen am Ende des `mainEntity`-Arrays, davor ein Komma hinter dem letzten bestehenden Eintrag.
+Als JSON validiert. Text ist identisch mit Schritt 1, das muss so sein.
 
-### Eintrag 2: bestehende Frage Nr. 4 umbenennen
+### Schritt 4: Im JSON-LD den Namen der bestehenden Frage tauschen
 
-Nur das Feld `name` ersetzen, `acceptedAnswer` unverändert lassen:
+Im selben Script-Block diese Zeile suchen und ersetzen. Nur den `name`, nicht die Antwort:
 
 ```diff
 - "name": "Kann ich die Diagnose selbst berichtigen lassen oder nur die zugrunde liegenden Fakten?",
 + "name": "Kann ein Arzt nachträglich die Diagnose ändern?",
 ```
 
-Wenn du die Frage umbenennst, muss die sichtbare H3 im FAQ-Bereich genauso umbenannt werden. Schema und sichtbarer Text müssen übereinstimmen.
+### Danach prüfen
 
-### Wichtig: FAQ-Rich-Results gibt es nicht mehr
+Schema-Validator aufrufen und die URL einmal durchlaufen lassen: https://validator.schema.org/
+Erwartetes Ergebnis: `FAQPage` mit 15 Fragen, keine Fehler.
 
-Google hat das Feature abgeschaltet. Aus Googles eigenem Changelog, Eintrag vom 8. Mai:
+### Was du NICHT tun sollst
 
-> „Deprecating the FAQ rich result feature. What: Added a deprecation notice to the FAQ rich result documentation. Why: This feature will no longer appear in Google Search starting **May 7, 2026**."
+- **Keine zweite FAQ „Kann ein Arzt nachträglich die Diagnose ändern?" anlegen.** Die bestehende Frage Nr. 4 beantwortet das schon. Zwei fast gleiche Fragen im Schema sind schlechter als eine gute.
+- **Kein zweites FAQPage-Schema anlegen.** Es gibt genau eines, dort kommt der Eintrag rein.
+- **Keine Zeit in FAQ-Rich-Results investieren.** Die gibt es nicht mehr, siehe Randnotiz unten.
 
-Quelle: https://developers.google.com/search/docs/appearance/structured-data/faqpage (Changelog, abgerufen 21.10.2026). Vorgeschichte: Schon im September 2023 hatte Google FAQ-Rich-Results auf „well-known, authoritative government and health websites" beschränkt. Das How-to-Rich-Result ist ebenfalls weg.
+### Randnotiz: FAQ-Rich-Results sind abgeschaltet
 
-**Was das heißt:** Das Markup bringt keine Akkordeons oder zusätzliche Zeilen mehr in der Google-SERP. Ein CTR-Gewinn ist davon nicht zu erwarten.
+Aus Googles eigenem Changelog, Eintrag vom 8. Mai:
 
-**Warum ich es trotzdem liefere:** Es schadet nicht, kostet fünf Minuten, und strukturierte Frage-Antwort-Paare sind gut maschinenlesbar für KI-Antwortsysteme. Angesichts dessen, dass im Diagnose-Cluster fast jedes Keyword ein AI Overview zeigt und beamtenservice.de dort bei vier Keywords auf Position 1 zitiert wird, ist das der Kanal, der hier zählt. Erwarte aber keinen klassischen SEO-Effekt.
+> „Deprecating the FAQ rich result feature. […] This feature will no longer appear in Google Search starting **May 7, 2026**."
 
-Wenn du priorisieren musst: Die Antwort-zuerst-Struktur im sichtbaren Text (Regel 4c im Voice Profile) wirkt für AI-Zitate mehr als das Schema.
+Quelle: https://developers.google.com/search/docs/appearance/structured-data/faqpage (Changelog, abgerufen 21.10.2026). Schon seit September 2023 war das Feature auf Behörden- und Gesundheitsseiten beschränkt, How-to-Rich-Results sind ebenfalls weg.
+
+Das Markup bringt also keine Akkordeons in der SERP und keinen CTR-Gewinn. Es bleibt trotzdem drin, weil saubere Frage-Antwort-Paare maschinenlesbar sind und im Diagnose-Cluster fast jedes Keyword ein AI Overview zeigt. Aufwand: fünf Minuten. Erwartung: kein klassischer SEO-Effekt.
+
+### Noch offen, aber nicht jetzt
+
+Sichtbar sind 12 FAQs, im Schema stehen 14. Zwei markierte Antworten stehen also nicht auf der Seite, und Google verlangt, dass sie sichtbar sind. Nach den vier Schritten oben wären es 13 sichtbare zu 15 im Schema. Das gehört aufgeräumt, ist aber kein Ranking-Problem und kann warten.
 
 ---
 
