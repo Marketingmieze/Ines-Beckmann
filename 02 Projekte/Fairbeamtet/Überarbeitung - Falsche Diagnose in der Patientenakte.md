@@ -393,11 +393,11 @@ Sichtbar sind 12 FAQs, im Schema stehen 14. Zwei markierte Antworten stehen also
 
 Diese Punkte sind noch nicht umgesetzt:
 
-- [ ] **Title-Tag:** „Falsche Diagnose in der Patientenakte: so gehst du dagegen vor"
-- [ ] **Meta-Description:** „Eine falsche Diagnose in der Patientenakte kann deine PKV kosten. So gehst du dagegen vor und lässt sie aus der Akte entfernen."
-- [ ] **H2 umbenennen:** „Wie eine Fehldiagnose überhaupt in deine Akte kommt" → „Wie eine falsche Diagnose überhaupt in deine Patientenakte kommt"
-- [ ] **H2 umbenennen:** FAQ-Überschrift „zur Falschdiagnose" → „zur falschen Diagnose"
-- [ ] **H2 ergänzen:** Schadensersatz-Abschnitt um „oder Schmerzensgeld" erweitern (20 Suchen/Monat)
+- [x] **Title-Tag:** „Falsche Diagnose in der Patientenakte: so gehst du dagegen vor"
+- [x] **Meta-Description:** „Eine falsche Diagnose in der Patientenakte kann deine PKV kosten. So gehst du dagegen vor und lässt sie aus der Akte entfernen."
+- [x] **H2 umbenennen:** „Wie eine Fehldiagnose überhaupt in deine Akte kommt" → „Wie eine falsche Diagnose überhaupt in deine Patientenakte kommt"
+- [x] **H2 umbenennen:** FAQ-Überschrift „zur Falschdiagnose" → „zur falschen Diagnose"
+- [x] **H2 ergänzen:** Schadensersatz-Abschnitt um „oder Schmerzensgeld" erweitern (20 Suchen/Monat)
 - [x] **Neuer H2:** falsche psychiatrische Diagnose (110 Suchen/Monat im Unter-Cluster) — Text steht in Teil 2, Stand 21.10.2026
 - [ ] **Rücklink setzen:** von `/berufsunfaehigkeitsversicherung-psychotherapie/` zurück auf diesen Artikel, Anker „falsche Diagnose in der Patientenakte"
 - [x] **[PRÜFEN:] aufgelöst** am 21.10.2026: 42,0 % psychische und Verhaltensstörungen (GFB 2024, BMI) und 17 % / 55,8 Jahre (Destatis, Stand 01.01.2025). Siehe Abschnitt „Recherche zum offenen Punkt". Offen bleibt nur: GFB-PDF einmal selbst gegenlesen
