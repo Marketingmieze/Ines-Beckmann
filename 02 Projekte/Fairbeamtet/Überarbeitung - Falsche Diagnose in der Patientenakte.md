@@ -402,8 +402,8 @@ Diese Punkte sind noch nicht umgesetzt:
 - [ ] **Rücklink setzen:** von `/berufsunfaehigkeitsversicherung-psychotherapie/` zurück auf diesen Artikel, Anker „falsche Diagnose in der Patientenakte"
 - [x] **[PRÜFEN:] aufgelöst** am 21.10.2026: 42,0 % psychische und Verhaltensstörungen (GFB 2024, BMI) und 17 % / 55,8 Jahre (Destatis, Stand 01.01.2025). Siehe Abschnitt „Recherche zum offenen Punkt". Offen bleibt nur: GFB-PDF einmal selbst gegenlesen
 - [ ] **H2 streichen:** „So bewerten uns unsere Kunden" (als Box ohne Überschrift einbauen)
-- [ ] **H2 zusammenlegen:** „Unsere meistgelesenen PKV-Guides" + „Diese Artikel könnten dich interessieren"
-- [ ] **Vorgehen-Block nach vorne ziehen**, aktuell steht der Kern an Position 8 von 21
+- [x] **Artikel-Listen zusammengelegt**, live
+- [x] **Vorgehen-Block** steht jetzt an Position 8 von 16 H2 statt 8 von 21
 - [ ] Arzt-Interview von Sven einarbeiten (Praxis-Belege, Video, Keyword „verdachtsdiagnose" mit 250 Suchen/Monat)
 
 ## Nebenfund bei der Recherche zu Teil 2
@@ -555,3 +555,149 @@ Der letzte Punkt ist der wichtigste. Dienstunfähigkeit bei Beamten und Berufsun
 > Und bei der Dienstunfähigkeit sind psychische Erkrankungen der häufigste Grund. Bei den Bundesbeamten, die 2024 aus gesundheitlichen Gründen vorzeitig in Pension mussten, lag ihr Anteil bei 42,0 Prozent. Dienstunfähigkeit trifft außerdem früh: Wer 2024 deshalb aufhören musste, war im Schnitt 55,8 Jahre alt.
 
 Beim Einsetzen die Quellen mitgeben, wie es Abschnitt 8 des [[Voice Profile]] verlangt: GFB 2024 (BMI, März 2026) und Statistisches Bundesamt (Stand 01.01.2025).
+
+---
+
+# Live-Status, geprüft am 21.10.2026
+
+Vollständiger Abruf der Seite mit Cache-Umgehung. Ines hat parallel umgesetzt, der Stand ist deutlich weiter als meine Notizen.
+
+## Erledigt und live bestätigt
+
+| Punkt | Stand |
+|---|---|
+| Title-Tag | „Falsche Diagnose in der Patientenakte: so gehst du dagegen vor", 62 Zeichen |
+| Meta-Description | 127 Zeichen, wie vorgeschlagen |
+| Teil 1 (Kern-Abschnitt) | beide H2 plus drei Schritt-H3 live |
+| Teil 2 (psychiatrischer Abschnitt) | live, H2 Nr. 9 |
+| H2 „Wie eine falsche Diagnose … Patientenakte kommt" | umbenannt |
+| FAQ-Überschrift „zur falschen Diagnose" | umbenannt |
+| „oder Schmerzensgeld" im Schadensersatz-H2 | ergänzt |
+| Doppelte Artikel-Listen | zusammengelegt |
+| Falscher Satz „Ohne PKV keine Verbeamtung" | entfernt, Korrektur eingesetzt |
+| Sichtbarer [PRÜFEN:]-Marker | entfernt |
+| Belegte Zahlen 42,0 % und 55,8 Jahre | eingesetzt |
+| **FAQ-Schema** | **15 Fragen, 0 Textabweichungen zur Seite, Block 8 mit 35 Wörtern** |
+
+Das JSON-LD ist bereits ausgetauscht. Daran ist nichts mehr zu tun.
+
+## Noch offen
+
+- [ ] H2 „So bewerten uns unsere Kunden" streichen und als Box ohne Überschrift einbauen
+- [ ] H2 „Wer hilft, wenn gar nichts mehr geht?" als H3 unter den Vorgehen-Block ziehen
+- [ ] Rücklink von `/berufsunfaehigkeitsversicherung-psychotherapie/` auf diesen Artikel setzen (aktuell 0 Treffer, Link fehlt noch)
+- [ ] GFB-2024-PDF einmal selbst gegenlesen, um die 42,0 Prozent am Original zu bestätigen
+- [ ] Arzt-Interview von Sven einarbeiten
+- [ ] Nachmessen frühestens 18.11.2026
+
+## Lehre für mich
+
+Ich habe dreimal eine Empfehlung auf einen veralteten Seitenabruf gestützt: erst bei der FAQ-Zahl (14 statt 16), dann beim JSON-LD und dann beim fehlerhaften Absatz. An einer Seite, die parallel bearbeitet wird, muss der Abruf unmittelbar vor jeder Aussage erfolgen, nicht einmal am Anfang der Session.
+
+---
+
+# Quellenangaben: Empfehlung und fertige Liste
+
+Erstellt am 21.10.2026 auf Anfrage von Ines.
+
+## Sollten wir sie veröffentlichen? Ja.
+
+Vier Gründe, der erste ist der wichtigste:
+
+**1. Eigene Hausregel.** Abschnitt 8 des [[Voice Profile]] verlangt für jede Zahl, jede Frist und jede Rechtsgrundlage eine Quelle mit Stand-Datum. Der Artikel nennt neun Rechtsgrundlagen und zwei Statistiken, bisher ohne Belegliste.
+
+**2. Trust ist euer größter Hebel.** Laut [[04 Ressourcen/Googles No. 1/Googles No. 1.md]] ist Hebel 1 bei einem YMYL-Thema wie diesem die überprüfbare Fachlichkeit, nicht das Etikett. Eine Quellenliste ist der billigste Weg, sie zu zeigen.
+
+**3. Unterscheidung vom Wettbewerb.** beamtenservice.de nennt zu diesem Thema weder Autor noch Quellen. Ihr habt beides. Das ist ihre offene Flanke.
+
+**4. Zitierfähigkeit in KI-Antworten.** In diesem Keyword-Cluster zeigt fast jedes Keyword ein AI Overview. Belegte Aussagen mit Primärquelle werden eher übernommen als unbelegte.
+
+**Wie:** Als eigener Abschnitt am Artikelende, gern ausklappbar. Nicht im Fließtext verstreut, das bremst den Lesefluss. Mit Abrufdatum, damit später erkennbar ist, auf welchen Stand sich der Text stützt.
+
+---
+
+## Fertige Quellenliste zum Einsetzen
+
+### Gesetze
+
+**§ 19 VVG – Vorvertragliche Anzeigepflicht**
+Grundlage der Gesundheitsfragen, Rücktritt nach Abs. 2, Kündigung nach Abs. 3, Belehrungspflicht nach Abs. 5.
+https://www.gesetze-im-internet.de/vvg_2008/__19.html
+
+**§ 305 SGB V – Auskünfte an Versicherte**
+Patientenquittung nach Abs. 2. Berichtigung von Diagnosedaten bei ärztlichem Nachweis und die Vier-Wochen-Frist nach Abs. 1 Satz 6 und 7.
+https://www.gesetze-im-internet.de/sgb_5/__305.html
+
+**§ 630f BGB – Dokumentation der Behandlung**
+Pflicht zur Behandlungsakte. Änderungen sind nur zulässig, wenn der ursprüngliche Inhalt erkennbar bleibt.
+https://www.gesetze-im-internet.de/bgb/__630f.html
+
+**§ 630g BGB – Einsichtnahme in die Behandlungsakte**
+Anspruch auf unverzügliche Einsicht und Abschriften. Die erste Abschrift ist unentgeltlich.
+https://www.gesetze-im-internet.de/bgb/__630g.html
+
+**Art. 15 DSGVO – Auskunftsrecht**
+Auskunft über gespeicherte Diagnosedaten.
+https://dejure.org/gesetze/DSGVO/15.html
+
+**Art. 16 DSGVO – Recht auf Berichtigung**
+https://dejure.org/gesetze/DSGVO/16.html
+
+**Art. 12 Abs. 3 DSGVO – Fristen für Betroffenenrechte**
+Antwort unverzüglich, in jedem Fall innerhalb eines Monats. Gilt für Anträge nach Art. 15 bis 22, also auch für die Berichtigung.
+https://dejure.org/gesetze/DSGVO/12.html
+
+### Rechtsprechung
+
+**BGH, Beschluss vom 25.09.2019, Az. IV ZR 247/18**
+Die positive Kenntnis des anzeigepflichtigen Umstands gehört zum objektiven Tatbestand der Anzeigepflichtverletzung und ist vom Versicherer zu beweisen. Fahrlässige Unkenntnis genügt nicht.
+
+### Behörden und Statistik
+
+**Der Landesbeauftragte für den Datenschutz Niedersachsen, FAQ Gesundheitsbereich**
+Zur Einordnung der Diagnose als ärztliches Werturteil: „Die fachliche Richtigkeit einer Diagnose ist grundsätzlich keine Frage des Datenschutzes." Diagnosen seien „subjektive Einschätzungen eines Gesundheitszustandes durch eine Ärztin oder einen Arzt"; das Berichtigungsrecht sei durch die Aufsichtsbehörde nur bei objektiv zu beurteilenden Daten überprüfbar.
+https://www.lfd.niedersachsen.de/faq/gesundheitsbereich/faq-gesundheitsbereich-und-datenschutz-229071.html
+
+**Gesundheitsförderungsbericht 2024 der unmittelbaren Bundesverwaltung (GFB 2024)**
+Bundesministerium des Innern, veröffentlicht 31.03.2026. Psychische und Verhaltensstörungen sind mit rund 42,0 Prozent die häufigste Ursache für die vorzeitige Versetzung in den Ruhestand aus gesundheitlichen Gründen.
+https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/oeffentlicher-dienst/BMI26003-gfb2024.html
+
+**Statistisches Bundesamt, Pressemitteilung Nr. 455 vom Dezember 2025**
+17 Prozent der 2024 neu pensionierten Beamten gingen wegen Dienstunfähigkeit in den Ruhestand, im Durchschnitt mit 55,8 Jahren. Stichtag 1. Januar 2025.
+https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/12/PD25_455_742.html
+
+### Beratung
+
+**Stiftung Unabhängige Patientenberatung Deutschland (UPD)**
+Kostenfreie, auf Wunsch anonyme Beratung unabhängig vom Versicherungsstatus. Telefon 0800 011 77 22.
+https://www.patientenberatung.de/
+
+---
+
+## Zwei Lücken, die bei der Quellenarbeit aufgefallen sind
+
+### 1. § 630g BGB fehlt im Artikel
+
+Der Artikel nennt als Weg zur eigenen Akte nur die Patientenquittung (§ 305 SGB V) und den Auskunftsantrag nach Art. 15 DSGVO. **Der direkteste Anspruch fehlt:** § 630g Abs. 1 BGB gibt Patienten das Recht auf unverzügliche Einsicht in die vollständige Behandlungsakte und auf Abschriften, **die erste Abschrift unentgeltlich.**
+
+Das ist für die Leserin praktisch wertvoller als der Umweg über die Kasse, weil sie damit direkt an die Dokumentation der Praxis kommt, in der die Diagnose entstanden ist. Gehört in den Abschnitt zur Akteneinsicht.
+
+### 2. „Löschen" trifft es rechtlich nicht ganz
+
+Der Artikel spricht vom Löschen und Entfernen aus der Akte. Für die Abrechnungsdaten bei der Krankenkasse passt das: Nach § 305 SGB V verwendet die Kasse die Daten in berichtigter Form.
+
+Bei der **Behandlungsakte der Praxis** gilt aber § 630f Abs. 1 Satz 2 BGB:
+
+> „Berichtigungen und Änderungen von Eintragungen in der Behandlungsakte sind nur zulässig, wenn neben dem ursprünglichen Inhalt erkennbar bleibt, wann sie vorgenommen worden sind."
+
+Die ursprüngliche Eintragung verschwindet dort also nicht, sie bleibt nachvollziehbar. Korrigiert wird, nicht gelöscht.
+
+**Warum das wichtig ist:** Für den Versicherer zählt, was die Kasse übermittelt, und das ist dann die berichtigte Fassung. Das Versprechen des Artikels hält also. Aber eine Leserin, die anschließend ihre Praxisakte einsieht und den alten Eintrag weiter sieht, ist irritiert. Ein Satz dazu nimmt die Überraschung vorweg und zeigt zugleich Fachtiefe, die kein Wettbewerber hat.
+
+Vorschlag für den Abschnitt „Falsche Diagnose aus der Akte entfernen lassen: geht das?":
+
+> Ein Detail, das kaum jemand erwähnt: In der Akte deiner Praxis bleibt die alte Eintragung sichtbar. § 630f BGB erlaubt Änderungen nur so, dass der ursprüngliche Inhalt erkennbar bleibt. Für dich zählt aber, was deine Kasse weitergibt, und das ist nach der Korrektur die berichtigte Fassung.
+
+### 3. Risikostrukturausgleich (bereits im Faktencheck notiert)
+
+Der Satz im Haupttext, das Abrechnungssystem belohne „Ärzte" mit Geld aus dem Risikostrukturausgleich, ist fachlich schief. Der Morbi-RSA verteilt Mittel zwischen Krankenkassen. Wenn ihr dafür eine Quelle angeben wollt, müsste der Satz vorher umformuliert werden. Solange er so steht, besser keine Quelle dazu nennen.
