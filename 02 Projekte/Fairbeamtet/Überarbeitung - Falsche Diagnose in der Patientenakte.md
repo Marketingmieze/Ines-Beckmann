@@ -188,31 +188,144 @@ Ersetze sie durch:
 
 **Den Antworttext nicht anfassen.** Er passt bereits („Eine Diagnose gilt als ärztliches Werturteil und ist nur eingeschränkt berichtigungsfähig…"). Grund für die Umbenennung: Google zeigt in der Ziel-SERP genau diese Nutzer-Formulierung als Fragen-Box.
 
-### Schritt 3: Den neuen Eintrag ins JSON-LD einfügen
+### Schritt 3: Den JSON-LD-Block komplett ersetzen
 
-Im Script-Block ans **Ende** des `mainEntity`-Arrays, hinter dem letzten Eintrag. Komma hinter die vorherige schließende Klammer setzen, dann:
+Suche im Artikel den Script-Block `<script type="application/ld+json">`, der mit `"@type": "FAQPage"` beginnt. **Ersetze seinen gesamten Inhalt** durch den Block unten. Die öffnenden und schließenden `<script>`-Tags bleiben stehen.
+
+Das ist sicherer als von Hand einen Eintrag einzufügen, weil hier Komma-Fehler die häufigste Ursache für ein kaputtes Schema sind.
+
+Enthalten sind alle 14 bisherigen Fragen mit ihren Originalantworten, dazu die Umbenennung aus Schritt 2 (Frage an vierter Stelle) und die neue Frage am Ende. Macht 15 Fragen. Mit `json.loads` gegengeprüft, keine doppelten Fragen.
 
 ```json
 {
-  "@type": "Question",
-  "name": "Wie kann ich eine psychiatrische Diagnose loswerden?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung."
-  }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist eine Fehldiagnose in der Patientenakte?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine abgerechnete Diagnose, die nicht deinem tatsächlichen Gesundheitszustand entspricht. Sie kann durch einen Zahlendreher im ICD-Code, einen Diagnosefehler oder bewusst hoch kodierte Diagnosen entstehen, die im Abrechnungssystem mehr Geld bringen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie finde ich heraus, ob in meiner Krankenakte falsche Diagnosen stehen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über die Patientenquittung deiner Kasse oder deine elektronische Patientenakte in der ePA-App siehst du, welche Diagnosen für dich abgerechnet wurden. Frag die ICD-Codes im Antrag ausdrücklich mit an, sonst bekommst du oft nur die Leistungen. Besonders prüfenswert: psychische Diagnosen und Termine, bei denen du eigentlich nur wegen einer Kleinigkeit in der Praxis warst."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann man eine falsche Diagnose vom Arzt löschen und aus der Akte entfernen lassen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Der zentrale Schritt ist ein ärztliches Attest, das die Unrichtigkeit bestätigt. Wichtig: Die Korrektur beim Arzt allein reicht nicht, sie muss zusätzlich der Krankenversicherung gemeldet werden, sonst taucht die Diagnose in der Patientenquittung weiter auf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ein Arzt nachträglich die Diagnose ändern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hier ist die Rechtslage differenziert. Eine Diagnose gilt als ärztliches Werturteil und ist nur eingeschränkt berichtigungsfähig. Sind die zugrunde liegenden Tatsachen falsch, lassen sie sich leichter korrigieren. Ein pauschales Bestreiten der Diagnose reicht dafür nicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was, wenn der Arzt oder die Ärztin sich weigert, die Fehldiagnose zu korrigieren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dann bleibt die Zweitmeinung. Bei körperlich nachweisbaren Diagnosen, etwa einer Arthrose oder einem Bandscheibenvorfall, kann eine Bildgebung die Fehldiagnose widerlegen. Bei psychischen Diagnosen ist das deutlich schwerer, weil sich der damalige Befund im Nachhinein kaum objektiv überprüfen lässt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange darf die Bearbeitung eines Berichtigungsantrags dauern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über einen Antrag auf Berichtigung von Diagnosedaten muss deine Krankenkasse nach § 305 SGB V innerhalb von vier Wochen entscheiden. Für Berichtigungen nach Art. 16 DSGVO gilt allgemein eine Frist von in der Regel einem Monat. Setz dem Arzt oder der Kasse in deinem Schreiben trotzdem eine eigene, konkrete Frist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Muss ich bei der Versicherung auch Diagnosen angeben, von denen ich nichts wusste?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Nach § 19 VVG musst du nur die dir bekannten Diagnosen angeben. Laut BGH-Beschluss vom 25.09.2019 (Az. IV ZR 247/18) muss der Versicherer beweisen, dass du eine Diagnose bereits vor dem Versicherungsabschluss kanntest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sollte ich vor dem PKV-Abschluss überhaupt meine Patientenakte einsehen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kommt drauf an. Kannst du die Gesundheitsfragen nicht sicher beantworten, fordere die Patientenquittung an. Kennst du deine Diagnosen und hattest in den letzten Jahren nur Vorsorgetermine, musst du nicht zwingend reinschauen. Sobald du eine Diagnose kennst, wird daraus anzeigepflichtiges Wissen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hat meine private Krankenversicherung automatisch Zugriff auf meine ePA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Deine PKV bekommt keinen automatischen Zugriff auf deine elektronische Patientenakte. Du bestimmst allein, wer sie einsehen darf. Für private Krankenversicherungen besteht zudem keine Pflicht, die ePA überhaupt anzubieten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich wegen einer Fehldiagnose Schadensersatz verlangen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Grundsätzlich ja, der Nachweis ist in der Praxis aber schwierig. Entstehen durch die falsche Diagnose nachweisbare finanzielle Schäden, etwa der Verlust des BU-Schutzes, kommen Haftungsansprüche infrage. Meist ist es sinnvoller, die Diagnose zügig korrigieren zu lassen, statt einen langwierigen Schadensersatzprozess zu führen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was tun, wenn die Krankenkasse die Korrektur verweigert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dann kannst du dich ans Sozialgericht wenden. Nach dem Amtsermittlungsgrundsatz klärt das Gericht den Sachverhalt selbst, notfalls mit einem Gutachten auf Staatskosten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was hat eine Falschdiagnose mit meiner Verbeamtung zu tun?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ohne bestandene Gesundheitsprüfung bei PKV und amtsärztlicher Untersuchung wird die Verbeamtung schwierig. Eine unkorrigierte Fehldiagnose kann also nicht nur die PKV, sondern indirekt auch dein Einstellungsverfahren belasten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gilt das auch für Zusatzversicherungen wie Krankentagegeld- oder Zahnzusatzversicherung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Auch dort fragt der Versicherer nach denselben Gesundheitsangaben wie bei der PKV. Eine unkorrigierte Falschdiagnose kann also auch hier zur Ablehnung oder zu Risikozuschlägen führen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "An wen kann ich mich wenden, wenn ich mit dem Thema überfordert bin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neben dem behandelnden Arzt und deiner Krankenkasse hilft die Stiftung Unabhängige Patientenberatung Deutschland (UPD) kostenfrei weiter. Bei komplizierteren Fällen, etwa rund um psychische Diagnosen, ist zusätzlich anwaltliche Unterstützung sinnvoll."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie kann ich eine psychiatrische Diagnose loswerden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung."
+      }
+    }
+  ]
 }
 ```
 
-Als JSON validiert. Text ist identisch mit Schritt 1, das muss so sein.
-
-### Schritt 4: Im JSON-LD den Namen der bestehenden Frage tauschen
-
-Im selben Script-Block diese Zeile suchen und ersetzen. Nur den `name`, nicht die Antwort:
-
-```diff
-- "name": "Kann ich die Diagnose selbst berichtigen lassen oder nur die zugrunde liegenden Fakten?",
-+ "name": "Kann ein Arzt nachträglich die Diagnose ändern?",
-```
+Damit ist Schritt 4 erledigt, die Umbenennung steckt schon drin.
 
 ### Danach prüfen
 
