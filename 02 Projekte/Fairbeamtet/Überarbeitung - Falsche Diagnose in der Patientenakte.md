@@ -162,33 +162,66 @@ Ja. Ärzte dürfen und sollen eine Diagnose korrigieren, wenn sie falsch ist. Ei
 
 **Vier Handgriffe. Eine Frage kommt neu dazu, eine bestehende wird umbenannt.**
 
-### Stand vom 21.10.2026, nach Ines' Umsetzung
+### Stand vom 21.10.2026
 
-Die Seite hat jetzt **16 sichtbare FAQ-Blöcke**. Darin ein Duplikat.
+Duplikat ist weg. **15 sichtbare FAQ-Blöcke, keine Dopplung.** Das Markup auf der Seite steht noch auf 14 Fragen.
 
-| Nr. | Frage | Status |
-|---|---|---|
-| 8 | Wie kann ich eine psychiatrische Diagnose loswerden? | neu eingefügt |
-| 10 | Kann ein Arzt nachträglich die Diagnose ändern? | umbenannt aus „Kann ich die Diagnose selbst berichtigen lassen…" |
-| 16 | Kann ein Arzt nachträglich die Diagnose ändern? | **Duplikat von Nr. 10** |
+Ein inhaltliches Problem ist offen: Block 8.
 
-**Ursache liegt bei mir.** Teil 2 dieser Datei enthielt beide FAQs als einzusetzenden Text. Später habe ich empfohlen, die zweite nicht einzusetzen, sondern Nr. 10 umzubenennen. Die alte Anweisung aus Teil 2 blieb aber stehen. Wer beides abarbeitet, landet zwangsläufig beim Duplikat.
+### Das Problem mit Block 8
 
-Das JSON-LD auf der Seite steht noch auf 14 Fragen, ist also noch nicht angefasst.
+Block 8 sagt fast nichts, was nicht schon in Block 2 und Block 3 steht. Satz für Satz:
 
-### Schritt 1: Accordion-Block Nr. 10 löschen
+| Block 8 sagt | steht schon in |
+|---|---|
+| „Du brauchst ein ärztliches Attest, das die Unrichtigkeit bestätigt" | Block 2, fast wörtlich |
+| „musst die Korrektur danach deiner Krankenkasse melden" | Block 2, fast wörtlich |
+| „Ohne diesen zweiten Schritt steht die Diagnose weiter in deiner Patientenquittung" | Block 2, fast wörtlich |
+| „bleibt die Zweitmeinung" | Block 3 |
+| „im Streitfall der Weg zum Sozialgericht" | Block 6 |
 
-Lösche den Block mit dem Titel „Kann ein Arzt nachträglich die Diagnose ändern?", der die Antwort **„Hier ist die Rechtslage differenziert…"** enthält. Das ist der zehnte von oben.
+Gemessen: **50 Prozent der Inhaltswörter in Block 8 kommen bereits in Block 2 und 3 vor.** Das Einzige, was Block 8 eigen hat, ist das Wort „psychiatrisch" in der Frage.
 
-Block Nr. 16 mit derselben Frage bleibt stehen. Er hat die bessere Antwort, weil sie mit „Ja." beginnt und damit die Frage sofort beantwortet (Regel 4c im [[Voice Profile]]). Die Antwort von Nr. 10 fängt mit „Hier ist die Rechtslage differenziert" an, also mit einer Hinführung, und sagt inhaltlich dasselbe.
+Zwei Folgen. Für die Leserin: Sie klickt Block 8 auf, weil sie etwas über ihren psychiatrischen Fall wissen will, und liest dieselbe Antwort wie sechs Blöcke vorher. Für Google und KI-Antworten: drei Blöcke mit nahezu gleichem Inhalt bringen kein zusätzliches Signal. Der Grund, warum der Block überhaupt existiert, nämlich der Keyword-Cluster um psychiatrische Diagnosen mit 110 Suchen im Monat, zahlt sich so nicht aus.
 
-Danach: 15 sichtbare FAQs, keine Dopplung.
+### Die Lösung
+
+Block 8 bekommt den Inhalt, der **nur** für psychiatrische Diagnosen gilt und in Block 2 und 3 fehlt: den Hebel über die Verdachtsdiagnose. Steht in der Akte nur ein „Verdacht auf", muss die Praxis nicht ihre fachliche Einschätzung widerrufen, sondern lediglich bestätigen, dass sich der Verdacht nicht bestätigt hat. Das ist der praktisch gangbarste Weg und steht bisher in keiner FAQ.
+
+Neue Überschneidung nach der Änderung: **17 Prozent statt 50.**
+
+### Längenprüfung
+
+Ines' Einwand war berechtigt, meine erste Fassung war zu lang. Gemessen an den 15 Antworten auf der Seite:
+
+| | Wörter |
+|---|---|
+| Kürzeste FAQ-Antwort | 22 |
+| **Median** | **36** |
+| Längste FAQ-Antwort | 53 |
+| Block 8 aktuell | 53 |
+| Mein erster Vorschlag | **78** |
+| Endfassung unten | **35** |
+
+78 Wörter wären mehr als das Doppelte des Medians gewesen. Gestrichen habe ich den Röntgenbild-Satz (steht sinngemäß in Block 3), den Zeitfaktor und den Hinweis auf die Krankenkasse (steht in Block 2). Der Verdachtsdiagnose-Hebel bleibt, das ist der einzige eigene Inhalt.
+
+### Schritt 1: Antworttext von Block 8 ersetzen
+
+Block 8 heißt „Wie kann ich eine psychiatrische Diagnose loswerden?". Überschrift bleibt. Ersetze nur den Antworttext durch diese zwei Sätze:
+
+> Über die Praxis, die sie gestellt hat. Dein bester Hebel ist die Verdachtsdiagnose: Steht in der Akte nur ein Verdacht, muss die Praxis ihn nicht widerrufen, sondern nur bestätigen, dass er sich nicht bestätigt hat.
+
+35 Wörter, Überschneidung mit Block 2 und 3 nur noch 17 Prozent statt 50.
+
+Block 2, 3 und 6 bleiben unangetastet.
 
 ### Schritt 2: JSON-LD-Block komplett ersetzen
 
 Inhalt des `<script type="application/ld+json">`-Blocks mit `"@type": "FAQPage"` vollständig durch den Block unten ersetzen. Die `<script>`-Tags bleiben stehen.
 
-Dieses Schema ist **aus dem aktuell sichtbaren Seitentext erzeugt**, abzüglich des zu löschenden Blocks Nr. 10. Alle 15 Antworttexte stimmen damit Zeichen für Zeichen mit dem überein, was auf der Seite steht. Reihenfolge wie auf der Seite.
+Enthalten sind die 15 sichtbaren FAQs in Seitenreihenfolge, mit dem gekürzten Text für Block 8. Die anderen 14 Antworten sind Zeichen für Zeichen von der Seite übernommen.
+
+**Erst Schritt 1, dann Schritt 2.** Dann stimmen sichtbarer Text und Markup überein.
 
 ```json
 {
@@ -256,7 +289,7 @@ Dieses Schema ist **aus dem aktuell sichtbaren Seitentext erzeugt**, abzüglich 
       "name": "Wie kann ich eine psychiatrische Diagnose loswerden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nur über die Praxis, die sie gestellt hat. Du brauchst ein ärztliches Attest, das die Unrichtigkeit bestätigt, und musst die Korrektur danach deiner Krankenkasse melden. Ohne diesen zweiten Schritt steht die Diagnose weiter in deiner Patientenquittung. Lässt sich die Diagnose fachlich nicht widerlegen, bleibt die Zweitmeinung und im Streitfall der Weg zum Sozialgericht."
+        "text": "Über die Praxis, die sie gestellt hat. Dein bester Hebel ist die Verdachtsdiagnose: Steht in der Akte nur ein Verdacht, muss die Praxis ihn nicht widerrufen, sondern nur bestätigen, dass er sich nicht bestätigt hat."
       }
     },
     {
@@ -320,16 +353,6 @@ Dieses Schema ist **aus dem aktuell sichtbaren Seitentext erzeugt**, abzüglich 
 ```
 
 Mit `json.loads` gegengeprüft: valide, 15 Fragen, keine Duplikate.
-
-### Optional, aber empfohlen
-
-Die Antwort in Block Nr. 8 („Wie kann ich eine psychiatrische Diagnose loswerden?") ist meine erste Fassung. Sie beginnt mit „Nur über die Praxis, die sie gestellt hat" und überschneidet sich dadurch stark mit Nr. 2 und Nr. 3.
-
-Die geschärfte Fassung sagt etwas Eigenes, nämlich den Weg über die Verdachtsdiagnose:
-
-> Über die Praxis, die sie gestellt hat, und bei psychischen Diagnosen ist das der schwerste Weg. Dir fehlt der objektive Gegenbeweis, den eine Bildgebung bei körperlichen Befunden liefert. Prüfe deshalb zuerst, ob in der Akte nur eine Verdachtsdiagnose steht. Dann lässt du dir schriftlich bestätigen, dass sich der Verdacht nicht bestätigt hat. Die Korrektur musst du zusätzlich deiner Krankenkasse melden, sonst steht die Diagnose weiter in deiner Patientenquittung.
-
-Wenn du die einsetzt, sag Bescheid. Dann baue ich das Schema mit diesem Text neu, damit sichtbarer Text und Markup weiter übereinstimmen. **Nicht einzeln ändern**, sonst laufen die beiden auseinander.
 
 ### Danach prüfen
 
