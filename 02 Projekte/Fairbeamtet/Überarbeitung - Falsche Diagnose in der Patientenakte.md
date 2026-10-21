@@ -701,3 +701,95 @@ Vorschlag für den Abschnitt „Falsche Diagnose aus der Akte entfernen lassen: 
 ### 3. Risikostrukturausgleich (bereits im Faktencheck notiert)
 
 Der Satz im Haupttext, das Abrechnungssystem belohne „Ärzte" mit Geld aus dem Risikostrukturausgleich, ist fachlich schief. Der Morbi-RSA verteilt Mittel zwischen Krankenkassen. Wenn ihr dafür eine Quelle angeben wollt, müsste der Satz vorher umformuliert werden. Solange er so steht, besser keine Quelle dazu nennen.
+
+---
+
+# Quellen-Abschnitt als HTML (Debeka-Muster)
+
+Erstellt 21.10.2026. Markup 1:1 nach dem Vorbild aus `/debeka-private-krankenversicherung-beamte-test/`: gleiche Klassen, gleicher `<style>`-Block, gleiche `li`-Struktur mit `<span class="stand">`, alle Links mit `target="_blank" rel="noopener nofollow"`.
+
+**Einsetzen:** Als Custom-HTML-Block am Artikelende, nach dem H2 „Fazit: Lieber jetzt korrigieren als später zahlen".
+
+```html
+<h2 id="Quellen" class="wp-block-heading">Quellen</h2>
+
+<style>
+.fb-quellen{margin:1.5em 0;font:inherit;color:inherit;}
+.fb-quellen,.fb-quellen *{box-sizing:border-box;}
+.fb-quellen>details{border:1px solid rgba(128,128,128,.4) !important;border-radius:12px !important;overflow:hidden;}
+.fb-quellen>details>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;cursor:pointer;list-style:none;background:#1F4E8C;color:#fff;font-weight:bold;}
+.fb-quellen>details>summary::-webkit-details-marker{display:none;}
+.fb-quellen>details>summary::after{content:"+";font-size:1.4em;font-weight:normal;line-height:1;}
+.fb-quellen>details[open]>summary::after{content:"–";}
+.fb-quellen .inhalt{padding:4px 16px 16px;}
+.fb-quellen h4{margin:16px 0 4px;padding:0;font:inherit;font-weight:bold;color:inherit;}
+.fb-quellen ul{list-style:none;margin:0;padding:0;}
+.fb-quellen li{margin:0;padding:8px 0 8px 28px;position:relative;border-top:1px solid rgba(128,128,128,.4);overflow-wrap:anywhere;}
+.fb-quellen li:first-child{border-top:0;}
+.fb-quellen li::before{content:"•";position:absolute;left:0;top:8px;color:#4A86D4;font-weight:bold;font-size:1.2em;line-height:1.1;}
+.fb-quellen .stand{font-size:.9em;opacity:.75;}
+.fb-quellen .hinweis{margin:16px 0 0;font-size:.9em;opacity:.75;}
+</style>
+<div class="fb-quellen">
+<details>
+<summary>Quellen und Rechtsgrundlagen</summary>
+<div class="inhalt">
+
+<h4>Gesetze und Verordnungen</h4>
+<ul>
+<li><a href="https://www.gesetze-im-internet.de/vvg_2008/__19.html" target="_blank" rel="noopener nofollow">Versicherungsvertragsgesetz (VVG)</a>, § 19 (vorvertragliche Anzeigepflicht), § 19 Abs. 2 (Rücktritt), § 19 Abs. 3 (Kündigung), § 19 Abs. 5 (Belehrungspflicht) <span class="stand">· abgerufen am 21.10.2026</span></li>
+<li><a href="https://www.gesetze-im-internet.de/sgb_5/__305.html" target="_blank" rel="noopener nofollow">Sozialgesetzbuch V (SGB V)</a>, § 305 Abs. 1 Satz 6 und 7 (Berichtigung von Diagnosedaten bei ärztlichem Nachweis, Entscheidung innerhalb von vier Wochen), § 305 Abs. 2 (Patientenquittung) <span class="stand">· abgerufen am 21.10.2026</span></li>
+<li><a href="https://www.gesetze-im-internet.de/bgb/__630f.html" target="_blank" rel="noopener nofollow">Bürgerliches Gesetzbuch (BGB)</a>, § 630f Abs. 1 Satz 2 (Änderungen in der Behandlungsakte nur mit erkennbarem ursprünglichen Inhalt), § 630f Abs. 2 (Dokumentationspflicht für Diagnosen und Befunde) <span class="stand">· abgerufen am 21.10.2026</span></li>
+<li><a href="https://www.gesetze-im-internet.de/bgb/__630g.html" target="_blank" rel="noopener nofollow">Bürgerliches Gesetzbuch (BGB)</a>, § 630g Abs. 1 (Einsicht in die vollständige Behandlungsakte, erste Abschrift unentgeltlich) <span class="stand">· abgerufen am 21.10.2026</span></li>
+<li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016R0679" target="_blank" rel="noopener nofollow">Datenschutz-Grundverordnung (DSGVO)</a>, Art. 15 (Auskunftsrecht), Art. 16 (Recht auf Berichtigung), Art. 12 Abs. 3 (Antwort in der Regel innerhalb eines Monats) <span class="stand">· abgerufen am 21.10.2026</span></li>
+</ul>
+
+<h4>Rechtsprechung</h4>
+<ul>
+<li>Bundesgerichtshof, Beschluss vom 25.09.2019, Az. IV ZR 247/18: Die positive Kenntnis des anzeigepflichtigen Umstands gehört zum objektiven Tatbestand der Anzeigepflichtverletzung nach § 19 Abs. 1 VVG und ist vom Versicherer zu beweisen. Fahrlässige Unkenntnis genügt nicht.</li>
+</ul>
+
+<h4>Behörden und Aufsicht</h4>
+<ul>
+<li><a href="https://www.lfd.niedersachsen.de/faq/gesundheitsbereich/faq-gesundheitsbereich-und-datenschutz-229071.html" target="_blank" rel="noopener nofollow">Der Landesbeauftragte für den Datenschutz Niedersachsen: FAQ Gesundheitsbereich und Datenschutz</a>, zur Einordnung der Diagnose als ärztliche Einschätzung und zu den Grenzen des Berichtigungsrechts nach Art. 16 DSGVO <span class="stand">· abgerufen am 21.10.2026</span></li>
+</ul>
+
+<h4>Statistik</h4>
+<ul>
+<li><a href="https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/oeffentlicher-dienst/BMI26003-gfb2024.html" target="_blank" rel="noopener nofollow">Bundesministerium des Innern: Gesundheitsförderungsbericht 2024 der unmittelbaren Bundesverwaltung (GFB 2024)</a>, veröffentlicht 31.03.2026: psychische und Verhaltensstörungen als häufigste Ursache der vorzeitigen Versetzung in den Ruhestand aus gesundheitlichen Gründen, rund 42,0 Prozent <span class="stand">· abgerufen am 21.10.2026</span></li>
+<li><a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/12/PD25_455_742.html" target="_blank" rel="noopener nofollow">Statistisches Bundesamt: Pressemitteilung Nr. 455 vom Dezember 2025</a>, Stichtag 01.01.2025: 17 Prozent der 2024 neu pensionierten Beamtinnen und Beamten gingen wegen Dienstunfähigkeit in den Ruhestand, im Durchschnitt mit 55,8 Jahren <span class="stand">· abgerufen am 21.10.2026</span></li>
+</ul>
+
+<h4>Beratung und Hilfe</h4>
+<ul>
+<li><a href="https://www.patientenberatung.de/" target="_blank" rel="noopener nofollow">Stiftung Unabhängige Patientenberatung Deutschland (UPD)</a>, kostenfreie und auf Wunsch anonyme Beratung unabhängig vom Versicherungsstatus, Telefon 0800 011 77 22 <span class="stand">· abgerufen am 21.10.2026</span></li>
+</ul>
+
+<p class="hinweis">Einschätzungen zur Annahmepraxis von Versicherern und zum Vorgehen bei Diagnosekorrekturen beruhen auf der Erfahrung von Sven Höhne (Debeka 2000 bis 2011, seit 2016 Makler bei fairbeamtet.de) und auf Beratungsgesprächen von fairbeamtet.de. Dieser Beitrag informiert und ersetzt keine Rechtsberatung im Einzelfall.</p>
+
+</div>
+</details>
+</div>
+```
+
+## Abweichungen zum Debeka-Block, bewusst gesetzt
+
+**Fünf h4-Gruppen statt sieben.** Debeka braucht „Tarifbedingungen" und „Presse und Kundenstimmen", hier gibt es beides nicht. Gruppen hier: Gesetze, Rechtsprechung, Behörden, Statistik, Beratung.
+
+**Der Hinweis-Satz am Ende.** Debeka endet mit „Im Zweifel gelten die Tarifbedingungen der Debeka." Das passt hier nicht. Stattdessen: „informiert und ersetzt keine Rechtsberatung im Einzelfall." Bei einem Artikel, der Berichtigungsansprüche nach SGB V und DSGVO erklärt, ist dieser Hinweis sinnvoll. **Von Sven freigeben lassen.**
+
+**Keine Jahreszahl bei Sven.** Statt „über 30 Jahre" steht die Zeitangabe wie im Debeka-Block: „Debeka 2000 bis 2011, seit 2016 Makler bei fairbeamtet.de". Grund steht unten.
+
+## Gefunden: Widerspruch bei den Erfahrungsjahren
+
+Im Artikel steht live: **„ein Muster, das mir in über 30 Jahren PKV-Beratung immer wieder begegnet ist"**.
+
+Abschnitt 8 des [[Voice Profile]] sagt dazu:
+
+> **Erfahrungsjahre je Autor**, nicht pauschal: Sven „über 25 Jahre", Micha „über 30 Jahre". Nie die größere Zahl auf den jeweils anderen übertragen.
+
+Der Artikel ist von Sven. „Über 30 Jahre" ist Michas Zahl. Passt auch nicht zur Debeka-Quellenangabe, die Sven ab 2000 führt, also 26 Jahre.
+
+**Zu ändern:** Im H3 „Ein Muster, das mir in der Beratung ständig begegnet", im letzten Absatz der „Achtung:"-Box, „über 30 Jahren" durch „über 25 Jahren" ersetzen.
+
+Dieselbe Prüfung lohnt an einer zweiten Stelle: In der CTA-Box steht „Echte Experten: Über 30 Jahre PKV- & BU-Erfahrung". Das ist eine Team-Aussage, nicht Sven persönlich, und darf so stehen bleiben.
