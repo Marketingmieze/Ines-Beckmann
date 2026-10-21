@@ -133,7 +133,7 @@ Dazu kommt die Hürde aus dem Abschnitt oben. Eine Diagnose gilt als ärztliches
 
 Ablehnung, Leistungsausschluss oder Risikozuschlag mit spürbar höheren Beiträgen. Beim Ausschluss bekommst du einen Vertrag, der alles abdeckt außer genau diesem Bereich.
 
-Für dich als Beamtin oder Beamten wiegt das doppelt. Eine psychische Diagnose in der Akte kann dir den Weg in die beihilfekonforme PKV verbauen und zugleich bei der amtsärztlichen Untersuchung Fragen aufwerfen. Und bei der Dienstunfähigkeit gehören psychische Ursachen zu den häufigsten Gründen, warum Menschen überhaupt aus dem Dienst fallen. [PRÜFEN: Anteil psychischer Ursachen an DU-Fällen, Quelle mit Stand-Jahr] Ein Ausschluss genau dort nimmt dir den Schutz, den du am dringendsten brauchst.
+Für dich als Beamtin oder Beamten wiegt das doppelt. Eine psychische Diagnose in der Akte kann dir den Weg in die beihilfekonforme PKV verbauen und zugleich bei der amtsärztlichen Untersuchung Fragen aufwerfen. Und bei der Dienstunfähigkeit sind psychische Erkrankungen der häufigste Grund. Bei den Bundesbeamten, die 2024 aus gesundheitlichen Gründen vorzeitig in Pension mussten, lag ihr Anteil bei 42,0 Prozent. Dienstunfähigkeit trifft außerdem früh: Wer 2024 deshalb aufhören musste, war im Schnitt 55,8 Jahre alt. Ein Ausschluss genau dort nimmt dir den Schutz, den du am dringendsten brauchst.
 
 Wie Versicherer mit einer Psychotherapie in der Vorgeschichte umgehen, steht ausführlich in unserem Ratgeber zur [Berufsunfähigkeitsversicherung trotz Psychotherapie](https://www.fairbeamtet.de/berufsunfaehigkeitsversicherung-psychotherapie/).
 
@@ -400,7 +400,7 @@ Diese Punkte sind noch nicht umgesetzt:
 - [ ] **H2 ergänzen:** Schadensersatz-Abschnitt um „oder Schmerzensgeld" erweitern (20 Suchen/Monat)
 - [x] **Neuer H2:** falsche psychiatrische Diagnose (110 Suchen/Monat im Unter-Cluster) — Text steht in Teil 2, Stand 21.10.2026
 - [ ] **Rücklink setzen:** von `/berufsunfaehigkeitsversicherung-psychotherapie/` zurück auf diesen Artikel, Anker „falsche Diagnose in der Patientenakte"
-- [ ] **[PRÜFEN:] auflösen** im Teil-2-Text: Anteil psychischer Ursachen an DU-Fällen, Quelle mit Stand-Jahr. Vor Veröffentlichung belegen oder Satz streichen
+- [x] **[PRÜFEN:] aufgelöst** am 21.10.2026: 42,0 % psychische und Verhaltensstörungen (GFB 2024, BMI) und 17 % / 55,8 Jahre (Destatis, Stand 01.01.2025). Siehe Abschnitt „Recherche zum offenen Punkt". Offen bleibt nur: GFB-PDF einmal selbst gegenlesen
 - [ ] **H2 streichen:** „So bewerten uns unsere Kunden" (als Box ohne Überschrift einbauen)
 - [ ] **H2 zusammenlegen:** „Unsere meistgelesenen PKV-Guides" + „Diese Artikel könnten dich interessieren"
 - [ ] **Vorgehen-Block nach vorne ziehen**, aktuell steht der Kern an Position 8 von 21
@@ -509,4 +509,49 @@ Der bestehende Artikel formuliert an dieser Stelle übrigens korrekt vorsichtig 
 
 ## Offen
 
-Der Marker `[PRÜFEN: Anteil psychischer Ursachen an DU-Fällen, Quelle mit Stand-Jahr]` steht weiter im Teil-2-Text. Vor Veröffentlichung belegen oder den Satz streichen.
+Erledigt am 21.10.2026, siehe Abschnitt „Recherche zum offenen Punkt" unten. Der Marker ist durch belegte Zahlen ersetzt.
+
+---
+
+# Recherche zum offenen Punkt, 21.10.2026
+
+Der Marker `[PRÜFEN: Anteil psychischer Ursachen an DU-Fällen]` ist aufgelöst. Zwei Zahlen, zwei Behördenquellen.
+
+## Zahl 1: Anteil psychischer Erkrankungen an gesundheitsbedingten Frühpensionierungen
+
+**42,0 Prozent**, Bezugsjahr 2024.
+
+Quelle: Gesundheitsförderungsbericht 2024 der unmittelbaren Bundesverwaltung (GFB 2024), Bundesministerium des Innern, veröffentlicht 31.03.2026. Psychische und Verhaltensstörungen sind dort die häufigste Ursache für die vorzeitige Versetzung in den Ruhestand aus gesundheitlichen Gründen.
+
+> [!warning] Einschränkung
+> Der BMI-Server beantwortet den direkten Abruf des PDF mit HTTP 400, auch über die HTML-Publikationsseite. Die Zahl stammt aus zwei unabhängigen Suchtreffern, die beide auf dieses PDF verweisen, **nicht aus dem von mir selbst geöffneten Dokument**. Vor Veröffentlichung einmal im PDF gegenlesen: https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/oeffentlicher-dienst/BMI26003-gfb2024.html
+
+**Geltungsbereich beachten:** Der GFB deckt die **unmittelbare Bundesverwaltung** ab, also Bundesbeamte. Nicht alle Beamtinnen und Beamten in Deutschland. Im Text steht deshalb „Bei den Bundesbeamten". Nicht zu „alle Beamten" verallgemeinern.
+
+## Zahl 2: Häufigkeit und Alter bei Dienstunfähigkeit
+
+**17 Prozent** der Beamten, die 2024 neu in Pension gingen, mussten wegen Dienstunfähigkeit aufhören. Durchschnittsalter **55,8 Jahre**.
+
+Quelle: Statistisches Bundesamt, Pressemitteilung Nr. 455 vom Dezember 2025, Stichtag 1. Januar 2025.
+https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/12/PD25_455_742.html
+
+**Direkt verifiziert.** Diese Seite war abrufbar, die Zahlen stammen aus dem Originaltext.
+
+## Was ich nicht verwendet habe
+
+Bei der Recherche kamen mehrere kursierende Zahlen hoch, die ich bewusst nicht in den Text genommen habe:
+
+| Zahl | Problem |
+|---|---|
+| „über 43 %" aus dem Achten Versorgungsbericht | Sekundärzitat, Bericht und Bezugsjahr nicht verifizierbar |
+| „über 33 %" | Quelle unklar |
+| „bei Männern 50 %, bei Frauen 66 % der DU-Fälle durch Depressionen" | wirkt zu hoch, keine belastbare Quelle gefunden |
+| 32,34 % psychische Erkrankungen (Morgen & Morgen, BU-Rating 2026) | **andere Grundgesamtheit:** private Berufsunfähigkeit über alle Berufe, nicht Dienstunfähigkeit von Beamten. Nicht vermischen |
+
+Der letzte Punkt ist der wichtigste. Dienstunfähigkeit bei Beamten und Berufsunfähigkeit in der privaten BU sind zwei verschiedene Statistiken. Wer die Versichererzahlen für eine Aussage über Beamte nutzt, vergleicht Äpfel mit Birnen.
+
+## Neuer Textstand
+
+> Und bei der Dienstunfähigkeit sind psychische Erkrankungen der häufigste Grund. Bei den Bundesbeamten, die 2024 aus gesundheitlichen Gründen vorzeitig in Pension mussten, lag ihr Anteil bei 42,0 Prozent. Dienstunfähigkeit trifft außerdem früh: Wer 2024 deshalb aufhören musste, war im Schnitt 55,8 Jahre alt.
+
+Beim Einsetzen die Quellen mitgeben, wie es Abschnitt 8 des [[Voice Profile]] verlangt: GFB 2024 (BMI, März 2026) und Statistisches Bundesamt (Stand 01.01.2025).
