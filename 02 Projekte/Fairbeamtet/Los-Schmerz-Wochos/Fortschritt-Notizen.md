@@ -86,3 +86,11 @@ Konkretisiert 05.10.2026: Gemeinte Seite ist `/pkv-ratgeber/pkv-vergleich-beamte
 ## Datum auf der Vergleichsseite setzen (Woche 1)
 
 Ergänzung 05.10.2026: Die Seite hat auch **keinen Autor** gesetzt – gehört eigentlich zur Woche-10-Aufgabe „Kontaktdaten und Autorenprofile prüfen", aber da man ohnehin hier ist, macht es Sinn, es mitzunehmen. Die Seite läuft über ein Elementor-Theme-Builder-Template; möglich, dass (1) der native WP-Autor am Beitrag nicht gesetzt ist oder (2) das Template gar kein Autor-Widget anzeigt. Eine Template-Änderung betrifft wahrscheinlich mehrere Ratgeber-Seiten gleichzeitig – deshalb bewusst Sven überlassen statt eigenständig am gemeinsamen Template zu ändern.
+
+---
+
+## Beihilfeergänzungstarif (Woche 7) — Korrektur 26.10.2026
+
+Der Plan notiert für `beamtenservice.de/beihilfeergaenzungstarif-so-findest-du-den-besten-anbieter/` **1.813 Wörter**. **Das war zu niedrig geschätzt, aber in die falsche Richtung.** NeuronWriter zählt den Artikel beim Import in Svens Query (`784432dc018302b6`) exakt mit **1.146 Wörtern** – der Konkurrenzartikel ist also dünner als angenommen, nicht dicker. Zur Einordnung: eine eigene Web-Schätzung kam vorher auf 2.500–3.000 Wörter, ebenfalls daneben. NeuronWriters Zählung gilt als verlässlichste Quelle, weil sie den tatsächlichen Fließtext strukturiert erfasst statt grob zu schätzen.
+
+Content-Erstellung für dieses Thema läuft bereits: [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/artikel/2026-10-26_beihilfeergaenzungstarif/00_dossier.md|Artikel-Dossier]].
