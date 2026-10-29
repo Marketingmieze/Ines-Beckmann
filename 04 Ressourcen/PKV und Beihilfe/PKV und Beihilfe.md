@@ -53,3 +53,4 @@ Bis die eigenen Notizen stehen, liegt Fachliches auch hier:
 - [[Vault-Wissen]] — wann Claudia hier nachsieht
 - [[Googles No. 1]] — die SEO-Seite derselben Themen
 - [[Content Creation]] — der Bereich, in dem die Artikel entstehen
+- [[02 Projekte/Fairbeamtet/Bauplan PKV (Informationsarchitektur).md|Bauplan PKV (Informationsarchitektur)]] — wie der gesamte `/pkv/`-Bereich strukturiert sein soll, mit URL-Zuordnung je bestehendem Artikel
