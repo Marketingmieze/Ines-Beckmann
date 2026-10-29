@@ -69,13 +69,15 @@ Die schönsten Einsendungen landen auf unserer Homepage. Ohne dein Okay veröffe
 
 Ich mache nicht nur Tiere. Auto und Recht laufen auch über meinen Tisch. Und beim Auto wird es jetzt knapp.
 
-**KFZ: Dein Versicherer rechnet damit, dass du zu faul bist**
+**KFZ: Du fährst seit Jahren unfallfrei. Dein Beitrag steigt trotzdem.**
 
-Bisher hatte er recht.
+Wofür genau zahlst du da mehr?
 
-Deine Versicherung hat dir dieses Jahr keinen Brief geschickt, in dem steht "du zahlst zu viel". Wird sie auch nie. Den Brief schreibe ich oder keiner.
+Die Rechnung dahinter ist simpel. Deine Schadenfreiheitsklasse wird jedes Jahr besser, dein Rabatt also auch. Gleichzeitig rechnet dein Versicherer aber neu: Typklasse für dein Automodell, Regionalklasse für deinen Wohnort, dazu die normale Beitragsanpassung. Das frisst deinen Rabatt auf. Oft bleibt am Ende sogar ein Plus auf der Rechnung, obwohl du nie einen Schaden gemeldet hast.
 
-**Am 30. November schließt das Fenster.** Wer dann nicht gewechselt hat, zahlt seinen Beitrag noch ein komplettes Jahr weiter. Freiwillig.
+Heißt im Klartext: **Du zahlst mit für die Schäden von Leuten, die du nie getroffen hast.**
+
+**Achtung:** Bis zum 30. November kannst du wechseln. Danach läuft dein Beitrag noch ein komplettes Jahr weiter, genau so wie er ist.
 
 Ich brauche von dir nur vier Dinge:
 
@@ -84,9 +86,9 @@ Ich brauche von dir nur vier Dinge:
 3. Deine letzte Beitragsrechnung
 4. Deinen aktuellen Kilometerstand
 
-Vier Fotos mit dem Handy. Zwei Minuten deiner Zeit. Danach weißt du, ob du die letzten Jahre zu viel gezahlt hast. Und wenn dein Vertrag gut ist, sage ich dir das genauso deutlich.
+Vier Fotos mit dem Handy. Danach rechne ich dir schwarz auf weiß vor, wofür du gerade zahlst und was dasselbe woanders kostet. Lohnt sich ein Wechsel nicht, sage ich dir das genauso deutlich.
 
-> **[Vier Fotos schicken und Prämie vergleichen]**
+> **[Zeig mir, wofür ich mehr zahle]**
 
 **Rechtsschutz: Du hast recht. Kannst du es dir leisten, das zu beweisen?**
 
