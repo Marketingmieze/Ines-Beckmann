@@ -72,211 +72,213 @@ Zusammen 122 Seiten und ein Beitrag in rund 38,5 Wochen, ohne die Punkte unter �
 
 Ohne Kästchen. Die Aufgaben entstehen erst, wenn das Projekt startet.
 
+Die Seitennamen stehen hier bewusst **als Text, nicht als Wikilink** (Ines, 29.10.2026). Seiten-Notizen werden erst beim Projektstart angelegt – so entstehen keine roten Links auf Seiten, die in Monaten dran sind. Muster: [[02 Projekte/Fairbeamtet/PKV Seiten/|PKV Seiten]].
+
 ### 2. PKV für Beamtenanwärter
 
 0,7 Wochen inklusive 1 Tag Verlinkung, ab Woche 3,2.
 
-- [[PKV ❯ Beamtenanwärter|Beamtenanwärter]] `/pkv/beamtenanwaerter/` · überarbeiten · klein
-- [[PKV ❯ Beamtenanwärter ❯ Vergleich|Beamtenanwärter ❯ Vergleich]] `/pkv/beamtenanwaerter/vergleich/` · neu · klein
+- Beamtenanwärter `/pkv/beamtenanwaerter/` · überarbeiten · klein
+- Beamtenanwärter ❯ Vergleich `/pkv/beamtenanwaerter/vergleich/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 3. PKV für Referendare
 
 1,2 Wochen inklusive 1 Tag Verlinkung, ab Woche 3,9.
 
-- [[PKV ❯ Referendare|Referendare]] `/pkv/referendare/` · überarbeiten · klein
-- [[PKV ❯ Referendare ❯ Kosten|Referendare ❯ Kosten]] `/pkv/referendare/kosten/` · neu · klein
-- [[PKV ❯ Referendare ❯ Vergleich|Referendare ❯ Vergleich]] `/pkv/referendare/vergleich/` · neu · klein
+- Referendare `/pkv/referendare/` · überarbeiten · klein
+- Referendare ❯ Kosten `/pkv/referendare/kosten/` · neu · klein
+- Referendare ❯ Vergleich `/pkv/referendare/vergleich/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 4. PKV für Lehrer
 
 1,2 Wochen inklusive 1 Tag Verlinkung, ab Woche 5,1.
 
-- [[PKV ❯ Lehrer|Lehrer]] `/pkv/lehrer/` · überarbeiten · klein
-- [[PKV ❯ Lehrer ❯ Kosten|Lehrer ❯ Kosten]] `/pkv/lehrer/kosten/` · neu · klein
-- [[PKV ❯ Lehrer ❯ Vergleich|Lehrer ❯ Vergleich]] `/pkv/lehrer/vergleich/` · neu · klein
+- Lehrer `/pkv/lehrer/` · überarbeiten · klein
+- Lehrer ❯ Kosten `/pkv/lehrer/kosten/` · neu · klein
+- Lehrer ❯ Vergleich `/pkv/lehrer/vergleich/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 5. PKV für Polizisten
 
 0,7 Wochen inklusive 1 Tag Verlinkung, ab Woche 6,3.
 
-- [[PKV ❯ Polizei|Polizei]] `/pkv/polizei/` · neu · klein
-- [[PKV ❯ Polizei ❯ PKV oder GKV|Polizei ❯ PKV oder GKV]] `/pkv/polizei/pkv-oder-gkv/` · neu · klein
+- Polizei `/pkv/polizei/` · neu · klein
+- Polizei ❯ PKV oder GKV `/pkv/polizei/pkv-oder-gkv/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 6. PKV Kosten
 
 2,4 Wochen inklusive 2 Tage Verlinkung, ab Woche 7,0.
 
-- [[PKV ❯ Kosten|Kosten]] `/pkv/kosten/` · neu · groß
-- [[PKV ❯ Kosten ❯ Beitragsrechner|Kosten ❯ Beitragsrechner]] `/pkv/kosten/beitragsrechner/` · neu · klein
-- [[PKV ❯ Kosten ❯ Günstige PKV|Kosten ❯ Günstige PKV]] `/pkv/kosten/guenstige-pkv/` · überarbeiten · klein
-- [[PKV ❯ Kosten ❯ Arbeitgeberzuschuss|Kosten ❯ Arbeitgeberzuschuss]] `/pkv/kosten/arbeitgeberzuschuss/` · neu · klein
-- [[PKV ❯ Kosten ❯ Höchstbeitrag|Kosten ❯ Höchstbeitrag]] `/pkv/kosten/hoechstbeitrag/` · neu · klein
-- [[PKV ❯ Kosten ❯ Selbstbeteiligung|Kosten ❯ Selbstbeteiligung]] `/pkv/kosten/selbstbeteiligung/` · neu · klein
-- [[PKV ❯ Kosten ❯ Steuer|Kosten ❯ Steuer]] `/pkv/kosten/steuer/` · neu · klein
-- [[PKV ❯ Beitragsrückerstattung|Beitragsrückerstattung]] `/pkv/beitragsrueckerstattung/` · neu · klein
+- Kosten `/pkv/kosten/` · neu · groß
+- Kosten ❯ Beitragsrechner `/pkv/kosten/beitragsrechner/` · neu · klein
+- Kosten ❯ Günstige PKV `/pkv/kosten/guenstige-pkv/` · überarbeiten · klein
+- Kosten ❯ Arbeitgeberzuschuss `/pkv/kosten/arbeitgeberzuschuss/` · neu · klein
+- Kosten ❯ Höchstbeitrag `/pkv/kosten/hoechstbeitrag/` · neu · klein
+- Kosten ❯ Selbstbeteiligung `/pkv/kosten/selbstbeteiligung/` · neu · klein
+- Kosten ❯ Steuer `/pkv/kosten/steuer/` · neu · klein
+- Beitragsrückerstattung `/pkv/beitragsrueckerstattung/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 7. PKV Vergleich und Test
 
 2,4 Wochen inklusive 2 Tage Verlinkung, ab Woche 9,4.
 
-- [[PKV ❯ Vergleich und Test|Vergleich und Test]] `/pkv/vergleich/` · überarbeiten · groß
-- [[PKV ❯ Vergleich und Test ❯ Vergleichsrechner|Vergleich und Test ❯ Vergleichsrechner]] `/pkv/vergleich/vergleichsrechner/` · neu · klein
-- [[PKV ❯ Vergleich und Test ❯ DKV oder ERGO|Vergleich und Test ❯ DKV oder ERGO]] `/pkv/vergleich/dkv-oder-ergo/` · neu · klein
-- [[PKV ❯ Vergleich und Test ❯ DBV oder Debeka|Vergleich und Test ❯ DBV oder Debeka]] `/pkv/vergleich/dbv-oder-debeka/` · überarbeiten · klein
-- [[PKV ❯ Vergleich und Test ❯ Debeka oder HUK-Coburg|Vergleich und Test ❯ Debeka oder HUK-Coburg]] `/pkv/vergleich/debeka-oder-huk-coburg/` · überarbeiten · klein
-- [[PKV ❯ Vergleich und Test ❯ Die Bayerische oder Versicherungskammer Bayern|Vergleich und Test ❯ Die Bayerische oder Versicherungskammer Bayern]] `/pkv/vergleich/die-bayerische-oder-versicherungskammer-bayern/` · neu · klein
-- [[PKV ❯ Erfahrungen|Erfahrungen]] `/pkv/erfahrungen/` · neu · klein
+- Vergleich und Test `/pkv/vergleich/` · überarbeiten · groß
+- Vergleich und Test ❯ Vergleichsrechner `/pkv/vergleich/vergleichsrechner/` · neu · klein
+- Vergleich und Test ❯ DKV oder ERGO `/pkv/vergleich/dkv-oder-ergo/` · neu · klein
+- Vergleich und Test ❯ DBV oder Debeka `/pkv/vergleich/dbv-oder-debeka/` · überarbeiten · klein
+- Vergleich und Test ❯ Debeka oder HUK-Coburg `/pkv/vergleich/debeka-oder-huk-coburg/` · überarbeiten · klein
+- Vergleich und Test ❯ Die Bayerische oder Versicherungskammer Bayern `/pkv/vergleich/die-bayerische-oder-versicherungskammer-bayern/` · neu · klein
+- Erfahrungen `/pkv/erfahrungen/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 8. PKV Anbieter für Beamte
 
 4,6 Wochen inklusive 3 Tage Verlinkung, ab Woche 11,8.
 
-- [[PKV ❯ Anbieter|Anbieter]] `/pkv/anbieter/` · überarbeiten · klein
-- [[HUK-Coburg PKV|HUK-Coburg PKV]] `/pkv/huk-coburg/` · neu · groß
-- [[HUK-Coburg PKV ❯ Erfahrungen|HUK-Coburg PKV ❯ Erfahrungen]] `/pkv/huk-coburg/erfahrungen/` · neu · klein
-- [[Barmenia PKV|Barmenia PKV]] `/pkv/barmenia/` · neu · groß
-- [[Barmenia PKV ❯ Erfahrungen|Barmenia PKV ❯ Erfahrungen]] `/pkv/barmenia/erfahrungen/` · neu · klein
-- [[Signal Iduna PKV|Signal Iduna PKV]] `/pkv/signal-iduna/` · neu · groß
-- [[HanseMerkur PKV|HanseMerkur PKV]] `/pkv/hansemerkur/` · neu · klein
-- [[DBV PKV|DBV PKV]] `/pkv/dbv/` · neu · klein
-- [[Allianz PKV|Allianz PKV]] `/pkv/allianz/` · neu · groß
-- [[Allianz PKV ❯ Kosten|Allianz PKV ❯ Kosten]] `/pkv/allianz/kosten/` · neu · klein
-- [[DKV PKV|DKV PKV]] `/pkv/dkv/` · neu · groß
+- Anbieter `/pkv/anbieter/` · überarbeiten · klein
+- HUK-Coburg PKV `/pkv/huk-coburg/` · neu · groß
+- HUK-Coburg PKV ❯ Erfahrungen `/pkv/huk-coburg/erfahrungen/` · neu · klein
+- Barmenia PKV `/pkv/barmenia/` · neu · groß
+- Barmenia PKV ❯ Erfahrungen `/pkv/barmenia/erfahrungen/` · neu · klein
+- Signal Iduna PKV `/pkv/signal-iduna/` · neu · groß
+- HanseMerkur PKV `/pkv/hansemerkur/` · neu · klein
+- DBV PKV `/pkv/dbv/` · neu · klein
+- Allianz PKV `/pkv/allianz/` · neu · groß
+- Allianz PKV ❯ Kosten `/pkv/allianz/kosten/` · neu · klein
+- DKV PKV `/pkv/dkv/` · neu · groß
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 9. PKV Gesundheitsprüfung und Öffnungsaktion
 
 1,2 Wochen inklusive 1 Tag Verlinkung, ab Woche 16,4.
 
-- [[PKV ❯ Gesundheitsprüfung und Vorerkrankungen|Gesundheitsprüfung und Vorerkrankungen]] `/pkv/gesundheitspruefung/` · überarbeiten · klein
-- [[PKV ❯ Gesundheitsprüfung und Vorerkrankungen ❯ Psychotherapie und psychische Erkrankungen|Gesundheitsprüfung und Vorerkrankungen ❯ Psychotherapie und psychische Erkrankungen]] `/pkv/gesundheitspruefung/psychotherapie/` · neu · klein
-- [[PKV ❯ Gesundheitsprüfung und Vorerkrankungen ❯ Risikozuschlag|Gesundheitsprüfung und Vorerkrankungen ❯ Risikozuschlag]] `/pkv/gesundheitspruefung/risikozuschlag/` · neu · klein
-- [[PKV ❯ Öffnungsaktion|Öffnungsaktion]] `/pkv/oeffnungsaktion/` · neu · klein
+- Gesundheitsprüfung und Vorerkrankungen `/pkv/gesundheitspruefung/` · überarbeiten · klein
+- Gesundheitsprüfung und Vorerkrankungen ❯ Psychotherapie und psychische Erkrankungen `/pkv/gesundheitspruefung/psychotherapie/` · neu · klein
+- Gesundheitsprüfung und Vorerkrankungen ❯ Risikozuschlag `/pkv/gesundheitspruefung/risikozuschlag/` · neu · klein
+- Öffnungsaktion `/pkv/oeffnungsaktion/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 10. PKV Familie und Kinder
 
 1,2 Wochen inklusive 1 Tag Verlinkung, ab Woche 17,6.
 
-- [[PKV ❯ Familie und Kinder|Familie und Kinder]] `/pkv/familie/` · neu · klein
-- [[PKV ❯ Familie und Kinder ❯ Ehepartner|Familie und Kinder ❯ Ehepartner]] `/pkv/familie/ehepartner/` · neu · klein
-- [[PKV ❯ Familie und Kinder ❯ Kinder|Familie und Kinder ❯ Kinder]] `/pkv/familie/kinder/` · überarbeiten · klein
-- [[PKV ❯ Familie und Kinder ❯ Schwangerschaft und Elternzeit|Familie und Kinder ❯ Schwangerschaft und Elternzeit]] `/pkv/familie/schwangerschaft-elternzeit/` · neu · klein
+- Familie und Kinder `/pkv/familie/` · neu · klein
+- Familie und Kinder ❯ Ehepartner `/pkv/familie/ehepartner/` · neu · klein
+- Familie und Kinder ❯ Kinder `/pkv/familie/kinder/` · überarbeiten · klein
+- Familie und Kinder ❯ Schwangerschaft und Elternzeit `/pkv/familie/schwangerschaft-elternzeit/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 11. PKV Leistungen und Tarife
 
 2,9 Wochen inklusive 2 Tage Verlinkung, ab Woche 18,8.
 
-- [[PKV ❯ Leistungen|Leistungen]] `/pkv/leistungen/` · neu · klein
-- [[PKV ❯ Leistungen ❯ Krankenhaus|Leistungen ❯ Krankenhaus]] `/pkv/leistungen/krankenhaus/` · überarbeiten · klein
-- [[PKV ❯ Leistungen ❯ Zahnleistungen|Leistungen ❯ Zahnleistungen]] `/pkv/leistungen/zahnleistungen/` · neu · klein
-- [[PKV ❯ Leistungen ❯ Privatpatient|Leistungen ❯ Privatpatient]] `/pkv/leistungen/privatpatient/` · überarbeiten · klein
-- [[PKV ❯ Tarife|Tarife]] `/pkv/tarife/` · neu · klein
-- [[PKV ❯ Pflegepflichtversicherung|Pflegepflichtversicherung]] `/pkv/pflegepflichtversicherung/` · neu · klein
-- [[PKV ❯ Zusatzversicherung|Zusatzversicherung]] `/pkv/zusatzversicherung/` · überarbeiten · groß
-- [[PKV ❯ Krankentagegeld|Krankentagegeld]] `/pkv/krankentagegeld/` · neu · klein
-- [[PKV ❯ Ausland|Ausland]] `/pkv/ausland/` · neu · klein
-- [[PKV ❯ Abrechnung und Service|Abrechnung und Service]] `/pkv/service/` · neu · klein
+- Leistungen `/pkv/leistungen/` · neu · klein
+- Leistungen ❯ Krankenhaus `/pkv/leistungen/krankenhaus/` · überarbeiten · klein
+- Leistungen ❯ Zahnleistungen `/pkv/leistungen/zahnleistungen/` · neu · klein
+- Leistungen ❯ Privatpatient `/pkv/leistungen/privatpatient/` · überarbeiten · klein
+- Tarife `/pkv/tarife/` · neu · klein
+- Pflegepflichtversicherung `/pkv/pflegepflichtversicherung/` · neu · klein
+- Zusatzversicherung `/pkv/zusatzversicherung/` · überarbeiten · groß
+- Krankentagegeld `/pkv/krankentagegeld/` · neu · klein
+- Ausland `/pkv/ausland/` · neu · klein
+- Abrechnung und Service `/pkv/service/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 12. PKV für Pensionäre
 
 0,7 Wochen inklusive 1 Tag Verlinkung, ab Woche 21,7.
 
-- [[PKV ❯ Pensionäre|Pensionäre]] `/pkv/pensionaere/` · neu · klein
-- [[PKV ❯ Pensionäre ❯ Kosten|Pensionäre ❯ Kosten]] `/pkv/pensionaere/kosten/` · neu · klein
+- Pensionäre `/pkv/pensionaere/` · neu · klein
+- Pensionäre ❯ Kosten `/pkv/pensionaere/kosten/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 13. PKV Wechsel und Alter
 
 4,6 Wochen inklusive 3 Tage Verlinkung, ab Woche 22,4.
 
-- [[PKV ❯ Wechsel|Wechsel]] `/pkv/wechsel/` · neu · klein
-- [[PKV ❯ Wechsel ❯ Zurück in die GKV|Wechsel ❯ Zurück in die GKV]] `/pkv/wechsel/zurueck-in-die-gkv/` · neu · groß
-- [[PKV ❯ Wechsel ❯ Wechsel von GKV in PKV|Wechsel ❯ Wechsel von GKV in PKV]] `/pkv/wechsel/gkv-zu-pkv/` · neu · groß
-- [[PKV ❯ Wechsel ❯ Kündigung|Wechsel ❯ Kündigung]] `/pkv/wechsel/kuendigung/` · neu · klein
-- [[PKV ❯ Tarifwechsel|Tarifwechsel]] `/pkv/tarifwechsel/` · neu · klein
-- [[PKV ❯ Tarifwechsel ❯ Beitrag senken|Tarifwechsel ❯ Beitrag senken]] `/pkv/tarifwechsel/beitrag-senken/` · neu · klein
-- [[PKV ❯ Tarifwechsel ❯ Unisex und Bisex|Tarifwechsel ❯ Unisex und Bisex]] `/pkv/tarifwechsel/unisex-bisex/` · neu · klein
-- [[PKV ❯ Basistarif und Sozialtarife|Basistarif und Sozialtarife]] `/pkv/basistarif/` · neu · groß
-- [[PKV ❯ Basistarif und Sozialtarife ❯ Standardtarif|Basistarif und Sozialtarife ❯ Standardtarif]] `/pkv/basistarif/standardtarif/` · neu · klein
-- [[PKV ❯ Basistarif und Sozialtarife ❯ Notlagentarif|Basistarif und Sozialtarife ❯ Notlagentarif]] `/pkv/basistarif/notlagentarif/` · neu · klein
-- [[PKV ❯ PKV im Alter|PKV im Alter]] `/pkv/alter/` · neu · klein
-- [[PKV ❯ PKV im Alter ❯ Altersrückstellungen|PKV im Alter ❯ Altersrückstellungen]] `/pkv/alter/altersrueckstellungen/` · neu · klein
-- [[PKV ❯ PKV im Alter ❯ PKV ab 55|PKV im Alter ❯ PKV ab 55]] `/pkv/alter/ab-55/` · neu · klein
-- [[PKV ❯ PKV im Alter ❯ Beitragsentlastung|PKV im Alter ❯ Beitragsentlastung]] `/pkv/alter/beitragsentlastung/` · neu · klein
+- Wechsel `/pkv/wechsel/` · neu · klein
+- Wechsel ❯ Zurück in die GKV `/pkv/wechsel/zurueck-in-die-gkv/` · neu · groß
+- Wechsel ❯ Wechsel von GKV in PKV `/pkv/wechsel/gkv-zu-pkv/` · neu · groß
+- Wechsel ❯ Kündigung `/pkv/wechsel/kuendigung/` · neu · klein
+- Tarifwechsel `/pkv/tarifwechsel/` · neu · klein
+- Tarifwechsel ❯ Beitrag senken `/pkv/tarifwechsel/beitrag-senken/` · neu · klein
+- Tarifwechsel ❯ Unisex und Bisex `/pkv/tarifwechsel/unisex-bisex/` · neu · klein
+- Basistarif und Sozialtarife `/pkv/basistarif/` · neu · groß
+- Basistarif und Sozialtarife ❯ Standardtarif `/pkv/basistarif/standardtarif/` · neu · klein
+- Basistarif und Sozialtarife ❯ Notlagentarif `/pkv/basistarif/notlagentarif/` · neu · klein
+- PKV im Alter `/pkv/alter/` · neu · klein
+- PKV im Alter ❯ Altersrückstellungen `/pkv/alter/altersrueckstellungen/` · neu · klein
+- PKV im Alter ❯ PKV ab 55 `/pkv/alter/ab-55/` · neu · klein
+- PKV im Alter ❯ Beitragsentlastung `/pkv/alter/beitragsentlastung/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 14. PKV Beitragserhöhung
 
 3,6 Wochen inklusive 3 Tage Verlinkung, ab Woche 27,0.
 
-- [[PKV ❯ Beitragserhöhung|Beitragserhöhung]] `/pkv/beitragserhoehung/` · überarbeiten · klein
-- [[PKV ❯ Beitragserhöhung ❯ Beitragsentwicklung|Beitragserhöhung ❯ Beitragsentwicklung]] `/pkv/beitragserhoehung/beitragsentwicklung/` · überarbeiten · klein
-- [[PKV ❯ Beitragserhöhung ❯ Unwirksame Beitragserhöhung|Beitragserhöhung ❯ Unwirksame Beitragserhöhung]] `/pkv/beitragserhoehung/unwirksame-beitragserhoehung/` · neu · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2027|Beitragserhöhung ❯ 2027]] `/pkv/beitragserhoehung/2027/` · neu · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2027 ❯ Debeka|Beitragserhöhung ❯ 2027 ❯ Debeka]] `/pkv/beitragserhoehung/2027/debeka/` · neu · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2020|Beitragserhöhung ❯ 2020]] `/pkv/beitragserhoehung/2020/` · neu · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2020 ❯ Concordia|Beitragserhöhung ❯ 2020 ❯ Concordia]] `/pkv/beitragserhoehung/2020/concordia/` · überarbeiten · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2020 ❯ Barmenia|Beitragserhöhung ❯ 2020 ❯ Barmenia]] `/pkv/beitragserhoehung/2020/barmenia/` · überarbeiten · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2025|Beitragserhöhung ❯ 2025]] `/pkv/beitragserhoehung/2025/` · überarbeiten · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2025 ❯ Debeka|Beitragserhöhung ❯ 2025 ❯ Debeka]] `/pkv/beitragserhoehung/2025/debeka/` · überarbeiten · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2021|Beitragserhöhung ❯ 2021]] `/pkv/beitragserhoehung/2021/` · neu · klein
-- [[PKV ❯ Beitragserhöhung ❯ 2021 ❯ Debeka|Beitragserhöhung ❯ 2021 ❯ Debeka]] `/pkv/beitragserhoehung/2021/debeka/` · überarbeiten · klein
-- [[PKV ❯ Zukunft der PKV|Zukunft der PKV]] `/pkv-zukunft/` · neu · klein
+- Beitragserhöhung `/pkv/beitragserhoehung/` · überarbeiten · klein
+- Beitragserhöhung ❯ Beitragsentwicklung `/pkv/beitragserhoehung/beitragsentwicklung/` · überarbeiten · klein
+- Beitragserhöhung ❯ Unwirksame Beitragserhöhung `/pkv/beitragserhoehung/unwirksame-beitragserhoehung/` · neu · klein
+- Beitragserhöhung ❯ 2027 `/pkv/beitragserhoehung/2027/` · neu · klein
+- Beitragserhöhung ❯ 2027 ❯ Debeka `/pkv/beitragserhoehung/2027/debeka/` · neu · klein
+- Beitragserhöhung ❯ 2020 `/pkv/beitragserhoehung/2020/` · neu · klein
+- Beitragserhöhung ❯ 2020 ❯ Concordia `/pkv/beitragserhoehung/2020/concordia/` · überarbeiten · klein
+- Beitragserhöhung ❯ 2020 ❯ Barmenia `/pkv/beitragserhoehung/2020/barmenia/` · überarbeiten · klein
+- Beitragserhöhung ❯ 2025 `/pkv/beitragserhoehung/2025/` · überarbeiten · klein
+- Beitragserhöhung ❯ 2025 ❯ Debeka `/pkv/beitragserhoehung/2025/debeka/` · überarbeiten · klein
+- Beitragserhöhung ❯ 2021 `/pkv/beitragserhoehung/2021/` · neu · klein
+- Beitragserhöhung ❯ 2021 ❯ Debeka `/pkv/beitragserhoehung/2021/debeka/` · überarbeiten · klein
+- Zukunft der PKV `/pkv-zukunft/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 15. Debeka PKV
 
 1,7 Wochen inklusive 1 Tag Verlinkung, ab Woche 30,6.
 
-- [[Debeka PKV|Debeka PKV]] `/pkv/debeka/` · neu · groß
-- [[Debeka PKV ❯ Kosten|Debeka PKV ❯ Kosten]] `/pkv/debeka/kosten/` · neu · klein
-- [[Debeka PKV ❯ Tarifwechsel|Debeka PKV ❯ Tarifwechsel]] `/pkv/debeka/tarifwechsel/` · neu · klein
-- [[Debeka PKV ❯ Öffnungsaktion|Debeka PKV ❯ Öffnungsaktion]] `/pkv/debeka/oeffnungsaktion/` · neu · klein
+- Debeka PKV `/pkv/debeka/` · neu · groß
+- Debeka PKV ❯ Kosten `/pkv/debeka/kosten/` · neu · klein
+- Debeka PKV ❯ Tarifwechsel `/pkv/debeka/tarifwechsel/` · neu · klein
+- Debeka PKV ❯ Öffnungsaktion `/pkv/debeka/oeffnungsaktion/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ### 16. PKV Weitere Anbieter
 
 7,2 Wochen inklusive 6 Tage Verlinkung, ab Woche 32,3.
 
-- [[AXA PKV|AXA PKV]] `/pkv/axa/` · neu · klein
-- [[Hallesche PKV|Hallesche PKV]] `/pkv/hallesche/` · neu · klein
-- [[ARAG PKV|ARAG PKV]] `/pkv/arag/` · neu · klein
-- [[DEVK PKV|DEVK PKV]] `/pkv/devk/` · neu · klein
-- [[Continentale PKV|Continentale PKV]] `/pkv/continentale/` · neu · klein
-- [[UKV PKV|UKV PKV]] `/pkv/union-krankenversicherung/` · neu · klein
-- [[Universa PKV|Universa PKV]] `/pkv/universa/` · neu · klein
-- [[Generali PKV|Generali PKV]] `/pkv/generali/` · neu · klein
-- [[LKH PKV|LKH PKV]] `/pkv/lkh/` · neu · klein
-- [[LVM PKV|LVM PKV]] `/pkv/lvm/` · neu · klein
-- [[Postbeamtenkrankenkasse PKV|Postbeamtenkrankenkasse PKV]] `/pkv/postbeamtenkrankenkasse/` · neu · klein
-- [[ERGO PKV|ERGO PKV]] `/pkv/ergo/` · neu · klein
-- [[Gothaer PKV|Gothaer PKV]] `/pkv/gothaer/` · neu · klein
-- [[SDK PKV|SDK PKV]] `/pkv/sdk/` · neu · klein
-- [[KVB PKV|KVB PKV]] `/pkv/kvb/` · neu · klein
-- [[INTER PKV|INTER PKV]] `/pkv/inter/` · neu · klein
-- [[ottonova PKV|ottonova PKV]] `/pkv/ottonova/` · neu · klein
-- [[Alte Oldenburger PKV|Alte Oldenburger PKV]] `/pkv/alte-oldenburger/` · überarbeiten · klein
-- [[vigo PKV|vigo PKV]] `/pkv/vigo/` · neu · klein
-- [[Central PKV|Central PKV]] `/pkv/central/` · neu · klein
-- [[Concordia PKV|Concordia PKV]] `/pkv/concordia/` · neu · klein
-- [[Bayerische Beamtenkrankenkasse PKV|Bayerische Beamtenkrankenkasse PKV]] `/pkv/bayerische-beamtenkrankenkasse/` · neu · klein
-- [[Nürnberger PKV|Nürnberger PKV]] `/pkv/nuernberger/` · neu · klein
-- [[Versicherungskammer Bayern PKV|Versicherungskammer Bayern PKV]] `/pkv/versicherungskammer-bayern/` · neu · klein
-- [[Pax-Familienfürsorge PKV|Pax-Familienfürsorge PKV]] `/pkv/pax/` · neu · klein
-- [[Provinzial PKV|Provinzial PKV]] `/pkv/provinzial/` · neu · klein
-- [[Münchener Verein PKV|Münchener Verein PKV]] `/pkv/muenchener-verein/` · neu · klein
-- [[Württembergische PKV|Württembergische PKV]] `/pkv/wuerttembergische/` · neu · klein
-- [[Envivas PKV|Envivas PKV]] `/pkv/envivas/` · neu · klein
-- [[R+V PKV|R+V PKV]] `/pkv/r-v/` · neu · klein
+- AXA PKV `/pkv/axa/` · neu · klein
+- Hallesche PKV `/pkv/hallesche/` · neu · klein
+- ARAG PKV `/pkv/arag/` · neu · klein
+- DEVK PKV `/pkv/devk/` · neu · klein
+- Continentale PKV `/pkv/continentale/` · neu · klein
+- UKV PKV `/pkv/union-krankenversicherung/` · neu · klein
+- Universa PKV `/pkv/universa/` · neu · klein
+- Generali PKV `/pkv/generali/` · neu · klein
+- LKH PKV `/pkv/lkh/` · neu · klein
+- LVM PKV `/pkv/lvm/` · neu · klein
+- Postbeamtenkrankenkasse PKV `/pkv/postbeamtenkrankenkasse/` · neu · klein
+- ERGO PKV `/pkv/ergo/` · neu · klein
+- Gothaer PKV `/pkv/gothaer/` · neu · klein
+- SDK PKV `/pkv/sdk/` · neu · klein
+- KVB PKV `/pkv/kvb/` · neu · klein
+- INTER PKV `/pkv/inter/` · neu · klein
+- ottonova PKV `/pkv/ottonova/` · neu · klein
+- Alte Oldenburger PKV `/pkv/alte-oldenburger/` · überarbeiten · klein
+- vigo PKV `/pkv/vigo/` · neu · klein
+- Central PKV `/pkv/central/` · neu · klein
+- Concordia PKV `/pkv/concordia/` · neu · klein
+- Bayerische Beamtenkrankenkasse PKV `/pkv/bayerische-beamtenkrankenkasse/` · neu · klein
+- Nürnberger PKV `/pkv/nuernberger/` · neu · klein
+- Versicherungskammer Bayern PKV `/pkv/versicherungskammer-bayern/` · neu · klein
+- Pax-Familienfürsorge PKV `/pkv/pax/` · neu · klein
+- Provinzial PKV `/pkv/provinzial/` · neu · klein
+- Münchener Verein PKV `/pkv/muenchener-verein/` · neu · klein
+- Württembergische PKV `/pkv/wuerttembergische/` · neu · klein
+- Envivas PKV `/pkv/envivas/` · neu · klein
+- R+V PKV `/pkv/r-v/` · neu · klein
 - Danach: Verlinkung aller Seiten des Projekts
 
 ## Im Monitoring
@@ -288,4 +290,4 @@ Abgeschlossene Projekte. Ihre Seiten laufen im monatlichen Seiten-Abgleich in [[
 ## Vorgänge
 
 - 2026-10-29 Namen aus dem Plan genommen, die Verteilung bespricht Sven mit Ines persönlich. Verlinkung mit 5 Seiten pro Tag eingerechnet (Sven).
-- 2026-10-29 Plan erstellt (Sven). Alter Plan „Content-Roadmap 2027" und „Umsetzung nach Wochen" archiviert, die 90 Aufgaben daraus in [[Erledigte Aufgaben 2026]] verworfen. Projekt 1 gestartet.
+- 2026-10-29 Plan erstellt (Sven). Alter Plan „Content-Roadmap 2027" und „Umsetzung nach Wochen" archiviert, die 90 Aufgaben daraus in Erledigte Aufgaben 2026 verworfen. Projekt 1 gestartet.
