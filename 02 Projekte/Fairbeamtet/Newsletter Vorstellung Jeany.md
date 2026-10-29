@@ -67,7 +67,7 @@ Die schönsten Einsendungen landen auf unserer Homepage. Ohne dein Okay veröffe
 
 **Zwei Verträge, die du seit Jahren nicht angeschaut hast**
 
-Ich mache nicht nur Tiere. Auto und Recht laufen auch über meinen Tisch. Und beim Auto wird es jetzt knapp.
+Ich mache nicht nur Tiere. Auto und Recht laufen auch über meinen Tisch. Beide werden jedes Jahr teurer. Beide prüft fast niemand nach. Und beim Auto wird es jetzt zeitlich knapp.
 
 **KFZ: Du fährst seit Jahren unfallfrei. Dein Beitrag steigt trotzdem.**
 
@@ -96,9 +96,13 @@ Die Werkstatt, die deinen Motor ruiniert hat. Der Vermieter, der die Kaution beh
 
 In all diesen Fällen hast du vielleicht recht. Die erste Rechnung kommt trotzdem, lange bevor irgendwer das Wort Urteil ausspricht.
 
+Und genau da liegt das zweite Problem: **Rechtsschutz wird Jahr für Jahr teurer.** Anwalts- und Gerichtskosten sind gesetzlich festgelegt und wurden in den letzten Jahren mehrfach angehoben. Dazu wird in Deutschland immer mehr gestritten. Beides landet am Ende auf deiner Beitragsrechnung.
+
+Das Dumme daran: Rechtsschutz ist der Vertrag, den fast niemand je vergleicht. Einmal abgeschlossen, Lastschrift läuft, nie wieder angeschaut. Dein Beitrag klettert also seit Jahren nach oben, ohne dass einmal jemand gegenprüft, ob er noch marktgerecht ist. Alte Verträge sind nicht automatisch schlecht. Nur weiß das niemand, der nie verglichen hat.
+
 **Achtung:** Die meisten Tarife haben drei Monate Wartezeit. Dein Streit hält sich nicht daran. Rechtsschutz abschließen, wenn der Brief schon auf dem Tisch liegt, funktioniert so gut wie Hausrat abschließen, während es brennt.
 
-Lies deine Police. Falls du sie findest. Falls du sie verstehst. Oder du schickst sie mir und ich sage dir in zehn Minuten, was im Ernstfall wirklich passiert.
+Lies deine Police. Falls du sie findest. Falls du sie verstehst. Oder du schickst sie mir und ich sage dir in zehn Minuten, was du zahlst, was du dafür wirklich bekommst und was es woanders kostet.
 
 Dafür brauche ich:
 
@@ -107,7 +111,7 @@ Dafür brauche ich:
 3. Wer mitversichert sein soll: Partner, Kinder, Fahrzeuge
 4. Ob du in den letzten fünf Jahren einen Fall hattest
 
-> **[Police schicken und checken lassen]**
+> **[Police schicken und vergleichen lassen]**
 
 ---
 
@@ -164,4 +168,4 @@ Expertin für Tier und Sachversicherungen bei fairbeamtet.de
 - [ ] Maskottchen-Grafik für Jeany im Funko-Pop-Stil, passend zu [[00 Kontext/Fairbeamtet/Branding.md]]
 - [ ] Jeany auf der Team-Seite der Website ergänzen
 - [ ] Jeany in [[00 Kontext/Fairbeamtet/Team.md]] ergänzen
-- [ ] Faktencheck KFZ-Kündigungsfrist und Beamtentarife vor Versand
+- [ ] Faktencheck vor Versand: KFZ-Kündigungsfrist 30.11., Typklassen- und Regionalklassen-Update, drei Monate Wartezeit Rechtsschutz, Anhebung der gesetzlichen Anwalts- und Gerichtskosten (RVG/GKG)
