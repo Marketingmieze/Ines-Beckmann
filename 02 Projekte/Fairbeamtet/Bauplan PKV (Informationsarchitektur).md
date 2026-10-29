@@ -75,12 +75,12 @@ Die vollständige Zuordnung jeder einzelnen bestehenden Seite steht im PDF [[07 
 
 ## Warum das für den Content wichtig ist
 
-Jeder neue PKV-Ratgeber und jede Überarbeitung einer bestehenden Seite richtet sich ab jetzt nach diesem Bauplan: welche URL, welche Eltern-Seite, ob Einzel-Seite oder Teil eines größeren Themas. Das verhindert, dass [[Content Creatorin Claudia]] oder die Wochenplanung aus [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plan (Los-Schmerz-Wochos)]] neue Seiten anlegt, die dem Zielzustand widersprechen.
+Jeder neue PKV-Ratgeber und jede Überarbeitung einer bestehenden Seite richtet sich ab jetzt nach diesem Bauplan: welche URL, welche Eltern-Seite, ob Einzel-Seite oder Teil eines größeren Themas. Das verhindert, dass [[Content Creatorin Claudia]] oder die Wochenplanung aus [[Content-Plan|Content-Plan (Los-Schmerz-Wochos)]] neue Seiten anlegt, die dem Zielzustand widersprechen.
 
 ## Referenzen
 
 - [[02 Projekte/Fairbeamtet/Content-Erstellung.md|Content-Erstellung]] — das übergeordnete Projekt, in dem neue Artikel entstehen
-- [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plan (Los-Schmerz-Wochos)]] — Wochenplan mit konkreten Content-Aufgaben, u. a. Themenlücken im PKV-Bereich
+- [[Content-Plan|Content-Plan (Los-Schmerz-Wochos)]] — Wochenplan mit konkreten Content-Aufgaben, u. a. Themenlücken im PKV-Bereich
 - [[04 Ressourcen/Googles No. 1/Interne Verlinkung und Informationsarchitektur.md|Interne Verlinkung und Informationsarchitektur]] — das SEO-Grundlagenwissen, auf dem dieser Bauplan aufbaut
 - [[04 Ressourcen/PKV und Beihilfe/PKV und Beihilfe.md|PKV und Beihilfe]] — das Fachwissen zu den Themen, die hier strukturiert werden
 - [[Content Creatorin Claudia]] — nutzt diesen Bauplan bei der Themenplanung für neue Ratgeber

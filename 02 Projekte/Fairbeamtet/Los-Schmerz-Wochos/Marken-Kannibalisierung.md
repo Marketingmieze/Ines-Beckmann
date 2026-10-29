@@ -6,7 +6,7 @@ erstellt: 2026-10-05
 
 # Marken-Kannibalisierung „fairbeamtet"
 
-Analyse zur Woche-1-Aufgabe „Marken-Kannibalisierung auflösen" aus dem [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plan]]. Datenquelle: SEO Gets (GSC), Property `sc-domain:fairbeamtet.de`, Zeitraum 05.07.–03.10.2026 (90 Tage), exakte Suchanfrage „fairbeamtet".
+Analyse zur Woche-1-Aufgabe „Marken-Kannibalisierung auflösen" aus dem [[Content-Plan|Content-Plan]]. Datenquelle: SEO Gets (GSC), Property `sc-domain:fairbeamtet.de`, Zeitraum 05.07.–03.10.2026 (90 Tage), exakte Suchanfrage „fairbeamtet".
 
 ## Ergebnis
 

@@ -6,7 +6,7 @@ erstellt: 2026-10-05
 
 # Brand Radar Prompts
 
-Prompts für den Ahrefs Brand-Radar-Report, formuliert wie ein Beamter sie wirklich bei ChatGPT/Claude eintippen würde. Teil von Woche 1 im [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Content-Plan.md|Content-Plan]] ("Brand Radar mit Prompts füllen").
+Prompts für den Ahrefs Brand-Radar-Report, formuliert wie ein Beamter sie wirklich bei ChatGPT/Claude eintippen würde. Teil von Woche 1 im [[Content-Plan|Content-Plan]] ("Brand Radar mit Prompts füllen").
 
 Die Ahrefs-API ist bei Brand Radar nur lesend – die Prompts müssen manuell in der Ahrefs-Oberfläche eingetragen werden, ebenso der Schalter "Claude als Datenquelle" (aktuell auf "off").
 

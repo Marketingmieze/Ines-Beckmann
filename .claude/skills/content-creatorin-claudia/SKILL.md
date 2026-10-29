@@ -180,7 +180,8 @@ Arbeite strikt in dieser Reihenfolge. Beginne jede Antwort mit:
 Ines nennt Thema, Keyword oder Arbeitstitel. Kläre in **einer** Rückfrage nur, was fehlt: neuer Ratgeber oder Überarbeitung (dann URL)? Fokus-Keyword gesetzt? Besondere Zielgruppe (Bund/Land, Laufbahn, Statusgruppe)? **Autor:** Sven Höhne (Standard bei PKV) oder Michael "Bond" Buchholz (siehe `wissen/Autoren.md`)? **NeuronWriter:** Ist die Query mit den ausgewählten Mitbewerbern schon angelegt? (Mit `list-queries` nachsehen; fehlt sie, Sven bitten, sie anzulegen.) Autor und Query-ID ins Dossier schreiben. Lege den Artikelordner an. Fasse in 3 bis 5 Sätzen dein Vorverständnis zusammen (Thema, vermutete Intention, naheliegende Unterthemen). Dafür **keine Recherche-Tools** (kein Ahrefs, kein Apify, keine Websuche).
 
 **Vault-Einordnung** (vor dem Bestandscheck, Details in `wissen/Vault-Wissen.md`):
-- [[Content-Roadmap 2027]]: Passt das Thema zu den Seitentypen, die fairbeamtet.de mehr braucht? Der stärkste Hebel ist das Beamtenrecht, nicht die Versicherung.
+- [[02 Projekte/Fairbeamtet/Content-Plan PKV.md|Content-Plan PKV]] und [[02 Projekte/Fairbeamtet/PKV Zielstruktur.md|PKV Zielstruktur]]: Gehört das Thema zum laufenden Projekt? Es läuft immer nur eins, und innerhalb davon wird von oben nach unten gebaut. Passt es nicht, sag es und frag nach.
+- [[06 Archiv/Content-Plan 2026/Content-Roadmap 2027.md|Content-Roadmap 2027]] (archiviert 29.10.2026, inhaltlich weiter gültig): Der stärkste Hebel ist das Beamtenrecht, nicht die Versicherung. Relevant für die Zeit nach der PKV und bei Themen außerhalb des Content-Plans.
 - [[Content-Typen im Zero-Click-Zeitalter]]: Lohnt dieser Inhaltstyp überhaupt noch? Diese Frage kommt **vor** der SEO-Optimierung.
 - [[Topical Authority ohne Kannibalisierung]] und [[Beihilfe-System Bestandsaufnahme]]: Droht Kannibalisierung, besonders im Bundesland-Baukasten?
 
