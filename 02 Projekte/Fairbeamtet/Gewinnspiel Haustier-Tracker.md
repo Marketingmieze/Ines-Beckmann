@@ -17,7 +17,9 @@ Stil nach [[00 Kontext/Fairbeamtet/Schreibstil.md]] und [[04 Ressourcen/Schreibr
 - Einsendeschluss: 31.12.2026
 - Motiv: Bild vom Haustier, Mensch darf mit drauf, muss aber nicht
 - Kategorien: schönstes, lustigstes oder verrücktestes Bild
-- Banner liegt vor, Stil Funko-Pop 3D, Blau mit Pink, passend zu [[00 Kontext/Fairbeamtet/Branding.md]]
+- Banner liegt in zwei Formaten vor, Stil Funko-Pop 3D, Blau mit Pink, passend zu [[00 Kontext/Fairbeamtet/Branding.md]]
+  - Querformat 2,4 zu 1: Hero im Newsletter, entschieden am 02.11.2026
+  - Hochformat 4 zu 5: Hero auf der Landingpage, Instagram, Facebook, TikTok
 
 ## Gewinn und Abo
 
@@ -86,6 +88,125 @@ Wir sind gespannt, wen ihr da eigentlich alle so zu Hause habt.
 Dein Team von fairbeamtet.de
 
 **P.S.:** Ein Foto reicht. Du musst nichts kaufen, nichts abschließen und nichts ausfüllen außer dem Häkchen. 🐾
+
+
+## Landingpage
+
+Slug-Vorschlag: /tierischster-beamter
+
+### Aufbau
+
+1. Schlanker Header, nur Logo. Hauptnavigation ausblenden, damit nichts vom Formular ablenkt
+2. Hero mit Hochformat-Banner, H1, Subline, Button
+3. So machst du mit, drei Schritte
+4. Das gibt es zu gewinnen
+5. Warum ausgerechnet ein Tracker
+6. Upload-Formular
+7. Häufige Fragen
+8. Leiser Hinweis auf Tierversicherung, bewusst nach dem Formular
+9. Footer mit Impressum, Datenschutz, Teilnahmebedingungen
+
+### Texte
+
+**Hero**
+
+H1: fairbeamtet sucht den tierischsten Beamten Deutschlands
+
+Subline: Schick uns das schönste, lustigste oder verrückteste Bild von deinem Haustier. Fünf von euch gewinnen einen Tractive GPS-Tracker inklusive 12 Monate Abo.
+
+Button: Foto hochladen
+
+Kleingedruckt darunter: Mitmachen dauert zwei Minuten. Einsendeschluss ist der 31. Dezember 2026.
+
+**So machst du mit**
+
+1. **Foto aussuchen.** Schön, lustig oder völlig bescheuert. Dein Tier allein, oder du mit dabei.
+2. **Hochladen.** Formular ausfüllen, Foto anhängen, Häkchen setzen. Zwei Minuten.
+3. **Daumen drücken.** Anfang Januar losen wir fünf Gewinner aus. Die besten Bilder kommen auf unsere Website.
+
+**Das gibt es zu gewinnen**
+
+5 x Tractive GPS-Tracker, inklusive 12 Monate Abo
+
+Der Tracker kommt ans Halsband und zeigt dir jederzeit auf dem Handy, wo dein Tier gerade steckt. Live und auf wenige Meter genau. Das Abo fürs erste Jahr zahlen wir.
+
+**Warum ausgerechnet ein Tracker?**
+
+Weil dein Hund aufs Wort hört. Bis zu dem Tag, an dem er es nicht tut. Es braucht nur ein Reh am Waldrand oder ein Gartentor, das jemand offen gelassen hat. Und die Katze, die sonst nie weiter als bis zur Terrasse geht, sitzt irgendwann drei Straßen weiter im Gebüsch.
+
+Wir beschäftigen uns beruflich damit, was passiert, wenn etwas schiefgeht. Beim Haustier fängt das nicht erst beim Tierarzt an.
+
+**Formular**
+
+Überschrift: Jetzt dein Foto hochladen
+
+Button: Foto abschicken
+
+Unter dem Button: Mit dem Absenden bestätigst du, dass du die Teilnahmebedingungen gelesen hast.
+
+**Häufige Fragen**
+
+Wer darf mitmachen?
+Alle ab 18 Jahren mit Wohnsitz in Deutschland. Du musst nicht Kunde bei uns sein.
+
+Muss ich selbst mit aufs Bild?
+Nein. Dein Tier allein reicht völlig. Du darfst aber gerne mit drauf.
+
+Was passiert mit meinem Foto?
+Wenn du das Häkchen gesetzt hast, zeigen wir die schönsten Einsendungen auf fairbeamtet.de und auf unseren Social-Media-Kanälen. Ohne dein Okay veröffentlichen wir nichts. Du kannst deine Zustimmung jederzeit zurückziehen, eine kurze Mail reicht.
+
+Kostet mich das etwas?
+Nein. Du musst nichts kaufen und nichts abschließen.
+
+Und was kostet der Tracker nach dem ersten Jahr?
+Das erste Jahr zahlen wir. Danach entscheidest du selbst, ob du das Abo weiterführen willst. [aktuellen Preis einsetzen]
+
+Wie viele Fotos darf ich schicken?
+[entscheiden: eins pro Person oder mehrere]
+
+Wann erfahre ich, ob ich gewonnen habe?
+Wir melden uns Anfang Januar 2027 per Mail bei den Gewinnern.
+
+**Leiser Hinweis nach dem Formular**
+
+Übrigens, falls du gerade sowieso darüber nachdenkst
+
+Jeany kümmert sich bei uns um die Absicherung von Haustieren. Krankenvollversicherung, OP-Schutz, Hundehalterhaftpflicht. Wenn du dazu Fragen hast, meld dich einfach. Mit dem Gewinnspiel hat das nichts zu tun, deine Teilnahme hängt davon nicht ab.
+
+### Formularfelder
+
+| Feld | Typ | Pflicht |
+|---|---|---|
+| Vorname | Text | ja |
+| E-Mail | E-Mail | ja |
+| Name deines Tieres | Text | ja |
+| Foto | Upload | ja |
+| Kategorie | Auswahl: schön, lustig, verrückt | nein |
+| Was ist auf dem Bild passiert? | Textfeld, kurz | nein |
+| Einwilligung Veröffentlichung | Checkbox | ja |
+| Teilnahmebedingungen und Datenschutz gelesen | Checkbox | ja |
+| Newsletter abonnieren | Checkbox, nicht vorausgewählt | nein |
+
+Einwilligungstext Veröffentlichung: „Ja, fairbeamtet.de darf mein Bild auf der Website und in den sozialen Medien zeigen. Ich kann das jederzeit widerrufen."
+
+Das optionale Textfeld zur Bildgeschichte ist Gold für die spätere Galerie. Ein Bild mit Geschichte liest sich zehnmal besser als ein Bild mit Namen.
+
+### Technische Punkte
+
+- **HEIC zulassen.** iPhone-Fotos sind standardmäßig .heic. Wenn das Formular nur JPG und PNG annimmt, scheitert ein großer Teil der Teilnehmer. Serverseitig nach JPG konvertieren
+- Maximale Dateigröße großzügig setzen, etwa 15 MB. Handyfotos sind groß
+- Spamschutz einbauen, Honeypot oder Captcha
+- **Keine automatische Veröffentlichung.** Jedes Bild vor der Veröffentlichung manuell sichten
+- Danke-Seite nach dem Upload, mit Bitte ums Weitersagen. Eignet sich auch als Conversion-Ziel in GA4
+- Newsletter-Haken über Double-Opt-in bestätigen lassen
+- Speicherort und Löschfrist der Fotos festlegen, gehört in die Teilnahmebedingungen
+
+### Offene Entscheidungen zur LP
+
+- [ ] Auslosungsdatum festlegen, Vorschlag Anfang Januar 2027
+- [ ] Ein Foto pro Person oder mehrere
+- [ ] Soll Jeany auf der LP schon namentlich auftauchen, obwohl ihr Vorstellungs-Mailing später kommt
+- [ ] Hauptnavigation ausblenden ja oder nein
 
 ## Offene Punkte
 
