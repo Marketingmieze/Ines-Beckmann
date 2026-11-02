@@ -13,33 +13,37 @@ Stil nach [[00 Kontext/Fairbeamtet/Schreibstil.md]] und [[04 Ressourcen/Schreibr
 ## Eckdaten
 
 - Aktionsname: fairbeamtet sucht den tierischsten Beamten Deutschlands
-- Gewinn: 5 x Tractive GPS-Tracker
+- Gewinn: 5 x Tractive GPS-Tracker inklusive 12 Monate Abo
 - Einsendeschluss: 31.12.2026
 - Motiv: Bild vom Haustier, Mensch darf mit drauf, muss aber nicht
 - Kategorien: schönstes, lustigstes oder verrücktestes Bild
 - Banner liegt vor, Stil Funko-Pop 3D, Blau mit Pink, passend zu [[00 Kontext/Fairbeamtet/Branding.md]]
 
-## Offener Punkt mit Priorität: Tractive-Abo
+## Gewinn und Abo
 
-Tractive-Tracker funktionieren **nur mit kostenpflichtigem Abo**, weil die eingebaute SIM-Karte laufende Kosten verursacht. Ohne Abo keine Ortung. Stand 11/2026: Basic ab etwa 5 Euro im Monat im Jahresvertrag, etwa 10 Euro bei monatlicher Kündbarkeit.
+Tractive-Tracker funktionieren nur mit kostenpflichtigem Abo, weil die eingebaute SIM-Karte laufende Kosten verursacht. **Geklärt am 02.11.2026: 12 Monate Abo sind im Gewinn enthalten.**
 
-Das muss vor dem Versand geklärt und im Text wie in den Teilnahmebedingungen benannt werden. Sonst gewinnt jemand ein Gerät, das ohne eigene Zuzahlung nicht funktioniert.
+Damit ist das Abo der wertvollere Teil des Preises und gehört in Betreff, Preheader und Fließtext. Stand 11/2026 kostet Basic etwa 5 Euro im Monat im Jahresvertrag, ein Jahr also rund 60 Euro, dazu die Hardware.
 
-Drei Wege:
+Was nach den 12 Monaten passiert, gehört in die Teilnahmebedingungen, nicht in den Newsletter. Im Mailing würde es nur Fragen aufwerfen, in den Bedingungen schützt es euch.
 
-1. **Tracker plus 12 Monate Abo verschenken.** Sauberste Lösung, etwa 60 Euro pro Gewinner, bei 5 Gewinnern rund 300 Euro plus Hardware. Lässt sich im Text als Vorteil verkaufen.
-2. **Nur Hardware, Abo klar ausweisen.** Günstig, aber der Gewinn wirkt halb und kann für Ärger sorgen.
-3. **Kooperation mit Tractive anfragen.** Tractive arbeitet mit Partnern und Affiliates. Eine Aktion mit Reichweite in einer klar umrissenen Zielgruppe ist für die interessant. Eine Mail kann Hardware und Abo deutlich günstiger oder kostenlos machen. Aus meiner Sicht einen Versuch wert, bevor ihr selbst zahlt.
+## Betreff
 
-## Betreffzeilen
+**Festgelegt am 02.11.2026, wird nicht mehr geändert:**
 
-| | Betreff | Zeichen | Preheader |
-|---|---|---|---|
-| **A (Empfehlung)** | fairbeamtet sucht den tierischsten Beamten Deutschlands 🐾 | 55 | Schick uns dein Haustierfoto und gewinn einen von 5 Tractive GPS-Trackern. Bis 31.12. |
-| B | Hund, Katze, Chaos? | 19 | Zeig uns dein schönstes Haustierfoto und gewinn einen von 5 Tractive GPS-Trackern. |
-| C | Was hat dein Haustier angestellt? | 33 | Zeig es uns und gewinn einen von 5 GPS-Trackern für deine Fellnase. |
-| D | 5 GPS-Tracker für 5 Fellnasen | 29 | Ein Foto reicht. Wir suchen den tierischsten Beamten Deutschlands. |
-| E | Gesucht: der tierischste Beamte Deutschlands | 44 | Schick uns dein Haustierfoto. Zu gewinnen gibt es 5 Tractive GPS-Tracker. |
+```
+fairbeamtet sucht den tierischsten Beamten Deutschlands 🐾
+```
+
+Der Betreff nennt die Aktion, aber nicht den Gewinn. Deshalb muss der Preheader den Gewinn tragen und ihn in den ersten rund 40 Zeichen bringen, weil mobil nicht mehr angezeigt wird.
+
+Preheader-Vorschläge:
+
+| | Preheader | Zeichen |
+|---|---|---|
+| **1 (Empfehlung)** | Ein Foto reicht. Zu gewinnen: 5 GPS-Tracker samt Jahresabo. | 59 |
+| 2 | Schick uns dein Haustierfoto und gewinn einen von 5 Tractive GPS-Trackern inklusive Jahresabo. | 94 |
+| 3 | Dein Haustierfoto gegen die Chance auf einen GPS-Tracker samt Jahresabo. | 72 |
 
 ## Newsletter (Volltext)
 
@@ -56,7 +60,7 @@ Schick uns das schönste, lustigste oder verrückteste Bild deiner Fellnase. Die
 
 Du selbst musst nicht mit aufs Bild. Darfst du aber.
 
-Die besten Einsendungen kommen auf unsere Website. Und **fünf von euch gewinnen je einen Tractive GPS-Tracker** [Abo-Umfang einsetzen].
+Die besten Einsendungen kommen auf unsere Website. Und **fünf von euch gewinnen je einen Tractive GPS-Tracker, inklusive 12 Monate Abo.** Damit läuft die Ortung ein ganzes Jahr, ohne dass du einen Cent dazuzahlst.
 
 **Warum ausgerechnet ein Tracker?**
 
@@ -85,9 +89,9 @@ Dein Team von fairbeamtet.de
 
 ## Offene Punkte
 
-- [ ] Abo-Frage klären, siehe oben. Blockiert den Versand
 - [ ] Landingpage mit Upload bauen
-- [ ] Teilnahmebedingungen schreiben und rechtlich prüfen lassen, inklusive Abo-Hinweis
+- [ ] Teilnahmebedingungen schreiben und rechtlich prüfen lassen. Muss abdecken: 12 Monate Abo inklusive, was danach passiert, wer die Hardware bestellt
+- [ ] Prüfen, ob ein Gesamtwert im Mailing genannt werden soll. Hebt die Teilnahme, erfordert aber aktuelle Preise
 - [ ] Zwei Reminder einplanen: Zwischenstand mit ersten Bildern Anfang Dezember, letzter Aufruf etwa 27.12.
 - [ ] Social-Media-Ableitung, Banner und Aktionsname funktionieren auch auf Instagram und TikTok
 - [ ] Jeany in [[00 Kontext/Fairbeamtet/Team.md]] ergänzen, Nachname fehlt noch
