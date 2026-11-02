@@ -103,8 +103,9 @@ Slug-Vorschlag: /tierischster-beamter
 5. Warum ausgerechnet ein Tracker
 6. Upload-Formular
 7. Häufige Fragen
-8. Leiser Hinweis auf Tierversicherung, bewusst nach dem Formular
-9. Footer mit Impressum, Datenschutz, Teilnahmebedingungen
+8. Footer mit Impressum, Datenschutz, Teilnahmebedingungen
+
+Entscheidung vom 02.11.2026: Kein Hinweis auf Versicherungsprodukte auf der Seite. Reines Gewinnspiel, Vorgabe vom Chef. Der geschäftliche Ertrag läuft über den optionalen Newsletter-Haken und die Bildergalerie, nicht über Werbung auf der Aktionsseite.
 
 ### Texte
 
@@ -167,12 +168,6 @@ Wie viele Fotos darf ich schicken?
 Wann erfahre ich, ob ich gewonnen habe?
 Wir melden uns Anfang Januar 2027 per Mail bei den Gewinnern.
 
-**Leiser Hinweis nach dem Formular**
-
-Übrigens, falls du gerade sowieso darüber nachdenkst
-
-Jeany kümmert sich bei uns um die Absicherung von Haustieren. Krankenvollversicherung, OP-Schutz, Hundehalterhaftpflicht. Wenn du dazu Fragen hast, meld dich einfach. Mit dem Gewinnspiel hat das nichts zu tun, deine Teilnahme hängt davon nicht ab.
-
 ### Formularfelder
 
 | Feld | Typ | Pflicht |
@@ -205,7 +200,6 @@ Das optionale Textfeld zur Bildgeschichte ist Gold für die spätere Galerie. Ei
 
 - [ ] Auslosungsdatum festlegen, Vorschlag Anfang Januar 2027
 - [ ] Ein Foto pro Person oder mehrere
-- [ ] Soll Jeany auf der LP schon namentlich auftauchen, obwohl ihr Vorstellungs-Mailing später kommt
 - [ ] Hauptnavigation ausblenden ja oder nein
 
 ## Offene Punkte
