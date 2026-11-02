@@ -169,3 +169,7 @@ Expertin für Tier und Sachversicherungen bei fairbeamtet.de
 - [ ] Jeany auf der Team-Seite der Website ergänzen
 - [ ] Jeany in [[00 Kontext/Fairbeamtet/Team.md]] ergänzen
 - [ ] Faktencheck vor Versand: KFZ-Kündigungsfrist 30.11., Typklassen- und Regionalklassen-Update, drei Monate Wartezeit Rechtsschutz, Anhebung der gesetzlichen Anwalts- und Gerichtskosten (RVG/GKG)
+
+## Status 02.11.2026
+
+Projekt umgeplant. Das Gewinnspiel läuft jetzt als eigenes Mailing mit GPS-Tracker als Gewinn, siehe [[02 Projekte/Fairbeamtet/Gewinnspiel Haustier-Tracker.md]]. Jeanys Vorstellung und die Blöcke zu KFZ und Rechtsschutz bleiben hier geparkt und werden später zu einem eigenen Mailing. Achtung: Die KFZ-Wechselfrist 30.11. wird dadurch knapp.
