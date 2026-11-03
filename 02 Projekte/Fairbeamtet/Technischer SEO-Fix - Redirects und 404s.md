@@ -177,3 +177,7 @@ Betroffene 404-URLs (zur Kontrolle/zum Testen):
 
 - Ursache der familienzuschlag-404-Häufung ist eine Hypothese (KI-Zitat-Halluzination), nicht bewiesen. Bei Zugriff auf die Server-Logs (z. B. über den Hosting-Provider) ließe sich anhand der User-Agents prüfen, ob die Anfragen tatsächlich von bekannten KI-Crawlern/Referrern kommen.
 - Die drei „manuell prüfen"-Fälle in Problem 2 sollten vor dem Redirect kurz mit Sven abgestimmt werden (könnten absichtlich entfernte Inhalte sein).
+
+## Anhang
+
+- [[07 Anhänge/Technischer SEO-Fix - Redirects und 404s.pdf|Technischer SEO-Fix – Redirects und 404s (PDF)]] — lag bis 03.11.2026 unverlinkt im Projektordner, liegt jetzt nach der Vault-Regel in `07 Anhänge/`

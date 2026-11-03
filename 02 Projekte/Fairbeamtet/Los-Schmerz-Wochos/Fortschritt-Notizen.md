@@ -93,4 +93,4 @@ Ergänzung 05.10.2026: Die Seite hat auch **keinen Autor** gesetzt – gehört e
 
 Der Plan notiert für `beamtenservice.de/beihilfeergaenzungstarif-so-findest-du-den-besten-anbieter/` **1.813 Wörter**. **Das war zu niedrig geschätzt, aber in die falsche Richtung.** NeuronWriter zählt den Artikel beim Import in Svens Query (`784432dc018302b6`) exakt mit **1.146 Wörtern** – der Konkurrenzartikel ist also dünner als angenommen, nicht dicker. Zur Einordnung: eine eigene Web-Schätzung kam vorher auf 2.500–3.000 Wörter, ebenfalls daneben. NeuronWriters Zählung gilt als verlässlichste Quelle, weil sie den tatsächlichen Fließtext strukturiert erfasst statt grob zu schätzen.
 
-Content-Erstellung für dieses Thema läuft bereits: [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/artikel/2026-10-26_beihilfeergaenzungstarif/00_dossier.md|Artikel-Dossier]].
+Content-Erstellung für dieses Thema läuft bereits: [[03 Bereiche/Fairbeamtet/Content Creation/Content Creatorin Claudia/artikel/2026-10-26_beihilfeergaenzungstarif/00_dossier|Artikel-Dossier]].

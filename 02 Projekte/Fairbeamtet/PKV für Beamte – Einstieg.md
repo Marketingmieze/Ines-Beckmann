@@ -18,7 +18,7 @@ Projekt 1 aus dem [[02 Projekte/Fairbeamtet/Content-Plan PKV.md|Content-Plan PKV
 
 ## Aufgaben
 
-Reihenfolge ist Pflicht: erst die Eltern-Seite, dann der Rest ([[02 Projekte/Fairbeamtet/PKV Zielstruktur.md|Zielstruktur]], Seitentypen). Wer welche Seite schreibt, besprechen Sven und Ines persönlich – danach kommt der Name hinter die Aufgabe.
+Reihenfolge ist Pflicht: erst die Eltern-Seite, dann der Rest ([[PKV Zielstruktur|Zielstruktur]], Seitentypen). Wer welche Seite schreibt, besprechen Sven und Ines persönlich – danach kommt der Name hinter die Aufgabe.
 
 - [ ] [[02 Projekte/Fairbeamtet/PKV Seiten/PKV ❯ PKV für Beamte.md|PKV für Beamte]] `/pkv/` · Typ A · groß · **zuerst**
 - [ ] [[02 Projekte/Fairbeamtet/PKV Seiten/PKV ❯ Voraussetzungen.md|Voraussetzungen]] `/pkv/voraussetzungen/` · Typ C · groß
@@ -43,6 +43,6 @@ Geschrieben wird mit Claudia: `/claudia <Fokus-Keyword>`. Sie liest die Zielstru
 ## Referenzen
 
 - [[02 Projekte/Fairbeamtet/Content-Plan PKV.md|Content-Plan PKV]] — Reihenfolge aller 16 Projekte
-- [[02 Projekte/Fairbeamtet/PKV Zielstruktur.md|PKV Zielstruktur]] — Seitentypen, Teaser-Regel, Regel 9
+- [[PKV Zielstruktur|PKV Zielstruktur]] — Seitentypen, Teaser-Regel, Regel 9
 - [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]] — monatlicher Seiten-Abgleich am 5.
-- [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/Content Creatorin Claudia.md|Content Creatorin Claudia]] — schreibt die Texte
+- [[Content Creatorin Claudia|Content Creatorin Claudia]] — schreibt die Texte

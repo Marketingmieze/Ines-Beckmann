@@ -19,7 +19,7 @@ fairbeamtet.de ist courtagevergütet. Jede Empfehlung hat damit ein Vergütungsi
 
 - **Keine Einzelfallberatung im Text.** Steht als Stufe 2 der Rangfolge im [[04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md|fairbeamtet Voice Profile]], ebenso „keine erkennbaren Kunden, keine Versprechen".
 - **Keine unbelegten Superlative** wie „beste PKV", „günstigste PKV", „Testsieger". Voice Profile, Abschnitt 7 und 8.
-- **Keine Angstwerbung ohne Grundlage.** § 4a UWG und § 5 UWG, siehe Abschnitt 6b der [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/wissen/Voice Profile.md|Leitfassung]].
+- **Keine Angstwerbung ohne Grundlage.** § 4a UWG und § 5 UWG, siehe Abschnitt 6b der [[Voice Profile|Leitfassung]].
 - **Eigene Ranglisten sind riskant.** Eine „Die 5 besten Tarife"-Liste mit der eigenen Empfehlung oben ist genau das Muster, vor dem Shepard warnt. Wenn überhaupt, dann mit offengelegtem Maßstab und offengelegter Vergütung. Siehe [[04 Ressourcen/Googles No. 1/Content-Typen im Zero-Click-Zeitalter.md|Content-Typen im Zero-Click-Zeitalter]].
 - **Jede Zahl, Frist und Rechtsgrundlage braucht Quelle und Stand.** Voice Profile, Rangfolge Stufe 1.
 

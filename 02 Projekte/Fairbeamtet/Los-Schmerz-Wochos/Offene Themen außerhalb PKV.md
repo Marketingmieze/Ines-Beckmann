@@ -54,4 +54,4 @@ Vollständiger alter Plan mit Stundenschätzungen: [[06 Archiv/Content-Plan 2026
 
 - [[02 Projekte/Fairbeamtet/Content-Plan PKV.md|Content-Plan PKV]] — der aktive Plan, deckt nur PKV ab
 - [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Los-Schmerz-Wochos.md|Los-Schmerz-Wochos]] — das übergeordnete Projekt mit der Messung
-- [[02 Projekte/Fairbeamtet/PKV Zielstruktur.md|PKV Zielstruktur]] — Beihilfe und BU/DU bekommen je eine eigene Struktur
+- [[PKV Zielstruktur|PKV Zielstruktur]] — Beihilfe und BU/DU bekommen je eine eigene Struktur

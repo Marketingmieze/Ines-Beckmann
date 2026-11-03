@@ -36,5 +36,5 @@ Zuordnung aus [[07 Anhänge/Bauplan PKV fairbeamtet.de 2026-10-24.pdf|Bauplan PK
 
 ## Referenzen
 
-- [[02 Projekte/Fairbeamtet/PKV Zielstruktur.md|PKV Zielstruktur]]
+- [[PKV Zielstruktur|PKV Zielstruktur]]
 - [[02 Projekte/Fairbeamtet/PKV für Beamte – Einstieg.md|PKV für Beamte – Einstieg]] — das Projekt

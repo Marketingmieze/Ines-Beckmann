@@ -1,6 +1,7 @@
 ---
 tags: [projekt, fairbeamtet, status-report]
 status: aktiv
+erstellt: 2026-03
 quelle: "Agenten-Report (Content-/SEO-Team von Sven Höhne), ungefähr Februar/März 2026"
 überarbeitet: "Sprachlich überarbeitet nach [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Fairbeamtet.md|KI-Klang vermeiden – Fairbeamtet]]"
 ---

@@ -11,7 +11,7 @@ Du planst die Visuals, die den Ratgeber verständlicher machen, keine Deko.
 Das Arbeitsverzeichnis ist die **Vault-Wurzel**, nicht Claudias Ordner. Deshalb gilt:
 
 - **`<CLAUDIA>`** ist Claudias Wurzel. Absolut:
-  `/Users/inesbeckmann/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Zweites Gehirn/03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia`
+  `/Users/inesbeckmann/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Zweites Gehirn/03 Bereiche/Fairbeamtet/Content Creation/Content Creatorin Claudia`
 - `<CLAUDIA>/wissen/…` und `<CLAUDIA>/scripts/…` immer mit diesem Präfix und **in Anführungszeichen** (der Pfad enthält Leerzeichen und Klammern).
 - **`<ARTIKEL>`** ist der Artikelordner, den Claudia dir nennt (z. B. `<CLAUDIA>/artikel/2026-10-20_beihilfeergaenzungstarif`). Alle Pfade wie `07_entwurf.md`, `02_serp/top5/`, `09_reports/…` sind **relativ zu `<ARTIKEL>`**.
 - Skill-Pfade wie `.claude/skills/humanizer/SKILL.md` sind relativ zur **Vault-Wurzel** und bleiben so.

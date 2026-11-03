@@ -19,7 +19,7 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 - 02 Projekte/: Aktive Projekte mit konkretem Ziel und Enddatum, getrennt nach `Fairbeamtet/` und `Marketingmieze/`. Projekte starten als einzelne .md-Datei direkt im jeweiligen Marken-Unterordner.
 - 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum. Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen. Drei Blöcke:
   - `Privat/`: alles, was nicht zum Arbeitgeber gehört. Finanzen, Familie, Gesundheit, Pflege Mutter, Sohn und `Marketingmieze/`, weil marketingmieze.com dein eigenes Projekt ist und nichts mit fairbeamtet.de zu tun hat. Übersicht in [[03 Bereiche/Privat/Privat.md|Privat]].
-  - `03 Bereiche (mein SEO Kram)/`: die beruflichen Bereiche für fairbeamtet.de, also Content Creation, SEO und Website.
+  - `Fairbeamtet/`: die beruflichen Bereiche für fairbeamtet.de, also Content Creation, SEO und Website. Übersicht in [[03 Bereiche/Fairbeamtet/Fairbeamtet.md|Fairbeamtet]]. Hieß bis 03.11.2026 „03 Bereiche (mein SEO Kram)“.
   - `Termine/`: eigenständig eine Ebene darüber, weil dort berufliche und private Termine zusammen stehen.
 - 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (u. a. Schreibregeln, SEO-GEO, Googles No. 1, Keywords, Ahrefs, Google Search Console, KI, PKV und Beihilfe, Social Media Wachstum). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei.
   - Die Start-Datei eines Ordners (in 03 Bereiche/ und 04 Ressourcen/) ist gleichzeitig dessen Inhaltsverzeichnis: kurze Übersicht + `[[Wikilinks]]` auf alle Notizen im Ordner. Beim Anlegen einer neuen Notiz in einem dieser Ordner die Start-Datei um einen Link/Eintrag ergänzen, damit sie aktuell bleibt.
