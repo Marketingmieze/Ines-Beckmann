@@ -1,36 +1,32 @@
 filters:
   and:
     - file.hasTag("projekt")
-    - 'file.ext == "md"'
-
+    - file.ext == "md"
 formulas:
-  marke: 'if(file.path.contains("Fairbeamtet"), "fairbeamtet.de", if(file.path.contains("Marketingmieze"), "marketingmieze.com", "—"))'
-  zuletzt: 'file.mtime.format("YYYY-MM-DD")'
-
+  marke: if(file.path.contains("Fairbeamtet"), "fairbeamtet.de", if(file.path.contains("Marketingmieze"), "marketingmieze.com", "—"))
+  zuletzt: file.mtime.format("YYYY-MM-DD")
 properties:
   formula.marke:
-    displayName: "Marke"
+    displayName: Marke
   formula.zuletzt:
-    displayName: "Zuletzt geändert"
+    displayName: Zuletzt geändert
   status:
-    displayName: "Status"
-
+    displayName: Status
 views:
   - type: table
-    name: "Aktiv"
+    name: Aktiv
     filters:
       and:
-        - 'status == "aktiv"'
+        - status == "aktiv"
+    groupBy:
+      property: formula.marke
+      direction: ASC
     order:
       - file.name
       - formula.marke
       - formula.zuletzt
-    groupBy:
-      property: formula.marke
-      direction: ASC
-
   - type: table
-    name: "Alle"
+    name: Alle
     order:
       - file.name
       - status
