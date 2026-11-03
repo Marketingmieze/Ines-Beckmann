@@ -4,7 +4,7 @@ Dieses Vault ist das Zweite Gehirn von Ines.
 
 ## Über mich
 
-Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[Über mich|00 Kontext/Über mich]].
+Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[00 Kontext/Marketingmieze/Über mich.md|Über mich]].
 
 Ines hat zwei klar getrennte Marken in diesem Vault:
 - **fairbeamtet.de** – ihr Arbeitgeber, Versicherungsberatung für Beamte & Co.
@@ -19,7 +19,7 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 - 02 Projekte/: Aktive Projekte mit konkretem Ziel und Enddatum, getrennt nach `Fairbeamtet/` und `Marketingmieze/`. Projekte starten als einzelne .md-Datei direkt im jeweiligen Marken-Unterordner.
 - 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum (aktuell ausschließlich privat: Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn). Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen.
 - 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (KI, SEO-GEO, Ahrefs, Google Search Console). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei.
-  - Die Start-Datei eines Ordners (in 03 Bereiche/ und 04 Ressourcen/) ist gleichzeitig dessen Inhaltsverzeichnis: kurze Übersicht + [[Wikilinks]] auf alle Notizen im Ordner. Beim Anlegen einer neuen Notiz in einem dieser Ordner die Start-Datei um einen Link/Eintrag ergänzen, damit sie aktuell bleibt.
+  - Die Start-Datei eines Ordners (in 03 Bereiche/ und 04 Ressourcen/) ist gleichzeitig dessen Inhaltsverzeichnis: kurze Übersicht + `[[Wikilinks]]` auf alle Notizen im Ordner. Beim Anlegen einer neuen Notiz in einem dieser Ordner die Start-Datei um einen Link/Eintrag ergänzen, damit sie aktuell bleibt.
 - 05 Daily Notes/: Tägliches Logbuch. Was an einem Tag passiert ist, welche Entscheidungen getroffen wurden, was offen ist. Gibt Kontinuität zwischen Sessions.
 - 06 Archiv/: Abgeschlossene Projekte und inaktive Bereiche. Aus dem aktiven Blickfeld, aber durchsuchbar.
 - 07 Anhänge/: Bilder, PDFs, Medien. Obsidian legt hier automatisch alle eingefügten Dateien ab.
@@ -29,7 +29,7 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 - **Für jeden Text für fairbeamtet gilt das Voice Profile: `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md`. Vor dem Schreiben lesen.** Gilt für Website, Ratgeber, Social Media, Newsletter, Mails und Skripte. Die Mutterdatei liegt bei Sven. Der Inhalt wird wortgleich übernommen und im Vault nicht geändert, Änderungswünsche gehen an Sven. Kommt eine neue Fassung, ersetzt sie die alte an diesem Pfad, damit nur eine Fassung im Vault liegt. Bei Widerspruch zu anderen Schreib- oder Stilnotizen gilt das Voice Profile.
 - **fairbeamtet.de und marketingmieze.com strikt getrennt halten** – unterschiedliche Zielgruppen, Angebote, Schreibstile und Brandings. Nie vermischen, außer Ines bittet explizit darum.
 - Private Bereiche (Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn) enthalten teils sensible/medizinische Informationen. Sorgfältig behandeln, nicht ungefragt mit beruflichen Inhalten vermischen.
-- Nutze [[Wikilinks]] für Verknüpfungen zwischen Notizen.
+- Nutze `[[Wikilinks]]` für Verknüpfungen zwischen Notizen.
 - Neue Notizen ohne klaren Platz kommen in 01 Inbox/.
 - Halte Notizen atomar: eine Idee pro Notiz wo möglich. Ausnahme: Daily Notes fassen einen ganzen Tag zusammen.
 - Daily Notes benennen im Format: YYYY-MM-DD.md (z. B. 2026-09-23.md). So sortieren sie automatisch chronologisch.
@@ -41,7 +41,7 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 - Wenn Dateien erstellt oder verschoben werden, kurz erklären warum.
 - Bevor Dateien gelöscht oder überschrieben werden, nachfragen.
 - Wenn Ines sagt "merk dir das" oder "speicher das": thematisch richtig einsortieren. Schreibregeln nach der passenden `00 Kontext/[Marke]/Schreibstil.md`, Projekt-Infos in die jeweilige Projekt-Datei, technisches Wissen in 04 Ressourcen/, Vault-Regeln in diese CLAUDE.md. Im Zweifel kurz fragen, wo es hin soll.
-  - Nicht nur isoliert ablegen: kurz prüfen, ob es verwandte bestehende Notizen zum Thema gibt (z. B. per Suche/Backlinks), und diese bei Bedarf per [[Wikilink]] verknüpfen oder um die neue Info ergänzen, statt Wissen doppelt oder unverbunden im Vault zu verstreuen. Bei Widersprüchen zu bestehenden Notizen kurz darauf hinweisen statt sie stillschweigend zu überschreiben.
+  - Nicht nur isoliert ablegen: kurz prüfen, ob es verwandte bestehende Notizen zum Thema gibt (z. B. per Suche/Backlinks), und diese bei Bedarf per `[[Wikilink]]` verknüpfen oder um die neue Info ergänzen, statt Wissen doppelt oder unverbunden im Vault zu verstreuen. Bei Widersprüchen zu bestehenden Notizen kurz darauf hinweisen statt sie stillschweigend zu überschreiben.
 - Bei fairbeamtet.de-Dateien mit wiederkehrenden Messwerten (aktuell: [[02 Projekte/Fairbeamtet/SEO-GEO Status Report.md|SEO-GEO Status Report]], [[02 Projekte/Fairbeamtet/Statistik-Optimierung.md|Statistik-Optimierung]], [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]]): neue Zahlen/Erkenntnisse als datierte Einträge (Tabelle mit Datum-Spalte, Muster siehe „Monitoring" in Wettbewerbsanalyse.md) ergänzen statt alte Werte zu überschreiben, damit der Verlauf über Zeit sichtbar bleibt. Bei Widerspruch zur letzten Angabe kurz auf den Unterschied hinweisen statt ihn stillschweigend zu ersetzen.
 
 ## Session-Routinen
@@ -64,7 +64,7 @@ Wenn Ines fragt "Was ist gerade aktuell?", "Wo war ich stehen geblieben?" oder �
 
 Wenn Ines darum bittet (z. B. "check den Vault", "räum mal auf", "Vault-Gesundheitscheck"): kurz prüfen auf
 - verwaiste Notizen (keine eingehenden oder ausgehenden Links),
-- kaputte [[Wikilinks]] (Ziel existiert nicht mehr),
+- kaputte `[[Wikilinks]]` (Ziel existiert nicht mehr),
 - veraltete Projekt-Status (z. B. Projekte, die seit Wochen nicht mehr aktualisiert wurden, aber als "aktiv" markiert sind),
 - Start-Dateien in 03 Bereiche/ und 04 Ressourcen/, die nicht mehr alle Notizen ihres Ordners verlinken.
 

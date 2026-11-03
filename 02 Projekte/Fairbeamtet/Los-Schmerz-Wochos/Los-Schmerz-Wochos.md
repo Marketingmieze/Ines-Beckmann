@@ -52,7 +52,7 @@ Siehe auch die laufende, marktweite Konkurrenzbeobachtung in [[02 Projekte/Fairb
 
 **Leitzahl:** Unser Anteil am gemeinsamen Traffic-Wert (uns vs. Beamtenservice.de). Muss über 50 % steigen, dann haben wir überholt. Anders als ein reiner Faktor bewegt sich der Anteil auch dann, wenn beide gleichzeitig verlieren – und das tun aktuell beide.
 
-Jede Messung ist eine eigene Datei nach dem Muster `YYYY-MM.md` in [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/|Messungen]] (eine Zeile/Datei je Monat). Überblick über alle Monate: [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Fortschritt.base|Fortschritt.base]] mit fünf Ansichten (Der Abstand, Traffic-Wert und Traffic, Keywords nach Position, Unsere eigenen Zahlen, Links und Autorität).
+Jede Messung ist eine eigene Datei nach dem Muster `YYYY-MM.md` in `02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/` (eine Zeile/Datei je Monat). Überblick über alle Monate: [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Fortschritt.base|Fortschritt.base]] mit fünf Ansichten (Der Abstand, Traffic-Wert und Traffic, Keywords nach Position, Unsere eigenen Zahlen, Links und Autorität).
 
 Baseline (live per Ahrefs/SEOgets gezogen): [[02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/2026-09.md|Messung 2026-09]] – Stand 30.09.2026: Anteil 15,0 %, Abstand Traffic-Wert 5,66×, Rückstand Platz-1-Keywords 85, Rückstand Top-3-Keywords 158, Abstand Traffic 2,18×. (Rückstand Platz-1 deckt sich exakt mit der ursprünglichen Schätzung, die anderen Werte wurden leicht korrigiert – Details in der Messnotiz.)
 
