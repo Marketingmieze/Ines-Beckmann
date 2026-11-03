@@ -1,20 +1,25 @@
 ---
 tags: [kontext, schreibstil]
-stand: 2026-10-29
+stand: 2026-11-03
 ---
 
 # fairbeamtet Voice Profile
 
-> [!info] Eingearbeitet in die Leitfassung (29.10.2026)
-> Dieses Dokument ist Svens Original-Quelle. Die eigentliche Arbeitsdatei für [[Content Creatorin Claudia]] ist [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/wissen/Voice Profile.md|Voice Profile]] (Version 3) – dort sind die neuen Regeln aus diesem Dokument als Abschnitte 1a, 2a, 3b, 6c, 8a, 11, 12, 13 eingearbeitet, ohne die bestehende Nummerierung zu brechen, auf die Claudias Subagenten verweisen. Bei Widerspruch gilt die Arbeitsdatei. Dieses Dokument bleibt als Originalquelle und für den vollständigen Wortlaut stehen.
-
-So klingen Texte von fairbeamtet.de. Für Sven, Micha und Ines, damit unsere Texte nach einer Stimme klingen, egal wer sie schreibt. Stand 29.10.2026.
+So klingen Texte von fairbeamtet.de. Für Sven, Micha und Ines, damit unsere Texte nach einer Stimme klingen, egal wer sie schreibt. Stand 03.11.2026.
 
 **So benutzt du die Datei:** Leg sie in dein Vault, zum Beispiel unter `00 Kontext`. Schreib in deine CLAUDE.md eine Zeile wie: „Für jeden Text für fairbeamtet gilt `00 Kontext/fairbeamtet Voice Profile.md`. Vor dem Schreiben lesen.“ Dann arbeitet Claude bei jedem Artikel, Post, Skript und jeder Mail damit.
 
 **Die Mutterdatei liegt bei Sven.** Ändert sich etwas an der Stimme, kommt eine neue Fassung mit neuem Datum. Ersetz dann die alte Datei, damit nur eine Fassung im Vault liegt. Änderungswünsche gehen an Sven. Sonst klingen wir in 3 Monaten wieder nach 3 Firmen.
 
-**Was Vorrang hat:** Rechtliches geht immer vor (Datenschutz, Beratungspflichten, keine Einzelfallberatung im Text). Danach gilt diese Datei.
+**Was Vorrang hat.** Widersprechen sich zwei Regeln, gewinnt die höhere Stufe:
+
+1. **Fachliche und rechtliche Richtigkeit.** Jede Aussage zu Beihilfe, Versicherbarkeit, Öffnungsaktion, Kündigung, Fristen oder Beiträgen stimmt, mit der Einschränkung, die sie braucht. Fehlt ein „in der Regel“, das sachlich dazugehört, ist der Satz falsch, egal wie gut er klingt.
+2. **Datenschutz und Beratungspflichten.** Keine Einzelfallberatung im Text, keine erkennbaren Kunden, keine Versprechen.
+3. **Verständlichkeit für den Leser.**
+4. **Die Stimme von fairbeamtet**, also alles ab Abschnitt 1.
+5. **SEO und redaktionelle Vorgaben.**
+
+Eine Stilregel ist nie ein Grund, eine Fachaussage zu verkürzen, zuzuspitzen oder ohne Beleg stehen zu lassen.
 
 ## 1. Der Ton in einem Satz
 
@@ -28,7 +33,8 @@ Maßstab für jeden Text: Der Leser sagt „Das bin ich.“ Deshalb steigt der T
 
 ## 2. Anrede und wer spricht
 
-- **Du, immer.** Einzahl, als wäre der Text für genau diesen einen Menschen gemacht. Kein „ihr“, kein „man“, kein „Beamte sollten“. Auch bei Abläufen: „du vereinbarst mit deinem Berater einen Termin“.
+- **Du für Leser und Kunden.** Website, Ratgeber, Social Media, Newsletter, Mails und Nachrichten an Interessenten und Kunden. Einzahl, als wäre der Text für genau diesen einen Menschen gemacht. Kein „ihr“, kein „man“, kein „Beamte sollten“. Auch bei Abläufen: „du vereinbarst mit deinem Berater einen Termin“.
+- **Sie, wo das Gegenüber es erwartet.** Anwälte, Gerichte, Behörden und Dienstherren, Versicherer, Geschäftspartner und jeder, der uns selbst siezt. Dort gilt der Rest dieser Datei sinngemäß: klar, kurz, ohne Floskeln.
 - „du“, „dein“ und „dir“ werden kleingeschrieben.
 - **Es spricht der Autor, in der Ich-Form.** Das ist die Person, unter deren Namen der Text erscheint. „wir“ nur, wo das Team als Ganzes handelt oder gezählt wird, etwa bei der Zahl der Beratungen.
 - **Erfahrung mit der eigenen Zahl.** Micha schreibt „über 30 Jahre“, Sven „26 Jahre“. Nie eine zusammengezählte Teamzahl und nie „unser Autor“.
@@ -36,7 +42,7 @@ Maßstab für jeden Text: Der Leser sagt „Das bin ich.“ Deshalb steigt der T
 
 ## 3. Voice DNA
 
-Von Sven am 29.10.2026 festgelegt, wörtlich übernommen. Für „sorgfältig“ und „beständig“ gilt eine Ausnahme, siehe Hinweis unter 3A.
+Von Sven am 29.10.2026 festgelegt. Am 03.11.2026 nachgeschärft: Verkürzungen, Verbotsliste, Gegenüberstellungen, Unsicherheit und Festlegen. Die geänderten Stellen sind mit „(03.11.2026)“ markiert.
 
 Die maßgebliche Quelle für meine Schreibstimme. Mit Urteilsvermögen anwenden. Der Geist zählt mehr als der Buchstabe. Immer.
 
@@ -54,12 +60,13 @@ Schreib wie ein scharfsinniger Mensch, der eben gerade tippt.
 
 **Stimme & Ton:**
 
-- Nutze Verkürzungen ganz natürlich (gibt's, geht's, hab, ist's).
+- Nutze Verkürzungen, wo sie gesprochen natürlich klingen (gibt's, geht's, hab, ist's). Bei ernsten Anlässen schreibst du aus, siehe 3.2 (03.11.2026).
 - Nutze „ich" und „du". Direkte Ansprache. Aktiv statt passiv. KI greift standardmäßig zu Passiv und dritter Person. Sprich mit den Leuten.
 - Sei konkret. Zahlen, Namen, greifbare Details. Konkretes Schreiben ist scharfes Schreiben.
-- Wenn du unsicher bist, sag es offen („ich glaube", „wahrscheinlich", „vielleicht", „irgendwie"). KI relativiert nie. Menschen schon. Genau diese Unsicherheit macht Text echt.
+- Wenn du unsicher bist, sag es offen („ich glaube", „wahrscheinlich", „vielleicht"). KI relativiert nie. Menschen schon. Genau diese Unsicherheit macht Text echt.
 - Bläh den Output nie auf, um gründlich zu wirken. Kürzer und präzise schlägt länger und fluffig.
-- Bezieh Stellung. KI schreibt wie jemand, der Angst hat, sich festzulegen (alles ist „kann", „könnte", „wird oft als ... angesehen"). Leg dich fest.
+- Bezieh Stellung. KI schreibt wie jemand, der Angst hat, sich festzulegen (alles ist „kann", „könnte", „wird oft als ... angesehen"). Leg dich fest, wo die Sache feststeht.
+- **Festlegen heißt nicht weglassen (03.11.2026).** Hängt eine Aussage vom Dienstherrn, vom Bundesland, von der Gesundheit, vom Versicherer oder vom Vertrag ab, steht das im Satz: „in der Regel“, „bei den meisten Dienstherren“, „hängt von deinem Tarif ab“. Eine Einschränkung mit Inhalt ist Genauigkeit. Raus fällt nur das Weichspülen ohne Inhalt.
 - Bring echte Beispiele. Zeig auf etwas, das wirklich passiert ist. Lass „Stell dir ein hypothetisches Szenario vor, in dem ..." weg.
 - Nutze körperliche Verben für abstrakte Prozesse. Sag „abgeschliffen", „angeschraubt", „entkernt". Du wirst den Unterschied spüren.
 - Humor entsteht durch Genauigkeit. Sei unerwartet präzise.
@@ -70,7 +77,7 @@ Schreib wie ein scharfsinniger Mensch, der eben gerade tippt.
 
 - Kurze Absätze (Standard 1-2 Sätze, maximal 3).
 - Zahlen als Ziffern (3 Jahre, 10 Tools, 500 Nutzer).
-- Immer Verkürzungen.
+- Verkürzungen, wo sie zum Anlass passen (03.11.2026). Ausgeschrieben wird in Antworten auf Beschwerden, in Schreiben an Behörden, Anwälte und Versicherer und bei schweren Themen wie einer Ablehnung, einer Dienstunfähigkeit oder einem Streit um eine Leistung. „Gibt's“ wirkt dort schnell flapsig.
 - **KEINE Gedankenstriche (Em Dashes).** KI überstrapaziert sie. Nutze Kommas, Punkte, Doppelpunkte, Semikolons oder Klammern.
 - Fettdruck sparsam: 1-2 Schlüsselmomente pro Abschnitt.
 - Codeblöcke für konkrete Prompts, Befehle oder Tool-Ausgaben.
@@ -79,17 +86,23 @@ Schreib wie ein scharfsinniger Mensch, der eben gerade tippt.
 
 ### 3.3. Verbotsliste
 
-Wenn auch nur EINES davon auftaucht, ist der Output durchgefallen.
+Was in 3.3 steht, fliegt raus. Einzige Ausnahme sind die Prüfwörter in 3.3A: Sie bleiben, wenn sie fachlich das genaue Wort sind (03.11.2026).
 
 #### 3.3A. Tote KI-Vokabeln
 
-Diese Wörter sind in LLM-Output statistisch überrepräsentiert. Sie sind der Fingerabdruck von KI-Text. Benutz sie nie.
+Diese Wörter sind in LLM-Output statistisch überrepräsentiert. Sie sind der Fingerabdruck von KI-Text. Seit 03.11.2026 in zwei Gruppen.
 
-eintauchen, Bereich/Sphäre, nutzbar machen, freischalten, Teppich/Geflecht, Paradigma, hochmodern, revolutionieren, Landschaft (abstrakt), komplex/Feinheiten, präsentieren, entscheidend, zentral/maßgeblich, übertreffen, akribisch, lebendig, beispiellos, unterstreichen (Verb), wirksam einsetzen, Synergie, innovativ, Game-Changer, Zeugnis (von etwas), lobenswert, sorgfältig, hervorheben, betonen, sich rühmen, bahnbrechend, ausrichten, fördern, zur Schau stellen, verbessern, ganzheitlich, erlangen, akzentuieren, wegweisend, vorreitend, entfesseln, vielseitig, transformativ, neu definieren, nahtlos, optimieren, skalierbar, robust, Durchbruch, befähigen, verschlanken, reibungslos, auf ein neues Level heben, adaptiv, mühelos, datengetrieben, aufschlussreich, proaktiv, geschäftskritisch, visionär, disruptiv, neu denken, noch nie dagewesen, intuitiv, führend, Synergien schaffen, demokratisieren, beschleunigen, State of the Art, dynamisch, immersiv, prädiktiv, transparent, proprietär, integriert, Plug-and-Play, schlüsselfertig, zukunftssicher, paradigmenwechselnd, auf Hochtouren bringen, beständig, Zusammenspiel, wertvoll, fesseln
+**Nie.** Diese Wörter braucht kein Text über Beamte und Versicherungen:
+
+eintauchen, Sphäre, nutzbar machen, freischalten, Teppich/Geflecht, Paradigma, hochmodern, revolutionieren, Landschaft (abstrakt), akribisch, lebendig, beispiellos, unterstreichen (Verb), wirksam einsetzen, Synergie, Synergien schaffen, innovativ, Game-Changer, Zeugnis (von etwas), lobenswert, hervorheben, betonen, sich rühmen, bahnbrechend, zur Schau stellen, ganzheitlich, akzentuieren, wegweisend, vorreitend, entfesseln, vielseitig, transformativ, neu definieren, nahtlos, skalierbar, robust, Durchbruch, befähigen, verschlanken, reibungslos, auf ein neues Level heben, adaptiv, mühelos, datengetrieben, aufschlussreich, proaktiv, geschäftskritisch, visionär, disruptiv, neu denken, noch nie dagewesen, intuitiv, führend, demokratisieren, State of the Art, immersiv, prädiktiv, Plug-and-Play, schlüsselfertig, zukunftssicher, paradigmenwechselnd, auf Hochtouren bringen, fesseln
+
+**Prüfwörter.** Als Schmuck raus, als genaues Wort erlaubt:
+
+Bereich, komplex, Feinheiten, präsentieren, entscheidend, zentral, maßgeblich, übertreffen, sorgfältig, beständig, ausrichten, fördern, verbessern, erlangen, optimieren, beschleunigen, dynamisch, transparent, proprietär, integriert, Zusammenspiel, wertvoll
+
+Die Prüffrage: Benennt das Wort die Sache genau, oder soll es wichtig klingen? Geht ein einfacheres Wort ohne Verlust, nimm das einfachere. „Maßgeblich ist die Beihilfeverordnung deines Dienstherrn“ bleibt. „Ein maßgeblicher Faktor für deine Absicherung“ fliegt. „Sorgfältig“ und „beständig“ stehen außerdem im Wortschatz Sicherheit (Abschnitt 6) und brauchen dort ihren Beleg.
 
 Ebenfalls verboten: „dient als", „steht als", „markiert ein", „stellt ein ... dar", „wartet mit ... auf", „verfügt über", „bietet ein", wenn damit „ist" oder „hat" umgangen wird. Sag einfach „ist".
-
-> **Ausnahme (Sven, 29.10.2026):** „sorgfältig“ und „beständig“ bleiben erlaubt, wo sie als Sicherheitswort aus Abschnitt 6 (Wortschatz Sicherheit) stehen, mit Beleg im selben oder nächsten Satz. Als bloßes Füllwort gilt das Verbot weiter.
 
 #### 3.3B. Tote Phrasen
 
@@ -138,7 +151,9 @@ Ebenfalls verboten: „dient als", „steht als", „markiert ein", „stellt ei
 
 **Negative Parallelismen und Umdeutungskonstruktionen.** Das ist das zuverlässigste Erkennungsmerkmal von KI-Text überhaupt. Begutachtete Forschung belegt das. KI ist süchtig danach, weil es flache Ideen tiefgründig klingen lässt. Es ist eine Krücke. Ein Tick. Jedes LLM macht es, in jedem Output, mehrmals pro Antwort.
 
-Wenn du auch nur EINEN in deinem Output findest, schreib den ganzen Satz neu.
+Wenn du einen als Stilmittel in deinem Output findest, schreib den ganzen Satz neu.
+
+**Was bleibt (03.11.2026):** die sachliche Abgrenzung. Muss der Leser wissen, was etwas nicht ist, weil er sonst falsch entscheidet, bleibt die Verneinung stehen. „Die Beihilfe zahlt nur ihren Anteil. Den Rest versicherst du selbst.“ ist eine Information. „Es geht nicht um den Beitrag. Es geht um die Leistung.“ ist ein Trick. Die Prüffrage: Fehlt dem Leser etwas, wenn der verneinte Teil wegfällt? Dann bleibt er. Sonst weg.
 
 **Die verbotenen Muster:**
 
@@ -211,7 +226,9 @@ Lösch das Anhängsel. Wenn die Analyse wichtig ist, verdient sie einen eigenen 
 
 „Nach meinem letzten Kenntnisstand ..." „Auch wenn konkrete Details begrenzt sind ..." „Basierend auf den verfügbaren Informationen ..."
 
-Nie einbauen.
+Als Floskel nie einbauen.
+
+**Echte Unsicherheit gehört in den Text (03.11.2026).** Ist eine Sache offen, steht genau das da, konkret: worauf sie sich bezieht, wovon sie abhängt und von wann der Stand ist. „Stand: 03.11.2026.“ „Die Reform ist noch nicht beschlossen.“ „Das regelt jedes Bundesland selbst.“ Gerade bei rechtlichen Fragen ist eine benannte Unsicherheit Pflicht. Eine Aussage, die fester klingt, als sie ist, verstößt gegen die oberste Stufe der Rangfolge.
 
 #### 3.4H. Durchgesickerte Chat-Kommunikation
 
@@ -241,14 +258,17 @@ Dieses Dokument hält Geschmack fest. Es ist ein Leitfaden. Wende es mit Urteils
 
 **Hinweise zur Häufigkeit:**
 
-- **HARTE REGEL:** Nie verletzen. Verbotene Wörter, Strukturen, Phrasen. Absolut.
+- **HARTE REGEL:** Nie verletzen. Die „Nie“-Wörter aus 3.3A, die toten Phrasen, Übergänge, Köder und Hype aus 3.3B bis 3.3E, Gegenüberstellungen als Stilmittel aus 3.3F, Gedankenstriche, Chat-Reste aus 3.4H.
+- **PRÜFREGEL:** Die Prüfwörter aus 3.3A und die sachliche Abgrenzung aus 3.3F. Erlaubt, wenn die Prüffrage dort mit Ja beantwortet ist (03.11.2026).
 - **STARKE TENDENZ (70-80 %):** Kurze Sätze, direkte Ansprache, Aktiv, konkrete Details, abwechslungsreicher Rhythmus.
-- **LEICHTE VORLIEBE (Kontext entscheidet):** Bestimmte Wortwahl, bestimmte Strukturen, Platzierung von Humor. Wo kein Label steht, gilt leichte Vorliebe.
+- **LEICHTE VORLIEBE (Kontext entscheidet):** Bestimmte Wortwahl, bestimmte Strukturen, Platzierung von Humor, Verkürzungen. Wo kein Label steht, gilt leichte Vorliebe.
+
+Über allen vier Stufen steht die Rangfolge oben in dieser Datei. Fachliche Richtigkeit schlägt jede Stilregel.
 
 **Natürliche Variation zählt:**
 
 - Nutz nicht jedes Mal dieselbe Einstiegsformel, nur weil sie funktioniert.
-- Meide ein Wort nicht für immer, nur weil es auf einer Verbotsliste steht (manchmal ist es tatsächlich das richtige Wort).
+- Ein Prüfwort meidest du nicht für immer. Manchmal ist es das richtige Wort. Für die „Nie“-Wörter gilt das nicht.
 - Lass den Inhalt die Struktur bestimmen.
 
 **Der Lackmustest:**
@@ -274,7 +294,9 @@ Leichter als das Original heißt:
 - „Quatsch“, „Mist“ und „mies“ gehen. Gegen Unsitten der Branche auch „Blender“, „Versicherungsfuzzi“ oder „Versicherungsheini“, sparsam und nur beschreibend, nie gegen einen bestimmten Vermittler. „beschissen“, „Scheiß“ und „Arsch“ stehen in keinem veröffentlichten Text.
 - Keine Weltuntergangsstimmung. Nach der unbequemen Wahrheit kommt immer, was man tun kann.
 
-**Satzlänge:** im Schnitt 8 bis 14 Wörter, kaum ein Satz über 20. Unsere besten Texte haben nur 9 bis 10 % Sätze über 20 Wörter. Der Wechsel aus sehr kurzen und mittleren Sätzen macht den Rhythmus. Nur Vier-Wort-Sätze klingen wie ein Telegramm.
+**Satzlänge als Richtwert:** im Schnitt 8 bis 14 Wörter, kaum ein Satz über 20. Unsere besten Texte haben nur 9 bis 10 % Sätze über 20 Wörter. Der Wechsel aus sehr kurzen und mittleren Sätzen macht den Rhythmus. Nur Vier-Wort-Sätze klingen wie ein Telegramm.
+
+Ein längerer Satz ist erlaubt, wenn eine Bedingung und ihre Ausnahme zusammengehören und beim Zerteilen der Sinn kippt (03.11.2026). Geht es, wird aus der Kette eine kurze Aufzählung.
 
 ## 5. Wie mit dem besten Freund an der Bar
 
@@ -313,7 +335,7 @@ Das Muster für viele Absätze:
 - **Vertrauen und Ruhe:** Vertrauen, vertraut, in Ruhe, ohne Druck, ohne Eile, gut aufgehoben, begleiten, für die Familie, Gewissheit, beruhigt, Ruhe haben
 - **Unsicherheit nehmen:** keine bösen Überraschungen, Fehler vermeiden, nichts übersehen, nichts dem Zufall überlassen, wissen, woran man ist, vorbereitet sein
 
-„sorgfältig“ und „beständig“ stehen auch auf der Verbotsliste der Voice DNA. Hier sind sie erlaubt, mit Beleg. Als Füllwort nicht.
+„sorgfältig“ und „beständig“ sind in der Voice DNA Prüfwörter (3.3A). Hier sind sie erlaubt, mit Beleg. Als Füllwort nicht.
 
 ### Jedes Sicherheitswort braucht seinen Beleg
 
@@ -348,11 +370,11 @@ Echte Fristen sind kein Druck. Sie stehen mit Datum und Rechtsgrundlage im Text,
 
 ## 7. Was nicht zu unserer Stimme gehört
 
-- Sie-Form, „man“, Passiv ohne Handelnden
+- Sie-Form in Texten an Leser und Kunden (Ausnahmen in Abschnitt 2), „man“, Passiv ohne Handelnden
 - Behörden- und Versicherungsdeutsch: „im Rahmen von“, „hinsichtlich“, „diesbezüglich“, „Leistungsfall“, wenn „wenn du krank wirst“ gemeint ist
 - Werbesprache: „maßgeschneidert“, „Rundum-sorglos“, „optimal abgesichert“, „der ideale Partner“, „jetzt zugreifen“, Hustle-Sprache, Buzzwords
 - Unbelegte Superlative: „beste“, „günstigste“, „Testsieger“
-- Weichmacher ohne Inhalt: „grundsätzlich“, „in gewisser Weise“, „unter Umständen“
+- Weichmacher ohne Inhalt: „in gewisser Weise“, „grundsätzlich“ und „unter Umständen“, wenn nichts Konkretes folgt. Juristisch heißt „grundsätzlich“: in der Regel, mit Ausnahmen. In diesem Sinn bleibt es, und die Ausnahme steht dabei. Bei „unter Umständen“ werden die Umstände genannt (03.11.2026).
 - Angekündigte Ehrlichkeit: „Ehrlich gesagt“, „Hand aufs Herz“, „Seien wir ehrlich“. Ehrlich ist der Text durch das, was er sagt.
 - Kumpelei und Netzsprache: „Hey du“, „Na, auch verwirrt?“, „Nope“, „nice“, „aka“, „Spoiler“
 - Emojis in Artikeln und Texten. In Social Media und Community gehen sie, aber sehr sparsam.
@@ -375,11 +397,13 @@ Auf den Button gehört der Nutzen für den Leser: „Ich brauche Unterstützung�
 
 ## 10. Suchbegriffe bleiben sauber (für Website-Texte)
 
+Erst die Suchintention, dann die Zählung (03.11.2026). Der Text beantwortet die Frage, mit der jemand sucht, verständlich und vollständig. Die Keywords sichern, dass Google ihn dafür findet.
+
 - Das Fokus-Keyword steht im Wortlaut im Titel, in der H1, im ersten Absatz, in mindestens einer H2 und im Fazit. Jedes weitere Keyword mindestens einmal im Wortlaut, möglichst in einer Überschrift.
-- Ein Keyword bleibt im Wortlaut stehen. Aus „Krankenversicherung für Beamte“ wird keine „Kasse“ und keine lockere Kurzform.
+- Ein Keyword bleibt im Wortlaut stehen. Aus „Krankenversicherung für Beamte“ wird keine „Kasse“ und keine lockere Kurzform, nur damit der Satz lockerer klingt.
 - Wortwiederholung ist erwünscht. Dasselbe Wort noch einmal passt zu unserem Ton.
 - Beugung und Artikel sind erlaubt, damit der Satz stimmt. Kein Keyword-Stapeln: dreimal in einem Absatz klingt nicht mehr nach uns.
-- Bei jeder Überarbeitung kommt kein Keyword seltener vor als davor.
+- Bei einer Überarbeitung bleibt jedes Keyword an seinen geplanten Stellen. Darüber hinaus darf es seltener werden, wenn ein Satz dadurch verständlicher wird.
 
 ## 11. Muster aus Svens Texten
 
@@ -416,8 +440,16 @@ Am nächsten an unserer Stimme: Svens [Autorenseite](https://www.fairbeamtet.de/
 
 ## 12. Der Lackmustest
 
-Bevor ein Text rausgeht, drei Fragen:
+Bevor ein Text rausgeht, vier Fragen, in dieser Reihenfolge:
 
-1. Würde ich das so meinem besten Freund an der Bar sagen?
-2. Steht hinter jedem Sicherheitswort ein Beleg?
-3. Klingt das nach etwas, das ich wirklich schreiben würde, oder nach einer KI, die sich anstrengt, mich zu imitieren?
+1. Stimmt jede Fachaussage, mit der Einschränkung, die sie braucht, und mit Quelle oder Stand?
+2. Würde ich das so meinem besten Freund an der Bar sagen?
+3. Steht hinter jedem Sicherheitswort ein Beleg?
+4. Klingt das nach etwas, das ich wirklich schreiben würde, oder nach einer KI, die sich anstrengt, mich zu imitieren?
+
+## Änderungen
+
+| Fassung | Was sich geändert hat |
+|---|---|
+| 03.11.2026 | Rangfolge oben (Fachliches vor Datenschutz vor Verständlichkeit vor Stimme vor SEO). Sie-Form für Anwälte, Behörden, Versicherer und Geschäftspartner. Verkürzungen nur, wo sie zum Anlass passen. Verbotsliste geteilt in „Nie“ und Prüfwörter, der Widerspruch zwischen „absolut“ und „manchmal das richtige Wort“ ist aufgelöst. Sachliche Abgrenzung bleibt erlaubt. Echte Unsicherheit wird benannt. Satzlänge ist Richtwert. Keywords: Suchintention vor Häufigkeit. |
+| 29.10.2026 | Erste Team-Fassung mit Voice DNA. |

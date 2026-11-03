@@ -26,6 +26,7 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 
 ## Regeln für dieses Vault
 
+- **Für jeden Text für fairbeamtet gilt das Voice Profile: `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md`. Vor dem Schreiben lesen.** Gilt für Website, Ratgeber, Social Media, Newsletter, Mails und Skripte. Die Mutterdatei liegt bei Sven. Der Inhalt wird wortgleich übernommen und im Vault nicht geändert, Änderungswünsche gehen an Sven. Kommt eine neue Fassung, ersetzt sie die alte an diesem Pfad, damit nur eine Fassung im Vault liegt. Bei Widerspruch zu anderen Schreib- oder Stilnotizen gilt das Voice Profile.
 - **fairbeamtet.de und marketingmieze.com strikt getrennt halten** – unterschiedliche Zielgruppen, Angebote, Schreibstile und Brandings. Nie vermischen, außer Ines bittet explizit darum.
 - Private Bereiche (Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn) enthalten teils sensible/medizinische Informationen. Sorgfältig behandeln, nicht ungefragt mit beruflichen Inhalten vermischen.
 - Nutze [[Wikilinks]] für Verknüpfungen zwischen Notizen.
