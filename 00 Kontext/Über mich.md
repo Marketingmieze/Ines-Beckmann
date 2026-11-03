@@ -6,7 +6,7 @@ tags: [kontext]
 
 ## Wer bin ich
 
-Ines, Marketing Managerin bei [[Fairbeamtet|fairbeamtet.de]]. Gelernt hat sie ursprünglich Industriekauffrau, war danach im Kunden-Dialog-Center von Apetito, stellvertretende Filialleiterin eines Supermarktes und zuletzt in einer Full-Service-Werbeagentur tätig, bevor sie bei fairbeamtet.de gelandet ist. Sie arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet dort die Website, die Artikel sowie das Social Media, das gerade erst aufgebaut wird – kurz: alles, was mit Marketing zu tun hat.
+Ines, Marketing Managerin bei fairbeamtet.de. Gelernt hat sie ursprünglich Industriekauffrau, war danach im Kunden-Dialog-Center von Apetito, stellvertretende Filialleiterin eines Supermarktes und zuletzt in einer Full-Service-Werbeagentur tätig, bevor sie bei fairbeamtet.de gelandet ist. Sie arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet dort die Website, die Artikel sowie das Social Media, das gerade erst aufgebaut wird – kurz: alles, was mit Marketing zu tun hat.
 
 ## Fachgebiete
 

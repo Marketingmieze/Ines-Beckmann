@@ -4,7 +4,7 @@ Dieses Vault ist das Zweite Gehirn von Ines.
 
 ## Über mich
 
-Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[00 Kontext/Marketingmieze/Über mich.md|Über mich]].
+Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[00 Kontext/Über mich.md|Über mich]].
 
 Ines hat zwei klar getrennte Marken in diesem Vault:
 - **fairbeamtet.de** – ihr Arbeitgeber, Versicherungsberatung für Beamte & Co.
@@ -14,11 +14,14 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 
 ## Vault-Struktur
 
-- 00 Kontext/: Persönliches Kontext-Profil. `Über mich.md` gilt markenübergreifend. Die Unterordner `Fairbeamtet/` und `Marketingmieze/` enthalten je eigene ICP.md, Angebot.md, Schreibstil.md und Branding.md. Zentrale Referenz für alle inhaltlichen Aufgaben – lies die passenden Dateien, wenn du Content erstellst, Mails schreibst oder Angebote formulierst.
+- 00 Kontext/: Persönliches Kontext-Profil. `Über mich.md` liegt direkt hier und gilt markenübergreifend. Die Unterordner `Fairbeamtet/` und `Marketingmieze/` enthalten je eigene ICP.md, Angebot.md, Schreibstil.md und Branding.md, bei Fairbeamtet zusätzlich Team.md. Zentrale Referenz für alle inhaltlichen Aufgaben – lies die passenden Dateien, wenn du Content erstellst, Mails schreibst oder Angebote formulierst.
 - 01 Inbox/: Schnelle Gedanken, Brain Dumps, unverarbeitete Notizen. Alles was noch keinen festen Platz hat landet hier.
 - 02 Projekte/: Aktive Projekte mit konkretem Ziel und Enddatum, getrennt nach `Fairbeamtet/` und `Marketingmieze/`. Projekte starten als einzelne .md-Datei direkt im jeweiligen Marken-Unterordner.
-- 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum (aktuell ausschließlich privat: Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn). Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen.
-- 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (KI, SEO-GEO, Ahrefs, Google Search Console). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei.
+- 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum. Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen. Drei Blöcke:
+  - `Privat/`: alles, was nicht zum Arbeitgeber gehört. Finanzen, Familie, Gesundheit, Pflege Mutter, Sohn und `Marketingmieze/`, weil marketingmieze.com dein eigenes Projekt ist und nichts mit fairbeamtet.de zu tun hat. Übersicht in [[03 Bereiche/Privat/Privat.md|Privat]].
+  - `03 Bereiche (mein SEO Kram)/`: die beruflichen Bereiche für fairbeamtet.de, also Content Creation, SEO und Website.
+  - `Termine/`: eigenständig eine Ebene darüber, weil dort berufliche und private Termine zusammen stehen.
+- 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (u. a. Schreibregeln, SEO-GEO, Googles No. 1, Keywords, Ahrefs, Google Search Console, KI, PKV und Beihilfe, Social Media Wachstum). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei.
   - Die Start-Datei eines Ordners (in 03 Bereiche/ und 04 Ressourcen/) ist gleichzeitig dessen Inhaltsverzeichnis: kurze Übersicht + `[[Wikilinks]]` auf alle Notizen im Ordner. Beim Anlegen einer neuen Notiz in einem dieser Ordner die Start-Datei um einen Link/Eintrag ergänzen, damit sie aktuell bleibt.
 - 05 Daily Notes/: Tägliches Logbuch. Was an einem Tag passiert ist, welche Entscheidungen getroffen wurden, was offen ist. Gibt Kontinuität zwischen Sessions.
 - 06 Archiv/: Abgeschlossene Projekte und inaktive Bereiche. Aus dem aktiven Blickfeld, aber durchsuchbar.
@@ -28,12 +31,12 @@ Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären
 
 - **Für jeden Text für fairbeamtet gilt das Voice Profile: `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md`. Vor dem Schreiben lesen.** Gilt für Website, Ratgeber, Social Media, Newsletter, Mails und Skripte. Die Mutterdatei liegt bei Sven. Der Inhalt wird wortgleich übernommen und im Vault nicht geändert, Änderungswünsche gehen an Sven. Kommt eine neue Fassung, ersetzt sie die alte an diesem Pfad, damit nur eine Fassung im Vault liegt. Bei Widerspruch zu anderen Schreib- oder Stilnotizen gilt das Voice Profile.
 - **fairbeamtet.de und marketingmieze.com strikt getrennt halten** – unterschiedliche Zielgruppen, Angebote, Schreibstile und Brandings. Nie vermischen, außer Ines bittet explizit darum.
-- Private Bereiche (Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn) enthalten teils sensible/medizinische Informationen. Sorgfältig behandeln, nicht ungefragt mit beruflichen Inhalten vermischen.
+- Private Bereiche unter `03 Bereiche/Privat/` (Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn) enthalten teils sensible/medizinische Informationen. Sorgfältig behandeln, nicht ungefragt mit beruflichen Inhalten vermischen, nicht in andere Notizen kopieren.
 - Nutze `[[Wikilinks]]` für Verknüpfungen zwischen Notizen.
 - Neue Notizen ohne klaren Platz kommen in 01 Inbox/.
 - Halte Notizen atomar: eine Idee pro Notiz wo möglich. Ausnahme: Daily Notes fassen einen ganzen Tag zusammen.
 - Daily Notes benennen im Format: YYYY-MM-DD.md (z. B. 2026-09-23.md). So sortieren sie automatisch chronologisch.
-- Nutze YAML Frontmatter: tags, status (aktiv/abgeschlossen/pausiert), erstellt.
+- Nutze YAML Frontmatter: tags, status, erstellt. Erlaubte Status-Werte: aktiv, geplant, entwurf, pausiert, abgeschlossen. Das Datumsfeld heißt immer `erstellt`, nicht `date` oder `datum`. Ausnahmen: `datum` in den Messdateien unter `02 Projekte/Fairbeamtet/Los-Schmerz-Wochos/Messungen/`, weil Fortschritt.base darauf filtert, und `stand` im Voice Profile, weil dessen Inhalt von Sven kommt.
 - Dateinamen in normaler Schreibweise mit Leerzeichen und Großbuchstaben: Beschreibender Name.md
 - Neue Projekte bekommen eine einzelne .md-Datei direkt im passenden Marken-Unterordner unter 02 Projekte/. Einen weiteren Unterordner nur anlegen, wenn ein Projekt tatsächlich mehrere Dateien braucht.
 - Bereiche und Ressourcen sind immer Ordner, weil sie über die Zeit wachsen.

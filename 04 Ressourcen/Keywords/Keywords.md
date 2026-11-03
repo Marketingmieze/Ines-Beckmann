@@ -28,7 +28,7 @@ Keyword-Recherche für fairbeamtet.de, aufgeschlüsselt nach Versicherer bzw. Th
 - ![[Keywords RV.xlsx]]
 - ![[Keywords VERSICHERUNGSKAMMER BAYERN VKB_BBKK.xlsx]]
 - ![[TIPR.xlsx]]
-- ![[TIPR_PRO_fairbeamtet.xlsx]]
+- ![[04 Ressourcen/Keywords/TIPR_PRO_fairbeamtet.xlsx]]
 
 ## Notizen
 

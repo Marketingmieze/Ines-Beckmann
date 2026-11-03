@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Technische Indexhygiene

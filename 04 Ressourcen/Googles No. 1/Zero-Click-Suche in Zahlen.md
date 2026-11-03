@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-30
+erstellt: 2026-09-30
 ---
 
 # Zero-Click-Suche in Zahlen

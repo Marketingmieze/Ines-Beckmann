@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Mobile UX und Core Web Vitals
@@ -216,7 +216,7 @@ Was trotzdem lohnt, weil es die Reserve vergrößert und Besuchern nutzt — nac
 **Eigene Messung, 27.09.2026:**
 - Auslieferung mit Smartphone- und Desktop-Googlebot-Kennung im Vergleich, Übertragungsgrößen mit gzip und Brotli, Zerlegung des HTML in Inline- und externe Bestandteile, Abruf aller 29 CSS- und JS-Dateien samt `Cache-Control`, Auswertung von `viewport`, `alt`, `loading`, `width`/`height`, `preload` und `fetchpriority`
 
-- **PageSpeed Insights und Search Console**, Screenshots von Sven vom 27.09.2026. Belege liegen in `07 Anhänge/Bilder`:
+- **PageSpeed Insights und Search Console**, Screenshots von Sven vom 27.09.2026. Belege gehören in `07 Anhänge/Bilder` (Ordner angelegt am 03.11.2026, **Bilder liefert Ines nach**, bis dahin bleiben die fünf Embeds unten leer):
   - [[PageSpeed Insights Felddaten mobil 2026-09-27.png]] · [[PageSpeed Insights Felddaten Computer 2026-09-27.png]]
   - [[PageSpeed Insights Labor mobil 2026-09-27.png]] · [[PageSpeed Insights Labor Computer 2026-09-27.png]]
   - [[Search Console Core Web Vitals 2026-09-27.png]]

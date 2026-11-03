@@ -1,10 +1,11 @@
 ---
 tags:
-  - bereich
+  - projekt
+  - fairbeamtet
   - content
   - seo
 status: aktiv
-date: 2026-10-29
+erstellt: 2026-10-29
 ---
 
 # Content-Plan PKV

@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Strategische Erkenntnisse
@@ -186,4 +186,4 @@ Vier Punkte aus der Umfrage von Zyppy, 131 Fachleute, 09.09.2026. **Das sind Kon
 
 ## Was daraus wird
 
-Wenn alle zehn Hebel stehen, wird diese Notiz die Grundlage für eine Best Practice unter `04 Ressourcen/Best Practices/`, analog zu den [[Best Practices Buchhaltung]]. Bis dahin bleibt sie hier, direkt neben ihrer Herleitung.
+Wenn alle zehn Hebel stehen, wird diese Notiz die Grundlage für eine Best Practice unter `04 Ressourcen/Best Practices/`, analog zu den Best Practices Buchhaltung (liegen außerhalb des Vaults). Bis dahin bleibt sie hier, direkt neben ihrer Herleitung.

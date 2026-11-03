@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Digital PR und qualitative Autorität
@@ -155,7 +155,7 @@ Die vier Suchen oben ausführen und festhalten, was ein Prüfer sieht. Das ist d
 Ein Beitrag in einem Fachmedium, der wegen seiner Substanz genommen wird, ist ein Reputationsbeleg. Ein gekaufter Gastbeitrag mit Follow-Link ist ein Richtlinienverstoß. Der Unterschied ist nicht die Platzierung, sondern ob Geld für den Link geflossen ist.
 
 **Berufsverbände nutzen.**
-Google nennt „professional societies" ausdrücklich als starken Beleg. Mitgliedschaften, Fachausschüsse, Referententätigkeit bei Verbandsveranstaltungen. Deine IGVM-Mitgliedschaft und die [[Bildungsstunden]] sind bereits Anknüpfungspunkte.
+Google nennt „professional societies" ausdrücklich als starken Beleg. Mitgliedschaften, Fachausschüsse, Referententätigkeit bei Verbandsveranstaltungen. Deine IGVM-Mitgliedschaft und die Bildungsstunden sind bereits Anknüpfungspunkte.
 
 **Zitierfähig werden.**
 Der zuverlässigste Weg zu Erwähnungen ist, etwas zu haben, das man zitieren muss: eigene Auswertungen aus [[Originaere Daten Tools und Experience]]. Wer als Erster belastbare Zahlen zu Ablehnungsquoten bei Beamten veröffentlicht, wird zitiert, ohne darum zu bitten.

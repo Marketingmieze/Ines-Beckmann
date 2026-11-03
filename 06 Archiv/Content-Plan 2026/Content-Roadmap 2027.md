@@ -4,7 +4,7 @@ tags:
   - seo
   - content
 status: aktiv
-date: 2026-09-30
+erstellt: 2026-09-30
 ---
 
 # Content-Roadmap 2027
@@ -77,7 +77,7 @@ Nach Beweislage sortiert, nicht nach Aufwand.
 
 **Vorhanden:** Familienzuschlag, Kindergeld für Beamte, Jahresarbeitsentgeltgrenze, amtsärztliche Untersuchung.
 
-**Naheliegend:** Anwärterbezüge, Erfahrungsstufen, Beihilfe in der Elternzeit, Versorgungsabschlag, Dienstherrenwechsel zwischen Bundesländern, Beamter auf Probe, **Bearbeitungsstand Beihilfe nach Bundesland** (neu, siehe unten). Fachliche Grundlage in [[Beamtenrecht und Besoldung]] — **jede Zahl braucht dort eine Quelle**, bevor sie auf die Website geht.
+**Naheliegend:** Anwärterbezüge, Erfahrungsstufen, Beihilfe in der Elternzeit, Versorgungsabschlag, Dienstherrenwechsel zwischen Bundesländern, Beamter auf Probe, **Bearbeitungsstand Beihilfe nach Bundesland** (neu, siehe unten). Fachliche Grundlage: Beamtenrecht und Besoldung (noch keine Notiz im Vault) — **jede Zahl braucht dort eine Quelle**, bevor sie auf die Website geht.
 
 **Neu aufgenommen (08.10.2026): Bearbeitungsstand Beihilfe [Bundesland].** Svens Traffic-Analyse von Wettbewerber beamtenberater.com zeigt unabhängig dasselbe Muster wie Punkt 1 oben, nur noch spitzer: Eine Serie „Bearbeitungsstand Beihilfe [Bundesland]" (Status-Abfrage zu laufenden Anträgen — „Wo steht mein Antrag gerade?", keine Versicherungswerbung) ist dort seit September der mit Abstand größte Traffic-Treiber, mit belegtem Suchvolumen von 80–2.200/Monat je Bundesland und noch nicht gesättigt (Berlin allein ~336 Besucher/Monat, Position 4). Trägt trotz `ai_overview`-SERP-Feature, weil das Frage-Antwort-Format sowohl AI-Overview-tauglich als auch klick-tauglich ist — Nutzer brauchen die Originalquelle, um den tatsächlichen Stand bei der eigenen Behörde zu prüfen. Von Ines entschieden: als eigenes Thema aufnehmen. **Vor dem Schreiben zu klären:** Überschneidung mit der bereits bei beamtenservice notierten „Beihilfe pro Bundesland"-Lücke abgleichen, ggf. zusammenlegen (siehe [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]]); echtes Suchvolumen je Bundesland über den Overlap Score aus [[Search Intent und Haupt-Hub]] verifizieren statt nur aus der Konkurrenz-Stichprobe zu schließen. Herleitung und Rohdaten: [[02 Projekte/Fairbeamtet/Beamtenberater.com.md|Beamtenberater.com]].
 
@@ -129,7 +129,7 @@ Musterschreiben an die Beihilfestelle, Widerspruch gegen einen Beihilfebescheid,
 
 `/redaktion/` ist 404. Eine Redaktionsleitlinie mit **Offenlegung der Courtage** gibt es nicht.
 
-**Beleg:** Shepard führt Markenseiten als einziges Format mit „stark bei niedrigem Aufwand". Seine beiden Beispiele sind **Bankrate Editorial Policy** und **Sleep Foundation Editorial Policy** — beides YMYL-Seiten mit Provisionsinteresse, also dieselbe Lage. Herleitung und der Bezug zum strukturellen Interessenkonflikt in [[Trust und E-E-A-T-System]], Rahmen in [[Compliance]].
+**Beleg:** Shepard führt Markenseiten als einziges Format mit „stark bei niedrigem Aufwand". Seine beiden Beispiele sind **Bankrate Editorial Policy** und **Sleep Foundation Editorial Policy** — beides YMYL-Seiten mit Provisionsinteresse, also dieselbe Lage. Herleitung und der Bezug zum strukturellen Interessenkonflikt in [[Trust und E-E-A-T-System]], Rahmen in [[04 Ressourcen/Content Wissen/Compliance.md|Compliance]].
 
 Der Rest der Markenseiten steht: 11 Expertenprofile mit Fachgebiet, 7 Erstinformationen, Team-Seite, Berater vor Ort.
 
@@ -137,7 +137,7 @@ Der Rest der Markenseiten steht: 11 Expertenprofile mit Fachgebiet, 7 Erstinform
 
 **Keine weiteren Baukasten-Themenzellen.** 110 von 136 ranken für kein einziges Keyword. Ambulant, Stationär, Zahnärztlich und Pflege sind Themen, keine Fragen. Was trägt, sind die rund 40 Wörter kurzen App-Seiten — **63 % des Beihilfe-Traffics** —, weil sie eine Aufgabe erledigen. Ob sich der Bestand zu einem echten Verzeichnis mit eigenen Daten je Land ausbauen lässt oder besser zusammengelegt wird, ist die offene Frage in [[Beihilfe-System Bestandsaufnahme]].
 
-**Keine weiteren allgemeinen PKV-Ratgeber.** `5-tipps-pkv-vergleich`, `11-fatale-fehler-abschluss-pkv`, `beste-pkv-deutschland` sind die beiden schwächsten Formate der Liste. `beste-pkv-deutschland` ist zusätzlich genau die Listenform, vor der Shepard warnt: „Marketers are using fake lists, with themselves at the top." Bei einem courtagevergüteten Makler ist das nicht nur SEO, siehe [[Compliance]].
+**Keine weiteren allgemeinen PKV-Ratgeber.** `5-tipps-pkv-vergleich`, `11-fatale-fehler-abschluss-pkv`, `beste-pkv-deutschland` sind die beiden schwächsten Formate der Liste. `beste-pkv-deutschland` ist zusätzlich genau die Listenform, vor der Shepard warnt: „Marketers are using fake lists, with themselves at the top." Bei einem courtagevergüteten Makler ist das nicht nur SEO, siehe [[04 Ressourcen/Content Wissen/Compliance.md|Compliance]].
 
 **Keine weiteren Beitragserhöhungsseiten nach Jahr.** Barmenia 2020, Concordia 2020, Debeka 2021 stehen noch online. Veraltet ist laut Guidelines ein eigener Abwertungsgrund, siehe [[Redaktionelle Fachqualitaet und Aktualitaet]]. Eine gepflegte Seite je Gesellschaft schlägt eine neue je Jahr.
 

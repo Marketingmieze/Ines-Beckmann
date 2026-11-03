@@ -3,7 +3,7 @@ tags:
   - ressource
   - seo
   - prompt
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Prompt: TIPR-Lite-Operator

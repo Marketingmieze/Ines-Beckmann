@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Search Intent und Haupt-Hub
@@ -193,7 +193,7 @@ Der Einstiegsabsatz benennt beides: das Keyword und das, was der Suchende damit 
 **Landingpages je Suchintention, mit Angebot und Belegen auf derselben Seite.**
 Nicht nur die Frage beantworten, sondern auf derselben Seite zeigen, was fairbeamtet.de tut und warum es die bessere Lösung ist — mit Erfahrungen, Beispielen und allem, was Autorität belegt. Ziel ist, in das relevante Set der Kandidaten zu kommen, die der Suchende überhaupt in Betracht zieht. Quelle: Sven Höhne, 30.09.2026.
 
-Das verbindet drei Dinge, die sonst getrennt gedacht werden: den Intent-Treffer aus dieser Notiz, die Autoritätsbelege aus [[Trust und E-E-A-T-System]] und die Aufgabenerledigung aus [[Content-Typen im Zero-Click-Zeitalter]] — dort sind Transaktionsseiten das zweitstärkste Format überhaupt. **Eine Warnung gehört dazu:** Eine Seite, die zuerst verkauft und dann antwortet, verfehlt den Intent. Die Reihenfolge ist Antwort, dann Beleg, dann Angebot. Und wo eine eigene Empfehlung ausgesprochen wird, gilt die Offenlegung aus [[Compliance]].
+Das verbindet drei Dinge, die sonst getrennt gedacht werden: den Intent-Treffer aus dieser Notiz, die Autoritätsbelege aus [[Trust und E-E-A-T-System]] und die Aufgabenerledigung aus [[Content-Typen im Zero-Click-Zeitalter]] — dort sind Transaktionsseiten das zweitstärkste Format überhaupt. **Eine Warnung gehört dazu:** Eine Seite, die zuerst verkauft und dann antwortet, verfehlt den Intent. Die Reihenfolge ist Antwort, dann Beleg, dann Angebot. Und wo eine eigene Empfehlung ausgesprochen wird, gilt die Offenlegung aus [[04 Ressourcen/Content Wissen/Compliance.md|Compliance]].
 
 ## Quellen
 

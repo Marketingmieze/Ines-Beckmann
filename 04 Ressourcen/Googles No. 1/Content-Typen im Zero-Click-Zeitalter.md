@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-30
+erstellt: 2026-09-30
 ---
 
 # Content-Typen im Zero-Click-Zeitalter
@@ -106,7 +106,7 @@ Nach Nutzen für die Website sortiert, nicht nach Shepards Nummer:
 
 **Typ 11, Vorlagen — mittel.** Checklisten zum Antrag, Musterschreiben an die Beihilfestelle, eine Unterlagenliste zum Abhaken. Etwas, das der Leser mitnimmt.
 
-**Typ 1, eigenes Publikum — sehr stark, höchster Aufwand.** Der Verteiler gehört einem selbst, Google kann ihn nicht abdrehen. Technisch liegt das bei [[CRM]] und [[WordPress und Fluent-Plugins]]. Shepards Frage dazu ist die unangenehme: „Why would anyone want to subscribe to our boring blog content?" — und seine Antwort: „Why is my blog content boring in the first place?"
+**Typ 1, eigenes Publikum — sehr stark, höchster Aufwand.** Der Verteiler gehört einem selbst, Google kann ihn nicht abdrehen. Technisch liegt das bei einem CRM und [[WordPress und Fluent-Plugins]]. Shepards Frage dazu ist die unangenehme: „Why would anyone want to subscribe to our boring blog content?" — und seine Antwort: „Why is my blog content boring in the first place?"
 
 **Typ 5, Creator-Video — stark.** Läuft im Bereich [[Content Creation]] und zahlt über die Markensuche zusätzlich auf SEO ein, siehe [[Ranking-Faktoren-Umfrage 2026]].
 
@@ -118,7 +118,7 @@ Shepard zu Bestenlisten:
 
 > „Marketers are using **fake lists**, with themselves at the top, to manipulate AI-generated answers and recommendations."
 
-Für einen courtagevergüteten Makler ist das nicht nur eine SEO-Frage. Eine „Die 5 besten PKV-Tarife für Beamte"-Liste, in der die eigene Empfehlung oben steht, ist genau das beschriebene Muster — und berührt zusätzlich [[Compliance]] und den Interessenkonflikt aus [[Trust und E-E-A-T-System]]. Wenn so eine Liste entsteht, dann mit offengelegtem Maßstab, offengelegter Vergütung und nachvollziehbarem Test. Sonst gar nicht.
+Für einen courtagevergüteten Makler ist das nicht nur eine SEO-Frage. Eine „Die 5 besten PKV-Tarife für Beamte"-Liste, in der die eigene Empfehlung oben steht, ist genau das beschriebene Muster — und berührt zusätzlich [[04 Ressourcen/Content Wissen/Compliance.md|Compliance]] und den Interessenkonflikt aus [[Trust und E-E-A-T-System]]. Wenn so eine Liste entsteht, dann mit offengelegtem Maßstab, offengelegter Vergütung und nachvollziehbarem Test. Sonst gar nicht.
 
 ## Best Practice für fairbeamtet.de
 

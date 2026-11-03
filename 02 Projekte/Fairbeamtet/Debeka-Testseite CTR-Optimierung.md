@@ -1,5 +1,5 @@
 ---
-tags: [fairbeamtet, seo, ctr]
+tags: [projekt, fairbeamtet, seo, ctr]
 status: aktiv
 erstellt: 2026-10-07
 ---

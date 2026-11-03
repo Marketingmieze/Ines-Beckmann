@@ -23,11 +23,11 @@ Wissen zu Suchmaschinenoptimierung (SEO) und Optimierung für generative KI-Such
 - ![[Gruppe mit Bild innen ohne Ränder.pdf]]
 - ![[Heiligen 7 Könige des SEO.pdf]]
 - ![[Report  Google Search Console PerformanceReport.pdf]]
-- ![[SEO und GEO Guru von fairbeamtet.de.pdf]]
+- ![[04 Ressourcen/SEO-GEO/PDFs/SEO und GEO Guru von fairbeamtet.de.pdf]]
 - ![[Struktur SERP  WDFIDF Überschriften.pdf]]
-- ![[Worttrennung.pdf]]
+- ![[04 Ressourcen/SEO-GEO/PDFs/Worttrennung.pdf]]
 - ![[Zahlen Daten  Tipps.pdf]]
-- ![[fairbeamtet.de wichtige Links.pdf]]
+- ![[04 Ressourcen/SEO-GEO/PDFs/fairbeamtet.de wichtige Links.pdf]]
 
 Verwandt: [[04 Ressourcen/Keywords/Keywords.md|Keywords]]
 

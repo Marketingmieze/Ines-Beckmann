@@ -21,4 +21,4 @@ Neues Unterthema? Eigene Notiz in diesem Ordner anlegen und hier eintragen. Erst
 - [[Community Building]] — Engagement, Rituale, Mitgliederbindung. Community ist kein Content, deshalb eigenes Thema.
 - [[Content Creatorin Claudia]] — baut die Ratgeber; nutzt das Video-Wissen hier fürs Video-Briefing nach dem Artikel
 - [[Schreibstil]] — wie bei fairbeamtet geschrieben wird
-- [[Compliance]] — was in Content nicht gesagt werden darf
+- [[04 Ressourcen/Content Wissen/Compliance.md|Compliance]] — was in Content nicht gesagt werden darf

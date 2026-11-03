@@ -2,7 +2,7 @@
 tags:
   - ressource
   - seo
-date: 2026-09-27
+erstellt: 2026-09-27
 ---
 
 # Trust und E-E-A-T-System
@@ -131,7 +131,7 @@ Für dich heißt das: KI im Entwurf ja, KI als Textfabrik nein. Jeder Beitrag br
 Nach Wirkung sortiert.
 
 **Personenidentität statt Firmenidentität.**
-Jeder Beitrag mit sichtbarem Autor, verlinkt auf ein echtes Autorenprofil. Das Profil nennt: Qualifikation (§ 34d GewO, Registernummer), Berufserfahrung, Spezialisierung auf Beamte, Belege wie Weiterbildungsnachweise. Deine [[Bildungsstunden]] sind genau so ein Beleg und liegen bereits sauber dokumentiert vor.
+Jeder Beitrag mit sichtbarem Autor, verlinkt auf ein echtes Autorenprofil. Das Profil nennt: Qualifikation (§ 34d GewO, Registernummer), Berufserfahrung, Spezialisierung auf Beamte, Belege wie Weiterbildungsnachweise. Deine Bildungsstunden sind genau so ein Beleg und liegen bereits sauber dokumentiert vor.
 
 **Vergütung offenlegen, bevor jemand fragt.**
 Eigene Seite zum Geschäftsmodell: Courtage, wer zahlt, wie hoch ungefähr, warum das die Empfehlung nicht verzerrt. Verlinkt aus jedem Ratgeberartikel.

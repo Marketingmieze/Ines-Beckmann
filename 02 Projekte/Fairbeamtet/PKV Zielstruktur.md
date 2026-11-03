@@ -2,7 +2,8 @@
 tags:
   - seo
   - fairbeamtet
-date: 2026-10-29
+status: aktiv
+erstellt: 2026-10-29
 ---
 
 # PKV Zielstruktur fairbeamtet.de
