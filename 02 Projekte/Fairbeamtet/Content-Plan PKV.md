@@ -72,7 +72,7 @@ Zusammen 122 Seiten und ein Beitrag in rund 38,5 Wochen, ohne die Punkte unter �
 
 Ohne Kästchen. Die Aufgaben entstehen erst, wenn das Projekt startet.
 
-Die Seitennamen stehen hier bewusst **als Text, nicht als Wikilink** (Ines, 29.10.2026). Seiten-Notizen werden erst beim Projektstart angelegt – so entstehen keine roten Links auf Seiten, die in Monaten dran sind. Muster: [[02 Projekte/Fairbeamtet/PKV Seiten/|PKV Seiten]].
+Die Seitennamen stehen hier bewusst **als Text, nicht als Wikilink** (Ines, 29.10.2026). Seiten-Notizen werden erst beim Projektstart angelegt – so entstehen keine roten Links auf Seiten, die in Monaten dran sind. Muster: `02 Projekte/Fairbeamtet/PKV Seiten/`.
 
 ### 2. PKV für Beamtenanwärter
 
