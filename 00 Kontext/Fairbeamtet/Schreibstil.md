@@ -10,7 +10,7 @@ Locker und verständlich, so als würde man es einem Freund bei einer Tasse Kaff
 
 ## Ansprache
 
-Du-Form – die Leser werden geduzt.
+Die Anrede regelt das [[04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md|fairbeamtet Voice Profile]], Abschnitt 2: dort steht, für welche Textsorte „du“ gilt und wann „Sie“. Für Website, Social Media und Newsletter ist es „du“.
 
 ## Regeln
 
@@ -57,4 +57,4 @@ Referenz-Screenshot: von Ines am 24.09.2026 geteilt, Beispielartikel „Private 
 
 Checkliste gegen KI-Klang: [[04 Ressourcen/Schreibregeln/KI-Klang vermeiden - Fairbeamtet.md|KI-Klang vermeiden – Fairbeamtet]].
 
-**Für Website-Ratgeber gilt das ausführlichere [[Voice Profile]]** von [[Content Creatorin Claudia]] (seit 20.10.2026). Es arbeitet diese Notiz ein und geht bei Widerspruch vor. Der Intro-Baustein oben steht dort als Abschnitt 4a, die Regel zu Satzfragmenten als Abschnitt 4b. Diese Notiz bleibt der kurze, markenweite Überblick für alles andere (Social Media, Mails, Videotexte).
+**Für jeden Text für fairbeamtet gilt das [[04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md|fairbeamtet Voice Profile]]** (Mutterdatei bei Sven, Fassung vom 03.11.2026). Es geht bei Widerspruch vor dieser Notiz. Für Claudias Website-Ratgeber kommt die [[03 Bereiche/03 Bereiche (mein SEO Kram)/Content Creation/Content Creatorin Claudia/wissen/Voice Profile.md|Leitfassung]] von [[Content Creatorin Claudia]] dazu (seit 20.10.2026), die das Profil um eigene Vault-Abschnitte ergänzt. Der Intro-Baustein oben steht dort als Abschnitt 4a, die Regel zu Satzfragmenten als Abschnitt 4b. Diese Notiz bleibt der kurze, markenweite Überblick.

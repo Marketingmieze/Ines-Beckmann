@@ -22,8 +22,9 @@ Fehlt dir einer der beiden Pfade, frag nach statt zu raten.
 
 **Vorher vollständig lesen, in dieser Reihenfolge:**
 1. `.claude/skills/humanizer/SKILL.md`: deine Methode (Muster §1 bis §26, Vorgehen "How to work", "When not to act")
-2. `<CLAUDIA>/wissen/Voice Profile.md`: gilt als Schreibprobe ("writing sample") und hat **Vorrang** vor dem Skill
-3. `<CLAUDIA>/wissen/Prüfregeln.md`: deutsche KI-Muster und Floskeln (Abschnitt 1)
+2. `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md` (relativ zur Vault-Wurzel): Svens Fassung. Maßgeblich für die Stimme und für die vollständigen Verbotslisten (Abschnitte 3.3 und 3.4). Hat **Vorrang** vor dem Skill.
+3. `<CLAUDIA>/wissen/Voice Profile.md`: Claudias Arbeitsdatei mit den Vault-Abschnitten (3a, 4a bis 4c, 6a, 6b, 9, 10), gilt als Schreibprobe ("writing sample"). Bei Widerspruch gilt das Voice Profile aus Punkt 2.
+4. `<CLAUDIA>/wissen/Prüfregeln.md`: deutsche KI-Muster und Floskeln (Abschnitt 1)
 
 ## Regeln für Deutsch und fairbeamtet.de
 
@@ -39,7 +40,7 @@ Der Skill ist auf Englisch geschrieben. Die Muster gelten sinngemäß für deuts
 - **Keine neuen Fakten (Skill, Schritt 2):** Keine Zahl, kein Betrag, kein Paragraf, keine Frist, kein Versicherername dazuerfinden. Fehlt ein konkretes Detail, schlichter formulieren oder `[PRÜFEN: Detail fehlt]` setzen.
 - **Kurze Sätze vs. Fragmente (§2):** Kurze, knackige Sätze sind unser Stil und kein KI-Muster. Eingreifen nur bei Ketten aus Fragmenten ("Kein Stress. Kein Papierkram.") und bei Ein-Satz-Absätzen, die das Vorherige wiederholen. Ein einzelnes Fragment pro Abschnitt darf bleiben, wenn es etwas trägt. Beim Umschreiben keine Schachtelsätze erzeugen.
 - **Die eine erlaubte Fragmentkette (Voice Profile 4b):** fairbeamtet.de nutzt eine Dreierkette aus Fragmenten als gesetztes Stilmittel ("Es gilt so vieles zu beachten. Fristen. Fragen. Stolpersteine."). **Genau eine** solche Kette pro Ratgeber bleibt stehen, wenn sie an einer betonten Stelle sitzt und etwas Konkretes aufzählt, das danach auch behandelt wird. Lass sie stehen und notiere sie im Report als bewusst stehengelassen. Jede weitere Kette und jede inhaltsleere Kette entfernst du wie bisher.
-- **Keywords sind geschützt (Voice Profile 3a):** Lies vorher `01_keywords/keyword-set.md`. Fokus-Keyword und primäre Keywords bleiben überall wörtlich erhalten. Muss ein Satz mit Keyword umgeschrieben werden, baue den neuen Satz um das Keyword herum. Zähle die Vorkommen von Fokus- und primären Keywords vorher und nachher; die Zahl darf nicht sinken.
+- **Keywords sind geschützt (Voice Profile 3a):** Lies vorher `01_keywords/keyword-set.md`. Fokus-Keyword und primäre Keywords bleiben überall wörtlich erhalten. Muss ein Satz mit Keyword umgeschrieben werden, baue den neuen Satz um das Keyword herum. Zähle die Vorkommen von Fokus- und primären Keywords vorher und nachher und nenne beide Zahlen im Report. Was dabei gilt, steht im Voice Profile, Abschnitt 10.
 - **Unverändert lassen:** Fakten, Zahlen, Links und Ankertexte, Keywords, `[PRÜFEN]`-Markierungen, Tabelleninhalte, Zitate aus Gesetzen.
 
 ## Vorgehen

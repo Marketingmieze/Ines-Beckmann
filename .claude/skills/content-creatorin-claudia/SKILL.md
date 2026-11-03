@@ -297,14 +297,14 @@ Pro H2/H3: Überschrift · was der Abschnitt leistet (1 bis 2 Sätze) · **Antwo
 Keine Zeile Fließtext vor ausdrücklicher Freigabe. **Frag dabei mit, ob der Ratgeber Angst-Framing nach Voice Profile 6b bekommt** (Empfehlung mit Begründung: Gibt es ein echtes Risiko im Thema?), und schlag bei „ja" eine H1 nach 6b vor. Ergebnis als „Angst-Framing: ja/nein" ins Dossier. Die Gliederung ist der kritischste Punkt: Ist sie schwach, wird der Text schwach. Änderungen einarbeiten und neu zeigen, bis freigegeben.
 
 **Schritt 15: Schreiben**
-**Vorher vollständig lesen:** `wissen/Voice Profile.md` (inklusive 6b), `wissen/Angstwörter.md` (wenn Angst-Framing „ja"), `wissen/Autoren.md` (Abschnitt des gewählten Autors + Regeln), `wissen/Brand Profile.md`, `wissen/Empfehlungen und Partner.md`, `wissen/Interne Beiträge.md`. In einer Zeile bestätigen. Fehlt etwas oder ist ein Abschnitt als [OFFEN] markiert, sag es.
+**Vorher vollständig lesen:** `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md` (Svens maßgebliche Fassung, relativ zur Vault-Wurzel), `wissen/Voice Profile.md` (inklusive 6b), `wissen/Angstwörter.md` (wenn Angst-Framing „ja"), `wissen/Autoren.md` (Abschnitt des gewählten Autors + Regeln), `wissen/Brand Profile.md`, `wissen/Empfehlungen und Partner.md`, `wissen/Interne Beiträge.md`. In einer Zeile bestätigen. Fehlt etwas oder ist ein Abschnitt als [OFFEN] markiert, sag es.
 
 Regeln:
 - Exakt nach freigegebener Gliederung.
 - Überwiegend Fließtext in kurzen Absätzen. Listen und Tabellen nur, wo sie helfen (Vergleiche, Schritte, Bundesland-Übersichten). Kein Abschnitt nur aus Stichpunkten.
 - **Antwort zuerst (Voice Profile 4c, Pflicht):** Der erste Satz nach jeder Überschrift beantwortet sie vollständig. Bei Ja-oder-Nein-Fragen beginnt er mit Ja oder Nein. Keine Hinführung, keine Ankündigung, keine Einschränkung vor der Antwort. Erst danach die Erklärung.
 - **Die drei Siebe:** Jede Behauptung gegen Wahrheit und Möglichkeit prüfen, während du schreibst. Was Sieb 2 nicht besteht, bekommt die Bedingung dazu, unter der es möglich ist.
-- **Keywords haben Vorrang vor dem Stil** (Voice Profile 3a): Fokus-Keyword wörtlich in H1, erstem Absatz, mindestens einer H2 und im Fazit. Primäre Keywords wörtlich in H2/H3 und Fließtext. Sperrige Keywords nicht umformulieren, sondern den Satz um sie herum bauen. Kein Stuffing.
+- **Keywords im Text** (Voice Profile Abschnitt 10 und Rangfolge im Kopf der Datei, dazu Leitfassung 3a): Fokus-Keyword wörtlich in H1, erstem Absatz, mindestens einer H2 und im Fazit. Primäre Keywords wörtlich in H2/H3 und Fließtext. Sperrige Keywords nicht umformulieren, sondern den Satz um sie herum bauen. Kein Stuffing.
 - Stil: du-Ansprache, kurze Sätze, keine Schachtelsätze, wie im Gespräch mit dem besten Freund. Raue Ehrlichkeit + Sicherheit: unbequeme Wahrheit klar benennen, direkt danach Halt geben (Voice Profile 1 bis 3 und 6a).
 - Eigenen Input und Expert-Takes sichtbar einbauen.
 - **Angstwörter nach Voice Profile 6b** (Wortschatz: `wissen/Angstwörter.md`): nur bei Themen mit echtem Risiko, nur in H1, erstem Absatz, „Häufige Fehler" und „Achtung:"-Boxen, immer mit Faktenanker. Entschieden wird das bei der Gliederungs-Freigabe (Schritt 14), festgehalten im Dossier. Jede Angst bekommt im ersten Absatz ihre Entwarnung, das ist zugleich Regel 4c.
