@@ -1,0 +1,133 @@
+filters:
+  and:
+    - file.inFolder("04 Ressourcen/Altersvorsorge Depot/Fakten")
+    - file.hasTag("avd")
+formulas:
+  zahl: 'if(wert, wert + if(einheit, " " + einheit, ""), "")'
+  pruefen: 'if(gesichert, "", "⚠️ prüfen")'
+properties:
+  file.name:
+    displayName: Fakt
+  kategorie:
+    displayName: Kategorie
+  wert:
+    displayName: Wert
+  einheit:
+    displayName: Einheit
+  bezug:
+    displayName: Bezug
+  gilt_ab:
+    displayName: Gilt ab
+  variante:
+    displayName: Variante
+  gesichert:
+    displayName: Gesichert
+  quelle:
+    displayName: Quelle
+  formula.zahl:
+    displayName: Zahl
+  formula.pruefen:
+    displayName: Hinweis
+views:
+  - type: table
+    name: Alle Fakten
+    groupBy:
+      property: kategorie
+      direction: ASC
+    order:
+      - file.name
+      - kategorie
+      - formula.zahl
+      - bezug
+      - gilt_ab
+      - variante
+      - formula.pruefen
+
+  - type: table
+    name: Nur Zahlen
+    filters:
+      and:
+        - wert
+    order:
+      - file.name
+      - kategorie
+      - wert
+      - einheit
+      - bezug
+      - gilt_ab
+
+  - type: table
+    name: Förderung
+    filters:
+      and:
+        - kategorie == "Förderung"
+    order:
+      - file.name
+      - formula.zahl
+      - bezug
+      - gilt_ab
+
+  - type: table
+    name: Gesetz und Fristen
+    filters:
+      and:
+        - kategorie == "Gesetz und Fristen"
+    order:
+      - file.name
+      - gilt_ab
+      - bezug
+
+  - type: table
+    name: Produkt und Rentenphase
+    filters:
+      or:
+        - kategorie == "Produktvarianten"
+        - kategorie == "Rentenphase"
+    groupBy:
+      property: variante
+      direction: ASC
+    order:
+      - file.name
+      - kategorie
+      - formula.zahl
+      - variante
+      - bezug
+
+  - type: table
+    name: Für Vermittler
+    filters:
+      or:
+        - kategorie == "Vergütung"
+        - kategorie == "Riester-Wechsel"
+        - kategorie == "Anbieterwechsel"
+        - kategorie == "Tools und Praxis"
+    groupBy:
+      property: kategorie
+      direction: ASC
+    order:
+      - file.name
+      - kategorie
+      - formula.zahl
+      - bezug
+      - formula.pruefen
+
+  - type: table
+    name: Noch prüfen
+    filters:
+      and:
+        - gesichert == false
+    order:
+      - file.name
+      - kategorie
+      - formula.zahl
+      - bezug
+
+  - type: cards
+    name: Karten
+    groupBy:
+      property: kategorie
+      direction: ASC
+    order:
+      - file.name
+      - formula.zahl
+      - bezug
