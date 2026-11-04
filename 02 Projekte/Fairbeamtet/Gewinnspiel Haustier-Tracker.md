@@ -466,3 +466,122 @@ Sven stellt die Frage „Was hat dein Haustier angestellt?" in die Kamera, dann 
 - [ ] Gewinner-Mailing für Anfang Januar einplanen, danach Jeanys Vorstellung
 - [ ] Jeany in [[00 Kontext/Fairbeamtet/Team.md]] ergänzen, Nachname fehlt noch
 - [ ] Formular-Layout: CSS steht im Customizer, muss noch veröffentlicht werden
+
+---
+
+# Teil 5: Newsletter-Layout für rapidmail (Stand 04.11.2026)
+
+Basis ist der Landingpage-Entwurf aus `01 Inbox/Gewinnspiel Landingpage Entwurf 2026-11-04.pdf`. Der Newsletter übernimmt dessen Farben, Buttonsprache und Inhalte.
+
+## Farbpalette, aus dem Entwurf ausgelesen
+
+| Rolle | Hex | Einsatz im Newsletter |
+|---|---|---|
+| Navy | `#294577` | Hero-Fläche, letzter CTA-Block, Footer, Überschriften auf Weiß |
+| Pink | `#E7376F` | Buttons, Zahlen, Highlight hinter „tierischsten", Trennstriche |
+| Hellblau | `#EDF5FA` | Karten, Zitatbox |
+| Blaugrau | `#425A87` | Rahmen, Formularfelder, Sekundärflächen |
+| Weiß | `#FFFFFF` | Grundfläche, Text auf Navy |
+
+## Was sich inhaltlich gegenüber meiner Fassung ändert
+
+1. **Bild oder Video.** Nicht mehr nur Foto. Muss überall mit.
+2. **Der Tracker gibt es nur für Hunde und Katzen.** Tractive liefert für Hunde ab 4 kg und Katzen von 3 bis 8 kg. Mitmachen darf jedes Tier, gewinnen kann der Wellensittich-Halter praktisch nicht. Das gehört ehrlich ins Kleingedruckte, nicht in den Hero.
+3. **Buttonsprache aus dem Entwurf übernehmen.** „Mein Tier soll mitmachen", „Mein Tier gehört da rein", „Mein Tier ist dabei". Deutlich besser als meine generischen Buttons.
+4. **Der Name erscheint nicht in der Galerie**, nur der Tiername. Das ist ein Verkaufsargument und senkt die Hemmschwelle. Gehört in den Newsletter.
+5. **Die Einwilligung ist optional.** „Für die Verlosung ist das egal." Auch das nimmt Druck raus.
+6. **Microzeile:** „Einsendeschluss: 31.12.2026 · kostenlos · ohne Vertrag". Übernehmen.
+7. Formular ist klassisch statt Conversational. Damit ist das Versprechen „zwei Minuten" wieder uneingeschränkt wahr.
+
+## Blockaufbau in rapidmail
+
+Inhaltsbreite 600 px. Jede Zeile ist ein eigener rapidmail-Block.
+
+| # | Block | Hintergrund | Inhalt |
+|---|---|---|---|
+| 0 | Preheader | unsichtbar | Ein Bild reicht. Zu gewinnen: 5 GPS-Tracker samt Jahresabo. |
+| 1 | Logo | Weiß | bestehender Markenheader |
+| 2 | Hero, 2 Spalten | `#294577` | links H1 + Subline + Button, rechts Trackerbild |
+| 3 | Gewinnkarte | `#EDF5FA` | 5 x Tractive GPS-Tracker, inkl. 12 Monate Abo |
+| 4 | Anrede + Hook | Weiß | Hallo [Vorname] plus Einstiegsabsatz |
+| 5 | So machst du mit, 3 Spalten | Weiß | 1 Aussuchen, 2 Hochladen, 3 Daumen drücken |
+| 6 | Galerie-Teaser, 3 Spalten | Weiß | drei Beispielbilder plus Button |
+| 7 | Warum ein Tracker | `#EDF5FA` | Zitatbox mit pinkem Balken links |
+| 8 | Letzter CTA | `#294577` | Button „Mein Tier ist dabei" |
+| 9 | Kleingedrucktes | Weiß | Hund-und-Katze-Hinweis, Link Teilnahmebedingungen |
+| 10 | Footer | `#294577` | Adresse, Impressum, Datenschutz, Teilnahmebedingungen, Social, Abmelden |
+
+## Technische Hinweise für rapidmail
+
+- **Keine abgerundeten Ecken erwarten.** Outlook kippt `border-radius`. Die Karten werden im Mail-Layout eckig. Wer den Look zwingend will, muss die Karte als Bild bauen, verliert dann aber den Text bei Bildblockierung. Empfehlung: eckig akzeptieren, nur die Buttons rund, dafür hat rapidmail eine eigene Behandlung.
+- **Keine Farbverläufe.** Der Hero auf der Landingpage hat einen Blauverlauf. Im Newsletter flach `#294577` nehmen.
+- **Keine Webfonts.** Auf Arial oder Helvetica ausweichen, die Hausschrift wird in den meisten Clients ohnehin ersetzt.
+- **Buttons als echte Buttonblöcke**, nie als Bild. Sonst sind sie bei blockierten Bildern unsichtbar.
+- **Dark Mode prüfen.** Logo nicht als transparentes PNG, sondern mit fester Fläche, sonst verschwindet es bei invertierter Darstellung.
+- **Alle Bilder mit Alt-Text.**
+- Dreispaltige Blöcke stapeln auf dem Handy automatisch, das ist gewollt.
+
+## Fertige Texte je Block
+
+**Block 2, Hero**
+
+H1: fairbeamtet sucht den [tierischsten] Beamten Deutschlands
+(„tierischsten" pink hinterlegt, wie auf der Landingpage)
+
+Subline: Schick uns das schönste, lustigste oder verrückteste Bild oder Video von deinem Haustier. Mit deinem Okay kommt es in unsere Galerie. Und fünf von euch gewinnen einen Tractive GPS-Tracker samt Abo für ein Jahr.
+
+Button: Mein Tier soll mitmachen
+
+Microzeile: Einsendeschluss: 31.12.2026 · kostenlos · ohne Vertrag
+
+**Block 3, Gewinnkarte**
+
+5 x Tractive GPS-Tracker
+inkl. 12 Monate Abo
+
+**Block 4, Anrede und Hook**
+
+Hallo [Vorname],
+
+eine Frage, die mit Versicherungen erstmal nichts zu tun hat. Was hat dein Haustier zuletzt angestellt?
+
+Du musst dafür kein Fotoarchiv durchwühlen. Handy raus, Bild oder Video machen, hochladen. Dein Tier liegt ohnehin gerade irgendwo rum und sieht dabei vermutlich großartig aus.
+
+Und keine Sorge: Dein Name taucht nirgends auf. In der Galerie steht nur, wie dein Tier heißt.
+
+**Block 5, So machst du mit**
+
+1 Aussuchen
+Schön, lustig oder völlig bescheuert. Dein Tier allein oder du mit drauf.
+
+2 Hochladen
+Formular ausfüllen, Bild oder Video anhängen, Häkchen setzen. Dauert zwei Minuten.
+
+3 Daumen drücken
+Einsendeschluss ist der 31.12.2026. Anfang Januar losen wir fünf Gewinner aus.
+
+**Block 6, Galerie-Teaser**
+
+Überschrift: Das sind die tierischsten Beamten Deutschlands
+Text: Den Anfang machen die Tiere aus unserem Team. Deins kann morgen dabei sein.
+Button: Mein Tier gehört da rein
+
+**Block 7, Warum ein Tracker**
+
+Überschrift: Warum ausgerechnet ein Tracker?
+
+Zitatbox: Weil dein Hund aufs Wort hört. Bis zu dem Tag, an dem er es nicht tut. Ein Reh am Waldrand reicht, oder ein Gartentor, das jemand offen gelassen hat. Und die Katze, die sonst nie weiter als bis zur Terrasse geht, sitzt irgendwann drei Straßen weiter im Gebüsch.
+
+Danach: Wir machen beruflich nichts anderes, als Menschen für den Moment abzusichern, in dem etwas schiefgeht. Beim Haustier fängt das nicht erst beim Tierarzt an.
+
+**Block 8, Letzter CTA**
+
+Zeile: Zwei Minuten. Ein Bild. Mehr brauchen wir nicht.
+Button: Mein Tier ist dabei
+
+**Block 9, Kleingedrucktes**
+
+Mitmachen darf jedes Haustier. Beim Gewinn gibt es einen Haken: Tractive baut die Tracker für Hunde und Katzen. Für den Wellensittich wird es also schwierig, so ehrlich muss man sein.
+
+Teilnahmebedingungen
+
