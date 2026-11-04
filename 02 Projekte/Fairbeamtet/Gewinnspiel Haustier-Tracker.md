@@ -244,6 +244,59 @@ Wir losen Anfang Januar 2027 aus und melden uns bei den Gewinnern per Mail.
 
 **Das Textfeld zur Bildgeschichte ist Gold für die Galerie.** Ein Bild mit Geschichte liest sich zehnmal besser als ein Bild mit Namen. Freiwillig lassen, die meisten füllen es trotzdem aus.
 
+
+## Texte im Formular (Fluent Forms, ID 7)
+
+Die acht Schritte brauchen eigene Texte. Kurz halten, eine Frage pro Bildschirm.
+
+**Startbildschirm**
+Überschrift: Schön, dass du dabei bist
+Text: Ein paar kurze Fragen, dann dein Foto. Nach zwei Minuten bist du durch.
+Button: Los geht's
+
+**1. Dein Name**
+Platzhalter: Fritzchen Müller
+Hilfetext: Vorname reicht völlig.
+
+**2. Deine E-Mail-Adresse**
+Hilfetext: Brauchen wir nur, falls du gewinnst. Werbung bekommst du dadurch keine.
+
+**3. Wie heißt dein Tier?**
+Platzhalter: Maunzi
+Hilfetext: Der Name steht später in der Galerie unter dem Bild.
+
+**4. Her mit dem Foto**
+Upload-Feld
+Hilfetext: Handyfoto reicht. Maximal 15 MB.
+
+**5. Was ist da passiert?**
+Textfeld, optional
+Hilfetext: Ein, zwei Sätze zum Bild. Freiwillig, macht die Galerie aber deutlich schöner.
+
+**6. In welche Richtung geht dein Bild?**
+Auswahl: Eher schön / Eher lustig / Eher verrückt
+Optional
+
+**7. Dürfen wir dein Bild zeigen?**
+Checkbox: Ja, fairbeamtet.de darf mein Bild auf der Website und in den sozialen Medien zeigen. Ich kann das jederzeit widerrufen.
+Pflicht
+
+**8. Fast geschafft**
+Checkbox 1, Pflicht: Ich habe die Teilnahmebedingungen gelesen und bin mindestens 18 Jahre alt.
+Checkbox 2, optional, nicht vorausgewählt: Schickt mir euren Newsletter. Tipps für Beamte, etwa einmal im Monat.
+
+**Abschlussbildschirm**
+Überschrift: Angekommen. Danke dir!
+Text: Wir schauen uns dein Bild an und stellen es in den nächsten Tagen in die Galerie. Anfang Januar losen wir die fünf Tracker aus.
+Button: Zur Galerie
+
+## SEO für die Seite
+
+**Title Tag:** fairbeamtet sucht den tierischsten Beamten Deutschlands
+**Meta Description:** Schick uns das schönste, lustigste oder verrückteste Bild von deinem Haustier. Dein Foto kommt in unsere Galerie, und fünf Einsender gewinnen einen Tractive GPS-Tracker samt Jahresabo. Mitmachen bis 31.12.2026.
+
+Seite auf index lassen. Die Galerie ist echter, eigener Content und kann über die Laufzeit hinaus Besucher bringen.
+
 ## Technische Punkte
 
 - **HEIC zulassen.** iPhone-Fotos sind standardmäßig .heic. Nimmt der Upload nur JPG und PNG an, scheitert ein großer Teil der Teilnehmer, ohne zu verstehen warum. Serverseitig nach JPG wandeln. **Das ist der wichtigste Test vor dem Livegang.**
