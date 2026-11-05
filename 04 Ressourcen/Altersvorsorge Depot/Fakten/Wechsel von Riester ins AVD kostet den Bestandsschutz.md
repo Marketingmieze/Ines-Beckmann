@@ -2,17 +2,27 @@
 tags:
   - avd
   - altersvorsorge
+  - beamte
 status: aktiv
 erstellt: 2026-11-04
+geprueft: 2026-11-05
 kategorie: "Riester-Wechsel"
-gesichert: true
+urteil: "BESTÄTIGT"
+gilt_ab: 2027-01-01
+fundstelle: "§ 52 Abs. 50a Satz 4 u. 9 EStG n. F."
+beamte: true
 quelle: "https://www.youtube.com/watch?v=0kNgl6Q1EWM"
 ---
 
 # Wechsel von Riester ins AVD kostet den Bestandsschutz
 
-Wer von Riester ins Altersvorsorgedepot wechselt, verzichtet auf den Bestandsschutz des Riester-Vertrags. Einen Weg zurück gibt es nicht.
+„**Unwiderruflich**" steht wörtlich im Gesetz. Die Wirkung tritt **einheitlich für alle** Altersvorsorgeverträge ein, und der Vertrag „gilt nicht mehr als Bestandsvertrag".
 
-Quelle: [Altersvorsorgedepot – Was Vermittler wissen sollten! (Fonds Finanz, 02.11.2026)](https://www.youtube.com/watch?v=0kNgl6Q1EWM)
+## Belege
 
-Übersicht: [[Altersvorsorge Depot]]
+- Gesetz: [BGBl. 2026 I Nr. 156](https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1) — Altersvorsorgereformgesetz vom 26.05.2026
+- Materialien: [BT-Drs. 21/4088](https://dserver.bundestag.de/btd/21/040/2104088.pdf) (Entwurf) · [BT-Drs. 21/4996](https://dserver.bundestag.de/btd/21/049/2104996.pdf) (Finanzausschuss)
+- Behörde: [BMF-FAQ zur Reform der privaten Altersvorsorge](https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html)
+- Videoquelle: [Fonds Finanz, 02.11.2026](https://www.youtube.com/watch?v=0kNgl6Q1EWM)
+
+Übersicht: [[Altersvorsorge Depot]] · Faktencheck: [[Altersvorsorgedepot Faktencheck für Beamte]]

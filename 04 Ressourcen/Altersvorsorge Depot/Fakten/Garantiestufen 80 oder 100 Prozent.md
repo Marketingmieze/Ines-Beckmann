@@ -4,20 +4,37 @@ tags:
   - altersvorsorge
 status: aktiv
 erstellt: 2026-11-04
+geprueft: 2026-11-05
 kategorie: "Produktvarianten"
+urteil: "WIDERLEGT"
 wert: 80
 einheit: "Prozent"
 bezug: "Garantie"
 gilt_ab: 2027-01-01
-variante: "Versicherungslösung"
-gesichert: false
+variante: "Garantieprodukt"
+fundstelle: "§ 1 Abs. 1 Satz 1 Nr. 3 Buchst. a AltZertG n. F."
+beamte: false
 quelle: "https://www.youtube.com/watch?v=0kNgl6Q1EWM"
 ---
 
-# Garantiemöglichkeit 80 oder 0 Prozent in der Versicherungslösung
+# Garantiestufen 80 oder 100 Prozent
 
-Die Versicherungslösung bietet eine Garantiemöglichkeit von 80 Prozent oder sogar null Prozent. An einer späteren Stelle im Video werden 80 Prozent und manchmal 100 Prozent genannt – die genaue Bandbreite ist aus dem Video nicht eindeutig und sollte vor einer Beratung gegengeprüft werden.
+> [!danger] Das Video ist hier falsch
+> Es sagt „80 oder sogar null Prozent Garantiemöglichkeit". Richtig ist: **80 Prozent oder 100 Prozent.**
 
-Quelle: [Altersvorsorgedepot – Was Vermittler wissen sollten! (Fonds Finanz, 02.11.2026)](https://www.youtube.com/watch?v=0kNgl6Q1EWM)
+Gesetzeswortlaut: „den vereinbarten Mindestbetrag von **80 Prozent oder von 100 Prozent** der eingezahlten Altersvorsorgebeiträge einschließlich der Altersvorsorgezulagen".
 
-Übersicht: [[Altersvorsorge Depot]]
+**Genau zwei Stufen. Keine Zwischenstufen, keine 0-%-Stufe.**
+
+„Null Prozent Garantie" ist keine Stufe des Garantieprodukts, sondern das **eigenständige Altersvorsorgedepot**, in dem § 1 Abs. 1b Satz 1 Nr. 4 jede Garantie verbietet.
+
+Weitere Präzisierung: Die Garantie bezieht sich nur auf den Zeitpunkt „zu Beginn der Auszahlungsphase", **nicht auf eine Mindestrente**.
+
+## Belege
+
+- Gesetz: [BGBl. 2026 I Nr. 156](https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1) — Altersvorsorgereformgesetz vom 26.05.2026
+- Materialien: [BT-Drs. 21/4088](https://dserver.bundestag.de/btd/21/040/2104088.pdf) (Entwurf) · [BT-Drs. 21/4996](https://dserver.bundestag.de/btd/21/049/2104996.pdf) (Finanzausschuss)
+- Behörde: [BMF-FAQ zur Reform der privaten Altersvorsorge](https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html)
+- Videoquelle: [Fonds Finanz, 02.11.2026](https://www.youtube.com/watch?v=0kNgl6Q1EWM)
+
+Übersicht: [[Altersvorsorge Depot]] · Faktencheck: [[Altersvorsorgedepot Faktencheck für Beamte]]

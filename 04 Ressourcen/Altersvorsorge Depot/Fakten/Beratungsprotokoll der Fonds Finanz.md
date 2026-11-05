@@ -4,15 +4,25 @@ tags:
   - altersvorsorge
 status: aktiv
 erstellt: 2026-11-04
+geprueft: 2026-11-05
 kategorie: "Tools und Praxis"
-gesichert: true
+urteil: "BESTÄTIGT"
+fundstelle: "Anbieterkommunikation"
+beamte: false
 quelle: "https://www.youtube.com/watch?v=0kNgl6Q1EWM"
 ---
 
 # Beratungsprotokoll der Fonds Finanz
 
-Das Beratungsprotokoll der Fonds Finanz hilft, Ziele und KO-Kriterien mit dem Kunden festzuhalten. Musteranschreiben für Riester- und Neukunden, Handouts und Webinare liegen auf der AVD-Seite der Fonds Finanz: https://www.fondsfinanz.de/altersvorsorgedepot
+Hilft, Ziele und KO-Kriterien mit dem Kunden festzuhalten. Musteranschreiben für Riester- und Neukunden, Handouts und Webinare liegen auf der [AVD-Seite der Fonds Finanz](https://www.fondsfinanz.de/altersvorsorgedepot).
 
-Quelle: [Altersvorsorgedepot – Was Vermittler wissen sollten! (Fonds Finanz, 02.11.2026)](https://www.youtube.com/watch?v=0kNgl6Q1EWM)
+Einordnung: Anbietermaterial eines Maklerpools, keine neutrale Quelle.
 
-Übersicht: [[Altersvorsorge Depot]]
+## Belege
+
+- Gesetz: [BGBl. 2026 I Nr. 156](https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1) — Altersvorsorgereformgesetz vom 26.05.2026
+- Materialien: [BT-Drs. 21/4088](https://dserver.bundestag.de/btd/21/040/2104088.pdf) (Entwurf) · [BT-Drs. 21/4996](https://dserver.bundestag.de/btd/21/049/2104996.pdf) (Finanzausschuss)
+- Behörde: [BMF-FAQ zur Reform der privaten Altersvorsorge](https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html)
+- Videoquelle: [Fonds Finanz, 02.11.2026](https://www.youtube.com/watch?v=0kNgl6Q1EWM)
+
+Übersicht: [[Altersvorsorge Depot]] · Faktencheck: [[Altersvorsorgedepot Faktencheck für Beamte]]

@@ -2,14 +2,20 @@ filters:
   and:
     - file.inFolder("04 Ressourcen/Altersvorsorge Depot/Fakten")
     - file.hasTag("avd")
+    - geprueft
 formulas:
   zahl: 'if(wert, wert + if(einheit, " " + einheit, ""), "")'
-  pruefen: 'if(gesichert, "", "⚠️ prüfen")'
+  ampel: 'if(urteil == "WIDERLEGT", "🔴 widerlegt", if(urteil == "UNBELEGT", "⚫ unbelegt", if(urteil == "TEILWEISE", "🟡 verkürzt", if(urteil == "KORRIGIERT" || urteil == "KORREKTUR", "🟠 korrigiert", if(urteil == "NEU", "🔵 ergänzt", "🟢 bestätigt")))))'
+  nur_beamte: 'if(beamte, "👮 Beamte", "")'
 properties:
   file.name:
     displayName: Fakt
   kategorie:
     displayName: Kategorie
+  urteil:
+    displayName: Urteil
+  fundstelle:
+    displayName: Fundstelle
   wert:
     displayName: Wert
   einheit:
@@ -20,14 +26,18 @@ properties:
     displayName: Gilt ab
   variante:
     displayName: Variante
-  gesichert:
-    displayName: Gesichert
+  beamte:
+    displayName: Beamten-relevant
+  geprueft:
+    displayName: Geprüft am
   quelle:
-    displayName: Quelle
+    displayName: Videoquelle
   formula.zahl:
     displayName: Zahl
-  formula.pruefen:
-    displayName: Hinweis
+  formula.ampel:
+    displayName: Status
+  formula.nur_beamte:
+    displayName: ""
 views:
   - type: table
     name: Alle Fakten
@@ -36,12 +46,70 @@ views:
       direction: ASC
     order:
       - file.name
-      - kategorie
+      - formula.ampel
       - formula.zahl
-      - bezug
+      - fundstelle
       - gilt_ab
-      - variante
-      - formula.pruefen
+      - formula.nur_beamte
+
+  - type: table
+    name: Besonderheiten für Beamte
+    filters:
+      and:
+        - beamte == true
+    groupBy:
+      property: kategorie
+      direction: ASC
+    order:
+      - file.name
+      - formula.ampel
+      - formula.zahl
+      - fundstelle
+      - gilt_ab
+
+  - type: table
+    name: Nicht verwenden
+    filters:
+      or:
+        - urteil == "WIDERLEGT"
+        - urteil == "UNBELEGT"
+    order:
+      - file.name
+      - formula.ampel
+      - kategorie
+      - fundstelle
+
+  - type: table
+    name: Korrekturen am Video
+    filters:
+      or:
+        - urteil == "WIDERLEGT"
+        - urteil == "TEILWEISE"
+        - urteil == "KORRIGIERT"
+        - urteil == "KORREKTUR"
+    groupBy:
+      property: urteil
+      direction: ASC
+    order:
+      - file.name
+      - kategorie
+      - fundstelle
+      - formula.zahl
+
+  - type: table
+    name: Belastbar für Content
+    filters:
+      or:
+        - urteil == "BESTÄTIGT"
+        - urteil == "NEU"
+    groupBy:
+      property: kategorie
+      direction: ASC
+    order:
+      - file.name
+      - formula.zahl
+      - fundstelle
+      - gilt_ab
 
   - type: table
     name: Nur Zahlen
@@ -50,11 +118,11 @@ views:
         - wert
     order:
       - file.name
-      - kategorie
       - wert
       - einheit
       - bezug
-      - gilt_ab
+      - kategorie
+      - formula.ampel
 
   - type: table
     name: Förderung
@@ -63,19 +131,21 @@ views:
         - kategorie == "Förderung"
     order:
       - file.name
+      - formula.ampel
       - formula.zahl
       - bezug
-      - gilt_ab
+      - fundstelle
 
   - type: table
-    name: Gesetz und Fristen
+    name: Fristen und Stichtage
     filters:
       and:
-        - kategorie == "Gesetz und Fristen"
+        - gilt_ab
     order:
-      - file.name
       - gilt_ab
-      - bezug
+      - file.name
+      - kategorie
+      - formula.ampel
 
   - type: table
     name: Produkt und Rentenphase
@@ -88,10 +158,9 @@ views:
       direction: ASC
     order:
       - file.name
-      - kategorie
+      - formula.ampel
       - formula.zahl
-      - variante
-      - bezug
+      - fundstelle
 
   - type: table
     name: Für Vermittler
@@ -106,21 +175,9 @@ views:
       direction: ASC
     order:
       - file.name
-      - kategorie
+      - formula.ampel
       - formula.zahl
-      - bezug
-      - formula.pruefen
-
-  - type: table
-    name: Noch prüfen
-    filters:
-      and:
-        - gesichert == false
-    order:
-      - file.name
-      - kategorie
-      - formula.zahl
-      - bezug
+      - fundstelle
 
   - type: cards
     name: Karten
@@ -129,5 +186,5 @@ views:
       direction: ASC
     order:
       - file.name
+      - formula.ampel
       - formula.zahl
-      - bezug
