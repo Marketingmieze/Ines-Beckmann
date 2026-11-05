@@ -20,6 +20,12 @@ Aussage des Videos zur Versicherungslösung. **In den Primärquellen nicht als g
 
 Nicht als allgemeine Aussage in Content verwenden, ohne sie am konkreten Tarif zu prüfen.
 
+### Weitere unbelegte Aussage aus derselben Passage
+
+Das Video behauptet zusätzlich, die Fondsauswahl sei „entgegen dem Vorurteil" auch in der Versicherungslösung breit, und das gesamte Vertragsvermögen lasse sich kostenfrei umschichten.
+
+**Beides ist eine Produktaussage einzelner Anbieter, keine gesetzliche Vorgabe.** Das AltZertG macht zur Fondsauswahl im Garantieprodukt keine Mindestvorgabe. Vor Verwendung am konkreten Tarif prüfen.
+
 ## Belege
 
 - Gesetz: [BGBl. 2026 I Nr. 156](https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1) — Altersvorsorgereformgesetz vom 26.05.2026

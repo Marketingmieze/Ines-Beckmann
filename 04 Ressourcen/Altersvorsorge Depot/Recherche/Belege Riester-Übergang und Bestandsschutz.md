@@ -1,8 +1,15 @@
 ---
-tags: [altersvorsorgedepot, riester, faktencheck, recherche]
-status: entwurf
+tags: [ressource, avd, altersvorsorge, recherche, belege, fairbeamtet]
+status: abgeschlossen
 erstellt: 2026-11-04
+abgerufen: 2026-11-04
+umfang: Bestandsschutz, Wechselerklärung, Wohnriester
 ---
+
+> [!info] Belegsammlung, kein Ratgebertext
+> Rohnotizen der Deep Research vom 04.11.2026 mit wörtlichen Gesetzeszitaten, Fundstellen und Abrufdaten. Die verdichtete Auswertung steht in [[Altersvorsorgedepot Faktencheck für Beamte]], die auswertbaren Einzelfakten in [[AVD.base]]. Diese Datei ist die Belegebene darunter: hier stehen die Zitate im Wortlaut und die **Gaps**, also was die Recherche ausdrücklich *nicht* belegen konnte.
+> 
+> Vor Verwendung: [[Nicht zitierfähige AVD-Quellen]] lesen.
 
 # Übergang von Riester zum Altersvorsorgedepot (AVD) – Faktencheck
 

@@ -20,6 +20,12 @@ quelle: "https://www.youtube.com/watch?v=0kNgl6Q1EWM"
 
 Ein rein vermittlerinternes Pool-Tool ist möglich, aber nicht belegbar. Nicht in Content verlinken.
 
+### Die mitgelieferte Werbeaussage
+
+Das Video sagt, das Ergebnis des Rechners sei „in den meisten Fällen: Das AVD bringt attraktive Vorteile".
+
+**Das ist eine Aussage des Maklerpools über sein eigenes Tool, ohne Rechenweg und ohne Datengrundlage.** Nicht als Rechercheergebnis zitieren. Ob ein Wechsel von Riester ins AVD vorteilhaft ist, hängt am Einzelfall — insbesondere am Bestandsschutz (siehe [[Wechsel von Riester ins AVD kostet den Bestandsschutz]]) und bei Beamten am DU-Baustein (siehe [[Wegfall der DU-Bausteine trifft Beamte besonders]]).
+
 ## Belege
 
 - Gesetz: [BGBl. 2026 I Nr. 156](https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1) — Altersvorsorgereformgesetz vom 26.05.2026

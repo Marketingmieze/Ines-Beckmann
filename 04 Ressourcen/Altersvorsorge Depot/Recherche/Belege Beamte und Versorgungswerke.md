@@ -1,3 +1,16 @@
+---
+tags: [ressource, avd, altersvorsorge, recherche, belege, fairbeamtet]
+status: abgeschlossen
+erstellt: 2026-11-04
+abgerufen: 2026-11-04
+umfang: Beamte, Richter, Soldaten, Anwärter, Versorgungswerke
+---
+
+> [!info] Belegsammlung, kein Ratgebertext
+> Rohnotizen der Deep Research vom 04.11.2026 mit wörtlichen Gesetzeszitaten, Fundstellen und Abrufdaten. Die verdichtete Auswertung steht in [[Altersvorsorgedepot Faktencheck für Beamte]], die auswertbaren Einzelfakten in [[AVD.base]]. Diese Datei ist die Belegebene darunter: hier stehen die Zitate im Wortlaut und die **Gaps**, also was die Recherche ausdrücklich *nicht* belegen konnte.
+> 
+> Vor Verwendung: [[Nicht zitierfähige AVD-Quellen]] lesen.
+
 # Altersvorsorgedepot (AVD) ab 01.01.2027 – Besonderheiten für Beamte, Richter, Soldaten und Anwärter
 
 > Alle Abrufe: **04.11.2026**. Rechtsstand: Altersvorsorgereformgesetz, verkündet als **BGBl. 2026 I Nr. 156 vom 29.05.2026** (Gesetz vom 26.05.2026).

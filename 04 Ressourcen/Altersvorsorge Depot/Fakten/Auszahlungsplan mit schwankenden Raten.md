@@ -25,6 +25,14 @@ Schwankende Raten sind gesetzlich angelegt: Neufestlegung „zu Stichtagen in gl
 
 Das Video verallgemeinert hier eine Depot-Eigenschaft zur Systemeigenschaft.
 
+### Negativer Cost-Average-Effekt — das Beratungsargument
+
+Der inhaltlich stärkste Punkt des Videos zur Rentenphase, und er ist **sachlich tragfähig**: Bei einem Kursrückgang während der Auszahlungsphase müssen für dieselbe Rate **mehr Fondsanteile verkauft** werden. Das zehrt das Kapital schneller auf als geplant und wirkt sich dauerhaft nachteilig auf die Rentenhöhe aus — der Cost-Average-Effekt dreht sich in der Entnahmephase ins Negative.
+
+Bei der **lebenslangen Leibrente** trägt der Versicherer dieses Risiko, beim Auszahlungsplan der Sparer.
+
+Einordnung für den Content: Das ist ein **ökonomisches Argument, keine Rechtsaussage** — im Gesetz steht dazu nichts. Es ist aber korrekt und für Beamte besonders relevant, weil der Auszahlungsplan mit 85 endet und keine Restverrentungspflicht mehr besteht (siehe [[Auszahlungsplan bis mindestens 85]]). Zusammen ergibt das das belastbarste Argument gegen das reine Standarddepot.
+
 ## Belege
 
 - Gesetz: [BGBl. 2026 I Nr. 156](https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1) — Altersvorsorgereformgesetz vom 26.05.2026

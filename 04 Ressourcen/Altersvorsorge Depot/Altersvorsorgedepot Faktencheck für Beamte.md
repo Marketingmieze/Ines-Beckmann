@@ -274,9 +274,27 @@ Ebenfalls nicht verwenden: jede **Herleitung der 6.840 Euro** (frei gesetzter Mi
 
 **Nicht zitierfähige Quellen, die bei fast jeder Suche oben stehen:** av-reform.de, vorsorgedepot-lotse.de, beamtenbros.de, versicherungsmakler.ac, zukunftsrechner.de, altersvorsorgedepot-zentrum.de, aktienrenterechner.de, tagesbriefing.de, diefinanzchecker.de, altersvorsorgedepot-anbieter-vergleich.de, pflumm.de, finanzfacts.de, pr-echo.de. Diese Seiten enthalten teilweise falsche Zahlen (Geringverdienerbonus als geltendes Recht, Bundesrat am 24.04.2026, Verkündung am 14.05.2026, „Altersvorsorgedepot kann nicht für die Immobilienfinanzierung genutzt werden").
 
-## Drei Korrekturen am eigenen Vault, bevor Content entsteht
+## Korrekturen am eigenen Vault — am 05.11.2026 umgesetzt
 
-Erstens: Die Übersichtsnotiz [[Altersvorsorge Depot]] formuliert aktuell „Relevant für fairbeamtet.de: **Beamte in Versorgungswerken**". Das ist genau die Verwechslung, die Teil B auflöst – **Beamte sind nicht in berufsständischen Versorgungswerken**. Zweitens: Dieselbe Notiz nennt als Rechtsstand „Altersvorsorgereformgesetz vom 27.03.2026"; der 27.03.2026 ist der Bundestagsbeschluss, das **Gesetz datiert vom 26.05.2026** und ist am 29.05.2026 verkündet. Drittens: Die Faktennotizen [[Garantiestufen 80 oder 100 Prozent]], [[Fünf Vertragsgestaltungen nach dem AltZertG]], [[Lebenslange Rente hängt nicht an der Produktkategorie]], [[Riester-Sockelbetrag von 60 Euro war kein Mindestbeitrag]], [[Mittelbare Förderung 175 Euro Grundzulage plus Kinderzulage]], [[Auszahlungsplan mit schwankenden Raten]], [[Reiner Förderwechsel und wohnwirtschaftliche Verwendung]], [[Vergütungsfaktor 0,5 bei 5 Jahren Stornohaftung]] und [[Vergütungsfaktor bis 0,75 bei 8 Jahren Stornohaftung]] enthalten nach diesem Faktencheck falsche oder unbelegte Aussagen und sollten um einen Korrekturhinweis mit Verweis auf diesen Report ergänzt werden.
+Dieser Abschnitt hielt ursprünglich drei offene Mängel im Vault fest. **Alle sind inzwischen behoben**, dokumentiert hier zur Nachvollziehbarkeit:
+
+1. **„Beamte in Versorgungswerken"** in der Übersichtsnotiz [[Altersvorsorge Depot]] — genau die Verwechslung, die Teil B auflöst. Ersetzt durch den korrekten Hinweis auf § 10a Abs. 1 Satz 1 Nr. 1–5 EStG, plus Warn-Callout und eigene Notiz [[Beamte sind keine Versorgungswerk-Mitglieder]].
+2. **Rechtsstand „Altersvorsorgereformgesetz vom 27.03.2026"** — der 27.03.2026 ist der Bundestagsbeschluss. Korrigiert auf **Gesetz vom 26.05.2026, verkündet 29.05.2026**; die vollständige Verfahrenskette steht in [[Verfahrensdaten des Altersvorsorgereformgesetzes]].
+3. **Neun Faktennotizen mit falschen oder unbelegten Aussagen** — alle korrigiert, teils umbenannt, teils aufgeteilt:
+
+| vorher | jetzt |
+|---|---|
+| Garantiemöglichkeit 80 oder 0 Prozent | [[Garantiestufen 80 oder 100 Prozent]] |
+| Drei förderfähige Varianten ab 2027 | [[Fünf Vertragsgestaltungen nach dem AltZertG]] |
+| Lebenslange Rente nur in der Versicherungslösung | [[Lebenslange Rente hängt nicht an der Produktkategorie]] |
+| Riester-Mindestbeitrag lag bei 60 Euro | [[Riester-Sockelbetrag von 60 Euro war kein Mindestbeitrag]] |
+| Mittelbare Förderung maximal 175 Euro | [[Mittelbare Förderung 175 Euro Grundzulage plus Kinderzulage]] |
+| Auszahlplan ist fondsgebunden | [[Auszahlungsplan mit schwankenden Raten]] |
+| Reiner Förderwechsel und wohnwirtschaftliche Verwendung | aufgeteilt in [[Reiner Förderwechsel ist Branchensprache]] und [[Wohnwirtschaftliche Verwendung ist produktneutral und optional]] |
+| Variante 3 Versicherungslösung | [[Garantieprodukt nach Paragraf 1 Abs 1 AltZertG]] |
+| Vergütungsfaktoren | [[Vergütungsfaktor 0,5 bei 5 Jahren Stornohaftung]] und [[Vergütungsfaktor bis 0,75 bei 8 Jahren Stornohaftung]], beide als WIDERLEGT markiert |
+
+Jede Faktennotiz trägt jetzt die Felder `urteil`, `fundstelle` und `geprueft`. Die Base [[AVD.base]] hat dafür die Views **„Nicht verwenden"**, **„Korrekturen am Video"** und **„Belastbar für Content"**.
 
 ---
 

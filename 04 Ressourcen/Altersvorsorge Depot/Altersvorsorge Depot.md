@@ -37,6 +37,27 @@ Legende der Urteile in der Base:
 | ⚫ | UNBELEGT | keine Quelle gefunden, **nicht verwenden** |
 | 🔵 | NEU | aus der Recherche ergänzt, stand nicht im Video |
 
+## Belegebene
+
+Drei Ebenen, von verdichtet nach roh:
+
+| Ebene | Datei | Inhalt |
+|---|---|---|
+| 1 Fakten | [[AVD.base]] | 79 Einzelfakten, filterbar, je mit Urteil und Fundstelle |
+| 2 Auswertung | [[Altersvorsorgedepot Faktencheck für Beamte]] | Faktencheck-Tabellen, Beamten-Teil, Content-Hinweise |
+| 3 Belege | `Recherche/` | wörtliche Gesetzeszitate, 426 Quellenlinks, 36 Gaps-Abschnitte |
+
+> [!warning] Vor jeder Content-Produktion lesen
+> [[Nicht zitierfähige AVD-Quellen]] — die SERPs zum AVD sind voll mit KI-generiertem Affiliate-Content, und die Entwurfsbegründung BT-Drs. 21/4088 ist bei der Kinderzulage überholt.
+
+Rohnotizen der Recherche:
+
+- [[Belege Beamte und Versorgungswerke]] — Förderberechtigung, Einwilligung, DU, Ruhensvorschriften, Besteuerung
+- [[Belege Förderlogik und Förderberechtigung]] — Zulagenstufen, Mindest- und Höchstbeitrag, Personenkreis
+- [[Belege Produktvarianten und Rentenphase]] — Vertragsgestaltungen, Kosten, Auszahlungsphase
+- [[Belege Riester-Übergang und Bestandsschutz]] — Bestandsschutz, Wechselerklärung, Wohnriester
+- [[Belege Umsetzungsstand und Vergütung]] — offene Verordnungen, Zertifizierung, Vergütung, Kritik
+
 ## Quellen
 
 **Primärquellen (führen bei Widerspruch):**
