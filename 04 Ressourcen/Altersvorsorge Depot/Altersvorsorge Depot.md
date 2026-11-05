@@ -16,6 +16,10 @@ Alle Zahlen, Daten und Fakten liegen als einzelne Notizen im Unterordner `Fakten
 
 ![[AVD.base]]
 
+## Reports
+
+- [[Altersvorsorgedepot Faktencheck für Beamte]] – Faktencheck aller 51 Video-Behauptungen gegen BGBl. 2026 I Nr. 156, BT-Drs. 21/4088 und 21/4996 sowie BMF-FAQ, plus Beamten-Besonderheiten, offene Rechtsfragen und Content-Freigaben (Stand 05.11.2026)
+
 ## Quelle
 
 - [[Transkript Altersvorsorgedepot Fonds Finanz]] – Volltranskript des Videos
@@ -50,31 +54,31 @@ Alle Zahlen, Daten und Fakten liegen als einzelne Notizen im Unterordner `Fakten
 - [[Maximale Grundzulage 540 Euro pro Jahr]]
 - [[Mindestbeitrag 120 Euro pro Jahr]]
 - [[Mittelbare Förderberechtigung über Ehe- und Lebenspartner]]
-- [[Mittelbare Förderung maximal 175 Euro pro Jahr]]
+- [[Mittelbare Förderung 175 Euro Grundzulage plus Kinderzulage]]
 - [[Mythos Geringverdienerbonus von 175 Euro]]
-- [[Riester-Mindestbeitrag lag bei 60 Euro pro Jahr]]
+- [[Riester-Sockelbetrag von 60 Euro war kein Mindestbeitrag]]
 - [[Selbstständige und Kammerberufe erstmals unmittelbar förderberechtigt]]
 
 ### Produktvarianten
 
 - [[Abschlusskosten gleichmäßig verteilt keine Zillmerung]]
 - [[BU- und Todesfallbausteine sind raus]]
-- [[Drei förderfähige Varianten ab 2027]]
+- [[Fünf Vertragsgestaltungen nach dem AltZertG]]
 - [[Effektivkosten im Standarddepot maximal 1 Prozent]]
-- [[Garantiemöglichkeit 80 oder 0 Prozent in der Versicherungslösung]]
+- [[Garantiestufen 80 oder 100 Prozent]]
 - [[Keine Einzelaktien kein Krypto kein Pflicht-Derisking]]
 - [[Kostenfreie Shifts und Switches in der Versicherungslösung]]
-- [[Lebenslange Rente nur in der Versicherungslösung]]
+- [[Lebenslange Rente hängt nicht an der Produktkategorie]]
 - [[Positivliste bis Risikoklasse 5]]
 - [[Standarddepot ist Pflichtangebot für jeden Anbieter]]
-- [[Variante 1 Altersvorsorgedepot]]
-- [[Variante 2 Standarddepot mit zwei Fonds]]
-- [[Variante 3 Versicherungslösung]]
+- [[Altersvorsorgedepot-Vertrag nach Paragraf 1 Abs 1b AltZertG]]
+- [[Standarddepot-Vertrag nach Paragraf 1 Abs 1c AltZertG]]
+- [[Garantieprodukt nach Paragraf 1 Abs 1 AltZertG]]
 
 ### Rentenphase
 
 - [[Auszahlplan bis mindestens 85]]
-- [[Auszahlplan ist fondsgebunden und unterliegt Marktschwankungen]]
+- [[Auszahlungsplan mit schwankenden Raten]]
 - [[Bis zu 30 Prozent Kapitalentnahme zu Beginn]]
 - [[Hybridrente als dritte Wahlmöglichkeit]]
 - [[Negativer Cost-Average-Effekt im Auszahlplan]]
