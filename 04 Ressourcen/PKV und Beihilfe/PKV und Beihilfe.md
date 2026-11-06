@@ -27,7 +27,7 @@ Bis heute lag dieses Wissen verstreut in Projektentwürfen und in Artikeln auf d
 
 ## Notizen
 
-Noch keine eigenen Notizen. Neue Notiz in diesem Ordner anlegen und hier eintragen.
+- [[Debeka Beitragsanpassung 2027]] — offizielle Debeka-Angaben zur Beitragsanpassung zum 1.1.2027, Quelle debeka.de/beitragsanpassung
 
 Vorgesehene erste Themen, nach Bedarf aus den Artikeln:
 
