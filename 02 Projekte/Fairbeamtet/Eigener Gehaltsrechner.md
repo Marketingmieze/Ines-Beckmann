@@ -101,6 +101,41 @@ Nach dem Vorbild des Konkurrenten (Ergebnis zuerst, dann Beratung anbieten), abe
 - **Rechtlich/fachlich**: Berechnungslogik (Besoldung, Beihilfe, PKV-Modellrechnung) muss faktengeprüft sein, YMYL-Thema. Bei Umsetzung early mit Sven/fachlicher Prüfung abstimmen, nicht nur mit SEO-Brille bauen.
 - **Daten für eigene Werte**: Welche eigenen Daten (Risikovoranfragen, Beitragsspannen) tatsächlich auswertbar und nutzbar sind, ist laut [[04 Ressourcen/Googles No. 1/Originaere Daten Tools und Experience.md|Originäre Daten, Tools und Experience]] noch offen und eine Frage an PW – vor Umsetzung klären.
 
+## Strategie: Wie wir sie wirklich abhängen, nicht nur einholen
+
+Ein einzelner Rechner reicht nur zum Gleichziehen. Um den Vorsprung tatsächlich umzudrehen, geht es um ihre strukturellen Schwächen, nicht nur um eine eigene Funktion.
+
+### 1. Nicht ihr Spielfeld betreten, sondern unseres ausbauen
+
+Sie wachsen über Besoldung/Gehalt – dort haben sie 5 Monate Vorsprung und ~130 rankende Seiten. Laut Ausblick im Wettbewerber-Steckbrief wechseln sie aber gerade erst (seit 08.11.2026) in unsere Kernthemen – DU, PKV, Diensthaftpflicht. Dort haben wir die bestehende Autorität und Content-Tiefe. Ein Rechner lohnt sich am meisten dort, wo wir schon vorn liegen und verteidigen, nicht dort, wo wir aufholen müssten. Deshalb: Beihilfe-/PKV-Lückenrechner zuerst, nicht Gehaltsrechner.
+
+### 2. Nicht ein Rechner, sondern ihre Matrix-Logik kopieren – auf unserem Thema
+
+Ihr eigentlicher Trick war nie „ein Rechner", sondern Bundesland × Beruf × Thema als System, das viele einzelne URLs erzeugt, die je ein konkretes Suchbedürfnis treffen. Übertragen auf uns: Rechner-Engine zentral bauen, aber pro Bundesland eine eigene Landingpage ausspielen. Lässt sich direkt mit der laufenden Arbeit verzahnen: Die Bundesland-Konsolidierung vom 06./07.11.2026 (siehe Monitoring-Eintrag in [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]]) hat bereits neue Bundesland-Übersichtsseiten geschaffen – der Rechner gehört dort rein, statt eine 17. parallele Struktur aufzubauen.
+
+### 3. Ihre größte Schwäche ist kein Content-, sondern ein Link-Problem
+
+DR 8, fast alle 470 verweisenden Domains sind Spam, die paar echten Links (clark.de, business-punk.com, news4teachers.de) kamen erst nach dem Anstieg, nicht als Ursache. Sie haben nie echte digitale PR gemacht. Das ist ihre verwundbarste Stelle: Wenn unser Rechner transparenter und vertrauenswürdiger ist, ist er linkwürdig. Gezielt die Medien ansprechen, die bei ihnen schon angebissen haben – ein echter Backlink von news4teachers.de wiegt mehr als ihre gesamten 470 Spam-Domains zusammen.
+
+### 4. E-E-A-T als eingebauten Vorteil, nicht nur Textbaustein
+
+Bei ihnen: 139 von 141 Artikeln vom selben Autor, Schablone, vermutlich KI-gestützt. Bei uns: echtes Beraterteam mit Namen, §34d-GewO-Expertise. Konkret im Rechner umsetzen: Jedes Ergebnis mit Verweis auf den prüfenden Berater, plus echte Erfahrungswerte aus Risikovoranfragen als Vergleichswert – das kann niemand kopieren und ist laut [[04 Ressourcen/Googles No. 1/Originaere Daten Tools und Experience.md|Originäre Daten, Tools und Experience]] die stärkste Form von Originality.
+
+### 5. Ihre Geschwindigkeit war technisch, nicht redaktionell – unsere muss es auch sein
+
+49 Artikel an einem Wochenende an neue Besoldungswerte angepasst geht nur mit einer zentralen Datenquelle, die viele Seiten speist. Wenn wir das nachbauen, aber jede Bundesland-Seite einzeln von Hand pflegen, verlieren wir den Aktualitäts-Vorteil sofort wieder. Das muss von Anfang an technisch so gebaut sein, dass eine Änderung an einer Stelle gepflegt wird und überall durchschlägt – eine Entwickler-Entscheidung vor dem ersten Mockup.
+
+### 6. Ihr Risiko (Scaled Content Abuse) nicht übernehmen
+
+42 Artikel an 2 Tagen, 100 Regionsseiten an 3 Tagen, 35 Glossarseiten an einem Tag – das Muster ist laut Googles Guidelines ein Lowest-Quality-Risiko, unabhängig von der Beweisbarkeit. Wenn wir ihre Matrix-Logik übernehmen, muss jede Bundesland-Variante echten Mehrwert haben (tatsächlich andere Beihilfesätze/Landesregeln), kein reiner Platzhalter-Tausch.
+
+### Vorgeschlagene Reihenfolge
+
+1. **MVP**: Beihilfe-Lückenrechner für 2–3 große Bundesländer (NRW, Bayern), eingebettet in die neuen Bundesland-Übersichtsseiten.
+2. **Rollout** auf alle 16 Bundesländer, sobald die zentrale Datenpflege-Logik steht.
+3. **Digitale PR** zum Launch, gezielt an die Medien, die bei der Konkurrenz schon verlinkt haben.
+4. **Monitoring**: Rechner-Traffic als eigene Zeile im Monitoring von [[02 Projekte/Fairbeamtet/Wettbewerbsanalyse.md|Wettbewerbsanalyse]] mitführen, mit 1.672 Besucher/Monat als konkreter Zielmarke.
+
 ## Nächste Schritte
 
 - [ ] Mit Sven abstimmen: Prioität und Umsetzungsweg (intern entwickeln vs. Agentur/Tool) für einen eigenen Rechner klären
