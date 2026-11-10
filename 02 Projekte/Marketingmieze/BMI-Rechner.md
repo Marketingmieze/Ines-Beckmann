@@ -40,7 +40,7 @@ Entwurf – Code wurde als fertiger HTML/CSS/JS-Block gebaut, muss noch auf der 
 - [x] Code gebaut (HTML/CSS/JS, siehe unten)
 - [ ] Code in eine neue Seite/Unterseite auf marketingmieze.com einfügen (Custom-HTML-Block)
 - [ ] Auf Mobile/Desktop testen
-- [ ] Schriften (Bricolage Grotesque für Überschriften, Inter für Fließtext) global für die ganze Domain einbinden – Blocksy-Schriftauswahl im Customizer findet "Bricolage Grotesque" nicht (vermutlich nicht in der mitgelieferten Google-Fonts-Liste des Themes enthalten). Workaround: per "Zusätzliches CSS" einbinden statt über die Typografie-Dropdown-Auswahl.
+- [x] Schriften (Bricolage Grotesque für Überschriften, Inter für Fließtext) global für die ganze Domain eingebunden. Lösung 2026-11-10: Blocksys normale Typografie-Dropdown-Suche findet Bricolage Grotesque nicht (nicht in der mitgelieferten Google-Fonts-Liste des Themes enthalten) – auch nach Update von Blocksy Companion nicht. Der richtige Weg bei Blocksy Companion Premium: **Design → Schriften → Upload**, dort die Schrift als "Custom Font" registrieren (erscheint dann unter Kategorie "Individuell"). Erst danach taucht sie im normalen Typografie-Bereich (Anpassen → Typografie) als auswählbare Option auf. Reines Durchsuchen im Typografie-Dropdown reicht nicht aus. Zusätzlich wurde unter Blocksy-Erweiterung "Lokale Google-Schriftarten" sichergestellt, dass beide Schriften selbst gehostet werden (DSGVO-konform, kein Laden von fonts.googleapis.com).
 - [ ] Später: Variante für fairbeamtet.de (PKV/Beihilfe-Kontext) ableiten
 
 ## Code
@@ -137,9 +137,6 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 </div>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:ital,opsz,wght@0,12..96,200..800;1,12..96,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 .mm-bmi-rechner {
   max-width: 1100px;
   margin: 0 auto;
@@ -500,6 +497,6 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 
 ## Hinweise zur Einbindung
 
-- Google Fonts "Bricolage Grotesque" und "Inter" werden seit 2026-11-10 direkt im Code per `@import` geladen (siehe Anfang des `<style>`-Blocks) – der Rechner ist damit unabhängig davon, ob die Theme-weite Typografie im Customizer schon auf diese Schriften umgestellt wurde.
+- Google Fonts "Bricolage Grotesque" und "Inter" sind jetzt dauerhaft und global über Blocksy eingerichtet (Design → Schriften, selbst gehostet, DSGVO-konform) – einmalig erledigt, keine wiederkehrende Aufgabe. Der Code selbst lädt deshalb keine Schriften mehr per `@import`, das wurde entfernt.
 - Farben sind fest auf die aktuelle Marketingmieze-Palette gesetzt (Pink `#D6336C`, Charcoal `#2B2730`, Senfgelb `#FFD166`). Bei späteren Farbänderungen am Branding müssen die Hex-Werte hier manuell nachgezogen werden.
 - Geschlecht wird aktuell nur erfasst, aber nicht in die Formel eingerechnet (wie beim Original – die Kategorien unterscheiden sich im Rechenweg nicht, nur im Infotext wird auf den Unterschied hingewiesen).
