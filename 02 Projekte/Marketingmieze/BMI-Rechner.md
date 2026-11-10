@@ -32,6 +32,7 @@ Entwurf – Code wurde als fertiger HTML/CSS/JS-Block gebaut, muss noch auf der 
 - Farben/Schrift: passend zum aktuellen Branding (Pink `#D6336C`, Charcoal `#2B2730`, Senfgelb `#FFD166` als Akzent, Headlines in Bricolage Grotesque, Fließtext in Inter)
 - Persönliche Geschichte (30 kg Abnahme mit Mounjaro, raus aus dem dreistelligen Bereich, verbesserte Diabetes-Werte) bewusst mit vollem Detailgrad veröffentlicht, inkl. Medikamentenname – als eigener Abschnitt über dem Rechner. Kernbotschaft: Abnehmspritze wirkt nicht ohne Ernährungsumstellung und Sport, entgegen der weitverbreiteten Annahme, es sei der einfache Weg.
 - Redesign 2026-11-10: ursprüngliche Version war zu schmal (640px) und wirkte lieblos. Jetzt breiteres Layout (max. 1100px), zweispaltiges Grid (Formular links, Ergebnis-Karte rechts, sticky beim Scrollen), Geschlecht als Pill-Toggle statt Radio-Buttons, Ergebnis mit farbiger BMI-Skala (Gauge) statt nur nackter Zahl.
+- Hero-Banner ergänzt 2026-11-10: pinke Box im Stil der Startseite, mit "BMI-Rechner" als großer kursiver Headline, Sternchen-Tagline und "Jetzt berechnen"-Button, der per Anker-Link runter zum Formular springt. Das ist ein Element innerhalb des Seiteninhalts (Custom-HTML-Block) – nicht zu verwechseln mit dem globalen Seiten-Header (Logo/Menü/Dark-Mode-Switch), der theme-seitig ohnehin automatisch auf jeder Seite erscheint.
 
 ## Nächste Schritte
 
@@ -47,12 +48,14 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 
 ```html
 <div class="mm-bmi-rechner">
-  <div class="mm-bmi-header">
-    <h2>Dein BMI. Keine Ausreden, keine Beschönigung.</h2>
-    <p class="mm-bmi-intro">Der Body-Mass-Index ist kein Urteil über dich als Mensch – nur eine Zahl aus Gewicht und Größe. Trotzdem lügt sie nicht, wenn man sie richtig liest. Trag deine Daten ein, dann siehst du, wo du stehst.</p>
+  <div class="mm-bmi-hero">
+    <h1>BMI-Rechner</h1>
+    <p class="mm-bmi-hero-tagline">★ Keine Beschönigung ★ Keine Ausreden ★ Nur deine Zahl ★</p>
+    <p class="mm-bmi-hero-intro">Der Body-Mass-Index ist kein Urteil über dich als Mensch – nur eine Zahl aus Gewicht und Größe. Trotzdem lügt sie nicht, wenn man sie richtig liest. Trag deine Daten ein, dann siehst du, wo du stehst.</p>
+    <a href="#mmBmiStart" class="mm-bmi-hero-button">Jetzt berechnen</a>
   </div>
 
-  <div class="mm-bmi-story">
+  <div class="mm-bmi-story" id="mmBmiStart">
     <h3>Warum ich hier überhaupt mitrede</h3>
     <p>Ich hab mit Mounjaro 30 Kilo abgenommen. Ja, genau die Spritze, über die gerade jeder redet. Endlich raus aus dem dreistelligen Kilobereich, und meine Diabetes-Werte haben sich seitdem massiv verbessert.</p>
     <p>Was mich wirklich nervt: wie viele Leute glauben, die Spritze allein macht den Job. Einfach pieksen und zusehen, wie die Kilos purzeln. Bullshit. Ohne Ernährungsumstellung und Sport passiert so gut wie nichts – und ja, Sport gehört dazu, nicht nur weniger essen. Den inneren Schweinehund besiegen ist zum Fick nochmal verdammt schwer, Spritze hin oder her. Die nimmt dir den Hunger, nicht die Arbeit ab.</p>
@@ -140,25 +143,53 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
   font-family: 'Inter', sans-serif;
   color: #2B2730;
 }
-.mm-bmi-header {
-  max-width: 760px;
-  margin-bottom: 32px;
+.mm-bmi-hero {
+  background: #D6336C;
+  color: #fff;
+  border-radius: 24px;
+  padding: 64px 40px;
+  margin-bottom: 40px;
+  text-align: center;
 }
-.mm-bmi-rechner h2 {
+.mm-bmi-hero h1 {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  margin: 0 0 16px 0;
+  line-height: 1;
+}
+.mm-bmi-hero-tagline {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.mm-bmi-hero-intro {
+  max-width: 560px;
+  margin: 0 auto 28px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.mm-bmi-hero-button {
+  display: inline-block;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background: #FFD166;
   color: #2B2730;
-  margin-bottom: 12px;
-  line-height: 1.1;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: transform 0.1s ease;
+}
+.mm-bmi-hero-button:hover {
+  transform: scale(1.03);
 }
 .mm-bmi-rechner h3 {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 1.3rem;
   margin-top: 0;
-}
-.mm-bmi-intro {
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 .mm-bmi-story {
   border-left: 4px solid #D6336C;
@@ -220,15 +251,19 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 }
 .mm-bmi-pill {
   display: inline-block;
-  padding: 12px 24px;
+  box-sizing: border-box;
+  padding: 10px 22px;
   border-radius: 999px;
-  border: 2px solid #2B2730;
+  border: 2px solid #ddd;
+  color: #2B2730;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 .mm-bmi-radio:checked + .mm-bmi-pill {
   background: #2B2730;
+  border-color: #2B2730;
   color: #fff;
 }
 
@@ -246,16 +281,20 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 .mm-bmi-field {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .mm-bmi-field input {
+  background: #fff !important;
+  color: #2B2730 !important;
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  padding: 12px 14px;
+  font-size: 1.15rem;
+  padding: 16px 18px;
   border: 1px solid #ddd;
   border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .mm-bmi-field input:focus {
   outline: none;
