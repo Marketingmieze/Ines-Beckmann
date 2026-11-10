@@ -24,6 +24,8 @@ In Bearbeitung – Ideenfindung, Website noch nicht online.
 
 Schreibstil frecher und direkter als fairbeamtet.de, siehe [[00 Kontext/Marketingmieze/Schreibstil.md|Schreibstil]].
 
+Geplantes Tool-Feature (eigenes Projekt): [[02 Projekte/Marketingmieze/BMI-Rechner.md|BMI-Rechner]].
+
 Inspiration/Ressourcen: [[04 Ressourcen/Social Media Wachstum/Social Media Wachstum.md|Social Media Wachstum]].
 
 ## Content-Ideen: persönlicher Blog (Rants über unehrliche Marketing-Praktiken)
