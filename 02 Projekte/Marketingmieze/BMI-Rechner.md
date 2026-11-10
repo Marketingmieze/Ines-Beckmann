@@ -40,7 +40,7 @@ Entwurf – Code wurde als fertiger HTML/CSS/JS-Block gebaut, muss noch auf der 
 - [x] Code gebaut (HTML/CSS/JS, siehe unten)
 - [ ] Code in eine neue Seite/Unterseite auf marketingmieze.com einfügen (Custom-HTML-Block)
 - [ ] Auf Mobile/Desktop testen
-- [ ] Schriften (Bricolage Grotesque für Überschriften, Inter für Fließtext) im Customizer unter "Typografie" global für die ganze Domain einbinden – noch offen
+- [ ] Schriften (Bricolage Grotesque für Überschriften, Inter für Fließtext) global für die ganze Domain einbinden – Blocksy-Schriftauswahl im Customizer findet "Bricolage Grotesque" nicht (vermutlich nicht in der mitgelieferten Google-Fonts-Liste des Themes enthalten). Workaround: per "Zusätzliches CSS" einbinden statt über die Typografie-Dropdown-Auswahl.
 - [ ] Später: Variante für fairbeamtet.de (PKV/Beihilfe-Kontext) ableiten
 
 ## Code
