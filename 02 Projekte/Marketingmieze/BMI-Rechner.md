@@ -30,6 +30,7 @@ Entwurf – Code wurde als fertiger HTML/CSS/JS-Block gebaut, muss noch auf der 
 - Technische Umsetzung: fertiger HTML/CSS/JS-Code zum Einfügen per "Custom HTML"-Block in Blocksy/Gutenberg, kein Plugin
 - Tonalität: Marketingmieze-Stil nach [[00 Kontext/Marketingmieze/Schreibstil.md|Schreibstil]] – BMI-Limitierungen direkt benennen statt neutral wegzulächeln
 - Farben/Schrift: passend zum aktuellen Branding (Pink `#D6336C`, Charcoal `#2B2730`, Senfgelb `#FFD166` als Akzent, Headlines in Bricolage Grotesque, Fließtext in Inter)
+- Persönliche Geschichte (30 kg Abnahme mit Mounjaro, raus aus dem dreistelligen Bereich, verbesserte Diabetes-Werte) bewusst mit vollem Detailgrad veröffentlicht, inkl. Medikamentenname – als eigener Abschnitt über dem Rechner. Kernbotschaft: Abnehmspritze wirkt nicht ohne Ernährungsumstellung, entgegen anderslautender Behauptungen.
 
 ## Nächste Schritte
 
@@ -47,6 +48,13 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 <div class="mm-bmi-rechner">
   <h2>Dein BMI. Keine Ausreden, keine Beschönigung.</h2>
   <p class="mm-bmi-intro">Der Body-Mass-Index ist kein Urteil über dich als Mensch – nur eine Zahl aus Gewicht und Größe. Trotzdem lügt sie nicht, wenn man sie richtig liest. Trag deine Daten ein, dann siehst du, wo du stehst.</p>
+
+  <div class="mm-bmi-story">
+    <h3>Warum ich hier überhaupt mitrede</h3>
+    <p>Ich hab mit Mounjaro 30 Kilo abgenommen. Ja, genau die Spritze, über die gerade jeder redet. Endlich raus aus dem dreistelligen Kilobereich, und meine Diabetes-Werte haben sich seitdem massiv verbessert.</p>
+    <p>Was mich wirklich nervt: wie viele Leute glauben, die Spritze allein macht den Job. Einfach pieksen und zusehen, wie die Kilos purzeln. Bullshit. Ohne Ernährungsumstellung und Sport passiert so gut wie nichts – und ja, Sport gehört dazu, nicht nur weniger essen. Den inneren Schweinehund besiegen ist zum Fick nochmal verdammt schwer, Spritze hin oder her. Die nimmt dir den Hunger, nicht die Arbeit ab.</p>
+    <p>Der Rechner hier unten ersetzt keinen Arztbesuch und erst recht keine Diagnose. Er ist einfach der ehrliche Ausgangspunkt, von dem aus ich selbst losgelegt habe – vielleicht ist er das auch für dich.</p>
+  </div>
 
   <form class="mm-bmi-form" id="mmBmiForm">
     <fieldset>
@@ -116,6 +124,24 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 .mm-bmi-intro {
   margin-bottom: 24px;
   line-height: 1.5;
+}
+.mm-bmi-story {
+  border-left: 4px solid #D6336C;
+  background: #FAF7FA;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-radius: 0 12px 12px 0;
+}
+.mm-bmi-story h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.mm-bmi-story p {
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+.mm-bmi-story p:last-child {
+  margin-bottom: 0;
 }
 .mm-bmi-form {
   display: flex;
