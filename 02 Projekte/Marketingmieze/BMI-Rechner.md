@@ -40,6 +40,7 @@ Entwurf – Code wurde als fertiger HTML/CSS/JS-Block gebaut, muss noch auf der 
 - [x] Code gebaut (HTML/CSS/JS, siehe unten)
 - [ ] Code in eine neue Seite/Unterseite auf marketingmieze.com einfügen (Custom-HTML-Block)
 - [ ] Auf Mobile/Desktop testen
+- [ ] Schriften (Bricolage Grotesque für Überschriften, Inter für Fließtext) im Customizer unter "Typografie" global für die ganze Domain einbinden – noch offen
 - [ ] Später: Variante für fairbeamtet.de (PKV/Beihilfe-Kontext) ableiten
 
 ## Code
@@ -111,7 +112,7 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
             <div class="mm-bmi-marker" id="mmBmiMarker"></div>
           </div>
           <div class="mm-bmi-gauge-labels">
-            <span>Unter</span><span>Normal</span><span>Über</span><span>Adipositas</span>
+            <span class="mm-bmi-label-unter">Unter</span><span class="mm-bmi-label-normal">Normal</span><span class="mm-bmi-label-ueber">Über</span><span class="mm-bmi-label-adipositas">Adipositas</span>
           </div>
         </div>
 
@@ -136,6 +137,9 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 </div>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:ital,opsz,wght@0,12..96,200..800;1,12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 .mm-bmi-rechner {
   max-width: 1100px;
   margin: 0 auto;
@@ -387,10 +391,28 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 }
 .mm-bmi-gauge-labels {
   display: flex;
-  justify-content: space-between;
   font-size: 0.75rem;
+  font-weight: 700;
   margin-top: 8px;
-  color: rgba(255,255,255,0.7);
+}
+.mm-bmi-gauge-labels span {
+  text-align: center;
+}
+.mm-bmi-label-unter {
+  flex: 0 0 14%;
+  color: #6FA8DC;
+}
+.mm-bmi-label-normal {
+  flex: 0 0 26%;
+  color: #6BBF8A;
+}
+.mm-bmi-label-ueber {
+  flex: 0 0 20%;
+  color: #FFD166;
+}
+.mm-bmi-label-adipositas {
+  flex: 0 0 40%;
+  color: #D6336C;
 }
 .mm-bmi-kommentar {
   font-size: 1rem;
@@ -478,6 +500,6 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 
 ## Hinweise zur Einbindung
 
-- Google Fonts "Bricolage Grotesque" und "Inter" müssen auf der Seite geladen sein (sind es vermutlich schon über die Theme-Einstellungen aus dem Branding-Update).
+- Google Fonts "Bricolage Grotesque" und "Inter" werden seit 2026-11-10 direkt im Code per `@import` geladen (siehe Anfang des `<style>`-Blocks) – der Rechner ist damit unabhängig davon, ob die Theme-weite Typografie im Customizer schon auf diese Schriften umgestellt wurde.
 - Farben sind fest auf die aktuelle Marketingmieze-Palette gesetzt (Pink `#D6336C`, Charcoal `#2B2730`, Senfgelb `#FFD166`). Bei späteren Farbänderungen am Branding müssen die Hex-Werte hier manuell nachgezogen werden.
 - Geschlecht wird aktuell nur erfasst, aber nicht in die Formel eingerechnet (wie beim Original – die Kategorien unterscheiden sich im Rechenweg nicht, nur im Infotext wird auf den Unterschied hingewiesen).
