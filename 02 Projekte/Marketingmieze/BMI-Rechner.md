@@ -30,7 +30,8 @@ Entwurf – Code wurde als fertiger HTML/CSS/JS-Block gebaut, muss noch auf der 
 - Technische Umsetzung: fertiger HTML/CSS/JS-Code zum Einfügen per "Custom HTML"-Block in Blocksy/Gutenberg, kein Plugin
 - Tonalität: Marketingmieze-Stil nach [[00 Kontext/Marketingmieze/Schreibstil.md|Schreibstil]] – BMI-Limitierungen direkt benennen statt neutral wegzulächeln
 - Farben/Schrift: passend zum aktuellen Branding (Pink `#D6336C`, Charcoal `#2B2730`, Senfgelb `#FFD166` als Akzent, Headlines in Bricolage Grotesque, Fließtext in Inter)
-- Persönliche Geschichte (30 kg Abnahme mit Mounjaro, raus aus dem dreistelligen Bereich, verbesserte Diabetes-Werte) bewusst mit vollem Detailgrad veröffentlicht, inkl. Medikamentenname – als eigener Abschnitt über dem Rechner. Kernbotschaft: Abnehmspritze wirkt nicht ohne Ernährungsumstellung, entgegen anderslautender Behauptungen.
+- Persönliche Geschichte (30 kg Abnahme mit Mounjaro, raus aus dem dreistelligen Bereich, verbesserte Diabetes-Werte) bewusst mit vollem Detailgrad veröffentlicht, inkl. Medikamentenname – als eigener Abschnitt über dem Rechner. Kernbotschaft: Abnehmspritze wirkt nicht ohne Ernährungsumstellung und Sport, entgegen der weitverbreiteten Annahme, es sei der einfache Weg.
+- Redesign 2026-11-10: ursprüngliche Version war zu schmal (640px) und wirkte lieblos. Jetzt breiteres Layout (max. 1100px), zweispaltiges Grid (Formular links, Ergebnis-Karte rechts, sticky beim Scrollen), Geschlecht als Pill-Toggle statt Radio-Buttons, Ergebnis mit farbiger BMI-Skala (Gauge) statt nur nackter Zahl.
 
 ## Nächste Schritte
 
@@ -46,8 +47,10 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 
 ```html
 <div class="mm-bmi-rechner">
-  <h2>Dein BMI. Keine Ausreden, keine Beschönigung.</h2>
-  <p class="mm-bmi-intro">Der Body-Mass-Index ist kein Urteil über dich als Mensch – nur eine Zahl aus Gewicht und Größe. Trotzdem lügt sie nicht, wenn man sie richtig liest. Trag deine Daten ein, dann siehst du, wo du stehst.</p>
+  <div class="mm-bmi-header">
+    <h2>Dein BMI. Keine Ausreden, keine Beschönigung.</h2>
+    <p class="mm-bmi-intro">Der Body-Mass-Index ist kein Urteil über dich als Mensch – nur eine Zahl aus Gewicht und Größe. Trotzdem lügt sie nicht, wenn man sie richtig liest. Trag deine Daten ein, dann siehst du, wo du stehst.</p>
+  </div>
 
   <div class="mm-bmi-story">
     <h3>Warum ich hier überhaupt mitrede</h3>
@@ -56,35 +59,62 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
     <p>Der Rechner hier unten ersetzt keinen Arztbesuch und erst recht keine Diagnose. Er ist einfach der ehrliche Ausgangspunkt, von dem aus ich selbst losgelegt habe – vielleicht ist er das auch für dich.</p>
   </div>
 
-  <form class="mm-bmi-form" id="mmBmiForm">
-    <fieldset>
-      <legend>Geschlecht</legend>
-      <label><input type="radio" name="geschlecht" value="weiblich" checked> Weiblich</label>
-      <label><input type="radio" name="geschlecht" value="maennlich"> Männlich</label>
-    </fieldset>
+  <div class="mm-bmi-grid">
+    <div class="mm-bmi-form-card">
+      <form id="mmBmiForm">
+        <div class="mm-bmi-gender">
+          <input type="radio" id="mmGeschlechtW" name="geschlecht" value="weiblich" class="mm-bmi-radio" checked>
+          <label for="mmGeschlechtW" class="mm-bmi-pill">Weiblich</label>
+          <input type="radio" id="mmGeschlechtM" name="geschlecht" value="maennlich" class="mm-bmi-radio">
+          <label for="mmGeschlechtM" class="mm-bmi-pill">Männlich</label>
+        </div>
 
-    <label class="mm-bmi-field">
-      Alter in Jahren
-      <input type="number" id="mmAlter" min="1" max="120" required>
-    </label>
+        <div class="mm-bmi-fields">
+          <label class="mm-bmi-field">
+            Alter in Jahren
+            <input type="number" id="mmAlter" min="1" max="120" required>
+          </label>
 
-    <label class="mm-bmi-field">
-      Körpergröße in cm
-      <input type="number" id="mmGroesse" min="50" max="250" required>
-    </label>
+          <label class="mm-bmi-field">
+            Größe in cm
+            <input type="number" id="mmGroesse" min="50" max="250" required>
+          </label>
 
-    <label class="mm-bmi-field">
-      Körpergewicht in kg
-      <input type="number" id="mmGewicht" min="20" max="400" step="0.1" required>
-    </label>
+          <label class="mm-bmi-field">
+            Gewicht in kg
+            <input type="number" id="mmGewicht" min="20" max="400" step="0.1" required>
+          </label>
+        </div>
 
-    <button type="submit" class="mm-bmi-button">Berechnen</button>
-  </form>
+        <button type="submit" class="mm-bmi-button">Berechnen</button>
+      </form>
+    </div>
 
-  <div class="mm-bmi-result" id="mmBmiResult" hidden>
-    <div class="mm-bmi-number"><span id="mmBmiValue">0</span></div>
-    <div class="mm-bmi-kategorie" id="mmBmiKategorie"></div>
-    <p class="mm-bmi-kommentar" id="mmBmiKommentar"></p>
+    <div class="mm-bmi-result-card">
+      <div class="mm-bmi-placeholder" id="mmBmiPlaceholder">
+        <p>Trag links deine Werte ein. Hier erscheint die Wahrheit – ohne Weichspüler.</p>
+      </div>
+
+      <div class="mm-bmi-result" id="mmBmiResult" hidden>
+        <div class="mm-bmi-number"><span id="mmBmiValue">0</span></div>
+        <div class="mm-bmi-kategorie" id="mmBmiKategorie"></div>
+
+        <div class="mm-bmi-gauge">
+          <div class="mm-bmi-gauge-track">
+            <span class="mm-bmi-segment mm-bmi-segment-unter"></span>
+            <span class="mm-bmi-segment mm-bmi-segment-normal"></span>
+            <span class="mm-bmi-segment mm-bmi-segment-ueber"></span>
+            <span class="mm-bmi-segment mm-bmi-segment-adipositas"></span>
+            <div class="mm-bmi-marker" id="mmBmiMarker"></div>
+          </div>
+          <div class="mm-bmi-gauge-labels">
+            <span>Unter</span><span>Normal</span><span>Über</span><span>Adipositas</span>
+          </div>
+        </div>
+
+        <p class="mm-bmi-kommentar" id="mmBmiKommentar"></p>
+      </div>
+    </div>
   </div>
 
   <div class="mm-bmi-infobox">
@@ -104,17 +134,22 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 
 <style>
 .mm-bmi-rechner {
-  max-width: 640px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 48px 24px;
   font-family: 'Inter', sans-serif;
   color: #2B2730;
 }
+.mm-bmi-header {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
 .mm-bmi-rechner h2 {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
   color: #2B2730;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  line-height: 1.1;
 }
 .mm-bmi-rechner h3 {
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -122,19 +157,16 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
   margin-top: 0;
 }
 .mm-bmi-intro {
-  margin-bottom: 24px;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 .mm-bmi-story {
   border-left: 4px solid #D6336C;
   background: #FAF7FA;
-  padding: 16px 20px;
-  margin-bottom: 24px;
-  border-radius: 0 12px 12px 0;
-}
-.mm-bmi-story h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  border-radius: 0 16px 16px 0;
+  max-width: 820px;
 }
 .mm-bmi-story p {
   line-height: 1.6;
@@ -143,66 +175,123 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 .mm-bmi-story p:last-child {
   margin-bottom: 0;
 }
-.mm-bmi-form {
+
+.mm-bmi-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+@media (max-width: 860px) {
+  .mm-bmi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mm-bmi-form-card,
+.mm-bmi-result-card {
+  background: #fff;
+  border: 1px solid rgba(43,39,48,0.08);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 16px 40px rgba(43,39,48,0.08);
+}
+.mm-bmi-result-card {
+  position: sticky;
+  top: 24px;
+  background: #2B2730;
+  color: #fff;
+  min-height: 260px;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background: #FAF7FA;
-  padding: 24px;
-  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mm-bmi-gender {
+  display: flex;
+  gap: 12px;
   margin-bottom: 24px;
 }
-.mm-bmi-form fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 24px;
+.mm-bmi-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
-.mm-bmi-form fieldset legend {
+.mm-bmi-pill {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 2px solid #2B2730;
   font-weight: 600;
-  margin-bottom: 8px;
-  width: 100%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.mm-bmi-radio:checked + .mm-bmi-pill {
+  background: #2B2730;
+  color: #fff;
+}
+
+.mm-bmi-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (max-width: 560px) {
+  .mm-bmi-fields {
+    grid-template-columns: 1fr;
+  }
 }
 .mm-bmi-field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   font-weight: 600;
+  font-size: 0.95rem;
 }
 .mm-bmi-field input {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-  padding: 10px 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
+.mm-bmi-field input:focus {
+  outline: none;
+  border-color: #D6336C;
+}
+
 .mm-bmi-button {
   font-family: 'Bricolage Grotesque', sans-serif;
   background: #FFD166;
   color: #2B2730;
   border: none;
   border-radius: 999px;
-  padding: 14px 24px;
+  padding: 16px 28px;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
+  width: 100%;
   transition: transform 0.1s ease;
 }
 .mm-bmi-button:hover {
-  transform: scale(1.02);
+  transform: scale(1.015);
+}
+
+.mm-bmi-placeholder {
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
 }
 .mm-bmi-result {
   text-align: center;
-  background: #D6336C;
-  color: #fff;
-  padding: 32px 24px;
-  border-radius: 12px;
-  margin-bottom: 24px;
+  width: 100%;
 }
 .mm-bmi-number {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -212,17 +301,68 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
   margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: #FFD166;
+}
+.mm-bmi-gauge {
+  margin: 24px 0;
+}
+.mm-bmi-gauge-track {
+  position: relative;
+  display: flex;
+  height: 12px;
+  border-radius: 999px;
+  overflow: visible;
+}
+.mm-bmi-segment {
+  display: block;
+  height: 100%;
+}
+.mm-bmi-segment-unter {
+  flex: 0 0 14%;
+  background: #6FA8DC;
+  border-radius: 999px 0 0 999px;
+}
+.mm-bmi-segment-normal {
+  flex: 0 0 26%;
+  background: #6BBF8A;
+}
+.mm-bmi-segment-ueber {
+  flex: 0 0 20%;
+  background: #FFD166;
+}
+.mm-bmi-segment-adipositas {
+  flex: 0 0 40%;
+  background: #D6336C;
+  border-radius: 0 999px 999px 0;
+}
+.mm-bmi-marker {
+  position: absolute;
+  top: -6px;
+  left: 0%;
+  width: 4px;
+  height: 24px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #2B2730;
+  transition: left 0.4s ease;
+}
+.mm-bmi-gauge-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-top: 8px;
+  color: rgba(255,255,255,0.7);
 }
 .mm-bmi-kommentar {
-  margin-top: 12px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.9);
 }
+
 .mm-bmi-infobox {
-  background: #2B2730;
-  color: #fff;
-  padding: 24px;
-  border-radius: 12px;
+  background: #FAF7FA;
+  padding: 32px;
+  border-radius: 20px;
   line-height: 1.6;
 }
 .mm-bmi-infobox ul {
@@ -233,10 +373,20 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
 <script>
 (function() {
   var form = document.getElementById('mmBmiForm');
+  var placeholder = document.getElementById('mmBmiPlaceholder');
   var result = document.getElementById('mmBmiResult');
   var valueEl = document.getElementById('mmBmiValue');
   var kategorieEl = document.getElementById('mmBmiKategorie');
   var kommentarEl = document.getElementById('mmBmiKommentar');
+  var markerEl = document.getElementById('mmBmiMarker');
+
+  function markerPosition(bmi) {
+    var min = 15, max = 40;
+    var pct = (bmi - min) / (max - min) * 100;
+    if (pct < 0) pct = 0;
+    if (pct > 100) pct = 100;
+    return pct;
+  }
 
   function kategorisieren(bmi) {
     if (bmi < 18.5) {
@@ -278,8 +428,10 @@ Fertiger, eigenständiger Block (HTML + CSS + JS in einem) – einfach komplett 
     valueEl.textContent = bmi.toFixed(1);
     kategorieEl.textContent = kategorie.label;
     kommentarEl.textContent = kategorie.text;
+    markerEl.style.left = markerPosition(bmi) + '%';
+
+    placeholder.hidden = true;
     result.hidden = false;
-    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
 })();
 </script>
