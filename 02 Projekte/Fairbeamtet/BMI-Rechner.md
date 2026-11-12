@@ -14,13 +14,13 @@ Herkunft der Idee: ursprünglich für marketingmieze.com gebaut (siehe [[02 Proj
 
 ## Status
 
-Entwurf – noch nicht mit Sven abgestimmt. Fachliche Zahlen (BMI-Schwellenwerte, Risikozuschläge) stammen aus Sekundärquellen (Vergleichsportale), nicht aus Primärquellen. **Vor Veröffentlichung: Faktencheck mit Sven/fachliche Prüfung zwingend**, siehe Rangfolge in [[04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md|Voice Profile]] Punkt 1 (fachliche Richtigkeit schlägt alles andere).
+Entwurf – noch nicht mit Sven abgestimmt. Fachliche Zahlen (BMI-Schwellenwerte, Risikozuschläge) sind seit 2026-11-12 auf den **bestehenden Hausartikel** [Private Krankenversicherung mit Übergewicht](https://www.fairbeamtet.de/private-krankenversicherung-mit-uebergewicht/) umgestellt, nicht mehr auf die ursprünglichen externen Sekundärquellen (siehe "Rechercheergebnis, Version 2" unten). Trotzdem **vor Veröffentlichung: Abgleich mit Sven zwingend** – auch Hausartikel-Zahlen haben laut dessen eigener Fußnote ein "ohne Gewähr, Annahmerichtlinien ändern sich laufend", siehe Rangfolge in [[04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md|Voice Profile]] Punkt 1 (fachliche Richtigkeit schlägt alles andere).
 
 ## Autor/Stimme
 
 Sven Höhne, Ich-Form, 26 Jahre Erfahrung (laut Voice Profile Abschnitt 2 die Zahl, die er selbst nutzt).
 
-## Rechercheergebnis (2026-11-12, Sekundärquellen, nicht primärquellengeprüft)
+## Rechercheergebnis, Version 1 (2026-11-12, Sekundärquellen – ÜBERHOLT, siehe Version 2)
 
 - Unter BMI 30: in der Regel kein Zuschlag wegen Gewichts allein.
 - Ab BMI 30 (Adipositas Grad I): praktisch alle Versicherer verlangen einen Risikozuschlag, grob 10–40/50 % auf den Grundbeitrag, je nach Versicherer.
@@ -28,13 +28,42 @@ Sven Höhne, Ich-Form, 26 Jahre Erfahrung (laut Voice Profile Abschnitt 2 die Za
 - Ab BMI 40: meist Ablehnung.
 - Schwellenwerte unterscheiden sich je Versicherer teils deutlich (Beispiel aus der Recherche: Signal Iduna bereits ab BMI 25, Alte Oldenburger/Barmenia erst ab 30).
 
-Quellen (Sekundärquellen, Stand der Recherche 12.11.2026, vor Veröffentlichung mit Primärquellen/Sven abgleichen):
+Quellen (Sekundärquellen, Stand der Recherche 12.11.2026):
 - [KVoptimal.de – Trotz Übergewicht eine PKV finden](https://kvoptimal.de/blog/private-krankenversicherung/trotz-uebergewicht-eine-pkv-finden/)
 - [covago.de – PKV mit Übergewicht](https://covago.de/pkv-mit-uebergewicht/)
 - [covago.de – Risikozuschlag PKV Übergewicht](https://covago.de/risikozuschlag-pkv-uebergewicht/)
 - [pkvmitplan.de – PKV mit Übergewicht](https://pkvmitplan.de/vorerkrankungen/pkv-mit-uebergewicht/)
 - [elbland-finanz.de – PKV trotz Übergewicht](https://elbland-finanz.de/pkv-trotz-uebergewicht/)
 - [pkvmitsystem.com – PKV trotz Übergewicht](https://pkvmitsystem.com/pkv-uebergewicht/)
+
+## Rechercheergebnis, Version 2 (2026-11-12) – ERSETZT Version 1, auf Basis des eigenen Hausartikels
+
+**Wichtigster Fund:** fairbeamtet.de hat bereits einen ausführlichen, primärquellenbasierten Artikel zum Thema: [Private Krankenversicherung mit Übergewicht](https://www.fairbeamtet.de/private-krankenversicherung-mit-uebergewicht/) (Autor laut Byline: Michael Buchholz). Der Artikel enthält konkretere, genauere Zahlen als meine Sekundärquellen-Recherche von Version 1 – diese Hausangaben haben Vorrang (Rangfolge Voice Profile Punkt 1: fachliche Richtigkeit, eigene Primärrecherche schlägt fremde Blogs).
+
+**Relevant für den Rechner, direkt aus dem Hausartikel zitiert:**
+- Debeka: ab BMI 30 → 30 % Risikozuschlag. Ab BMI 35 sehr schwierig. Ab BMI 40 grundsätzliche Ablehnung.
+- Andere, strengere Versicherer verlangen bereits **ab BMI 28** Zuschläge, mit folgender Staffelung: **BMI 28 → 10 %, BMI 29 → 20 %, BMI 30 → 30 %**.
+- BMI 34–40: nur noch 2–3 Versicherer prüfen überhaupt einen Antrag, und nur mit positivem Gesundheitsbericht vom Hausarzt (keine weiteren Risikofaktoren, Normwerte bei Blutdruck/Blutzucker).
+- Ablehnung meist ab BMI 33–35, bei Folgeerkrankungen (Rücken, Knie, Bluthochdruck, Diabetes) auch früher.
+- Ab BMI 40: praktisch nur noch über die **Öffnungsklausel für Beamte** möglich – Angestellte und Selbstständige haben diese Option nicht.
+- Fußnote im Original: Annahmerichtlinien ändern sich laufend, Angaben ohne Gewähr, Stand der damaligen Recherche von fairbeamtet.de.
+- Der Artikel verlinkt aktuell auf den **externen Edeka-BMI-Rechner** und erwähnt an anderer Stelle einen eigenen "BMI-Rechner", der bisher nicht existiert – unser Tool löst dieses offene Versprechen ein, siehe Abschnitt "Uniqueness" unten.
+
+**Was das für den Rechner-Code bedeutet:** Kategorien, Stat-Kacheln und Infobox-Text müssen auf diese Zahlen umgestellt werden (Schwelle bei 28 statt 30 als erste Zuschlag-Stufe, konkrete Staffelung 10/20/30 %, Debeka als Beispiel, Öffnungsklausel-Hinweis bei BMI 40). Umsetzung siehe Code unten.
+
+## Uniqueness-Check: Was macht unseren Rechner besser als die Konkurrenz?
+
+Recherchiert 2026-11-12. Ergebnis: **Ja, besser, wenn er die Hausartikel-Zahlen nutzt – nicht automatisch nur durch "ein Tool haben".**
+
+- **versicherung-rechner.de ("BMI-Check PKV")**: bettet nur ein fremdes, generisches Iframe (bmi-online.info) ein. Kein PKV-Bezug im Tool selbst, nur Fließtext drumherum, keine Kategorisierung nach Zuschlagstufen. Schwach – unser Gauge-Rechner mit PKV-Kategorien ist dem bereits konzeptionell überlegen.
+- **covago.de, pkvmitplan.de, elbland-finanz.de**: reine Ratgeber-Artikel mit Text, kein interaktiver Rechner gefunden.
+- **Eigener Artikel von fairbeamtet.de**: bisher nur Text + Verweis auf fremden Edeka-Rechner, kein eigenes Tool, obwohl der Text eines ankündigt.
+
+**Die eigentliche Unique-Chance liegt nicht im Rechnen selbst** (jeder kann Gewicht durch Größe² teilen), **sondern in der Verknüpfung mit echten Versicherer-Staffelungen und dem eigenen Angebot:**
+1. Konkrete Versicherer-Beispiele (Debeka-Staffelung) direkt im Ergebnis, nicht nur abstrakte WHO-Kategorien – das hat kein Konkurrent in einem Rechner, nur fairbeamtet selbst im Fließtext.
+2. Direkter Link zum ausführlichen Hausartikel für alle, die tiefer einsteigen wollen (Kinder/Jugendliche, Amtsarzt-Rechtsprechung, Ursachen) – interner Link statt Sackgasse.
+3. CTA zur anonymen Risikovoranfrage statt nur "mehr lesen" – deckt sich mit dem eigenen USP aus [[00 Kontext/Fairbeamtet/Angebot.md|Angebot]].
+4. Später denkbar, aber noch nicht umgesetzt: echte anonymisierte Erfahrungswerte aus eigenen Risikovoranfragen statt nur Debeka als Einzelbeispiel (siehe "Eigene Daten einfließen lassen" in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]]) – das könnte kein Wettbewerber kopieren.
 
 ## Einordnung zum eigenen Angebot
 
@@ -99,16 +128,16 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 
   <div class="fb-bmi-stat-row">
     <div class="fb-bmi-stat-tile">
-      <div class="fb-bmi-stat-number">&lt;30</div>
-      <p>Bis hierhin verlangt praktisch kein Versicherer einen Zuschlag wegen des Gewichts allein.</p>
+      <div class="fb-bmi-stat-number">AB 28</div>
+      <p>Strengere Versicherer verlangen schon ab diesem BMI die ersten Risikozuschläge.</p>
     </div>
     <div class="fb-bmi-stat-tile fb-bmi-stat-tile-accent">
-      <div class="fb-bmi-stat-number">10&ndash;40%</div>
-      <p>Grober Risikozuschlag, den die meisten Versicherer ab BMI 30 auf den Beitrag aufschlagen.</p>
+      <div class="fb-bmi-stat-number">10&ndash;30%</div>
+      <p>Typische Staffelung: BMI 28 rund 10 %, BMI 29 rund 20 %, BMI 30 rund 30 % Zuschlag, zum Beispiel bei der Debeka.</p>
     </div>
     <div class="fb-bmi-stat-tile">
-      <div class="fb-bmi-stat-number">&ge;40</div>
-      <p>Ab diesem Wert wird eine Aufnahme bei den meisten Versicherern eng.</p>
+      <div class="fb-bmi-stat-number">AB 40</div>
+      <p>Hier bleibt dir als Beamter meist nur noch die Öffnungsklausel. Angestellte und Selbstständige haben diese Option nicht.</p>
     </div>
   </div>
 
@@ -154,7 +183,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
             <div class="fb-bmi-marker" id="fbBmiMarker"></div>
           </div>
           <div class="fb-bmi-gauge-labels">
-            <span class="fb-bmi-label-unter">Unter</span><span class="fb-bmi-label-normal">Normal</span><span class="fb-bmi-label-ueber">Über</span><span class="fb-bmi-label-adipositas">Ab hier Zuschlag</span>
+            <span class="fb-bmi-label-unter">Untergewicht: recherchieren</span><span class="fb-bmi-label-normal">Normal: kein Zuschlag</span><span class="fb-bmi-label-ueber">Zuschlag möglich</span><span class="fb-bmi-label-adipositas">Ab hier Zuschlag</span>
           </div>
         </div>
 
@@ -167,9 +196,11 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
     <h2>So rechnet sich dein BMI, und das bedeutet er für deine PKV</h2>
     <p>Der BMI teilt dein Gewicht in Kilogramm durch deine Größe in Metern zum Quadrat. Mehr steckt rechnerisch nicht dahinter. Für Versicherer ist er trotzdem der erste Blick, bevor sie genauer hinschauen: Vorerkrankungen, Blutwerte, dein Lebensstil.</p>
 
-    <p>Unter BMI 30 prüfen Versicherer dein Gewicht meist ohne Zuschlag. Ab 30 kalkulieren fast alle einen Risikozuschlag ein, je nach Versicherer zwischen 10 und 50 Prozent auf deinen Beitrag. Ab 35 lehnen einige Versicherer ab. Ab 40 wird es für die meisten eng.</p>
+    <p>Strengere Versicherer verlangen schon ab BMI 28 einen Zuschlag, mit einer Staffelung von ungefähr 10 Prozent bei 28, 20 Prozent bei 29 und 30 Prozent bei 30. Bei der Debeka zum Beispiel gilt ab BMI 30 ein fester Zuschlag von 30 Prozent, ab 35 wird es sehr schwierig, ab 40 lehnt sie grundsätzlich ab.</p>
 
-    <p>Wichtig: Jeder Versicherer zieht die Grenze anders. Die Signal Iduna schaut schon ab 25 genauer hin. Die Alte Oldenburger und die Barmenia erst ab 30. Die Zahlen hier sind Richtwerte, keine Zusage für deinen Fall.</p>
+    <p>Zwischen BMI 34 und 40 prüfen nach unserer Erfahrung nur noch 2 bis 3 Versicherer überhaupt einen Antrag, und nur mit einem guten Gesundheitsbericht vom Hausarzt. Ab BMI 40 bleibt dir als Beamter meist nur noch die Öffnungsklausel. Angestellte und Selbstständige haben diese Möglichkeit nicht.</p>
+
+    <p>Wichtig: Annahmerichtlinien ändern sich laufend und jeder Versicherer entscheidet anders. Die Zahlen hier sind Richtwerte, keine Zusage für deinen Fall. Mehr Hintergrund, auch zu Kindern/Jugendlichen und zur Verbeamtung trotz Übergewicht, findest du in unserem ausführlichen Artikel <a href="https://www.fairbeamtet.de/private-krankenversicherung-mit-uebergewicht/">Private Krankenversicherung mit Übergewicht</a>.</p>
 
   </div>
 
@@ -581,17 +612,19 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 
   function kategorisieren(bmi) {
     if (bmi < 18.5) {
-      return { label: 'Untergewicht', text: 'Dein BMI liegt unter dem Normalbereich. Das löst bei den meisten Versicherern keinen Zuschlag aus, kann aber Rückfragen zur Ursache nach sich ziehen.' };
+      return { label: 'Untergewicht', text: 'Dein BMI liegt unter dem Normalbereich. Das löst selten einen Zuschlag aus, aber der Versicherer fragt meist nach der Ursache. Dazu lohnt sich eine eigene Recherche oder ein Gespräch mit uns.' };
     } else if (bmi < 25) {
-      return { label: 'Normalgewicht', text: 'Dein BMI liegt im unauffälligen Bereich. Versicherer verlangen hier in der Regel keinen BMI-bedingten Zuschlag.' };
+      return { label: 'Normalgewicht', text: 'Dein BMI liegt im unauffälligen Bereich. Versicherer verlangen hier keinen BMI-bedingten Zuschlag.' };
+    } else if (bmi < 28) {
+      return { label: 'Übergewicht, noch unter der Zuschlagsgrenze', text: 'Bei den meisten Versicherern kommt hier noch kein Zuschlag. Die strengsten Anbieter schauen ab BMI 28 genauer hin.' };
     } else if (bmi < 30) {
-      return { label: 'Übergewicht', text: 'Noch kein automatischer Zuschlag bei den meisten Versicherern. Einzelne, zum Beispiel die Signal Iduna, schauen schon ab 25 genauer hin.' };
+      return { label: 'Zuschlag möglich', text: 'Strengere Versicherer kalkulieren hier bereits einen Zuschlag ein, grob 10 bis 20 Prozent, je nach BMI und Versicherer. Andere warten bis BMI 30.' };
     } else if (bmi < 35) {
-      return { label: 'Ab hier Zuschlag wahrscheinlich', text: 'Ab BMI 30 kalkulieren fast alle Versicherer einen Risikozuschlag ein, grob 10 bis 40 Prozent auf deinen Beitrag, je nach Versicherer.' };
+      return { label: 'Zuschlag so gut wie sicher', text: 'Ab hier verlangt praktisch jeder Versicherer einen Zuschlag, bei der Debeka zum Beispiel 30 Prozent. Eine anonyme Risikovoranfrage zeigt dir die echten Konditionen.' };
     } else if (bmi < 40) {
-      return { label: 'Zuschlag oder Ablehnung möglich', text: 'In diesem Bereich lehnen einzelne Versicherer bereits ab. Andere verlangen einen höheren Zuschlag. Eine anonyme Risikovoranfrage zeigt dir, wo du stehst.' };
+      return { label: 'Nur noch wenige Versicherer', text: 'In diesem Bereich prüfen nach unserer Erfahrung nur noch 2 bis 3 Versicherer überhaupt einen Antrag, und nur mit einem guten Gesundheitsbericht vom Hausarzt. Eine anonyme Risikovoranfrage zeigt dir, wer infrage kommt.' };
     } else {
-      return { label: 'Für die meisten Versicherer eng', text: 'Ab BMI 40 wird es für die meisten Versicherer eng. Eine anonyme Risikovoranfrage zeigt dir trotzdem, welche Versicherer dich zu welchen Konditionen nehmen.' };
+      return { label: 'Meist nur über die Öffnungsklausel', text: 'Ab BMI 40 bleibt dir als Beamter meist nur noch die Öffnungsklausel. Angestellte und Selbstständige haben diese Möglichkeit nicht. Lass uns deine Optionen anonym klären.' };
     }
   }
 
