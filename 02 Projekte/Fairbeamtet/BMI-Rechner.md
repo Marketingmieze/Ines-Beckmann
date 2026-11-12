@@ -55,9 +55,18 @@ Ines hat eine Referenz-Landingpage (PDF in 01 Inbox) mitgebracht: große, fette,
 - Hero: dunkles Navy (`#0B1E33`, aus Schwarz + Markenblau gemischt, näher am Vorbild als reines `#1A1A1A`), großes verblasstes "BMI"-Wasserzeichen im Hintergrund, Pfeil-Button runter zum Formular.
 - Neue Stat-Kachel-Reihe direkt unter dem Hero (analog zu den "14,7 Mio. / 120 € / 540 €"-Kacheln im Vorbild): drei Kernzahlen aus der Recherche, mittlere/rechte Kachel in Pink/Magenta hervorgehoben.
 - Ergebnis-Karte umgebaut zur großen Stat-Kachel mit riesiger Anton-Zahl statt nur mittelgroßer Zahl.
-- Abschluss-Bereich als Ansprechpartner-Karte für Sven (Foto-Platzhalter, Name, Kontakt), analog zur "Dominik Brandt"-Karte im Vorbild, statt nur Fließtext + Button.
+- Abschluss-Bereich als Ansprechpartner-Karte, analog zur "Dominik Brandt"-Karte im Vorbild, statt nur Fließtext + Button.
 
 **Wichtig, aus der Marketingmieze-Erfahrung übernommen:** Der Code lädt "Anton" aktuell per `@import` direkt von `fonts.googleapis.com` – das ist für den Entwurf zum Vorschlagen okay, aber **vor einem echten Go-Live DSGVO-technisch nicht sauber** (siehe die ganze Schriften-Odyssee bei marketingmieze.com). Vor Veröffentlichung muss die Schrift genauso selbst gehostet werden wie dort am Ende gelöst.
+
+### Korrekturen nach erstem Praxistest (2026-11-12)
+
+Ines hat den ersten Entwurf live angeschaut, vier Korrekturen:
+
+1. **Hero-Text war unlesbar.** Die H1 und der Intro-Absatz haben die weiße Schriftfarbe nicht geerbt (vermutlich Theme-CSS mit höherer Spezifität, derselbe Bug-Typ wie bei der ganzen Schriften-Odyssee auf marketingmieze.com). Jetzt mit `!important` fest auf Weiß gesetzt.
+2. **Mythos-Zitat-Box komplett entfernt.** Ines wollte "nichts als Zitat" – die Kernaussage steckt eh schon in der ersten Stat-Kachel ("<30 kein Zuschlag"), keine Doppelung nötig.
+3. **Formular- und Ergebnis-Karte stehen jetzt untereinander statt nebeneinander**, beide auf voller Breite. Die Ergebnis-Karte hat dadurch deutlich mehr Platz (größere Zahl, breitere Gauge).
+4. **Kontaktkarte zeigt jetzt das ganze PKV-/DU-Team statt nur Sven.** Drei überlappende Platzhalter-Kreise statt einem Einzelfoto, Text auf "wir" umgestellt. Bei Bedarf später durch echte Fotos aus [[00 Kontext/Fairbeamtet/Team.md|Team]] ersetzen (Michael Buchholz, Sven Höhne, Christian Beine, Elenor Habtezghi, Luisa Bensmaya, Nicole Scheller, Sebastian Gottschalk für PKV; Dennis Kaspers, Sven Dottermann für BU/DU).
 
 ## Nächste Schritte
 
@@ -97,11 +106,6 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
       <div class="fb-bmi-stat-number">&ge;40</div>
       <p>Ab diesem Wert wird eine Aufnahme bei den meisten Versicherern eng.</p>
     </div>
-  </div>
-
-  <div class="fb-bmi-mythos">
-    <p>&bdquo;Ein hoher BMI bedeutet immer eine Ablehnung.&ldquo;</p>
-    <p>Bis BMI 30 verlangt praktisch kein Versicherer einen Zuschlag wegen des Gewichts allein. Erst danach wird es ernst.</p>
   </div>
 
   <div class="fb-bmi-grid">
@@ -166,11 +170,15 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   </div>
 
   <div class="fb-bmi-contact-card">
-    <div class="fb-bmi-contact-photo" aria-hidden="true"></div>
+    <div class="fb-bmi-contact-photos" aria-hidden="true">
+      <div class="fb-bmi-contact-photo"></div>
+      <div class="fb-bmi-contact-photo"></div>
+      <div class="fb-bmi-contact-photo"></div>
+    </div>
     <div class="fb-bmi-contact-text">
-      <p class="fb-bmi-contact-label">DEIN ANSPRECHPARTNER</p>
-      <h2>Sven Höhne</h2>
-      <p>Willst du wissen, was dein BMI bei einem konkreten Versicherer tatsächlich bedeutet? Dann frag ich das für dich anonym an. Du bekommst eine echte Antwort, ohne dass irgendwo dein Name auftaucht und ohne dass du dich festlegst.</p>
+      <p class="fb-bmi-contact-label">DEINE ANSPRECHPARTNER</p>
+      <h2>Unser PKV- und DU-Team</h2>
+      <p>Willst du wissen, was dein BMI bei einem konkreten Versicherer tatsächlich bedeutet? Dann fragen wir das für dich anonym an. Du bekommst eine echte Antwort, ohne dass irgendwo dein Name auftaucht und ohne dass du dich festlegst.</p>
       <a href="#" class="fb-bmi-cta-button">Meine Chancen anonym klären lassen <span aria-hidden="true">&rarr;</span></a>
     </div>
   </div>
@@ -228,23 +236,24 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #7FC4F0;
+  color: #7FC4F0 !important;
   margin: 0 0 16px 0;
 }
 .fb-bmi-hero h1 {
   font-size: clamp(2.4rem, 6vw, 4.2rem);
   margin: 0 0 20px 0;
   line-height: 1.02;
+  color: #fff !important;
 }
 .fb-bmi-accent {
-  color: #FF3F77;
+  color: #FF3F77 !important;
 }
-.fb-bmi-intro {
+.fb-bmi-hero .fb-bmi-intro {
   max-width: 640px;
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.9) !important;
 }
 .fb-bmi-hero-button {
   display: inline-block;
@@ -295,34 +304,12 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   line-height: 1.5;
 }
 
-.fb-bmi-mythos {
-  border-left: 4px solid #FF3F77;
-  background: #F4F6FA;
-  padding: 20px 24px;
-  margin-bottom: 32px;
-  border-radius: 0 12px 12px 0;
-}
-.fb-bmi-mythos p:first-child {
-  font-weight: 700;
-  font-style: italic;
-  margin: 0 0 8px 0;
-}
-.fb-bmi-mythos p:last-child {
-  margin: 0;
-  line-height: 1.6;
-}
-
 .fb-bmi-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 28px;
+  grid-template-columns: 1fr;
+  gap: 20px;
   align-items: start;
   margin-bottom: 32px;
-}
-@media (max-width: 860px) {
-  .fb-bmi-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .fb-bmi-form-card,
@@ -338,7 +325,8 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 .fb-bmi-result-card {
   background: #0B1E33;
   color: #fff;
-  min-height: 260px;
+  min-height: 220px;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,8 +393,13 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   width: 100%;
 }
 .fb-bmi-number {
-  font-size: 4.6rem;
+  font-size: 6rem;
   line-height: 1;
+}
+.fb-bmi-gauge {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fb-bmi-kategorie {
   font-size: 1.1rem;
@@ -515,12 +508,24 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
     flex-direction: column;
   }
 }
+.fb-bmi-contact-photos {
+  flex: 0 0 auto;
+  display: flex;
+}
 .fb-bmi-contact-photo {
-  flex: 0 0 72px;
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: #0693E3;
+  border: 3px solid #F4F6FA;
+  margin-left: -16px;
+}
+.fb-bmi-contact-photo:first-child {
+  margin-left: 0;
+  background: #9F4CFF;
+}
+.fb-bmi-contact-photo:last-child {
+  background: #FF3F77;
 }
 .fb-bmi-contact-label {
   font-size: 0.72rem;
