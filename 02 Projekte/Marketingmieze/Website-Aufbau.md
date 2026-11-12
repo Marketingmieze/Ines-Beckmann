@@ -26,6 +26,15 @@ Schreibstil frecher und direkter als fairbeamtet.de, siehe [[00 Kontext/Marketin
 
 Geplantes Tool-Feature (eigenes Projekt): [[02 Projekte/Marketingmieze/BMI-Rechner.md|BMI-Rechner]].
 
+## Kategorie-Struktur
+
+Entscheidung 2026-11-12: Startseite zeigt drei Themenblöcke ("WordPress & Technik", "Social Media & Marketing", "Mein Leben"). Für schonungslos-ehrliche Beiträge (z. B. den BMI-Rechner-Beitrag) wird **"Unverblümt"** als Unterkategorie von **"Mein Leben"** angelegt, statt als eigener vierter Block auf der Startseite – hält die Navigation schlank, grenzt innerhalb von "Mein Leben" aber die harten Beiträge von leichteren Alltagsgeschichten ab.
+
+- Mein Leben (Slug `mein-leben`): "Alles, was nicht WordPress und nicht Marketing ist, aber trotzdem mein Alltag ist: Familie, Chaos, Körper, Kater. Kein Hochglanz. Einfach echt."
+- Unverblümt (Slug `unverblumt`, Unterkategorie von Mein Leben): "Die Beiträge, bei denen ich nichts schönrede. Gesundheit, Körper, Dinge, über die man eigentlich nicht spricht – hier schon."
+
+Nächster Schritt: eigener Blocksy-Inhaltsblock (Content Block, Archiv-Hook) für die "Unverblümt"-Archivseite, ähnlich dem Hero-Aufbau beim BMI-Rechner.
+
 Inspiration/Ressourcen: [[04 Ressourcen/Social Media Wachstum/Social Media Wachstum.md|Social Media Wachstum]].
 
 ## Content-Ideen: persönlicher Blog (Rants über unehrliche Marketing-Praktiken)
