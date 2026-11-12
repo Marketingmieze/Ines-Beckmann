@@ -68,6 +68,10 @@ Ines hat den ersten Entwurf live angeschaut, vier Korrekturen:
 3. **Formular- und Ergebnis-Karte stehen jetzt untereinander statt nebeneinander**, beide auf voller Breite. Die Ergebnis-Karte hat dadurch deutlich mehr Platz (größere Zahl, breitere Gauge).
 4. **Kontaktkarte zeigt jetzt das ganze PKV-/DU-Team statt nur Sven.** Drei überlappende Platzhalter-Kreise statt einem Einzelfoto, Text auf "wir" umgestellt. Bei Bedarf später durch echte Fotos aus [[00 Kontext/Fairbeamtet/Team.md|Team]] ersetzen (Michael Buchholz, Sven Höhne, Christian Beine, Elenor Habtezghi, Luisa Bensmaya, Nicole Scheller, Sebastian Gottschalk für PKV; Dennis Kaspers, Sven Dottermann für BU/DU).
 
+### Gauge-Nachbesserung (2026-11-12, zweite Runde)
+
+Die Segmente "Normal" und "Über" waren bei exakter BMI-Skalierung (15–45) kaum sichtbar, weil "Adipositas" allein die Hälfte der Breite einnahm. Jetzt visuell ausgewogene, feste Segmentbreiten (15 % Unter, 30 % Normal, 20 % Über, 35 % Adipositas) statt reiner Zahlen-Proportionalität. Damit der Marker trotzdem exakt in der richtig angezeigten Farbzone landet, rechnet `markerPosition()` jetzt abschnittsweise (eigene lineare Interpolation je Zone) statt mit einer einzigen linearen Formel über die ganze Skala.
+
 ## Nächste Schritte
 
 - [x] Code-Entwurf (Layout) erstellt
@@ -424,20 +428,20 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   height: 100%;
 }
 .fb-bmi-segment-unter {
-  flex: 0 0 11.67%;
+  flex: 0 0 15%;
   background: #7FC4F0;
   border-radius: 999px 0 0 999px;
 }
 .fb-bmi-segment-normal {
-  flex: 0 0 21.67%;
+  flex: 0 0 30%;
   background: #0693E3;
 }
 .fb-bmi-segment-ueber {
-  flex: 0 0 16.67%;
+  flex: 0 0 20%;
   background: #9F4CFF;
 }
 .fb-bmi-segment-adipositas {
-  flex: 0 0 50%;
+  flex: 0 0 35%;
   background: #FF3F77;
   border-radius: 0 999px 999px 0;
 }
@@ -462,19 +466,19 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   text-align: center;
 }
 .fb-bmi-label-unter {
-  flex: 0 0 11.67%;
+  flex: 0 0 15%;
   color: #7FC4F0;
 }
 .fb-bmi-label-normal {
-  flex: 0 0 21.67%;
+  flex: 0 0 30%;
   color: #4DB8F5;
 }
 .fb-bmi-label-ueber {
-  flex: 0 0 16.67%;
+  flex: 0 0 20%;
   color: #C98FFF;
 }
 .fb-bmi-label-adipositas {
-  flex: 0 0 50%;
+  flex: 0 0 35%;
   color: #FF6FB5;
 }
 .fb-bmi-kommentar {
@@ -568,12 +572,16 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   var kommentarEl = document.getElementById('fbBmiKommentar');
   var markerEl = document.getElementById('fbBmiMarker');
 
+  // Abschnittsweise Positionsberechnung, passend zu den visuellen Segmentbreiten
+  // (15% Unter, 30% Normal, 20% Über, 35% Adipositas) statt reiner linearer BMI-Skala.
+  // So bleibt der Marker immer exakt in der Farbzone, die auch angezeigt wird.
   function markerPosition(bmi) {
-    var min = 15, max = 45;
-    var pct = (bmi - min) / (max - min) * 100;
-    if (pct < 0) pct = 0;
-    if (pct > 100) pct = 100;
-    return pct;
+    if (bmi <= 15) return 0;
+    if (bmi < 18.5) return (bmi - 15) / (18.5 - 15) * 15;
+    if (bmi < 25) return 15 + (bmi - 18.5) / (25 - 18.5) * 30;
+    if (bmi < 30) return 45 + (bmi - 25) / (30 - 25) * 20;
+    if (bmi <= 45) return 65 + (bmi - 30) / (45 - 30) * 35;
+    return 100;
   }
 
   function kategorisieren(bmi) {
