@@ -258,7 +258,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   transform: translate(-50%, -50%);
   font-family: 'Anton', sans-serif;
   font-size: clamp(8rem, 28vw, 18rem);
-  color: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.1) !important;
   white-space: nowrap;
   pointer-events: none;
   line-height: 1;
@@ -359,12 +359,15 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 .fb-bmi-result-card {
   background: #0B1E33;
-  color: #fff;
+  color: #fff !important;
   min-height: 220px;
   padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.fb-bmi-result-card * {
+  color: inherit;
 }
 
 .fb-bmi-fields {
@@ -421,7 +424,10 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   text-align: center;
   font-size: 1.02rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.8) !important;
+}
+.fb-bmi-placeholder p {
+  color: inherit !important;
 }
 .fb-bmi-result {
   text-align: center;
@@ -430,6 +436,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 .fb-bmi-number {
   font-size: 6rem;
   line-height: 1;
+  color: #fff !important;
 }
 .fb-bmi-kategorie {
   font-size: 1.1rem;
@@ -437,7 +444,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #FF6FB5;
+  color: #FF6FB5 !important;
 }
 .fb-bmi-gauge {
   margin: 22px 0;
@@ -510,7 +517,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 .fb-bmi-kommentar {
   font-size: 1rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.92) !important;
 }
 
 .fb-bmi-infobox {
