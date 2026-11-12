@@ -400,11 +400,6 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   font-size: 6rem;
   line-height: 1;
 }
-.fb-bmi-gauge {
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .fb-bmi-kategorie {
   font-size: 1.1rem;
   font-weight: 700;
