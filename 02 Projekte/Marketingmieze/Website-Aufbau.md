@@ -28,12 +28,35 @@ Geplantes Tool-Feature (eigenes Projekt): [[02 Projekte/Marketingmieze/BMI-Rechn
 
 ## Kategorie-Struktur
 
-Entscheidung 2026-11-12: Startseite zeigt drei Themenblöcke ("WordPress & Technik", "Social Media & Marketing", "Mein Leben"). Für schonungslos-ehrliche Beiträge (z. B. den BMI-Rechner-Beitrag) wird **"Unverblümt"** als Unterkategorie von **"Mein Leben"** angelegt, statt als eigener vierter Block auf der Startseite – hält die Navigation schlank, grenzt innerhalb von "Mein Leben" aber die harten Beiträge von leichteren Alltagsgeschichten ab.
+Entscheidung 2026-11-12: Startseite zeigt drei Themenblöcke ("WordPress & Technik", "Social Media & Marketing", "Mein Leben"). Gesamtstruktur so geplant, dass sie sich mit den schon bestehenden Content-Plänen deckt (Rants-Serie, "worüber keiner redet"-Serie) statt künstlich neue Kategorien zu erfinden. Maximal zwei Ebenen, keine leeren Kategorien auf Vorrat.
 
-- Mein Leben (Slug `mein-leben`): "Alles, was nicht WordPress und nicht Marketing ist, aber trotzdem mein Alltag ist: Familie, Chaos, Körper, Kater. Kein Hochglanz. Einfach echt."
-- Unverblümt (Slug `unverblumt`, Unterkategorie von Mein Leben): "Die Beiträge, bei denen ich nichts schönrede. Gesundheit, Körper, Dinge, über die man eigentlich nicht spricht – hier schon."
+**WordPress & Technik** (Slug `wordpress-technik`, bereits angelegt)
+> Ich lerne WordPress gerade selbst, mitten im Chaos, mit allen Fehlern inklusive. Kein Tutorial von oben herab – du siehst zu, wie ich's mir selbst beibringe.
 
-Nächster Schritt: eigener Blocksy-Inhaltsblock (Content Block, Archiv-Hook) für die "Unverblümt"-Archivseite, ähnlich dem Hero-Aufbau beim BMI-Rechner.
+Keine Unterkategorie vorerst – erst aufsplitten, wenn sich zwei klar unterschiedliche Content-Typen zeigen (z. B. Lernprozess vs. echte Anleitungen).
+
+**Social Media & Marketing** (Slug `social-media-marketing`)
+> Kein Bullshit, keine Buzzword-Bingo-Strategien. Nur das, was ich im echten Job und auf eigene Faust ausprobiert hab – was funktioniert und was dir keiner sagt.
+
+Unterkategorien:
+- **Klartext** (Slug `klartext`) – die geplante Rants-Serie über unehrliche Marketing-Praktiken (Clickbait, Fake-Bewertungen, künstliche Verknappung, ungekennzeichneter KI-Content, siehe Content-Ideen oben)
+  > Unehrliche Marketing-Tricks, einmal auseinandergenommen. Clickbait, Fake-Bewertungen, künstliche Verknappung – hier wird draufgezeigt, nicht mitgemacht.
+- **Ausprobiert** (Slug `ausprobiert`) – eigene Erfahrungen, was im Marketing wirklich funktioniert
+  > Kein Bullshit, keine Theorie aus dem Lehrbuch. Nur das, was ich selbst getestet hab – inklusive dem, was nicht funktioniert hat.
+
+**Mein Leben** (Slug `mein-leben`)
+> Kein WordPress. Kein Marketing. Nur mein Leben: Familie, Chaos, Körper, ein Kater, der sich für den Chef hält. Nichts davon hübsch inszeniert.
+
+Unterkategorie:
+- **Unverblümt** (Slug `unverbluemt` – WordPress wandelt ü automatisch in "ue" um) – deckt sowohl Gesundheitsthemen (wie den BMI-Rechner-Beitrag) als auch die geplante "worüber keiner redet"-Serie ab (Care-Arbeit, Erschöpfung, finanzielle Scham, Druck für alle da zu sein, Einsamkeit) – gleicher Ton, gleiches Versprechen, deshalb eine gemeinsame Kategorie statt zwei
+  > Hier wird nichts schöngeredet. Gesundheit, Körper, Zeug, über das sonst keiner redet. Hier schon.
+
+Leichtere Alltagsgeschichten (Sohn, Kater Moony, WordPress-Chaos-Momente) bleiben direkt in "Mein Leben", ohne eigene Unterkategorie.
+
+**Noch zu erledigen:**
+- [x] Alle Kategorien/Unterkategorien in WordPress angelegt (Beiträge → Kategorien)
+- [x] BMI-Rechner-Beitrag von "Uncategorized" auf "Unverblümt" umgestellt
+- [ ] Eigener Blocksy-Inhaltsblock (Content Block, Archiv-Hook) für die "Unverblümt"-Archivseite, ähnlich dem Hero-Aufbau beim BMI-Rechner
 
 Inspiration/Ressourcen: [[04 Ressourcen/Social Media Wachstum/Social Media Wachstum.md|Social Media Wachstum]].
 
