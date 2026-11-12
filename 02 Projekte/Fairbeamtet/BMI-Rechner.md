@@ -42,7 +42,7 @@ Der natürliche CTA ist nicht nur "Beratungstermin", sondern konkret die **anony
 
 ## Layout-Entscheidungen (2026-11-12)
 
-- Farben orientiert an [[00 Kontext/Fairbeamtet/Branding.md|Branding]]: Blau dominant, Pink/Magenta als Akzent, weißer Text auf dunklem Grund. Da dort keine exakten Hex-Werte hinterlegt sind, erstmal Platzhalter-Töne gesetzt (`#1B4F8C` Blau, `#E6007E` Pink/Magenta, `#0F1E33` Dunkelgrund) – **vor Go-Live gegen die echten Marken-Hex-Werte von der Website tauschen**.
+- Farben: echte Marken-Hex-Werte, 2026-11-12 direkt aus dem HTML von fairbeamtet.de extrahiert (nicht geschätzt): `#0693E3` Blau, `#FF3F77` Pink/Magenta, `#1A1A1A` Dunkelgrund. Ergänzende Töne (helleres Blau, Lila-Akzent für den Gauge-Übergang) von diesen drei Grundfarben abgeleitet, da im Branding-Dokument keine weiteren definiert sind.
 - Kein Gender-Toggle (anders als bei der Marketingmieze-Version) – die BMI-Formel selbst ist geschlechtsneutral, und die recherchierten PKV-Schwellenwerte unterscheiden nicht nach Geschlecht.
 - Gauge-Segmente bewusst an der PKV-Logik ausgerichtet, nicht nur an den WHO-Kategorien: "Übergewicht" endet bei BMI 30, genau an der Schwelle, ab der laut Recherche so gut wie alle Versicherer einen Zuschlag ansetzen. Die Farbe kippt an dieser Stelle von Blau auf Pink/Magenta (Signalfarbe für "jetzt handeln/anonym anfragen").
 - CTA-Button führt zur anonymen Risikovoranfrage (Platzhalter-Link `#`, echte URL noch einsetzen), nicht zu einem generischen Kontaktformular.
@@ -50,7 +50,7 @@ Der natürliche CTA ist nicht nur "Beratungstermin", sondern konkret die **anony
 ## Nächste Schritte
 
 - [x] Code-Entwurf (Layout) erstellt
-- [ ] Echte Marken-Hex-Werte von fairbeamtet.de einsetzen (aktuell Platzhalter)
+- [x] Echte Marken-Hex-Werte von fairbeamtet.de eingesetzt (aus der Live-Seite extrahiert, 12.11.2026)
 - [ ] Echten Link zur Risikovoranfrage-Seite einsetzen
 - [ ] Sven zur fachlichen Prüfung vorlegen (Zahlen, Schwellenwerte, Rechtssicherheit, Texte)
 - [ ] Erst nach Freigabe: Mascot-Visual erstellen (Branding: Funko-Pop-Style "Sven"-Maskottchen)
@@ -144,10 +144,10 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   margin: 0 auto;
   padding: 48px 24px;
   font-family: 'Inter', sans-serif;
-  color: #0F1E33;
+  color: #1A1A1A;
 }
 .fb-bmi-hero {
-  background: #0F1E33;
+  background: #1A1A1A;
   color: #fff;
   border-radius: 20px;
   padding: 56px 40px;
@@ -168,7 +168,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 
 .fb-bmi-mythos {
-  border-left: 4px solid #E6007E;
+  border-left: 4px solid #FF3F77;
   background: #F4F6FA;
   padding: 20px 24px;
   margin-bottom: 32px;
@@ -208,7 +208,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   box-shadow: 0 10px 30px rgba(15,30,51,0.06);
 }
 .fb-bmi-result-card {
-  background: #0F1E33;
+  background: #1A1A1A;
   color: #fff;
   min-height: 260px;
   display: flex;
@@ -236,7 +236,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 .fb-bmi-field input {
   background: #fff !important;
-  color: #0F1E33 !important;
+  color: #1A1A1A !important;
   font-family: 'Inter', sans-serif;
   font-size: 1.05rem;
   padding: 14px 16px;
@@ -247,12 +247,12 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 .fb-bmi-field input:focus {
   outline: none;
-  border-color: #1B4F8C;
+  border-color: #0693E3;
 }
 
 .fb-bmi-button {
   font-family: 'Inter', sans-serif;
-  background: #1B4F8C;
+  background: #0693E3;
   color: #fff;
   border: none;
   border-radius: 999px;
@@ -263,7 +263,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   width: 100%;
 }
 .fb-bmi-button:hover {
-  background: #163f70;
+  background: #057AB0;
 }
 
 .fb-bmi-placeholder {
@@ -305,20 +305,20 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 .fb-bmi-segment-unter {
   flex: 0 0 11.67%;
-  background: #8FB7E0;
+  background: #7FC4F0;
   border-radius: 999px 0 0 999px;
 }
 .fb-bmi-segment-normal {
   flex: 0 0 21.67%;
-  background: #1B4F8C;
+  background: #0693E3;
 }
 .fb-bmi-segment-ueber {
   flex: 0 0 16.67%;
-  background: #6F4E8C;
+  background: #9F4CFF;
 }
 .fb-bmi-segment-adipositas {
   flex: 0 0 50%;
-  background: #E6007E;
+  background: #FF3F77;
   border-radius: 0 999px 999px 0;
 }
 .fb-bmi-marker {
@@ -329,7 +329,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   height: 24px;
   background: #fff;
   border-radius: 2px;
-  box-shadow: 0 0 0 2px #0F1E33;
+  box-shadow: 0 0 0 2px #1A1A1A;
   transition: left 0.4s ease;
 }
 .fb-bmi-gauge-labels {
@@ -343,15 +343,15 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 .fb-bmi-label-unter {
   flex: 0 0 11.67%;
-  color: #8FB7E0;
+  color: #7FC4F0;
 }
 .fb-bmi-label-normal {
   flex: 0 0 21.67%;
-  color: #6F9BD1;
+  color: #4DB8F5;
 }
 .fb-bmi-label-ueber {
   flex: 0 0 16.67%;
-  color: #B08FCB;
+  color: #C98FFF;
 }
 .fb-bmi-label-adipositas {
   flex: 0 0 50%;
@@ -382,7 +382,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 .fb-bmi-cta-button {
   display: inline-block;
   margin-top: 16px;
-  background: #E6007E;
+  background: #FF3F77;
   color: #fff;
   text-decoration: none;
   border-radius: 999px;
@@ -390,7 +390,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   font-weight: 700;
 }
 .fb-bmi-cta-button:hover {
-  background: #c40069;
+  background: #D92F5F;
 }
 </style>
 
