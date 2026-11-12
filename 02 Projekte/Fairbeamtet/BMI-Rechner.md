@@ -47,6 +47,18 @@ Der natürliche CTA ist nicht nur "Beratungstermin", sondern konkret die **anony
 - Gauge-Segmente bewusst an der PKV-Logik ausgerichtet, nicht nur an den WHO-Kategorien: "Übergewicht" endet bei BMI 30, genau an der Schwelle, ab der laut Recherche so gut wie alle Versicherer einen Zuschlag ansetzen. Die Farbe kippt an dieser Stelle von Blau auf Pink/Magenta (Signalfarbe für "jetzt handeln/anonym anfragen").
 - CTA-Button führt zur anonymen Risikovoranfrage (Platzhalter-Link `#`, echte URL noch einsetzen), nicht zu einem generischen Kontaktformular.
 
+### Redesign 2026-11-12: Stil-Referenz "die Bayerische – Altersvorsorgedepot Landingpage"
+
+Ines hat eine Referenz-Landingpage (PDF in 01 Inbox) mitgebracht: große, fette, eng gesetzte Großbuchstaben-Headlines, dunkle Navy-Flächen im Wechsel mit hellen Abschnitten, Stat-Kacheln mit riesigen Zahlen, ein großes verblasstes Hintergrund-Element hinter der Hero-Headline, Pill-Buttons mit Pfeil, eine persönliche Ansprechpartner-Karte am Ende. Layout jetzt entsprechend umgebaut, mit den echten fairbeamtet-Farben statt dem Orange des Vorbilds:
+
+- **Anton** (Google Font, sehr fett, eng, passend zur Referenz) für alle Headlines/große Zahlen, **Inter** weiterhin für Fließtext.
+- Hero: dunkles Navy (`#0B1E33`, aus Schwarz + Markenblau gemischt, näher am Vorbild als reines `#1A1A1A`), großes verblasstes "BMI"-Wasserzeichen im Hintergrund, Pfeil-Button runter zum Formular.
+- Neue Stat-Kachel-Reihe direkt unter dem Hero (analog zu den "14,7 Mio. / 120 € / 540 €"-Kacheln im Vorbild): drei Kernzahlen aus der Recherche, mittlere/rechte Kachel in Pink/Magenta hervorgehoben.
+- Ergebnis-Karte umgebaut zur großen Stat-Kachel mit riesiger Anton-Zahl statt nur mittelgroßer Zahl.
+- Abschluss-Bereich als Ansprechpartner-Karte für Sven (Foto-Platzhalter, Name, Kontakt), analog zur "Dominik Brandt"-Karte im Vorbild, statt nur Fließtext + Button.
+
+**Wichtig, aus der Marketingmieze-Erfahrung übernommen:** Der Code lädt "Anton" aktuell per `@import` direkt von `fonts.googleapis.com` – das ist für den Entwurf zum Vorschlagen okay, aber **vor einem echten Go-Live DSGVO-technisch nicht sauber** (siehe die ganze Schriften-Odyssee bei marketingmieze.com). Vor Veröffentlichung muss die Schrift genauso selbst gehostet werden wie dort am Ende gelöst.
+
 ## Nächste Schritte
 
 - [x] Code-Entwurf (Layout) erstellt
@@ -63,8 +75,28 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 ```html
 <div class="fb-bmi-rechner">
   <div class="fb-bmi-hero">
-    <h1>BMI-Rechner: Was dein Gewicht für deine PKV bedeutet</h1>
-    <p class="fb-bmi-intro">Du willst wissen, ob dein Gewicht beim PKV-Abschluss zum Problem wird? Dein BMI ist der erste Wert, den jeder Versicherer bei der Gesundheitsprüfung ansieht. Rechne ihn hier aus. Dann zeig ich dir, was die Zahl für dich bedeutet.</p>
+    <div class="fb-bmi-hero-watermark" aria-hidden="true">BMI</div>
+    <div class="fb-bmi-hero-inner">
+      <p class="fb-bmi-eyebrow">BMI &amp; PKV-GESUNDHEITSPRÜFUNG</p>
+      <h1>DEIN BMI.<br><span class="fb-bmi-accent">DEINE ZAHL.</span></h1>
+      <p class="fb-bmi-intro">Du willst wissen, ob dein Gewicht beim PKV-Abschluss zum Problem wird? Dein BMI ist der erste Wert, den jeder Versicherer bei der Gesundheitsprüfung ansieht. Rechne ihn hier aus. Dann zeig ich dir, was die Zahl für dich bedeutet.</p>
+      <a href="#fbBmiForm" class="fb-bmi-hero-button">Jetzt berechnen <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+
+  <div class="fb-bmi-stat-row">
+    <div class="fb-bmi-stat-tile">
+      <div class="fb-bmi-stat-number">&lt;30</div>
+      <p>Bis hierhin verlangt praktisch kein Versicherer einen Zuschlag wegen des Gewichts allein.</p>
+    </div>
+    <div class="fb-bmi-stat-tile fb-bmi-stat-tile-accent">
+      <div class="fb-bmi-stat-number">10&ndash;40%</div>
+      <p>Grober Risikozuschlag, den die meisten Versicherer ab BMI 30 auf den Beitrag aufschlagen.</p>
+    </div>
+    <div class="fb-bmi-stat-tile">
+      <div class="fb-bmi-stat-number">&ge;40</div>
+      <p>Ab diesem Wert wird eine Aufnahme bei den meisten Versicherern eng.</p>
+    </div>
   </div>
 
   <div class="fb-bmi-mythos">
@@ -73,7 +105,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   </div>
 
   <div class="fb-bmi-grid">
-    <div class="fb-bmi-form-card">
+    <div class="fb-bmi-form-card" id="fbBmiForm-anchor">
       <form id="fbBmiForm">
         <div class="fb-bmi-fields">
           <label class="fb-bmi-field">
@@ -131,14 +163,24 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 
     <p>Wichtig: Jeder Versicherer zieht die Grenze anders. Die Signal Iduna schaut schon ab 25 genauer hin. Die Alte Oldenburger und die Barmenia erst ab 30. Die Zahlen hier sind Richtwerte, keine Zusage für deinen Fall.</p>
 
-    <div class="fb-bmi-cta">
+  </div>
+
+  <div class="fb-bmi-contact-card">
+    <div class="fb-bmi-contact-photo" aria-hidden="true"></div>
+    <div class="fb-bmi-contact-text">
+      <p class="fb-bmi-contact-label">DEIN ANSPRECHPARTNER</p>
+      <h2>Sven Höhne</h2>
       <p>Willst du wissen, was dein BMI bei einem konkreten Versicherer tatsächlich bedeutet? Dann frag ich das für dich anonym an. Du bekommst eine echte Antwort, ohne dass irgendwo dein Name auftaucht und ohne dass du dich festlegst.</p>
-      <a href="#" class="fb-bmi-cta-button">Meine Chancen anonym klären lassen</a>
+      <a href="#" class="fb-bmi-cta-button">Meine Chancen anonym klären lassen <span aria-hidden="true">&rarr;</span></a>
     </div>
   </div>
 </div>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* Entwurfs-Hinweis: direkter Google-Fonts-Import ist nur fuer den Vorschlags-Entwurf okay.
+   Vor Go-Live selbst hosten, siehe Layout-Entscheidungen oben (DSGVO). */
+
 .fb-bmi-rechner {
   max-width: 1100px;
   margin: 0 auto;
@@ -146,18 +188,56 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   font-family: 'Inter', sans-serif;
   color: #1A1A1A;
 }
+.fb-bmi-rechner h1,
+.fb-bmi-rechner h2,
+.fb-bmi-stat-number,
+.fb-bmi-number {
+  font-family: 'Anton', 'Inter', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
 .fb-bmi-hero {
-  background: #1A1A1A;
+  position: relative;
+  background: #0B1E33;
   color: #fff;
   border-radius: 20px;
-  padding: 56px 40px;
-  margin-bottom: 32px;
+  padding: 64px 40px;
+  margin-bottom: 24px;
   text-align: center;
+  overflow: hidden;
+}
+.fb-bmi-hero-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(8rem, 28vw, 18rem);
+  color: rgba(255,255,255,0.04);
+  white-space: nowrap;
+  pointer-events: none;
+  line-height: 1;
+}
+.fb-bmi-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+.fb-bmi-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #7FC4F0;
+  margin: 0 0 16px 0;
 }
 .fb-bmi-hero h1 {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  margin: 0 0 16px 0;
-  line-height: 1.15;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin: 0 0 20px 0;
+  line-height: 1.02;
+}
+.fb-bmi-accent {
+  color: #FF3F77;
 }
 .fb-bmi-intro {
   max-width: 640px;
@@ -165,6 +245,54 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   font-size: 1.1rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.9);
+}
+.fb-bmi-hero-button {
+  display: inline-block;
+  margin-top: 28px;
+  background: #FF3F77;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 14px 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.fb-bmi-hero-button:hover {
+  background: #D92F5F;
+}
+
+.fb-bmi-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 760px) {
+  .fb-bmi-stat-row {
+    grid-template-columns: 1fr;
+  }
+}
+.fb-bmi-stat-tile {
+  background: #F4F6FA;
+  border-radius: 14px;
+  padding: 24px;
+}
+.fb-bmi-stat-tile-accent {
+  background: #FF3F77;
+  color: #fff;
+}
+.fb-bmi-stat-tile-accent p {
+  color: rgba(255,255,255,0.92);
+}
+.fb-bmi-stat-number {
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.fb-bmi-stat-tile p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .fb-bmi-mythos {
@@ -208,7 +336,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   box-shadow: 0 10px 30px rgba(15,30,51,0.06);
 }
 .fb-bmi-result-card {
-  background: #1A1A1A;
+  background: #0B1E33;
   color: #fff;
   min-height: 260px;
   display: flex;
@@ -277,8 +405,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
   width: 100%;
 }
 .fb-bmi-number {
-  font-size: 3.6rem;
-  font-weight: 700;
+  font-size: 4.6rem;
   line-height: 1;
 }
 .fb-bmi-kategorie {
@@ -371,23 +498,55 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 }
 .fb-bmi-infobox h2 {
   margin-top: 0;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
-.fb-bmi-cta {
+
+.fb-bmi-contact-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: #F4F6FA;
+  border-radius: 16px;
+  padding: 32px;
   margin-top: 24px;
-  padding-top: 24px;
-  border-top: 1px solid #D6DCE8;
-  text-align: center;
+}
+@media (max-width: 560px) {
+  .fb-bmi-contact-card {
+    flex-direction: column;
+  }
+}
+.fb-bmi-contact-photo {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #0693E3;
+}
+.fb-bmi-contact-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #0693E3;
+  margin: 0 0 4px 0;
+}
+.fb-bmi-contact-text h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.fb-bmi-contact-text p {
+  margin: 0 0 16px 0;
+  line-height: 1.6;
 }
 .fb-bmi-cta-button {
   display: inline-block;
-  margin-top: 16px;
   background: #FF3F77;
   color: #fff;
   text-decoration: none;
   border-radius: 999px;
   padding: 14px 28px;
   font-weight: 700;
+  font-family: 'Inter', sans-serif;
 }
 .fb-bmi-cta-button:hover {
   background: #D92F5F;
@@ -455,6 +614,7 @@ Entwurf, noch nicht fachlich geprüft. Layout fokussiert, Texte können sich noc
 
 ## Hinweise zur Einbindung
 
-- Schriftart "Inter" angenommen, siehe Branding-Notiz "klare, moderne serifenlose Schrift" – falls fairbeamtet.de eine andere Schrift nutzt, im Code austauschen.
-- Farben sind Platzhalter (siehe Layout-Entscheidungen oben), vor Go-Live gegen echte Marken-Hex-Werte tauschen.
-- Kein Mascot/Bild im Code integriert – kommt erst nach Freigabe des Textes/Konzepts durch Sven dazu.
+- Schriften: "Inter" für Fließtext (angenommen, siehe Branding-Notiz "klare, moderne serifenlose Schrift"), "Anton" für Headlines/große Zahlen (neu seit dem Redesign im Stil der "die Bayerische"-Referenz). Beide aktuell per `@import` von Google geladen – **nur für den Entwurf okay, vor Go-Live selbst hosten** (DSGVO, siehe Layout-Entscheidungen).
+- Farben sind echte fairbeamtet-Marken-Hex-Werte (siehe Layout-Entscheidungen oben), keine Platzhalter mehr.
+- Kontaktkarte am Ende hat einen **Foto-Platzhalter** (blauer Kreis statt echtem Bild) – echtes Sven-Foto/Maskottchen einsetzen, sobald verfügbar.
+- Kein Mascot/Bild im Hero integriert – kommt erst nach Freigabe des Textes/Konzepts durch Sven dazu.
