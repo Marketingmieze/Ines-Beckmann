@@ -540,13 +540,13 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
 
 .fb-fz-fields {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 18px;
   margin-bottom: 20px;
 }
-@media (max-width: 560px) {
+@media (min-width: 700px) {
   .fb-fz-fields {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .fb-fz-field {
@@ -555,32 +555,43 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   gap: 6px;
   font-weight: 600;
   font-size: 0.95rem;
+  min-width: 0;
 }
 .fb-fz-field-checkbox {
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
+/* !important auf allen größenrelevanten Eigenschaften, weil Theme-CSS (gleiches Muster wie
+   beim BMI-Rechner, siehe dortige "Korrekturen nach erstem Praxistest") sonst Select-/Input-
+   Felder auf die winzige Browser-Standardgröße zurückstutzt. */
 .fb-fz-field select,
 .fb-fz-field input[type="number"] {
   background: #fff !important;
   color: #1A1A1A !important;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.05rem;
-  padding: 14px 16px;
-  border: 1px solid #D6DCE8;
-  border-radius: 10px;
-  box-sizing: border-box;
-  width: 100%;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.4 !important;
+  padding: 14px 16px !important;
+  min-height: 52px !important;
+  border: 1px solid #D6DCE8 !important;
+  border-radius: 10px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  -webkit-appearance: menulist !important;
+  appearance: auto !important;
 }
 .fb-fz-field select:focus,
 .fb-fz-field input:focus {
-  outline: none;
-  border-color: #0693E3;
+  outline: none !important;
+  border-color: #0693E3 !important;
 }
 .fb-fz-field input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 20px !important;
+  height: 20px !important;
+  min-height: 0 !important;
   accent-color: #0693E3;
 }
 
@@ -1131,6 +1142,8 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
 - Die Datenstruktur (`FZ_ADDITIV`, `BY_ORTSKLASSEN`/`BY_ERHOEHUNG`, `NW_STUFEN`) ist bewusst so gebaut, dass sie sich künftig leicht aktualisieren lässt (ein Objekt pro Bundesland, bzw. eine Tabelle pro Sonderfall) – das deckt sich mit der in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]] geforderten zentralen Datenpflege statt händischer Einzelpflege pro Seite.
 - Der Rechner deckt jetzt alle 17 Dienstherren mit Zahlenausgabe ab (keine Blockierung mehr wie in Version 1) – dafür muss vor Launch die Datenqualität der "Entwurf"- und "veraltet"-Fälle (Baden-Württemberg, Bayern, Bremen, Thüringen) zwingend gegengeprüft werden, siehe "Bekannte Unsicherheiten" oben.
 - Bewusst nicht abgebildet (zu komplex für ein MVP-Formular mit vertretbarer Feldzahl): Baden-Württembergs Erfahrungsstufen-abhängiger Familienergänzungszuschlag, Berlins Ergänzender Familienzuschlag nach § 40a. Beide werden im Ergebnis als Hinweistext angezeigt, aber nicht berechnet.
+- **Bug gefunden und behoben (13.11.2026):** Beim ersten Einfügen in ein WordPress-"Individuelles HTML"-Feld wurden zwei von fünf `&&`-Verknüpfungen im Script zu `&#038;&#038;` verändert (vermutlich durch Encoding beim Einfügen/Speichern) – das hat das gesamte Script mit einem Syntaxfehler zum Abbruch gebracht, ohne dass der BMI-Rechner (der kein `&&` enthält) betroffen war. Der Code enthält jetzt **kein `&&` mehr** (durch verschachtelte `if`-Abfragen ersetzt), damit das nicht wieder passieren kann, unabhängig von der genauen Ursache. **Beim erneuten Einbinden: den kompletten alten Code im HTML-Feld löschen und durch die aktuelle Version unten ersetzen**, nicht nur die betroffenen Zeilen patchen.
+- **Zweiter Bug gefunden und behoben (13.11.2026):** Nach dem ersten Fix liefen die Eingabefelder (Dropdowns/Zahlenfeld) zu klein, weil Theme-CSS der Live-Seite die Select-/Input-Größe überschrieben hat – derselbe Bug-Typ wie die unlesbare Hero-Schrift beim BMI-Rechner. Fix: alle größenrelevanten CSS-Eigenschaften (Padding, Schriftgröße, Mindesthöhe, Breite) jetzt mit `!important`, zusätzlich das Eingabefelder-Raster standardmäßig einspaltig (vorher zweispaltig, was die Felder bei schmaleren Theme-Containern zusätzlich gestaucht hat) und erst ab 700px Breite zweispaltig.
 
 ## Nächste Schritte
 
