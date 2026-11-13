@@ -13,10 +13,10 @@ Dieses Vault ist seit 13.11.2026 ausschließlich für **fairbeamtet.de**, ihren 
 - 00 Kontext/: Persönliches Kontext-Profil. `Über mich.md` liegt direkt hier. Der Unterordner `Fairbeamtet/` enthält ICP.md, Angebot.md, Schreibstil.md, Branding.md und Team.md. Zentrale Referenz für alle inhaltlichen Aufgaben – lies die passenden Dateien, wenn du Content erstellst, Mails schreibst oder Angebote formulierst.
 - 01 Inbox/: Schnelle Gedanken, Brain Dumps, unverarbeitete Notizen. Alles was noch keinen festen Platz hat landet hier.
 - 02 Projekte/: Aktive Projekte mit konkretem Ziel und Enddatum, unter `Fairbeamtet/`. Projekte starten als einzelne .md-Datei direkt in diesem Marken-Unterordner.
-- 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum. Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen. Drei Blöcke:
-  - `Privat/`: alles, was nicht zum Arbeitgeber gehört. Finanzen, Familie, Gesundheit, Pflege Mutter, Sohn. Übersicht in [[03 Bereiche/Privat/Privat.md|Privat]].
+- 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum. Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen. Zwei Blöcke:
   - `Fairbeamtet/`: die beruflichen Bereiche für fairbeamtet.de, also Content Creation, SEO und Website. Übersicht in [[03 Bereiche/Fairbeamtet/Fairbeamtet.md|Fairbeamtet]]. Hieß bis 03.11.2026 „03 Bereiche (mein SEO Kram)“.
-  - `Termine/`: eigenständig eine Ebene darüber, weil dort berufliche und private Termine zusammen stehen.
+  - `Termine/`: eigenständig eine Ebene darüber, weil dort berufliche und private Termine zusammen stehen. Seit 13.11.2026 zusätzlich als Kopie im Marketingmieze-Vault, da Termine in beiden Vaults gebraucht werden – bei neuen Terminen in beiden Fassungen ergänzen.
+  - Private Bereiche (Finanzen, Familie, Gesundheit, Pflege Mutter, Sohn) sind seit 13.11.2026 zusammen mit Marketingmieze in den separaten Marketingmieze-Vault umgezogen, da `Privat/` ohnehin alles abdeckte, was nicht zu fairbeamtet.de gehört.
 - 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (u. a. Schreibregeln, SEO-GEO, Googles No. 1, Keywords, Ahrefs, Google Search Console, KI, PKV und Beihilfe, Social Media Wachstum). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei. Die Ordner Content Wissen, Social Media Wachstum, Community Building und KI sind seit 13.11.2026 auch im Marketingmieze-Vault dupliziert, weil sie dort ebenfalls genutzt werden – bei Ergänzungen ggf. in beiden Vaults nachziehen.
   - Die Start-Datei eines Ordners (in 03 Bereiche/ und 04 Ressourcen/) ist gleichzeitig dessen Inhaltsverzeichnis: kurze Übersicht + `[[Wikilinks]]` auf alle Notizen im Ordner. Beim Anlegen einer neuen Notiz in einem dieser Ordner die Start-Datei um einen Link/Eintrag ergänzen, damit sie aktuell bleibt.
 - 05 Daily Notes/: Tägliches Logbuch. Was an einem Tag passiert ist, welche Entscheidungen getroffen wurden, was offen ist. Gibt Kontinuität zwischen Sessions. Einträge bis 13.11.2026 können noch Marketingmieze-Passagen enthalten (aus der Zeit vor der Vault-Trennung); die relevanten Auszüge davon liegen zusätzlich im Marketingmieze-Vault.
@@ -27,7 +27,6 @@ Dieses Vault ist seit 13.11.2026 ausschließlich für **fairbeamtet.de**, ihren 
 
 - **Für jeden Text für fairbeamtet gilt das Voice Profile: `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md`. Vor dem Schreiben lesen.** Gilt für Website, Ratgeber, Social Media, Newsletter, Mails und Skripte. Die Mutterdatei liegt bei Sven. Der Inhalt wird wortgleich übernommen und im Vault nicht geändert, Änderungswünsche gehen an Sven. Kommt eine neue Fassung, ersetzt sie die alte an diesem Pfad, damit nur eine Fassung im Vault liegt. Bei Widerspruch zu anderen Schreib- oder Stilnotizen gilt das Voice Profile.
 - **fairbeamtet.de und marketingmieze.com strikt getrennt halten** – seit 13.11.2026 durch getrennte Vaults erzwungen. marketingmieze.com-Inhalte gehören nicht in dieses Vault, außer Ines bittet explizit darum.
-- Private Bereiche unter `03 Bereiche/Privat/` (Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn) enthalten teils sensible/medizinische Informationen. Sorgfältig behandeln, nicht ungefragt mit beruflichen Inhalten vermischen, nicht in andere Notizen kopieren.
 - Nutze `[[Wikilinks]]` für Verknüpfungen zwischen Notizen.
 - Neue Notizen ohne klaren Platz kommen in 01 Inbox/.
 - Halte Notizen atomar: eine Idee pro Notiz wo möglich. Ausnahme: Daily Notes fassen einen ganzen Tag zusammen.
@@ -39,7 +38,7 @@ Dieses Vault ist seit 13.11.2026 ausschließlich für **fairbeamtet.de**, ihren 
 - Abgeschlossene Projekte nach 06 Archiv/ verschieben. Nur auf Anweisung von Ines, nicht eigenständig.
 - Wenn Dateien erstellt oder verschoben werden, kurz erklären warum.
 - Bevor Dateien gelöscht oder überschrieben werden, nachfragen.
-- Wenn Ines sagt "merk dir das" oder "speicher das": thematisch richtig einsortieren. Schreibregeln nach der passenden `00 Kontext/[Marke]/Schreibstil.md`, Projekt-Infos in die jeweilige Projekt-Datei, technisches Wissen in 04 Ressourcen/, Vault-Regeln in diese CLAUDE.md. Im Zweifel kurz fragen, wo es hin soll.
+- Wenn Ines sagt "merk dir das" oder "speicher das": thematisch richtig einsortieren. Schreibregeln nach `00 Kontext/Fairbeamtet/Schreibstil.md`, Projekt-Infos in die jeweilige Projekt-Datei, technisches Wissen in 04 Ressourcen/, Vault-Regeln in diese CLAUDE.md. Private oder Marketingmieze-Themen gehören nicht hierher, sondern in den Marketingmieze-Vault. Im Zweifel kurz fragen, wo es hin soll.
   - Nicht nur isoliert ablegen: kurz prüfen, ob es verwandte bestehende Notizen zum Thema gibt (z. B. per Suche/Backlinks), und diese bei Bedarf per `[[Wikilink]]` verknüpfen oder um die neue Info ergänzen, statt Wissen doppelt oder unverbunden im Vault zu verstreuen. Bei Widersprüchen zu bestehenden Notizen kurz darauf hinweisen statt sie stillschweigend zu überschreiben.
 - **Altersvorsorgedepot (AVD): Alle Informationen gehören ausschließlich in die AVD-Base** unter `04 Ressourcen/Altersvorsorge Depot/`. Jede Zahl, jedes Datum, jeder Fakt wird eine eigene Notiz in `Fakten/` mit Frontmatter (`kategorie`, `urteil`, `fundstelle`, `wert`, `einheit`, `bezug`, `gilt_ab`, `variante`, `beamte`, `geprueft`, `quelle`); die Base `AVD.base` macht daraus die Auswertung. **Kein AVD-Wissen in anderen Notizen, Ordnern oder Bases duplizieren** – auch nicht in `04 Ressourcen/PKV und Beihilfe/`. Von dort bei Bedarf per `[[Wikilink]]` auf die AVD-Notiz verlinken, statt den Inhalt zu kopieren.
   - Neue AVD-Fakten brauchen ein `urteil` (BESTÄTIGT, TEILWEISE, KORRIGIERT, WIDERLEGT, UNBELEGT, NEU) und eine `fundstelle` mit Paragraph. Ohne Primärquellenbeleg: `urteil: UNBELEGT` und im Content nicht verwenden.
@@ -60,7 +59,7 @@ Termin mit Datum/Uhrzeit in [[03 Bereiche/Termine/Termine.md]] unter "Anstehende
 
 ### Kontext bei Bedarf
 
-Wenn Ines fragt "Was ist gerade aktuell?", "Wo war ich stehen geblieben?" oder Ähnliches: Lies die letzten 2–3 Daily Notes in 05 Daily Notes/ und die aktiven Projekt-Dateien in 02 Projekte/ (beide Marken-Unterordner) um ein Briefing zu geben.
+Wenn Ines fragt "Was ist gerade aktuell?", "Wo war ich stehen geblieben?" oder Ähnliches: Lies die letzten 2–3 Daily Notes in 05 Daily Notes/ und die aktiven Projekt-Dateien in 02 Projekte/Fairbeamtet/ um ein Briefing zu geben.
 
 ### Vault-Check (auf Anfrage)
 
