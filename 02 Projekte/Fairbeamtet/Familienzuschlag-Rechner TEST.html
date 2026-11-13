@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"><title>Test Familienzuschlag-Rechner v4</title></head><body>
+<html lang="de"><head><meta charset="utf-8"><title>Test Familienzuschlag-Rechner v5</title></head><body>
 <div class="fb-fz-rechner">
   <div class="fb-fz-hero">
     <div class="fb-fz-hero-watermark" aria-hidden="true">€</div>
@@ -324,6 +324,12 @@
   font-weight: 600;
   font-size: 0.95rem;
   min-width: 0;
+}
+/* Ohne diese Regel gewinnt ".fb-fz-field { display:flex }" gegen das native [hidden]-Verhalten
+   (gleiche CSS-Spezifität, unsere Regel steht später) – Ortsklasse/Mietenstufe blieben dadurch
+   für jedes Bundesland sichtbar, statt nur für Bayern bzw. NRW/Rheinland-Pfalz. */
+.fb-fz-field[hidden] {
+  display: none !important;
 }
 .fb-fz-field-checkbox {
   flex-direction: row;
