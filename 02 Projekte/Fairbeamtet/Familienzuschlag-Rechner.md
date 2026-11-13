@@ -974,10 +974,12 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     }
 
     // Zusatz A5: +8,65 € für das erste Kind, ab dem zweiten Kind je +25,67 €
-    if (besGr === 'A5' && kinder >= 1) {
-      var zusatzA5 = 8.65 + Math.max(0, kinder - 1) * 25.67;
-      summe += zusatzA5;
-      zeilen.push('Zuschlag Besoldungsgruppe A 5: +' + formatEuro(zusatzA5) + ' €');
+    if (besGr === 'A5') {
+      if (kinder >= 1) {
+        var zusatzA5 = 8.65 + Math.max(0, kinder - 1) * 25.67;
+        summe += zusatzA5;
+        zeilen.push('Zuschlag Besoldungsgruppe A 5: +' + formatEuro(zusatzA5) + ' €');
+      }
     }
 
     return { summe: summe, zeilen: zeilen };
@@ -986,7 +988,12 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   // ===== Generische additive Berechnung =====
   function berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe) {
     var stufe1 = cfg.stufe1(besGr);
-    var delta = (cfg.besGrDelta && cfg.besGrDelta[besGr]) || [0, 0, 0, 0];
+    var delta = [0, 0, 0, 0];
+    if (cfg.besGrDelta) {
+      if (cfg.besGrDelta[besGr]) {
+        delta = cfg.besGrDelta[besGr];
+      }
+    }
     var zeilen = [];
     var ehe = verheiratet ? stufe1 : 0;
     if (verheiratet) zeilen.push('Ehe-/Partnerschaftsanteil: ' + formatEuro(ehe) + ' €');
@@ -995,16 +1002,24 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     for (var i = 1; i <= kinder; i++) {
       var idx = Math.min(i - 1, 3);
       var rate = cfg.grund[idx] + delta[idx];
-      if (cfg.mietenstufeAddon && idx >= 2 && mietenstufe && cfg.mietenstufeAddon[mietenstufe]) {
-        rate += cfg.mietenstufeAddon[mietenstufe];
+      if (cfg.mietenstufeAddon) {
+        if (idx >= 2) {
+          if (mietenstufe) {
+            if (cfg.mietenstufeAddon[mietenstufe]) {
+              rate += cfg.mietenstufeAddon[mietenstufe];
+            }
+          }
+        }
       }
       kinderSumme += rate;
     }
     if (kinder > 0) {
       zeilen.push('Kinderanteil für ' + kinder + ' Kind' + (kinder === 1 ? '' : 'er') + ' (inkl. Besoldungsgruppen-/Mietenstufen-Zuschlag): ' + formatEuro(kinderSumme) + ' €');
     }
-    if (kinder === 0 && !verheiratet) {
-      zeilen.push('Ohne Ehe-/Partnerschaft und ohne Kinder entsteht kein Familienzuschlag.');
+    if (kinder === 0) {
+      if (!verheiratet) {
+        zeilen.push('Ohne Ehe-/Partnerschaft und ohne Kinder entsteht kein Familienzuschlag.');
+      }
     }
 
     return { summe: ehe + kinderSumme, zeilen: zeilen };
@@ -1030,7 +1045,10 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   function updateConditionalFields() {
     var land = landSelect.value;
     ortsklasseWrap.hidden = (land !== 'by');
-    mietenstufeWrap.hidden = (land !== 'nw' && land !== 'rp');
+    var zeigeMietenstufe = false;
+    if (land === 'nw') { zeigeMietenstufe = true; }
+    if (land === 'rp') { zeigeMietenstufe = true; }
+    mietenstufeWrap.hidden = !zeigeMietenstufe;
   }
   landSelect.addEventListener('change', updateConditionalFields);
   updateConditionalFields();
