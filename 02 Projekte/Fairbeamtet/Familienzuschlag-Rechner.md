@@ -14,77 +14,113 @@ Direkter Bezug zur Konkurrenzanalyse dort: Der Gehaltsrechner von einfachverbeam
 
 ## Status
 
-**Entwurf – noch nicht mit Sven abgestimmt. Zahlen sind Sekundärquellen-Recherche, noch nicht gegen die Landesbesoldungsgesetze (Primärquellen) geprüft.** Für mehrere Bundesländer sind die Werte zwischen Quellen widersprüchlich oder bei der Extraktion unklar geblieben (siehe „Bekannte Unsicherheiten" unten). **Vor Veröffentlichung zwingend:** Primärquellen-Check je Bundesland, analog zur Vorgabe beim BMI-Rechner (Rangfolge Voice Profile Punkt 1: fachliche Richtigkeit schlägt alles andere) – bei YMYL-Besoldungsdaten gilt das genauso wie bei Gesundheitsfragen.
+**Entwurf – noch nicht mit Sven abgestimmt.** Die Datenlage hat sich gegenüber der ersten Version grundlegend verbessert: Fast alle Zahlen sind jetzt gegen **offizielle Besoldungstabellen des dbb (Deutscher Beamtenbund und Tarifunion)** geprüft, nicht mehr gegen Sekundärquellen-Aggregatoren. Zwei Einschränkungen bleiben:
+1. Mehrere dbb-Tabellen (Baden-Württemberg, Bayern, Bremen, u. a.) tragen den Vermerk **„Entwurf – Veröffentlichung unter Vorbehalt der Bekanntmachung im Gesetzblatt"** – die Zahlen stammen aus dem Gesetzgebungsverfahren, sind aber zum Abrufzeitpunkt (13.11.2026) noch nicht formal im jeweiligen Gesetzblatt verkündet. Hohe Wahrscheinlichkeit, dass sie final so gelten, aber kein Ersatz für eine Gesetzblatt-Prüfung vor Launch.
+2. Thüringen: keine dbb-Tabelle für 2026 gefunden, nur Stand 1. Februar 2025.
+
+**Vor Veröffentlichung weiterhin empfohlen:** kurzer Abgleich der "Entwurf"-Länder gegen die zwischenzeitlich verkündeten Gesetzblätter, analog zur Vorgabe beim BMI-Rechner (Rangfolge Voice Profile Punkt 1: fachliche Richtigkeit schlägt alles andere).
 
 ## Rechtliche Grundlage
 
 Bundesbeamte: § 40 BBesG. Landesbeamte: seit der Föderalismusreform 2006 die jeweiligen 16 Landesbesoldungsgesetze (eigene Anlagen zum Familienzuschlag, nicht mehr bundeseinheitlich). Das ist auch der Grund, warum die Struktur zwischen den Ländern so stark variiert (manche ganz ohne „Stufe 1", manche mit Besoldungsgruppen- oder Ortsklassen-/Mietenstufen-Abhängigkeit).
 
-## Recherche: Familienzuschlag nach Bundesland (Stand der Recherche: 13.11.2026)
+## Recherche: Familienzuschlag nach Bundesland – vollständige Daten (Primärquelle: dbb-Besoldungstabellen, Stand der Recherche: 13.11.2026)
 
-Recherchiert über mehrere Sekundärquellen (siehe Quellenliste unten), da eine vollständige Prüfung aller 16 Landesbesoldungsgesetze im Rahmen dieser Recherche nicht möglich war. **Die Quellen widersprechen sich bei mehreren Bundesländern** (unterschiedliche Stichtage, teils veraltete Werte, teils Extraktionsfehler bei komplexen Tabellen). Die folgende Tabelle ist die plausibelste Konsolidierung, aber **kein Ersatz für eine Gesetzesprüfung.**
+Komplett neu recherchiert über die offiziellen Besoldungstabellen des dbb ([dbb.de/beamtinnen-beamte/besoldungstabellen.html](https://www.dbb.de/beamtinnen-beamte/besoldungstabellen.html)), jeweils die aktuellste 2026er-Fassung pro Bundesland heruntergeladen und direkt aus dem PDF ausgelesen (nicht per automatisiertem Seitenabruf mit kleinem Hilfsmodell, sondern mit Skript-Extraktion des PDF-Texts – das vermeidet die Rowspan-/OCR-Fehler, die bei der ersten Bayern/NRW-Recherche aufgetreten waren).
 
-| Bundesland | Stufe 1 (verheiratet/verpartnert) | Kinderanteil 1.+2. Kind (je Kind) | Ab 3. Kind (je Kind) | Gültig ab | Vertrauen |
-|---|---|---|---|---|---|
-| Bund | 181,36 € | 154,99 € | 482,89 € | 01.05.2026 | hoch (beide Quellen identisch) |
-| Baden-Württemberg | 180,46 € | 157,78 € | 989,17 € | 01.04.2026 | mittel – zusätzlicher Familienergänzungszuschlag nach Besoldungsgruppe (A7–A10) nicht eingerechnet |
-| Bayern | 85,11–165,59 € (Stufe V, nach Ortsklasse, s. Detailtabelle) | s. Detailtabelle (Stufe 1 = 1 Kind, nach Ortsklasse) | s. Detailtabelle | 01.02.2025 (laut gesetze-bayern.de aktuell gültige Fassung) | **hoch – geprüft gegen Primärquelle** (Anlage 5 BayBesG, s. unten) |
-| Berlin | kein Stufe-1-Anteil (ggf. ~67,47 € Ausgleichszulage für Altfälle) | 148,44 € | 819,76 € (3. Kind) | 01.04.2026 | mittel |
-| Brandenburg | kein Stufe-1-Anteil | 377,16 € | 888,39 € | 01.07.2024 | mittel – Datum wirkt älter als bei anderen Ländern |
-| Bremen | ca. 157–165 € (besoldungsgruppenabhängig, A5–A8) | ca. 252–266 € | ca. 611 € | 01.04.2026 | niedrig |
-| Hamburg | 165,84 € | 193,14 € | 635,00 € | 01.04.2026 | hoch – Werte intern konsistent (Stufen-Differenzen passen exakt) |
-| Hessen | 177,30 € | 360,57 € | 831,08 € | 01.07.2026 | hoch – Werte intern konsistent, beide Quellen identisch |
-| Mecklenburg-Vorpommern | 164,77 € | 198,83 € | 820,00 € | 01.04.2026 | hoch |
-| Niedersachsen | 162,26 € (A5–A8; bis 170,36 € in höheren Gruppen) | 145,61 € | 512,37 € | 01.04.2026 | hoch |
-| Nordrhein-Westfalen | 167,26–173,50 € (nach Besoldungsgruppe, s. Detailtabelle) | s. Detailtabelle (Gesamtbeträge je Mietenstufe) | s. Detailtabelle | 01.04.2026 | **hoch – geprüft gegen Primärquelle** (amtliches PDF, s. unten) |
-| Rheinland-Pfalz | 88,03 € | 246,97 € | 726,00 € | 01.04.2026 | niedrig – Stufe-1-Wert wirkt im Ländervergleich ungewöhnlich niedrig |
-| Saarland | 164,48 € | 165,31 € | 781,68 € | 01.04.2026 | hoch |
-| Sachsen | 279,58 € | 279,58 € | 795,41 € | 01.04.2026 | hoch – beide Quellen identisch |
-| Sachsen-Anhalt | 169,04 € | 184,85 € | 818,98 € | 01.04.2026 | mittel |
-| Schleswig-Holstein | 176,24 € | 199,85 € | 516,48 € | 01.01.2026 | mittel – eine Quelle nennt stattdessen 164,21 € / 186,20 € zu einem älteren Stichtag (01.11.2024); neuerer Wert bevorzugt |
-| Thüringen | 182,21 € | – | – | 01.04.2026 | **niedrig** – Kinderanteile in den Quellen widersprüchlich/unplausibel (u. a. identischer Wert für 3. und 4. Kind) |
+**Grundwerte (Standardfall: übrige/häufigste Besoldungsgruppe, keine Orts-/Mietenstufe):**
 
-### Quellen (Sekundärquellen, abgerufen 13.11.2026)
-
-- [oeffentlichen-dienst.de – Familienzuschlag für Beamte 2026](https://www.oeffentlichen-dienst.de/beamte/besoldung/familienzuschlag.html)
-- [beamtenberater.com – Familienzuschlag Beamte 2026](https://beamtenberater.com/familienzuschlag-beamte)
-- [tarifvertrag-online.de – Familienzuschlag für Beamte 2026: Bund und alle 16 Länder](https://tarifvertrag-online.de/familienzuschlag)
-- [fairbeamtet.de – Familienzuschlag für Beamte: Höhe und Anspruch 2026](https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/) (eigener Artikel, nennt nur Bund + 2 Fallbeispiele, keine volle Länder-Tabelle)
-
-## Bekannte Unsicherheiten / vor Launch zu klären
-
-- **Bayern, Nordrhein-Westfalen**: strukturell zu komplex für einen einzelnen Pauschalwert (Ortsklassen bzw. Mietenstufen × Besoldungsgruppen). Entweder vor Launch die volle Matrix aus dem jeweiligen Landesbesoldungsgesetz einpflegen, oder in der ersten Version bewusst ausklammern und auf Beratung verweisen (siehe Rechner-Verhalten unten).
-- **Thüringen**: Kinderanteile aus den Quellen nicht plausibel (Dritt- und Viertkind identischer Betrag) – eher Extraktionsfehler der Quelle als echter Gesetzeswert. Vor Launch direkt im Thüringer Besoldungsgesetz nachschlagen.
-- **Rheinland-Pfalz**: Stufe-1-Betrag (88,03 €) liegt deutlich unter allen anderen Ländern (die sonst zwischen ~160–280 € liegen) – könnte ein Teilbetrag statt des vollen Satzes sein. Prüfen.
-- **Bremen, Brandenburg**: nur eine grobe Spanne bzw. ältere Datenlage verfügbar.
-- Mehrere Länder (Baden-Württemberg, Niedersachsen, Mecklenburg-Vorpommern, Bremen) haben zusätzliche „Familienergänzungszuschläge" nach Besoldungsgruppe, die hier **nicht** eingerechnet sind – das Tool rechnet nur den klassischen Familienzuschlag, nicht diese Zusatzkomponente. Sollte im Ergebnis als Fußnote stehen, damit niemand den Betrag für vollständig hält.
-- Generell: Jährliche/unterjährige Anpassungen (wie beim Bund zum 01.05., bei mehreren Ländern zum 01.04.) bedeuten **Pflegeaufwand**. Ohne jährlichen Update-Prozess veraltet der Rechner schnell – siehe dazu bereits die Risiken-Sektion in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]].
-
-**Empfehlung:** Nicht live schalten, bevor mindestens die als „niedrig" markierten Länder (Thüringen, Rheinland-Pfalz, Bremen, Brandenburg) gegen das jeweilige Landesbesoldungsgesetz geprüft sind. Bayern und NRW sind inzwischen gegen die Primärquelle geprüft (siehe unten) und können in den Rechner übernommen werden. Der Code unten ist noch auf dem alten, defensiven Stand (Bayern/NRW blockiert) – Code-Update steht als nächster Schritt aus.
-
-### Bayern – geprüft gegen Primärquelle (Anlage 5 BayBesG)
-
-Automatisierte Abrufe derselben Seite lieferten zunächst zwei unterschiedliche, unplausible Versionen dieser Tabelle. Grund: Die amtliche HTML-Tabelle nutzt `rowspan`-Zellen (ein Wert gilt für mehrere Ortsklassen gleichzeitig), was einfache Text-Extraktion zerstört. Korrekt rekonstruiert aus dem rohen HTML von [gesetze-bayern.de, Anlage 5 BayBesG](https://www.gesetze-bayern.de/Content/Document/BayBesG-ANL_5) (abgerufen 13.11.2026, dort als aktuell gültige Fassung ausgewiesen, Stand der Tabelle selbst: **1. Februar 2025**):
-
-| Ortsklasse | Stufe L (ledig) | Stufe V (verheiratet) | Stufe 1 (1 Kind) | Stufe 2 (2 Kinder) | zzgl. 3. Kind | zzgl. jedes weitere Kind |
+| Bundesland | Stufe 1 (verheiratet/verpartnert) | 1. Kind | 2. Kind | ab 3. Kind | Gültig ab | Quellenstatus |
 |---|---|---|---|---|---|---|
-| I | – | 85,11 € | 337,46 € | 493,00 € | 482,05 € | 577,10 € |
-| II | – | 85,11 € | 337,46 € | 493,00 € | 482,05 € | 577,10 € |
-| III | – | 85,11 € | 337,46 € | 527,70 € | 496,51 € | 623,23 € |
-| IV | – | 85,11 € | 360,56 € | 562,38 € | 511,42 € | 669,83 € |
-| V | – | 109,41 € | 383,64 € | 597,06 € | 526,76 € | 716,84 € |
-| VI | – | 133,73 € | 406,73 € | 674,02 € | 542,57 € | 764,33 € |
-| VII | 165,59 € | 165,59 € | 531,08 € | 763,33 € | 558,83 € | 812,28 € |
+| Bund | 181,36 € | +154,99 € (Stufe 2 gesamt: 336,35 €) | +154,99 € | +482,89 € je Kind | 01.05.2026 | final verkündet |
+| Baden-Württemberg | 180,46 € | +157,78 € | +157,78 € | +989,17 € je Kind | 01.04.2026 | Entwurf |
+| Bayern | 87,51 € (Ortsklasse I; s. Detailtabelle) | s. Detailtabelle (Ortsklasse I: 506,90 € Stufe 1 gesamt) | s. Detailtabelle | s. Detailtabelle | 01.10.2026 | Entwurf |
+| Berlin | kein Stufe-1-Anteil | +148,44 € | +148,44 € | 3. Kind +819,76 €, ab 4. Kind +678,99 € | 01.04.2026 | final verkündet |
+| Brandenburg | kein Stufe-1-Anteil | +377,16 € | +377,16 € | +888,39 € je Kind | 01.01.2026 | final verkündet |
+| Bremen | 166,18 € (A5–A8) / 174,54 € (übrige) | +432,03 €/+440,39 € gesamt (Stufe 2) | +265,85 € | 3. Kind +610,60 €, ab 4. Kind +587,27 € | 01.04.2026 | Entwurf |
+| Hamburg | 165,84 € | +193,14 € | +193,14 € | +635,00 € je Kind | 01.04.2026 | final verkündet |
+| Hessen | 177,30 € | +360,57 € | +360,57 € | +831,08 € je Kind | 01.07.2026 | final verkündet |
+| Mecklenburg-Vorpommern | 164,77 € | +198,83 € (Stufe 2 gesamt: 363,60 €) | +198,83 € | +820,00 € je Kind | 01.04.2026 | final verkündet |
+| Niedersachsen | 162,26 € (A5–A8) / 170,36 € (übrige) | +145,61 € (Stufe 2 gesamt: 307,87 €/315,97 €) | +145,61 € | +512,37 € je Kind | 01.04.2026 | final verkündet |
+| Nordrhein-Westfalen | 169,26 €/167,26 €/173,50 € (nach BesGr, s. Detailtabelle) | s. Detailtabelle (Mietenstufen-/BesGr-Matrix) | s. Detailtabelle | s. Detailtabelle | 01.04.2026 | final verkündet (amtliches PDF) |
+| Rheinland-Pfalz | 88,03 € | +246,97 € | +246,97 € | +726,00 € je Kind, ggf. + Mietenstufen-Aufstockung | 01.04.2026 | final verkündet |
+| Saarland | 164,48 € | +165,31 € (Stufe 2 gesamt: 329,79 €) | +165,31 € | +781,68 € je Kind | 01.04.2026 | final verkündet |
+| Sachsen | 279,58 € | +279,58 € (Stufe 2 gesamt: 559,16 €) | +279,58 € | +795,41 € je Kind | 01.04.2026 | final verkündet |
+| Sachsen-Anhalt | 169,04 € | +184,85 € (Stufe 2 gesamt: 353,89 €) | +184,85 € | +818,98 € je Kind | 01.04.2026 | final verkündet |
+| Schleswig-Holstein | 176,24 € | +199,85 € (Stufe 2 gesamt: 376,09 €) | +199,85 € | +516,48 € je Kind | 01.01.2026 | final verkündet |
+| Thüringen | 177,25 € | 326,41 € gesamt (1 Kind) | 529,16 € gesamt (2 Kinder) | 830,50 € gesamt (3 Kinder), ab 4. Kind jeweils +803,23 € | **01.02.2025** (keine 2026er dbb-Tabelle gefunden) | veraltet – zu prüfen |
 
-Alle Werte jetzt monoton steigend über die Ortsklassen, wie inhaltlich zu erwarten – das war bei den beiden vorherigen automatisierten Extraktionen nicht der Fall und damit das Signal für den Fehler. „Stufe L" (ledig) gibt es nur in Ortsklasse VII (München); in den Ortsklassen I–VI erhalten Ledige keinen Ortszuschlag.
+**Wichtiger Struktur-Hinweis:** Die Spalten "1. Kind"/"2. Kind"/"ab 3. Kind" sind bei den meisten Ländern **Erhöhungen**, die auf Stufe 1 aufaddiert werden (additive Logik). Bei Bayern, NRW, Hamburg, Thüringen und teilweise Bremen sind die Werte dagegen **Gesamtbeträge je Stufe** (die Stufe selbst enthält bereits den Ehezuschlag) – in der Tabelle oben jeweils vermerkt. Das muss im Rechner-Code so unterschieden werden, sonst entstehen Doppelzählungen oder falsche Summen.
 
-Zusätzlich gibt es **Erhöhungsbeträge für die Besoldungsgruppen A 3–A 10** (gestaffelt nach Ortsklasse, von 10,61 € bis 58,69 €), die ab Stufe 1 für jedes Kind hinzukommen – im Rechner bislang nicht eingerechnet, siehe gleiche Logik wie bei Baden-Württemberg/Niedersachsen/MV oben.
+### Quellen
 
-**Hinweis zur Aktualität:** Eine andere Recherche-Spur hatte einen Stand "01.10.2026" mit einer generellen Erhöhung um 2,82 % erwähnt (vermutlich die reguläre Grundgehalts-Anpassung). Die amtliche Anlage 5 selbst zeigt weiterhin "Gültig ab 1. Februar 2025" als aktuellste Fassung (Stand Abruf 13.11.2026) – falls eine neuere Fassung der Anlage 5 zum 1.10.2026 existiert, ist sie auf gesetze-bayern.de zum Abrufzeitpunkt noch nicht separat ausgewiesen. Vor Launch kurz erneut prüfen, ob sich daran etwas geändert hat.
+- [dbb.de – Besoldungstabellen (Übersicht aller Bundesländer)](https://www.dbb.de/beamtinnen-beamte/besoldungstabellen.html) – Primärquelle für fast alle Länder, jeweils aktuellste 2026er-PDF-Datei
+- [recht.nrw.de – Anhang 8 LBesG NRW](https://recht.nrw.de/system/files/2026-08/lrgv_lbesg_anlage-13_stand-01.04.2026.pdf) – amtliches Original-PDF für NRW
+- [gesetze-bayern.de – Anlage 5 BayBesG](https://www.gesetze-bayern.de/Content/Document/BayBesG-ANL_5) – amtlicher Gesetzestext, zeigt zum Abrufzeitpunkt noch den älteren Stand 01.02.2025 (dbb-Tabelle mit Stand 01.10.2026 ist aktueller, s. Bayern-Detailabschnitt)
+- [haufe.de – Anlage 6 ThürBesG](https://www.haufe.de/id/norm/besoldungsgesetz-thueringen-anlage-6-zu-37-familienzuschlag-und-anrechnungsbetrag-HI16460882.html) – bestätigt den Feb.-2025-Stand für Thüringen unabhängig von der dbb-Tabelle
 
-### Nordrhein-Westfalen – geprüft gegen Primärquelle (Anhang 8 / Anlage 13 LBesG NRW)
+## Besoldungsgruppen-abhängige Zusatzkomponenten je Bundesland
 
-Direkt aus dem amtlichen PDF ausgelesen: [recht.nrw.de – Anhang 8 zu Art. 1 Nr. 7 LBesG NRW, Familienzuschlag für Beamtinnen und Beamte](https://recht.nrw.de/system/files/2026-08/lrgv_lbesg_anlage-13_stand-01.04.2026.pdf), **gültig ab 1. April 2026**. Zwei offensichtliche OCR-Fehler im PDF korrigiert (fehlende führende „8" bei zwei Mietenstufe-II-Werten; durch Monotonie-Vergleich mit den Nachbarwerten plausibilisiert).
+Das ist der Teil, der für "jede Besoldungsgruppe" entscheidend ist. Mehrere Länder erhöhen den Familienzuschlag zusätzlich für niedrigere Besoldungsgruppen, oder haben komplett eigene Matrizen. Alle Werte aus den dbb-Tabellen, Stand wie oben.
+
+### Bund – Erhöhungsbeträge A 3–A 5
+
+Für das erste Kind in A 3–A 5 (und Anwärter des einfachen Dienstes): **+5,37 €**. Für jedes weitere Kind: A 3 +26,84 €, A 4 +21,47 €, A 5 +16,10 €.
+
+### Baden-Württemberg – mehrstufig, komplexeste Struktur im Datensatz
+
+- Kinderbezogener Teil erhöht sich für das **erste** Kind in A 7–A 10 um **+56,82 €**, in A 11–A 13 um **+28,41 €**.
+- Zusätzlich eine **Erhöhung des kinderbezogenen Teils für das zweite Kind nach Besoldungsgruppe UND Stufe des Grundgehalts** (eigene Matrix A 7–A 14 × Erfahrungsstufe 1–10, Beträge von 5,96 € bis 511,38 €, tendenziell höher bei niedrigerer Stufe).
+- Zusätzlich ein **Familienergänzungszuschlag** (separate Matrix "Betrag, den eine Familie mit einem Kind insgesamt erhält" bzw. "mit mindestens zwei Kindern", nach BesGr A 7–A 10 × Stufe, bis zu 790 € bei einem Kind bzw. 989,17 € bei Familienergänzungszuschlag nach Stufe-Werten).
+- **Einordnung:** Baden-Württemberg ist das einzige Bundesland im Datensatz, bei dem der Betrag nicht nur von Besoldungsgruppe, sondern zusätzlich von der **Erfahrungsstufe des Grundgehalts** abhängt. Für eine vollständig korrekte Abbildung bräuchte der Rechner ein zusätzliches Eingabefeld "Erfahrungsstufe", nur für Baden-Württemberg.
+
+### Bayern – aktualisierte Primärquelle (dbb, gültig ab 1. Oktober 2026 – neuer als gesetze-bayern.de)
+
+Die dbb-Tabelle zeigt einen **neueren Stand (01.10.2026)** als der amtliche Gesetzestext auf gesetze-bayern.de, der beim ersten Abruf noch "01.02.2025" zeigte. Korrekt rekonstruiert (gleiche Rowspan-Logik wie beim Februar-2025-Stand, Werte jetzt höher):
+
+| Ortsklasse | Stufe L (ledig) | Stufe V (verheiratet) | Stufe 1 (1 Kind, gesamt) | Stufe 2 (2 Kinder, gesamt) | zzgl. 3. Kind | zzgl. jedes weitere Kind |
+|---|---|---|---|---|---|---|
+| I | – | 87,51 € | 346,98 € | 506,90 € | 495,64 € | 593,37 € |
+| II | – | 87,51 € | 346,98 € | 506,90 € | 495,64 € | 593,37 € |
+| III | – | 87,51 € | 346,98 € | 542,58 € | 510,51 € | 640,81 € |
+| IV | – | 87,51 € | 370,73 € | 578,24 € | 525,84 € | 688,72 € |
+| V | – | 112,50 € | 394,46 € | 613,90 € | 541,61 € | 737,05 € |
+| VI | – | 137,50 € | 418,20 € | 693,03 € | 557,87 € | 785,88 € |
+| VII | 170,26 € | 170,26 € | 546,06 € | 784,86 € | 574,59 € | 835,19 € |
+
+**Erhöhungsbeträge A 3–A 10** (gültig ab 1. Oktober 2026, je Ortsklasse, ab Stufe 1 für jedes Kind):
+
+| Ortsklasse | A 3 | A 4 | A 5 | A 6 | A 7 | A 8 | A 9 | A 10 |
+|---|---|---|---|---|---|---|---|---|
+| I | 35,15 € | 31,12 € | 30,05 € | 27,96 € | 24,59 € | 22,34 € | 18,09 € | 10,91 € |
+| II | 37,26 € | 34,96 € | 33,76 € | 31,40 € | 27,63 € | 25,09 € | 20,31 € | 12,25 € |
+| III | 41,40 € | 38,85 € | 37,51 € | 34,88 € | 30,70 € | 27,87 € | 22,55 € | 13,60 € |
+| IV | 45,99 € | 43,15 € | 41,67 € | 38,73 € | 34,11 € | 30,97 € | 25,06 € | 15,11 € |
+| V | 50,54 € | 47,41 € | 45,79 € | 42,57 € | 37,47 € | 34,03 € | 27,52 € | 16,61 € |
+| VI | 54,92 € | 51,52 € | 49,75 € | 46,27 € | 40,72 € | 36,97 € | 29,91 € | 18,06 € |
+| VII | 60,35 € | 56,61 € | 54,68 € | 50,83 € | 44,74 € | 40,62 € | 32,87 € | 19,83 € |
+
+### Berlin – Ergänzender Familienzuschlag nach § 40a BBesG BE
+
+Zusätzlich zum regulären Zuschlag (§ 40) gibt es einen **Ergänzenden Familienzuschlag** für Fälle, in denen der reguläre Zuschlag nicht oder nur reduziert gewährt wird: ohne Kind 176,44 €, für ein Kind 638,81 €, für zwei Kinder 718,65 €. Komplexer Sonderfall (betrifft primär Teilzeit-/Mischkonstellationen) – im MVP-Rechner nicht abgebildet, nur als Hinweis im Ergebnis.
+
+### Bremen – zweistufig nach Besoldungsgruppenband, plus Familienergänzungszuschlag
+
+- Stufe 1/Stufe 2 (A 5–A 8 bzw. übrige) siehe Grundtabelle oben.
+- Erhöhung in A 5: Stufe 2 für das erste Kind +18,00 €, ab Stufe 3 für jedes weitere Kind +40,00 €.
+- **Familienergänzungszuschlag** (§ 35a BremBesG, zusätzlich zum klassischen Zuschlag): 1. Kind 375,00 €, 2. Kind 375,00 €, 3. Kind 375,00 €, 4. und jedes weitere Kind 385,00 €.
+
+### Mecklenburg-Vorpommern – Erhöhungsbeträge A 4–A 6
+
+Für das erste und zweite Kind in den Stufen 2 und 3: A 4 +36,17 €, A 5 +31,17 €, A 6 +16,17 €.
+
+### Niedersachsen – Laufbahngruppe 1
+
+In der Laufbahngruppe 1, Besoldungsgruppen A 5–A 9, erhöht sich der Zuschlag in den Stufen 2 und 3 für jedes Kind um **+100,00 €**.
+
+### Nordrhein-Westfalen – vollständige Mietenstufen-/Besoldungsgruppen-Matrix
+
+Direkt aus dem amtlichen PDF [recht.nrw.de](https://recht.nrw.de/system/files/2026-08/lrgv_lbesg_anlage-13_stand-01.04.2026.pdf), gültig ab 1. April 2026.
 
 **Stufe 1 (Ehezuschlag, unabhängig von Mietenstufe):**
 
@@ -94,19 +130,60 @@ Direkt aus dem amtlichen PDF ausgelesen: [recht.nrw.de – Anhang 8 zu Art. 1 Nr
 | A 7 und A 8 | 167,26 € |
 | übrige (ab A 9) | 173,50 € |
 
-**Stufe 2–5 (Gesamtbetrag inkl. Ehezuschlag, nach Mietenstufe I–VII), übrige Besoldungsgruppen (ab A 9) – der häufigste Fall:**
+**Stufe 2–5 (Gesamtbetrag inkl. Ehezuschlag, nach Mietenstufe I–VII):**
 
-| Stufe | I | II | III | IV | V | VI | VII |
-|---|---|---|---|---|---|---|---|
-| Stufe 2 (1 Kind) | 324,52 € | 324,52 € | 373,81 € | 518,76 € | 651,57 € | 794,39 € | 955,05 € |
-| Stufe 3 (2 Kinder) | 734,08 € | 877,30 € | 1.024,87 € | 1.196,36 € | 1.358,93 € | 1.526,09 € | 1.721,50 € |
-| Stufe 4 (3 Kinder) | 1.436,24 € | 1.601,59 € | 1.775,12 € | 1.977,14 € | 2.162,61 € | 2.358,88 € | 2.586,52 € |
-| Stufe 5 (4 Kinder) | 2.143,84 € | 2.333,59 € | 2.534,32 € | 2.784,39 € | 2.973,69 € | 3.212,40 € | 3.473,44 € |
-| ab 5. Kind, je Kind | 749,64 € | 777,56 € | 808,43 € | 840,64 € | 868,27 € | 917,73 € | 957,16 € |
+| Stufe | BesGr | I | II | III | IV | V | VI | VII |
+|---|---|---|---|---|---|---|---|---|
+| Stufe 2 (1 Kind) | A5/A6 | 323,89 € | 323,89 € | 373,17 € | 518,14 € | 650,94 € | 793,75 € | 954,44 € |
+| | A7/A8 | 320,07 € | 320,07 € | 369,36 € | 514,32 € | 647,13 € | 769,94 € | 950,62 € |
+| | übrige | 324,52 € | 324,52 € | 373,81 € | 518,76 € | 651,57 € | 794,39 € | 955,05 € |
+| Stufe 3 (2 Kinder) | A5/A6 | 737,09 € | 880,30 € | 1.027,88 € | 1.199,36 € | 1.361,94 € | 1.529,08 € | 1.724,50 € |
+| | A7/A8 | 731,44 € | 874,66 € | 1.022,24 € | 1.193,72 € | 1.356,29 € | 1.523,45 € | 1.718,87 € |
+| | übrige | 734,08 € | 877,30 € | 1.024,87 € | 1.196,36 € | 1.358,93 € | 1.526,09 € | 1.721,50 € |
+| Stufe 4 (3 Kinder) | A5/A6 | 1.450,50 € | 1.615,85 € | 1.789,38 € | 1.991,40 € | 2.176,88 € | 2.373,13 € | 2.600,78 € |
+| | A7/A8 | 1.439,21 € | 1.604,55 € | 1.778,08 € | 1.980,11 € | 2.165,58 € | 2.361,84 € | 2.588,49 € |
+| | übrige | 1.436,24 € | 1.601,59 € | 1.775,12 € | 1.977,14 € | 2.162,61 € | 2.358,88 € | 2.586,52 € |
+| Stufe 5 (4 Kinder) | A5/A6 | 2.169,15 € | 2.359,21 € | 2.559,84 € | 2.789,90 € | 2.999,21 € | 3.237,91 € | 3.498,95 € |
+| | A7/A8 | 2.152,20 € | 2.342,26 € | 2.542,88 € | 2.772,95 € | 2.982,26 € | 3.220,96 € | 3.482,00 € |
+| | übrige | 2.143,84 € | 2.333,59 € | 2.534,32 € | 2.784,39 € | 2.973,69 € | 3.212,40 € | 3.473,44 € |
+| ab 5. Kind, je Kind | A5/A6 | 760,89 € | 788,82 € | 819,69 € | 851,89 € | 879,53 € | 928,98 € | 968,42 € |
+| | A7/A8 | 755,23 € | 783,16 € | 814,02 € | 846,23 € | 873,87 € | 923,32 € | 962,70 € |
+| | übrige | 749,64 € | 777,56 € | 808,43 € | 840,64 € | 868,27 € | 917,73 € | 957,16 € |
 
-Für die Besoldungsgruppen A 5/A 6 und A 7/A 8 liegen eigene, etwas abweichende Beträge vor (teils höher als „übrige", vermutlich Ausgleich für niedrigere Grundbesoldung) – vollständige Werte liegen vor, hier aus Platzgründen nicht alle drei Bänder tabelliert; bei Bedarf nachreichen.
+Zusätzlich in A 5: Stufe 2 für das erste Kind +8,65 €, ab Stufe 3 für jedes weitere Kind +25,67 €.
 
-**Wichtig für die Implementierung:** NRW rechnet nicht additiv (Ehezuschlag + x € pro Kind), sondern gibt für jede Kinderzahl einen eigenen Gesamtbetrag pro Mietenstufe aus. Der Rechner-Code muss das als Lookup-Tabelle (Besoldungsgruppenband × Mietenstufe × Kinderzahl) abbilden, nicht als einfache Addition wie bei den anderen Ländern.
+**Wichtig für die Implementierung:** NRW rechnet nicht additiv (Ehezuschlag + x € pro Kind), sondern gibt für jede Kinderzahl einen eigenen Gesamtbetrag pro Mietenstufe und Besoldungsgruppenband aus. Der Rechner-Code muss das als dreidimensionale Lookup-Tabelle (Besoldungsgruppenband × Mietenstufe × Kinderzahl) abbilden.
+
+### Rheinland-Pfalz – Erhöhung A 5 plus mietenstufenabhängige Aufstockung
+
+- Erhöhung in A 5: für das erste Kind +5,32 €, für das zweite Kind +15,98 €.
+- **Mietenstufenabhängige Aufstockung** für das dritte und jedes weitere Kind: Mietenstufe V +19,00 €, Mietenstufe VI +43,00 €, Mietenstufe VII +68,00 € (Mietenstufen I–IV: keine Aufstockung).
+
+### Saarland – Erhöhungsbeträge A 4–A 6
+
+In Stufe 2 für das erste Kind in A 4–A 6: +17,91 €. Ab Stufe 3 für jedes weitere Kind: A 4 +71,65 €, A 5 +47,77 €, A 6 +23,88 €.
+
+### Sachsen – Erhöhung A 5
+
+In Stufe 2 für das erste Kind: +5,11 €. Ab Stufe 3 für jedes weitere Kind: +20,45 €.
+
+### Sachsen-Anhalt – Erhöhung A 5
+
+Für das erste Kind: +6,69 €. Für jedes weitere Kind: +20,11 €.
+
+### Thüringen – veraltete Datenlage (Stand Februar 2025)
+
+Keine 2026er-Tabelle beim dbb gefunden (bei praktisch allen anderen Ländern lag eine vor) – entweder hat Thüringen 2026 tatsächlich noch nicht angepasst, oder die Tabelle wurde beim dbb noch nicht veröffentlicht. **Vor Launch gezielt prüfen, ob es 2026 eine Anpassung gab.** Anrechnungsbetrag (separate Größe, kein Zuschlag): A 6–A 8: 148,94 €, A 9–A 12: 155,98 €.
+
+## Bekannte Unsicherheiten / vor Launch zu klären
+
+- **„Entwurf"-Status bei Baden-Württemberg, Bayern, Bremen**: dbb-Tabellen mit dem Vermerk "Veröffentlichung unter Vorbehalt der Bekanntmachung im Gesetzblatt" – vor Launch gegen die inzwischen verkündeten Gesetzblätter gegenprüfen.
+- **Thüringen**: veraltete Datenlage (Februar 2025), keine 2026er-Anpassung gefunden – gezielt nachrecherchieren.
+- **Berlin**: Ergänzender Familienzuschlag nach § 40a (Sonderfälle) ist komplex und im MVP-Rechner nicht abgebildet.
+- **Baden-Württemberg**: einziges Land, bei dem die Erfahrungsstufe des Grundgehalts zusätzlich zur Besoldungsgruppe eine Rolle spielt (Familienergänzungszuschlag-Matrix) – für 100%ige Korrektheit bräuchte es ein zusätzliches Eingabefeld nur für dieses Land.
+- Generell: Jährliche/unterjährige Anpassungen (Bund zum 01.05., die meisten Länder zum 01.04., einige zum 01.01.) bedeuten **laufenden Pflegeaufwand**. Ohne jährlichen Update-Prozess veraltet der Rechner schnell – siehe dazu bereits die Risiken-Sektion in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]].
+
+**Empfehlung:** Die Datenqualität ist jetzt für 16 von 17 Dienstherren auf Primärquellen-Niveau (dbb-Besoldungstabellen, teils noch "Entwurf"-Status). Vor einem echten Go-Live: (1) Thüringen 2026 nachrecherchieren, (2) die drei "Entwurf"-Länder gegen die verkündeten Gesetzblätter prüfen, (3) mit Sven abstimmen, ob die komplexeren Sonderfälle (Berlin § 40a, Baden-Württemberg Erfahrungsstufe) im MVP ausgeklammert bleiben.
 
 ## Uniqueness-Check: Was macht unseren Rechner besser als die Konkurrenz?
 
@@ -126,18 +203,28 @@ Recherchiert 13.11.2026, zweite Runde (gezielt nach existierenden *interaktiven*
 
 **Einordnung:** Ein frei zugänglicher, werbefreier Rechner *speziell* für den Familienzuschlag (statt als Nebenprodukt eines kompletten Besoldungsrechners) existiert nicht. Die eigentliche Lücke ist also nicht "gibt es sowas schon", sondern: **kein Wettbewerber verbindet das mit Transparenz zu Datenqualität/Gültigkeit und einer ehrlichen Beratungs-CTA statt reiner Zahlenausgabe.** Unser Rechner sollte sich entsprechend positionieren – fokussiert auf den Familienzuschlag allein (schneller, einfacher als ein kompletter Besoldungsrechner mit 10+ Feldern), mit sichtbarem Gültigkeitsdatum/Vertrauens-Hinweis je Bundesland, und dort, wo die Datenlage nicht sauber ist (aktuell Bayern/NRW/Thüringen), ehrlich blockierend statt einen falschen Pseudo-Wert auszugeben.
 
-## Rechner-Konzept
+## Rechner-Konzept (Version 2 – vollständig, nach Besoldungsgruppe)
+
+Grundüberarbeitung gegenüber Version 1: Ines wollte einen Rechner, der **für jedes Bundesland, jede Besoldungsgruppe und jede Familienkonstellation** funktioniert, nicht nur den Standardfall. Dafür war ein neues Eingabefeld (Besoldungsgruppe) nötig, plus zwei konditionale Felder für die zwei Länder mit echter Ortsabhängigkeit.
 
 **Eingaben:**
 - Bundesland (Dropdown, 17 Optionen: Bund + 16 Länder)
+- **Besoldungsgruppe (neu)**: Dropdown A 3–A 16 plus "B-Besoldung / höherer Dienst" als Sammelkategorie. Steuert alle besoldungsgruppenabhängigen Erhöhungsbeträge (siehe Recherche-Abschnitt oben).
 - Verheiratet/verpartnert (Ja/Nein)
-- Anzahl kindergeldberechtigter Kinder (Zahl, 0–6+)
+- Anzahl kindergeldberechtigter Kinder (Zahl, 0–8)
+- **Ortsklasse (neu, nur bei Bayern sichtbar)**: Dropdown I–VII
+- **Mietenstufe (neu, nur bei NRW und Rheinland-Pfalz sichtbar)**: Dropdown I–VII (bei NRW zwingend für die Berechnung, bei Rheinland-Pfalz nur für den Kind-3+-Aufschlag relevant)
+
+**Rechenlogik, drei Typen:**
+1. **Additiv** (14 von 17 Dienstherren): Ehe-/Partnerschaftsanteil (ggf. nach Besoldungsgruppenband) + ein Kinderanteil-Satz für Kind 1, Kind 2, Kind 3 und Kind 4+ (bei den meisten Ländern sind Kind 1 und Kind 2 gleich, Kind 3+ ist der große Sprung). Besoldungsgruppen-Erhöhungsbeträge werden als Zuschlag auf den jeweiligen Kind-Satz aufgeschlagen.
+2. **Bayern**: Ortsklasse bestimmt Stufe V/1/2/zzgl.3.Kind/zzgl.weiteres – daraus werden die gleichen vier Kind-Sätze abgeleitet wie beim additiven Modell, zusätzlich eine Besoldungsgruppen-Erhöhung (A 3–A 10) je Kind und Ortsklasse.
+3. **NRW**: echte dreidimensionale Lookup-Tabelle (Besoldungsgruppenband × Mietenstufe × Kinderzahl), keine Addition – siehe Begründung oben.
 
 **Ausgabe:**
-- Monatlicher Familienzuschlag, aufgeschlüsselt nach Ehe-/Partnerschaftsanteil und Kinderanteil
-- Gültigkeitsdatum des verwendeten Werts
-- Bei Bundesländern mit niedrigem Vertrauen oder fehlender Pauschalisierbarkeit: kein Zahlenwert, sondern Hinweistext + CTA zur Beratung
-- Fußnote zu eventuellen Familienergänzungszuschlägen, die nicht eingerechnet sind
+- Monatlicher Familienzuschlag, aufgeschlüsselt nach Ehe-/Partnerschaftsanteil, Kinderanteil (inkl. eingerechneter Besoldungsgruppen-Zuschläge) und Gesamtsumme
+- Gültigkeitsdatum und Status-Badge (final verkündet / Entwurf / veraltet – siehe Thüringen)
+- Separate Ausweisung von Zusatzleistungen, die **nicht** in der Summe enthalten sind (Bremen: Familienergänzungszuschlag; Baden-Württemberg: Erfahrungsstufen-abhängiger Familienergänzungszuschlag; Berlin: Ergänzender Familienzuschlag nach § 40a) – als eigene Zeile mit Hinweis, nicht stillschweigend weggelassen
+- CTA zur Beratung bleibt erhalten, auch wenn jetzt (fast) immer eine Zahl ausgegeben wird
 
 ## Layout
 
