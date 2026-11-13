@@ -225,6 +225,7 @@ Grundüberarbeitung gegenüber Version 1: Ines wollte einen Rechner, der **für 
 - Gültigkeitsdatum und Status-Badge (final verkündet / Entwurf / veraltet – siehe Thüringen)
 - Separate Ausweisung von Zusatzleistungen, die **nicht** in der Summe enthalten sind (Bremen: Familienergänzungszuschlag; Baden-Württemberg: Erfahrungsstufen-abhängiger Familienergänzungszuschlag; Berlin: Ergänzender Familienzuschlag nach § 40a) – als eigene Zeile mit Hinweis, nicht stillschweigend weggelassen
 - CTA zur Beratung bleibt erhalten, auch wenn jetzt (fast) immer eine Zahl ausgegeben wird
+- **Durchgängiger "Ohne Gewähr"-Disclaimer (wichtig, auf Wunsch von Ines)**: Sowohl vor der Berechnung (unter dem Platzhaltertext) als auch nach jeder Berechnung (unter dem Ergebnis) steht sichtbar, dass es sich um einen Richtwert ohne Gewähr handelt, keine rechtlich gesicherte Aussage und keine individuelle Beratung ersetzt. Zusätzlich in der Infobox ausführlicher erklärt. Das gilt für **alle** Ergebnisse, nicht nur für Länder mit Status "Entwurf"/"veraltet" – auch "final verkündete" Zahlen sind ein Rechenmodell, keine amtliche Auskunft.
 
 ## Layout
 
@@ -353,6 +354,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     <div class="fb-fz-result-card">
       <div class="fb-fz-placeholder" id="fbFzPlaceholder">
         <p>Wähl links dein Bundesland, deine Besoldungsgruppe und deine Familiensituation. Ich zeig dir deinen monatlichen Familienzuschlag.</p>
+        <p class="fb-fz-disclaimer">Richtwert ohne Gewähr, keine rechtlich gesicherte Aussage.</p>
       </div>
 
       <div class="fb-fz-result" id="fbFzResult" hidden>
@@ -361,15 +363,17 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
         <div class="fb-fz-breakdown" id="fbFzBreakdown"></div>
         <p class="fb-fz-kommentar" id="fbFzKommentar"></p>
         <div class="fb-fz-zusatz" id="fbFzZusatz" hidden></div>
+        <p class="fb-fz-disclaimer">Richtwert ohne Gewähr. Keine rechtlich gesicherte Aussage und keine individuelle Beratung – dein konkreter Fall kann abweichen.</p>
       </div>
     </div>
   </div>
 
   <div class="fb-fz-infobox">
     <h2>So funktioniert der Familienzuschlag</h2>
+    <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
     <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand und Kinderzahl. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten einen Ehe-/Partnerschaftsanteil. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein Kinderanteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt. In mehreren Ländern (z. B. Baden-Württemberg, Niedersachsen, Bayern, NRW) hängt die genaue Höhe zusätzlich von deiner Besoldungsgruppe ab – niedrigere Gruppen bekommen teils einen Aufschlag, als Ausgleich für die niedrigere Grundbesoldung.</p>
     <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern und Nordrhein-Westfalen koppeln die Höhe zusätzlich an deinen Wohnort (Ortsklasse bzw. Mietenstufe) – deshalb fragen wir das bei diesen beiden Ländern extra ab.</p>
-    <p>Wichtig: Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
+    <p>Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026 – <strong>ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität</strong>. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
   </div>
 
   <div class="fb-fz-contact-card">
@@ -557,6 +561,12 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   font-size: 0.95rem;
   min-width: 0;
 }
+/* Ohne diese Regel gewinnt ".fb-fz-field { display:flex }" gegen das native [hidden]-Verhalten
+   (gleiche CSS-Spezifität, unsere Regel steht später) – Ortsklasse/Mietenstufe blieben dadurch
+   für jedes Bundesland sichtbar, statt nur für Bayern bzw. NRW/Rheinland-Pfalz. */
+.fb-fz-field[hidden] {
+  display: none !important;
+}
 .fb-fz-field-checkbox {
   flex-direction: row;
   align-items: center;
@@ -669,6 +679,14 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   line-height: 1.6;
   color: rgba(255,255,255,0.65) !important;
   margin-top: 8px;
+}
+.fb-fz-disclaimer {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.55) !important;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.15);
 }
 .fb-fz-zusatz {
   margin-top: 16px;
