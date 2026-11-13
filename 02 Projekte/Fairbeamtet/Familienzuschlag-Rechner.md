@@ -124,7 +124,9 @@ Drei unabhängige Quellen (Sven, tarifvertrag-online.de, oeffentlichen-dienst.de
 1. **Die Mai-2026-Erhöhung ist ein vorläufiger Abschlag, kein verkündetes Gesetz.** Grundlage wäre das Bundesalimentationsgesetz – dafür gab es laut dbb zum 27.10.2026 weder einen Kabinettsbeschluss noch einen abgestimmten Entwurf. Bundesinnenminister Dobrindt kündigte am 02.11.2026 an, das Gesetz noch 2026 ins Kabinett zu bringen. **Status im Rechner jetzt auf "Vorläufiger Abschlag, kein Gesetz" geändert** (statt "final verkündet").
 2. **Ein früherer Referentenentwurf (April 2026) hätte den Ehe-/Partnerschaftsanteil ab 2026 komplett gestrichen** – nur noch Kinderanteile (265 € für 1./2. Kind, 708 € für 3. Kind, laut oeffentlicher-dienst.org). Das BMI hat diesen Entwurf zurückgezogen und überarbeitet ihn; wie der Familienzuschlag am Ende aussieht, ist offen. Entsprechender Hinweistext jetzt im Ergebnis hinterlegt.
 3. **Ortsklasse/Mietenstufe spielen beim Bund keine Rolle** – das war schon in der Rechenlogik korrekt (Bund nutzt weder Ortsklasse- noch Mietenstufen-Daten), aber die beiden Felder waren auf der Live-Seite trotzdem sichtbar, obwohl Bund ausgewählt war (Anzeige-Bug, nicht Rechenfehler – behoben, siehe "Bekannte Unsicherheiten"). Außerdem war die Formulierung "(inkl. Besoldungsgruppen-/Mietenstufen-Zuschlag)" in der Kinderanteil-Zeile bei A 9 irreführend, weil bei A 9 gar kein Zuschlag greift (nur A 3–A 5 haben beim Bund einen) – die Zeile nennt den Zusatz jetzt nur noch, wenn er tatsächlich eingerechnet wurde.
-4. **Zwei Fälle fehlten komplett:** Ist der Ehepartner/die Ehepartnerin ebenfalls im öffentlichen Dienst, gibt es Stufe 1 nur anteilig (§ 40 BBesG). Den Kinderanteil bekommt nur, wer das Kindergeld bezieht. Beides jetzt als Hinweis im Rechner ergänzt (Infobox + Disclaimer unter dem Ergebnis) – nicht als Berechnung, weil das ein eigenes Eingabefeld bräuchte und für ein MVP zu weit ginge.
+4. **Zwei Fälle fehlten komplett.** Update 13.11.2026, zweite Runde (Ines' Nachfrage): Die Partner-im-öD-Frage ist jetzt eine echte Berechnung, nicht mehr nur ein Hinweis.
+   - **Partner/-in ebenfalls im öffentlichen Dienst** → eigenes, konditionales Eingabefeld (erscheint nur, wenn "verheiratet/verpartnert" angehakt ist). Wenn angehakt, wird der Ehe-/Partnerschaftsanteil automatisch halbiert (§ 40 Abs. 4 BBesG: Sind beide Partner anspruchsberechtigt, wird Stufe 1 nur zur Hälfte gezahlt – Regel bundesweit gleich, auch in den Landesbesoldungsgesetzen mit eigener Paragrafennummer). Implementiert in `berechneAdditiv` (alle additiven Länder inkl. Bayern über `bayernConfig`) und separat in `berechneNRW` (da NRW den Betrag nicht additiv, sondern als Gesamtsumme je Mietenstufe/Besoldungsgruppe führt – dort wird die halbe Stufe-1 explizit wieder abgezogen).
+   - **Kindergeld-Bezieher**: bleibt ein Hinweis, kein Eingabefeld – wer von zwei Elternteilen das Kindergeld tatsächlich bezieht, lässt sich aus unseren Eingaben nicht ableiten. Dafür jetzt ein direkter Hinweistext **im Formular selbst**, nicht erst im Ergebnis: Das Eingabefeld "Anzahl kindergeldberechtigter Kinder" hat eine kleine Hinweiszeile darunter ("zählt nur Kinder, für die aktuell noch wirklich Kindergeld gezahlt wird") – Auslöser war Ines' Hinweis, dass sonst z. B. ein drittes Kind mitgezählt werden könnte, das längst nicht mehr kindergeldberechtigt ist (z. B. über 25 oder nach Ausbildungsende).
 
 **Einschränkung von Sven selbst:** Er hat nur die Anlage V aus dem Gesetzestext nachgerechnet, nicht den amtlichen Abschlagsbescheid vom BVA bzw. der jeweiligen Bezügestelle – dass dort identisch gerundet wird, ist nicht belegt, aber angesichts von drei übereinstimmenden unabhängigen Quellen sehr wahrscheinlich.
 
@@ -281,7 +283,8 @@ Grundüberarbeitung gegenüber Version 1: Ines wollte einen Rechner, der **für 
 - Bundesland (Dropdown, 17 Optionen: Bund + 16 Länder)
 - **Besoldungsgruppe (neu)**: Dropdown A 3–A 16 plus "B-Besoldung / höherer Dienst" als Sammelkategorie. Steuert alle besoldungsgruppenabhängigen Erhöhungsbeträge (siehe Recherche-Abschnitt oben).
 - Verheiratet/verpartnert (Ja/Nein)
-- Anzahl kindergeldberechtigter Kinder (Zahl, 0–8)
+- **Partner/-in ebenfalls im öffentlichen Dienst (neu, 13.11.2026)**: Checkbox, erscheint nur wenn "verheiratet/verpartnert" angehakt ist. Halbiert den Ehe-/Partnerschaftsanteil (§ 40 Abs. 4 BBesG).
+- Anzahl kindergeldberechtigter Kinder (Zahl, 0–8) – mit Hinweistext direkt im Formular, dass nur tatsächlich noch kindergeldberechtigte Kinder zählen
 - **Ortsklasse (neu, nur bei Bayern sichtbar)**: Dropdown I–VII
 - **Mietenstufe (neu, nur bei NRW und Rheinland-Pfalz sichtbar)**: Dropdown I–VII (bei NRW zwingend für die Berechnung, bei Rheinland-Pfalz nur für den Kind-3+-Aufschlag relevant)
 
@@ -411,9 +414,15 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
             Verheiratet / verpartnert
           </label>
 
+          <label class="fb-fz-field fb-fz-field-checkbox fb-fz-field-hidden" id="fbFzPartnerOeDWrap">
+            <input type="checkbox" id="fbFzPartnerOeD">
+            Partner/-in ebenfalls im öffentlichen Dienst
+          </label>
+
           <label class="fb-fz-field">
             Anzahl kindergeldberechtigter Kinder
             <input type="number" id="fbFzKinder" min="0" max="8" step="1" value="0" required>
+            <span class="fb-fz-field-hint">Zählt nur Kinder, für die aktuell noch wirklich Kindergeld gezahlt wird – z. B. nicht mehr nach Ausbildungsende oder meist ab 25 Jahren. Ein 3. Kind, das aus dem Kindergeld herausgefallen ist, zählt hier nicht mehr mit.</span>
           </label>
         </div>
 
@@ -433,14 +442,14 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
         <div class="fb-fz-breakdown" id="fbFzBreakdown"></div>
         <p class="fb-fz-kommentar" id="fbFzKommentar"></p>
         <div class="fb-fz-zusatz" id="fbFzZusatz" hidden></div>
-        <p class="fb-fz-disclaimer">Richtwert ohne Gewähr. Keine rechtlich gesicherte Aussage und keine individuelle Beratung – dein konkreter Fall kann abweichen. Zwei Fälle sind hier nicht eingerechnet: Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, gibt es den Ehe-/Partnerschaftsanteil meist nur anteilig (§ 40 BBesG). Den Kinderanteil bekommt zudem nur, wer das Kindergeld bezieht.</p>
+        <p class="fb-fz-disclaimer">Richtwert ohne Gewähr. Keine rechtlich gesicherte Aussage und keine individuelle Beratung – dein konkreter Fall kann abweichen. Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, wird der Ehe-/Partnerschaftsanteil oben bereits halbiert (§ 40 BBesG bzw. Landesrecht) – Haken dafür oben im Formular nicht vergessen. Den Kinderanteil bekommt zudem nur, wer tatsächlich das Kindergeld bezieht.</p>
       </div>
     </div>
   </div>
 
   <div class="fb-fz-infobox">
     <h2>So funktioniert der Familienzuschlag</h2>
-    <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf" oder "Vorläufiger Abschlag", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Zwei weitere Fälle fragen wir bewusst nicht ab: Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, gibt es den Ehe-/Partnerschaftsanteil meist nur anteilig (§ 40 BBesG), und den Kinderanteil bekommt nur, wer das Kindergeld bezieht. Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
+    <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf" oder "Vorläufiger Abschlag", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, hak das unten extra an – dann wird der Ehe-/Partnerschaftsanteil automatisch halbiert (§ 40 BBesG bzw. Landesrecht). Trag bei der Kinderzahl außerdem nur Kinder ein, für die wirklich noch Kindergeld gezahlt wird, und bedenke: Den Kinderanteil bekommt ohnehin nur, wer das Kindergeld tatsächlich bezieht. Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
     <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand und Kinderzahl. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten einen Ehe-/Partnerschaftsanteil. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein Kinderanteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt. In mehreren Ländern (z. B. Baden-Württemberg, Niedersachsen, Bayern, NRW) hängt die genaue Höhe zusätzlich von deiner Besoldungsgruppe ab – niedrigere Gruppen bekommen teils einen Aufschlag, als Ausgleich für die niedrigere Grundbesoldung.</p>
     <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern und Nordrhein-Westfalen koppeln die Höhe zusätzlich an deinen Wohnort (Ortsklasse bzw. Mietenstufe) – deshalb fragen wir das bei diesen beiden Ländern extra ab.</p>
     <p>Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026 – <strong>ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität</strong>. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
@@ -656,6 +665,13 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+.fb-fz-field-hint {
+  font-weight: 400 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+  color: #6B7280 !important;
+  margin-top: 2px;
 }
 /* !important auf allen größenrelevanten Eigenschaften, weil Theme-CSS (gleiches Muster wie
    beim BMI-Rechner, siehe dortige "Korrekturen nach erstem Praxistest") sonst Select-/Input-
@@ -1126,15 +1142,15 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     return 'uebrige';
   }
 
-  function berechneNRW(besGr, verheiratet, kinder, mietenstufe) {
+  function berechneNRW(besGr, verheiratet, kinder, mietenstufe, partnerOeD) {
     var band = nwBand(besGr);
     var idx = MIETENSTUFEN_INDEX[mietenstufe];
     var tab = NW_STUFEN[band];
     var zeilen = [];
     var summe;
+    var stufe1 = NW_STUFE1[besGr] !== undefined ? NW_STUFE1[besGr] : 173.50;
 
     if (kinder === 0) {
-      var stufe1 = NW_STUFE1[besGr] !== undefined ? NW_STUFE1[besGr] : 173.50;
       summe = verheiratet ? stufe1 : 0;
       if (verheiratet) zeilen.push('Ehezuschlag (Stufe 1): ' + formatEuro(stufe1) + ' €');
     } else if (kinder <= 4) {
@@ -1156,11 +1172,22 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
       }
     }
 
+    // § 40 Abs. 4 BBesG bzw. entsprechende Landesregelung: Ist der Partner/die Partnerin
+    // ebenfalls im öffentlichen Dienst und ebenfalls anspruchsberechtigt, wird der
+    // Ehe-/Partnerschaftsanteil nur zur Hälfte gezahlt. Der NRW-Gesamtbetrag enthält Stufe 1
+    // bereits eingerechnet, deshalb hier die Hälfte von Stufe 1 wieder abziehen.
+    if (verheiratet) {
+      if (partnerOeD) {
+        summe -= stufe1 / 2;
+        zeilen.push('Ehe-/Partnerschaftsanteil halbiert (Partner/-in ebenfalls im öffentlichen Dienst, § 40 Abs. 4 BBesG bzw. Landesrecht): –' + formatEuro(stufe1 / 2) + ' €');
+      }
+    }
+
     return { summe: summe, zeilen: zeilen };
   }
 
   // ===== Generische additive Berechnung =====
-  function berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe) {
+  function berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe, partnerOeD) {
     var stufe1 = cfg.stufe1(besGr);
     var delta = [0, 0, 0, 0];
     if (cfg.besGrDelta) {
@@ -1170,7 +1197,18 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     }
     var zeilen = [];
     var ehe = verheiratet ? stufe1 : 0;
-    if (verheiratet) zeilen.push('Ehe-/Partnerschaftsanteil: ' + formatEuro(ehe) + ' €');
+    // § 40 Abs. 4 BBesG bzw. entsprechende Landesregelung: Ist der Partner/die Partnerin
+    // ebenfalls im öffentlichen Dienst und ebenfalls anspruchsberechtigt, wird der
+    // Ehe-/Partnerschaftsanteil nur zur Hälfte gezahlt.
+    if (verheiratet) {
+      if (partnerOeD) {
+        ehe = stufe1 / 2;
+      }
+    }
+    if (verheiratet) {
+      var eheLabel = 'Ehe-/Partnerschaftsanteil' + (partnerOeD ? ' (halbiert, Partner/-in ebenfalls im öffentlichen Dienst)' : '') + ': ' + formatEuro(ehe) + ' €';
+      zeilen.push(eheLabel);
+    }
 
     var kinderSumme = 0;
     var besGrZuschlagAngewendet = false;
@@ -1218,6 +1256,8 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   var landSelect = document.getElementById('fbFzLand');
   var ortsklasseWrap = document.getElementById('fbFzOrtsklasseWrap');
   var mietenstufeWrap = document.getElementById('fbFzMietenstufeWrap');
+  var partnerOeDWrap = document.getElementById('fbFzPartnerOeDWrap');
+  var verheiratetCheckbox = document.getElementById('fbFzVerheiratet');
   var form = document.getElementById('fbFzForm');
   var placeholder = document.getElementById('fbFzPlaceholder');
   var result = document.getElementById('fbFzResult');
@@ -1248,6 +1288,19 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   landSelect.addEventListener('change', updateConditionalFields);
   updateConditionalFields();
 
+  // Partner-Feld nur sichtbar, wenn überhaupt "verheiratet/verpartnert" angehakt ist – ohne
+  // Ehe-/Partnerschaft gibt es auch keinen Ehe-/Partnerschaftsanteil, der halbiert werden könnte.
+  function updatePartnerOeDVisibility() {
+    if (verheiratetCheckbox.checked) {
+      partnerOeDWrap.classList.remove('fb-fz-field-hidden');
+    } else {
+      partnerOeDWrap.classList.add('fb-fz-field-hidden');
+      document.getElementById('fbFzPartnerOeD').checked = false;
+    }
+  }
+  verheiratetCheckbox.addEventListener('change', updatePartnerOeDVisibility);
+  updatePartnerOeDVisibility();
+
   var STATUS_LABEL = {
     final: 'Final verkündet',
     // "entwurf" wird nur noch für BW/Bayern genutzt: Beide zahlen diesen Betrag bereits
@@ -1265,6 +1318,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     var land = landSelect.value;
     var besGr = document.getElementById('fbFzBesGr').value;
     var verheiratet = document.getElementById('fbFzVerheiratet').checked;
+    var partnerOeD = verheiratet ? document.getElementById('fbFzPartnerOeD').checked : false;
     var kinder = parseInt(document.getElementById('fbFzKinder').value, 10) || 0;
     var ortsklasse = document.getElementById('fbFzOrtsklasse').value;
     var mietenstufe = document.getElementById('fbFzMietenstufe').value;
@@ -1272,20 +1326,20 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     var cfg, berechnung, gueltig, status, name, zusatzHinweis = null, zusatzBetrag = null, zusatzLabel = null;
 
     if (land === 'nw') {
-      berechnung = berechneNRW(besGr, verheiratet, kinder, mietenstufe);
+      berechnung = berechneNRW(besGr, verheiratet, kinder, mietenstufe, partnerOeD);
       name = 'Nordrhein-Westfalen (Mietenstufe ' + mietenstufe + ')';
       gueltig = '01.04.2026';
       status = 'final';
     } else if (land === 'by') {
       cfg = bayernConfig(ortsklasse);
-      berechnung = berechneAdditiv(cfg, besGr, verheiratet, kinder, null);
+      berechnung = berechneAdditiv(cfg, besGr, verheiratet, kinder, null, partnerOeD);
       name = cfg.name;
       gueltig = cfg.gueltig;
       status = cfg.status;
       zusatzHinweis = cfg.hinweis;
     } else {
       cfg = FZ_ADDITIV[land];
-      berechnung = berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe);
+      berechnung = berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe, partnerOeD);
       name = cfg.name;
       gueltig = cfg.gueltig;
       status = cfg.status;
