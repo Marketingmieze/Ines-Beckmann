@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"><title>Test Familienzuschlag-Rechner v5</title></head><body>
+<html lang="de"><head><meta charset="utf-8"><title>Test Familienzuschlag-Rechner v7</title></head><body>
 <div class="fb-fz-rechner">
   <div class="fb-fz-hero">
     <div class="fb-fz-hero-watermark" aria-hidden="true">€</div>
@@ -165,7 +165,7 @@
   margin: 0 auto;
   padding: 48px 24px;
   font-family: 'Inter', sans-serif;
-  color: #1A1A1A;
+  color: #1A1A1A !important;
 }
 .fb-fz-rechner h1,
 .fb-fz-rechner h2,
@@ -179,8 +179,8 @@
 
 .fb-fz-hero {
   position: relative;
-  background: #0B1E33;
-  color: #fff;
+  background: #0B1E33 !important;
+  color: #fff !important;
   border-radius: 20px;
   padding: 64px 40px;
   margin-bottom: 24px;
@@ -211,10 +211,16 @@
   margin: 0 0 16px 0;
 }
 .fb-fz-hero h1 {
-  font-size: clamp(2.2rem, 5.6vw, 4rem);
+  font-size: clamp(1.9rem, 7vw, 4rem);
   margin: 0 0 20px 0;
-  line-height: 1.02;
+  line-height: 1.15;
   color: #fff !important;
+  /* Verhindert den hässlichen Umbruch mitten im Wort ("BESOLDUNGSGR" / "UPPE.") auf
+     schmalen Handy-Bildschirmen – lange Wörter springen jetzt komplett in die nächste
+     Zeile statt an beliebiger Stelle zu brechen. */
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
 }
 .fb-fz-accent {
   color: #FF3F77 !important;
@@ -229,8 +235,8 @@
 .fb-fz-hero-button {
   display: inline-block;
   margin-top: 28px;
-  background: #FF3F77;
-  color: #fff;
+  background: #FF3F77 !important;
+  color: #fff !important;
   text-decoration: none;
   border-radius: 999px;
   padding: 14px 30px;
@@ -238,7 +244,7 @@
   font-weight: 700;
 }
 .fb-fz-hero-button:hover {
-  background: #D92F5F;
+  background: #D92F5F !important;
 }
 
 .fb-fz-stat-row {
@@ -253,16 +259,16 @@
   }
 }
 .fb-fz-stat-tile {
-  background: #F4F6FA;
+  background: #F4F6FA !important;
   border-radius: 14px;
   padding: 24px;
 }
 .fb-fz-stat-tile-accent {
-  background: #FF3F77;
-  color: #fff;
+  background: #FF3F77 !important;
+  color: #fff !important;
 }
 .fb-fz-stat-tile-accent p {
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.92) !important;
 }
 .fb-fz-stat-number {
   font-size: 1.8rem;
@@ -273,6 +279,13 @@
   margin: 0;
   font-size: 0.92rem;
   line-height: 1.5;
+  color: #1A1A1A !important;
+}
+.fb-fz-stat-tile .fb-fz-stat-number {
+  color: #1A1A1A !important;
+}
+.fb-fz-stat-tile-accent .fb-fz-stat-number {
+  color: #fff !important;
 }
 
 .fb-fz-grid {
@@ -289,12 +302,12 @@
   padding: 32px;
 }
 .fb-fz-form-card {
-  background: #fff;
+  background: #fff !important;
   border: 1px solid #E2E6EE;
   box-shadow: 0 10px 30px rgba(15,30,51,0.06);
 }
 .fb-fz-result-card {
-  background: #0B1E33;
+  background: #0B1E33 !important;
   color: #fff !important;
   min-height: 220px;
   padding: 40px;
@@ -303,7 +316,7 @@
   justify-content: center;
 }
 .fb-fz-result-card * {
-  color: inherit;
+  color: inherit !important;
 }
 
 .fb-fz-fields {
@@ -324,6 +337,7 @@
   font-weight: 600;
   font-size: 0.95rem;
   min-width: 0;
+  color: #1A1A1A !important;
 }
 /* Ohne diese Regel gewinnt ".fb-fz-field { display:flex }" gegen das native [hidden]-Verhalten
    (gleiche CSS-Spezifität, unsere Regel steht später) – Ortsklasse/Mietenstufe blieben dadurch
@@ -354,8 +368,24 @@
   width: 100% !important;
   max-width: 100% !important;
   display: block !important;
-  -webkit-appearance: menulist !important;
-  appearance: auto !important;
+}
+/* Select-Felder brauchen eine eigene Regel: "-webkit-appearance: menulist" (native Darstellung)
+   führt auf iOS Safari dazu, dass das Betriebssystem eine eigene, kompakte Mini-Box zeichnet
+   und unser Padding/Mindesthöhe ignoriert – genau der "Felder zu klein"-Effekt auf dem Handy.
+   Fix: native Darstellung komplett abschalten und einen eigenen Pfeil per Hintergrundbild zeichnen,
+   dann greift unser Padding/Mindesthöhe zuverlässig auf jedem Gerät. */
+.fb-fz-field select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  padding-right: 44px !important;
+  /* SVG-Pfeil komplett URL-encodiert (keine rohen spitzen Klammern im Quelltext) – nachdem
+     WordPress schon einmal "&&" im Script zerstört hat, soll hier nichts als HTML-Tag erkannt
+     und vom Sicherheitsfilter herausgefiltert werden. */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2714%27%20height%3D%279%27%20viewBox%3D%270%200%2014%209%27%3E%3Cpath%20d%3D%27M1%201L7%207L13%201%27%20stroke%3D%27%231A1A1A%27%20stroke-width%3D%272%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%2F%3E%3C%2Fsvg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px center !important;
+  background-size: 14px 9px !important;
 }
 .fb-fz-field select:focus,
 .fb-fz-field input:focus {
@@ -366,13 +396,13 @@
   width: 20px !important;
   height: 20px !important;
   min-height: 0 !important;
-  accent-color: #0693E3;
+  accent-color: #0693E3 !important;
 }
 
 .fb-fz-button {
   font-family: 'Inter', sans-serif;
-  background: #0693E3;
-  color: #fff;
+  background: #0693E3 !important;
+  color: #fff !important;
   border: none;
   border-radius: 999px;
   padding: 16px 28px;
@@ -382,7 +412,7 @@
   width: 100%;
 }
 .fb-fz-button:hover {
-  background: #057AB0;
+  background: #057AB0 !important;
 }
 
 .fb-fz-placeholder {
@@ -407,15 +437,15 @@
   padding: 4px 12px;
   border-radius: 999px;
   margin-bottom: 14px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.15) !important;
   color: rgba(255,255,255,0.85) !important;
 }
 .fb-fz-status-badge.status-entwurf {
-  background: rgba(255,200,0,0.2);
+  background: rgba(255,200,0,0.2) !important;
   color: #FFD466 !important;
 }
 .fb-fz-status-badge.status-veraltet {
-  background: rgba(255,63,119,0.25);
+  background: rgba(255,63,119,0.25) !important;
   color: #FF9FBB !important;
 }
 .fb-fz-number {
@@ -456,7 +486,7 @@
   margin-top: 16px;
   padding: 14px 16px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.08) !important;
   font-size: 0.85rem;
   line-height: 1.5;
   text-align: left;
@@ -464,7 +494,7 @@
 }
 
 .fb-fz-infobox {
-  background: #F4F6FA;
+  background: #F4F6FA !important;
   padding: 32px;
   border-radius: 16px;
   line-height: 1.6;
@@ -472,13 +502,20 @@
 .fb-fz-infobox h2 {
   margin-top: 0;
   font-size: 1.7rem;
+  color: #1A1A1A !important;
+}
+.fb-fz-infobox p {
+  color: #1A1A1A !important;
+}
+.fb-fz-infobox a {
+  color: #0693E3 !important;
 }
 
 .fb-fz-contact-card {
   display: flex;
   gap: 24px;
   align-items: flex-start;
-  background: #F4F6FA;
+  background: #F4F6FA !important;
   border-radius: 16px;
   padding: 32px;
   margin-top: 24px;
@@ -496,37 +533,39 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #0693E3;
+  background: #0693E3 !important;
   border: 3px solid #F4F6FA;
   margin-left: -16px;
 }
 .fb-fz-contact-photo:first-child {
   margin-left: 0;
-  background: #9F4CFF;
+  background: #9F4CFF !important;
 }
 .fb-fz-contact-photo:last-child {
-  background: #FF3F77;
+  background: #FF3F77 !important;
 }
 .fb-fz-contact-label {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #0693E3;
+  color: #0693E3 !important;
   margin: 0 0 4px 0;
 }
 .fb-fz-contact-text h2 {
   margin: 0 0 12px 0;
   font-size: 1.5rem;
   text-transform: none;
+  color: #1A1A1A !important;
 }
 .fb-fz-contact-text p {
   margin: 0 0 16px 0;
   line-height: 1.6;
+  color: #1A1A1A !important;
 }
 .fb-fz-cta-button {
   display: inline-block;
-  background: #FF3F77;
-  color: #fff;
+  background: #FF3F77 !important;
+  color: #fff !important;
   text-decoration: none;
   border-radius: 999px;
   padding: 14px 28px;
@@ -534,7 +573,7 @@
   font-family: 'Inter', sans-serif;
 }
 .fb-fz-cta-button:hover {
-  background: #D92F5F;
+  background: #D92F5F !important;
 }
 </style>
 
