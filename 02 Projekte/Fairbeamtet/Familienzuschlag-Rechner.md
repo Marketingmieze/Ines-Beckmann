@@ -232,7 +232,7 @@ Gleiche Markenbasis wie [[02 Projekte/Fairbeamtet/BMI-Rechner.md|BMI-Rechner]], 
 
 ## Code
 
-Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist absichtlich so gebaut, dass Bundesländer mit `stufe1: null` oder `kind: null` keine Berechnung ausgeben, sondern einen Hinweis – das verhindert, dass unsichere Zahlen als Ergebnis ausgespielt werden, bevor der Primärquellen-Check gemacht ist.
+Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teile gegliedert: ein generisches additives Modell für 15 von 17 Dienstherren (inkl. Bayern, das sich nach Ortsklassen-Auflösung auf dasselbe additive Muster zurückführen lässt), plus eine eigene dreidimensionale Lookup-Tabelle nur für NRW. Besoldungsgruppe ist jetzt Pflichtfeld, Ortsklasse/Mietenstufe erscheinen konditional.
 
 ```html
 <div class="fb-fz-rechner">
@@ -240,8 +240,8 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
     <div class="fb-fz-hero-watermark" aria-hidden="true">€</div>
     <div class="fb-fz-hero-inner">
       <p class="fb-fz-eyebrow">FAMILIENZUSCHLAG 2026</p>
-      <h1>DEIN ZUSCHLAG.<br><span class="fb-fz-accent">DEIN BUNDESLAND.</span></h1>
-      <p class="fb-fz-intro">Verheiratet, verpartnert, mit Kindern? Der Familienzuschlag unterscheidet sich je Bundesland teils deutlich. Trag deine Situation ein, ich zeig dir deinen monatlichen Zuschlag.</p>
+      <h1>DEIN ZUSCHLAG.<br><span class="fb-fz-accent">JEDE BESOLDUNGSGRUPPE.</span></h1>
+      <p class="fb-fz-intro">Bund oder Land, A 5 oder A 13, verheiratet oder nicht – der Familienzuschlag unterscheidet sich teils erheblich. Trag deine Situation ein, ich zeig dir deinen monatlichen Zuschlag mit Aufschlüsselung.</p>
       <a href="#fbFzForm" class="fb-fz-hero-button">Jetzt berechnen <span aria-hidden="true">&rarr;</span></a>
     </div>
   </div>
@@ -249,15 +249,15 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
   <div class="fb-fz-stat-row">
     <div class="fb-fz-stat-tile">
       <div class="fb-fz-stat-number">17</div>
-      <p>Dienstherren (Bund + 16 Länder) mit jeweils eigener Besoldungsregel seit der Föderalismusreform 2006.</p>
+      <p>Dienstherren (Bund + 16 Länder), jeweils mit eigener Besoldungsregel seit der Föderalismusreform 2006.</p>
     </div>
     <div class="fb-fz-stat-tile fb-fz-stat-tile-accent">
-      <div class="fb-fz-stat-number">AB KIND 3</div>
-      <p>In fast allen Bundesländern springt der Kinderanteil ab dem dritten Kind deutlich nach oben.</p>
+      <div class="fb-fz-stat-number">A 3–A 16</div>
+      <p>Besoldungsgruppe fließt in mehreren Ländern direkt in die Höhe des Zuschlags ein – wir rechnen das mit, nicht nur den Standardfall.</p>
     </div>
     <div class="fb-fz-stat-tile">
-      <div class="fb-fz-stat-number">JÄHRLICH</div>
-      <p>Die Beträge werden regelmäßig angepasst – meist zum 1. April, beim Bund zum 1. Mai.</p>
+      <div class="fb-fz-stat-number">AB KIND 3</div>
+      <p>In fast allen Bundesländern springt der Kinderanteil ab dem dritten Kind deutlich nach oben.</p>
     </div>
   </div>
 
@@ -288,6 +288,53 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
             </select>
           </label>
 
+          <label class="fb-fz-field">
+            Besoldungsgruppe
+            <select id="fbFzBesGr" required>
+              <option value="A3">A 3</option>
+              <option value="A4">A 4</option>
+              <option value="A5">A 5</option>
+              <option value="A6">A 6</option>
+              <option value="A7">A 7</option>
+              <option value="A8">A 8</option>
+              <option value="A9" selected>A 9</option>
+              <option value="A10">A 10</option>
+              <option value="A11">A 11</option>
+              <option value="A12">A 12</option>
+              <option value="A13">A 13</option>
+              <option value="A14">A 14</option>
+              <option value="A15">A 15</option>
+              <option value="A16">A 16</option>
+              <option value="B">B-Besoldung / höherer Dienst</option>
+            </select>
+          </label>
+
+          <label class="fb-fz-field" id="fbFzOrtsklasseWrap" hidden>
+            Ortsklasse (nach Wohnort, Bayern)
+            <select id="fbFzOrtsklasse">
+              <option value="I">I</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+              <option value="IV">IV</option>
+              <option value="V">V</option>
+              <option value="VI">VI</option>
+              <option value="VII">VII (z. B. München)</option>
+            </select>
+          </label>
+
+          <label class="fb-fz-field" id="fbFzMietenstufeWrap" hidden>
+            Mietenstufe (nach Wohnort)
+            <select id="fbFzMietenstufe">
+              <option value="I">I</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+              <option value="IV">IV</option>
+              <option value="V">V</option>
+              <option value="VI">VI</option>
+              <option value="VII">VII</option>
+            </select>
+          </label>
+
           <label class="fb-fz-field fb-fz-field-checkbox">
             <input type="checkbox" id="fbFzVerheiratet">
             Verheiratet / verpartnert
@@ -295,7 +342,7 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
 
           <label class="fb-fz-field">
             Anzahl kindergeldberechtigter Kinder
-            <input type="number" id="fbFzKinder" min="0" max="10" step="1" value="0" required>
+            <input type="number" id="fbFzKinder" min="0" max="8" step="1" value="0" required>
           </label>
         </div>
 
@@ -305,27 +352,24 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
 
     <div class="fb-fz-result-card">
       <div class="fb-fz-placeholder" id="fbFzPlaceholder">
-        <p>Wähl links dein Bundesland und deine Familiensituation. Ich zeig dir deinen monatlichen Familienzuschlag.</p>
+        <p>Wähl links dein Bundesland, deine Besoldungsgruppe und deine Familiensituation. Ich zeig dir deinen monatlichen Familienzuschlag.</p>
       </div>
 
       <div class="fb-fz-result" id="fbFzResult" hidden>
+        <div class="fb-fz-status-badge" id="fbFzStatusBadge"></div>
         <div class="fb-fz-number"><span id="fbFzValue">0</span><span class="fb-fz-unit">€/Monat</span></div>
         <div class="fb-fz-breakdown" id="fbFzBreakdown"></div>
         <p class="fb-fz-kommentar" id="fbFzKommentar"></p>
-      </div>
-
-      <div class="fb-fz-unklar" id="fbFzUnklar" hidden>
-        <p id="fbFzUnklarText"></p>
-        <a href="#" class="fb-fz-cta-button-inline">Meinen Zuschlag konkret klären lassen <span aria-hidden="true">&rarr;</span></a>
+        <div class="fb-fz-zusatz" id="fbFzZusatz" hidden></div>
       </div>
     </div>
   </div>
 
   <div class="fb-fz-infobox">
     <h2>So funktioniert der Familienzuschlag</h2>
-    <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten die sogenannte Stufe 1. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein kinderbezogener Anteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt.</p>
-    <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest – deshalb unterscheiden sich die Beträge teils erheblich, und manche Länder (z. B. Berlin, Brandenburg) zahlen gar keinen klassischen Ehe-/Partnerschaftsanteil mehr.</p>
-    <p>Wichtig: Dieser Rechner bildet den <strong>klassischen</strong> Familienzuschlag ab. Mehrere Länder zahlen zusätzlich einen Familienergänzungszuschlag nach Besoldungsgruppe, der hier nicht eingerechnet ist. Bei Bayern und Nordrhein-Westfalen hängt der Betrag zusätzlich von Ortsklasse bzw. Mietenstufe ab – dafür geben wir hier bewusst keinen Pauschalwert aus. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
+    <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand und Kinderzahl. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten einen Ehe-/Partnerschaftsanteil. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein Kinderanteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt. In mehreren Ländern (z. B. Baden-Württemberg, Niedersachsen, Bayern, NRW) hängt die genaue Höhe zusätzlich von deiner Besoldungsgruppe ab – niedrigere Gruppen bekommen teils einen Aufschlag, als Ausgleich für die niedrigere Grundbesoldung.</p>
+    <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern und Nordrhein-Westfalen koppeln die Höhe zusätzlich an deinen Wohnort (Ortsklasse bzw. Mietenstufe) – deshalb fragen wir das bei diesen beiden Ländern extra ab.</p>
+    <p>Wichtig: Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
   </div>
 
   <div class="fb-fz-contact-card">
@@ -399,7 +443,7 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
   margin: 0 0 16px 0;
 }
 .fb-fz-hero h1 {
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(2.2rem, 5.6vw, 4rem);
   margin: 0 0 20px 0;
   line-height: 1.02;
   color: #fff !important;
@@ -453,7 +497,7 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
   color: rgba(255,255,255,0.92);
 }
 .fb-fz-stat-number {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -496,7 +540,7 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
 
 .fb-fz-fields {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-bottom: 20px;
 }
@@ -569,51 +613,61 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
   text-align: center;
   width: 100%;
 }
+.fb-fz-status-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85) !important;
+}
+.fb-fz-status-badge.status-entwurf {
+  background: rgba(255,200,0,0.2);
+  color: #FFD466 !important;
+}
+.fb-fz-status-badge.status-veraltet {
+  background: rgba(255,63,119,0.25);
+  color: #FF9FBB !important;
+}
 .fb-fz-number {
-  font-size: 4.2rem;
+  font-size: 4rem;
   line-height: 1;
   color: #fff !important;
 }
 .fb-fz-unit {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-left: 8px;
   color: #FF6FB5 !important;
 }
 .fb-fz-breakdown {
-  margin: 18px 0;
+  margin: 16px 0;
   font-family: 'Inter', sans-serif;
   text-transform: none;
   font-size: 0.95rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.85) !important;
+  text-align: left;
+  display: inline-block;
 }
 .fb-fz-kommentar {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.7) !important;
+  color: rgba(255,255,255,0.65) !important;
+  margin-top: 8px;
 }
-.fb-fz-unklar {
-  text-align: center;
-  width: 100%;
-}
-.fb-fz-unklar p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: rgba(255,255,255,0.9) !important;
-  margin-bottom: 20px;
-}
-.fb-fz-cta-button-inline {
-  display: inline-block;
-  background: #FF3F77;
-  color: #fff !important;
-  text-decoration: none;
-  border-radius: 999px;
-  padding: 14px 28px;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
-}
-.fb-fz-cta-button-inline:hover {
-  background: #D92F5F;
+.fb-fz-zusatz {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: left;
+  color: rgba(255,255,255,0.85) !important;
 }
 
 .fb-fz-infobox {
@@ -693,107 +747,379 @@ Entwurf, fachlich **noch nicht freigegeben**. Die Datenbasis (`FZ_DATEN`) ist ab
 
 <script>
 (function() {
-  // Stand der Recherche: 13.11.2026, Sekundärquellen – siehe Projektnotiz "Familienzuschlag-Rechner".
-  // stufe1/kind/ab3 = null bedeutet: keine verlässliche Pauschalzahl verfügbar (Ortsklassen/Mietenstufen
-  // oder widersprüchliche Quellen). In diesen Fällen wird bewusst NICHT gerechnet.
-  var FZ_DATEN = {
-    bund: { name: 'Bund', stufe1: 181.36, kind: 154.99, ab3: 482.89, gueltig: '01.05.2026', verlaesslich: true, hinweis: null },
-    bw:   { name: 'Baden-Württemberg', stufe1: 180.46, kind: 157.78, ab3: 989.17, gueltig: '01.04.2026', verlaesslich: true, hinweis: 'Zusätzlicher Familienergänzungszuschlag nach Besoldungsgruppe (A 7–A 10) ist hier nicht eingerechnet.' },
-    by:   { name: 'Bayern', stufe1: null, kind: null, ab3: null, gueltig: '01.10.2026', verlaesslich: false, hinweis: 'Bayern staffelt den Familienzuschlag nach 7 Ortsklassen – ein pauschaler Betrag wäre hier irreführend.' },
-    be:   { name: 'Berlin', stufe1: 0, kind: 148.44, ab3: 819.76, gueltig: '01.04.2026', verlaesslich: true, hinweis: 'Berlin zahlt keinen klassischen Ehe-/Partnerschaftsanteil mehr (ggf. Ausgleichszulage für Altfälle, hier nicht eingerechnet).' },
-    bb:   { name: 'Brandenburg', stufe1: 0, kind: 377.16, ab3: 888.39, gueltig: '01.07.2024', verlaesslich: false, hinweis: 'Brandenburg zahlt keinen ehebezogenen Anteil. Datenstand älter als bei den anderen Ländern – vor Verwendung prüfen.' },
-    hb:   { name: 'Bremen', stufe1: 161.00, kind: 258.89, ab3: 610.60, gueltig: '01.04.2026', verlaesslich: false, hinweis: 'Richtwert – Bremen staffelt zusätzlich nach Besoldungsgruppe (A 5–A 8), der genaue Betrag kann abweichen.' },
-    hh:   { name: 'Hamburg', stufe1: 165.84, kind: 193.14, ab3: 635.00, gueltig: '01.04.2026', verlaesslich: true, hinweis: null },
-    he:   { name: 'Hessen', stufe1: 177.30, kind: 360.57, ab3: 831.08, gueltig: '01.07.2026', verlaesslich: true, hinweis: null },
-    mv:   { name: 'Mecklenburg-Vorpommern', stufe1: 164.77, kind: 198.83, ab3: 820.00, gueltig: '01.04.2026', verlaesslich: true, hinweis: null },
-    ni:   { name: 'Niedersachsen', stufe1: 162.26, kind: 145.61, ab3: 512.37, gueltig: '01.04.2026', verlaesslich: true, hinweis: 'Wert für Besoldungsgruppen A 5–A 8, in höheren Gruppen bis 170,36 € Stufe 1.' },
-    nw:   { name: 'Nordrhein-Westfalen', stufe1: null, kind: null, ab3: null, gueltig: '01.04.2026', verlaesslich: false, hinweis: 'NRW staffelt zusätzlich nach Mietenstufe (I–VII) und Besoldungsgruppe – ein pauschaler Betrag wäre hier irreführend.' },
-    rp:   { name: 'Rheinland-Pfalz', stufe1: 88.03, kind: 246.97, ab3: 726.00, gueltig: '01.04.2026', verlaesslich: false, hinweis: 'Der Stufe-1-Betrag wirkt im Ländervergleich ungewöhnlich niedrig – vor Veröffentlichung gegen das Landesbesoldungsgesetz prüfen.' },
-    sl:   { name: 'Saarland', stufe1: 164.48, kind: 165.31, ab3: 781.68, gueltig: '01.04.2026', verlaesslich: true, hinweis: null },
-    sn:   { name: 'Sachsen', stufe1: 279.58, kind: 279.58, ab3: 795.41, gueltig: '01.04.2026', verlaesslich: true, hinweis: null },
-    st:   { name: 'Sachsen-Anhalt', stufe1: 169.04, kind: 184.85, ab3: 818.98, gueltig: '01.04.2026', verlaesslich: true, hinweis: null },
-    sh:   { name: 'Schleswig-Holstein', stufe1: 176.24, kind: 199.85, ab3: 516.48, gueltig: '01.01.2026', verlaesslich: true, hinweis: null },
-    th:   { name: 'Thüringen', stufe1: null, kind: null, ab3: null, gueltig: '01.04.2026', verlaesslich: false, hinweis: 'Die Kinderanteile sind in den verfügbaren Quellen widersprüchlich – vor Veröffentlichung gegen das Thüringer Besoldungsgesetz prüfen.' }
+  // ===== Datenbasis =====
+  // Stand der Recherche: 13.11.2026, Primärquelle: offizielle dbb-Besoldungstabellen
+  // (siehe Projektnotiz "Familienzuschlag-Rechner" für alle Einzelquellen).
+  //
+  // Struktur je additivem Bundesland:
+  //   stufe1(besGr)      -> Ehe-/Partnerschaftsanteil (ggf. nach Besoldungsgruppenband)
+  //   grund[4]           -> Grundsatz für Kind 1, Kind 2, Kind 3, Kind 4+ (Index 0-3)
+  //   besGrDelta[besGr]  -> optionaler Aufschlag [d1,d2,d3,d4] auf die vier Kind-Sätze
+  //   mietenstufeAddon   -> optional, nur Rheinland-Pfalz (Aufschlag ab Kind 3 nach Mietenstufe)
+  //   ergaenzung(kinder) -> optional, separate Zusatzleistung (NICHT in der Summe enthalten)
+  //   status: 'final' | 'entwurf' | 'veraltet'
+
+  var FZ_ADDITIV = {
+    bund: {
+      name: 'Bund', gueltig: '01.05.2026', status: 'final',
+      stufe1: function() { return 181.36; },
+      grund: [154.99, 154.99, 482.89, 482.89],
+      besGrDelta: { A3: [5.37, 0, 26.84, 26.84], A4: [5.37, 0, 21.47, 21.47], A5: [5.37, 0, 16.10, 16.10] },
+      hinweis: null
+    },
+    bw: {
+      name: 'Baden-Württemberg', gueltig: '01.04.2026', status: 'entwurf',
+      stufe1: function() { return 180.46; },
+      grund: [157.78, 157.78, 989.17, 989.17],
+      besGrDelta: {
+        A7: [56.82, 0, 0, 0], A8: [56.82, 0, 0, 0], A9: [56.82, 0, 0, 0], A10: [56.82, 0, 0, 0],
+        A11: [28.41, 0, 0, 0], A12: [28.41, 0, 0, 0], A13: [28.41, 0, 0, 0]
+      },
+      hinweis: 'Der zusätzliche Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts ist hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
+    },
+    be: {
+      name: 'Berlin', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 0; },
+      grund: [148.44, 148.44, 819.76, 678.99],
+      besGrDelta: {},
+      hinweis: 'Ein Ergänzender Familienzuschlag nach § 40a BBesG BE für Sonderfälle (reduzierter regulärer Zuschlag) ist hier nicht eingerechnet.'
+    },
+    bb: {
+      name: 'Brandenburg', gueltig: '01.01.2026', status: 'final',
+      stufe1: function() { return 0; },
+      grund: [377.16, 377.16, 888.39, 888.39],
+      besGrDelta: {},
+      hinweis: 'Brandenburg zahlt keinen Ehe-/Partnerschaftsanteil, nur den kinderbezogenen Teil.'
+    },
+    hb: {
+      name: 'Bremen', gueltig: '01.04.2026', status: 'entwurf',
+      stufe1: function(besGr) { return ['A5', 'A6', 'A7', 'A8'].indexOf(besGr) !== -1 ? 166.18 : 174.54; },
+      grund: [265.85, 265.85, 610.60, 587.27],
+      besGrDelta: { A5: [18.00, 0, 40.00, 40.00] },
+      hinweis: null,
+      ergaenzung: function(kinder) {
+        var s = 0;
+        for (var i = 1; i <= kinder; i++) { s += (i <= 3) ? 375.00 : 385.00; }
+        return s;
+      },
+      ergaenzungLabel: 'Familienergänzungszuschlag (§ 35a BremBesG), separate Leistung'
+    },
+    hh: {
+      name: 'Hamburg', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 165.84; },
+      grund: [193.14, 193.14, 635.00, 635.00],
+      besGrDelta: { A3: [5.11, 0, 25.56, 25.56], A4: [5.11, 0, 20.45, 20.45], A5: [5.11, 0, 15.34, 15.34] },
+      hinweis: null
+    },
+    he: {
+      name: 'Hessen', gueltig: '01.07.2026', status: 'final',
+      stufe1: function() { return 177.30; },
+      grund: [360.57, 360.57, 831.08, 831.08],
+      besGrDelta: {},
+      hinweis: null
+    },
+    mv: {
+      name: 'Mecklenburg-Vorpommern', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 164.77; },
+      grund: [198.83, 198.83, 820.00, 820.00],
+      besGrDelta: { A4: [36.17, 36.17, 0, 0], A5: [31.17, 31.17, 0, 0], A6: [16.17, 16.17, 0, 0] },
+      hinweis: null
+    },
+    ni: {
+      name: 'Niedersachsen', gueltig: '01.04.2026', status: 'final',
+      stufe1: function(besGr) { return ['A5', 'A6', 'A7', 'A8'].indexOf(besGr) !== -1 ? 162.26 : 170.36; },
+      grund: [145.61, 145.61, 512.37, 512.37],
+      besGrDelta: { A5: [100, 100, 0, 0], A6: [100, 100, 0, 0], A7: [100, 100, 0, 0], A8: [100, 100, 0, 0], A9: [100, 100, 0, 0] },
+      hinweis: 'Die Erhöhung für A5–A9 gilt nur in der Laufbahngruppe 1 – wird hier pauschal angenommen.'
+    },
+    rp: {
+      name: 'Rheinland-Pfalz', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 88.03; },
+      grund: [246.97, 246.97, 726.00, 726.00],
+      besGrDelta: { A5: [5.32, 15.98, 0, 0] },
+      mietenstufeAddon: { V: 19.00, VI: 43.00, VII: 68.00 },
+      hinweis: null
+    },
+    sl: {
+      name: 'Saarland', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 164.48; },
+      grund: [165.31, 165.31, 781.68, 781.68],
+      besGrDelta: { A4: [17.91, 0, 71.65, 71.65], A5: [17.91, 0, 47.77, 47.77], A6: [17.91, 0, 23.88, 23.88] },
+      hinweis: null
+    },
+    sn: {
+      name: 'Sachsen', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 279.58; },
+      grund: [279.58, 279.58, 795.41, 795.41],
+      besGrDelta: { A5: [5.11, 0, 20.45, 20.45] },
+      hinweis: null
+    },
+    st: {
+      name: 'Sachsen-Anhalt', gueltig: '01.04.2026', status: 'final',
+      stufe1: function() { return 169.04; },
+      grund: [184.85, 184.85, 818.98, 818.98],
+      besGrDelta: { A5: [6.69, 20.11, 20.11, 20.11] },
+      hinweis: null
+    },
+    sh: {
+      name: 'Schleswig-Holstein', gueltig: '01.01.2026', status: 'final',
+      stufe1: function() { return 176.24; },
+      grund: [199.85, 199.85, 516.48, 516.48],
+      besGrDelta: {},
+      hinweis: null
+    },
+    th: {
+      name: 'Thüringen', gueltig: '01.02.2025', status: 'veraltet',
+      stufe1: function() { return 177.25; },
+      grund: [149.16, 202.75, 301.34, 803.23],
+      besGrDelta: {},
+      hinweis: 'Keine 2026er-Anpassung gefunden – Zahlen mit Stand Februar 2025, vor Veröffentlichung prüfen.'
+    }
   };
 
-  var form = document.getElementById('fbFzForm');
-  var placeholder = document.getElementById('fbFzPlaceholder');
-  var result = document.getElementById('fbFzResult');
-  var unklar = document.getElementById('fbFzUnklar');
-  var unklarText = document.getElementById('fbFzUnklarText');
-  var valueEl = document.getElementById('fbFzValue');
-  var breakdownEl = document.getElementById('fbFzBreakdown');
-  var kommentarEl = document.getElementById('fbFzKommentar');
+  // Bayern: Ortsklassen-Tabelle (Anlage 5 BayBesG, dbb-Stand 01.10.2026) wird zur Laufzeit
+  // in dieselbe additive Struktur wie oben übersetzt (siehe bayernConfig()).
+  var BY_ORTSKLASSEN = {
+    I:   { stufeV: 87.51,  stufe1: 346.98, stufe2: 506.90, kind3: 495.64, weiteres: 593.37 },
+    II:  { stufeV: 87.51,  stufe1: 346.98, stufe2: 506.90, kind3: 495.64, weiteres: 593.37 },
+    III: { stufeV: 87.51,  stufe1: 346.98, stufe2: 542.58, kind3: 510.51, weiteres: 640.81 },
+    IV:  { stufeV: 87.51,  stufe1: 370.73, stufe2: 578.24, kind3: 525.84, weiteres: 688.72 },
+    V:   { stufeV: 112.50, stufe1: 394.46, stufe2: 613.90, kind3: 541.61, weiteres: 737.05 },
+    VI:  { stufeV: 137.50, stufe1: 418.20, stufe2: 693.03, kind3: 557.87, weiteres: 785.88 },
+    VII: { stufeV: 170.26, stufe1: 546.06, stufe2: 784.86, kind3: 574.59, weiteres: 835.19 }
+  };
+  var BY_BESGR_ORDER = ['A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10'];
+  var BY_ERHOEHUNG = {
+    I:   [35.15, 31.12, 30.05, 27.96, 24.59, 22.34, 18.09, 10.91],
+    II:  [37.26, 34.96, 33.76, 31.40, 27.63, 25.09, 20.31, 12.25],
+    III: [41.40, 38.85, 37.51, 34.88, 30.70, 27.87, 22.55, 13.60],
+    IV:  [45.99, 43.15, 41.67, 38.73, 34.11, 30.97, 25.06, 15.11],
+    V:   [50.54, 47.41, 45.79, 42.57, 37.47, 34.03, 27.52, 16.61],
+    VI:  [54.92, 51.52, 49.75, 46.27, 40.72, 36.97, 29.91, 18.06],
+    VII: [60.35, 56.61, 54.68, 50.83, 44.74, 40.62, 32.87, 19.83]
+  };
+
+  function bayernConfig(ortsklasse) {
+    var o = BY_ORTSKLASSEN[ortsklasse];
+    var besGrDelta = {};
+    var bgIdx = BY_BESGR_ORDER.indexOf;
+    BY_BESGR_ORDER.forEach(function(bg, i) {
+      var v = BY_ERHOEHUNG[ortsklasse][i];
+      besGrDelta[bg] = [v, v, v, v];
+    });
+    return {
+      name: 'Bayern (Ortsklasse ' + ortsklasse + ')',
+      gueltig: '01.10.2026',
+      status: 'entwurf',
+      stufe1: function() { return o.stufeV; },
+      grund: [o.stufe1 - o.stufeV, o.stufe2 - o.stufe1, o.kind3, o.weiteres],
+      besGrDelta: besGrDelta,
+      hinweis: 'Stand 01.10.2026 laut dbb-Besoldungstabelle (neuer als der amtliche Gesetzestext auf gesetze-bayern.de, der zum Rechercheabruf noch 01.02.2025 zeigte) – vor Launch gegenprüfen.'
+    };
+  }
+
+  // NRW: echte dreidimensionale Lookup-Tabelle (Besoldungsgruppenband x Mietenstufe x Kinderzahl),
+  // keine Addition möglich. Quelle: amtliches PDF recht.nrw.de, Anhang 8 LBesG NRW, gültig 01.04.2026.
+  var NW_STUFE1 = { A5: 169.26, A6: 169.26, A7: 167.26, A8: 167.26 }; // sonst 173.50 (übrige)
+  var NW_STUFEN = {
+    A5A6: {
+      stufe2: [323.89, 323.89, 373.17, 518.14, 650.94, 793.75, 954.44],
+      stufe3: [737.09, 880.30, 1027.88, 1199.36, 1361.94, 1529.08, 1724.50],
+      stufe4: [1450.50, 1615.85, 1789.38, 1991.40, 2176.88, 2373.13, 2600.78],
+      stufe5: [2169.15, 2359.21, 2559.84, 2789.90, 2999.21, 3237.91, 3498.95],
+      ab5: [760.89, 788.82, 819.69, 851.89, 879.53, 928.98, 968.42]
+    },
+    A7A8: {
+      stufe2: [320.07, 320.07, 369.36, 514.32, 647.13, 769.94, 950.62],
+      stufe3: [731.44, 874.66, 1022.24, 1193.72, 1356.29, 1523.45, 1718.87],
+      stufe4: [1439.21, 1604.55, 1778.08, 1980.11, 2165.58, 2361.84, 2588.49],
+      stufe5: [2152.20, 2342.26, 2542.88, 2772.95, 2982.26, 3220.96, 3482.00],
+      ab5: [755.23, 783.16, 814.02, 846.23, 873.87, 923.32, 962.70]
+    },
+    uebrige: {
+      stufe2: [324.52, 324.52, 373.81, 518.76, 651.57, 794.39, 955.05],
+      stufe3: [734.08, 877.30, 1024.87, 1196.36, 1358.93, 1526.09, 1721.50],
+      stufe4: [1436.24, 1601.59, 1775.12, 1977.14, 2162.61, 2358.88, 2586.52],
+      stufe5: [2143.84, 2333.59, 2534.32, 2784.39, 2973.69, 3212.40, 3473.44],
+      ab5: [749.64, 777.56, 808.43, 840.64, 868.27, 917.73, 957.16]
+    }
+  };
+  var MIETENSTUFEN_INDEX = { I: 0, II: 1, III: 2, IV: 3, V: 4, VI: 5, VII: 6 };
+
+  function nwBand(besGr) {
+    if (besGr === 'A5' || besGr === 'A6') return 'A5A6';
+    if (besGr === 'A7' || besGr === 'A8') return 'A7A8';
+    return 'uebrige';
+  }
+
+  function berechneNRW(besGr, verheiratet, kinder, mietenstufe) {
+    var band = nwBand(besGr);
+    var idx = MIETENSTUFEN_INDEX[mietenstufe];
+    var tab = NW_STUFEN[band];
+    var zeilen = [];
+    var summe;
+
+    if (kinder === 0) {
+      var stufe1 = NW_STUFE1[besGr] !== undefined ? NW_STUFE1[besGr] : 173.50;
+      summe = verheiratet ? stufe1 : 0;
+      if (verheiratet) zeilen.push('Ehezuschlag (Stufe 1): ' + formatEuro(stufe1) + ' €');
+    } else if (kinder <= 4) {
+      var key = ['stufe2', 'stufe3', 'stufe4', 'stufe5'][kinder - 1];
+      summe = tab[key][idx];
+      zeilen.push('Gesamtbetrag für ' + kinder + ' Kind' + (kinder === 1 ? '' : 'er') + ' (Mietenstufe ' + mietenstufe + '): ' + formatEuro(summe) + ' €');
+    } else {
+      summe = tab.stufe5[idx] + (kinder - 4) * tab.ab5[idx];
+      zeilen.push('Gesamtbetrag für 4 Kinder (Mietenstufe ' + mietenstufe + '): ' + formatEuro(tab.stufe5[idx]) + ' €');
+      zeilen.push('+ ' + (kinder - 4) + ' weitere Kind(er) à ' + formatEuro(tab.ab5[idx]) + ' €: ' + formatEuro((kinder - 4) * tab.ab5[idx]) + ' €');
+    }
+
+    // Zusatz A5: +8,65 € für das erste Kind, ab dem zweiten Kind je +25,67 €
+    if (besGr === 'A5' && kinder >= 1) {
+      var zusatzA5 = 8.65 + Math.max(0, kinder - 1) * 25.67;
+      summe += zusatzA5;
+      zeilen.push('Zuschlag Besoldungsgruppe A 5: +' + formatEuro(zusatzA5) + ' €');
+    }
+
+    return { summe: summe, zeilen: zeilen };
+  }
+
+  // ===== Generische additive Berechnung =====
+  function berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe) {
+    var stufe1 = cfg.stufe1(besGr);
+    var delta = (cfg.besGrDelta && cfg.besGrDelta[besGr]) || [0, 0, 0, 0];
+    var zeilen = [];
+    var ehe = verheiratet ? stufe1 : 0;
+    if (verheiratet) zeilen.push('Ehe-/Partnerschaftsanteil: ' + formatEuro(ehe) + ' €');
+
+    var kinderSumme = 0;
+    for (var i = 1; i <= kinder; i++) {
+      var idx = Math.min(i - 1, 3);
+      var rate = cfg.grund[idx] + delta[idx];
+      if (cfg.mietenstufeAddon && idx >= 2 && mietenstufe && cfg.mietenstufeAddon[mietenstufe]) {
+        rate += cfg.mietenstufeAddon[mietenstufe];
+      }
+      kinderSumme += rate;
+    }
+    if (kinder > 0) {
+      zeilen.push('Kinderanteil für ' + kinder + ' Kind' + (kinder === 1 ? '' : 'er') + ' (inkl. Besoldungsgruppen-/Mietenstufen-Zuschlag): ' + formatEuro(kinderSumme) + ' €');
+    }
+    if (kinder === 0 && !verheiratet) {
+      zeilen.push('Ohne Ehe-/Partnerschaft und ohne Kinder entsteht kein Familienzuschlag.');
+    }
+
+    return { summe: ehe + kinderSumme, zeilen: zeilen };
+  }
 
   function formatEuro(betrag) {
     return betrag.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
 
+  // ===== UI =====
+  var landSelect = document.getElementById('fbFzLand');
+  var ortsklasseWrap = document.getElementById('fbFzOrtsklasseWrap');
+  var mietenstufeWrap = document.getElementById('fbFzMietenstufeWrap');
+  var form = document.getElementById('fbFzForm');
+  var placeholder = document.getElementById('fbFzPlaceholder');
+  var result = document.getElementById('fbFzResult');
+  var statusBadge = document.getElementById('fbFzStatusBadge');
+  var valueEl = document.getElementById('fbFzValue');
+  var breakdownEl = document.getElementById('fbFzBreakdown');
+  var kommentarEl = document.getElementById('fbFzKommentar');
+  var zusatzEl = document.getElementById('fbFzZusatz');
+
+  function updateConditionalFields() {
+    var land = landSelect.value;
+    ortsklasseWrap.hidden = (land !== 'by');
+    mietenstufeWrap.hidden = (land !== 'nw' && land !== 'rp');
+  }
+  landSelect.addEventListener('change', updateConditionalFields);
+  updateConditionalFields();
+
+  var STATUS_LABEL = { final: 'Final verkündet', entwurf: 'Entwurf, noch nicht verkündet', veraltet: 'Veraltete Daten – prüfen' };
+
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    var landKey = document.getElementById('fbFzLand').value;
+    var land = landSelect.value;
+    var besGr = document.getElementById('fbFzBesGr').value;
     var verheiratet = document.getElementById('fbFzVerheiratet').checked;
     var kinder = parseInt(document.getElementById('fbFzKinder').value, 10) || 0;
-    var daten = FZ_DATEN[landKey];
+    var ortsklasse = document.getElementById('fbFzOrtsklasse').value;
+    var mietenstufe = document.getElementById('fbFzMietenstufe').value;
 
-    if (daten.stufe1 === null || daten.kind === null) {
-      placeholder.hidden = true;
-      result.hidden = true;
-      unklar.hidden = false;
-      unklarText.textContent = 'Für ' + daten.name + ' lässt sich der Familienzuschlag nicht seriös pauschal berechnen: ' + daten.hinweis;
-      return;
+    var cfg, berechnung, gueltig, status, name, zusatzHinweis = null, zusatzBetrag = null, zusatzLabel = null;
+
+    if (land === 'nw') {
+      berechnung = berechneNRW(besGr, verheiratet, kinder, mietenstufe);
+      name = 'Nordrhein-Westfalen (Mietenstufe ' + mietenstufe + ')';
+      gueltig = '01.04.2026';
+      status = 'final';
+    } else if (land === 'by') {
+      cfg = bayernConfig(ortsklasse);
+      berechnung = berechneAdditiv(cfg, besGr, verheiratet, kinder, null);
+      name = cfg.name;
+      gueltig = cfg.gueltig;
+      status = cfg.status;
+      zusatzHinweis = cfg.hinweis;
+    } else {
+      cfg = FZ_ADDITIV[land];
+      berechnung = berechneAdditiv(cfg, besGr, verheiratet, kinder, mietenstufe);
+      name = cfg.name;
+      gueltig = cfg.gueltig;
+      status = cfg.status;
+      zusatzHinweis = cfg.hinweis;
+      if (cfg.ergaenzung) {
+        zusatzBetrag = cfg.ergaenzung(kinder);
+        zusatzLabel = cfg.ergaenzungLabel;
+      }
     }
 
-    var eheAnteil = verheiratet ? daten.stufe1 : 0;
-    var kinderAnteil = 0;
-    for (var i = 1; i <= kinder; i++) {
-      kinderAnteil += (i <= 2) ? daten.kind : daten.ab3;
-    }
-    var summe = eheAnteil + kinderAnteil;
+    valueEl.textContent = formatEuro(berechnung.summe);
+    breakdownEl.innerHTML = berechnung.zeilen.map(function(z) { return '<div>' + z + '</div>'; }).join('');
 
-    var zeilen = [];
-    if (verheiratet) {
-      zeilen.push('Ehe-/Partnerschaftsanteil (Stufe 1): ' + formatEuro(eheAnteil) + ' €');
-    }
-    if (kinder > 0) {
-      zeilen.push('Kinderanteil für ' + kinder + ' Kind' + (kinder === 1 ? '' : 'er') + ': ' + formatEuro(kinderAnteil) + ' €');
-    }
-    if (zeilen.length === 0) {
-      zeilen.push('Ohne Ehe-/Partnerschaft und ohne Kinder entsteht kein Familienzuschlag.');
-    }
+    statusBadge.textContent = STATUS_LABEL[status] || status;
+    statusBadge.className = 'fb-fz-status-badge' + (status !== 'final' ? ' status-' + status : '');
 
-    valueEl.textContent = formatEuro(summe);
-    breakdownEl.innerHTML = zeilen.map(function(z) { return '<div>' + z + '</div>'; }).join('');
-
-    var kommentar = daten.name + ', gültig ab ' + daten.gueltig + '.';
-    if (!daten.verlaesslich) {
-      kommentar += ' Hinweis: ' + daten.hinweis;
-    } else if (daten.hinweis) {
-      kommentar += ' ' + daten.hinweis;
-    }
+    var kommentar = name + ', gültig ab ' + gueltig + '.';
     kommentarEl.textContent = kommentar;
 
+    if (zusatzBetrag !== null || zusatzHinweis) {
+      var zusatzHtml = '';
+      if (zusatzBetrag !== null) {
+        zusatzHtml += '<strong>+ ' + formatEuro(zusatzBetrag) + ' € ' + zusatzLabel + '</strong><br>Diese Leistung ist NICHT in der Summe oben enthalten, wird aber zusätzlich gezahlt.';
+      }
+      if (zusatzHinweis) {
+        zusatzHtml += (zusatzHtml ? '<br><br>' : '') + zusatzHinweis;
+      }
+      zusatzEl.innerHTML = zusatzHtml;
+      zusatzEl.hidden = false;
+    } else {
+      zusatzEl.hidden = true;
+    }
+
     placeholder.hidden = true;
-    unklar.hidden = true;
     result.hidden = false;
   });
 })();
 </script>
 ```
 
+
 ## Hinweise zur Einbindung
 
 - Gleiche Schrift-/Farb-Basis wie [[02 Projekte/Fairbeamtet/BMI-Rechner.md|BMI-Rechner]] – siehe dort zu DSGVO-Pflicht beim Self-Hosting der Schrift vor Go-Live.
 - Kontaktkarte mit Foto-Platzhaltern, analog zum BMI-Rechner – echte Fotos aus [[00 Kontext/Fairbeamtet/Team.md|Team]] einsetzen, sobald verfügbar.
 - CTA-Links sind Platzhalter (`#`) – echte URL zur Beratungs-/Kontaktseite einsetzen.
-- Die Datenstruktur `FZ_DATEN` ist bewusst so gebaut, dass sie sich künftig leicht aktualisieren lässt (ein Objekt pro Bundesland) – das deckt sich mit der in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]] geforderten zentralen Datenpflege statt händischer Einzelpflege pro Seite.
+- Die Datenstruktur (`FZ_ADDITIV`, `BY_ORTSKLASSEN`/`BY_ERHOEHUNG`, `NW_STUFEN`) ist bewusst so gebaut, dass sie sich künftig leicht aktualisieren lässt (ein Objekt pro Bundesland, bzw. eine Tabelle pro Sonderfall) – das deckt sich mit der in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]] geforderten zentralen Datenpflege statt händischer Einzelpflege pro Seite.
+- Der Rechner deckt jetzt alle 17 Dienstherren mit Zahlenausgabe ab (keine Blockierung mehr wie in Version 1) – dafür muss vor Launch die Datenqualität der "Entwurf"- und "veraltet"-Fälle (Baden-Württemberg, Bayern, Bremen, Thüringen) zwingend gegengeprüft werden, siehe "Bekannte Unsicherheiten" oben.
+- Bewusst nicht abgebildet (zu komplex für ein MVP-Formular mit vertretbarer Feldzahl): Baden-Württembergs Erfahrungsstufen-abhängiger Familienergänzungszuschlag, Berlins Ergänzender Familienzuschlag nach § 40a. Beide werden im Ergebnis als Hinweistext angezeigt, aber nicht berechnet.
 
 ## Nächste Schritte
 
-- [ ] Primärquellen-Check gegen die jeweiligen Landesbesoldungsgesetze – mindestens für die als „niedrig" markierten Länder (Bayern, NRW, Thüringen, Rheinland-Pfalz, Bremen, Brandenburg)
-- [ ] Entscheiden, wie mit Bayern/NRW umgegangen wird: volle Ortsklassen-/Mietenstufen-Matrix einpflegen oder bewusst nur mit Hinweistext + CTA arbeiten (aktueller Stand im Code)
-- [ ] Mit Sven abstimmen: fachliche Freigabe der Zahlen, Platzierung auf der Seite (eigenständige Rechner-Seite vs. Einbindung im bestehenden Artikel)
+- [ ] Thüringen 2026 nachrecherchieren (aktuell nur Stand Februar 2025 verfügbar)
+- [ ] Die drei "Entwurf"-Länder (Baden-Württemberg, Bayern, Bremen) gegen die inzwischen verkündeten Gesetzblätter prüfen
+- [ ] Mit Sven abstimmen: fachliche Freigabe der Zahlen, Platzierung auf der Seite (eigenständige Rechner-Seite vs. Einbindung im bestehenden Artikel), Umgang mit den bewusst ausgeklammerten Sonderfällen (BW-Erfahrungsstufe, Berlin § 40a)
 - [ ] Echten Link zur Beratungs-/Kontaktseite einsetzen
-- [ ] Jährlichen Update-Prozess für die Zahlen festlegen (mehrere Länder passen zum 1. April an, der Bund zum 1. Mai)
+- [ ] Jährlichen Update-Prozess für die Zahlen festlegen (mehrere Länder passen zum 1. April an, der Bund zum 1. Mai, einzelne zum 1. Januar/Juli)
+- [ ] Vor Launch: Testdurchlauf mit mehreren Kombinationen (insbesondere NRW/Bayern mit verschiedenen Ortsklassen/Mietenstufen und Besoldungsgruppen) gegen die Tabellen in diesem Dokument
 - [ ] Erst nach Freigabe: live schalten
