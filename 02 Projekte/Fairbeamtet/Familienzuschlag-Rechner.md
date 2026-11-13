@@ -14,9 +14,10 @@ Direkter Bezug zur Konkurrenzanalyse dort: Der Gehaltsrechner von einfachverbeam
 
 ## Status
 
-**Entwurf – noch nicht mit Sven abgestimmt.** Die Datenlage hat sich gegenüber der ersten Version grundlegend verbessert: Fast alle Zahlen sind jetzt gegen **offizielle Besoldungstabellen des dbb (Deutscher Beamtenbund und Tarifunion)** geprüft, nicht mehr gegen Sekundärquellen-Aggregatoren. Zwei Einschränkungen bleiben:
+**Entwurf – inzwischen von Sven teilweise faktengeprüft (13.11.2026), noch nicht vollständig abgestimmt.** Die Datenlage hat sich gegenüber der ersten Version grundlegend verbessert: Fast alle Zahlen sind jetzt gegen **offizielle Besoldungstabellen des dbb (Deutscher Beamtenbund und Tarifunion)** geprüft, nicht mehr gegen Sekundärquellen-Aggregatoren. Sven hat zusätzlich die Bund-Werte unabhängig gegen die Anlage V BBesG nachgerechnet und bestätigt (siehe Bund-Detailabschnitt unten) – die Zahlen stimmten bereits, der Status war falsch deklariert. Drei Einschränkungen bleiben:
 1. Mehrere dbb-Tabellen (Baden-Württemberg, Bayern, Bremen, u. a.) tragen den Vermerk **„Entwurf – Veröffentlichung unter Vorbehalt der Bekanntmachung im Gesetzblatt"** – die Zahlen stammen aus dem Gesetzgebungsverfahren, sind aber zum Abrufzeitpunkt (13.11.2026) noch nicht formal im jeweiligen Gesetzblatt verkündet. Hohe Wahrscheinlichkeit, dass sie final so gelten, aber kein Ersatz für eine Gesetzblatt-Prüfung vor Launch.
-2. Thüringen: keine dbb-Tabelle für 2026 gefunden, nur Stand 1. Februar 2025.
+2. **Bund ist kein "Entwurf", sondern ein vorläufiger Abschlag ohne Gesetzesgrundlage** (eigener Status "abschlag") – das Bundesalimentationsgesetz dazu hat noch keinen Kabinettsbeschluss, ein früherer Entwurf hätte sogar den Ehe-/Partnerschaftsanteil gestrichen. Diese Unterscheidung war vorher nicht abgebildet.
+3. Thüringen: keine dbb-Tabelle für 2026 gefunden, nur Stand 1. Februar 2025.
 
 **Vor Veröffentlichung weiterhin empfohlen:** kurzer Abgleich der "Entwurf"-Länder gegen die zwischenzeitlich verkündeten Gesetzblätter, analog zur Vorgabe beim BMI-Rechner (Rangfolge Voice Profile Punkt 1: fachliche Richtigkeit schlägt alles andere).
 
@@ -32,7 +33,7 @@ Komplett neu recherchiert über die offiziellen Besoldungstabellen des dbb ([dbb
 
 | Bundesland | Stufe 1 (verheiratet/verpartnert) | 1. Kind | 2. Kind | ab 3. Kind | Gültig ab | Quellenstatus |
 |---|---|---|---|---|---|---|
-| Bund | 181,36 € | +154,99 € (Stufe 2 gesamt: 336,35 €) | +154,99 € | +482,89 € je Kind | 01.05.2026 | final verkündet |
+| Bund | 181,36 € | +154,99 € (Stufe 2 gesamt: 336,35 €) | +154,99 € | +482,89 € je Kind | 01.05.2026 | **vorläufiger Abschlag, kein Gesetz** (Faktencheck Sven 13.11.2026, s. u.) |
 | Baden-Württemberg | 180,46 € | +157,78 € | +157,78 € | +989,17 € je Kind | 01.04.2026 | Entwurf |
 | Bayern | 87,51 € (Ortsklasse I; s. Detailtabelle) | s. Detailtabelle (Ortsklasse I: 506,90 € Stufe 1 gesamt) | s. Detailtabelle | s. Detailtabelle | 01.10.2026 | Entwurf |
 | Berlin | kein Stufe-1-Anteil | +148,44 € | +148,44 € | 3. Kind +819,76 €, ab 4. Kind +678,99 € | 01.04.2026 | final verkündet |
@@ -66,6 +67,35 @@ Das ist der Teil, der für "jede Besoldungsgruppe" entscheidend ist. Mehrere Lä
 ### Bund – Erhöhungsbeträge A 3–A 5
 
 Für das erste Kind in A 3–A 5 (und Anwärter des einfachen Dienstes): **+5,37 €**. Für jedes weitere Kind: A 3 +26,84 €, A 4 +21,47 €, A 5 +16,10 €.
+
+### Bund – Faktencheck durch Sven (13.11.2026): Zahlen stimmen, Status war falsch
+
+Sven hat die Bund-Werte unabhängig gegengerechnet und bestätigt: **974,23 € für verheiratet + 3 Kinder stimmt.** Herleitung, ausgehend von der tatsächlich geltenden **Anlage V BBesG (Stand 01.03.2024)**, zzgl. zweier Erhöhungsschritte (+3,0 % ab 01.04.2025, +2,8 % ab 01.05.2026, nach jedem Schritt gerundet):
+
+| Bestandteil | Anlage V (03/2024) | × 1,03 | × 1,028 |
+|---|---|---|---|
+| Stufe 1 (verheiratet) | 171,28 € | 176,42 € | **181,36 €** |
+| 1. Kind | 146,38 € | 150,77 € | **154,99 €** |
+| 2. Kind | 146,38 € | 150,77 € | **154,99 €** |
+| 3. Kind | 456,06 € | 469,74 € | **482,89 €** |
+
+Drei unabhängige Quellen (Sven, tarifvertrag-online.de, oeffentlichen-dienst.de) kommen auf exakt dieselben Cent-Beträge – die **Zahlen im Rechner waren also schon richtig**. Was nicht gestimmt hat, war die Einordnung als "final verkündet":
+
+1. **Die Mai-2026-Erhöhung ist ein vorläufiger Abschlag, kein verkündetes Gesetz.** Grundlage wäre das Bundesalimentationsgesetz – dafür gab es laut dbb zum 27.10.2026 weder einen Kabinettsbeschluss noch einen abgestimmten Entwurf. Bundesinnenminister Dobrindt kündigte am 02.11.2026 an, das Gesetz noch 2026 ins Kabinett zu bringen. **Status im Rechner jetzt auf "Vorläufiger Abschlag, kein Gesetz" geändert** (statt "final verkündet").
+2. **Ein früherer Referentenentwurf (April 2026) hätte den Ehe-/Partnerschaftsanteil ab 2026 komplett gestrichen** – nur noch Kinderanteile (265 € für 1./2. Kind, 708 € für 3. Kind, laut oeffentlicher-dienst.org). Das BMI hat diesen Entwurf zurückgezogen und überarbeitet ihn; wie der Familienzuschlag am Ende aussieht, ist offen. Entsprechender Hinweistext jetzt im Ergebnis hinterlegt.
+3. **Ortsklasse/Mietenstufe spielen beim Bund keine Rolle** – das war schon in der Rechenlogik korrekt (Bund nutzt weder Ortsklasse- noch Mietenstufen-Daten), aber die beiden Felder waren auf der Live-Seite trotzdem sichtbar, obwohl Bund ausgewählt war (Anzeige-Bug, nicht Rechenfehler – behoben, siehe "Bekannte Unsicherheiten"). Außerdem war die Formulierung "(inkl. Besoldungsgruppen-/Mietenstufen-Zuschlag)" in der Kinderanteil-Zeile bei A 9 irreführend, weil bei A 9 gar kein Zuschlag greift (nur A 3–A 5 haben beim Bund einen) – die Zeile nennt den Zusatz jetzt nur noch, wenn er tatsächlich eingerechnet wurde.
+4. **Zwei Fälle fehlten komplett:** Ist der Ehepartner/die Ehepartnerin ebenfalls im öffentlichen Dienst, gibt es Stufe 1 nur anteilig (§ 40 BBesG). Den Kinderanteil bekommt nur, wer das Kindergeld bezieht. Beides jetzt als Hinweis im Rechner ergänzt (Infobox + Disclaimer unter dem Ergebnis) – nicht als Berechnung, weil das ein eigenes Eingabefeld bräuchte und für ein MVP zu weit ginge.
+
+**Einschränkung von Sven selbst:** Er hat nur die Anlage V aus dem Gesetzestext nachgerechnet, nicht den amtlichen Abschlagsbescheid vom BVA bzw. der jeweiligen Bezügestelle – dass dort identisch gerundet wird, ist nicht belegt, aber angesichts von drei übereinstimmenden unabhängigen Quellen sehr wahrscheinlich.
+
+Quellen (Sven, abgerufen 13.11.2026):
+- [Anlage V BBesG, gesetze-im-internet.de](https://www.gesetze-im-internet.de/bbesg/anlage_v.html)
+- [tarifvertrag-online.de – Familienzuschlag Bund](https://tarifvertrag-online.de/familienzuschlag/bund)
+- [oeffentlichen-dienst.de – Familienzuschlag 2026](https://www.oeffentlichen-dienst.de/beamte/besoldung/familienzuschlag.html)
+- [oeffentlicher-dienst.org – Referentenentwurf Bundesalimentationsgesetz](https://oeffentlicher-dienst.org/beamte/bund/bundesalimentationsgesetz)
+- [oeffentlicher-dienst-news.de – Dobrindts Zeitplan](https://oeffentlicher-dienst-news.de/dobrindt-will-besoldungsgesetz-fuer-bundesbeamte-noch-2026-beschliessen/)
+- [beamten-starter.de – Stand Alimentation Bund](https://www.beamten-starter.de/amtsangemessene-alimentation-bund.html)
+- [verdi.de – Neuer Zeitplan](https://www.verdi.de/ikt/themen/beamtenpolitik/neuer-zeitplan-fuer-verfassungskonforme-besoldung)
 
 ### Baden-Württemberg – mehrstufig, komplexeste Struktur im Datensatz
 
@@ -310,7 +340,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
             </select>
           </label>
 
-          <label class="fb-fz-field" id="fbFzOrtsklasseWrap" hidden>
+          <label class="fb-fz-field fb-fz-field-hidden" id="fbFzOrtsklasseWrap">
             Ortsklasse (nach Wohnort, Bayern)
             <select id="fbFzOrtsklasse">
               <option value="I">I</option>
@@ -323,7 +353,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
             </select>
           </label>
 
-          <label class="fb-fz-field" id="fbFzMietenstufeWrap" hidden>
+          <label class="fb-fz-field fb-fz-field-hidden" id="fbFzMietenstufeWrap">
             Mietenstufe (nach Wohnort)
             <select id="fbFzMietenstufe">
               <option value="I">I</option>
@@ -363,14 +393,14 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
         <div class="fb-fz-breakdown" id="fbFzBreakdown"></div>
         <p class="fb-fz-kommentar" id="fbFzKommentar"></p>
         <div class="fb-fz-zusatz" id="fbFzZusatz" hidden></div>
-        <p class="fb-fz-disclaimer">Richtwert ohne Gewähr. Keine rechtlich gesicherte Aussage und keine individuelle Beratung – dein konkreter Fall kann abweichen.</p>
+        <p class="fb-fz-disclaimer">Richtwert ohne Gewähr. Keine rechtlich gesicherte Aussage und keine individuelle Beratung – dein konkreter Fall kann abweichen. Zwei Fälle sind hier nicht eingerechnet: Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, gibt es den Ehe-/Partnerschaftsanteil meist nur anteilig (§ 40 BBesG). Den Kinderanteil bekommt zudem nur, wer das Kindergeld bezieht.</p>
       </div>
     </div>
   </div>
 
   <div class="fb-fz-infobox">
     <h2>So funktioniert der Familienzuschlag</h2>
-    <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
+    <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf" oder "Vorläufiger Abschlag", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Zwei weitere Fälle fragen wir bewusst nicht ab: Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, gibt es den Ehe-/Partnerschaftsanteil meist nur anteilig (§ 40 BBesG), und den Kinderanteil bekommt nur, wer das Kindergeld bezieht. Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
     <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand und Kinderzahl. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten einen Ehe-/Partnerschaftsanteil. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein Kinderanteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt. In mehreren Ländern (z. B. Baden-Württemberg, Niedersachsen, Bayern, NRW) hängt die genaue Höhe zusätzlich von deiner Besoldungsgruppe ab – niedrigere Gruppen bekommen teils einen Aufschlag, als Ausgleich für die niedrigere Grundbesoldung.</p>
     <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern und Nordrhein-Westfalen koppeln die Höhe zusätzlich an deinen Wohnort (Ortsklasse bzw. Mietenstufe) – deshalb fragen wir das bei diesen beiden Ländern extra ab.</p>
     <p>Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026 – <strong>ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität</strong>. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
@@ -578,7 +608,8 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
 /* Ohne diese Regel gewinnt ".fb-fz-field { display:flex }" gegen das native [hidden]-Verhalten
    (gleiche CSS-Spezifität, unsere Regel steht später) – Ortsklasse/Mietenstufe blieben dadurch
    für jedes Bundesland sichtbar, statt nur für Bayern bzw. NRW/Rheinland-Pfalz. */
-.fb-fz-field[hidden] {
+.fb-fz-field[hidden],
+.fb-fz-field.fb-fz-field-hidden {
   display: none !important;
 }
 .fb-fz-field-checkbox {
@@ -683,6 +714,10 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
 .fb-fz-status-badge.status-veraltet {
   background: rgba(255,63,119,0.25) !important;
   color: #FF9FBB !important;
+}
+.fb-fz-status-badge.status-abschlag {
+  background: rgba(255,200,0,0.2) !important;
+  color: #FFD466 !important;
 }
 .fb-fz-number {
   font-size: 4rem;
@@ -829,11 +864,22 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
 
   var FZ_ADDITIV = {
     bund: {
-      name: 'Bund', gueltig: '01.05.2026', status: 'final',
+      name: 'Bund', gueltig: '01.05.2026', status: 'abschlag',
       stufe1: function() { return 181.36; },
       grund: [154.99, 154.99, 482.89, 482.89],
       besGrDelta: { A3: [5.37, 0, 26.84, 26.84], A4: [5.37, 0, 21.47, 21.47], A5: [5.37, 0, 16.10, 16.10] },
-      hinweis: null
+      // Faktencheck durch Sven, 13.11.2026: Grundlage ist die geltende Anlage V BBesG
+      // (Stand 01.03.2024, 171,28 € / 146,38 € / 146,38 € / 456,06 €), darauf zwei Erhöhungen
+      // (+3,0 % ab 01.04.2025, +2,8 % ab 01.05.2026, nach jedem Schritt gerundet) – daraus
+      // ergeben sich rechnerisch exakt die hier hinterlegten Werte. ABER: Diese Erhöhung wird
+      // nur als Abschlag gezahlt, unter dem Vorbehalt eines späteren Bundesalimentationsgesetzes.
+      // Laut dbb gab es zum 27.10.2026 weder Kabinettsbeschluss noch abgestimmten Entwurf;
+      // Minister Dobrindt kündigte am 02.11.2026 an, das Gesetz noch 2026 ins Kabinett zu bringen.
+      // Ein früherer Referentenentwurf (April 2026) hatte den Ehe-/Partnerschaftsanteil ab 2026
+      // sogar komplett gestrichen (nur noch Kinderanteile: 265 € für 1./2. Kind, 708 € für
+      // 3. Kind laut oeffentlicher-dienst.org) – wurde vom BMI zurückgezogen und wird überarbeitet.
+      // Die finale Regelung ist also offen, trotz der (vermutlich korrekten) Rechenschritte hier.
+      hinweis: 'Diese Erhöhung ab Mai 2026 ist ein vorläufiger Abschlag, kein Gesetz. Das Bundesalimentationsgesetz dazu hat noch keinen Kabinettsbeschluss (Stand 13.11.2026). Ein früherer Entwurf hätte den Ehe-/Partnerschaftsanteil sogar komplett gestrichen. Die Zahl kann sich rückwirkend noch ändern.'
     },
     bw: {
       name: 'Baden-Württemberg', gueltig: '01.04.2026', status: 'entwurf',
@@ -1067,14 +1113,18 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     if (verheiratet) zeilen.push('Ehe-/Partnerschaftsanteil: ' + formatEuro(ehe) + ' €');
 
     var kinderSumme = 0;
+    var besGrZuschlagAngewendet = false;
+    var mietenstufeZuschlagAngewendet = false;
     for (var i = 1; i <= kinder; i++) {
       var idx = Math.min(i - 1, 3);
       var rate = cfg.grund[idx] + delta[idx];
+      if (delta[idx]) { besGrZuschlagAngewendet = true; }
       if (cfg.mietenstufeAddon) {
         if (idx >= 2) {
           if (mietenstufe) {
             if (cfg.mietenstufeAddon[mietenstufe]) {
               rate += cfg.mietenstufeAddon[mietenstufe];
+              mietenstufeZuschlagAngewendet = true;
             }
           }
         }
@@ -1082,7 +1132,14 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
       kinderSumme += rate;
     }
     if (kinder > 0) {
-      zeilen.push('Kinderanteil für ' + kinder + ' Kind' + (kinder === 1 ? '' : 'er') + ' (inkl. Besoldungsgruppen-/Mietenstufen-Zuschlag): ' + formatEuro(kinderSumme) + ' €');
+      // Zusatz nur erwähnen, wenn tatsächlich etwas eingerechnet wurde – sonst wäre die Angabe
+      // irreführend (z. B. beim Bund in A 9: da greift keiner der beiden Zuschläge, siehe
+      // Faktencheck 13.11.2026).
+      var zusaetze = [];
+      if (besGrZuschlagAngewendet) { zusaetze.push('Besoldungsgruppen-Zuschlag'); }
+      if (mietenstufeZuschlagAngewendet) { zusaetze.push('Mietenstufen-Zuschlag'); }
+      var zusatzText = zusaetze.length ? ' (inkl. ' + zusaetze.join(' und ') + ')' : '';
+      zeilen.push('Kinderanteil für ' + kinder + ' Kind' + (kinder === 1 ? '' : 'er') + zusatzText + ': ' + formatEuro(kinderSumme) + ' €');
     }
     if (kinder === 0) {
       if (!verheiratet) {
@@ -1110,18 +1167,33 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   var kommentarEl = document.getElementById('fbFzKommentar');
   var zusatzEl = document.getElementById('fbFzZusatz');
 
+  // Versteckt per CSS-Klasse statt per [hidden]-Attribut – robuster, falls irgendein
+  // Plugin/Theme/Sanitizer auf der Seite Attribute anders behandelt als Klassen.
+  // Ortsklasse gilt nur für Bayern, Mietenstufe nur für NRW (zwingend) und Rheinland-Pfalz
+  // (nur für den Kind-3+-Aufschlag). Für alle anderen 15 Dienstherren, inkl. Bund, bleiben
+  // beide Felder versteckt.
   function updateConditionalFields() {
     var land = landSelect.value;
-    ortsklasseWrap.hidden = (land !== 'by');
-    var zeigeMietenstufe = false;
-    if (land === 'nw') { zeigeMietenstufe = true; }
-    if (land === 'rp') { zeigeMietenstufe = true; }
-    mietenstufeWrap.hidden = !zeigeMietenstufe;
+    if (land === 'by') {
+      ortsklasseWrap.classList.remove('fb-fz-field-hidden');
+    } else {
+      ortsklasseWrap.classList.add('fb-fz-field-hidden');
+    }
+    if (land === 'nw' || land === 'rp') {
+      mietenstufeWrap.classList.remove('fb-fz-field-hidden');
+    } else {
+      mietenstufeWrap.classList.add('fb-fz-field-hidden');
+    }
   }
   landSelect.addEventListener('change', updateConditionalFields);
   updateConditionalFields();
 
-  var STATUS_LABEL = { final: 'Final verkündet', entwurf: 'Entwurf, noch nicht verkündet', veraltet: 'Veraltete Daten – prüfen' };
+  var STATUS_LABEL = {
+    final: 'Final verkündet',
+    entwurf: 'Entwurf, noch nicht verkündet',
+    veraltet: 'Veraltete Daten – prüfen',
+    abschlag: 'Vorläufiger Abschlag, kein Gesetz'
+  };
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
