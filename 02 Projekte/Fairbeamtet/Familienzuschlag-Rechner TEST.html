@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"><title>Test v13</title></head><body>
+<html lang="de"><head><meta charset="utf-8"><title>Test v14</title></head><body>
 <div class="fb-fz-rechner">
   <div class="fb-fz-hero">
     <div class="fb-fz-hero-watermark" aria-hidden="true">€</div>
@@ -455,16 +455,18 @@
   color: rgba(255,255,255,0.85) !important;
 }
 .fb-fz-status-badge.status-entwurf {
-  background: rgba(255,200,0,0.2) !important;
-  color: #FFD466 !important;
+  /* Bewusst neutrales Blau statt Warn-Gelb (13.11.2026) – der Betrag wird tatsächlich so
+     ausgezahlt, das Badge soll nicht wie eine Unsicherheits-Warnung wirken. */
+  background: rgba(6,147,227,0.2) !important;
+  color: #7FC4F0 !important;
 }
 .fb-fz-status-badge.status-veraltet {
   background: rgba(255,63,119,0.25) !important;
   color: #FF9FBB !important;
 }
 .fb-fz-status-badge.status-abschlag {
-  background: rgba(255,200,0,0.2) !important;
-  color: #FFD466 !important;
+  background: rgba(6,147,227,0.2) !important;
+  color: #7FC4F0 !important;
 }
 .fb-fz-number {
   font-size: 4rem;
@@ -626,7 +628,7 @@
       // sogar komplett gestrichen (nur noch Kinderanteile: 265 € für 1./2. Kind, 708 € für
       // 3. Kind laut oeffentlicher-dienst.org) – wurde vom BMI zurückgezogen und wird überarbeitet.
       // Die finale Regelung ist also offen, trotz der (vermutlich korrekten) Rechenschritte hier.
-      hinweis: 'Diese Erhöhung ab Mai 2026 ist ein vorläufiger Abschlag, kein Gesetz. Das Bundesalimentationsgesetz dazu hat noch keinen Kabinettsbeschluss (Stand 13.11.2026). Ein früherer Entwurf hätte den Ehe-/Partnerschaftsanteil sogar komplett gestrichen. Die Zahl kann sich rückwirkend noch ändern.'
+      hinweis: 'Dieser Betrag wird seit Mai 2026 tatsächlich so ausgezahlt. Rechtlich endgültig abgesichert ist er noch nicht: Das Bundesalimentationsgesetz dazu hat noch keinen Kabinettsbeschluss (Stand 13.11.2026). Ein früherer Entwurf hätte den Ehe-/Partnerschaftsanteil anders geregelt – falls sich daran noch etwas ändert, wird rückwirkend angepasst.'
     },
     bw: {
       name: 'Baden-Württemberg', gueltig: '01.04.2026', status: 'entwurf',
@@ -639,7 +641,7 @@
       // Verkündungsstatus geprüft 13.11.2026: Gesetzentwurf (BVAnpGBW 2026/2027/2028) liegt seit
       // Juni 2026 vor, Landtag sollte 2. Halbjahr 2026 beschließen – noch nicht verkündet. Land
       // zahlt die 2,82 % bereits seit Ende Juli 2026 rückwirkend als Vorgriff aus, ohne formales Gesetz.
-      hinweis: 'Diese Erhöhung wird seit Juli 2026 als Vorgriff gezahlt. Das Gesetz dazu (BVAnpGBW 2026/2027/2028) war zum 13.11.2026 noch nicht verkündet. Zusätzlich ist der Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
+      hinweis: 'Dieser Betrag wird seit Ende Juli 2026 tatsächlich so ausgezahlt. Das zugehörige Gesetz (BVAnpGBW 2026/2027/2028) war zum 13.11.2026 noch nicht formal verkündet. Zusätzlich ist der Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
     },
     be: {
       name: 'Berlin', gueltig: '01.04.2026', status: 'final',
@@ -795,7 +797,7 @@
       // beschlossen, die Verkündung im Bayerischen GVBl stand zu diesem Zeitpunkt noch aus.
       // Zahlung der 2,82 % seit 01.10.2026 bereits als Vorgriff aufgrund Kabinettsbeschluss
       // vom 19.05.2026, unter Vorbehalt der Landtagszustimmung.
-      hinweis: 'Der Landtag hat diese Erhöhung am 28.10.2026 beschlossen, die Verkündung im Gesetz- und Verordnungsblatt stand zum 13.11.2026 noch aus. Gezahlt wird seit 01.10.2026 als Vorgriff.'
+      hinweis: 'Dieser Betrag wird seit 01.10.2026 tatsächlich so ausgezahlt. Der Landtag hat die Erhöhung am 28.10.2026 beschlossen, die formale Verkündung im Gesetz- und Verordnungsblatt stand zum 13.11.2026 noch aus.'
     };
   }
 
@@ -998,9 +1000,12 @@
     // tatsächlich aus (Vorgriff), nur das Gesetz dahinter ist noch nicht verkündet – anders als
     // ein reiner Zahlen-Entwurf, der noch gar nicht fließt (siehe Bremen, jetzt "final" mit den
     // tatsächlich aktuell gezahlten Werten statt dem noch nicht beschlossenen Entwurf).
-    entwurf: 'Wird als Vorgriff gezahlt, Gesetz noch nicht verkündet',
+    // Wortlaut auf Wunsch von Ines entschärft (13.11.2026): Der Betrag selbst ändert sich nicht,
+    // er wird tatsächlich so ausgezahlt – nur die Formulierung soll nicht wie eine Warnung
+    // klingen ("Vorgriff"/"Abschlag" lesen sich sonst wie "noch nicht echt").
+    entwurf: 'Aktuell ausgezahlter Betrag – Gesetz folgt',
     veraltet: 'Veraltete Daten – prüfen',
-    abschlag: 'Wird als Abschlag gezahlt, kein Gesetz'
+    abschlag: 'Aktuell ausgezahlter Betrag – Gesetz folgt'
   };
 
   form.addEventListener('submit', function(e) {
