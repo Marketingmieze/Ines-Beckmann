@@ -28,7 +28,7 @@ Recherchiert über mehrere Sekundärquellen (siehe Quellenliste unten), da eine 
 |---|---|---|---|---|---|
 | Bund | 181,36 € | 154,99 € | 482,89 € | 01.05.2026 | hoch (beide Quellen identisch) |
 | Baden-Württemberg | 180,46 € | 157,78 € | 989,17 € | 01.04.2026 | mittel – zusätzlicher Familienergänzungszuschlag nach Besoldungsgruppe (A7–A10) nicht eingerechnet |
-| Bayern | – | – | – | 01.10.2026 | **niedrig** – 7 Ortsklassen, Quellen widersprüchlich, kein sinnvoller Pauschalwert |
+| Bayern | 85,11–165,59 € (Stufe V, nach Ortsklasse, s. Detailtabelle) | s. Detailtabelle (Stufe 1 = 1 Kind, nach Ortsklasse) | s. Detailtabelle | 01.02.2025 (laut gesetze-bayern.de aktuell gültige Fassung) | **hoch – geprüft gegen Primärquelle** (Anlage 5 BayBesG, s. unten) |
 | Berlin | kein Stufe-1-Anteil (ggf. ~67,47 € Ausgleichszulage für Altfälle) | 148,44 € | 819,76 € (3. Kind) | 01.04.2026 | mittel |
 | Brandenburg | kein Stufe-1-Anteil | 377,16 € | 888,39 € | 01.07.2024 | mittel – Datum wirkt älter als bei anderen Ländern |
 | Bremen | ca. 157–165 € (besoldungsgruppenabhängig, A5–A8) | ca. 252–266 € | ca. 611 € | 01.04.2026 | niedrig |
@@ -36,7 +36,7 @@ Recherchiert über mehrere Sekundärquellen (siehe Quellenliste unten), da eine 
 | Hessen | 177,30 € | 360,57 € | 831,08 € | 01.07.2026 | hoch – Werte intern konsistent, beide Quellen identisch |
 | Mecklenburg-Vorpommern | 164,77 € | 198,83 € | 820,00 € | 01.04.2026 | hoch |
 | Niedersachsen | 162,26 € (A5–A8; bis 170,36 € in höheren Gruppen) | 145,61 € | 512,37 € | 01.04.2026 | hoch |
-| Nordrhein-Westfalen | – | – | – | 01.04.2026 | **niedrig** – zusätzlich Mietenstufen- (I–VII) und besoldungsgruppenabhängig, kein sinnvoller Pauschalwert |
+| Nordrhein-Westfalen | 167,26–173,50 € (nach Besoldungsgruppe, s. Detailtabelle) | s. Detailtabelle (Gesamtbeträge je Mietenstufe) | s. Detailtabelle | 01.04.2026 | **hoch – geprüft gegen Primärquelle** (amtliches PDF, s. unten) |
 | Rheinland-Pfalz | 88,03 € | 246,97 € | 726,00 € | 01.04.2026 | niedrig – Stufe-1-Wert wirkt im Ländervergleich ungewöhnlich niedrig |
 | Saarland | 164,48 € | 165,31 € | 781,68 € | 01.04.2026 | hoch |
 | Sachsen | 279,58 € | 279,58 € | 795,41 € | 01.04.2026 | hoch – beide Quellen identisch |
@@ -58,11 +58,55 @@ Recherchiert über mehrere Sekundärquellen (siehe Quellenliste unten), da eine 
 - **Rheinland-Pfalz**: Stufe-1-Betrag (88,03 €) liegt deutlich unter allen anderen Ländern (die sonst zwischen ~160–280 € liegen) – könnte ein Teilbetrag statt des vollen Satzes sein. Prüfen.
 - **Bremen, Brandenburg**: nur eine grobe Spanne bzw. ältere Datenlage verfügbar.
 - Mehrere Länder (Baden-Württemberg, Niedersachsen, Mecklenburg-Vorpommern, Bremen) haben zusätzliche „Familienergänzungszuschläge" nach Besoldungsgruppe, die hier **nicht** eingerechnet sind – das Tool rechnet nur den klassischen Familienzuschlag, nicht diese Zusatzkomponente. Sollte im Ergebnis als Fußnote stehen, damit niemand den Betrag für vollständig hält.
-- **Bayern-Primärquelle gefunden, aber automatisiert nicht zuverlässig auslesbar**: Anlage 5 BayBesG ([gesetze-bayern.de](https://www.gesetze-bayern.de/Content/Document/BayBesG-ANL_5)) ist die amtliche Quelle, Landesamt für Finanzen Bayern veröffentlicht die aktuellen Beträge. Zwei automatisierte Abrufe derselben Tabelle (einmal direkt vom Gesetzestext, einmal über [tarifvertrag-online.de/familienzuschlag/bayern](https://tarifvertrag-online.de/familienzuschlag/bayern)) ergaben **deutlich unterschiedliche, teils in sich unplausible Zahlen** (z. B. nicht monoton steigend über die Ortsklassen, obwohl das inhaltlich so sein müsste). Das ist ein starkes Signal, dass die Bayern-Tabelle **manuell aus dem PDF/Gesetzestext abgelesen werden muss**, nicht per automatisiertem Seitenabruf – die Tabellenstruktur (mehrere Stufen × 7 Ortsklassen in einer Matrix) scheint dafür zu fehleranfällig.
-- **NRW-Zwischenergebnis** (ein Datenpunkt, noch nicht gegen das Primärgesetz geprüft): Laut [besoldungsrechner.com](https://besoldungsrechner.com/nrw-familienzuschlag-mietenstufe-unterschiede) liegt der **Gesamt**-Familienzuschlag für Verheiratete ab A 9 bei 1 Kind zwischen 324,52 € (Mietenstufe I/II) und 955,05 € (Mietenstufe VII), bei 2 Kindern zwischen 734,08 € und 1.721,50 €. Diese Zahlen sind in sich konsistent (steigen monoton mit der Mietenstufe), aber eine einzelne Sekundärquelle – vor Verwendung gegen das NRW-Besoldungsgesetz prüfen.
 - Generell: Jährliche/unterjährige Anpassungen (wie beim Bund zum 01.05., bei mehreren Ländern zum 01.04.) bedeuten **Pflegeaufwand**. Ohne jährlichen Update-Prozess veraltet der Rechner schnell – siehe dazu bereits die Risiken-Sektion in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]].
 
-**Empfehlung:** Nicht live schalten, bevor mindestens die als „niedrig" markierten Länder (Bayern, NRW, Thüringen, Rheinland-Pfalz, Bremen) gegen das jeweilige Landesbesoldungsgesetz geprüft sind. Der Code unten ist entsprechend defensiv gebaut: Bundesländer ohne verlässliche Zahl liefern keine (falsche) Berechnung, sondern einen Hinweis + Beratungs-CTA.
+**Empfehlung:** Nicht live schalten, bevor mindestens die als „niedrig" markierten Länder (Thüringen, Rheinland-Pfalz, Bremen, Brandenburg) gegen das jeweilige Landesbesoldungsgesetz geprüft sind. Bayern und NRW sind inzwischen gegen die Primärquelle geprüft (siehe unten) und können in den Rechner übernommen werden. Der Code unten ist noch auf dem alten, defensiven Stand (Bayern/NRW blockiert) – Code-Update steht als nächster Schritt aus.
+
+### Bayern – geprüft gegen Primärquelle (Anlage 5 BayBesG)
+
+Automatisierte Abrufe derselben Seite lieferten zunächst zwei unterschiedliche, unplausible Versionen dieser Tabelle. Grund: Die amtliche HTML-Tabelle nutzt `rowspan`-Zellen (ein Wert gilt für mehrere Ortsklassen gleichzeitig), was einfache Text-Extraktion zerstört. Korrekt rekonstruiert aus dem rohen HTML von [gesetze-bayern.de, Anlage 5 BayBesG](https://www.gesetze-bayern.de/Content/Document/BayBesG-ANL_5) (abgerufen 13.11.2026, dort als aktuell gültige Fassung ausgewiesen, Stand der Tabelle selbst: **1. Februar 2025**):
+
+| Ortsklasse | Stufe L (ledig) | Stufe V (verheiratet) | Stufe 1 (1 Kind) | Stufe 2 (2 Kinder) | zzgl. 3. Kind | zzgl. jedes weitere Kind |
+|---|---|---|---|---|---|---|
+| I | – | 85,11 € | 337,46 € | 493,00 € | 482,05 € | 577,10 € |
+| II | – | 85,11 € | 337,46 € | 493,00 € | 482,05 € | 577,10 € |
+| III | – | 85,11 € | 337,46 € | 527,70 € | 496,51 € | 623,23 € |
+| IV | – | 85,11 € | 360,56 € | 562,38 € | 511,42 € | 669,83 € |
+| V | – | 109,41 € | 383,64 € | 597,06 € | 526,76 € | 716,84 € |
+| VI | – | 133,73 € | 406,73 € | 674,02 € | 542,57 € | 764,33 € |
+| VII | 165,59 € | 165,59 € | 531,08 € | 763,33 € | 558,83 € | 812,28 € |
+
+Alle Werte jetzt monoton steigend über die Ortsklassen, wie inhaltlich zu erwarten – das war bei den beiden vorherigen automatisierten Extraktionen nicht der Fall und damit das Signal für den Fehler. „Stufe L" (ledig) gibt es nur in Ortsklasse VII (München); in den Ortsklassen I–VI erhalten Ledige keinen Ortszuschlag.
+
+Zusätzlich gibt es **Erhöhungsbeträge für die Besoldungsgruppen A 3–A 10** (gestaffelt nach Ortsklasse, von 10,61 € bis 58,69 €), die ab Stufe 1 für jedes Kind hinzukommen – im Rechner bislang nicht eingerechnet, siehe gleiche Logik wie bei Baden-Württemberg/Niedersachsen/MV oben.
+
+**Hinweis zur Aktualität:** Eine andere Recherche-Spur hatte einen Stand "01.10.2026" mit einer generellen Erhöhung um 2,82 % erwähnt (vermutlich die reguläre Grundgehalts-Anpassung). Die amtliche Anlage 5 selbst zeigt weiterhin "Gültig ab 1. Februar 2025" als aktuellste Fassung (Stand Abruf 13.11.2026) – falls eine neuere Fassung der Anlage 5 zum 1.10.2026 existiert, ist sie auf gesetze-bayern.de zum Abrufzeitpunkt noch nicht separat ausgewiesen. Vor Launch kurz erneut prüfen, ob sich daran etwas geändert hat.
+
+### Nordrhein-Westfalen – geprüft gegen Primärquelle (Anhang 8 / Anlage 13 LBesG NRW)
+
+Direkt aus dem amtlichen PDF ausgelesen: [recht.nrw.de – Anhang 8 zu Art. 1 Nr. 7 LBesG NRW, Familienzuschlag für Beamtinnen und Beamte](https://recht.nrw.de/system/files/2026-08/lrgv_lbesg_anlage-13_stand-01.04.2026.pdf), **gültig ab 1. April 2026**. Zwei offensichtliche OCR-Fehler im PDF korrigiert (fehlende führende „8" bei zwei Mietenstufe-II-Werten; durch Monotonie-Vergleich mit den Nachbarwerten plausibilisiert).
+
+**Stufe 1 (Ehezuschlag, unabhängig von Mietenstufe):**
+
+| Besoldungsgruppe | Betrag |
+|---|---|
+| A 5 und A 6 | 169,26 € |
+| A 7 und A 8 | 167,26 € |
+| übrige (ab A 9) | 173,50 € |
+
+**Stufe 2–5 (Gesamtbetrag inkl. Ehezuschlag, nach Mietenstufe I–VII), übrige Besoldungsgruppen (ab A 9) – der häufigste Fall:**
+
+| Stufe | I | II | III | IV | V | VI | VII |
+|---|---|---|---|---|---|---|---|
+| Stufe 2 (1 Kind) | 324,52 € | 324,52 € | 373,81 € | 518,76 € | 651,57 € | 794,39 € | 955,05 € |
+| Stufe 3 (2 Kinder) | 734,08 € | 877,30 € | 1.024,87 € | 1.196,36 € | 1.358,93 € | 1.526,09 € | 1.721,50 € |
+| Stufe 4 (3 Kinder) | 1.436,24 € | 1.601,59 € | 1.775,12 € | 1.977,14 € | 2.162,61 € | 2.358,88 € | 2.586,52 € |
+| Stufe 5 (4 Kinder) | 2.143,84 € | 2.333,59 € | 2.534,32 € | 2.784,39 € | 2.973,69 € | 3.212,40 € | 3.473,44 € |
+| ab 5. Kind, je Kind | 749,64 € | 777,56 € | 808,43 € | 840,64 € | 868,27 € | 917,73 € | 957,16 € |
+
+Für die Besoldungsgruppen A 5/A 6 und A 7/A 8 liegen eigene, etwas abweichende Beträge vor (teils höher als „übrige", vermutlich Ausgleich für niedrigere Grundbesoldung) – vollständige Werte liegen vor, hier aus Platzgründen nicht alle drei Bänder tabelliert; bei Bedarf nachreichen.
+
+**Wichtig für die Implementierung:** NRW rechnet nicht additiv (Ehezuschlag + x € pro Kind), sondern gibt für jede Kinderzahl einen eigenen Gesamtbetrag pro Mietenstufe aus. Der Rechner-Code muss das als Lookup-Tabelle (Besoldungsgruppenband × Mietenstufe × Kinderzahl) abbilden, nicht als einfache Addition wie bei den anderen Ländern.
 
 ## Uniqueness-Check: Was macht unseren Rechner besser als die Konkurrenz?
 
