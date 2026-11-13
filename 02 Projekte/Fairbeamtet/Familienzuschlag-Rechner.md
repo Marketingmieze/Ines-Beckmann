@@ -34,22 +34,22 @@ Komplett neu recherchiert über die offiziellen Besoldungstabellen des dbb ([dbb
 | Bundesland | Stufe 1 (verheiratet/verpartnert) | 1. Kind | 2. Kind | ab 3. Kind | Gültig ab | Quellenstatus |
 |---|---|---|---|---|---|---|
 | Bund | 181,36 € | +154,99 € (Stufe 2 gesamt: 336,35 €) | +154,99 € | +482,89 € je Kind | 01.05.2026 | **vorläufiger Abschlag, kein Gesetz** (Faktencheck Sven 13.11.2026, s. u.) |
-| Baden-Württemberg | 180,46 € | +157,78 € | +157,78 € | +989,17 € je Kind | 01.04.2026 | Entwurf |
-| Bayern | 87,51 € (Ortsklasse I; s. Detailtabelle) | s. Detailtabelle (Ortsklasse I: 506,90 € Stufe 1 gesamt) | s. Detailtabelle | s. Detailtabelle | 01.10.2026 | Entwurf |
-| Berlin | kein Stufe-1-Anteil | +148,44 € | +148,44 € | 3. Kind +819,76 €, ab 4. Kind +678,99 € | 01.04.2026 | final verkündet |
-| Brandenburg | kein Stufe-1-Anteil | +377,16 € | +377,16 € | +888,39 € je Kind | 01.01.2026 | final verkündet |
-| Bremen | 166,18 € (A5–A8) / 174,54 € (übrige) | +432,03 €/+440,39 € gesamt (Stufe 2) | +265,85 € | 3. Kind +610,60 €, ab 4. Kind +587,27 € | 01.04.2026 | Entwurf |
-| Hamburg | 165,84 € | +193,14 € | +193,14 € | +635,00 € je Kind | 01.04.2026 | final verkündet |
-| Hessen | 177,30 € | +360,57 € | +360,57 € | +831,08 € je Kind | 01.07.2026 | final verkündet |
-| Mecklenburg-Vorpommern | 164,77 € | +198,83 € (Stufe 2 gesamt: 363,60 €) | +198,83 € | +820,00 € je Kind | 01.04.2026 | final verkündet |
-| Niedersachsen | 162,26 € (A5–A8) / 170,36 € (übrige) | +145,61 € (Stufe 2 gesamt: 307,87 €/315,97 €) | +145,61 € | +512,37 € je Kind | 01.04.2026 | final verkündet |
-| Nordrhein-Westfalen | 169,26 €/167,26 €/173,50 € (nach BesGr, s. Detailtabelle) | s. Detailtabelle (Mietenstufen-/BesGr-Matrix) | s. Detailtabelle | s. Detailtabelle | 01.04.2026 | final verkündet (amtliches PDF) |
-| Rheinland-Pfalz | 88,03 € | +246,97 € | +246,97 € | +726,00 € je Kind, ggf. + Mietenstufen-Aufstockung | 01.04.2026 | final verkündet |
-| Saarland | 164,48 € | +165,31 € (Stufe 2 gesamt: 329,79 €) | +165,31 € | +781,68 € je Kind | 01.04.2026 | final verkündet |
-| Sachsen | 279,58 € | +279,58 € (Stufe 2 gesamt: 559,16 €) | +279,58 € | +795,41 € je Kind | 01.04.2026 | final verkündet |
-| Sachsen-Anhalt | 169,04 € | +184,85 € (Stufe 2 gesamt: 353,89 €) | +184,85 € | +818,98 € je Kind | 01.04.2026 | final verkündet |
-| Schleswig-Holstein | 176,24 € | +199,85 € (Stufe 2 gesamt: 376,09 €) | +199,85 € | +516,48 € je Kind | 01.01.2026 | final verkündet |
-| Thüringen | 177,25 € | 326,41 € gesamt (1 Kind) | 529,16 € gesamt (2 Kinder) | 830,50 € gesamt (3 Kinder), ab 4. Kind jeweils +803,23 € | **01.02.2025** (keine 2026er dbb-Tabelle gefunden) | veraltet – zu prüfen |
+| Baden-Württemberg | 180,46 € | +157,78 € | +157,78 € | +989,17 € je Kind | 01.04.2026 | Entwurf, noch nicht verkündet (BVAnpGBW 2026/2027/2028, Stand 13.11.2026) |
+| Bayern | 87,51 € (Ortsklasse I; s. Detailtabelle) | s. Detailtabelle (Ortsklasse I: 506,90 € Stufe 1 gesamt) | s. Detailtabelle | s. Detailtabelle | 01.10.2026 | Landtag beschlossen 28.10.2026, Verkündung im GVBl noch ausstehend (Stand 13.11.2026) |
+| Berlin | kein Stufe-1-Anteil | +148,44 € | +148,44 € | 3. Kind +819,76 €, ab 4. Kind +678,99 € | 01.04.2026 | final verkündet 17.06.2026 (BerlBVAnpG 2026-2027) |
+| Brandenburg | kein Stufe-1-Anteil | +377,16 € | +377,16 € | +888,39 € je Kind | 01.01.2026 | final verkündet 15.10.2026 |
+| Bremen | **157,44 € (A5–A8) / 165,40 € (übrige)** – aktuell tatsächlich gezahlter Betrag | +251,93 € | +251,93 € | 3. Kind +578,66 €, ab 4. Kind +556,54 € | **01.02.2025** (nicht 2026!) | final – entspricht dem, was aktuell wirklich ausgezahlt wird. Höhere Werte (Entwurf, s. u.) werden erst ab Dez. 2026 rückwirkend gezahlt, falls beschlossen |
+| Hamburg | 165,84 € | +193,14 € | +193,14 € | +635,00 € je Kind | 01.04.2026 | final verkündet 30.10.2026 (HmbGVBl.) |
+| Hessen | 177,30 € | +360,57 € | +360,57 € | +831,08 € je Kind | 01.07.2026 | final verkündet 09.09.2026 (HBesVAnpG 2026/2027) |
+| Mecklenburg-Vorpommern | 164,77 € | +198,83 € (Stufe 2 gesamt: 363,60 €) | +198,83 € | +820,00 € je Kind | 01.04.2026 | final verkündet 20.05.2026 |
+| Niedersachsen | 162,26 € (A5–A8) / 170,36 € (übrige) | +145,61 € (Stufe 2 gesamt: 307,87 €/315,97 €) | +145,61 € | +512,37 € je Kind | 01.04.2026 | final verkündet 02.06.2026 (NBVAnpG 2026) |
+| Nordrhein-Westfalen | 169,26 €/167,26 €/173,50 € (nach BesGr, s. Detailtabelle) | s. Detailtabelle (Mietenstufen-/BesGr-Matrix) | s. Detailtabelle | s. Detailtabelle | 01.04.2026 | final verkündet 31.07.2026 (amtliches PDF, Beschluss 21.07.2026) |
+| Rheinland-Pfalz | 88,03 € | +246,97 € | +246,97 € | +726,00 € je Kind, ggf. + Mietenstufen-Aufstockung | 01.04.2026 | final verkündet 24.09.2026 (LBVAnpG 2026/2027/2028) |
+| Saarland | 164,48 € | +165,31 € (Stufe 2 gesamt: 329,79 €) | +165,31 € | +781,68 € je Kind | 01.04.2026 | final verkündet 20.05.2026 |
+| Sachsen | 279,58 € | +279,58 € (Stufe 2 gesamt: 559,16 €) | +279,58 € | +795,41 € je Kind | 01.04.2026 | final verkündet 02.06.2026 (SächsGVBl) |
+| Sachsen-Anhalt | 169,04 € | +184,85 € (Stufe 2 gesamt: 353,89 €) | +184,85 € | +818,98 € je Kind | 01.04.2026 | final verkündet 16.06.2026 |
+| Schleswig-Holstein | 176,24 € | +199,85 € (Stufe 2 gesamt: 376,09 €) | +199,85 € | +516,48 € je Kind | 01.01.2026 | final verkündet 02.10.2026 (GVOBl. 2026 Nr. 92) |
+| Thüringen | 177,25 € | 326,41 € gesamt (1 Kind) | 529,16 € gesamt (2 Kinder) | 830,50 € gesamt (3 Kinder), ab 4. Kind jeweils +803,23 € | **01.02.2025** | **veraltet** – Landtag hat erst am 11.11.2026 ein neues Gesetz beschlossen (rückwirkend 01.04.2026), neue Zahlen zum 13.11.2026 noch nirgends veröffentlicht |
 
 **Wichtiger Struktur-Hinweis:** Die Spalten "1. Kind"/"2. Kind"/"ab 3. Kind" sind bei den meisten Ländern **Erhöhungen**, die auf Stufe 1 aufaddiert werden (additive Logik). Bei Bayern, NRW, Hamburg, Thüringen und teilweise Bremen sind die Werte dagegen **Gesamtbeträge je Stufe** (die Stufe selbst enthält bereits den Ehezuschlag) – in der Tabelle oben jeweils vermerkt. Das muss im Rechner-Code so unterschieden werden, sonst entstehen Doppelzählungen oder falsche Summen.
 
@@ -59,6 +59,46 @@ Komplett neu recherchiert über die offiziellen Besoldungstabellen des dbb ([dbb
 - [recht.nrw.de – Anhang 8 LBesG NRW](https://recht.nrw.de/system/files/2026-08/lrgv_lbesg_anlage-13_stand-01.04.2026.pdf) – amtliches Original-PDF für NRW
 - [gesetze-bayern.de – Anlage 5 BayBesG](https://www.gesetze-bayern.de/Content/Document/BayBesG-ANL_5) – amtlicher Gesetzestext, zeigt zum Abrufzeitpunkt noch den älteren Stand 01.02.2025 (dbb-Tabelle mit Stand 01.10.2026 ist aktueller, s. Bayern-Detailabschnitt)
 - [haufe.de – Anlage 6 ThürBesG](https://www.haufe.de/id/norm/besoldungsgesetz-thueringen-anlage-6-zu-37-familienzuschlag-und-anrechnungsbetrag-HI16460882.html) – bestätigt den Feb.-2025-Stand für Thüringen unabhängig von der dbb-Tabelle
+
+## Verkündungsstatus-Check für alle 17 Dienstherren (13.11.2026)
+
+Auslöser: Sven hatte seine Prüfung nur für den Bund gemacht und dabei festgestellt, dass die Mai-2026-Erhöhung dort nur ein vorläufiger Abschlag ohne Gesetzesgrundlage ist (siehe Bund-Detailabschnitt unten). Ines hat zu Recht gefragt, ob das auch bei den anderen 16 Ländern der Fall sein könnte – die dbb-Zahlen allein sagen nämlich nichts darüber, ob das zugrundeliegende Anpassungsgesetz tatsächlich schon verkündet ist. Deshalb für jedes Bundesland einzeln recherchiert, ob und wann das jeweilige Besoldungs-/Versorgungsanpassungsgesetz 2026 im Gesetz- bzw. Verordnungsblatt verkündet wurde.
+
+**Ergebnis: 16 von 17 Einstufungen im Rechner waren schon korrekt** (nur die Begründungstexte waren unvollständig) – lediglich bei Thüringen gab es eine Entwicklung, die zum Zeitpunkt der letzten Recherche noch nicht absehbar war.
+
+### Leitlinie: "Verkündet" ist nicht dieselbe Frage wie "wird ausgezahlt"
+
+Ines hat zu Recht nachgehakt: Was nützt ein Rechner, der Zahlen anzeigt, "die ggf. noch nicht stimmen"? Wichtig ist, was tatsächlich ausgezahlt wird – nicht nur, ob formal ein Gesetz verkündet ist. Das sind zwei getrennte Fragen, und sie ergeben pro Bundesland unterschiedliche Antworten:
+
+- **Bund, Baden-Württemberg, Bayern**: Das jeweilige Gesetz ist zwar noch nicht verkündet, **aber die höheren Beträge werden bereits tatsächlich ausgezahlt** – als Vorgriff bzw. Abschlag (Bund seit 01.05.2026, Baden-Württemberg seit Ende Juli 2026, Bayern seit 01.10.2026, jeweils rückwirkend). Diese Zahlen im Rechner zu zeigen ist also richtig – das ist, was auf dem Gehaltszettel steht, nur eben noch ohne endgültige Gesetzesgrundlage. Status-Label deshalb präzisiert: **„Wird als Vorgriff/Abschlag gezahlt, Gesetz noch nicht verkündet"** statt des missverständlichen „Entwurf", das hätte nach „wird noch gar nicht gezahlt" geklungen.
+- **Bremen ist der Gegenfall**: Dort wird die höhere, neue Zahl **noch gar nicht ausgezahlt** – der Entwurf liegt erst seit 15.09.2026 der Bürgerschaft vor, die Bürgerschaft hat noch nicht beschlossen, und laut GdP Bremen soll frühestens ab Dezember 2026 rückwirkend nach den neuen Tabellen gezahlt werden. Hier wäre es **falsch, die neue Zahl als "den" Betrag auszugeben** – aktuell bekommen Bremer Beamtinnen und Beamte noch den alten Satz (Stand 1. Februar 2025). **Der Rechner zeigt deshalb jetzt den alten, tatsächlich gezahlten Betrag** als Hauptergebnis, mit Status "final" (weil das zweifelsfrei das ist, was gerade ausgezahlt wird), und nennt die höhere, noch nicht verkündete Zahl nur noch als Hinweis.
+- **Thüringen**: hier ist unklar, ob die Behörden zum Stand 13.11.2026 bereits einen Vorgriff auf die am 11.11. beschlossene Erhöhung zahlen oder noch nach altem Satz – das war in der Kürze nicht recherchierbar. Bis das geklärt ist, bleibt der alte (Stand 01.02.2025) Betrag mit Status "veraltet" die vorsichtigere Wahl.
+
+**Regel für künftige Updates:** Bei jedem Bundesland immer zwei Dinge prüfen, nicht nur eins – (1) ist das Gesetz verkündet, und (2) wird der entsprechende Betrag schon tatsächlich ausgezahlt (auch als Vorgriff/Abschlag). Nur wenn (2) zutrifft, gehört die neue Zahl als Hauptergebnis in den Rechner – unabhängig davon, ob (1) schon erfüllt ist.
+
+| Bundesland | Gesetz | Verkündet am | Rechner-Status |
+|---|---|---|---|
+| Bund | (kein Landesgesetz – Bundesalimentationsgesetz) | **noch nicht** (kein Kabinettsbeschluss, Stand 13.11.2026) | abschlag ✓ korrekt |
+| Baden-Württemberg | BVAnpGBW 2026/2027/2028 | **noch nicht** (Entwurf seit Juni 2026, Landtag-Beschluss für 2. Halbjahr 2026 erwartet) | entwurf ✓ korrekt |
+| Bayern | Besoldungsanpassungsgesetz 2026 | Landtag beschlossen 28.10.2026, **Verkündung im GVBl stand zum 13.11.2026 noch aus** | entwurf ✓ korrekt |
+| Berlin | BerlBVAnpG 2026-2027 | **17.06.2026** | final ✓ korrekt |
+| Brandenburg | Besoldungs- und Versorgungsanpassungsgesetz 2026 | **15.10.2026** | final ✓ korrekt |
+| Bremen | (noch kein Gesetzestitel final) | **noch nicht** (liegt seit 15.09.2026 der Bürgerschaft vor) | final – aber mit den alten (Stand 01.02.2025), tatsächlich gezahlten Werten, siehe Leitlinien-Abschnitt unten |
+| Hamburg | Hamburgisches Gesetz zur Besoldungs- und Beamtenversorgungsanpassung 2026/2027/2028 | **30.10.2026** (HmbGVBl.) | final ✓ korrekt |
+| Hessen | HBesVAnpG 2026/2027 | **09.09.2026** | final ✓ korrekt |
+| Mecklenburg-Vorpommern | Gesetz über die Anpassung von Besoldungs- und Beamtenversorgungsbezügen | **20.05.2026** | final ✓ korrekt |
+| Niedersachsen | NBVAnpG 2026 | **02.06.2026** | final ✓ korrekt |
+| Nordrhein-Westfalen | Gesetz zur Anpassung der Dienst- und Versorgungsbezüge 2026–2028 | **31.07.2026** | final ✓ korrekt |
+| Rheinland-Pfalz | LBVAnpG 2026/2027/2028 | **24.09.2026** | final ✓ korrekt |
+| Saarland | Gesetz zur Anpassung von Besoldungs- und Versorgungsbezügen 2026/2027/2028 | **20.05.2026** | final ✓ korrekt |
+| Sachsen | AnpassungsG Besoldung und Versorgungsbezüge 2026/2027/2028 | **02.06.2026** (SächsGVBl) | final ✓ korrekt |
+| Sachsen-Anhalt | Landesbesoldungs- und -versorgungsanpassungsgesetz 2026/2027/2028 | **16.06.2026** | final ✓ korrekt |
+| Schleswig-Holstein | Gesetz zur Besoldungs- und Versorgungsanpassung 2025–2027 | **02.10.2026** (GVOBl. Nr. 92) | final ✓ korrekt |
+| **Thüringen** | Thüringer Besoldungs- und Versorgungsanpassungsgesetz 2026–2028 | Landtag hat erst **am 11.11.2026** beschlossen – zwei Tage vor dieser Recherche | **veraltet** – Grund jetzt präziser: Nicht "keine Anpassung gefunden", sondern "Gesetz zu frisch, neue Familienzuschlag-Anlage noch nirgends öffentlich tabelliert" |
+
+**Einordnung:** Die meisten Länder übertragen ihre Besoldungsanpassung über ein reines Jahres-Routinegesetz (Übertragung des TV-L-Tarifergebnisses) – das ist politisch unstrittig und deshalb meist zügig verkündet. Der Bund hängt dagegen an einem eigenen, politisch umstrittenen Bundesalimentationsgesetz zur verfassungskonformen Besoldung, das noch nicht mal einen Kabinettsbeschluss hat – strukturell ein anderer, langsamerer Prozess als bei den Ländern. Baden-Württemberg und Bremen sind zum Stand 13.11.2026 einfach noch nicht fertig mit ihrem jeweiligen Routine-Gesetzgebungsverfahren, Bayern hat den Landtag bereits passiert und wartet nur noch auf die formale Verkündung.
+
+Quellen (abgerufen 13.11.2026, jeweils dbb.de, Landtags-/Senats-Pressemitteilungen, GdP- und oeffentlicher-dienst-news.de-Berichte zur jeweiligen Besoldungsrunde 2026 je Bundesland – Einzelnachweise bei Bedarf nachreichbar, hier aus Platzgründen nicht alle 16 Länder einzeln verlinkt).
 
 ## Besoldungsgruppen-abhängige Zusatzkomponenten je Bundesland
 
@@ -207,13 +247,13 @@ Keine 2026er-Tabelle beim dbb gefunden (bei praktisch allen anderen Ländern lag
 
 ## Bekannte Unsicherheiten / vor Launch zu klären
 
-- **„Entwurf"-Status bei Baden-Württemberg, Bayern, Bremen**: dbb-Tabellen mit dem Vermerk "Veröffentlichung unter Vorbehalt der Bekanntmachung im Gesetzblatt" – vor Launch gegen die inzwischen verkündeten Gesetzblätter gegenprüfen.
-- **Thüringen**: veraltete Datenlage (Februar 2025), keine 2026er-Anpassung gefunden – gezielt nachrecherchieren.
+- **„Entwurf"/„Abschlag"-Status bei Bund, Baden-Württemberg, Bayern, Bremen**: einzeln gegen den tatsächlichen Gesetzgebungsstand geprüft (13.11.2026, siehe "Verkündungsstatus-Check" oben) – alle vier sind zum Stichtag tatsächlich noch nicht (vollständig) verkündet. Status im Rechner entsprechend korrekt, aber **mit Verfallsdatum**: sobald Baden-Württemberg/Bayern/Bremen ihr Gesetz verkünden, muss der Status auf "final" wechseln (und bei Bayern ggf. die Zahlen nochmal gegen das dann verkündete GVBl geprüft werden).
+- **Thüringen**: Der Landtag hat erst am 11.11.2026 ein neues Gesetz beschlossen (zwei Tage vor dieser Recherche) – die hinterlegten Zahlen (Stand Februar 2025) sind dadurch mit hoher Wahrscheinlichkeit veraltet, die neuen Beträge waren zum Recherchezeitpunkt aber noch nirgends veröffentlicht. **Vor Launch zwingend erneut prüfen**, ob die neue Anlage 6 ThürBesG inzwischen verkündet und tabelliert ist.
 - **Berlin**: Ergänzender Familienzuschlag nach § 40a (Sonderfälle) ist komplex und im MVP-Rechner nicht abgebildet.
 - **Baden-Württemberg**: einziges Land, bei dem die Erfahrungsstufe des Grundgehalts zusätzlich zur Besoldungsgruppe eine Rolle spielt (Familienergänzungszuschlag-Matrix) – für 100%ige Korrektheit bräuchte es ein zusätzliches Eingabefeld nur für dieses Land.
 - Generell: Jährliche/unterjährige Anpassungen (Bund zum 01.05., die meisten Länder zum 01.04., einige zum 01.01.) bedeuten **laufenden Pflegeaufwand**. Ohne jährlichen Update-Prozess veraltet der Rechner schnell – siehe dazu bereits die Risiken-Sektion in [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner]].
 
-**Empfehlung:** Die Datenqualität ist jetzt für 16 von 17 Dienstherren auf Primärquellen-Niveau (dbb-Besoldungstabellen, teils noch "Entwurf"-Status). Vor einem echten Go-Live: (1) Thüringen 2026 nachrecherchieren, (2) die drei "Entwurf"-Länder gegen die verkündeten Gesetzblätter prüfen, (3) mit Sven abstimmen, ob die komplexeren Sonderfälle (Berlin § 40a, Baden-Württemberg Erfahrungsstufe) im MVP ausgeklammert bleiben.
+**Empfehlung:** Die Datenqualität ist jetzt für 16 von 17 Dienstherren auf Primärquellen-Niveau geprüft, inklusive des tatsächlichen Verkündungsstatus (nicht nur der dbb-Zahlen). Vor einem echten Go-Live: (1) Thüringen zeitnah erneut prüfen, sobald das frische Gesetz verkündet und tabelliert ist, (2) Baden-Württemberg/Bayern/Bremen auf "final" umstellen, sobald deren Gesetze verkündet sind, (3) mit Sven abstimmen, ob die komplexeren Sonderfälle (Berlin § 40a, Baden-Württemberg Erfahrungsstufe) im MVP ausgeklammert bleiben.
 
 ## Uniqueness-Check: Was macht unseren Rechner besser als die Konkurrenz?
 
@@ -889,7 +929,10 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
         A7: [56.82, 0, 0, 0], A8: [56.82, 0, 0, 0], A9: [56.82, 0, 0, 0], A10: [56.82, 0, 0, 0],
         A11: [28.41, 0, 0, 0], A12: [28.41, 0, 0, 0], A13: [28.41, 0, 0, 0]
       },
-      hinweis: 'Der zusätzliche Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts ist hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
+      // Verkündungsstatus geprüft 13.11.2026: Gesetzentwurf (BVAnpGBW 2026/2027/2028) liegt seit
+      // Juni 2026 vor, Landtag sollte 2. Halbjahr 2026 beschließen – noch nicht verkündet. Land
+      // zahlt die 2,82 % bereits seit Ende Juli 2026 rückwirkend als Vorgriff aus, ohne formales Gesetz.
+      hinweis: 'Diese Erhöhung wird seit Juli 2026 als Vorgriff gezahlt. Das Gesetz dazu (BVAnpGBW 2026/2027/2028) war zum 13.11.2026 noch nicht verkündet. Zusätzlich ist der Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
     },
     be: {
       name: 'Berlin', gueltig: '01.04.2026', status: 'final',
@@ -906,11 +949,17 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
       hinweis: 'Brandenburg zahlt keinen Ehe-/Partnerschaftsanteil, nur den kinderbezogenen Teil.'
     },
     hb: {
-      name: 'Bremen', gueltig: '01.04.2026', status: 'entwurf',
-      stufe1: function(besGr) { return ['A5', 'A6', 'A7', 'A8'].indexOf(besGr) !== -1 ? 166.18 : 174.54; },
-      grund: [265.85, 265.85, 610.60, 587.27],
+      // WICHTIG, 13.11.2026: Anders als Bund/Baden-Württemberg/Bayern wird die neue, höhere
+      // Erhöhung in Bremen noch gar nicht gezahlt (auch nicht als Vorgriff) – der Entwurf liegt
+      // seit 15.09.2026 nur der Bürgerschaft vor, laut GdP Bremen soll erst ab Dezember 2026
+      // rückwirkend nach den neuen Tabellen gezahlt werden. Deshalb hier bewusst die Zahlen vom
+      // Stand 1. Februar 2025 hinterlegt – das ist der Betrag, der aktuell tatsächlich ausgezahlt
+      // wird. Die höheren, noch nicht verkündeten Werte stehen im Hinweis, nicht in der Summe.
+      name: 'Bremen', gueltig: '01.02.2025', status: 'final',
+      stufe1: function(besGr) { return ['A5', 'A6', 'A7', 'A8'].indexOf(besGr) !== -1 ? 157.44 : 165.40; },
+      grund: [251.93, 251.93, 578.66, 556.54],
       besGrDelta: { A5: [18.00, 0, 40.00, 40.00] },
-      hinweis: null,
+      hinweis: 'Das sind die aktuell tatsächlich ausgezahlten Beträge (Stand 1. Februar 2025). Eine Erhöhung (Stufe 1 dann 166,18 €/174,54 €, 1./2. Kind 265,85 €, 3. Kind 610,60 €, 4.+ Kind 587,27 €) liegt seit 15.09.2026 als Entwurf der Bürgerschaft vor und soll laut GdP Bremen erst ab Dezember 2026 rückwirkend gezahlt werden – bis dahin gilt der hier berechnete Betrag.',
       ergaenzung: function(kinder) {
         var s = 0;
         for (var i = 1; i <= kinder; i++) { s += (i <= 3) ? 375.00 : 385.00; }
@@ -987,7 +1036,14 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
       stufe1: function() { return 177.25; },
       grund: [149.16, 202.75, 301.34, 803.23],
       besGrDelta: {},
-      hinweis: 'Keine 2026er-Anpassung gefunden – Zahlen mit Stand Februar 2025, vor Veröffentlichung prüfen.'
+      // Wichtige Entwicklung, geprüft 13.11.2026: Der Thüringer Landtag hat das Besoldungs- und
+      // Versorgungsanpassungsgesetz 2026-2028 erst am 11.11.2026 beschlossen (rückwirkend zum
+      // 01.04.2026, +2,8 %, mind. 100 €) – zwei Tage vor dieser Recherche. Die neue
+      // Familienzuschlag-Anlage (Anlage 6 ThürBesG) war deshalb nirgends öffentlich tabelliert,
+      // weder bei dbb noch sonst wo. Die hier hinterlegten Zahlen (Stand Februar 2025) sind
+      // dadurch mit hoher Wahrscheinlichkeit veraltet, aber die aktuellen Beträge lagen zum
+      // Recherchezeitpunkt noch nicht vor.
+      hinweis: 'Thüringen hat am 11.11.2026 ein neues Besoldungsgesetz beschlossen (rückwirkend zum 01.04.2026) – die hier hinterlegten Zahlen (Stand Februar 2025) sind dadurch wahrscheinlich veraltet. Die neuen Beträge waren zum 13.11.2026 noch nirgends veröffentlicht.'
     }
   };
 
@@ -1028,7 +1084,11 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
       stufe1: function() { return o.stufeV; },
       grund: [o.stufe1 - o.stufeV, o.stufe2 - o.stufe1, o.kind3, o.weiteres],
       besGrDelta: besGrDelta,
-      hinweis: 'Stand 01.10.2026 laut dbb-Besoldungstabelle (neuer als der amtliche Gesetzestext auf gesetze-bayern.de, der zum Rechercheabruf noch 01.02.2025 zeigte) – vor Launch gegenprüfen.'
+      // Verkündungsstatus geprüft 13.11.2026: Landtag hat das Anpassungsgesetz am 28.10.2026
+      // beschlossen, die Verkündung im Bayerischen GVBl stand zu diesem Zeitpunkt noch aus.
+      // Zahlung der 2,82 % seit 01.10.2026 bereits als Vorgriff aufgrund Kabinettsbeschluss
+      // vom 19.05.2026, unter Vorbehalt der Landtagszustimmung.
+      hinweis: 'Der Landtag hat diese Erhöhung am 28.10.2026 beschlossen, die Verkündung im Gesetz- und Verordnungsblatt stand zum 13.11.2026 noch aus. Gezahlt wird seit 01.10.2026 als Vorgriff.'
     };
   }
 
@@ -1190,9 +1250,13 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
 
   var STATUS_LABEL = {
     final: 'Final verkündet',
-    entwurf: 'Entwurf, noch nicht verkündet',
+    // "entwurf" wird nur noch für BW/Bayern genutzt: Beide zahlen diesen Betrag bereits
+    // tatsächlich aus (Vorgriff), nur das Gesetz dahinter ist noch nicht verkündet – anders als
+    // ein reiner Zahlen-Entwurf, der noch gar nicht fließt (siehe Bremen, jetzt "final" mit den
+    // tatsächlich aktuell gezahlten Werten statt dem noch nicht beschlossenen Entwurf).
+    entwurf: 'Wird als Vorgriff gezahlt, Gesetz noch nicht verkündet',
     veraltet: 'Veraltete Daten – prüfen',
-    abschlag: 'Vorläufiger Abschlag, kein Gesetz'
+    abschlag: 'Wird als Abschlag gezahlt, kein Gesetz'
   };
 
   form.addEventListener('submit', function(e) {

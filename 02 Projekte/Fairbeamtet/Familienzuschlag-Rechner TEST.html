@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"><title>Test Familienzuschlag-Rechner v9</title></head><body>
+<html lang="de"><head><meta charset="utf-8"><title>Test v12</title></head><body>
 <div class="fb-fz-rechner">
   <div class="fb-fz-hero">
     <div class="fb-fz-hero-watermark" aria-hidden="true">€</div>
@@ -623,7 +623,10 @@
         A7: [56.82, 0, 0, 0], A8: [56.82, 0, 0, 0], A9: [56.82, 0, 0, 0], A10: [56.82, 0, 0, 0],
         A11: [28.41, 0, 0, 0], A12: [28.41, 0, 0, 0], A13: [28.41, 0, 0, 0]
       },
-      hinweis: 'Der zusätzliche Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts ist hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
+      // Verkündungsstatus geprüft 13.11.2026: Gesetzentwurf (BVAnpGBW 2026/2027/2028) liegt seit
+      // Juni 2026 vor, Landtag sollte 2. Halbjahr 2026 beschließen – noch nicht verkündet. Land
+      // zahlt die 2,82 % bereits seit Ende Juli 2026 rückwirkend als Vorgriff aus, ohne formales Gesetz.
+      hinweis: 'Diese Erhöhung wird seit Juli 2026 als Vorgriff gezahlt. Das Gesetz dazu (BVAnpGBW 2026/2027/2028) war zum 13.11.2026 noch nicht verkündet. Zusätzlich ist der Familienergänzungszuschlag nach Erfahrungsstufe des Grundgehalts hier NICHT eingerechnet (würde ein eigenes Eingabefeld "Erfahrungsstufe" erfordern, nur für dieses Bundesland).'
     },
     be: {
       name: 'Berlin', gueltig: '01.04.2026', status: 'final',
@@ -640,11 +643,17 @@
       hinweis: 'Brandenburg zahlt keinen Ehe-/Partnerschaftsanteil, nur den kinderbezogenen Teil.'
     },
     hb: {
-      name: 'Bremen', gueltig: '01.04.2026', status: 'entwurf',
-      stufe1: function(besGr) { return ['A5', 'A6', 'A7', 'A8'].indexOf(besGr) !== -1 ? 166.18 : 174.54; },
-      grund: [265.85, 265.85, 610.60, 587.27],
+      // WICHTIG, 13.11.2026: Anders als Bund/Baden-Württemberg/Bayern wird die neue, höhere
+      // Erhöhung in Bremen noch gar nicht gezahlt (auch nicht als Vorgriff) – der Entwurf liegt
+      // seit 15.09.2026 nur der Bürgerschaft vor, laut GdP Bremen soll erst ab Dezember 2026
+      // rückwirkend nach den neuen Tabellen gezahlt werden. Deshalb hier bewusst die Zahlen vom
+      // Stand 1. Februar 2025 hinterlegt – das ist der Betrag, der aktuell tatsächlich ausgezahlt
+      // wird. Die höheren, noch nicht verkündeten Werte stehen im Hinweis, nicht in der Summe.
+      name: 'Bremen', gueltig: '01.02.2025', status: 'final',
+      stufe1: function(besGr) { return ['A5', 'A6', 'A7', 'A8'].indexOf(besGr) !== -1 ? 157.44 : 165.40; },
+      grund: [251.93, 251.93, 578.66, 556.54],
       besGrDelta: { A5: [18.00, 0, 40.00, 40.00] },
-      hinweis: null,
+      hinweis: 'Das sind die aktuell tatsächlich ausgezahlten Beträge (Stand 1. Februar 2025). Eine Erhöhung (Stufe 1 dann 166,18 €/174,54 €, 1./2. Kind 265,85 €, 3. Kind 610,60 €, 4.+ Kind 587,27 €) liegt seit 15.09.2026 als Entwurf der Bürgerschaft vor und soll laut GdP Bremen erst ab Dezember 2026 rückwirkend gezahlt werden – bis dahin gilt der hier berechnete Betrag.',
       ergaenzung: function(kinder) {
         var s = 0;
         for (var i = 1; i <= kinder; i++) { s += (i <= 3) ? 375.00 : 385.00; }
@@ -721,7 +730,14 @@
       stufe1: function() { return 177.25; },
       grund: [149.16, 202.75, 301.34, 803.23],
       besGrDelta: {},
-      hinweis: 'Keine 2026er-Anpassung gefunden – Zahlen mit Stand Februar 2025, vor Veröffentlichung prüfen.'
+      // Wichtige Entwicklung, geprüft 13.11.2026: Der Thüringer Landtag hat das Besoldungs- und
+      // Versorgungsanpassungsgesetz 2026-2028 erst am 11.11.2026 beschlossen (rückwirkend zum
+      // 01.04.2026, +2,8 %, mind. 100 €) – zwei Tage vor dieser Recherche. Die neue
+      // Familienzuschlag-Anlage (Anlage 6 ThürBesG) war deshalb nirgends öffentlich tabelliert,
+      // weder bei dbb noch sonst wo. Die hier hinterlegten Zahlen (Stand Februar 2025) sind
+      // dadurch mit hoher Wahrscheinlichkeit veraltet, aber die aktuellen Beträge lagen zum
+      // Recherchezeitpunkt noch nicht vor.
+      hinweis: 'Thüringen hat am 11.11.2026 ein neues Besoldungsgesetz beschlossen (rückwirkend zum 01.04.2026) – die hier hinterlegten Zahlen (Stand Februar 2025) sind dadurch wahrscheinlich veraltet. Die neuen Beträge waren zum 13.11.2026 noch nirgends veröffentlicht.'
     }
   };
 
@@ -762,7 +778,11 @@
       stufe1: function() { return o.stufeV; },
       grund: [o.stufe1 - o.stufeV, o.stufe2 - o.stufe1, o.kind3, o.weiteres],
       besGrDelta: besGrDelta,
-      hinweis: 'Stand 01.10.2026 laut dbb-Besoldungstabelle (neuer als der amtliche Gesetzestext auf gesetze-bayern.de, der zum Rechercheabruf noch 01.02.2025 zeigte) – vor Launch gegenprüfen.'
+      // Verkündungsstatus geprüft 13.11.2026: Landtag hat das Anpassungsgesetz am 28.10.2026
+      // beschlossen, die Verkündung im Bayerischen GVBl stand zu diesem Zeitpunkt noch aus.
+      // Zahlung der 2,82 % seit 01.10.2026 bereits als Vorgriff aufgrund Kabinettsbeschluss
+      // vom 19.05.2026, unter Vorbehalt der Landtagszustimmung.
+      hinweis: 'Der Landtag hat diese Erhöhung am 28.10.2026 beschlossen, die Verkündung im Gesetz- und Verordnungsblatt stand zum 13.11.2026 noch aus. Gezahlt wird seit 01.10.2026 als Vorgriff.'
     };
   }
 
@@ -924,9 +944,13 @@
 
   var STATUS_LABEL = {
     final: 'Final verkündet',
-    entwurf: 'Entwurf, noch nicht verkündet',
+    // "entwurf" wird nur noch für BW/Bayern genutzt: Beide zahlen diesen Betrag bereits
+    // tatsächlich aus (Vorgriff), nur das Gesetz dahinter ist noch nicht verkündet – anders als
+    // ein reiner Zahlen-Entwurf, der noch gar nicht fließt (siehe Bremen, jetzt "final" mit den
+    // tatsächlich aktuell gezahlten Werten statt dem noch nicht beschlossenen Entwurf).
+    entwurf: 'Wird als Vorgriff gezahlt, Gesetz noch nicht verkündet',
     veraltet: 'Veraltete Daten – prüfen',
-    abschlag: 'Vorläufiger Abschlag, kein Gesetz'
+    abschlag: 'Wird als Abschlag gezahlt, kein Gesetz'
   };
 
   form.addEventListener('submit', function(e) {
