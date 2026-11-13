@@ -6,7 +6,7 @@ tags: [ressource]
 
 ## Überblick
 
-Allgemeine Ressourcen zu Social-Media-Wachstum, Content-Strategie und Online-Business – relevant sowohl für [[02 Projekte/Fairbeamtet/Social-Media-Start.md|Social-Media-Start (fairbeamtet.de)]] als auch für [[02 Projekte/Marketingmieze/Website-Aufbau.md|marketingmieze.com]].
+Allgemeine Ressourcen zu Social-Media-Wachstum, Content-Strategie und Online-Business – relevant für [[02 Projekte/Fairbeamtet/Social-Media-Start.md|Social-Media-Start (fairbeamtet.de)]]. Dieselben Dateien liegen seit 13.11.2026 dupliziert auch im eigenständigen Marketingmieze-Vault, dort relevant für Website-Aufbau.
 
 ## Dateien
 

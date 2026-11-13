@@ -10,7 +10,7 @@ erstellt: 2026-11-12
 
 Ein BMI-Rechner für fairbeamtet.de im Kontext PKV-Gesundheitsprüfung, als eigenständiges Tool – unabhängig vom größeren geplanten Beihilfe-/PKV-Lückenrechner aus [[02 Projekte/Fairbeamtet/Eigener Gehaltsrechner.md|Eigener Gehaltsrechner – Analyse & Konzept]]. Status dort weiterhin offen (Sven-Freigabe aussteht) – dieser Rechner hier ist ein **eigenständiger Entwurf zum Vorschlagen**, kein freigegebenes Projekt.
 
-Herkunft der Idee: ursprünglich für marketingmieze.com gebaut (siehe [[02 Projekte/Marketingmieze/BMI-Rechner.md|BMI-Rechner Marketingmieze]]), jetzt als eigenständige, fachlich und stilistisch komplett neue Version für fairbeamtet.de. **Keine Inhalte von dort übernommen** – andere Zielgruppe, anderer Ton, andere rechtliche Anforderungen (YMYL, PKV-Gesundheitsprüfung).
+Herkunft der Idee: ursprünglich für marketingmieze.com gebaut (BMI-Rechner-Projekt, liegt seit 13.11.2026 im eigenständigen Marketingmieze-Vault), jetzt als eigenständige, fachlich und stilistisch komplett neue Version für fairbeamtet.de. **Keine Inhalte von dort übernommen** – andere Zielgruppe, anderer Ton, andere rechtliche Anforderungen (YMYL, PKV-Gesundheitsprüfung).
 
 ## Status
 

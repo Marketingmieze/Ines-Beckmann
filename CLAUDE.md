@@ -4,33 +4,29 @@ Dieses Vault ist das Zweite Gehirn von Ines.
 
 ## Über mich
 
-Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf. Ausführliches Profil in [[00 Kontext/Über mich.md|Über mich]].
+Ines, Marketing Managerin bei fairbeamtet.de, arbeitet eng mit ihrem Chef Sven Höhne zusammen und verantwortet Website, Artikel und den Aufbau von Social Media. Daneben baut sie mit marketingmieze.com ihr eigenes Marketing-Blog/-Projekt auf – das liegt seit 13.11.2026 in einem eigenen, separaten Vault, nicht mehr hier. Ausführliches Profil in [[00 Kontext/Über mich.md|Über mich]] (diese Datei ist in beiden Vaults dupliziert, da sie ursprünglich markenübergreifend galt – bei Grundsätzlichem an beiden Stellen pflegen).
 
-Ines hat zwei klar getrennte Marken in diesem Vault:
-- **fairbeamtet.de** – ihr Arbeitgeber, Versicherungsberatung für Beamte & Co.
-- **marketingmieze.com** – ihr eigenes, noch im Aufbau befindliches Projekt
-
-Bei allen inhaltlichen Aufgaben (Content, Texte, Strategie) immer zuerst klären oder aus dem Kontext ableiten, für welche der beiden Marken die Aufgabe ist, und die passenden Kontext-Dateien nutzen.
+Dieses Vault ist seit 13.11.2026 ausschließlich für **fairbeamtet.de**, ihren Arbeitgeber (Versicherungsberatung für Beamte & Co.). marketingmieze.com-Inhalte gehören nicht mehr hierher.
 
 ## Vault-Struktur
 
-- 00 Kontext/: Persönliches Kontext-Profil. `Über mich.md` liegt direkt hier und gilt markenübergreifend. Die Unterordner `Fairbeamtet/` und `Marketingmieze/` enthalten je eigene ICP.md, Angebot.md, Schreibstil.md und Branding.md, bei Fairbeamtet zusätzlich Team.md. Zentrale Referenz für alle inhaltlichen Aufgaben – lies die passenden Dateien, wenn du Content erstellst, Mails schreibst oder Angebote formulierst.
+- 00 Kontext/: Persönliches Kontext-Profil. `Über mich.md` liegt direkt hier. Der Unterordner `Fairbeamtet/` enthält ICP.md, Angebot.md, Schreibstil.md, Branding.md und Team.md. Zentrale Referenz für alle inhaltlichen Aufgaben – lies die passenden Dateien, wenn du Content erstellst, Mails schreibst oder Angebote formulierst.
 - 01 Inbox/: Schnelle Gedanken, Brain Dumps, unverarbeitete Notizen. Alles was noch keinen festen Platz hat landet hier.
-- 02 Projekte/: Aktive Projekte mit konkretem Ziel und Enddatum, getrennt nach `Fairbeamtet/` und `Marketingmieze/`. Projekte starten als einzelne .md-Datei direkt im jeweiligen Marken-Unterordner.
+- 02 Projekte/: Aktive Projekte mit konkretem Ziel und Enddatum, unter `Fairbeamtet/`. Projekte starten als einzelne .md-Datei direkt in diesem Marken-Unterordner.
 - 03 Bereiche/: Laufende Verantwortungsbereiche ohne Enddatum. Jeder Bereich ist ein eigener Ordner mit gleichnamiger Start-Datei, weil Bereiche über die Zeit wachsen. Drei Blöcke:
-  - `Privat/`: alles, was nicht zum Arbeitgeber gehört. Finanzen, Familie, Gesundheit, Pflege Mutter, Sohn und `Marketingmieze/`, weil marketingmieze.com dein eigenes Projekt ist und nichts mit fairbeamtet.de zu tun hat. Übersicht in [[03 Bereiche/Privat/Privat.md|Privat]].
+  - `Privat/`: alles, was nicht zum Arbeitgeber gehört. Finanzen, Familie, Gesundheit, Pflege Mutter, Sohn. Übersicht in [[03 Bereiche/Privat/Privat.md|Privat]].
   - `Fairbeamtet/`: die beruflichen Bereiche für fairbeamtet.de, also Content Creation, SEO und Website. Übersicht in [[03 Bereiche/Fairbeamtet/Fairbeamtet.md|Fairbeamtet]]. Hieß bis 03.11.2026 „03 Bereiche (mein SEO Kram)“.
   - `Termine/`: eigenständig eine Ebene darüber, weil dort berufliche und private Termine zusammen stehen.
-- 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (u. a. Schreibregeln, SEO-GEO, Googles No. 1, Keywords, Ahrefs, Google Search Console, KI, PKV und Beihilfe, Social Media Wachstum). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei.
+- 04 Ressourcen/: Referenzmaterial und gesammeltes Wissen (u. a. Schreibregeln, SEO-GEO, Googles No. 1, Keywords, Ahrefs, Google Search Console, KI, PKV und Beihilfe, Social Media Wachstum). Jedes Thema ist ein eigener Ordner mit gleichnamiger Start-Datei. Die Ordner Content Wissen, Social Media Wachstum, Community Building und KI sind seit 13.11.2026 auch im Marketingmieze-Vault dupliziert, weil sie dort ebenfalls genutzt werden – bei Ergänzungen ggf. in beiden Vaults nachziehen.
   - Die Start-Datei eines Ordners (in 03 Bereiche/ und 04 Ressourcen/) ist gleichzeitig dessen Inhaltsverzeichnis: kurze Übersicht + `[[Wikilinks]]` auf alle Notizen im Ordner. Beim Anlegen einer neuen Notiz in einem dieser Ordner die Start-Datei um einen Link/Eintrag ergänzen, damit sie aktuell bleibt.
-- 05 Daily Notes/: Tägliches Logbuch. Was an einem Tag passiert ist, welche Entscheidungen getroffen wurden, was offen ist. Gibt Kontinuität zwischen Sessions.
+- 05 Daily Notes/: Tägliches Logbuch. Was an einem Tag passiert ist, welche Entscheidungen getroffen wurden, was offen ist. Gibt Kontinuität zwischen Sessions. Einträge bis 13.11.2026 können noch Marketingmieze-Passagen enthalten (aus der Zeit vor der Vault-Trennung); die relevanten Auszüge davon liegen zusätzlich im Marketingmieze-Vault.
 - 06 Archiv/: Abgeschlossene Projekte und inaktive Bereiche. Aus dem aktiven Blickfeld, aber durchsuchbar.
 - 07 Anhänge/: Bilder, PDFs, Medien. Obsidian legt hier automatisch alle eingefügten Dateien ab.
 
 ## Regeln für dieses Vault
 
 - **Für jeden Text für fairbeamtet gilt das Voice Profile: `04 Ressourcen/Schreibregeln/fairbeamtet Voice Profile.md`. Vor dem Schreiben lesen.** Gilt für Website, Ratgeber, Social Media, Newsletter, Mails und Skripte. Die Mutterdatei liegt bei Sven. Der Inhalt wird wortgleich übernommen und im Vault nicht geändert, Änderungswünsche gehen an Sven. Kommt eine neue Fassung, ersetzt sie die alte an diesem Pfad, damit nur eine Fassung im Vault liegt. Bei Widerspruch zu anderen Schreib- oder Stilnotizen gilt das Voice Profile.
-- **fairbeamtet.de und marketingmieze.com strikt getrennt halten** – unterschiedliche Zielgruppen, Angebote, Schreibstile und Brandings. Nie vermischen, außer Ines bittet explizit darum.
+- **fairbeamtet.de und marketingmieze.com strikt getrennt halten** – seit 13.11.2026 durch getrennte Vaults erzwungen. marketingmieze.com-Inhalte gehören nicht in dieses Vault, außer Ines bittet explizit darum.
 - Private Bereiche unter `03 Bereiche/Privat/` (Finanzen, Familie, Pflege Mutter, Gesundheit, Sohn) enthalten teils sensible/medizinische Informationen. Sorgfältig behandeln, nicht ungefragt mit beruflichen Inhalten vermischen, nicht in andere Notizen kopieren.
 - Nutze `[[Wikilinks]]` für Verknüpfungen zwischen Notizen.
 - Neue Notizen ohne klaren Platz kommen in 01 Inbox/.

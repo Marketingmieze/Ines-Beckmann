@@ -3,7 +3,7 @@ filters:
     - file.hasTag("projekt")
     - file.ext == "md"
 formulas:
-  marke: if(file.path.contains("Fairbeamtet"), "fairbeamtet.de", if(file.path.contains("Marketingmieze"), "marketingmieze.com", "—"))
+  marke: if(file.path.contains("Fairbeamtet"), "fairbeamtet.de", "—")
   zuletzt: file.mtime.format("YYYY-MM-DD")
 properties:
   formula.marke:
