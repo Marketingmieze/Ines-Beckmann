@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"><title>Test v15</title></head><body>
+<html lang="de"><head><meta charset="utf-8"><title>Test v18</title></head><body>
 <div class="fb-fz-rechner">
   <div class="fb-fz-hero">
     <div class="fb-fz-hero-watermark" aria-hidden="true">€</div>
@@ -85,7 +85,7 @@
               <option value="VI">VI</option>
               <option value="VII">VII (z. B. München)</option>
             </select>
-            <span class="fb-fz-field-hint">Die "Ortsklasse" ist rechtlich dasselbe wie die bundesweite Mietenstufe (Art. 36 BayBesG verweist direkt auf § 12 Wohngeldgesetz) – Bayern nennt es nur anders. Es geht um eine Einstufung deiner Wohngemeinde in 7 Stufen nach durchschnittlichem Mietniveau, I = günstig, VII = teuer (z. B. München). Nachschlagen kannst du das z. B. über die <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf" target="_blank" rel="noopener">offizielle Liste des Bundesbauministeriums</a> (nach Gemeinde suchen) oder indem du "Mietenstufe [deine Stadt]" in eine Suchmaschine eingibst.</span>
+            <span class="fb-fz-field-hint">Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, VII = teure Großstadt wie München. "Ortsklasse" ist rechtlich dasselbe wie die bundesweite Mietenstufe, Bayern nennt es nur anders (mehr Erklärung und ein Rechenbeispiel weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.</span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-hidden" id="fbFzMietenstufeWrap">
@@ -99,7 +99,7 @@
               <option value="VI">VI</option>
               <option value="VII">VII</option>
             </select>
-            <span class="fb-fz-field-hint">Die Mietenstufe stammt ursprünglich aus dem Wohngeldgesetz: eine bundesweite Einstufung deiner Wohngemeinde in 7 Stufen nach durchschnittlichem Mietniveau, I = günstig, VII = teuer. Nachschlagen kannst du das z. B. über die <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf" target="_blank" rel="noopener">offizielle Liste des Bundesbauministeriums</a> (nach Gemeinde suchen) oder indem du "Mietenstufe [deine Stadt]" in eine Suchmaschine eingibst.</span>
+            <span class="fb-fz-field-hint" id="fbFzMietenstufeHint">Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, höhere Stufen = teurer (z. B. Köln/Düsseldorf oder Mainz Stufe VI, Dortmund oder Trier nur Stufe III). Stammt ursprünglich aus dem Wohngeldgesetz (mehr Erklärung weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.</span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-checkbox">
@@ -145,7 +145,13 @@
     <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf" oder "Vorläufiger Abschlag", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, hak das unten extra an – dann wird der Ehe-/Partnerschaftsanteil automatisch halbiert (§ 40 BBesG bzw. Landesrecht). Trag bei der Kinderzahl außerdem nur Kinder ein, für die wirklich noch Kindergeld gezahlt wird, und bedenke: Den Kinderanteil bekommt ohnehin nur, wer das Kindergeld tatsächlich bezieht. Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
     <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand und Kinderzahl. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten einen Ehe-/Partnerschaftsanteil. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein Kinderanteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt. In mehreren Ländern (z. B. Baden-Württemberg, Niedersachsen, Bayern, NRW) hängt die genaue Höhe zusätzlich von deiner Besoldungsgruppe ab – niedrigere Gruppen bekommen teils einen Aufschlag, als Ausgleich für die niedrigere Grundbesoldung.</p>
     <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern, Nordrhein-Westfalen und Rheinland-Pfalz koppeln die Höhe zusätzlich an deinen Wohnort – deshalb fragen wir das bei diesen Ländern extra ab.</p>
-    <p><strong>Was ist eigentlich eine "Mietenstufe" bzw. "Ortsklasse"?</strong> Beides ist im Kern dasselbe: eine bundesweite Einstufung deiner Wohngemeinde in 7 Stufen (I–VII) nach durchschnittlichem Mietniveau – ursprünglich aus dem Wohngeldgesetz, mittlerweile auch für die Besoldung genutzt. Stufe I steht für günstige Gegenden, Stufe VII für teure (z. B. München oder Frankfurt). Bayern nennt diese Einstufung in seinem eigenen Besoldungsgesetz nur "Ortsklasse" statt "Mietenstufe" – rechtlich ist es dieselbe Zahl (Art. 36 BayBesG verweist direkt auf das Wohngeldgesetz). Du findest deine eigene Stufe z. B. über die <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf" target="_blank" rel="noopener">offizielle Liste des Bundesbauministeriums</a> oder eine kurze Suche nach "Mietenstufe" plus deinem Wohnort.</p>
+    <p><strong>Was ist eigentlich eine "Mietenstufe" bzw. "Ortsklasse"? Und warum fragen wir das überhaupt?</strong></p>
+    <p>Dahinter steckt ein einfacher Gedanke: Wohnen in einer teuren Großstadt kostet deutlich mehr als Wohnen in einer kleinen Landgemeinde. Damit der Staat das bei der Bezahlung seiner Beamtinnen und Beamten berücksichtigt, gibt es eine bundesweite Skala, die jede Gemeinde in Deutschland in eine von 7 Stufen einordnet, je nachdem, wie teuer die Mieten dort im Schnitt sind. <strong>Wichtig: Diese Stufe wirkt sich nur in den Ländern auf den Familienzuschlag aus, die das in ihrem eigenen Besoldungsgesetz vorsehen – aktuell nur Bayern (als "Ortsklasse"), Nordrhein-Westfalen und Rheinland-Pfalz (als "Mietenstufe").</strong> In allen anderen Bundesländern spielt der Wohnort für die Höhe keine Rolle, deshalb taucht das Feld dort auch gar nicht erst auf.</p>
+    <p>Beispiele aus genau diesen drei Ländern: In <strong>Bayern</strong> ist München Ortsklasse VII (die höchste Stufe), ländliche Gegenden liegen meist bei Ortsklasse I. In <strong>NRW</strong> liegen Köln und Düsseldorf bei Mietenstufe VI, Dortmund dagegen nur bei Mietenstufe III. In <strong>Rheinland-Pfalz</strong> liegt Mainz bei Mietenstufe VI, Trier bei Mietenstufe III. Diese Skala wurde ursprünglich fürs Wohngeld erfunden (deshalb "Mietenstufe"), NRW und Rheinland-Pfalz nutzen exakt dieselbe Skala jetzt auch für den Familienzuschlag. Bayern hat eine eigene Besoldungsregel, die aber ausdrücklich auf dieselbe Skala verweist und sie nur "Ortsklasse" nennt (Art. 36 BayBesG) – es ist also wirklich dieselbe Zahl, nur ein anderer Name.</p>
+    <p><strong>Wichtiger Unterschied zwischen NRW und Rheinland-Pfalz:</strong> In NRW verändert die Mietenstufe den gesamten Zuschlag, schon ab dem ersten Kind. In Rheinland-Pfalz wirkt sie sich dagegen nur auf das <strong>dritte und jedes weitere Kind</strong> aus, und auch nur in den Mietenstufen V, VI und VII (§ 41 LBesG RLP) – in den Mietenstufen I bis IV und beim Ehe-/Partnerschaftsanteil oder dem 1./2. Kind spielt sie in Rheinland-Pfalz gar keine Rolle. Hast du also in Rheinland-Pfalz nur 1 oder 2 Kinder, verändert deine Mietenstufe am Ergebnis nichts.</p>
+    <p><strong>Wie groß ist der Unterschied wirklich?</strong> Größer, als man denkt. Beispiel Bayern, Besoldungsgruppe A 9, verheiratet, 2 Kinder: In Ortsklasse I (günstige Gegend) macht der Familienzuschlag 543,08 € im Monat aus, in Ortsklasse VII (z. B. München) 850,60 € – ein Unterschied von 307,52 € im Monat für dieselbe Familie, nur wegen des Wohnorts. In NRW ist die Spanne bei einem Kind zwischen Mietenstufe I (324,52 €) und Mietenstufe VII (955,05 €) sogar 630,53 € im Monat.</p>
+    <p><strong>Entscheidend ist dein Wohnort, nicht dein Arbeitsort.</strong> Gemeint ist die Gemeinde deiner Hauptwohnung (da, wo du gemeldet bist) – nicht die Stadt, in der deine Dienststelle sitzt. Pendelst du z. B. von einer günstigen Umlandgemeinde nach München, zählt die günstigere Umlandgemeinde.</p>
+    <p><strong>So findest du deine eigene Stufe:</strong> Am schnellsten geht eine Suchmaschinen-Suche nach "Mietenstufe" plus deinem Wohnort – die meisten Treffer zeigen die Stufe direkt an. Alternativ in der <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf" target="_blank" rel="noopener">offiziellen PDF-Liste des Bundesbauministeriums</a> mit der Tastenkombination Strg+F (bzw. Cmd+F auf dem Mac) direkt nach dem Gemeindenamen suchen, statt die ganze Liste durchzuscrollen.</p>
     <p>Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026 – <strong>ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität</strong>. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
   </div>
 
@@ -972,6 +978,10 @@
   // Ortsklasse gilt nur für Bayern, Mietenstufe nur für NRW (zwingend) und Rheinland-Pfalz
   // (nur für den Kind-3+-Aufschlag). Für alle anderen 15 Dienstherren, inkl. Bund, bleiben
   // beide Felder versteckt.
+  var mietenstufeHintEl = document.getElementById('fbFzMietenstufeHint');
+  var MIETENSTUFE_HINT_NW = 'Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, höhere Stufen = teurer (z. B. Köln/Düsseldorf Stufe VI, Dortmund nur Stufe III). In NRW verändert die Mietenstufe den <strong>gesamten</strong> Zuschlag, schon ab dem ersten Kind (mehr Erklärung weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.';
+  var MIETENSTUFE_HINT_RP = 'Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, höhere Stufen = teurer (z. B. Mainz Stufe VI, Trier nur Stufe III). <strong>Wichtig in Rheinland-Pfalz:</strong> Die Mietenstufe wirkt sich nur auf das dritte und jedes weitere Kind aus, und nur in den Stufen V, VI und VII – bei 1 oder 2 Kindern oder den Stufen I–IV verändert sie am Ergebnis nichts (mehr Erklärung weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.';
+
   function updateConditionalFields() {
     var land = landSelect.value;
     if (land === 'by') {
@@ -981,6 +991,7 @@
     }
     if (land === 'nw' || land === 'rp') {
       mietenstufeWrap.classList.remove('fb-fz-field-hidden');
+      mietenstufeHintEl.innerHTML = (land === 'rp') ? MIETENSTUFE_HINT_RP : MIETENSTUFE_HINT_NW;
     } else {
       mietenstufeWrap.classList.add('fb-fz-field-hidden');
     }
