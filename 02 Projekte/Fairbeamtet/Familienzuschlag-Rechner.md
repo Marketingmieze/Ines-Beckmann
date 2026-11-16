@@ -394,7 +394,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
               <option value="VI">VI</option>
               <option value="VII">VII (z. B. München)</option>
             </select>
-            <span class="fb-fz-field-hint">Nach deinem Wohnort, nicht Arbeitsort (= Mietenstufe, nur anders benannt). <a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeldrechner/wohngeldrechner-2025_node.html" target="_blank" rel="noopener">Eigene Stufe mit PLZ nachschlagen →</a></span>
+            <span class="fb-fz-field-hint">Nach deinem Wohnort, nicht Arbeitsort (= Mietenstufe, nur anders benannt). <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf?__blob=publicationFile" target="_blank" rel="noopener">Eigene Stufe nachschlagen (PDF, Strg+F nach Ort) →</a></span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-hidden" id="fbFzMietenstufeWrap">
@@ -408,7 +408,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
               <option value="VI">VI</option>
               <option value="VII">VII</option>
             </select>
-            <span class="fb-fz-field-hint" id="fbFzMietenstufeHint">Nach deinem Wohnort, nicht Arbeitsort. <a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeldrechner/wohngeldrechner-2025_node.html" target="_blank" rel="noopener">Eigene Stufe mit PLZ nachschlagen →</a></span>
+            <span class="fb-fz-field-hint" id="fbFzMietenstufeHint">Nach deinem Wohnort, nicht Arbeitsort. <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf?__blob=publicationFile" target="_blank" rel="noopener">Eigene Stufe nachschlagen (PDF, Strg+F nach Ort) →</a></span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-checkbox">
@@ -460,7 +460,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     <p><strong>Wichtiger Unterschied zwischen NRW und Rheinland-Pfalz:</strong> In NRW verändert die Mietenstufe den gesamten Zuschlag, schon ab dem ersten Kind. In Rheinland-Pfalz wirkt sie sich dagegen nur auf das <strong>dritte und jedes weitere Kind</strong> aus, und auch nur in den Mietenstufen V, VI und VII (§ 41 LBesG RLP) – in den Mietenstufen I bis IV und beim Ehe-/Partnerschaftsanteil oder dem 1./2. Kind spielt sie in Rheinland-Pfalz gar keine Rolle. Hast du also in Rheinland-Pfalz nur 1 oder 2 Kinder, verändert deine Mietenstufe am Ergebnis nichts.</p>
     <p><strong>Wie groß ist der Unterschied wirklich?</strong> Größer, als man denkt. Beispiel Bayern, Besoldungsgruppe A 9, verheiratet, 2 Kinder: In Ortsklasse I (günstige Gegend) macht der Familienzuschlag 543,08 € im Monat aus, in Ortsklasse VII (z. B. München) 850,60 € – ein Unterschied von 307,52 € im Monat für dieselbe Familie, nur wegen des Wohnorts. In NRW ist die Spanne bei einem Kind zwischen Mietenstufe I (324,52 €) und Mietenstufe VII (955,05 €) sogar 630,53 € im Monat.</p>
     <p><strong>Entscheidend ist dein Wohnort, nicht dein Arbeitsort.</strong> Gemeint ist die Gemeinde deiner Hauptwohnung (da, wo du gemeldet bist) – nicht die Stadt, in der deine Dienststelle sitzt. Pendelst du z. B. von einer günstigen Umlandgemeinde nach München, zählt die günstigere Umlandgemeinde.</p>
-    <p><strong>So findest du deine eigene Stufe:</strong> Am schnellsten geht eine Suchmaschinen-Suche nach "Mietenstufe" plus deinem Wohnort – die meisten Treffer zeigen die Stufe direkt an. Alternativ in der <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf" target="_blank" rel="noopener">offiziellen PDF-Liste des Bundesbauministeriums</a> mit der Tastenkombination Strg+F (bzw. Cmd+F auf dem Mac) direkt nach dem Gemeindenamen suchen, statt die ganze Liste durchzuscrollen.</p>
+    <p><strong>So findest du deine eigene Stufe:</strong> Es gibt dafür kein Eingabeformular, nur eine Liste aller rund 11.000 Gemeinden als PDF. Am einfachsten: die <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf?__blob=publicationFile" target="_blank" rel="noopener">offizielle PDF-Liste des Bundesbauministeriums</a> öffnen und mit Strg+F (bzw. Cmd+F auf dem Mac) direkt nach dem eigenen Gemeindenamen suchen, statt die ganze Liste durchzuscrollen.</p>
     <p>Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026 – <strong>ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität</strong>. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
   </div>
 
@@ -1288,7 +1288,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   // (nur für den Kind-3+-Aufschlag). Für alle anderen 15 Dienstherren, inkl. Bund, bleiben
   // beide Felder versteckt.
   var mietenstufeHintEl = document.getElementById('fbFzMietenstufeHint');
-  var MIETENSTUFE_LINK = '<a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeldrechner/wohngeldrechner-2025_node.html" target="_blank" rel="noopener">Eigene Stufe mit PLZ nachschlagen →</a>';
+  var MIETENSTUFE_LINK = '<a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf?__blob=publicationFile" target="_blank" rel="noopener">Eigene Stufe nachschlagen (PDF, Strg+F nach Ort) →</a>';
   var MIETENSTUFE_HINT_NW = 'Nach deinem Wohnort, nicht Arbeitsort. ' + MIETENSTUFE_LINK;
   var MIETENSTUFE_HINT_RP = 'Nach deinem Wohnort. Wirkt hier nur ab dem 3. Kind und erst ab Stufe V. ' + MIETENSTUFE_LINK;
 
