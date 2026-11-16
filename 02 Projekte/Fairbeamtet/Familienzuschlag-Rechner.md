@@ -394,7 +394,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
               <option value="VI">VI</option>
               <option value="VII">VII (z. B. München)</option>
             </select>
-            <span class="fb-fz-field-hint">Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, VII = teure Großstadt wie München. "Ortsklasse" ist rechtlich dasselbe wie die bundesweite Mietenstufe, Bayern nennt es nur anders (mehr Erklärung und ein Rechenbeispiel weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.</span>
+            <span class="fb-fz-field-hint">Nach deinem Wohnort, nicht Arbeitsort (= Mietenstufe, nur anders benannt). <a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeldrechner/wohngeldrechner-2025_node.html" target="_blank" rel="noopener">Eigene Stufe mit PLZ nachschlagen →</a></span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-hidden" id="fbFzMietenstufeWrap">
@@ -408,7 +408,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
               <option value="VI">VI</option>
               <option value="VII">VII</option>
             </select>
-            <span class="fb-fz-field-hint" id="fbFzMietenstufeHint">Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, höhere Stufen = teurer (z. B. Köln/Düsseldorf oder Mainz Stufe VI, Dortmund oder Trier nur Stufe III). Stammt ursprünglich aus dem Wohngeldgesetz (mehr Erklärung weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.</span>
+            <span class="fb-fz-field-hint" id="fbFzMietenstufeHint">Nach deinem Wohnort, nicht Arbeitsort. <a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeldrechner/wohngeldrechner-2025_node.html" target="_blank" rel="noopener">Eigene Stufe mit PLZ nachschlagen →</a></span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-checkbox">
@@ -1288,8 +1288,9 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   // (nur für den Kind-3+-Aufschlag). Für alle anderen 15 Dienstherren, inkl. Bund, bleiben
   // beide Felder versteckt.
   var mietenstufeHintEl = document.getElementById('fbFzMietenstufeHint');
-  var MIETENSTUFE_HINT_NW = 'Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, höhere Stufen = teurer (z. B. Köln/Düsseldorf Stufe VI, Dortmund nur Stufe III). In NRW verändert die Mietenstufe den <strong>gesamten</strong> Zuschlag, schon ab dem ersten Kind (mehr Erklärung weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.';
-  var MIETENSTUFE_HINT_RP = 'Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, höhere Stufen = teurer (z. B. Mainz Stufe VI, Trier nur Stufe III). <strong>Wichtig in Rheinland-Pfalz:</strong> Die Mietenstufe wirkt sich nur auf das dritte und jedes weitere Kind aus, und nur in den Stufen V, VI und VII – bei 1 oder 2 Kindern oder den Stufen I–IV verändert sie am Ergebnis nichts (mehr Erklärung weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.';
+  var MIETENSTUFE_LINK = '<a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeldrechner/wohngeldrechner-2025_node.html" target="_blank" rel="noopener">Eigene Stufe mit PLZ nachschlagen →</a>';
+  var MIETENSTUFE_HINT_NW = 'Nach deinem Wohnort, nicht Arbeitsort. ' + MIETENSTUFE_LINK;
+  var MIETENSTUFE_HINT_RP = 'Nach deinem Wohnort. Wirkt hier nur ab dem 3. Kind und erst ab Stufe V. ' + MIETENSTUFE_LINK;
 
   function updateConditionalFields() {
     var land = landSelect.value;
