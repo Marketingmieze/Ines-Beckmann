@@ -394,6 +394,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
               <option value="VI">VI</option>
               <option value="VII">VII (z. B. München)</option>
             </select>
+            <span class="fb-fz-field-hint">Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, VII = teure Großstadt wie München. "Ortsklasse" ist rechtlich dasselbe wie die bundesweite Mietenstufe, Bayern nennt es nur anders (mehr Erklärung und ein Rechenbeispiel weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.</span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-hidden" id="fbFzMietenstufeWrap">
@@ -407,6 +408,7 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
               <option value="VI">VI</option>
               <option value="VII">VII</option>
             </select>
+            <span class="fb-fz-field-hint">Richtet sich nach deinem <strong>Wohnort</strong> (nicht dem Arbeitsort): I = günstige Gegend, VII = teure Großstadt. Stammt ursprünglich aus dem Wohngeldgesetz (mehr Erklärung und ein Rechenbeispiel weiter unten im Text). Schnell herausfinden: "Mietenstufe [dein Wohnort]" in eine Suchmaschine eingeben.</span>
           </label>
 
           <label class="fb-fz-field fb-fz-field-checkbox">
@@ -451,7 +453,12 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
     <h2>So funktioniert der Familienzuschlag</h2>
     <p><strong>Wichtig, bevor du rechnest:</strong> Dieser Rechner liefert einen Richtwert, <strong>keine gesicherte oder rechtsverbindliche Aussage</strong>. Besoldungsrecht ändert sich laufend, enthält Sonderfälle, die hier nicht abgebildet sind, und einzelne Werte stammen noch aus dem Gesetzgebungsverfahren (Status "Entwurf" oder "Vorläufiger Abschlag", siehe Badge im Ergebnis) oder sind veraltet (Thüringen, siehe Hinweis). Ist dein Partner/deine Partnerin ebenfalls im öffentlichen Dienst, hak das unten extra an – dann wird der Ehe-/Partnerschaftsanteil automatisch halbiert (§ 40 BBesG bzw. Landesrecht). Trag bei der Kinderzahl außerdem nur Kinder ein, für die wirklich noch Kindergeld gezahlt wird, und bedenke: Den Kinderanteil bekommt ohnehin nur, wer das Kindergeld tatsächlich bezieht. Für eine verbindliche Berechnung wende dich an deine Bezügestelle oder lass dich von uns beraten.</p>
     <p>Der Familienzuschlag ergänzt deine Besoldung je nach Familienstand und Kinderzahl. Verheiratete oder verpartnerte Beamtinnen und Beamte erhalten einen Ehe-/Partnerschaftsanteil. Für jedes kindergeldberechtigte Kind kommt zusätzlich ein Kinderanteil hinzu, der ab dem dritten Kind in fast allen Bundesländern deutlich höher ausfällt. In mehreren Ländern (z. B. Baden-Württemberg, Niedersachsen, Bayern, NRW) hängt die genaue Höhe zusätzlich von deiner Besoldungsgruppe ab – niedrigere Gruppen bekommen teils einen Aufschlag, als Ausgleich für die niedrigere Grundbesoldung.</p>
-    <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern und Nordrhein-Westfalen koppeln die Höhe zusätzlich an deinen Wohnort (Ortsklasse bzw. Mietenstufe) – deshalb fragen wir das bei diesen beiden Ländern extra ab.</p>
+    <p>Seit der Föderalismusreform 2006 legt jedes Bundesland seinen Familienzuschlag selbst im eigenen Landesbesoldungsgesetz fest. Bayern, Nordrhein-Westfalen und Rheinland-Pfalz koppeln die Höhe zusätzlich an deinen Wohnort – deshalb fragen wir das bei diesen Ländern extra ab.</p>
+    <p><strong>Was ist eigentlich eine "Mietenstufe" bzw. "Ortsklasse"? Und warum fragen wir das überhaupt?</strong></p>
+    <p>Dahinter steckt ein einfacher Gedanke: Wohnen in München kostet deutlich mehr als Wohnen in einer kleinen Landgemeinde. Damit der Staat das bei der Bezahlung seiner Beamtinnen und Beamten berücksichtigt, hat der Gesetzgeber eine bundesweite Skala gebaut, die jede einzelne Gemeinde in Deutschland in eine von 7 Stufen einordnet, je nachdem, wie teuer die Mieten dort im Schnitt sind: <strong>Stufe I</strong> sind die günstigsten Gegenden (viele kleine, ländliche Gemeinden), <strong>Stufe VII</strong> die teuersten Großstädte und ihr Umland (z. B. München, Frankfurt am Main, Teile von Hamburg und Stuttgart). Dazwischen liegen Stufe IV/V für mittelgroße, durchschnittlich teure Städte. Diese Skala wurde ursprünglich fürs Wohngeld erfunden (deshalb "Mietenstufe"), NRW und Rheinland-Pfalz nutzen exakt dieselbe Skala jetzt auch für den Familienzuschlag. Bayern hat eine eigene Besoldungsregel, die aber ausdrücklich auf dieselbe Skala verweist und sie nur "Ortsklasse" nennt (Art. 36 BayBesG) – es ist also wirklich dieselbe Zahl, nur ein anderer Name.</p>
+    <p><strong>Wie groß ist der Unterschied wirklich?</strong> Größer, als man denkt. Beispiel Bayern, Besoldungsgruppe A 9, verheiratet, 2 Kinder: In Ortsklasse I (günstige Gegend) macht der Familienzuschlag 543,08 € im Monat aus, in Ortsklasse VII (z. B. München) 850,60 € – ein Unterschied von 307,52 € im Monat für dieselbe Familie, nur wegen des Wohnorts. In NRW ist die Spanne bei einem Kind zwischen Mietenstufe I (324,52 €) und Mietenstufe VII (955,05 €) sogar 630,53 € im Monat.</p>
+    <p><strong>Entscheidend ist dein Wohnort, nicht dein Arbeitsort.</strong> Gemeint ist die Gemeinde deiner Hauptwohnung (da, wo du gemeldet bist) – nicht die Stadt, in der deine Dienststelle sitzt. Pendelst du z. B. von einer günstigen Umlandgemeinde nach München, zählt die günstigere Umlandgemeinde.</p>
+    <p><strong>So findest du deine eigene Stufe:</strong> Am schnellsten geht eine Suchmaschinen-Suche nach "Mietenstufe" plus deinem Wohnort – die meisten Treffer zeigen die Stufe direkt an. Alternativ in der <a href="https://www.bmwsb.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/wohnen/wohngeld-2023/mietstufen-2023.pdf" target="_blank" rel="noopener">offiziellen PDF-Liste des Bundesbauministeriums</a> mit der Tastenkombination Strg+F (bzw. Cmd+F auf dem Mac) direkt nach dem Gemeindenamen suchen, statt die ganze Liste durchzuscrollen.</p>
     <p>Einige Länder zahlen zusätzlich einen separaten Familienergänzungszuschlag (z. B. Bremen) oder einen Ergänzenden Familienzuschlag für Sonderfälle (z. B. Berlin), die hier nicht in der Hauptsumme enthalten sind – wenn relevant, weisen wir das im Ergebnis gesondert aus. Alle Zahlen basieren auf den offiziellen Besoldungstabellen des dbb (Deutscher Beamtenbund), Stand November 2026 – <strong>ohne Gewähr für Richtigkeit, Vollständigkeit oder Aktualität</strong>. Mehr Hintergrund in unserem <a href="https://www.fairbeamtet.de/familienzuschlag-fuer-beamte/">ausführlichen Artikel zum Familienzuschlag</a>.</p>
   </div>
 
@@ -672,6 +679,10 @@ Version 2 – vollständig überarbeitet. Die Rechenlogik ist jetzt in drei Teil
   line-height: 1.4 !important;
   color: #6B7280 !important;
   margin-top: 2px;
+}
+.fb-fz-field-hint a {
+  color: #0693E3 !important;
+  text-decoration: underline !important;
 }
 /* !important auf allen größenrelevanten Eigenschaften, weil Theme-CSS (gleiches Muster wie
    beim BMI-Rechner, siehe dortige "Korrekturen nach erstem Praxistest") sonst Select-/Input-
